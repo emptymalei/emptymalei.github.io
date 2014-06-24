@@ -221,6 +221,35 @@ text-decoration:none;
     color:white;
 }
 
+
+
+.main section.iic {
+	background:#3C4B5A;
+}
+
+.main section.iic h1 {
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 70px;
+    letter-spacing: -1px;
+    color: white;
+}
+.main section.iic h2 {
+    text-align: left;
+    line-height: 160%;
+    font-weight: 100;
+    font-size: 21px;
+    color:#fffbe4;
+}
+
+.main section.iic a {
+text-decoration:none;
+    color:white;
+}
+
+
+
 .main section.links {
 background:black;
 }
