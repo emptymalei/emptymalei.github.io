@@ -1,6 +1,6 @@
 menu:
-  Home: /
-  Archives: /archives
+  Home: /archive/
+  Archives: /archive/all/
 
 widgets:
 - search
@@ -10,27 +10,30 @@ widgets:
 excerpt_link: Read More
 
 twitter:
-  username:
+  username: emptymalei
   show_replies: false
   tweet_count: 5
 
 addthis:
-  enable: true
+  enable: false
   pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest: true
+  facebook: false
+  twitter: false
+  google: false
+  pinterest: false
 
 fancybox: true
 
-google_analytics:
+google_analytics: UA-49034078-1
 rss:
 
-comment_provider: facebook
+# Disqus
+disqus_shortname: hypernova
+
+# comment_provider: facebook
 # Facebook comment
-facebook:
-  appid: 123456789012345
-  comment_count: 5
-  comment_width: 840
-  comment_colorscheme: light
+# facebook:
+#   appid: 123456789012345
+#   comment_count: 5
+#   comment_width: 840
+#   comment_colorscheme: light
