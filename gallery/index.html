@@ -29,9 +29,14 @@
 
 <script>
     Galleria.loadTheme('js/themes/classic/galleria.classic.min.js');
+Galleria.configure({
+    transition: 'fade',
+    imageCrop: true,
+    trueFullscreen: true
+});
+
     Galleria.run('.galleria');
 </script>
-
 
 
     <!--[if lte IE 8]>
@@ -87,8 +92,11 @@
 
 <div style="width:100%;height:10px;"></div>
 
+<h2>San Diego</h2>
 
-<div class="galleria">
+<div style="width:100%;height:10px;"></div>
+
+<div class="galleria sd">
 <img src="album/sd/gliderSpot.jpg"  data-title="San Diego， UCSD 海边" data-description="海边有个滑翔伞游乐场，从校园走不到五分钟就到了。">
 <img src="album/sd/water2.jpg" data-title="海边嘛" data-description="">
 <img src="album/sd/water3.jpg" data-title="海边" data-description="">
@@ -96,9 +104,13 @@
 <img src="album/sd/water5.jpg" data-title="海边" data-description="">
 </div>
 
+<div style="width:100%;height:10px;"></div>
 
+<h2>Albuquerque</h2>
 
-<div class="galleria">
+<div style="width:100%;height:10px;"></div>
+
+<div class="galleria abq">
 <img src="album/abq/loboVillage.jpg"  data-title="Lobo Village" data-description="Lobo Village">
 <img src="album/abq/loboVillage2.jpg" data-title="Lobo Village" data-description="">
 <img src="album/abq/night.jpg" data-title="" data-description="">

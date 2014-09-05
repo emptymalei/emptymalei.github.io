@@ -2,6 +2,7 @@ html, body, form, fieldset, table, tr, td, img {
     margin: 0;
     padding: 0;
     font: 100%/150% calibri,helvetica,sans-serif;
+    letter-spacing:1px;
 }
 
 input, button, select, textarea, optgroup, option {
@@ -16,14 +17,17 @@ input, button, select, textarea, optgroup, option {
 }
 
 h1 {
-    font-size: 2.5em; /* 40px/16=2.5em */
+letter-spacing:1px;
     text-align:center;
     margin-left: auto;
     margin-right:auto;
 }
 
 h2 {
-    font-size: 1.875em; /* 30px/16=1.875em */
+  letter-spacing:1px;
+    text-align:center;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 .galleria-info-title {
@@ -31,4 +35,12 @@ h2 {
 }
 .galleria-info-description {
   letter-spacing: 2px !important;
+}
+.sd {
+  margin-left:auto;
+  margin-right:auto;
+}
+.abq {
+  margin-left:auto;
+  margin-right:auto;
 }
