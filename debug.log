@@ -1,6 +1,6 @@
-date: 2014-06-24 14:50:20.261
+date: 2014-09-23 20:42:48.781
 argv: node /usr/local/bin/hexo generate
-os: Darwin 13.2.0 darwin x64
+os: Darwin 13.4.0 darwin x64
 version:
   hexo: 2.7.1
   http_parser: 1.0
@@ -13,53 +13,136 @@ version:
   openssl: 1.0.1e
 ---
 
-[debug] 14:50:19.850 Processed: draft.md
-[debug] 14:50:19.851 Processed: page.md
-[debug] 14:50:19.851 Processed: photo.md
-[debug] 14:50:19.851 Processed: post.md
-[debug] 14:50:19.851 Config file loaded
-[debug] 14:50:19.852 Version info checked successfully
-[debug] 14:50:19.869 Loading database.
-[debug] 14:50:19.903 Plugin loaded successfully: hexo-renderer-ejs
-[debug] 14:50:19.917 Plugin loaded successfully: hexo-renderer-marked
-[debug] 14:50:20.036 Plugin loaded successfully: hexo-renderer-stylus
-[debug] 14:50:20.091 Processed: LICENSE
-[debug] 14:50:20.091 Processed: README.md
-[debug] 14:50:20.198 Processed: source/css/_base/layout.styl
-[debug] 14:50:20.199 Processed: source/css/_base/utils.styl
-[debug] 14:50:20.199 Processed: source/css/_base/variable.styl
-[debug] 14:50:20.201 Processed: source/css/_partial/archive.styl
-[debug] 14:50:20.201 Processed: source/css/_partial/article.styl
-[debug] 14:50:20.201 Processed: source/css/_partial/comment.styl
-[debug] 14:50:20.201 Processed: source/css/_partial/footer.styl
-[debug] 14:50:20.201 Processed: source/css/_partial/header.styl
-[debug] 14:50:20.201 Processed: source/css/_partial/index.styl
-[debug] 14:50:20.202 Processed: source/css/_partial/sidebar.styl
-[debug] 14:50:20.202 Processed: source/css/_partial/syntax.styl
-[debug] 14:50:20.219 Processed: source/fancybox/blank.gif
-[debug] 14:50:20.220 Processed: source/fancybox/fancybox_loading.gif
-[debug] 14:50:20.221 Processed: source/fancybox/fancybox_loading@2x.gif
-[debug] 14:50:20.222 Processed: source/fancybox/fancybox_overlay.png
-[debug] 14:50:20.223 Processed: source/fancybox/fancybox_sprite.png
-[debug] 14:50:20.227 Processed: source/fancybox/fancybox_sprite@2x.png
-[debug] 14:50:20.228 Processed: source/fancybox/jquery.fancybox.css
-[debug] 14:50:20.229 Processed: source/fancybox/jquery.fancybox.pack.js
-[debug] 14:50:20.230 Processed: source/js/gallery.js
-[debug] 14:50:20.231 Processed: source/js/jquery.imagesloaded.min.js
-[debug] 14:50:20.232 Processed: source/css/style.styl
-[debug] 14:50:20.233 Processed: source/css/font/fontawesome-webfont.eot
-[debug] 14:50:20.235 Processed: source/css/font/fontawesome-webfont.svg
-[debug] 14:50:20.237 Processed: source/css/font/fontawesome-webfont.ttf
-[debug] 14:50:20.240 Processed: source/css/font/fontawesome-webfont.woff
-[error] 14:50:20.248 { rawMessage: 'Unable to parse.',
-  parsedLine: 27,
-  snippet: 'google_analytics:UA-49034078-1',
-  parsedFile: null,
-  message: 'Process failed: _config.yml',
-  name: 'HexoError',
-  stack: undefined }
-[debug] 14:50:20.258 Processed: languages/de.yml
-[debug] 14:50:20.260 Processed: languages/default.yml
-[debug] 14:50:20.261 Processed: languages/es.yml
-[debug] 14:50:20.268 Processed: languages/ru.yml
-[debug] 14:50:20.269 Processed: languages/zh-CN.yml
+[debug] 20:42:47.752 Processed: draft.md
+[debug] 20:42:47.753 Processed: page.md
+[debug] 20:42:47.753 Processed: photo.md
+[debug] 20:42:47.753 Processed: post.md
+[debug] 20:42:47.753 Config file loaded
+[debug] 20:42:47.754 Version info checked successfully
+[debug] 20:42:47.770 Loading database.
+[debug] 20:42:47.812 Plugin loaded successfully: hexo-renderer-ejs
+[debug] 20:42:47.831 Plugin loaded successfully: hexo-renderer-marked
+[debug] 20:42:48.000 Plugin loaded successfully: hexo-renderer-stylus
+[debug] 20:42:48.240 Processed: LICENSE
+[debug] 20:42:48.253 Processed: README.md
+[debug] 20:42:48.441 Processed: source/css/_base/layout.styl
+[debug] 20:42:48.441 Processed: source/css/_base/utils.styl
+[debug] 20:42:48.441 Processed: source/css/_base/variable.styl
+[debug] 20:42:48.441 Processed: source/css/_partial/archive.styl
+[debug] 20:42:48.441 Processed: source/css/_partial/article.styl
+[debug] 20:42:48.441 Processed: source/css/_partial/comment.styl
+[debug] 20:42:48.441 Processed: source/css/_partial/footer.styl
+[debug] 20:42:48.441 Processed: source/css/_partial/header.styl
+[debug] 20:42:48.441 Processed: source/css/_partial/index.styl
+[debug] 20:42:48.442 Processed: source/css/_partial/sidebar.styl
+[debug] 20:42:48.442 Processed: source/css/_partial/syntax.styl
+[debug] 20:42:48.468 Processed: source/fancybox/blank.gif
+[debug] 20:42:48.469 Processed: source/fancybox/fancybox_loading.gif
+[debug] 20:42:48.470 Processed: source/fancybox/fancybox_loading@2x.gif
+[debug] 20:42:48.472 Processed: source/fancybox/fancybox_overlay.png
+[debug] 20:42:48.473 Processed: source/fancybox/fancybox_sprite.png
+[debug] 20:42:48.474 Processed: source/fancybox/fancybox_sprite@2x.png
+[debug] 20:42:48.475 Processed: source/fancybox/jquery.fancybox.css
+[debug] 20:42:48.476 Processed: source/fancybox/jquery.fancybox.pack.js
+[debug] 20:42:48.478 Processed: source/js/gallery.js
+[debug] 20:42:48.479 Processed: source/js/jquery.imagesloaded.min.js
+[debug] 20:42:48.480 Processed: source/css/style.styl
+[debug] 20:42:48.481 Processed: source/css/font/fontawesome-webfont.eot
+[debug] 20:42:48.483 Processed: source/css/font/fontawesome-webfont.svg
+[debug] 20:42:48.484 Processed: source/css/font/fontawesome-webfont.ttf
+[debug] 20:42:48.488 Processed: source/css/font/fontawesome-webfont.woff
+[debug] 20:42:48.492 Processed: layout/archive.ejs
+[debug] 20:42:48.492 Processed: layout/category.ejs
+[debug] 20:42:48.492 Processed: layout/index.ejs
+[debug] 20:42:48.492 Processed: layout/layout.ejs
+[debug] 20:42:48.492 Processed: layout/page.ejs
+[debug] 20:42:48.492 Processed: layout/post.ejs
+[debug] 20:42:48.493 Processed: layout/tag.ejs
+[debug] 20:42:48.493 Processed: layout/_widget/category.ejs
+[debug] 20:42:48.493 Processed: layout/_widget/recent_posts.ejs
+[debug] 20:42:48.493 Processed: layout/_widget/search.ejs
+[debug] 20:42:48.493 Processed: layout/_widget/tag.ejs
+[debug] 20:42:48.493 Processed: layout/_widget/tagcloud.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/after_footer.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/archive.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/article.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/comment.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/facebook_comment.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/footer.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/google_analytics.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/head.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/header.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/pagination.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/sidebar.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/post/category.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/post/gallery.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/post/share.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/post/tag.ejs
+[debug] 20:42:48.493 Processed: layout/_partial/post/title.ejs
+[debug] 20:42:48.512 Processed: phycho.md
+[debug] 20:42:48.537 Theme config loaded
+[debug] 20:42:48.537 Processed: _config.yml
+[debug] 20:42:48.538 Processed: languages/de.yml
+[debug] 20:42:48.539 Processed: languages/default.yml
+[debug] 20:42:48.539 Processed: languages/es.yml
+[debug] 20:42:48.540 Processed: languages/ru.yml
+[debug] 20:42:48.540 Processed: languages/zh-CN.yml
+[debug] 20:42:48.541 Processed: languages/zh-TW.yml
+[debug] 20:42:48.561 Processed: _posts/bridge.md
+[debug] 20:42:48.561 Processed: _posts/creator.md
+[debug] 20:42:48.561 Processed: _posts/hola.md
+[debug] 20:42:48.561 Processed: _posts/letter.md
+[debug] 20:42:48.561 Processed: _posts/memo.md
+[debug] 20:42:48.561 Processed: _posts/night1.md
+[debug] 20:42:48.561 Processed: _posts/noodle.md
+[debug] 20:42:48.561 Processed: _posts/reader.md
+[info] 20:42:48.610 Files loaded in 0.607s
+[debug] 20:42:48.613 Cache saved
+[debug] 20:42:48.620 Public folder cleared: archives/index.html,archives/2014/index.html,archives/2014/07/index.html,archives/2014/09/index.html,categories/科幻/index.html,index.html,phycho.html,2014/09/23/memo/index.html,2014/09/23/bridge/index.html,2014/09/23/letter/index.html,2014/09/23/reader/index.html,2014/09/23/noodle/index.html,2014/09/23/creator/index.html,2014/09/23/hola/index.html,2014/07/16/night1/index.html,tags/科幻/index.html,tags/星际移民/index.html,fancybox/blank.gif,fancybox/fancybox_loading.gif,fancybox/fancybox_loading@2x.gif,fancybox/fancybox_overlay.png,fancybox/fancybox_sprite.png,fancybox/fancybox_sprite@2x.png,fancybox/jquery.fancybox.css,fancybox/jquery.fancybox.pack.js,js/gallery.js,js/jquery.imagesloaded.min.js,css/style.css,css/font/fontawesome-webfont.eot,css/font/fontawesome-webfont.svg,css/font/fontawesome-webfont.ttf,css/font/fontawesome-webfont.woff
+[debug] 20:42:48.621 Render archive: archives/
+[debug] 20:42:48.625 Render archive: archives/2014/
+[debug] 20:42:48.625 Render archive: archives/2014/07/
+[debug] 20:42:48.625 Render archive: archives/2014/09/
+[debug] 20:42:48.626 Render category: categories/科幻/
+[debug] 20:42:48.626 Render index: 
+[debug] 20:42:48.626 Render page: phycho.html
+[debug] 20:42:48.627 Render post: 2014/09/23/memo/
+[debug] 20:42:48.627 Render post: 2014/09/23/bridge/
+[debug] 20:42:48.627 Render post: 2014/09/23/letter/
+[debug] 20:42:48.628 Render post: 2014/09/23/reader/
+[debug] 20:42:48.628 Render post: 2014/09/23/noodle/
+[debug] 20:42:48.628 Render post: 2014/09/23/creator/
+[debug] 20:42:48.628 Render post: 2014/09/23/hola/
+[debug] 20:42:48.628 Render post: 2014/07/16/night1/
+[debug] 20:42:48.628 Render tag: tags/科幻/
+[debug] 20:42:48.629 Render tag: tags/星际移民/
+[error] 20:42:48.750 HexoError: Render failed: phycho.html
+TypeError: /Users/leima/GitHub/emptymalei.github.io/themes/light/layout/page.ejs:1
+ >> 1| <%- partial('_partial/article', {item: page, index: false}) %>
+
+/Users/leima/GitHub/emptymalei.github.io/themes/light/layout/_partial/article.ejs:33
+    31|         <% } %>
+    32|       <% } else { %>
+ >> 33|         <%- partial('post/category') %>
+    34|         <%- partial('post/tag') %>
+    35|         <%- partial('post/share') %>
+    36|       <% } %>
+
+/Users/leima/GitHub/emptymalei.github.io/themes/light/layout/_partial/post/category.ejs:2
+    1| <% if (item.categories && item.categories.length){ %>
+ >> 2|   <%
+    3|   var cats = [];
+    4|   item.categories.forEach(function(cat){
+    5|     cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+
+Object 科幻 has no method 'forEach'
+    at eval (eval at <anonymous> (/Users/leima/GitHub/emptymalei.github.io/node_modules/hexo-renderer-ejs/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:31:19)
+    at eval (eval at <anonymous> (/Users/leima/GitHub/emptymalei.github.io/node_modules/hexo-renderer-ejs/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:34:146)
+    at /Users/leima/GitHub/emptymalei.github.io/node_modules/hexo-renderer-ejs/node_modules/ejs/lib/ejs.js:255:15
+    at Object.exports.render (/Users/leima/GitHub/emptymalei.github.io/node_modules/hexo-renderer-ejs/node_modules/ejs/lib/ejs.js:293:13)
+    at /Users/leima/GitHub/emptymalei.github.io/node_modules/hexo-renderer-ejs/index.js:5:14
+    at Object.exports.renderSync (/usr/local/lib/node_modules/hexo/lib/core/render.js:133:12)
+    at View.renderSync (/usr/local/lib/node_modules/hexo/lib/theme/view.js:183:28)
+    at partial (/usr/local/lib/node_modules/hexo/lib/plugins/helper/partial.js:29:17)
+    at Object.module.exports (/usr/local/lib/node_modules/hexo/lib/plugins/helper/partial.js:37:12)
+    at eval (eval at <anonymous> (/Users/leima/GitHub/emptymalei.github.io/node_modules/hexo-renderer-ejs/node_modules/ejs/lib/ejs.js:242:14), <anonymous>:29:1883)
