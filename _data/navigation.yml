@@ -1,0 +1,31 @@
+# Site navigation links
+
+- title: Science
+  url: /science/
+  excerpt: "Some Science"
+
+
+- title: Dark Side
+  url: /darkside/
+  excerpt: "Dark Side of the Universe"
+
+
+- title: TIL
+  url: /til/
+  excerpt: "Today I Learned"
+  
+
+- title: About
+  url: /about/
+  excerpt: "About"
+
+
+- title: 科幻
+  url: /stories/
+  excerpt: "科幻故事"
+
+
+- title: 星际移民中心
+  url: http://interimm.org/
+  excerpt: "致力于星际移民"
+
