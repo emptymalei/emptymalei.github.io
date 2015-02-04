@@ -1,5 +1,9 @@
 # Site navigation links
 
+- title: TIL
+  url: /til/
+  excerpt: "Today I Learned"
+
 - title: Science
   url: /science/
   excerpt: "Some Science"
@@ -9,11 +13,6 @@
   url: /darkside/
   excerpt: "Dark Side of the Universe"
 
-
-- title: TIL
-  url: /til/
-  excerpt: "Today I Learned"
-  
 
 - title: About
   url: /about/
