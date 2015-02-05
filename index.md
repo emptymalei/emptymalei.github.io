@@ -5,7 +5,7 @@ title:
 ---
 
 
-<div class="front-cover" style="background:url(./images/{{ site.cover_image }}) no-repeat fixed center;background-size:cover;overflow:hidden;">
+<div class="front-cover" style="background:url(./images/{{ site.cover_image }}) no-repeat fixed center;background-size:cover;overflow:hidden;height:400px !important;">
     
     <section>
         <div class="container" style="padding-top:1em;">
