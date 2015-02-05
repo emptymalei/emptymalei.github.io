@@ -9,7 +9,7 @@
     <subtitle>Science is not science, fiction is not fiction.</subtitle>
     <link href="http://openmetric.org/atom.xml" rel="self"/>
     <link href="http://openmetric.org/" rel="alternate" type="text/html"/>
-    <updated>2015-02-03T20:17:18-07:00</updated>
+    <updated>2015-02-05T09:30:30-07:00</updated>
     <id>http://openmetric.org/</id>
     <author>
 			<name>OctoMiao</name>
@@ -17,23 +17,6 @@
 			<email>octomiao@interimm.org</email>
 		</author>
 
-    
-    <entry>
-        <title>TIL - Science</title>
-        <link href="http://openmetric.org/til/science/"/>
-        <updated>2015-02-03T00:00:00-07:00</updated>
-        <id>http://openmetric.org/til/science</id>
-        <author>
-					<name>OctoMiao</name>
-					<uri>http://openmetric.org/</uri>
-					<email>octomiao@interimm.org</email>
-				</author>
-        <content type="html">
-        	
-        	
-
-        </content>
-    </entry>
     
     <entry>
         <title>TIL - Physics</title>
@@ -47,7 +30,19 @@
 				</author>
         <content type="html">
         	
-        	
+        	&lt;h2 id=&quot;the-yarkovsky-effect-and-yorp-effect&quot;&gt;The Yarkovsky Effect and YORP Effect&lt;/h2&gt;
+
+&lt;p&gt;Yarkovsky Efffect&lt;sup id=&quot;fnref:yarkovsky&quot;&gt;&lt;a href=&quot;#fn:yarkovsky&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;: Asteroids obsorbs sunlight, heated up by the light and emmits thermal radiation. The thermal radiations can produce a tiny force but accumulated through decades to change the orbit of asteroids of size less than 30 - 40 km.&lt;/p&gt;
+
+&lt;p&gt;YORP Effect&lt;sup id=&quot;fnref:yarkovsky:1&quot;&gt;&lt;a href=&quot;#fn:yarkovsky&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;: Similarly the reflection of sunlight and thermal radiation can cause a torque on the small objects.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:yarkovsky&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;http://arxiv.org/abs/1502.01249&quot;&gt;arXiv:1502.01249, The Yarkovsky and YORP Effects&lt;/a&gt; &lt;a href=&quot;#fnref:yarkovsky&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt; &lt;a href=&quot;#fnref:yarkovsky:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
 
         </content>
     </entry>
@@ -83,7 +78,7 @@
         	
         	&lt;h2 id=&quot;section&quot;&gt;2015-02-03&lt;/h2&gt;
 
-&lt;p&gt;The following identity is proven to be true,&lt;/p&gt;
+&lt;p&gt;The following identity is true,&lt;/p&gt;
 
 &lt;script type=&quot;math/tex; mode=display&quot;&gt;
 \frac{1}{AB} = \int_0^1 \frac{1}{[A + (B - A) x ]^2} dx .
