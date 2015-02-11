@@ -10,6 +10,13 @@ summary: snakeviz is a very nice tool to inspect a python program and find out w
 ---
 
 
+## snakeviz
+
+**snakeviz** is a very nice tool to inspect a python program and find out what happened when a function is called.
+
+It also shows the time consumed on each step.
+
+
 ## Assigning Values to Multiple Variables
 
 In python, assigning values to several variables can be done in a compact way using list manipulation.
@@ -21,8 +28,3 @@ print v1, w1, u1
 {% endhighlight %}
 
 
-## 
-
-**snakeviz** is a very nice tool to inspect a python program and find out what happened when a function is called.
-
-It also shows the time consumed on each step.
