@@ -1,12 +1,13 @@
 ---
 layout: article
 title: "TIL - Programming"
-modified: 2015-02-11 # 2015-02-03 #2014-08-27T11:57:41-04:00
+modified: 2015-02-15 # 2015-02-03 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
 categories: til
-summary: snakeviz is a very nice tool to inspect a python program and find out what happened when a function is called.
+summary: One can open URL in python by applying the python webbrowser module.
+
 ---
 
 
@@ -28,3 +29,11 @@ print v1, w1, u1
 {% endhighlight %}
 
 
+## Open URL using python using webbrowser module
+
+Even in python, one can open a url using default browser.
+
+{% highlight python %}
+import webbrowser
+webbrowser.open('http://www.python.org')
+{% endhighlight %}
