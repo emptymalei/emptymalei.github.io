@@ -1,12 +1,9 @@
 ---
 layout: article
-title: "How to Survive Research"
+title: How to Survive Research
 comments: true
+published: true
 ---
-
-
-
-
 
 This is a collection of useful tools and ideas for my grad school life.
 
@@ -20,18 +17,17 @@ This is a CC BY-SA licensed project. Use the source! Keep the source open!
 
 ## Summary
 
-* [Introduction](index.md)
-* [Be Organized](Be-Organized.md)
-* [Academic](Academic.md)
-* [Cloud Services](Cloud-Services.md)
-* [Publishing](Publishing.md)
-* [Note Taking](Note-Taking.md)
-* [Presentation](Presentation.md)
-* [Programming](Programming.md)
-* [Online Discussions](Online-Discussions.md)
-* [Pacifier](Pacifier.md)
-* [Open Science](Open-Science.md)
-* [Fun](Fun.md)
-* [LaTeX](LaTeX.md)
-* [Other](Misc.md)
-
+* [Introduction](index.html)
+* [Be Organized](be-organized.html)
+* [Academic](academic.html)
+* [Cloud Services](cloud-services.html)
+* [Publishing](publishing.html)
+* [Note Taking](note-taking.html)
+* [Presentation](presentation.html)
+* [Programming](programming.html)
+* [Online Discussions](online-discussions.html)
+* [Pacifier](pacifier.html)
+* [Open Science](open-science.html)
+* [Fun](fun.html)
+* [LaTeX](latex.html)
+* [Other](misc.html)
