@@ -48,8 +48,8 @@ Try [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to ga
 
 * Apps
 
- 1. **Tadam** : MAC, Free
- 2. **Pomotodo**: Android & iOS & Chrome, Free
+  1. **Tadam** : MAC, Free
+  2. **Pomotodo**: Android & iOS & Chrome, Free
 
 
 ## GTD
