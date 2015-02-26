@@ -6,17 +6,17 @@ title:
 
 
 
-## 我的科学文
+## Science
 
 
 {% if site.categories.science.size %}
-共有 {{ site.categories.science.size }} 篇科学类文章
+{{ site.categories.science.size }} posts on science
 		{% else %}
-暂无文章
+No Science Posts.
 		{% endif %}
 
 <div class="tiles">
 {% for post in site.categories.science %}
-	{% include post-list-cn.html %}
+	{% include post-list.html %}
 {% endfor %}
 </div><!-- /.tiles -->
