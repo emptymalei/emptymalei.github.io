@@ -2,6 +2,7 @@
 layout: article
 title: "Pacifier | How to Survive Research"
 comments: true
+published: true
 ---
 
 ## Pacifier
@@ -10,7 +11,7 @@ comments: true
 
 [Coffitivity](http://coffitivity.com/)(iOS & Android & Web & Mac): a rather simple but ellite cafe library; premium has more three more soundtracks; elegant UI; scientific research powered
 
-[Soundrown](http://soundrown.com/) (Web | Apps Developers Hiring): free mixing of multiple tracks
+[Soundrown](http://soundrown.com/)(Web | Apps Developers Hiring): free mixing of multiple tracks
 
 [A Soft Murmur](http://asoftmurmur.com/)(Web): free mixing of multiple tracks; simple UI; Timer provided; Meander available
 
