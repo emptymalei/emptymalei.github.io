@@ -2,6 +2,7 @@
 layout: article
 title: "Version Control System | How to Survive Research"
 comments: true
+published: true
 ---
 
 ## Version Control System
@@ -47,8 +48,8 @@ Try [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to ga
 
 * Apps
 
- 1. **Tadam** : MAC | Free
- 2. **Pomotodo**: Android & iOS & Chrome | Free
+ 1. **Tadam** : MAC, Free
+ 2. **Pomotodo**: Android & iOS & Chrome, Free
 
 
 ## GTD
@@ -56,5 +57,3 @@ Try [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) to ga
 * [Wunderlist](https://www.wunderlist.com) (All platforms): almost perfect todo lists; cooperation
 * [Evernote](https://evernote.com/) (All platforms): just perfect
 * [Anydo](http://www.any.do/) (All platforms): good because it has a very good reminder system; cooperation
-
-
