@@ -7,9 +7,13 @@ published: true
 
 ## Pacifier
 
+**[Rainy Mood](http://www.rainymood.com/), [Coffitivity](http://coffitivity.com/) and [Noisli](http://www.noisli.com/) are the recommended ones.**
+
 [Rainy Mood](http://www.rainymood.com/)(iOS & Android & Web): rainy day rainy mood, simple but with excellent white noise; a new beautiful soundtrack each day
 
 [Coffitivity](http://coffitivity.com/)(iOS & Android & Web & Mac): a rather simple but ellite cafe library; premium has more three more soundtracks; elegant UI; scientific research powered
+
+[Noisli](http://www.noisli.com/) (Web): free mixing of multiple tracks (which is similar to Soundrown but with much better UI). Users can save a customized setting for later use. I personally think this one has better fire sound tracks than soundrown.
 
 [Soundrown](http://soundrown.com/)(Web, Apps Developers Hiring): free mixing of multiple tracks
 
