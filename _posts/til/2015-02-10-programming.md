@@ -11,6 +11,33 @@ summary: One can open URL in python by applying the python webbrowser module.
 ---
 
 
+## Map vs For in Python
+
+`map` is sometimes more convinient instead of for. The code
+
+{% highlight python %}
+newlist = []
+for word in oldlist:
+    newlist.append(word.upper())
+{% endhighlight %}
+
+can be reformed using `map`
+
+{% highlight python %}
+newlist = map(str.upper, oldlist)
+{% endhighlight %}
+
+`for` loop is sometimes slow because the dot evaluation inside is evaluated for each loop. Thus the following code is more efficient.
+
+{% highlight python %}
+upper = str.upper
+newlist = []
+append = newlist.append
+for word in oldlist:
+    append(upper(word))
+{% endhighlight %}
+
+
 ## snakeviz
 
 **snakeviz** is a very nice tool to inspect a python program and find out what happened when a function is called.
