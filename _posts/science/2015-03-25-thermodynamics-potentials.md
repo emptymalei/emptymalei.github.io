@@ -11,18 +11,6 @@ summary: 热力学势之间的关系以及 Legendre 变换
 ---
 
 
-热力学势（特性函数）可以总结成下面的一张图。
-
-<figure markdown="1">
-<figcaption>
-热力学势的关系图。符号意义请看下文解释。
-</figcaption>
-![Thermodynamic Potentials]({{site.url}}/images/posts/thermodynamic/thermodynamicPotentials1.png)
-</figure>
-
-这篇文章就是简要的解释一下这张图，以及 Legendre 变换。
-
-
 本科学习的热力学主要的内容包括下面几部分（参考 *A Modern Course in Statistical Physics* by L. E. Reichl）：
 
 1. Thermodynamic variables; extensive, intensive, neither;
@@ -38,6 +26,22 @@ summary: 热力学势之间的关系以及 Legendre 变换
 整个的思路跟 mechanics 类似。先搞清楚如何描述一个体系，包括状态和"kinematics"，这里 "kinematics"包括状态方程和特性函数。其次，提出“第一性原理”：四条热力学定律。然后研究“动力学”：相变、响应和稳定性。
 
 而这里面热力学势的关键除了搞清楚每个势的意义，另外就是要搞清楚哪些是变量。而确定哪些是变量的就是 Legendre transformation. 所以，要搞清楚这些势，可以从 Legendre transformation 下手。
+
+
+
+热力学势（特性函数）可以总结成下面的一张图。
+
+<figure markdown="1">
+<figcaption>
+热力学势的关系图。符号意义请看下文解释。
+</figcaption>
+![Thermodynamic Potentials]({{site.url}}/images/posts/thermodynamic/thermodynamicPotentials1.png)
+</figure>
+
+这篇文章就是简要的解释一下这张图，以及 Legendre 变换。
+
+
+
 
 
 

@@ -1,8 +1,12 @@
 #page-wrapper {
-	width: 90% !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
+    width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
+
+.body {
+    font-family: Georgia,Times,"Times New Roman",serif,"Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+         }
 
 .article-cover {
     max-width: 100%;
@@ -48,11 +52,11 @@
         background-image: -ms-linear-gradient(bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
 
         background-image: -webkit-gradient(
-        	linear,
-        	left bottom,
-        	left top,
-        	color-stop(0, rgba(0,0,0,0.15)),
-        	color-stop(1, rgba(0,0,0,0))
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgba(0,0,0,0.15)),
+            color-stop(1, rgba(0,0,0,0))
         );
         padding: 100px 0;
         z-index:10;
@@ -111,13 +115,13 @@
 }
 
 .featured div {
-	position: relative;
-	color: white;
-	-webkit-border-radius: 7px;
+    position: relative;
+    color: white;
+    -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
     h3 {
-    	padding-top: 0.5em;
+        padding-top: 0.5em;
     }
     
 }
@@ -148,3 +152,19 @@ blockquote p {
     text-transform: lowercase;
 }
 
+
+.page-content>p:first-child {
+    font-size: 18px !important;
+  font-size: 1.125rem !important;
+  line-height: 1.55556 !important;
+  margin-bottom: 24px !important;
+  margin-bottom: 1.5rem !important;
+}
+
+#main .inner-wrap {width: 95% !important;}
+
+figure img {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block !important;
+}
