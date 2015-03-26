@@ -64,7 +64,7 @@ $$H(S) = U -TS$$
 
 1. Thermal Coupling: $-TS$
 2. Mechanical Coupling: $-YX$
-3. Chemical Coupling: $-\sum_\mu_i N_i$
+3. Chemical Coupling: $-\sum_i \mu_i N_i$
 
 其中 $Y$ 是广义力（例如压强 $p$ ），$X$ 是广义位移（例如体积 $V$ ）[^1]。这个也不需要很多解释吧，深刻的解释我也没用，总之，顾名思义。
 
