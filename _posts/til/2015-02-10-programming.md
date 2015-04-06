@@ -1,14 +1,40 @@
 ---
 layout: article
 title: "TIL - Programming"
-modified: 2015-03-19 # 2015-02-03 #2014-08-27T11:57:41-04:00
+modified: 2015-04-06
 author: OctoMiao
 toc: false
 comments: true
 categories: til
-summary: Tips on python coding
+summary: Strange behavior of piecewise function in numpy
 
 ---
+
+
+## Stupid numpy.piecewise
+
+
+The `piecewise()` function in numpy is not very good. Due to the writing of the function, one wouldn't be surprised to encounter the following error,
+
+{% highlight python %}
+if (n != n2):
+    raise ValueError(
+        "function list and condition list must be the same")
+{% endhighlight %}
+
+in which `n` is the length of condition list and `n2` is the length of function list.
+
+To avoid it, the input should always be prepared as following
+
+{% highlight python %}
+x = np.asarray(x)
+# The following is important to avoid the weird behavior of piecewise()
+if not x.shape:
+    x = np.asarray([x])
+{% endhighlight %}
+
+
+
 
 ## Various Ways of Writing Loops
 
