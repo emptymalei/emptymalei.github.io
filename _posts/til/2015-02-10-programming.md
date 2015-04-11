@@ -17,7 +17,7 @@ summary: Run a program in the background on ubuntu.
 2. Use no hang up: `nohup /path/to/program.py &`. `nohup` keep the program running even in one closes the terminal. `python /path/to/program.py &` also keeps it running in the terminal in background. But it terminates the program if one logs out.
 3. Check the process: `ps ax | grep program.py`. `ps -e` can list out all the running programs.
 
-Source: [How to run the Python program in the background in Ubuntu machine? (http://askubuntu.com/questions/396654/how-to-run-the-python-program-in-the-background-in-ubuntu-machine)
+Source: [How to run the Python program in the background in Ubuntu machine? ](http://askubuntu.com/questions/396654/how-to-run-the-python-program-in-the-background-in-ubuntu-machine)
 
 It is very important to understand the output of `ps`. Here is the man.
 
