@@ -46,6 +46,15 @@ PROCESS STATE CODES
        +    is in the foreground process group
 {% endhighlight %}
 
+Meanwhile, another question is how to kill sucb a process.
+
+{% highlight bash %}
+xxx@ipython-notebook:~/abc/py$ ps -eaf | grep vacOsc4CompSSConvention-moretol.py
+xxx    12921 11369 99 17:05 pts/0    00:04:49 python vacOsc4CompSSConvention-moretol.py
+xxx    13040 11369  0 17:10 pts/0    00:00:00 grep --color=auto vacOsc4CompSSConvention-moretol.py
+xxx@ipython-notebook:~/abc/py$ kill 12921
+{% endhighlight %}
+
 
 ## Stupid numpy.piecewise
 
