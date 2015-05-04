@@ -83,7 +83,7 @@ $$E_g = -2 E_k ,$$
 
 for circular orbits only.
 
-This is a magnificent relation. This is related to **virial theorem** which is the key to many phyiscs in general.
+This is a magnificent relation. It's related to **virial theorem** which is the key to many phyiscs in general.
 
 
 > **Virial Theorem**
