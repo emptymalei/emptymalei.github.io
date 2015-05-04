@@ -41,6 +41,7 @@ This equation is the key to find out many things for a flight. One of them is th
 > 
 > What happens next? We have to stop the math and think about the meanings of the equation. As you can recognize, the first term on the RHS is the $m \vec a$, here m should be the mass of the rocket at time $t$ and this $\vec a$ is the acceleration of the rocket itself. 
 > 
+> 
 > What is the second term? It is the effective force produced by propellant, thus the velocity is actually the exhaust velocity of the propellant in center of mass frame, in other words, the relative velocity between the rocket and the propellant.
 
 
