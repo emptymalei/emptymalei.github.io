@@ -6,6 +6,10 @@ comments: true
 
 This section will illustrate the physics behind the ascent stage of launching your rocket.
 
+**TO-DO**
+
+- [ ] Hohmann Transfer
+- [ ] Gravity Turn
 
 ## How Does a Rocket Work
 
