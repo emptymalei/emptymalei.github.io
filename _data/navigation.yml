@@ -8,24 +8,21 @@
   url: /science/
   excerpt: "Some Science"
 
-- title: KSP
-  url: /ksp/
-  excerpt: "Kerbal Space Program"
-
-- title: Dark Side
-  url: /darkside/
-  excerpt: "Dark Side of the Universe"
-
+- title: Research
+  url: /research/
+  excerpt: "My Research"
 
 - title: About
   url: /about/
-  excerpt: "About"
+  excerpt: "About Me"
 
+- title: 段子
+  url: /darkside/
+  excerpt: "段子及点子"
 
 - title: 科幻
   url: /stories/
-  excerpt: "科幻故事"
-
+  excerpt: "科幻系列"
 
 - title: 星际移民中心
   url: http://interimm.org/

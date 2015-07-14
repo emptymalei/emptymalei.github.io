@@ -6,17 +6,17 @@ title:
 
 
 
-## Dark Side of the Universe
+## 宇宙尽头
 
 
 {% if site.categories.science.size %}
-{{ site.categories.science.size }} Dark Posts
+共有 {{ site.categories.science.size }} 篇
 		{% else %}
-No dark posts
+暂无相关文章
 		{% endif %}
 
 <div class="tiles">
 {% for post in site.categories.darkside %}
-	{% include post-list.html %}
+	{% include post-list-cn.html %}
 {% endfor %}
 </div><!-- /.tiles -->

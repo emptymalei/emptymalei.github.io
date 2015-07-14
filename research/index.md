@@ -1,33 +1,44 @@
 ---
 layout: article
-title: How to Survive Research
+title: My Research
 comments: true
 published: true
 ---
 
-This is a collection of useful tools and ideas for my grad school life.
 
-**Find the source files [here on GitHub](https://github.com/emptymalei/GSSM).**
+## Brief Introduction
 
-This is a CC BY-SA licensed project. Use the source! Keep the source open!
+Topics I am working on:
 
-![CC BY-SA](assets/cc_bysa.flat.guokr.png)
+1. neutrino oscillations
+2. application of artificial neural network
+
+
+Topics I have worked on:
+
+1. piezoelectric ceramics
+2. cosmic evolution: the role of dark energy
+3. modified gravity
 
 
 
-## Summary
+My Researchgate profile: https://www.researchgate.net/profile/Lei_MA
 
-* [Introduction](index.html)
-* [Be Organized](be-organized.html)
-* [Academic](academic.html)
-* [Cloud Services](cloud-services.html)
-* [Publishing](publishing.html)
-* [Note Taking](note-taking.html)
-* [Presentation](presentation.html)
-* [Programming](programming.html)
-* [Online Discussions](online-discussions.html)
-* [Pacifier](pacifier.html)
-* [Open Science](open-science.html)
-* [Fun](fun.html)
-* [LaTeX](latex.html)
-* [Other](misc.html)
+
+## Online Docs
+
+1. [NeuPhysics](https://github.com/NeuPhysics): A GitHub Organization for Neutrino Physics. [GitHub](https://github.com/NeuPhysics), [webpage](http://neuphysics.github.io/#)
+   * [Neutrino Physics](https://github.com/NeuPhysics/neutrino): http://neutrino.readthedocs.org/
+2. [Physics Research Survival Manual](http://cosmologytaskforce.github.io/PhysicsResearchSurvivalManual/): http://cosmologytaskforce.github.io/PhysicsResearchSurvivalManual/
+3. [Cosmology Taskforce](https://github.com/CosmologyTaskForce):
+   * [An unfinished blog](http://cosmologytaskforce.github.io/CosmologyTaskForce/): meant to be a blog however abandoned.
+   * [CoChiSquare](https://github.com/CosmologyTaskForce/CoChiSquare): Chisquare fitting for supernova data. Using transition redshift as a cosmological paramter. 
+   * [PowerSpectrum](https://github.com/CosmologyTaskForce/PowerSpectrum): Harison-Zeldovich prescription and power spectrum.
+   * [ModiGraviDoc](https://github.com/CosmologyTaskForce/ModiGraviDoc): Documents on modified gravity.I use Mathematica as the editor to show more details on the derivations and the programming techniques.
+   * [CoMaPack](https://github.com/CosmologyTaskForce/CoMaPack): Cosmology Mathematica Pack based on GREAT.m by Tristan Hubsch. A series of packages are hosted here, including some basic general relativity calculations, cosmology background calculation, cosmological perturbation calculation, etc.
+
+
+
+
+
+
