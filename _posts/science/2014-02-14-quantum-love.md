@@ -20,7 +20,10 @@ $$\newcommand{\bra}[1]{\left\langle #1\right|}
 
 系列文章目录：
 
-
+* 第一篇：[爱情的严格量子力学描述](quantum-love.html)
+* 第二篇：[爱情的量子理论2](quantum-love-2.html})
+* 第三篇：[心理叠加态：从量子爱情到人的所有心理](from-quantum-love-to-quantum-psychology.html)
+* 第四篇：[基于统计数据的量子爱情](quantum-psychology-cognition-and-statistics.html)
 
 -----
 
@@ -81,7 +84,7 @@ $$\ket{\mathrm{Lei}} = \ket{\mathrm{Single}}\otimes \ket{\mathrm{Boy}} .$$
 
 这是一个不严格的套路，更加严格的套路必须先定义空间，当然有了上面的灵感，完整的空间应该是
 
-$$\\{ \ket{\mathrm{Boy}},\ket{\mathrm{Girl}} \\} \otimes \\{ \ket{ \mathrm{Single}},\ket{\mathrm{Non-Single} }\\} .$$
+$$\{ \ket{\mathrm{Boy}},\ket{\mathrm{Girl}} \} \otimes \{ \ket{ \mathrm{Single}},\ket{\mathrm{Non-Single} }\} .$$
 
 为了简化，我们就简单的认为 
 
@@ -136,7 +139,7 @@ $$ \left[ \hat H, \hat \rho \right] = 0 $$
 
 $$\hat H(\vec r_1,\vec r_2) = \hat H_1(\vec r_1) + \hat H_2(\vec r_2)$$
 
-这里呢，$\vec r_i$ 是指的各自在总空间的坐标，也就是说，我们可以制作对于二人体系的一个完备基矢 $\\{ \ket{r_1,r_2} \\}$. 
+这里呢，$\vec r_i$ 是指的各自在总空间的坐标，也就是说，我们可以制作对于二人体系的一个完备基矢 $\{ \ket{r_1,r_2} \}$. 
 
 这样一来，二人体系的波函数可以写作
 
@@ -195,7 +198,7 @@ $$ \ket{\psi} = \frac{1}{\sqrt{2}}( \ket{\mathrm{Boy's State1}} \ket{\mathrm{Gir
 
 -----
 
-
+第二篇：[爱情的量子理论2](quantum-love-2.html)
 
 
 [^0]: 赶紧划掉，已经不是单身了。
