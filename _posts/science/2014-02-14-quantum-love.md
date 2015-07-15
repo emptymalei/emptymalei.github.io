@@ -19,10 +19,7 @@ $$\newcommand{\bra}[1]{\left\langle #1\right|}
 **返回来看一下，真是漏洞百出，丢人啊。**
 
 系列文章目录：
-* 第一篇：[爱情的严格量子力学描述]({% post_url 2014-02-15-quantum-love %})
-* 第二篇：[爱情的量子理论2]({% post_url 2014-02-15-quantum-love-2 %})
-* 第三篇：[心理叠加态：从量子爱情到人的所有心理]({% post_url 2014-02-16-from-quantum-love-to-quantum-psychology %})
-* 第四篇：[基于统计数据的量子爱情]({% post_url 2014-04-14-quantum-psychology-cognition-and-statistics %})
+
 
 
 -----
@@ -198,7 +195,7 @@ $$ \ket{\psi} = \frac{1}{\sqrt{2}}( \ket{\mathrm{Boy's State1}} \ket{\mathrm{Gir
 
 -----
 
-第二篇：[爱情的量子理论2](http://multiverse.lamost.org/blog/6229)
+
 
 
 [^0]: 赶紧划掉，已经不是单身了。
