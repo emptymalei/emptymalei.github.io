@@ -13,7 +13,7 @@ summary: 如果要建造大规模的民用空间站，需要先解决失重的�
 
 
 
-我们在地球上生活，会体验到重力作用。虽然很多时候我们都想摆脱重力，自由的飞翔，但是重力对于我们的生活和健康有很重要的作用。例如我们走路，如果没有重力，轻轻一碰地面就飘起来了，走起路来可就得手脚并用了。或许这并不坏，可是如果我们想要冲一杯热茶，谁知道却怎么也没法把热水倒出来。更要命的事情是，在失重状态下，人的骨骼和肌肉的会有严重的问题。[[^1]]
+我们在地球上生活，会体验到重力作用。虽然很多时候我们都想摆脱重力，自由的飞翔，但是重力对于我们的生活和健康有很重要的作用。例如我们走路，如果没有重力，轻轻一碰地面就飘起来了，走起路来可就得手脚并用了。或许这并不坏，可是如果我们想要冲一杯热茶，谁知道却怎么也没法把热水倒出来。更要命的事情是，在失重状态下，人的骨骼和肌肉的会有严重的问题。[^1]
 
 所以，如果要建造大规模的民用空间站，需要先解决失重的问题。一个比较有趣的方法是 O'Neill 提出的通过让空间站旋转来模拟重力。
 
@@ -25,23 +25,34 @@ O'Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下
 
 <figure markdown="1">
 <figcaption>
-<a href="http://hongzai-story.blogspot.com/2010/10/blog-post.html">来源</a>
+图片来源：http://imageshack.us/photo/my-images/11/1109702023694.jpg/
 </figcaption>
-![]({{site.url}}/images/posts/quantum-love/single.gif)
+![]({{site.url}}/images/posts/oneill-space-station/spacestation-636x310.jpg)
 </figure>
 
-<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/spacestation-636x310.jpg" alt="spacestation" width="550" />
 
-（图片来源：http://imageshack.us/photo/my-images/11/1109702023694.jpg/ ）
+
 
 当然，我们要研究物理，不需要这么花哨，只需要画一个圆筒就行了：
 
-<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/oneilcan.jpg" alt="oneilcan"/>
+<figure markdown="1">
+<figcaption>
+图片来源 http://www.dvandom.com/coriolis/spacestation.html 
+</figcaption>
+![]({{site.url}}/images/posts/oneill-space-station/oneilcan.jpg)
+</figure>
 
-（图片来源 http://www.dvandom.com/coriolis/spacestation.html ）
+
 
 只要让这个圆筒适当的旋转，生活在圆筒内壁的人就可以体验到模拟的重力。这是一个比较容易理解的现象，比如杂技团常常表演的水流星节目，也就是拿了一对盛有水的碗，用绳子连起来，然后旋转他们，如下图：
-<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/waterMeteor.gif" alt="waterMeteor" width="174"/>
+
+<figure markdown="1">
+<figcaption>
+水流星
+</figcaption>
+![]({{site.url}}/images/posts/oneill-space-station/waterMeteor.gif)
+</figure>
+
 
 旋转时让碗口朝向内侧，这样水不会洒出来。原因大家也都清楚，是一种离心作用。
 
@@ -49,7 +60,9 @@ O'Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下
 ## Coriolis Effect
 
 但是，站在空间站内壁的人们还会体验到另外一种作用，就是 Coriolis 作用。关于这种作用，可以看下面的这个视频：
+
 <embed src="http://player.youku.com/player.php/sid/XNjA0NjY5MzY=/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"/>
+
 （iOS请点击视频链接：<a href="http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html">http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html</a> ）
 
 这个视频说的是，如果我们站在一个转动的圆盘上面开炮，会发现似乎有一只神奇的手把炮弹推向了一边，而不是我们常识中的（在地面的投影）是一条直线。这只神奇的手就是科里奥利力。当然，如果我们站在地面上看，而不是圆盘上，炮弹自然还是一条直线。
@@ -59,15 +72,23 @@ O'Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下
 ## 自由落体运动
 
 我们生活中最熟悉的运动之一是自由落体运动，例如：
-<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/falling.jpg" alt="falling" width="500"/>
+
+<figure markdown="1">
+<figcaption>
+落体运动
+</figcaption>
+![]({{site.url}}/images/posts/oneill-space-station/falling.jpg)
+</figure>
 
 （当然，我们通常说的自由落体是指是理想的情况，没有空气阻力。）
 
 初速度为零，从距离地面高度为 h 的地方开始自由落体的物体的运动是由下面的公式描述的：
 
+$$
 \begin{equation}
 x=h-\frac{1}{2}g t^2
 \end{equation}
+$$
 
 其中 g 是指的重力常数。
 
@@ -82,19 +103,23 @@ x=h-\frac{1}{2}g t^2
 
 经过简单的计算，在一个半径为 R 的旋转角速度为 $\omega$ 的 O'Neill Cylinder 中，如果斜塔的高度 h< <R，并且小球落地的时间是远远小于圆筒转动一个周期的时间，那么我们可以得到从斜塔上面落体的运动方程（保留到 $(\omega t)^3$）：
 
+$$
 \begin{equation}
 z'(t) = h - \frac{1}{2} R (\omega t)^2 \\\\
 x'(t) = -\frac{1}{3}R(\omega t)^3
 \end{equation}
+$$
 
 这里的 z' 坐标半径方向的，也就是空间站内部人看来的竖直向上，x' 是指的沿着转动方向与 z' 轴垂直的轴的坐标。下面是一个空间站的截面图，里面绘制了坐标的约定：
 <img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/ScreenshotAt.png" alt="ScreenshotAt" width="550"/>
 
 如果仅仅保留到 $(\omega t)^3$ 阶，那么在竖直方向上，确实看起来是一个自由落体运动，只需要让空间站的参数满足 $R\omega^2 = g$ 就可以跟地面一样了（g 是重力加速度）。但是，同时在（空间站内部看来的切平面）“水平”方向有个偏离（由上面提到的 Coriolis effect 引起的），但是这个偏离很小，如果空间站参数满足了竖直方向的自由落体运动跟地面一样，那么当物体“落地”后，这个偏离跟下落高度 h 的比值只有
 
+$$
 \begin{equation}
 \frac{x'}{h} = -\frac{2\sqrt{2}}{3}\sqrt{\frac{h}{R}}
 \end{equation}
+$$
 
 在上面所说的参数下，只要我们的下落高度跟空间站半径比起来小得多，这个偏离就可以忽略，空间站里面的自由落体就跟地面的自由落体相差不多。
 
@@ -125,4 +150,4 @@ x'(t) = -\frac{1}{3}R(\omega t)^3
 ## 附录
 
 这个问题的解法在这里：
-<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/ONeilCylinder.pdf">ONeilCylinder</a> (Credit: <a href="http://en.wikipedia.org/wiki/Carlton_M._Caves" title="Carlton M. Caves">Carlton M. Caves</a>)
+[ONeilCylinder]({{site.url}}/images/posts/oneill-space-station/ONeilCylinder.pdf) (Credit: [Carlton M. Caves](http://en.wikipedia.org/wiki/Carlton_M._Caves))
