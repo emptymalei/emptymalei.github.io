@@ -12,9 +12,6 @@ summary: 之前写过《爱情的严格量子力学描述》，由于只是初�
 
 
 
-$$\newcommand{\bra}[1]{\left\langle #1\right|}
-\newcommand{\ket}[1]{\left| #1\right\rangle}
-\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}$$
 
 
 系列文章目录：

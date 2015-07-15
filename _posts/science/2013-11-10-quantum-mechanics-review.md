@@ -15,12 +15,6 @@ summary: 量子力学回顾系列是为果壳的 [纠缠与相干](http://www.gu
 
 
 
-$$\newcommand{\ud}[1]{{#1^{\dagger}}}
-\newcommand\Tr{\mathrm{Tr}}
-\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
-\newcommand\d{\mathrm{d}}
-\newcommand\I{\mathbb{I}}
-\newcommand{\avg}[1]{\left< #1 \right>}$$
 
 
 -----
@@ -107,7 +101,7 @@ $$\newcommand{\ud}[1]{{#1^{\dagger}}}
 
 * State 的演化遵从 Schrodinger 方程（就不打那两个点了....希望 Schrodinger 先生不要介意）
 
-  $$i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} $$
+  $$i\hbar \frac{\d}{d t}\ket{\psi(t)} = \hat H \ket{\psi(t)} $$
 
   $\hat H$ 是 Hamiltonian Operator.
 
@@ -141,9 +135,9 @@ $$\hat U \ket{\psi(t_0)} = \ket{\psi(t)}$$
 
 $$
 \begin{eqnarray}
-     i\hbar \frac{\d }{\d t}\ket{\psi(t)} &=& \hat H \ket{\psi(t)} \\
-     i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &=& \hat H \hat U \ket{\psi(t_0)} \\
-     i\hbar \frac{\d }{\d t}\hat U &=& \hat H \hat U
+     i\hbar \frac{d }{d t}\ket{\psi(t)} &=& \hat H \ket{\psi(t)} \\
+     i\hbar \frac{d }{d t}\hat U \ket{\psi(t_0)} &=& \hat H \hat U \ket{\psi(t_0)} \\
+     i\hbar \frac{d }{d t}\hat U &=& \hat H \hat U
 \end{eqnarray}
 $$
 

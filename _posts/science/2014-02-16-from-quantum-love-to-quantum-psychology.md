@@ -13,10 +13,6 @@ summary: 最近写了两篇关于用量子理论的方法来描述爱情的文�
 
 
 
-$$\newcommand{\bra}[1]{\left\langle #1\right|}
-\newcommand{\ket}[1]{\left| #1\right\rangle}
-\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}
-\newcommand{\avg}[1]{\left< #1 \right>}$$
 
 
 系列文章目录：
