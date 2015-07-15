@@ -28,7 +28,7 @@ summary: 这篇文章中，我会重新描述量子爱情的理论并且给出�
 -----
 
 
-之前写过几篇量子爱情的文章（[《爱情的严格量子力学描述》](/science/quantum-love.html), [《爱情的量子理论2》](/science/quantum-love-2.html)，[《心理叠加态：从量子爱情到人的所有心理》](/science/from-quantum-love-to-quantum-psychology.html)），当时并没有一个很清楚的思路，所以实际上写的并不是很清楚。
+之前写过几篇量子爱情的文章（[《爱情的严格量子力学描述》](/science/quantum-love/), [《爱情的量子理论2》](/science/quantum-love-2/)，[《心理叠加态：从量子爱情到人的所有心理》](/science/from-quantum-love-to-quantum-psychology/)），当时并没有一个很清楚的思路，所以实际上写的并不是很清楚。
 
 **这篇文章中，我会重新描述量子爱情的理论并且给出一种通过统计数据建立量子爱情模型的方法。**
 
