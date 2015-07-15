@@ -18,19 +18,20 @@ $$\newcommand{\bra}[1]{\left\langle #1\right|}
 
 
 系列文章目录：
-* 第一篇：[爱情的严格量子力学描述](quantum-love.html)
-* 第二篇：[爱情的量子理论2](quantum-love-2.html})
-* 第三篇：[心理叠加态：从量子爱情到人的所有心理](from-quantum-love-to-quantum-psychology.html)
-* 第四篇：[基于统计数据的量子爱情](quantum-psychology-cognition-and-statistics.html)
+
+* 第一篇：[爱情的严格量子力学描述](/science/quantum-love.html)
+* 第二篇：[爱情的量子理论2](/science/quantum-love-2.html})
+* 第三篇：[心理叠加态：从量子爱情到人的所有心理](/science/from-quantum-love-to-quantum-psychology.html)
+* 第四篇：[基于统计数据的量子爱情](/science/quantum-psychology-cognition-and-statistics.html)
 
 
 -----
 
-这是系列文的第二篇，第一篇在此：[爱情的严格量子力学描述](http://multiverse.lamost.org/blog/6207)
+这是系列文的第二篇，第一篇在此：[爱情的严格量子力学描述](/science/quantum-love.html)
 
 ------
 
-之前写过 [爱情的严格量子力学描述](http://multiverse.lamost.org/blog/6207)，由于只是初步想法，所以很多事情没有说清楚。这篇文章就尝试把这些概念弄清楚。所要讨论的大致包括主要假设的确定，状态的描述，演化方程以及结果的提取。
+之前写过 [爱情的严格量子力学描述](/science/quantum-love.html)，由于只是初步想法，所以很多事情没有说清楚。这篇文章就尝试把这些概念弄清楚。所要讨论的大致包括主要假设的确定，状态的描述，演化方程以及结果的提取。
 
 总的说来，思路是这样的，我们提取了量子力学里面的一些方法，然后找出合适的方法来描述爱情。总结在一个 Mindmap 中，是这样的：
 
@@ -71,19 +72,19 @@ $$ \{\ket{\mathrm{Boy}},\ket{\mathrm{Girl}} \} $$
 
 $$C_1 \ket{\mathrm{Boy}} + C_2 \ket{\mathrm{Girl} }$$
 
-表示一个人是有 $|C_1|^2$ 成分的男孩和 $|C_2|^2$ 的女孩组成的。我个人觉得这是通常的一种情况吧，有时候像个男孩，有时候像个女孩。
+表示一个人是有 $\lvert C_1\rvert^2$ 成分的男孩和 $\lvert C_2\rvert^2$ 的女孩组成的。我个人觉得这是通常的一种情况吧，有时候像个男孩，有时候像个女孩。
 
-这样当我们测量性别本征态的时候，单次测量的结果是以 $|C_1|^2/(|C_1|^2 + |C_2|^2)$ 的概率出现男孩，$|C_2|^2/(|C_1|^2 + |C_2|^2)$ 的概率出现女孩。
+这样当我们测量性别本征态的时候，单次测量的结果是以 $\lvert C_1\rvert ^2/(\lvert C_1\rvert^2 + \lvert C_2\rvert ^2)$ 的概率出现男孩，$\lvert C_2\rvert^2/(\lvert C_1\rvert ^2 + \lvert C_2\rvert^2)$ 的概率出现女孩。
 
 那么，你会问，我们的算符应该是什么样呢？
 
 回忆一下，在 Stern Gerlach 实验中，对于自旋 1/2 的电子测量的时候，如果使用了 Pauli 矩阵，
 
-$ \sigma_z = \begin{pmatrix}1 & 0\\\\ 0 & -1\end{pmatrix}$
+$$ \sigma_z = \begin{pmatrix}1 & 0\\ 0 & -1\end{pmatrix}$$
 
 同样，我们可以使用 $\\{ \ket{\mathrm{Boy}},\ket{\mathrm{Girl}} \\}$, 然后处在男孩态可以写成 $(1,0)^T$。那么测量男孩女孩就对应于
 
-$ G_z = \begin{pmatrix}1 & 0\\\\ 0 & -1\end{pmatrix}$
+$$ G_z = \begin{pmatrix}1 & 0\\ 0 & -1\end{pmatrix}$$
 
 我们会发现男孩女孩态正好是这个算符的本征态。
 

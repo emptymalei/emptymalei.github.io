@@ -20,10 +20,11 @@ $$\newcommand{\bra}[1]{\left\langle #1\right|}
 
 系列文章目录：
 
-* 第一篇：[爱情的严格量子力学描述](quantum-love.html)
-* 第二篇：[爱情的量子理论2](quantum-love-2.html})
-* 第三篇：[心理叠加态：从量子爱情到人的所有心理](from-quantum-love-to-quantum-psychology.html)
-* 第四篇：[基于统计数据的量子爱情](quantum-psychology-cognition-and-statistics.html)
+* 第一篇：[爱情的严格量子力学描述](/science/quantum-love.html)
+* 第二篇：[爱情的量子理论2](/science/quantum-love-2.html})
+* 第三篇：[心理叠加态：从量子爱情到人的所有心理](/science/from-quantum-love-to-quantum-psychology.html)
+* 第四篇：[基于统计数据的量子爱情](/science/quantum-psychology-cognition-and-statistics.html)
+
 
 -----
 
@@ -198,7 +199,7 @@ $$ \ket{\psi} = \frac{1}{\sqrt{2}}( \ket{\mathrm{Boy's State1}} \ket{\mathrm{Gir
 
 -----
 
-第二篇：[爱情的量子理论2](quantum-love-2.html)
+第二篇：[爱情的量子理论2](/science/quantum-love-2.html)
 
 
 [^0]: 赶紧划掉，已经不是单身了。
