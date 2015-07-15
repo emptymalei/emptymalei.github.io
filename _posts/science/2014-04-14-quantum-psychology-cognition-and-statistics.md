@@ -13,10 +13,10 @@ summary: 这篇文章中，我会重新描述量子爱情的理论并且给出�
 
 系列文章目录： 
 
-* 第一篇：[爱情的严格量子力学描述](/science/quantum-love.html)
-* 第二篇：[爱情的量子理论2](/science/quantum-love-2.html})
-* 第三篇：[心理叠加态：从量子爱情到人的所有心理](/science/from-quantum-love-to-quantum-psychology.html)
-* 第四篇：[基于统计数据的量子爱情](/science/quantum-psychology-cognition-and-statistics.html)
+* 第一篇：[爱情的严格量子力学描述](/science/quantum-love/)
+* 第二篇：[爱情的量子理论2](/science/quantum-love-2/)
+* 第三篇：[心理叠加态：从量子爱情到人的所有心理](/science/from-quantum-love-to-quantum-psychology/)
+* 第四篇：[基于统计数据的量子爱情](/science/quantum-psychology-cognition-and-statistics/)
 
 
 -----
@@ -27,7 +27,6 @@ summary: 这篇文章中，我会重新描述量子爱情的理论并且给出�
 
 -----
 
-$$\newcommand{\ud}[1]{{#1^{\dagger}}} \newcommand{\bra}[1]{\left\langle #1\right|} \newcommand{\ket}[1]{\left| #1\right\rangle} \newcommand\Tr{\mathrm{Tr}} \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle} \newcommand\d{\mathrm{d}} \newcommand\I{\mathbb{I}} \newcommand{\avg}[1]{\left< #1 \right>}$$
 
 之前写过几篇量子爱情的文章（[《爱情的严格量子力学描述》](/science/quantum-love.html), [《爱情的量子理论2》](/science/quantum-love-2.html)，[《心理叠加态：从量子爱情到人的所有心理》](/science/from-quantum-love-to-quantum-psychology.html)），当时并没有一个很清楚的思路，所以实际上写的并不是很清楚。
 
@@ -35,7 +34,7 @@ $$\newcommand{\ud}[1]{{#1^{\dagger}}} \newcommand{\bra}[1]{\left\langle #1\right
 
 ## 所谓量子
 
-在开始说这个理论之前，我先介绍一下背景。实际上正如我在[《心理叠加态：从量子爱情到人的所有心理》](/science/from-quantum-love-to-quantum-psychology.html)这篇文章里面写的一样，这个方法不能叫做“量子”，这种方法只是借用了量子量子力学里面的数学结构，但是到目前为止我并没有感觉到量子化会有什么深刻的意义。而之所以能够借用这种数学结构，是有着一定的心理学实验基础的。
+在开始说这个理论之前，我先介绍一下背景。实际上正如我在[《心理叠加态：从量子爱情到人的所有心理》](/science/from-quantum-love-to-quantum-psychology/)这篇文章里面写的一样，这个方法不能叫做“量子”，这种方法只是借用了量子量子力学里面的数学结构，但是到目前为止我并没有感觉到量子化会有什么深刻的意义。而之所以能够借用这种数学结构，是有着一定的心理学实验基础的。
 
 Hampton 在 1988 年发表的一篇论文显示，经典的统计理论可能在处理人的认知问题的时候不再成立。Hampton 实验大致是一个让人们辨认某件 item 是属于那个 concept 的实验，实验结果用 0 到 1 来显示被试认为某个 item 是 concept 的指数，如果是 1 就是百分百确定这个 item 属于这个 concept。[^1]
 

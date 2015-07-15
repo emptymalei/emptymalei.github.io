@@ -16,19 +16,19 @@ summary: 之前写过《爱情的严格量子力学描述》，由于只是初�
 
 系列文章目录：
 
-* 第一篇：[爱情的严格量子力学描述](/science/quantum-love.html)
-* 第二篇：[爱情的量子理论2](/science/quantum-love-2.html})
-* 第三篇：[心理叠加态：从量子爱情到人的所有心理](/science/from-quantum-love-to-quantum-psychology.html)
-* 第四篇：[基于统计数据的量子爱情](/science/quantum-psychology-cognition-and-statistics.html)
+* 第一篇：[爱情的严格量子力学描述](/science/quantum-love/)
+* 第二篇：[爱情的量子理论2](/science/quantum-love-2/)
+* 第三篇：[心理叠加态：从量子爱情到人的所有心理](/science/from-quantum-love-to-quantum-psychology/)
+* 第四篇：[基于统计数据的量子爱情](/science/quantum-psychology-cognition-and-statistics/)
 
 
 -----
 
-这是系列文的第二篇，第一篇在此：[爱情的严格量子力学描述](/science/quantum-love.html)
+这是系列文的第二篇，第一篇在此：[爱情的严格量子力学描述](/science/quantum-love/)
 
 ------
 
-之前写过 [爱情的严格量子力学描述](/science/quantum-love.html)，由于只是初步想法，所以很多事情没有说清楚。这篇文章就尝试把这些概念弄清楚。所要讨论的大致包括主要假设的确定，状态的描述，演化方程以及结果的提取。
+之前写过 [爱情的严格量子力学描述](/science/quantum-love/)，由于只是初步想法，所以很多事情没有说清楚。这篇文章就尝试把这些概念弄清楚。所要讨论的大致包括主要假设的确定，状态的描述，演化方程以及结果的提取。
 
 总的说来，思路是这样的，我们提取了量子力学里面的一些方法，然后找出合适的方法来描述爱情。总结在一个 Mindmap 中，是这样的：
 
@@ -151,8 +151,8 @@ $$\ket{L} = \ket{\mathrm{Single}}\ket{\mathrm{Single}}$$
 到现在位置，我们讨论了很多状态的描述和解释，以及测量的问题。另外一个大问题是演化的问题，这也涉及到如何让两个原本不想爱的人相爱，如何让爱你的人爱上你，如何让爱你的人变得不爱你这样的问题。关于这些，我会写在量子爱情系列的下一篇中。
 
 -----
-这是系列文的第二篇，第一篇在此：[爱情的严格量子力学描述](quantum-love.html)
+这是系列文的第二篇，第一篇在此：[爱情的严格量子力学描述](/science/quantum-love/)
 
 
-[^1]:  之前的文章中提到了：[爱情的严格量子力学描述](quantum-love.html)。
+[^1]:  之前的文章中提到了：[爱情的严格量子力学描述](/science/quantum-love/)。
 [^2]:  由于暂时没有实数本征值的需求，索要待讨论。
