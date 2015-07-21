@@ -18,7 +18,7 @@ summary: 我们都说微分和积分是一对互逆的运算，那么究竟怎�
 <figcaption>
 来源：<a href="https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual/blob/master/math/assets/DifferentialANDIntegralOnOnePage.png">Physics Reasearch Survival Manual</a>
 </figcaption>
-![]({{site.url}}/images//one-page-calculus/DifferentialANDIntegralOnOnePage.png)
+![]({{site.url}}/images/one-page-calculus/DifferentialANDIntegralOnOnePage.png)
 </figure>
 
 
