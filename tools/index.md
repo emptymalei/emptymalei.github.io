@@ -21,6 +21,7 @@ This is a CC BY-SA licensed project. Use the source! Keep the source open!
 * [Be Organized](be-organized.html)
 * [Academic](academic.html)
 * [Cloud Services](cloud-services.html)
+* [Data Visualization](datavis.html)
 * [Publishing](publishing.html)
 * [Note Taking](note-taking.html)
 * [Presentation](presentation.html)

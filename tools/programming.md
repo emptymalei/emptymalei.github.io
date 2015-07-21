@@ -28,6 +28,13 @@ There are much more programming languages than you need. Many are utilized in so
 
 #### [Python](https://www.python.org/)
 
+Here is a nice tool for python debugging and perfomance improvement.
+
 #### [Julia](http://julialang.org/)
 
 #### [R](http://www.r-project.org/)
+
+
+### Coding is Fun
+
+[Code Fights](https://codefights.com/)

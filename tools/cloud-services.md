@@ -52,6 +52,7 @@ You can host one using your own machine,
 
 > 1. [StackEdit](http://stackedit.io): Markdown + Math
 > 2. [JaxEdit](http://jaxedit.com/): JaxEdit is not exactly an online LaTeX editor but anyway it uses mathjax to render math.
+> 3. [马克飞象](http://maxiang.info/) 和 [Marxico](http://marxi.co/) 是两个 evernote 的 MD 编辑器。
 
 #### Markdown
 
@@ -59,12 +60,16 @@ You can host one using your own machine,
 2. [CMD markdown](https://www.zybuluo.com/mdeditor): Basically a Chinese copy of StackEdit
 3. [Penflip](https://www.penflip.com/): Markdown based and git like.
 4. [Authorea](https://www.authorea.com/)
+5. [Dillinger](http://dillinger.io/)
+6. [Online Kramdown Editor](http://kramdown.herokuapp.com/)
+7. [Pandoc Markdown](http://pandoc.herokuapp.com/)
+8. [作业部落](https://www.zybuluo.com/)
 
 
 ### Data
 
 1. [Figshare](http://figshare.com/)
-2.
+
 
 
 ### Colors

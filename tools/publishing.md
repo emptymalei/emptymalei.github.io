@@ -81,6 +81,8 @@ These Blog/CMS softwares can be hosted on the following servers.
 
 #### Static Generator
 
+[Here is a nice website](https://staticsitegenerators.net/) that tells you all the static site generators.
+
 1. [jekyll](http://jekyllrb.com/) (Ruby): most widely used one I guess; easy to deply
 2. [Octopress](http://octopress.org/) (Ruby): easier to use compared with jekyll; somewhat compatable with jekyll
 3. [Hexo](https://github.com/tommy351/hexo) (Node.js)
@@ -88,4 +90,7 @@ These Blog/CMS softwares can be hosted on the following servers.
     * [Pelican Svbtle Theme](https://github.com/wting/pelican-svbtle)
 5. [Nikola](http://getnikola.com/) (Python): multiple formats including restructuredtext; multiple purpose
 6. [Tinkerer](http://tinkerer.me/index.html) (Python)
+7. [Hugo](http://gohugo.io/)(Go): easy to use and really fast
 
+
+There are more [here](https://staticsitegenerators.net/).

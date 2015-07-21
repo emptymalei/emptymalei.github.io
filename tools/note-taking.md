@@ -4,6 +4,13 @@ title: "Note-Taking | How to Survive Research"
 comments: true
 ---
 
+### Markdown
+
+I recommend markdown or restucturedtext as the mark up language to take notes.
+
+
+
+
 ### Mindmap
 
 * Standalone

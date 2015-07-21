@@ -9,10 +9,12 @@ comments: true
 
 * Command Line Recording: [asciinema](https://asciinema.org/)
 
-
-
-
 * [QR Code Generator](https://www.unitag.io/qrcode)
+
+## Terminal
+
+1. [plot in terminal](https://github.com/glamp/bashplotlib)
+
 
 ### Graph Making
 
