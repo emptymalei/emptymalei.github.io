@@ -24,3 +24,22 @@ comments: true
 ### HTML
 
 Use [Animate.CSS](https://github.com/daneden/animate.css) to animate contents
+
+
+### Free Multimedia
+
+Free high resolution images:
+
+1. [Unsplash](https://unsplash.com/)
+
+
+### Migrating Wordpress to Static
+
+The following command can mirror a whole website including a wordpress into a static html site locally.
+
+```
+# Mirror website to a static copy for local browsing.
+# This means all links will be changed to point to the local files.
+# Note --html-extension will convert any CGI, ASP or PHP generated files to HTML (or anything else not .html).
+wget --mirror -w 2 -p --html-extension --convert-links -P <dir> http://www.yourdomain.com
+```
