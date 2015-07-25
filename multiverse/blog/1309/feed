@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 个人信息文件</title>
+	<atom:link href="http://multiverse.lamost.org/blog/1309/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/1309</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 耿耿星河欲曙天</title>
+		<link>http://multiverse.lamost.org/blog/1309/comment-page-1#comment-214</link>
+		<dc:creator><![CDATA[耿耿星河欲曙天]]></dc:creator>
+		<pubDate>Thu, 05 May 2011 10:43:37 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1309#comment-214</guid>
+		<description><![CDATA[我以前写的：&quot;像Gavatar一样，建立一个通用的帐号，用户注册其它网站只需输入邮箱和密码。跟其它帐号相联系，建立在线CV。可自动更新。建立－个自己的在线CV。“
+
+这段应该是受到你说的那个的影响。密码保管太简单，然后可以按照你说的扩充，但是我希望有一个更好的实现方式，而不是单单的保存你说的那些信息，因为单单列举那些的话似乎没办法形成统一标准。
+
+我的初衷是，免去每次都填写很多注册信息的麻烦，更重要的是，可以再任何时候想要一份自己的CV的时候，都可以从这个网站下载一份。或者，因为网站都有倒闭的时候，我希望在一个网站，比如人人网倒闭的时候，我依然能够拿到我的一些信息，比如我在上面写过的日志，比如我在上面标记过的喜欢的文章什么的。
+
+我没想到一个比简单的列举更好的协议。
+
+昨天我看过了，其实，可以通过豆瓣人人的api获取个人信息，然后通过java或者php把这些xml文件重新组织，显示成一份个人简介。我本来想，可以通过豆瓣导出自己所有读过的书的，看过的电影的，但是没有找到这个api接口。如果能导出足够的信息，那么可以做一份非常详细的个人文档，详细到自己读过的书，看过的电影，收藏过的网站，而且可以得到一份关于自己的非常详细的网络活动统计单，在人人上发了多少posts，豆瓣有多少我说，fb有多少好友，twitter的平均字数等等~
+
+我想以后的CV不会是像我们写的那种那么单纯了，肯定会多出很多的网络元素，那时候，这样一份关于自己的网络的CV就很重要，而且我想，这个可以往下发展，具有很大的可持续性发展的前景。
+
+当然，实际上，FB来做这件事情是最方便的。]]></description>
+		<content:encoded><![CDATA[<p>我以前写的：&#8221;像Gavatar一样，建立一个通用的帐号，用户注册其它网站只需输入邮箱和密码。跟其它帐号相联系，建立在线CV。可自动更新。建立－个自己的在线CV。“</p>
+<p>这段应该是受到你说的那个的影响。密码保管太简单，然后可以按照你说的扩充，但是我希望有一个更好的实现方式，而不是单单的保存你说的那些信息，因为单单列举那些的话似乎没办法形成统一标准。</p>
+<p>我的初衷是，免去每次都填写很多注册信息的麻烦，更重要的是，可以再任何时候想要一份自己的CV的时候，都可以从这个网站下载一份。或者，因为网站都有倒闭的时候，我希望在一个网站，比如人人网倒闭的时候，我依然能够拿到我的一些信息，比如我在上面写过的日志，比如我在上面标记过的喜欢的文章什么的。</p>
+<p>我没想到一个比简单的列举更好的协议。</p>
+<p>昨天我看过了，其实，可以通过豆瓣人人的api获取个人信息，然后通过java或者php把这些xml文件重新组织，显示成一份个人简介。我本来想，可以通过豆瓣导出自己所有读过的书的，看过的电影的，但是没有找到这个api接口。如果能导出足够的信息，那么可以做一份非常详细的个人文档，详细到自己读过的书，看过的电影，收藏过的网站，而且可以得到一份关于自己的非常详细的网络活动统计单，在人人上发了多少posts，豆瓣有多少我说，fb有多少好友，twitter的平均字数等等~</p>
+<p>我想以后的CV不会是像我们写的那种那么单纯了，肯定会多出很多的网络元素，那时候，这样一份关于自己的网络的CV就很重要，而且我想，这个可以往下发展，具有很大的可持续性发展的前景。</p>
+<p>当然，实际上，FB来做这件事情是最方便的。</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 李 白</title>
+		<link>http://multiverse.lamost.org/blog/1309/comment-page-1#comment-213</link>
+		<dc:creator><![CDATA[李 白]]></dc:creator>
+		<pubDate>Thu, 05 May 2011 07:07:26 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1309#comment-213</guid>
+		<description><![CDATA[我记得我以前跟你提过，就是我现在的帐号很多，密码很多，这样就有忘记的时候，为了忘不了，似乎可以有个机构专门为网民提供网络帐号、密码等的存储服务（不仅局限于存储，而是像你网站的登陆界面那样，能够方便地为你向第三方网站提交登录信息），当然，这其中也可以存储个人信息：性别，生日，爱好……]]></description>
+		<content:encoded><![CDATA[<p>我记得我以前跟你提过，就是我现在的帐号很多，密码很多，这样就有忘记的时候，为了忘不了，似乎可以有个机构专门为网民提供网络帐号、密码等的存储服务（不仅局限于存储，而是像你网站的登陆界面那样，能够方便地为你向第三方网站提交登录信息），当然，这其中也可以存储个人信息：性别，生日，爱好……</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

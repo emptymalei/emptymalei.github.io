@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Date Visualization</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/date-visualization/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>用Mathematica进行个人数据分析</title>
+		<link>http://multiverse.lamost.org/blog/2702</link>
+		<comments>http://multiverse.lamost.org/blog/2702#comments</comments>
+		<pubDate>Fri, 06 Apr 2012 16:14:22 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Date Visualization]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2702</guid>
+		<description><![CDATA[2012-06-11更新数据 今天带实验的时候无聊，把校园卡系统的日志复制出来，然后用Mathematica进行了简单的处理。得到几张图，说明了几个问题。 第一张图是2011年10月底到2012年四月初的消费数据。横轴是日期，纵轴是此日期何时消费。橙色点表示餐厅消费。蓝色点表示学校超市消费。 这张图很明确的说明我的午饭和晚饭时间在这段时期内出奇的稳定！午饭时间基本是11:00到11:20之间，而晚饭时间基本在17:00到17:30之间。 第二张图是2011年10月底到2012年四月初的刷开门禁的数据。实际上这差不多可以表征我的睡觉的时间，因为我的大部分洗刷用具在办公室放着，洗刷洗澡不用回寝室取东西。回寝室基本就是睡觉了。不过这个表征不是特别准确，可能回去还会看点书，聊聊天，洗洗衣服什么的。 来一张AspectRatio->0.3的图片： 这张图确认了我的睡眠不规律的特性…… ==！不过基本是夜猫子型……<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4122" rel="bookmark" title="知乎：银河系和狭义相对论">知乎：银河系和狭义相对论 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1126" rel="bookmark" title="相对论心理学2">相对论心理学2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/933" rel="bookmark" title="相对论心理学1">相对论心理学1 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>2012-06-11更新数据</p>
+<hr />
+<p>今天带实验的时候无聊，把校园卡系统的日志复制出来，然后用Mathematica进行了简单的处理。得到几张图，说明了几个问题。<span id="more-2702"></span></p>
+<p>第一张图是2011年10月底到2012年四月初的消费数据。横轴是日期，纵轴是此日期何时消费。橙色点表示餐厅消费。蓝色点表示学校超市消费。</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/When.jpg" ><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/When.jpg" width="560px" /></a>
+</p>
+<p>这张图很明确的说明我的午饭和晚饭时间在这段时期内出奇的稳定！午饭时间基本是11:00到11:20之间，而晚饭时间基本在17:00到17:30之间。</p>
+<p>第二张图是2011年10月底到2012年四月初的刷开门禁的数据。实际上这差不多可以表征我的睡觉的时间，因为我的大部分洗刷用具在办公室放着，洗刷洗澡不用回寝室取东西。回寝室基本就是睡觉了。不过这个表征不是特别准确，可能回去还会看点书，聊聊天，洗洗衣服什么的。<br />
+来一张AspectRatio->0.3的图片：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/DoorLong.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/DoorLong.jpg" width="560" /></a>
+</p>
+<p>这张图确认了我的睡眠不规律的特性…… ==！不过基本是夜猫子型……</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4122" rel="bookmark" title="知乎：银河系和狭义相对论">知乎：银河系和狭义相对论 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1126" rel="bookmark" title="相对论心理学2">相对论心理学2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/933" rel="bookmark" title="相对论心理学1">相对论心理学1 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2702/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

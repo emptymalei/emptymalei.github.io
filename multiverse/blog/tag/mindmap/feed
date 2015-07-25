@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Mindmap</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/mindmap/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>美丽的TeX： texample.net &#124; txt2tags.org &#124; S5</title>
+		<link>http://multiverse.lamost.org/blog/1513</link>
+		<comments>http://multiverse.lamost.org/blog/1513#comments</comments>
+		<pubDate>Fri, 01 Jul 2011 14:45:21 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Coding]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[Mindmap]]></category>
+		<category><![CDATA[TeX]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1513</guid>
+		<description><![CDATA[一个非常好的TeX网站，不是教学的，是用来秀TeX的美丽的。 texample.net 主要是Tikz包。我之前想找一个可以方便的写mindmap，又可以方面的在mindmap中使用公式的方法，然后我就找到这个网站。例子如下：http://www.texample.net/tikz/examples/feature/mindmaps/ 可以看到例子都很漂亮，可以很方便的改版式和颜色。其实最关键的是可以使用公式！ 另外几个网站： txt2tags：http://txt2tags.org/ 可以将markup语言的文本转换成各种不同的格式。比如转换成html等等。 S5： http://meyerweb.com/eric/tools/s5/ 可以帮助写网页版的slides。这个很有用。这样写出来的slides可以放在各种各样的电脑上用。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1582" rel="bookmark" title="豆瓣开始使用Mathjax">豆瓣开始使用Mathjax </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>一个非常好的TeX网站，不是教学的，是用来秀TeX的美丽的。<br />
+<a href="http://texample.net" target="_blank">texample.net</a></p>
+<p>主要是Tikz包。我之前想找一个可以方便的写mindmap，又可以方面的在mindmap中使用公式的方法，然后我就找到这个网站。例子如下：<a href="http://www.texample.net/tikz/examples/feature/mindmaps/">http://www.texample.net/tikz/examples/feature/mindmaps/</a><span id="more-1513"></span></p>
+<p>可以看到例子都很漂亮，可以很方便的改版式和颜色。其实最关键的是可以使用公式！</p>
+<p>另外几个网站：</p>
+<ul>
+<li>txt2tags：<a href="http://txt2tags.org/" target="_blank">http://txt2tags.org/</a>
+<p>可以将markup语言的文本转换成各种不同的格式。比如转换成html等等。
+</li>
+<li>S5： <a href="http://meyerweb.com/eric/tools/s5/" target="_blank">http://meyerweb.com/eric/tools/s5/</a>
+<p>可以帮助写网页版的slides。这个很有用。这样写出来的slides可以放在各种各样的电脑上用。
+</li>
+</ul>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1582" rel="bookmark" title="豆瓣开始使用Mathjax">豆瓣开始使用Mathjax </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/1513/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

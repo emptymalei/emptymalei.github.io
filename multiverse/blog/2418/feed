@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 我在知乎回答的问题 &#124; 2012-03-04</title>
+	<atom:link href="http://multiverse.lamost.org/blog/2418/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/2418</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: Cross Section</title>
+		<link>http://multiverse.lamost.org/blog/2418/comment-page-1#comment-569</link>
+		<dc:creator><![CDATA[Cross Section]]></dc:creator>
+		<pubDate>Mon, 05 Mar 2012 14:52:43 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2418#comment-569</guid>
+		<description><![CDATA[哦，我没有仔细读wiki，只是凭着记忆写的。那应该叫什么呢？]]></description>
+		<content:encoded><![CDATA[<p>哦，我没有仔细读wiki，只是凭着记忆写的。那应该叫什么呢？</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: astrofanlee</title>
+		<link>http://multiverse.lamost.org/blog/2418/comment-page-1#comment-568</link>
+		<dc:creator><![CDATA[astrofanlee]]></dc:creator>
+		<pubDate>Mon, 05 Mar 2012 13:34:39 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2418#comment-568</guid>
+		<description><![CDATA[“月球为什么总是一面朝向地球呢？”
+我认为，这个现象不能叫做轨道共振。
+轨道共振涉及到两个天体的公转，这在维基条目“轨道共振”中已经说明，而维基条目“潮汐锁定”中“自转轨道共振”一节似乎有问题。]]></description>
+		<content:encoded><![CDATA[<p>“月球为什么总是一面朝向地球呢？”<br />
+我认为，这个现象不能叫做轨道共振。<br />
+轨道共振涉及到两个天体的公转，这在维基条目“轨道共振”中已经说明，而维基条目“潮汐锁定”中“自转轨道共振”一节似乎有问题。</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

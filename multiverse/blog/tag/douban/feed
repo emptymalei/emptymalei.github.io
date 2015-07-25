@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; 豆瓣</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/douban/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>豆瓣九点和博客访问量</title>
+		<link>http://multiverse.lamost.org/blog/4730</link>
+		<comments>http://multiverse.lamost.org/blog/4730#comments</comments>
+		<pubDate>Tue, 11 Dec 2012 02:39:03 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Blogging]]></category>
+		<category><![CDATA[Data Visualization]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<category><![CDATA[Visualizing Data]]></category>
+		<category><![CDATA[豆瓣]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4730</guid>
+		<description><![CDATA[到现在为止，我的博文两次上了豆瓣九点科技，所以我有两份豆瓣九点带来访客的数据。既然有了数据，那自然要利用一下。 两次分别是 2011 年 8 月 4 日到 8 月 8 日和 2012 年 12 月 8 日到 12 月 11 日（尚未完全完成）。 数据分别是 multiverse-20110804-20110808.csv：2011 年 8 月 multiverse-20121208-20121211.csv：2012 年 12 月 利用 Mathematica，把数据按照时间绘制出来。不过比较忙，所以只处理 Total Visitors 和 Unique Visitors 的数据。 （右侧是...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/5748" rel="bookmark" title="我们的征途——系外行星">我们的征途——系外行星 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4648" rel="bookmark" title="数据可视化">数据可视化 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>到现在为止，我的博文两次上了豆瓣九点科技，所以我有两份豆瓣九点带来访客的数据。既然有了数据，那自然要利用一下。</p>
+<p>两次分别是 2011 年 8 月 4 日到 8 月 8 日和 2012 年 12 月 8 日到 12 月 11 日（尚未完全完成）。</p>
+<p>数据分别是</p>
+<p style="margin:5px 15px 5px 20px;border:1px solid #7aca29;padding:2px 5px 2px 5px;">
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/multiverse-20110804-20110808.csv'>multiverse-20110804-20110808.csv：2011 年 8 月</a><br />
+<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/multiverse-20121208-20121211.csv'>multiverse-20121208-20121211.csv：2012 年 12 月</a>
+</p>
+<p>利用 Mathematica，把数据按照时间绘制出来。不过比较忙，所以只处理 Total Visitors 和 Unique Visitors 的数据。<span id="more-4730"></span></p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistors.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistors.jpg" alt="" title="2011 年 8 月" width="600" height="390" class="aligncenter size-full wp-image-4734" /></a></p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistors2.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistors2.jpg" alt="" title="2012 年 12 月" width="600" height="393" class="aligncenter size-full wp-image-4735" /></a></p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/bar.jpg" alt="" title="bar" width="7" style="float:right;" /></p>
+<p>（右侧是 BrightBands 色带，向上指数据大，向下指数据小。）=></p>
+<p>上图是去年的数据，下图是今年的数据。</p>
+<p>为了更加直观，添加了 Hue 的背景，用不同的颜色来区分一天中不同的小时。同时为了能够更好地提取出具有差不多访问者的小时时刻，使用 BrightBands 色带来填满数据点和时间轴（对于大量数据更有效些）。</p>
+<p>首先说明的是，我用的是 Pacific Time，但是从 GA 得知绝大多数用户（由于高达 85% 以上）来自国内，因此要把时间换算成北京时间，即 +16 小时，而对于去年那次，由于夏令时缘故，需 +15 小时。由于图表我另有用途，所以并不切换到北京时间，但是下文所讲的白天黑夜是北京时间。</p>
+<p>这样的话，可以用一幅图来展示代表小时的颜色的意义：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/NightDay.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/NightDay.jpg" alt="" title="NightDay" width="600" height="386" class="aligncenter size-full wp-image-4762" /></a></p>
+<p>上图中的连续色带用来表示白天黑夜，可见绿线附近是白天，而紫色粉色附近是黑夜。</p>
+<p>有了这些铺垫之后，可以很快发现，两张图的流量低谷恰在凌晨。哎，没有为我们提供新观点的可视化是没意义的。</p>
+<p>需要提到，我两次都是凌晨写的文章。但两次数据表明</p>
+<ul>
+<li>大规模的爆发皆为下午 14:00，15:00 左右。大约 9 小时（即深夜 12 点）后进入低谷，因为大家都睡觉去了。</li>
+<li>上面提到国内访客大约 85%，也就是说国内/国外近似为 5.5，到了夜间，数据主要是紫色和红色。从上面的 BrightBands 色带可以看到橙色大约是红色的六倍，与定量数据是吻合的。</li>
+<li>每天中可以看到 filling 的色带的间隔出现，比如绿色和浅蓝色的间隔出现，这是一天中访客波动造成的。这里颜色所代表的和曲线的走势相同，少量数据没有优势，但是对于大量数据的话，颜色的重复出现就更容易观察到。</li>
+<li>完整的一天大约有五次峰值。大致为早上一次，午饭前一次，午饭后一次，下午一次，晚上两次。</li>
+<li>作为上述五峰值现象的一个特殊情况，爆发第一天的时候，两次是惊人的相似。</li>
+</ul>
+<p>我这种绘图方法需要一定的了解之后才可以从中看到比较多的信息，所以不算是一种好的可视化。不过如果加上 interactive 的功能，那就好多了。</p>
+<p>在绘图过程中，我还发现一个很奇怪的现象。我把 Total Visitors 和 Unique Visitors 都导出来，然后通过设置 filling 规则为：如果 Total Visitors 数量上多于 Unique Visitors，那么使用蓝色来 fill 两者之间的差异，反之，使用桔色。<br />
+原则上来说，应该只有蓝色出现，但是实际情况却并非如此。看下图。</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistors3.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistors3.jpg" alt="" title="WebsiteVistors3" width="600" height="390" class="aligncenter size-full wp-image-4736" /></a></p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistors4.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistors4.jpg" alt="" title="WebsiteVistors4" width="600" height="393" class="aligncenter size-full wp-image-4737" /></a></p>
+<p>上图是去年的情况，下图是今年的情况。两者都有桔色出现。很好奇这是如何造成的。是统计不准确？还是我对两个概念理解有错？</p>
+<p>当然了，上面提到了两次的相似性，那么我们就把两次的情况放在一起对照吧。</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistorsCompare.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/WebsiteVistorsCompare.jpg" alt="" title="WebsiteVistorsCompare" width="600" height="390" class="aligncenter size-full wp-image-4738" /></a></p>
+<p>特别是第一天爆发的时候，两次很相似。为什么？是因为豆瓣本身的扩散方式的特点么？还是由于大家都是差不多在相同的时间工作累了让后开始豆瓣呢？抑或是统计次数太少，两次都是特殊情况？</p>
+<p>最后，来两张传统的图记录一下吧。</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/LastYear.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/LastYear.jpg" alt="" title="LastYear" width="600" height="390" class="aligncenter size-full wp-image-4789" /></a></p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/ThisYear1.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/ThisYear1.jpg" alt="" title="ThisYear" width="600" height="393" class="aligncenter size-full wp-image-4791" /></a></p>
+<hr />
+<p>代码以及本文所用图片和数据文件在此：</p>
+<p style="margin:5px 15px 5px 20px;border:1px solid #7aca29;padding:2px 5px 2px 5px;">
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/Visualization.zip'>Visualization: 数据、Mathematica及图片</a>
+</p>
+<hr />
+<p>关于作图的 post 都写完了，赶紧干正事吧~ 还要处理 BAO 的数据呢~</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/5748" rel="bookmark" title="我们的征途——系外行星">我们的征途——系外行星 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4648" rel="bookmark" title="数据可视化">数据可视化 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4730/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>豆瓣阿尔法城地图 &#124; 关于阿花城的一些小事</title>
+		<link>http://multiverse.lamost.org/blog/2061</link>
+		<comments>http://multiverse.lamost.org/blog/2061#comments</comments>
+		<pubDate>Thu, 01 Sep 2011 00:28:39 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[alphatown]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[网络]]></category>
+		<category><![CDATA[豆瓣]]></category>
+		<category><![CDATA[阿花城]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2061</guid>
+		<description><![CDATA[阿花城地图 阿花城的小事 豆瓣阿花城(Alphatown)地图测绘工程完毕。所得地图如下： 测绘完成日期：2011-09-01 阿花城信息： 按动一次方向键或者按动一次移动按钮，行动的距离是1km。（事实上由于存在时空弯曲，这种定义方法不准确。详情阅读下面的注解。） 阿花城南北横跨51km，东西横跨39km。 共有街道n条。最短的街道长1km，最长的街道长4km。 这里有个更加强大的地图： http://www.douban.com/photos/photo/1191699859/ 注解： 在测绘过程中，发现阿花城并不是建筑在平直的欧几里得空间的，而是存在一定的时空弯曲。比如在下图所示位置处： 从拐角向上走到第一个T字路口，物理距离只有2km，但是共形距离却有3km。其他的类似情况很多。 为了方便查找，本地图测绘使用的是共形距离。简单的说，就是按照测绘生成的地图上最小的街区的长度为3km绘制。 关于阿花城的一些小事 1. 发现在某甲坊大道申请小店只需要1颗小豆。不知道为什么会有这样的情况。 证据在此： 2. 在代码里面发现搜索按钮。证据在此： 3. 2011-9-01早上六点半左右，发现阿花城左下角出现一个小人，小人右边有个进度条。每跑一次，这个进度条就会减少大概五分之一（记不清了），还是有三种颜色的进度条，但是大概意思都是一样的。 大概阿花城真的要变成网游了，连真气值都加进来了哇。 可惜没截图啊。 [本post为豆瓣日记存档。]<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="#alphatownmap">阿花城地图</a><br />
+<a href="#trifling">阿花城的小事</a></p>
+<hr />
+<a name=alphatownmap> </a><br />
+豆瓣阿花城(Alphatown)地图测绘工程完毕。所得地图如下：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/alphamap1.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/alphamap1.jpg" width="520" /></a></p>
+<p>测绘完成日期：2011-09-01</p>
+<p>阿花城信息：</p>
+<p>按动一次方向键或者按动一次移动按钮，行动的距离是1km。（事实上由于存在时空弯曲，这种定义方法不准确。详情阅读下面的注解。）<br />
+阿花城南北横跨51km，东西横跨39km。<br />
+共有街道n条。最短的街道长1km，最长的街道长4km。<span id="more-2061"></span></p>
+<p>这里有个更加强大的地图：<br />
+<a href="http://www.douban.com/photos/photo/1191699859/" target="_blank">http://www.douban.com/photos/photo/1191699859/</a></p>
+<p>注解：</p>
+<p>在测绘过程中，发现阿花城并不是建筑在平直的欧几里得空间的，而是存在一定的时空弯曲。比如在下图所示位置处：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/asdfe-255x300.jpg" alt="" title="AlphaTownSub" width="320" class="aligncenter size-medium wp-image-2063" /></p>
+<p>从拐角向上走到第一个T字路口，物理距离只有2km，但是共形距离却有3km。其他的类似情况很多。<br />
+为了方便查找，本地图测绘使用的是共形距离。简单的说，就是按照测绘生成的地图上最小的街区的长度为3km绘制。</p>
+<hr />
+<a name=trifling>  </a><br />
+关于阿花城的一些小事</p>
+<p>1. 发现在某甲坊大道申请小店只需要1颗小豆。不知道为什么会有这样的情况。<br />
+证据在此：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/1.jpg" alt="" title="CheapSite" width="400"  class="aligncenter size-medium wp-image-2073" /></p>
+<p>2. 在代码里面发现搜索按钮。证据在此：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/searchalphatown.jpg" alt="" title="searchalphatown" width="400"  class="aligncenter size-medium wp-image-2074" /></p>
+<p>3. 2011-9-01早上六点半左右，发现阿花城左下角出现一个小人，小人右边有个进度条。每跑一次，这个进度条就会减少大概五分之一（记不清了），还是有三种颜色的进度条，但是大概意思都是一样的。<br />
+大概阿花城真的要变成网游了，连真气值都加进来了哇。<br />
+可惜没截图啊。</p>
+<p>[本post为豆瓣日记存档。]</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2061/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

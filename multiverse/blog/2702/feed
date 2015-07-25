@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 用Mathematica进行个人数据分析</title>
+	<atom:link href="http://multiverse.lamost.org/blog/2702/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/2702</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 星河逍遥</title>
+		<link>http://multiverse.lamost.org/blog/2702/comment-page-1#comment-579</link>
+		<dc:creator><![CDATA[星河逍遥]]></dc:creator>
+		<pubDate>Sat, 07 Apr 2012 07:26:51 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2702#comment-579</guid>
+		<description><![CDATA[&lt;p&gt;这不是分析大部分情况么，个别的就不管了~&lt;/p&gt;]]></description>
+		<content:encoded><![CDATA[<p>这不是分析大部分情况么，个别的就不管了~</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 米粒小枝</title>
+		<link>http://multiverse.lamost.org/blog/2702/comment-page-1#comment-578</link>
+		<dc:creator><![CDATA[米粒小枝]]></dc:creator>
+		<pubDate>Sat, 07 Apr 2012 01:35:25 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2702#comment-578</guid>
+		<description><![CDATA[&lt;p&gt;茄子  还记得三月底那一块橡皮6点晚饭的事么。所以晚饭时间也不是很规律哦。&lt;/p&gt;]]></description>
+		<content:encoded><![CDATA[<p>茄子  还记得三月底那一块橡皮6点晚饭的事么。所以晚饭时间也不是很规律哦。</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

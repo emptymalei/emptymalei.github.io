@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: X光和量子论实验的讲义</title>
+	<atom:link href="http://multiverse.lamost.org/blog/2454/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/2454</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: Cross Section</title>
+		<link>http://multiverse.lamost.org/blog/2454/comment-page-1#comment-571</link>
+		<dc:creator><![CDATA[Cross Section]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 13:23:12 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2454#comment-571</guid>
+		<description><![CDATA[?
+什么怎么画的？]]></description>
+		<content:encoded><![CDATA[<p>?<br />
+什么怎么画的？</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Naich</title>
+		<link>http://multiverse.lamost.org/blog/2454/comment-page-1#comment-570</link>
+		<dc:creator><![CDATA[Naich]]></dc:creator>
+		<pubDate>Sat, 10 Mar 2012 13:13:39 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2454#comment-570</guid>
+		<description><![CDATA[太牛逼了，图怎么画的？]]></description>
+		<content:encoded><![CDATA[<p>太牛逼了，图怎么画的？</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

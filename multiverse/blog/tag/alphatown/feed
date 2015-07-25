@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; alphatown</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/alphatown/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>豆瓣阿尔法城地图 &#124; 关于阿花城的一些小事</title>
+		<link>http://multiverse.lamost.org/blog/2061</link>
+		<comments>http://multiverse.lamost.org/blog/2061#comments</comments>
+		<pubDate>Thu, 01 Sep 2011 00:28:39 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[alphatown]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[网络]]></category>
+		<category><![CDATA[豆瓣]]></category>
+		<category><![CDATA[阿花城]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2061</guid>
+		<description><![CDATA[阿花城地图 阿花城的小事 豆瓣阿花城(Alphatown)地图测绘工程完毕。所得地图如下： 测绘完成日期：2011-09-01 阿花城信息： 按动一次方向键或者按动一次移动按钮，行动的距离是1km。（事实上由于存在时空弯曲，这种定义方法不准确。详情阅读下面的注解。） 阿花城南北横跨51km，东西横跨39km。 共有街道n条。最短的街道长1km，最长的街道长4km。 这里有个更加强大的地图： http://www.douban.com/photos/photo/1191699859/ 注解： 在测绘过程中，发现阿花城并不是建筑在平直的欧几里得空间的，而是存在一定的时空弯曲。比如在下图所示位置处： 从拐角向上走到第一个T字路口，物理距离只有2km，但是共形距离却有3km。其他的类似情况很多。 为了方便查找，本地图测绘使用的是共形距离。简单的说，就是按照测绘生成的地图上最小的街区的长度为3km绘制。 关于阿花城的一些小事 1. 发现在某甲坊大道申请小店只需要1颗小豆。不知道为什么会有这样的情况。 证据在此： 2. 在代码里面发现搜索按钮。证据在此： 3. 2011-9-01早上六点半左右，发现阿花城左下角出现一个小人，小人右边有个进度条。每跑一次，这个进度条就会减少大概五分之一（记不清了），还是有三种颜色的进度条，但是大概意思都是一样的。 大概阿花城真的要变成网游了，连真气值都加进来了哇。 可惜没截图啊。 [本post为豆瓣日记存档。]<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="#alphatownmap">阿花城地图</a><br />
+<a href="#trifling">阿花城的小事</a></p>
+<hr />
+<a name=alphatownmap> </a><br />
+豆瓣阿花城(Alphatown)地图测绘工程完毕。所得地图如下：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/alphamap1.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/alphamap1.jpg" width="520" /></a></p>
+<p>测绘完成日期：2011-09-01</p>
+<p>阿花城信息：</p>
+<p>按动一次方向键或者按动一次移动按钮，行动的距离是1km。（事实上由于存在时空弯曲，这种定义方法不准确。详情阅读下面的注解。）<br />
+阿花城南北横跨51km，东西横跨39km。<br />
+共有街道n条。最短的街道长1km，最长的街道长4km。<span id="more-2061"></span></p>
+<p>这里有个更加强大的地图：<br />
+<a href="http://www.douban.com/photos/photo/1191699859/" target="_blank">http://www.douban.com/photos/photo/1191699859/</a></p>
+<p>注解：</p>
+<p>在测绘过程中，发现阿花城并不是建筑在平直的欧几里得空间的，而是存在一定的时空弯曲。比如在下图所示位置处：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/asdfe-255x300.jpg" alt="" title="AlphaTownSub" width="320" class="aligncenter size-medium wp-image-2063" /></p>
+<p>从拐角向上走到第一个T字路口，物理距离只有2km，但是共形距离却有3km。其他的类似情况很多。<br />
+为了方便查找，本地图测绘使用的是共形距离。简单的说，就是按照测绘生成的地图上最小的街区的长度为3km绘制。</p>
+<hr />
+<a name=trifling>  </a><br />
+关于阿花城的一些小事</p>
+<p>1. 发现在某甲坊大道申请小店只需要1颗小豆。不知道为什么会有这样的情况。<br />
+证据在此：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/1.jpg" alt="" title="CheapSite" width="400"  class="aligncenter size-medium wp-image-2073" /></p>
+<p>2. 在代码里面发现搜索按钮。证据在此：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/searchalphatown.jpg" alt="" title="searchalphatown" width="400"  class="aligncenter size-medium wp-image-2074" /></p>
+<p>3. 2011-9-01早上六点半左右，发现阿花城左下角出现一个小人，小人右边有个进度条。每跑一次，这个进度条就会减少大概五分之一（记不清了），还是有三种颜色的进度条，但是大概意思都是一样的。<br />
+大概阿花城真的要变成网游了，连真气值都加进来了哇。<br />
+可惜没截图啊。</p>
+<p>[本post为豆瓣日记存档。]</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2061/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

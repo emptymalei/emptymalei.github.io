@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 大型流星雨观测</title>
+	<atom:link href="http://multiverse.lamost.org/blog/294/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/294</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 白李</title>
+		<link>http://multiverse.lamost.org/blog/294/comment-page-1#comment-64</link>
+		<dc:creator><![CDATA[白李]]></dc:creator>
+		<pubDate>Wed, 17 Nov 2010 21:47:00 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=294#comment-64</guid>
+		<description><![CDATA[小马啊，你的第一个版本（PDF）下面的链接最好改一改，不是很明显。 
+例如改为： 
+Major Shower Observations.pdf（点击打开） ]]></description>
+		<content:encoded><![CDATA[<p>小马啊，你的第一个版本（PDF）下面的链接最好改一改，不是很明显。</p>
+<p>例如改为：</p>
+<p>Major Shower Observations.pdf（点击打开） </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 白李</title>
+		<link>http://multiverse.lamost.org/blog/294/comment-page-1#comment-56</link>
+		<dc:creator><![CDATA[白李]]></dc:creator>
+		<pubDate>Fri, 12 Nov 2010 10:54:12 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=294#comment-56</guid>
+		<description><![CDATA[在标题后面加上&#8220;方法&#8221;，或者把标题改为《流星雨的科学观测、记录与上报》。 ]]></description>
+		<content:encoded><![CDATA[<p>在标题后面加上&ldquo;方法&rdquo;，或者把标题改为《流星雨的科学观测、记录与上报》。 </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; f(R)</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/fr/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>f(R) &#8211; 修改Einstein的引力理论</title>
+		<link>http://multiverse.lamost.org/blog/2717</link>
+		<comments>http://multiverse.lamost.org/blog/2717#comments</comments>
+		<pubDate>Mon, 09 Apr 2012 15:50:03 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[f(R)]]></category>
+		<category><![CDATA[Modified_Gravity]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2717</guid>
+		<description><![CDATA[Einstein理论引力理论差不多是黎曼空间上最简单的可行的理论。这篇post的主要内容是一张图，在此之前，先简单的说点关于f(R)理论的知识。 Einstein-Hilbert理论[1]的作用量是 &#92;begin{equation} S=&#92;frac{2}{2&#92;kappa^2}&#92;int&#92;mathrm d^4 x &#92;sqrt{-g}R+&#92;int &#92;mathrm d^4 &#92;mathcal L_M(g_{&#92;mu&#92;nu},&#92;Phi_M) &#92;end{equation} &#92;(R&#92;)是Ricci标量，&#92;(&#92;sqrt{-g}&#92;mathrm d^4x&#92;)是积分体元(其中&#92;(g&#92;)是度规&#92;(g_{ab}&#92;)在相应基底的行列式)，&#92;(&#92;mathcal L_M(g_{&#92;mu&#92;nu},&#92;Phi_M)&#92;)是物质场的拉氏量密度。 如果使用E-H理论来解释宇宙的加速膨胀，一个比较流行的办法是引入暗能量。暗能量的特性十分诡异，物态方程为负，是我们见所未见的物质。 如果一个体系的行为怪异，那么可能的情况有：a.存在一种怪异的物质，它能够影响体系的演化。b. 修改描述这个体系的理论，因为可能我们用了描述体系的理论出现问题。c. 二者兼有。 对于宇宙来说，我们发现了宇宙的怪异的加速膨胀，除了引人暗能量，还可以修改Einstein的引力模型。修改引力中比较简单(其实是目前可行的里面最简单)的一种方法是在拉氏量密度里面继续添加其他与&#92;(R&#92;)相关的函数，即 &#92;begin{equation} S=&#92;frac{2}{2&#92;kappa^2}&#92;int&#92;mathrm d^4 x &#92;sqrt{-g}(R+f(R))+&#92;int &#92;mathrm d^4 &#92;mathcal L_M(g_{&#92;mu&#92;nu},&#92;Phi_M) &#92;end{equation} 这样作用量就变得稍微复杂那么一点点，然而这一点点，就足以使得宇宙学里面的很多计算变得很复杂。 上面是一点点关于f(R)的说明。这篇post的主要内容在下面这张图： 除非你有个巨大无比的屏幕或者放大了网页了，否则是看不清的。所以请点击下面的链接下载： Download: http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/fRTheory.jpg 这是对f(R)的一个小节。主要参考Antonio de Felice和Tsujikawa的arXiv:1002.4928. 1. Hilbert甚至比Einstein还要早几天发表了场方程，所以后来常常称这个理论为Einstein-Hilbert理论，其作用量称为Einstein-Hilbert作用量。[Back]...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2861" rel="bookmark" title="LCDM模型">LCDM模型 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Einstein理论引力理论差不多是黎曼空间上最简单的可行的理论。这篇post的主要内容是一张图，在此之前，先简单的说点关于f(R)理论的知识。<span id="more-2717"></span></p>
+<p>Einstein-Hilbert理论<a name="EH_B">[</a><a href="#EH">1</a>]的作用量是<br />
+&#92;begin{equation}<br />
+S=&#92;frac{2}{2&#92;kappa^2}&#92;int&#92;mathrm d^4 x &#92;sqrt{-g}R+&#92;int &#92;mathrm d^4 &#92;mathcal L_M(g_{&#92;mu&#92;nu},&#92;Phi_M)<br />
+&#92;end{equation}<br />
+&#92;(R&#92;)是Ricci标量，&#92;(&#92;sqrt{-g}&#92;mathrm d^4x&#92;)是积分体元(其中&#92;(g&#92;)是度规&#92;(g_{ab}&#92;)在相应基底的行列式)，&#92;(&#92;mathcal L_M(g_{&#92;mu&#92;nu},&#92;Phi_M)&#92;)是物质场的拉氏量密度。</p>
+<p>如果使用E-H理论来解释宇宙的加速膨胀，一个比较流行的办法是引入暗能量。暗能量的特性十分诡异，物态方程为负，是我们见所未见的物质。</p>
+<p>如果一个体系的行为怪异，那么可能的情况有：a.存在一种怪异的物质，它能够影响体系的演化。b. 修改描述这个体系的理论，因为可能我们用了描述体系的理论出现问题。c. 二者兼有。</p>
+<p>对于宇宙来说，我们发现了宇宙的怪异的加速膨胀，除了引人暗能量，还可以修改Einstein的引力模型。修改引力中比较简单(其实是目前可行的里面最简单)的一种方法是在拉氏量密度里面继续添加其他与&#92;(R&#92;)相关的函数，即<br />
+&#92;begin{equation}<br />
+S=&#92;frac{2}{2&#92;kappa^2}&#92;int&#92;mathrm d^4 x &#92;sqrt{-g}(R+f(R))+&#92;int &#92;mathrm d^4 &#92;mathcal L_M(g_{&#92;mu&#92;nu},&#92;Phi_M)<br />
+&#92;end{equation}</p>
+<p>这样作用量就变得稍微复杂那么一点点，然而这一点点，就足以使得宇宙学里面的很多计算变得很复杂。</p>
+<p>上面是一点点关于f(R)的说明。这篇post的主要内容在下面这张图：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/fRTheory.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/fRTheory.jpg" alt="" title="fRTheory" width="580px" /></a></p>
+<p>除非你有个巨大无比的屏幕或者放大了网页了，否则是看不清的。所以请点击下面的链接下载：<br />
+Download:<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/fRTheory.jpg">http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/fRTheory.jpg</a></p>
+<p>这是对f(R)的一个小节。主要参考Antonio de Felice和Tsujikawa的<a href="http://arxiv.org/abs/1002.4928">arXiv:1002.4928</a>.</p>
+<hr />
+<p><a name="EH">1.</a> Hilbert甚至比Einstein还要早几天发表了场方程，所以后来常常称这个理论为Einstein-Hilbert理论，其作用量称为Einstein-Hilbert作用量。[<a href="#EH_B">Back</a>]</p>
+<hr />
+<p>一份比较专业的笔记：<a href="http://iastro.lamost.org/x/node/100">f(R) Gravity: Background and Perturbation</a></p>
+<p>一篇关于修改引力的科普文：<a href="http://astroleaks.lamost.org/?p=5374">http://astroleaks.lamost.org/?p=5374</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2861" rel="bookmark" title="LCDM模型">LCDM模型 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2717/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

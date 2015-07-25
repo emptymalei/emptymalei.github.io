@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Math</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/math/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>第一次见四元数</title>
+		<link>http://multiverse.lamost.org/blog/6359</link>
+		<comments>http://multiverse.lamost.org/blog/6359#comments</comments>
+		<pubDate>Tue, 20 May 2014 20:15:42 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<category><![CDATA[Quantum Mechanics]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6359</guid>
+		<description><![CDATA[上周 colloquium 的时候，第一次听到 quaternion 这个词，觉得很新鲜。quaternion 的矩阵表示是 \begin{equation} q = \begin{pmatrix}\;z &#38; w &#92;&#92; -w^* &#38; \;z^*\end{pmatrix} . \end{equation} 当时这个定义写出来，我立刻就想到了复数 $C = a+ib $的矩阵表达， \begin{equation} C = \begin{pmatrix} \;\; a &#38; b &#92;&#92; &#8211; b &#38; a \end{pmatrix}. \end{equation} 但不同的是，quaternion 矩阵表示的元素是复数。...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6056" rel="bookmark" title="量子力学计算的一个小技巧">量子力学计算的一个小技巧 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>上周 colloquium 的时候，第一次听到 quaternion 这个词，觉得很新鲜。quaternion 的矩阵表示是<br />
+<span id="more-6359"></span></p>
+<p>\begin{equation}<br />
+q = \begin{pmatrix}\;z &amp; w &#92;&#92; -w^* &amp; \;z^*\end{pmatrix} .<br />
+\end{equation}</p>
+<p>当时这个定义写出来，我立刻就想到了复数 $C = a+ib $的矩阵表达，</p>
+<p>\begin{equation}<br />
+C = \begin{pmatrix}<br />
+  \;\; a &amp;   b  &#92;&#92;<br />
+  &#8211; b &amp;  a<br />
+\end{pmatrix}.<br />
+\end{equation}</p>
+<p>但不同的是，quaternion 矩阵表示的元素是复数。</p>
+<p>做了这样的推广之后，quaternion 还有还好的性质，</p>
+<ol>
+<li>在加法，乘法和实数乘法下面是 closed.</li>
+<li>模是两个复数的模之和。</li>
+</ol>
+<p>这些性质都很容易验证，特别是在 closed 这条，我们可以进一步验证这构成一个群。</p>
+<p>还有一个非常漂亮的性质就是自己乘以自己的 hermitian comjugate 等于其模乘以单位矩阵，</p>
+<p>\begin{equation}<br />
+q^\dagger q= q q^\dagger = &#124; q &#124;^2 I.<br />
+\end{equation}</p>
+<p>为什么这个漂亮呢？因为这样我们就可以往 $2\times2$矩阵里面随便插入这个量除以其模。</p>
+<p>另外一个非常有趣的事情是，quaternion 可以跟 Pauli matrices 联系起来。一个任意的 quaternion，可以通过 Pauli matrices $\vec \sigma$ 和一个四向量 $\vec x$ 来生成，</p>
+<p>\begin{align}<br />
+q(x) &amp; = x^0 &#8211; i \vec \sigma \cdot \vec x &#92;&#92;<br />
+&amp; = \begin{pmatrix} x^0 &#8211; i x^3 &amp; -x^2 -ix^1 &#92;&#92; x^2 -i x^1 &amp; x^0 + i x^3 \end{pmatrix}.<br />
+\end{align}</p>
+<p>这个也正好体现了 Pauli matrices 外加单位矩阵的完备性。</p>
+<p>再加上 Pauli matrices 跟转动有关，所以这个简单的推广在物理中有很重要的应用。</p>
+<p>回想一下，欧式空间的转动，</p>
+<p>\begin{equation}<br />
+R \circeq \begin{pmatrix}\cos\theta &amp; -\sin\theta &#92;&#92; \sin\theta &amp; \cos\theta\end{pmatrix},<br />
+\end{equation}</p>
+<p>显然这个转动是个复数，写成常见的复数形式，应该是</p>
+<p>\begin{equation}<br />
+R \circeq \cos\theta &#8211; i \sin\theta,<br />
+\end{equation}</p>
+<p>进一步用欧拉公式，</p>
+<p>\begin{equation}<br />
+R\circeq e^{-i \theta}.<br />
+\end{equation}</p>
+<p>然后这里可就让我们想到了这是二维欧式空间转动的生成元。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6056" rel="bookmark" title="量子力学计算的一个小技巧">量子力学计算的一个小技巧 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6359/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>一张图理清热力学势之间的关系</title>
+		<link>http://multiverse.lamost.org/blog/6266</link>
+		<comments>http://multiverse.lamost.org/blog/6266#comments</comments>
+		<pubDate>Sat, 22 Feb 2014 06:16:55 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6266</guid>
+		<description><![CDATA[今天办公室有个人跟我说她总是记不住 thermodynamic potential 之间的关系。于是我就给她讲了 Legendre transformation. 我想了想，热力学势（特性函数）可以总结成下面的一张图。 这篇文章就是简要的解释一下这张图。这篇文章只是给热力学的初学者看的，如果你已经学过理论力学或者统计物理的，我就是在浪费你的时间了。 本科学习的热力学主要的内容无非就是包括下面几部分（A Modern Course in Statistical Physics by L. E. Reichl）： Thermodynamic variables; extensive, intensive, neither; Equations of state; Four fundamental laws of thermodynamics; Thermodynamics potentials Phase transitions Response Stability 整个的思路跟 mechanics 类似。先搞清楚如何描述一个体系，包括状态和&#8221;kinematics&#8221;，这里...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>今天办公室有个人跟我说她总是记不住 thermodynamic potential 之间的关系。于是我就给她讲了 Legendre transformation. 我想了想，热力学势（特性函数）可以总结成下面的一张图。</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/thermodynamicPotentials1.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/thermodynamicPotentials1.png" alt="Thermodynamic Potentials" /></a></p>
+<p>这篇文章就是简要的解释一下这张图。这篇文章只是给热力学的初学者看的，如果你已经学过理论力学或者统计物理的，我就是在浪费你的时间了。<br />
+<span id="more-6266"></span><br />
+本科学习的热力学主要的内容无非就是包括下面几部分（<em>A Modern Course in Statistical Physics</em> by L. E. Reichl）：</p>
+<ol>
+<li>Thermodynamic variables; extensive, intensive, neither;</li>
+<li>Equations of state;</li>
+<li>Four fundamental laws of thermodynamics;</li>
+<li>Thermodynamics potentials</li>
+<li>Phase transitions</li>
+<li>Response</li>
+<li>Stability</li>
+</ol>
+<p>整个的思路跟 mechanics 类似。先搞清楚如何描述一个体系，包括状态和&#8221;kinematics&#8221;，这里 &#8220;kinematics&#8221;包括状态方程和特性函数。其次，提出“第一性原理”：四条热力学定律。然后研究“动力学”：相变、响应和稳定性。</p>
+<p>如果学的时候用的是汪志诚老先生的的书，在热力学势的地方会有些困惑。汪志诚老先生的书读起来很顺，但是由于很薄，很多东西没详细展开，热力学势就是其中一点。热力学势的关键除了搞清楚每个势的意义，另外就是要搞清楚哪些是变量。而确定哪些是变量的就是 Legendre transformation. 所以，要搞清楚这些势，可以从 Legendre transformation 下手。</p>
+<h2>Legendre Transformation</h2>
+<p>Legendre transformation 的基本定义在《经典力学的数学方法》中有，我写过一篇<a href="http://book.douban.com/people/emptymalei/annotation/1728598/" target="_blank">简单的笔记</a>，当时总结的不是很清楚，而且如果仅仅是为了比较<strong>肤浅</strong>的理清楚热力学势的关系，不太需要很严格的定义。所以我重新功利的说一下。</p>
+<p>如果我们有一个函数 $U(T)$，其中 $T$ 是自变量，而我们想要得到另一个函数 $H(S)$，自变量变成了 $S$，那么在热力学势的范围内，我们只需要做这样的变换：</p>
+<p>$$H(S) = U -TS$$</p>
+<p>当然，这个变换跟书里面的 Legendre transformation 差一个符号，这个并不重要，定义成差一个负号，更加符合物理的理解，因为这些都对应的能量，增加一个量看能量的变化，如果加了负号，增量正好相反，反而不便。</p>
+<p>这样我们说 $U(T)$ 和 $H(T)$ 对偶。（在 mechanics 里面，Lagrangian 和 Hamiltonian 也是对偶，理论力学里面最最重要的一个关系之一。）</p>
+<h2>Coupling</h2>
+<p>图片里面提到了三种不同的 coupling：</p>
+<ol>
+<li>Thermal Coupling: $-TS$</li>
+<li>Mechanical Coupling: $-YX$</li>
+<li>Chemical Coupling: $-\sum_\mu_i N_i$</li>
+</ol>
+<p>其中 $Y$ 是广义力（例如压强 $p$ ），$X$ 是广义位移（例如体积 $V$ ）<sup id="fnref-6266-1"><a href="#fn-6266-1" rel="footnote">1</a></sup>。这个也不需要很多解释吧，深刻的解释我也没用，总之，顾名思义。</p>
+<h2>图片的诠释</h2>
+<p>现在可以开始解释图片的意思了。首先解释各个符号的意思：</p>
+<ol>
+<li>$U$, $H$, $A$, $G$, $\Omega$ 分别是：内能，焓，Helmholtz 自由能，Gibbs 自由能，巨热力学势。</li>
+<li>{$S$, $T$}， {$X$, $Y$}， {$&#123;N_i&#125;,&#123;\mu_i&#125;$} 分别是：{熵，温度}，{广义位移，广义力}， {粒子数，化学势}。</li>
+<li>三种 coupling 上面已经解释了。</li>
+</ol>
+<p>整个图片是从中间的 $U(S,X,&#123;N_i&#125;)$ 开始的，这是内能，内能是熵S、广义位移 X （以及粒子分布 {N_i} ）的函数。。</p>
+<ol>
+<li>如果我们给内能 $U(S, X, &#123;N_i&#125;)$ 加上一个 mechanical coupling $-XY$，那么就得到了焓。从前面的 Legendre transformation 看到，这时候焓 $H$ 变成了 $S, X, &#123;N_i&#125;$ 的函数。所以在气体的理论中，$H$ 是 $S, p$ 的函数，所以等压热容自然是 $C_p = \left( \partial_T H\right)_p$. </li>
+<li>如果我们给内能和焓加上 thermal coupling $-ST$，那么我们就得到了两种自由能，分别是 Helmholtz 自由能和 Gibbs 自由能。同第一条里的道理，可以通过 Legendre transformation 自行分析两个是什么的函数。</li>
+<li>如果我们给 Helmholtz 自由能加上一个 chemical coupling $-\sum_i \mu_i N_i$，那么我们得到了巨热力学势 $\Omega(T,X,&#123;\mu_i&#125;)$。</li>
+</ol>
+<p>至于物理意义，从图上也很明确。例如焓 H 是内能去掉 mechanical coupling，也就是说，焓在不考虑机械功的时候好用，例如焓在考虑其他体积不变的时候好用，因为这时候吸热就是焓。其他的也是同样的方式理解。这样我们<strong>仅仅通过内能 $U(S, X, &#123;N_i&#125;)$ 和 Legendre transformation 就可以获得其他的热力学势</strong>。</p>
+<h3>Maxwell 关系</h3>
+<p>内能 $U(S,X,N)$ 出发，根据不同的 coupling，我们可以导出不同的热力学势是什么的函数（也可以通过 Legendre transformation，这里简单起见只利用图片来做）。例如，H 是什么的函数？$U(S,X,N)$ 我们去掉了 mechanical coupling -YX 那么 得到的 H 就是 $H(S,Y,N)$，因为勒让德变换 $H = U &#8211; YX$ ，原来是变量 X 的函数，要变成 Y  的函数。</p>
+<p>我们知道了这些函数的自变量是什么，下一步就可以写出所有的热力学势的微分式。只举一个例子：</p>
+<p>$$\mathrm d U(S, X) = T\mathrm d S + Y \mathrm d X $$</p>
+<p>然后，我们可以写出这些热力学势的全微分（由偏微分表示的，就是 chain rule）。同样只举一个例子：</p>
+<p>$$\mathrm dU(S, X) = \left(\frac{\partial U}{\partial S}\right)_X \mathrm d S + \left(\frac{\partial U}{\partial X}\right)_S \mathrm X$$</p>
+<p>对比上面两个公式，可以得到两个式子，分别是</p>
+<p>$$T = \left(\frac{\partial U}{\partial S}\right)_X $$</p>
+<p>$$Y =  \left(\frac{\partial U}{\partial X}\right)_S$$</p>
+<p><strong>用同样的方法得到由另外的热力学势表达的 $T$ 和 $Y$，这样就可以获得一组 Maxwell 关系式。然后用类似的方法处理所有的热力学势，就可以获得全部的 Maxwell 关系。</strong></p>
+<p><strong>另外，我们看到热力学量可以通过对相应的热力学势求偏微分来获得，很方便。</strong></p>
+<p>这个推导在物理中很常见，例如电动力学的学习中，磁场能的导出也是用类似的手段。</p>
+<h2>Legendre Transformation Revisited</h2>
+<p>上面除了图片有点物理之外，就是数学了，或者说就是 Legendre transformaton 了。一开始那个 Legendre transformation 看起来就是硬生生的代数呢，感觉并没有什么直观的意义？其实这个 transformation 背后有很多可以挖掘的，包括我们喜欢的简洁明了的图像。</p>
+<p>我们换种方式来找出函数 $f(x)$ 的 Legendre 变换。</p>
+<ol>
+<li>把函数在 x-y 坐标系中画出来（蓝色的实线）。</li>
+<li>做一条直线 $y=px$ . </li>
+<li>我们现在可以定义一个距离，也就是做一条垂直 x 轴的直线，在 $y=px$ 和 $f(x)$ 上的两个交点的距离： $F(x,p) = xp &#8211; f(x)$. 现在看起来已经有了 Legendre transformation 的样子了。但是有个问题，这里 x 和 p 是两个独立的变量。</li>
+<li>Legendre transformation 要求在给定一个直线斜率 p 之后，这个距离 $F(x,p)$ 最大。这样就确定了 x 和 p  的关系。也就是说要求 $\frac{\partial F(x,p)}{\partial x} = 0$，简化之后，$f'(x)=p$。如图所示。</li>
+<li>这样把 x 和 p 的关系 $x(p)$ 代入 $F(x,p)$ 中，我们的距离就变成单单 p 的函数，$F(p)$ 。这就是 $f(x)$ 的 Legendre transformation.</li>
+</ol>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/legendreTransformation.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/legendreTransformation.png" alt="legendreTransformation" width="390" height="256" class="aligncenter size-full wp-image-6503" /></a></p>
+<p>这里面的几何关系就是，$p$ 是斜率，$f'(x)$ 也是斜率。</p>
+<p>说到这里还不够清楚，那么我们重写一下这个关系：</p>
+<p>$$F(p) + f(x) = xp$$</p>
+<p>嗯？非常简单粗暴：$f(x)$ 和 $F(p)$ 具有对称性。等一下，这个关系联想到了什么？我们把上图中的表示切线的点划线延长出来，</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/abcdefghi.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/abcdefghi.png" alt="abcdefghi" width="546" height="386" class="aligncenter size-full wp-image-6504" /></a></p>
+<p>从这个图上，明显的就是斜率 p 乘以 x 得到了 $f(x) + F(p)$，即</p>
+<p>$$f(x)+F(p)=p x$$</p>
+<p>简单明了吧。这就是 f(x) 和 F(p) 之间的 Legendre transformation .明显的这个变换具有对称性，因为 f(x) 和 F(p ) 的地位相同。</p>
+<p>至于更多的关于这个变换的内容，可以参考<a href="http://book.douban.com/subject/1728598/">《经典力学的数学方法》</a>这本书，或者<a href="http://arxiv.org/abs/0806.1147">这篇文献</a>。这是物理上一个非常核心的变换，对于整个物理体系有很重要的作用。</p>
+<h2>微分几何</h2>
+<p>上面的这些东西，是我们本科学习的，我们会觉得好乱！是的，好乱！那是因为我们使用的数学语言很含糊。我们为什么要说一个量是什么什么的函数？因为我们想要求导数。</p>
+<p>如果我们有一种方法，可以得到导数的含义，但是不需要指定一个量是什么什么的函数，那么上面的这些混乱就没有了。是的，这种方法就是外微分。</p>
+<p>至于具体怎么理解这个问题，可以读一下这篇文章：http://www.av8n.com/physics/thermo-forms.htm</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6266-1">
+如果不熟悉广义力的话，这里解释一下，以免后面犯错。因为我们常常讨论系统的能量的增量，所以广义力的通过外界对系统做工来定义的。我们说外界对系统做了功 $\mathrm W = Y \mathrm d X$，这里面就是广义力乘以广义位移，自然就是外界对系统做的功了。需要注意的是，由于我们是说的<strong>外界对系统做功</strong>，所以这个力方向是指向系统的，而不是指向外部的。所以在气体的例子里面 $\mathrm dW = -p \mathrm dV$，广义力是指的 $-p$. 当然，暗能量/ quinessence 这种奇葩的存在，我们先不讨论。&#160;<a href="#fnref-6266-1" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6266/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>线性代数与几何</title>
+		<link>http://multiverse.lamost.org/blog/5579</link>
+		<comments>http://multiverse.lamost.org/blog/5579#comments</comments>
+		<pubDate>Sat, 06 Apr 2013 12:48:43 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Linear Algebar]]></category>
+		<category><![CDATA[Math]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=5579</guid>
+		<description><![CDATA[线性代数里面我们的矩阵一般是求解方程组引入的。 那么除了求解方程组之外，线性代数还可以做什么呢？ 我们高中学过的线性规划，实际上也可以归结为线性代数问题，里面比较著名的一个方法是单纯形法。那么我们高中学过的几何呢？能不能也用线性代数来解决一些几何的问题呢？ 一个很直观的例子是，我们以前求解距离的问题，可以变成求解向量积的问题。 $&#92;bf x &#92;cdot &#92;bf x = &#92;sum_{i=1}^n x_i x_i$ 除了这个，还有没有其他的的呢？ 我们还学过二次型的问题。一个二次型的例子是 $ax^2 + b y^2 +c xy = f$ 我们也学习了标准型，也就是 $a x^2 + b y^2 = f$ 我们还学习了如何把二次型标准化。 但是，为什么呢？我们为什么要做这些事情？ 还有，我们学了行列式，行列式的定义，行列式的规则（可恶的沙流氏规则），可是行列式到底是个什么东西啊？ 二次型是什么？ 我们看一个例子： $x^2 + y^2 =...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/5576" rel="bookmark" title="一页纸上的微积分">一页纸上的微积分 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/253" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>线性代数里面我们的矩阵一般是求解方程组引入的。</p>
+<p>那么除了求解方程组之外，线性代数还可以做什么呢？</p>
+<p>我们高中学过的线性规划，实际上也可以归结为线性代数问题，里面比较著名的一个方法是单纯形法。那么我们高中学过的几何呢？能不能也用线性代数来解决一些几何的问题呢？<span id="more-5579"></span></p>
+<hr />
+<p>一个很直观的例子是，我们以前求解距离的问题，可以变成求解向量积的问题。</p>
+<p>$&#92;bf x &#92;cdot &#92;bf x = &#92;sum_{i=1}^n x_i x_i$</p>
+<p>除了这个，还有没有其他的的呢？</p>
+<p>我们还学过二次型的问题。一个二次型的例子是</p>
+<p>$ax^2  + b y^2 +c xy = f$</p>
+<p>我们也学习了标准型，也就是</p>
+<p>$a x^2 + b y^2 = f$</p>
+<p>我们还学习了如何把二次型标准化。</p>
+<p>但是，为什么呢？我们为什么要做这些事情？</p>
+<p>还有，我们学了行列式，行列式的定义，行列式的规则（可恶的沙流氏规则），可是行列式到底是个什么东西啊？</p>
+<hr />
+<p>二次型是什么？</p>
+<p>我们看一个例子：</p>
+<p>$x^2 + y^2 = 1$</p>
+<p>这是个圆，圆心在坐标原点，半径为1。</p>
+<p>二次型就是我们原来学习的圆锥曲线。对于高维度的情况，我们也模模糊糊有一个想法，椭球什么的。</p>
+<p>太好了，也就是说，我们原来研究的二次型原来是可以跟几何联系起来的。</p>
+<p>那么具体是如何建立的联系呢？</p>
+<p>我们再看一个三维空间的例子。</p>
+<p>$x^2 + 4xy + 2xz + y^2 + 2yz + 4z^2 = 1$</p>
+<p>按照我们学习的二次型的知识，我们可以把这个写成是 矩阵形式。</p>
+<p>$<br />
+&#92;begin{pmatrix}<br />
+x &amp; y &amp; z<br />
+&#92;end{pmatrix}<br />
+&#92;left[<br />
+&#92;begin{pmatrix}<br />
+1 &amp; 2 &amp; 1 &#92;&#92;<br />
+2 &amp; 1 &amp; 1 &#92;&#92;<br />
+1 &amp; 1 &amp; 4<br />
+&#92;end{pmatrix}<br />
+&#92;begin{pmatrix}<br />
+x &#92;&#92; y &#92;&#92; z<br />
+&#92;end{pmatrix}<br />
+&#92;right] = 1<br />
+$</p>
+<p>那么我们这个例子是个什么几何形状呢？我们真的可以通过研究矩阵来了解几何么？</p>
+<p>我们知道，几何里面很重要的一个东西是坐标系。但是，坐标系虽然对于我们计算很重要，但是我们所研究的对象却是跟坐标系无关的。<br />
+要建立坐标系，需要选定一组坐标轴（基）。而我们知道，线性代数里面正好有基。向量又正好可以对应坐标。那么我们可以用线性代数里面的基来表示几何里面的坐标轴。</p>
+<hr />
+<p>线性代数里面有一种很特殊的向量，就是特征向量。也就是说，一个矩阵作用到这个向量上之后，不会改变这个向量的方向。即：</p>
+<p>$&#92;mathbf M &#92;mathbf v = &#92;lambda &#92;mathbf v$</p>
+<p>我们还会发现，一个实对称矩阵的特征向量特征值有很好的性质。<br />
+1. 实对称矩阵的特征值总是实数。<br />
+2. 对称矩阵的两个特征向量如果所对应的特征值不同，那么他们正交。<br />
+3. 从任何一个 n*n 的实对称矩阵 M 的特征向量集合中，总是可以为 R^n  选取一组标准正交基。</p>
+<p>这三个性质为什么重要呢？</p>
+<p>有了这三个性质，我们就可以说，对于实系数的二次型，我们总可以找到一组正交的基，同时我们发现（上面的特征向量的定义）在这组基下面，我们的系数矩阵可以化为对角阵，也就是说，原来的丑陋的二次型可以化为一个标准形式。</p>
+<p>比如我们上面的例子的特征值可以求解出来：</p>
+<p>$<br />
+&#92;begin{vmatrix}<br />
+  1-&#92;lambda &amp; 2 &amp; 1 &#92;&#92;<br />
+2 &amp; 1-&#92;lambda &amp; 1 &#92;&#92;<br />
+1 &amp; 1 &amp; 4-&#92;lambda &#92;&#92;<br />
+&#92;end{vmatrix}=0<br />
+$</p>
+<p>求解出来就是</p>
+<p>$&#92;lambda =2,5,-1$</p>
+<p>如此一来，我们的乱七八糟的二次型可以化成</p>
+<p>$2 X^2 + 5 Y^2 + (-1)Z^2 = 1$</p>
+<p>现在我们可以看到这个二次型在新的坐标系下面是个椭球。（椭球图片可以用 Mathematica 绘制。）</p>
+<p>而这里的对称矩阵，实际上只是一个空间上的旋转。</p>
+<p>这样看了，不管我们要处理的是几维的二次曲线（面），总可以通过矩阵特征向量把这个问题转换成一个比较容易看出来的几何体，这就对应我们的二次型标准化的问题。</p>
+<hr />
+<p>行列式有几何意义么？</p>
+<p>我们会记得沙流氏规则。我们可以来看这样一个问题。对于一个二维空间的旋转，我们可以用这样的矩阵来表示</p>
+<p>$<br />
+R = &#92;begin{pmatrix}<br />
+&#92;cos&#92;alpha &amp; &#92;sin&#92;alpha &#92;&#92;<br />
+&#92;sin&#92;alpha &amp; -&#92;cos&#92;alpha &#92;&#92;<br />
+&#92;end{pmatrix}<br />
+$</p>
+<p>如果求解行列式，我们会发现 R 的行列式的绝对值其实是 1。</p>
+<p>旋转有个特点，比如我们转动一个三角形之后，三角形的面积不变。行列式的绝对值为1，正好跟面积不便对应起来。</p>
+<p>对于一个线性映射 M，其行列式恰好是 n 维的单位立方体体积在 M 的操作下发生的伸缩旋转变化的比例因子。</p>
+<p>也就是说，行列式的几何意义也就是在此。</p>
+<p>回想一下，我们当初为什么要引入行列式？</p>
+<p>在求解线性方程的时候，我们需要求解逆阵，求解逆阵，真好需要行列式来判断逆阵是否存在。行列式的一个非常简单的代数定义，居然可以有这么巧妙的几何对应，确实令人惊讶啊。</p>
+<hr />
+<p>附注：</p>
+<ol>
+<li>本文里面的一些定理的证明，请参考《数学桥》一书。</li>
+<li>本文主要是依据《数学桥》一书编辑整理而成。</li>
+</ol>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/5576" rel="bookmark" title="一页纸上的微积分">一页纸上的微积分 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/253" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/5579/feed</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>一页纸上的微积分</title>
+		<link>http://multiverse.lamost.org/blog/5576</link>
+		<comments>http://multiverse.lamost.org/blog/5576#comments</comments>
+		<pubDate>Sat, 06 Apr 2013 12:46:09 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[微积分]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=5576</guid>
+		<description><![CDATA[我们都说微分和积分是一对互逆的运算，那么究竟怎么个互逆法呢？ 花了点时间把微分和积分的相应内容列举出来了： 微积分学过已经有五六年了，很多内容想不起来了，所以暂时先列举这些，以后可能还会添加内容。 相关的内容放在这个 repo： https://github.com/emptymalei/MathPrimer 本文所在的目录是： DifferentialIntegral 内有 TeX 代码，pdf 文件和 png 图片。请使用 XeTeX 编译源码。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/5579" rel="bookmark" title="线性代数与几何">线性代数与几何 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/253" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>我们都说微分和积分是一对互逆的运算，那么究竟怎么个互逆法呢？</p>
+<p>花了点时间把微分和积分的相应内容列举出来了：<span id="more-5576"></span></p>
+<p><img src="https://raw.github.com/emptymalei/MathPrimer/master/DifferentialIntegral/DifferentialANDIntegralOnOnePage.png"/></p>
+<p>微积分学过已经有五六年了，很多内容想不起来了，所以暂时先列举这些，以后可能还会添加内容。</p>
+<hr />
+<p>相关的内容放在这个 repo：</p>
+<p><a href="https://github.com/emptymalei/MathPrimer">https://github.com/emptymalei/MathPrimer</a></p>
+<p>本文所在的目录是：<br />
+DifferentialIntegral<br />
+内有 TeX 代码，pdf 文件和 png 图片。请使用 XeTeX 编译源码。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/5579" rel="bookmark" title="线性代数与几何">线性代数与几何 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/253" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/5576/feed</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+		<item>
+		<title>How to construct the metric tensor?</title>
+		<link>http://multiverse.lamost.org/blog/2284</link>
+		<comments>http://multiverse.lamost.org/blog/2284#comments</comments>
+		<pubDate>Fri, 07 Oct 2011 17:45:35 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2284</guid>
+		<description><![CDATA[前段时间算metric，读了一些资料，摸索了一下，总结了算metric的一般方法，下面的这个方法当然只对natural coordinate system才有效，而且例子中是正交的坐标系。更一般的方法可以使用form来做，这个会在后面的form的笔记中提到。 Let&#8217;s check the definition of metric again. If we choose a basis ✟\hat e_\mu✟, then a vector (at one certain point) in this coordinate system is \begin{equation} x^a=x^\mu \hat e_\mu \end{equation} Then we can construct the expression...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2258" rel="bookmark" title="李导数和Killing矢量场 | Lie Derivative, Killing Vector Field">李导数和Killing矢量场 | Lie Derivative, Killing Vector Field </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>前段时间算metric，读了一些资料，摸索了一下，总结了算metric的一般方法，下面的这个方法当然只对natural coordinate system才有效，而且例子中是正交的坐标系。更一般的方法可以使用form来做，这个会在后面的form的笔记中提到。</p>
+<hr />
+<p>Let&#8217;s check the definition of metric again.<span id="more-2284"></span></p>
+<p>If we choose a basis ✟\hat e_\mu✟, then a vector (at one certain point) in this coordinate system is<br />
+\begin{equation}<br />
+x^a=x^\mu \hat e_\mu<br />
+\end{equation}</p>
+<p>Then we can construct the expression of metric of this point under this coordinate system,<br />
+\begin{equation}<br />
+g_{\mu\nu}=\hat e_\mu\cdot \hat e_\nu<br />
+\end{equation}</p>
+<p>For example, in spherical coordinate system,<br />
+\begin{equation}<br />
+\vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z \label{eq:relativity_metric_point}<br />
+\end{equation}</p>
+<p>Now we have to find the basis under spherical coordinate system. Assume the basis is ✟\hat e_r, \hat e_\theta, \hat e_\phi✟. Choose some scale factors ✟h_r=1, h_\theta=r, h_\phi=r\sin\theta✟. Then the basis is<br />
+✟\hat e_r=\frac{\partial \vec x}{h_r\partial r}=\hat e_x \sin\theta\cos\phi+\hat e_y \sin\theta\sin\phi+\hat e_z \cos\theta✟, etc. Then collect the terms in formula \ref{eq:relativity_metric_point} is we get ✟\vec x=r\hat e_r✟, this is incomplete. So we check the derivative.<br />
+\begin{eqnarray}<br />
+\mathrm d\vec x&#038;=&#038; \hat e_x (\mathrm dr \sin\theta\cos\phi+r\cos\theta\cos\phi\mathrm d\theta-r\sin\theta\sin\phi\mathrm d\phi)\\<br />
+&#038;&#038;\hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi) \\<br />
+&#038;&#038;\hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta) \\<br />
+&#038;=&#038;\mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)  \\<br />
+&#038;&#038;\mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi &#8211; \hat e_z \sin\theta)r \\<br />
+&#038;&#038;\mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta  \\<br />
+&#038;=&#038;\hat e_r\mathrm dr+\hat e_\theta r\mathrm d\theta +\hat e_\phi r\sin\theta\mathrm d \phi<br />
+\end{eqnarray}</p>
+<p>Once we reach here, the component (✟e_r ,e_\theta, e_\phi✟) of the point under the spherical coordinates system basis (✟\hat e_r, \hat e_\theta, \hat e_\phi✟) at this point are clear, i.e.,</p>
+<p>\begin{eqnarray}<br />
+\mathrm d\vec x&#038;=&#038;\hat e_r\mathrm d r+\hat e_\theta r\mathrm d \theta+\hat e_\phi r\sin\theta \mathrm d\phi \\<br />
+&#038;=&#038;e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi<br />
+\end{eqnarray}</p>
+<p>In this way, the metric tensor for spherical coordinates is<br />
+\begin{equation}<br />
+g_{\mu\nu}=(e_\mu\cdot e_\nu)=\left(\begin{matrix}<br />
+1 &#038;0&#038;0 \\<br />
+0&#038; r^2&#038;0 \\<br />
+0&#038;0&#038; r^2\sin^2\theta \\<br />
+\end{matrix}\right)<br />
+\end{equation}</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2258" rel="bookmark" title="李导数和Killing矢量场 | Lie Derivative, Killing Vector Field">李导数和Killing矢量场 | Lie Derivative, Killing Vector Field </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2284/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>外微分形式 &#124; {Differential Forms} [3]</title>
+		<link>http://multiverse.lamost.org/blog/2173</link>
+		<comments>http://multiverse.lamost.org/blog/2173#comments</comments>
+		<pubDate>Wed, 21 Sep 2011 17:47:52 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2173</guid>
+		<description><![CDATA[1. In \(\mathsf E^3\), \(\vec x\) is an a point described by \(\mathrm d \vec x=\sigma_1\hat e_1+\sigma_2\hat e_2+\sigma_3\hat e_3\). It should be made clear that \(\sigma_i\) are 1-forms and \(\hat e_i\) are bases. In fact, \(\mathrm d\vec x\) is a 1-form here.<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6266" rel="bookmark" title="一张图理清热力学势之间的关系">一张图理清热力学势之间的关系 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>不定期的贴出比较完整的外微分形式(exterior differential forms)的大纲。大部分只是简单的从书本中摘出来的，以便以后快速回想和查阅使用。初学者可能会犯很多错误，强烈要求指正。<br />
+所读书本为Harley Flanders的书，Google Books链接在文末给出</p>
+<p>第一部分：<a href="http://multiverse.lamost.org/blog/?p=2091">http://multiverse.lamost.org/blog/?p=2091</a><br />
+第二部分：<a href="http://multiverse.lamost.org/blog/?p=2167">http://multiverse.lamost.org/blog/?p=2167</a><br />
+第三部分：<a href="http://multiverse.lamost.org/blog/?p=2173">http://multiverse.lamost.org/blog/?p=2173</a></p>
+<hr />
+<p>Contents:<br />
+<a href="#chap1">Chapter 4   Applications: Moving Frames, Laplacian, Coordinates and Surfaces</a></p>
+<hr />
+<p><a name=chap1>Chapter 4   Applications: Moving Frames, Laplacian, Coordinates and Surfaces</a></p>
+<p>1. In \(\mathsf E^3\), \(\vec x\) is an a point described by \(\mathrm d \vec x=\sigma_1\hat e_1+\sigma_2\hat e_2+\sigma_3\hat e_3\). It should be made clear that \(\sigma_i\) are 1-forms and \(\hat e_i\) are bases. In fact, \(\mathrm d\vec x\) is a 1-form here.</p>
+<p>\(\mathrm d \hat e_i=\omega_{i1}\hat e_1 +\omega_{i2}\hat e_2+\omega_{i3}\hat e_3\) is the exterior differential of the basis.</p>
+<p>For convenience of denoting, we collect the terms as matrices.<br />
+\begin{eqnarray}<br />
+\hat e = \left (\begin{matrix}<br />
+	\hat e_1\\<br />
+	\hat e_2\\<br />
+	\hat e_3\\<br />
+\end{matrix} \right ), \sigma=(\sigma_1,\sigma_2,\sigma_3), \Omega=||\omega_{ij}||<br />
+\end{eqnarray}</p>
+<p>Structure equations<br />
+\begin{eqnarray}<br />
+\mathrm d \vec x &#038;=&#038; \sigma \vec x \\<br />
+\mathrm d \hat e &#038;=&#038; \Omega \hat e \\<br />
+\Omega &#038;=&#038; ^t\Omega<br />
+\end{eqnarray}</p>
+<p>The last equation says \(\Omega\) is a skrew-symmetric or anti-symmetric matrix. This is deeply rooted in the linear property of the exterior diff and the orthogonal property of the basis.</p>
+<p>Another set of equations that counts is the integrability equations.<br />
+\begin{eqnarray}<br />
+\mathrm d\sigma &#038;=&#038; \sigma \Omega \\<br />
+\mathrm \Omega &#038;=&#038; \Omega^2<br />
+\end{eqnarray}</p>
+<p>These equations are results of Poncare Lemma.</p>
+<p>Examples of the structure eqns and the integrablilty eqns are given in the book.</p>
+<p>2.  Flanders gives an example of 6-dim frame space by combining \(\mathsf E^1,\mathsf E^2, \mathsf E^3\).</p>
+<p>3. \(\vec x (u, v ,w)\) is a point in \(\mathsf U\), which is a domain in \(\mathsf E^3\). We can always use basis that is orthonormal,<br />
+\begin{eqnarray}<br />
+\hat e_1=\frac 1\lambda \frac{\partial \vec x}{\partial u}, \hat e_2=\frac 1 \mu \frac{\partial \vec x}{\partial v}, \hat e_3=\frac 1\nu \frac{\partial \vec x}{\partial w}<br />
+\end{eqnarray}</p>
+<p> Under such basis,<br />
+ \begin{eqnarray}<br />
+\mathrm d\vec x&#038;=&#038;\mathrm du\frac{\partial \vec x}{\partial u}+\mathrm dv\frac{\partial \vec x}{\partial v}+\mathrm dw\frac{\partial \vec x}{\partial w} \\<br />
+&#038;=&#038;(\lambda \mathrm d u)\hat e_1+(\mu\mathrm dv)\hat e_2+(\nu\mathrm dw)\hat e_3 \\<br />
+&#038;=&#038;\sigma_1\hat e_1+\sigma_2\hat e_2+\sigma_3\hat e_3<br />
+ \end{eqnarray}</p>
+<p>Here \(\lambda, \mu,\nu\) are called scale factors sometimes.</p>
+<p>Laplacian is<br />
+\begin{equation}<br />
+\delta f =\mathrm d *\mathrm d f=(\delta f)\sigma_1\sigma_2\sigma_3<br />
+\end{equation}</p>
+<p>Just apply the constants, one would get the expression for Laplacian.</p>
+<p>4.  Gaussian curvature etc. This part is familiar to most of us.</p>
+<hr />
+<strong>Reference:</strong></p>
+<p><a href="http://books.google.com/books?id=pG0PllIO08kC&#038;dq" target="_blank">Differential forms with applications to the physical sciences<br />
+By By Harley Flanders</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6266" rel="bookmark" title="一张图理清热力学势之间的关系">一张图理清热力学势之间的关系 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2173/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>外微分形式 &#124; {Differential Forms} [2]</title>
+		<link>http://multiverse.lamost.org/blog/2167</link>
+		<comments>http://multiverse.lamost.org/blog/2167#comments</comments>
+		<pubDate>Tue, 20 Sep 2011 18:55:28 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2167</guid>
+		<description><![CDATA[1. Exterior derivatives are mappings from smooth manifold \(\mathcal{M}\), which is m dimensional, to itself, that satisfy the following conditions.<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6266" rel="bookmark" title="一张图理清热力学势之间的关系">一张图理清热力学势之间的关系 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2173" rel="bookmark" title="外微分形式 | {Differential Forms} [3]">外微分形式 | {Differential Forms} [3] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>从今天开始，会不定期的贴出比较完整的外微分形式(exterior differential forms)的大纲。大部分只是简单的从书本中摘出来的，以便以后快速回想和查阅使用。初学者可能会犯很多错误，强烈要求指正。<br />
+所读书本为Harley Flanders的书，Google Books链接在文末给出。</p>
+<p>第一部分：<a href="http://multiverse.lamost.org/blog/?p=2091">http://multiverse.lamost.org/blog/?p=2091</a><br />
+第二部分：<a href="http://multiverse.lamost.org/blog/?p=2167">http://multiverse.lamost.org/blog/?p=2167</a><br />
+第三部分：<a href="http://multiverse.lamost.org/blog/?p=2173">http://multiverse.lamost.org/blog/?p=2173</a></p>
+<hr />
+<p>Contents:<br />
+<a href="#chap3">Chapter 3   The Exterior Derivative</a></p>
+<hr />
+<p><a name=chap3>Chapter 3   The Exterior Derivative</a></p>
+<p>1. Exterior derivatives are mappings from smooth manifold \(\mathcal{M}\), which is m dimensional, to itself, that satisfy the following conditions.</p>
+<p>\begin{eqnarray}<br />
+&#038;&#038;\mathrm d(\omega+\eta)=\mathrm d\omega+\mathrm d \eta  \\<br />
+&#038;&#038;\mathrm d(\lambda\wedge\mu)=\mathrm d\lambda\wedge\mu+(-1)^{\text{deg}\lambda}\lambda\wedge\mathrm d\mu \\<br />
+&#038;&#038;\text{For each } \omega, \mathrm d (\mathrm d\omega)=0 \text{. This is the Poncare Lemma.}\\<br />
+&#038;&#038;\text{For each smooth function }f,  \mathrm d f=\Sigma \frac{\partial f}{\partial x^i}\mathrm d x^i  \\<br />
+\end{eqnarray}</p>
+<p>A reminder: do not try to prove the Poncare lemma using the ordinary partial derivatives. It is easy to prove it using the defination.</p>
+<p>2.  Mappings are very important here. Two of the most important mappings are pull back and push forwad. A figure is useful for understanding.</p>
+<p>\begin{equation}<br />
+\mathcal{R} \xleftarrow{\phi^*g=g\circ \phi} \mathcal{U}  \xrightarrow{\phi} \mathcal{V} \xrightarrow{g} \mathcal{R}<br />
+\end{equation}</p>
+<p>In this schematic figure, \(\phi\) is pull back mapping and \(\phi^*\) is the push forward mapping. Since \(g\) is a function, \(\phi^*\) should be a map from \(F^0(V)\) to \(F^0(U)\).</p>
+<p>We need these mappings because we want to move p-forms from one manifold to another. Thus extending this from scalar function to p-forms is useful. (\(\mathcal {W,U,V}\) are p-form spaces.)</p>
+<p>\begin{equation}<br />
+\mathcal{W} \xleftarrow{\psi\circ \phi} \mathcal{U}  \xrightarrow{\phi} \mathcal{V} \xrightarrow{\psi} \mathcal{W}<br />
+\end{equation}</p>
+<p>Since \(\mathcal W\) is a p-form space now, the push forward map can not be as simple as the previous one.</p>
+<p>Now we will define it,<br />
+\begin{equation}<br />
+F^p(\mathcal W) \xrightarrow{(\psi\circ\phi)^*=\phi^*\circ\psi^*} F^p(\mathcal{U})  \xleftarrow{\phi^*} F^p(\mathcal{V}) \xleftarrow{\psi^*} F^p\mathcal{(W)}<br />
+\end{equation}</p>
+<p>All the mappings about p-forms are done under corresponding points if they are in different domains.</p>
+<p>3. An important relation that shows <strong>the exterior derivative of a differential form is independent of the coordinate system in which it is calculated</strong> is shown here.<br />
+\begin{equation}<br />
+\mathrm d \phi^*\omega=\phi^*\mathrm d \omega<br />
+\end{equation}</p>
+<hr />
+<strong>Reference:</strong></p>
+<p><a href="http://books.google.com/books?id=pG0PllIO08kC&#038;dq" target="_blank">Differential forms with applications to the physical sciences<br />
+By By Harley Flanders</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6266" rel="bookmark" title="一张图理清热力学势之间的关系">一张图理清热力学势之间的关系 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2173" rel="bookmark" title="外微分形式 | {Differential Forms} [3]">外微分形式 | {Differential Forms} [3] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2167/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>外微分形式 &#124; {Differential Forms} [1]</title>
+		<link>http://multiverse.lamost.org/blog/2091</link>
+		<comments>http://multiverse.lamost.org/blog/2091#comments</comments>
+		<pubDate>Wed, 07 Sep 2011 17:31:29 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2091</guid>
+		<description><![CDATA[从今天开始，会不定期的贴出比较完整的外微分形式(exterior differential forms)的大纲。大部分只是简单的从书本中摘出来的，以便以后快速回想和查阅使用。初学者可能会犯很多错误，强烈要求指正。 所读书本为Harley Flanders的书，Google Books链接在文末给出。 第一部分：http://multiverse.lamost.org/blog/?p=2091 第二部分：http://multiverse.lamost.org/blog/?p=2167 第三部分：http://multiverse.lamost.org/blog/?p=2173 Contents: Chapter 1 Why forms? Chapter 2 Exterior Algebra Chapter 1 Why forms? Orientation of the integration, determined by the argument. More simple for some calculation. I always encounter calculations hard...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2173" rel="bookmark" title="外微分形式 | {Differential Forms} [3]">外微分形式 | {Differential Forms} [3] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>从今天开始，会不定期的贴出比较完整的外微分形式(exterior differential forms)的大纲。大部分只是简单的从书本中摘出来的，以便以后快速回想和查阅使用。初学者可能会犯很多错误，强烈要求指正。<br />
+所读书本为Harley Flanders的书，Google Books链接在文末给出。<span id="more-2091"></span></p>
+<p>第一部分：<a href="http://multiverse.lamost.org/blog/?p=2091">http://multiverse.lamost.org/blog/?p=2091</a><br />
+第二部分：<a href="http://multiverse.lamost.org/blog/?p=2167">http://multiverse.lamost.org/blog/?p=2167</a><br />
+第三部分：<a href="http://multiverse.lamost.org/blog/?p=2173">http://multiverse.lamost.org/blog/?p=2173</a></p>
+<hr />
+<p>Contents:<br />
+<a href="#chap1">Chapter 1   Why forms?</a><br />
+<a href="#chap2">Chapter 2   Exterior Algebra</a></p>
+<hr />
+<p><a name=chap1>Chapter 1   Why forms?</a></p>
+<p>Orientation of the integration, determined by the argument.</p>
+<p>More simple for some calculation. I always encounter calculations hard to be solved only with tensor analysis. That is why I started to learn a little about exterior differential forms.</p>
+<p>&#8230;</p>
+<p><a name=chap2>Chapter 2   Exterior Algebra</a></p>
+<p>1. Set up the space we will work on.</p>
+<p>✟\mathcal{R}✟: field of real numbers.</p>
+<p>✟\mathcal{L}✟: n dimensional space over ✟\mathcal{R}✟ with elements ✟\alpha✟, ✟\beta✟, ✟\dots✟</p>
+<p>✟\wedge^p \mathcal{L}✟: space of p-vectors on ✟\mathcal{L}✟. This will be made clear later.</p>
+<p>2. Basic rules for basis.</p>
+<p>Linear: ✟(a \alpha +b \beta)\wedge \alpha_2\wedge\cdots\wedge\alpha_p = a(\alpha\wedge\alpha_2\wedge\cdots\wedge\alpha_p)+b(\beta\wedge\alpha_2\wedge\cdots\wedge\alpha_p)✟</p>
+<p>Any of the terms repeated in the expression ✟\alpha_1\wedge\alpha_2\wedge\cdots\wedge\alpha_p✟ leads the whole to 0.</p>
+<p>Interchanging between two terms in ✟\alpha_1\wedge\alpha_2\wedge\cdots\wedge\alpha_p✟ changes the whole&#8217;s sign.</p>
+<p>3. Properties of p-vector space</p>
+<p>Function g can be defined on ✟\mathcal{L}✟ and mapping f on ✟\wedge^p \mathcal{L}✟, satisfying ✟f(\alpha_1\wedge\cdots\wedge\alpha_p)=g(\alpha_1, \cdots, \alpha_p)✟.</p>
+<p>4. Determinants</p>
+<p>Function ✟g_A✟: ✟\bigotimes^n \mathcal{L} \rightarrow \wedge^n \mathcal{L}✟ and ✟f_A✟: ✟\wedge^n\mathcal{L}\rightarrow\wedge^n\mathcal{L}✟ can be related by<br />
+\begin{equation}<br />
+f_A(\alpha_1\wedge\cdots\wedge\alpha_p)=g_A(\alpha_1,\cdots, \alpha_p)\equiv A\alpha_1\wedge\cdots\wedge A\alpha_p<br />
+\end{equation}</p>
+<p>Since only one kind of transformation the linear function ✟f_A✟ has, the only possible expression for ✟f_A✟ is ✟|A|\alpha_1\wedge\cdots\wedge\alpha_p✟, where ✟|A|✟ is a scalar. Define ✟\wedge^p(\alpha_1\wedge\cdots\wedge\alpha_p)\equiv A\alpha_1\wedge\cdots\wedge A\alpha_p✟.</p>
+<p>Another way of looking at ✟g_A✟ is ✟A\alpha_1\wedge\cdots\wedge A\alpha_p = |a^i_j|\alpha_1\wedge\cdots\wedge\alpha_p✟, if we have ✟A\sigma^i=\Sigma a^i_j \sigma^j✟.</p>
+<p>Comparing the two understandings, we find ✟|A|=|a^i_j|✟. Here ✟|A|✟ is the determinant.</p>
+<p>5. Exterior products</p>
+<p>Basic rules: (✟\mu✟ and ✟\lambda✟ are p vector and q vector respectively)</p>
+<p>a. ✟\mu\wedge\lambda✟ distribuative</p>
+<p>b. associative</p>
+<p>c. ✟\mu\wedge\lambda=(-1)^{pq}\lambda\wedge\mu✟</p>
+<p>6. Linear transformations</p>
+<p>Linear spaces: ✟\mathcal{M},\mathcal{N}✟ with dimension m and n respectively. The basis of ✟\mathcal{M}✟ is ✟\sigma^i✟.</p>
+<p>Define a linear transformation A : ✟\mathcal M \rightarrow \mathcal N✟, which is<br />
+\begin{equation}<br />
+(\alpha_1, \cdots, \alpha_p) \rightarrow A\alpha_1\wedge\cdots\wedge A\alpha_p .<br />
+\end{equation}</p>
+<p>This is a map from ✟\bigotimes^p\mathcal M✟ to ✟\wedge^p \mathcal N✟.</p>
+<p>One would find a useful linear transformation can be denoted ✟\wedge^p A✟ : ✟\wedge^p \mathcal M\rightarrow \wedge^p\mathcal N✟.</p>
+<p>Note that ✟\wedge^p A✟ has matrix representation.</p>
+<p>7. Inner product spaces</p>
+<p>Basic rules</p>
+<p>a. Linear in each variable</p>
+<p>b. Symmetric: ✟(\alpha, \beta)=(\beta, \alpha)✟</p>
+<p>c. Nondegenerate: if for fiexed ✟\alpha✟, ✟(\alpha,\beta)=0✟ for all ✟\beta✟, then ✟\alpha=0✟.</p>
+<p>Properties:</p>
+<p>a. Each inner product space ✟\mathcal L✟ has an orthonormal basis.</p>
+<p>b. ✟f✟: linear function on ✟\mathcal L✟. Then there is a vector ✟\beta✟ in ✟\mathcal L✟ such that ✟f(\alpha)=(\alpha, \beta)✟. (This property is very important.)</p>
+<p>8. Inner product of p-vectors</p>
+<p>Vector space ✟\mathcal L✟ has inner product ✟(\alpha,\beta)✟ on it. Define ✟(\lambda,\mu)=|(\alpha_i,\beta_j)|✟ on ✟(\wedge^p \mathcal L)\bigotimes (\wedge^p\mathcal L)✟, in which ✟\lambda=\alpha_1\wedge\cdots\wedge\alpha_p✟, ✟\mu=\beta_1\wedge\cdots\wedge\beta_p✟.</p>
+<p>9. Hodge star</p>
+<p>Linear transformation on ✟\wedge^p\mathcal L\rightarrow \wedge^{n-p}\mathcal L✟. (Depends on inner product and orientation. Orientation of ✟\mathcal L✟ which will remain fixed means we hake on basis for ✟\mathcal L✟ and only consider other basis which are expressed in terms of this one by a matrix with positive determinant.)<br />
+\begin{equation}<br />
+\lambda\wedge\mu=(*\lambda, \mu)\sigma (=f_\lambda (\mu)\sigma)<br />
+\end{equation}</p>
+<p>here * map is a linear one ✟\wedge^p\mathcal L\rightarrow \wedge^{n-p}\mathcal L✟.</p>
+<blockquote><p>
+注： ✟f_\lambda(\mu)✟把✟\mu✟从✟\wedge^p\mathcal L✟映射到✟\wedge^n\mathcal L✟。✟\lambda✟是✟\wedge^p\mathcal L✟上，✟\mu✟是✟\wedge^{n-p}\mathcal L✟上的，为了定义出这个线性的✟f_\lambda(\mu)✟，想到inner product,这样需要把✟\lambda✟，✟\mu✟放在同样的space中，故通过*来把✟\lambda✟从✟\wedge^p\mathcal L✟映射到✟\wedge^{n-p}\mathcal L✟上。</p></blockquote>
+<hr />
+<strong>Reference:</strong></p>
+<p><a href="http://books.google.com/books?id=pG0PllIO08kC&#038;dq" target="_blank">Differential forms with applications to the physical sciences<br />
+By By Harley Flanders</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2173" rel="bookmark" title="外微分形式 | {Differential Forms} [3]">外微分形式 | {Differential Forms} [3] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2091/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>推荐：话说微积分</title>
+		<link>http://multiverse.lamost.org/blog/253</link>
+		<comments>http://multiverse.lamost.org/blog/253#comments</comments>
+		<pubDate>Thu, 19 Aug 2010 16:00:06 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=253</guid>
+		<description><![CDATA[在豆瓣物理组看到一本很不错的微积分小册子。http://www.douban.com/group/topic/13440974/ 书名：话说微积分 作者：龚升 http://book.douban.com/subject/2982753/ 推荐给本科理科的看看，可以提前站在一个比较高的地方看待一些微积分问题。 下载：话说微积分<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2454" rel="bookmark" title="X光和量子论实验的讲义">X光和量子论实验的讲义 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/835" rel="bookmark" title="经典电动力学中电磁张量">经典电动力学中电磁张量 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>在豆瓣物理组看到一本很不错的微积分小册子。<a href="http://www.douban.com/group/topic/13440974/">http://www.douban.com/group/topic/13440974/</a></p>
+<p>书名：话说微积分</p>
+<p>作者：龚升</p>
+<p><a href="http://book.douban.com/subject/2982753/">http://book.douban.com/subject/2982753/</a></p>
+<p>推荐给本科理科的看看，可以提前站在一个比较高的地方看待一些微积分问题。</p>
+<p>下载：<a rel="attachment wp-att-255" href="http://multiverse.lamost.org/blog/?attachment_id=255">话说微积分</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2454" rel="bookmark" title="X光和量子论实验的讲义">X光和量子论实验的讲义 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/835" rel="bookmark" title="经典电动力学中电磁张量">经典电动力学中电磁张量 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/253/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

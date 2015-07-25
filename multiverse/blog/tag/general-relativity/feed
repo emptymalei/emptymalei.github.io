@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; General Relativity</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/general-relativity/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>天体周围引力场和 Birkhoff 定理</title>
+		<link>http://multiverse.lamost.org/blog/4090</link>
+		<comments>http://multiverse.lamost.org/blog/4090#comments</comments>
+		<pubDate>Sat, 06 Oct 2012 15:58:20 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4090</guid>
+		<description><![CDATA[在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。 Birkhoff 定理 Birkhoff 定理的证明用到了如下条件: 真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。 不同的度规形式 但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[1][2] &#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<p>在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。</p>
+<h2>Birkhoff 定理</h2>
+<p>Birkhoff 定理的证明用到了如下条件:</p>
+<ul>
+<li>真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。<span id="more-4090"></span></li>
+</ul>
+<h2>不同的度规形式</h2>
+<p>但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[<sup id="fnref-4090:1"><a href="#fn-4090:1" rel="footnote">1</a></sup>][<sup id="fnref-4090:2"><a href="#fn-4090:2" rel="footnote">2</a></sup>]</p>
+<p>&#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt &#92;]</p>
+<p>在刘辽的书中，他做了坐标变换，然后变成了一个更加漂亮的形式：</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>新的形式（下文称为形式二，第一个度规称为形式一）是一个正交的度规，更简单更漂亮。但是有一个问题，虽然这两个度规在本质上是等价的，但是在用来求解问题的时候，却会出现不同的结果，这是因为不同的坐标限制了不同的观者族，而不同的观者对于某些观测会得到不同的结论。[<sup id="fnref-4090:3"><a href="#fn-4090:3" rel="footnote">3</a></sup>]</p>
+<p>比如说，我们取上面两种形式的度规都是对角化的形式，也就是说扔掉了 &#92;(&#92;beta(r,t)&#92;)。这这样一个简单情况下，&#92;(&#92;phi&#92;) 坐标的 scale 两种形式有很大的不同，一个是包含 &#92;(r&#92;) 和 &#92;(t&#92;) 的一个函数 &#92;(&#92;alpha(r,t)&#92;)，另一种形式却没有。这一点会对后面各个几何量的求解带来很大的不同，因为涉及到了导数。</p>
+<h2>计算证明</h2>
+<p>基于这一点考虑，我算了一种简单的情况，就是</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + f(t) r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>为了方便计算，对一些量进行了重定义，最后度规写为如下形式：</p>
+<p>&#92;[<br />
+&#92;left(<br />
+&#92;begin{array}{cccc}<br />
+ -e^{2 &#92;nu [r]} a[t]^2 &amp; 0 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; e^{2 &#92;lambda [r]} a[t]^2 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; r^2 a[t]^2 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; 0 &amp; r^2 a[t]^2 &#92;text{Sin}[&#92;text{theta}]^2<br />
+&#92;end{array}<br />
+&#92;right)<br />
+&#92;]</p>
+<p>放在带 &#92;(&#92;Lambda&#92;) 的场方程中，得到的结果如下：</p>
+<p>需要满足一下四个方程</p>
+<p>&#92;[&#92;frac{3 a'[t]^2}{a[t]^2}+&#92;frac{e^{-2 &#92;lambda [r]+2 &#92;nu [r]} &#92;left(-1+e^{2 &#92;lambda [r]}+2 r &#92;lambda &#8216;[r]&#92;right)}{r^2}==e^{2 &#92;nu [r]} &#92;Lambda  a[t]^2&#92;]</p>
+<p>&#92;[ e^{2 &#92;lambda } r &#92;Lambda  a[t]^3+&#92;frac{e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a'[t]^2}{a[t]}+&#92;frac{a[t] &#92;left(1-e^{2 &#92;lambda [r]}+2 r &#92;nu &#8216;[r]&#92;right)}{r}==2 e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a&#8221;[t] &#92;]</p>
+<p>&#92;[ r &#92;left(r &#92;Lambda  a[t]^2+&#92;frac{e^{-2 &#92;nu [r]} r a'[t]^2}{a[t]^2}-&#92;frac{2 e^{-2 &#92;nu [r]} r a&#8221;[t]}{a[t]}+e^{-2 &#92;lambda [r]} &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>&#92;[ &#92;frac{1}{a[t]}e^{-2 (&#92;lambda [r]+&#92;nu [r])} r &#92;text{Sin}[&#92;text{theta}] &#92;left(e^{2 (&#92;lambda [r]+&#92;nu [r])} r &#92;Lambda  a[t]^4+e^{2 &#92;lambda [r]} r a'[t]^2-2 e^{2 &#92;lambda [r]} r a[t] a&#8221;[t]+e^{2 &#92;nu [r]} a[t]^2 &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>上面的求导是针对各自自变量的求导。</p>
+<p>自然其中第三和第四是在我们这里等价的。</p>
+<p>经过简化，这个度规的需要满足如下要求：</p>
+<p>&#92;[ &#92;frac{1}{r^2} (1-e^{2&#92;lambda}) + &#92;frac{1}{r} (&#92;nu&#8217; + &#92;lambda&#8217;) +&#92;lambda&#8217;&#92;nu&#8217; -&#92;nu&#8217;^2 &#8211; &#92;nu&#8221; =0 &#92;]<br />
+外加上面的第一个方程。</p>
+<p>从这样的式子里面，是无法得到 Birkhoff 定理的。因为上面的 &#92;(&#92;lambda&#92;) 和 &#92;(&#92;nu&#92;) 是 &#92;(r&#92;) 的函数，无法分离成 &#92;(r&#92;) 多项式形式，从而无法给出含时量的限制。</p>
+<h2>更多</h2>
+<p>其实这个理解也没有问题，因为我所使用的度规和形式二是不同的观者所使用的坐标。其他的理解在后续文章的实例中提到。我主要关心一个问题，如果我们把银河系看做浸泡在一个能动张量为 &#92;(T_{&#92;mu&#92;nu}&#92;) 的宇宙中，那么其引力场分布的解析解如何呢？</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-4090:1">
+《广义相对论》（第二版）， 刘辽、赵峥，P145。&#160;<a href="#fnref-4090:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:2">
+我习惯于 +2 号差，所以将刘辽赵峥书中的度规做了改动。&#160;<a href="#fnref-4090:2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:3">
+一个例子，观者 A 观测到静止的电荷 E 不会辐射光子，但是一个加速运动的观者 B 却会观测到 E 辐射光子。&#160;<a href="#fnref-4090:3" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4090/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>谁动了我的飞船——『膨胀和收缩』</title>
+		<link>http://multiverse.lamost.org/blog/3968</link>
+		<comments>http://multiverse.lamost.org/blog/3968#comments</comments>
+		<pubDate>Fri, 05 Oct 2012 17:00:52 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Propulsion Tech]]></category>
+		<category><![CDATA[Star Trek]]></category>
+		<category><![CDATA[Warp Drive]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=3968</guid>
+		<description><![CDATA[前一节：谁动了我的飞船——曲率推进概览 正文 前情回顾 地球收到来自遥远的 Gliese 581 的信号，我们需要驱船前往，只是前提是有一艘能够快速航行的飞船。你作为 IIA 的推进技术专家，最终决定采用 warp drive 来推动这艘前所未有的飞船。 基本构思 为了看明白对时空的操纵是如何影响我们的推进技术的，先看两个简单的例子吧。 一 假设我们和 Gliese 581 d 行星一样生活在一个膨胀时空中，在目前时刻我们相距 20.3 ly。时空图如下所示，将这个时空图弯曲起来是为了能够让我们看的更清楚，并没有其他的深刻的含义。[1] 图中纵向网格线的意义是，地球参考系中钉在不同时空点的物体的世界线。其中褐色的线为地球，黄色的线为 Gliese 581 d，红色的线表示从行星出发的光子（这里我们并未用到）。从图中的网格可以看到，这是一个在不停膨胀的时空，虽然地球和飞船之间的网格数不变，但是由于时空的膨胀，每个网格的长度所代表的物理的距离已经越来越大，如果某时刻时空膨胀停止了，那么我们现在从地球到 Gliese 581 d 的距离已经变大。 二 下面假设我们跟 Gliese 581 d 行星一样生活在一个收缩的时空中。时空图如下：[2] 与前面例一的情况相反，这是一个不断收缩的宇宙。其中黄色线为地球，褐色线为 Gliese 581 d。同上面类似的理由，在后来时刻，地球和...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3881" rel="bookmark" title="谁动了我的飞船——曲率推进概览">谁动了我的飞船——曲率推进概览 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>前一节：<a href="http://multiverse.lamost.org/blog/3881">谁动了我的飞船——曲率推进概览</a></p>
+<h1><span style="color:white;">正文</span></h1>
+<h2><strong>前情回顾</strong></h2>
+
+<p>地球收到来自遥远的 Gliese 581 的信号，我们需要驱船前往，只是前提是有一艘能够快速航行的飞船。你作为 IIA 的推进技术专家，最终决定采用 warp drive 来推动这艘前所未有的飞船。</p>
+<h2><strong>基本构思</strong></h2>
+<p>为了看明白对时空的操纵是如何影响我们的推进技术的，先看两个简单的例子吧。<span id="more-3968"></span></p>
+<p><strong>一</strong></p>
+<p>假设我们和 Gliese 581 d 行星一样生活在一个膨胀时空中，在目前时刻我们相距 20.3 ly。时空图如下所示，将这个时空图弯曲起来是为了能够让我们看的更清楚，并没有其他的深刻的含义。[<sup id="fnref-3968:1"><a href="#fn-3968:1" rel="footnote">1</a></sup>]</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/10/Embedded_LambdaCDM_geometry-1.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/10/Embedded_LambdaCDM_geometry-1.png" alt="" title="Embedded_LambdaCDM_geometry (1)" width="560" /></a></p>
+<p>图中纵向网格线的意义是，地球参考系中钉在不同时空点的物体的世界线。其中褐色的线为地球，黄色的线为 Gliese 581 d，红色的线表示从行星出发的光子（这里我们并未用到）。从图中的网格可以看到，这是一个在不停膨胀的时空，虽然地球和飞船之间的网格数不变，但是由于时空的膨胀，每个网格的长度所代表的物理的距离已经越来越大，如果某时刻时空膨胀停止了，那么我们现在从地球到 Gliese 581 d 的距离已经变大。</p>
+<p><strong>二</strong></p>
+<p>下面假设我们跟 Gliese 581 d 行星一样生活在一个收缩的时空中。时空图如下：[<sup id="fnref-3968:2"><a href="#fn-3968:2" rel="footnote">2</a></sup>]</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/10/Embedded_LambdaCDM_geometry.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/10/Embedded_LambdaCDM_geometry.png" alt="" title="Embedded_LambdaCDM_geometry" width="560" /></a></p>
+<p>与前面例一的情况相反，这是一个不断收缩的宇宙。其中黄色线为地球，褐色线为 Gliese 581 d。同上面类似的理由，在后来时刻，地球和 Gliese 581 d 之间的物理距离越来越小。在晚期，我们旅行到 Gliese 581 d 行星所需走的距离要比早期少。</p>
+<p>这两截然相反的例子说明了不同的时空对我们旅行的影响。如果我们能够操控时空，使之成为<strong>二</strong>所表现的收缩型，那么我们就可以把我们的目的地拉到我们身边来，想要飞到目的地也就容易多了。</p>
+<p>但是如果我们把整个目的地拉到地球附近的话，会导致很多天体靠近，改变星系的结构。</p>
+<p>那么我们就让飞船和目的地之间的时空收缩，飞船和家之间的时空膨胀，这样就可以尽量保持地球和目的地之间的原有距离。</p>
+<p>等等，我们这是在做什么？我们要改变宇宙的演化么？！这可不成，第一我们没有足够的能源，第二我们不能因为一次小小的旅行破坏了这么大的「星际生态」吧。[<sup id="fnref-3968:3"><a href="#fn-3968:3" rel="footnote">3</a></sup>]</p>
+<h2><strong>物理图像</strong></h2>
+<p>那我们可以采取的措施是？</p>
+<p>改变局域的时空。也就是说，我们只改变飞船附近的时空结构，在远离飞船的地方的时空要回归到宇宙原来的时空。</p>
+<p>那么从物理上讲，这是否可行呢？</p>
+<p><!--既然是前所未有的探索，你自然应当评估尽可能多的方案，然后找到 global fittest. </p>
+<p>对于曲率推进，广义上讲，我们可以认为任何通过操作时空背景来推动飞船的推进方式，都可以归到曲率推进一类中。</p>
+<p>这么一来，如果考虑 3+1 形式，大致可以分成两类的，一类是仅仅涉及空间操作，比如仅仅压缩飞船前方空间膨胀飞船后方空间，实现起来应该是比较困难；另一类是涉及到时间的操控。</p>
+<p>比如有这样一个例子。</p>
+<p>我们知道宇宙中存在一种现象，就是大尺度上时空在膨胀，也就是说，可能存在一种有着很大的压强的能量（「暗能量」），或者引力定律在大尺度上需要修改，不管如何，总之，有种现象是时空膨胀。这样一来，如果这种现象的「元凶」是暗能量，那么我们可以局域增加暗能量的能量密度，是的该区域有着很大的压强，这样时空就会「被膨胀」，反之，如果减小，那么收到周围的暗能量影响，该区域的时空就会被压缩。<br />
+形象的来想想，我们可以把时空看做流体（这是宇宙学/广相中常用的假设），而且是可压缩的流体。如此一来，如果我们可以压缩膨胀时空来驱动我们了。</p>
+<p>还是来个详细的例子吧。</p>
+<p>现在假定我们--></p>
+<h1><strong>FOOTNOTES</strong></h1>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-3968:1">
+此图取自 Wikipedia 词条 <a href="http://en.wikipedia.org/wiki/Metric_expansion_of_space#How_are_distances_between_two_points_measured_if_space_is_expanding.3F">Metric_expansion_of_space</a>.&#160;<a href="#fnref-3968:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3968:2">
+此图改编自 Wikipedia 词条 <a href="http://en.wikipedia.org/wiki/Metric_expansion_of_space#How_are_distances_between_two_points_measured_if_space_is_expanding.3F">Metric_expansion_of_space</a>.&#160;<a href="#fnref-3968:2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3968:3">
+改变星系旁边的引力场可以改变星系的结构。例如在太阳系附近放置一个足够大的引力场，就可能改变太阳系内的天体的排列。&#160;<a href="#fnref-3968:3" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3881" rel="bookmark" title="谁动了我的飞船——曲率推进概览">谁动了我的飞船——曲率推进概览 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/3968/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>星系巡天</title>
+		<link>http://multiverse.lamost.org/blog/4006</link>
+		<comments>http://multiverse.lamost.org/blog/4006#comments</comments>
+		<pubDate>Mon, 01 Oct 2012 12:27:53 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Dark Energy]]></category>
+		<category><![CDATA[Galaxy Survey]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Modified_Gravity]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4006</guid>
+		<description><![CDATA[为了创建自己的引力理论测试资料库，我在 github 上创立一个 repository，来收集巡天，太阳系和地面试验的资料，并且使用 octopress 创立了一系列 html 页面，以方便查阅。 欢迎 fork! 星系巡天可以为了解大尺度结构和检查引力理论提供很重要的数据。为了方便以后查阅，现在依照以下模板来统计： Objectives: XXXXXX &#124; Completed Parameters: Facilities: Frequency/Channel: Objects: XXXX &#124; about how many XXXX measured Distance: Area: Resolution: Results Image here. What does that figure mean? Links: XXX XXX...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><strong>为了创建自己的引力理论测试资料库，我<a href="https://github.com/CosmologyTaskForce/CosmologyTaskForce">在 github 上创立一个 repository，来收集巡天，太阳系和地面试验的资料</a>，并且<a href="http://cosmologytaskforce.github.com/CosmologyTaskForce/">使用 octopress 创立了一系列 html 页面</a>，以方便查阅。</strong></p>
+<p><a href="https://github.com/CosmologyTaskForce/CosmologyTaskForce/tree/source">欢迎 fork!</a></p>
+<hr />
+<p>星系巡天可以为了解大尺度结构和检查引力理论提供很重要的数据。为了方便以后查阅，现在依照以下模板来统计：<span id="more-4006"></span></p>
+<ul>
+<li><strong>Objectives</strong>: XXXXXX | <strong>Completed</strong></p>
+</li>
+<li>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li>Facilities: </li>
+<li>Frequency/Channel:</li>
+<li>Objects: XXXX | about how many XXXX measured</li>
+<li>Distance: </li>
+<li>Area: </li>
+<li>Resolution:</li>
+</ul>
+</li>
+</ul>
+<p><strong>Results</strong></p>
+<p>Image here.</p>
+<p>What does that figure mean?</p>
+<p><strong>Links</strong>:</p>
+<ol>
+<li>XXX</li>
+<li>XXX</li>
+</ol>
+<hr />
+<p>正在进行中的项目：</p>
+<p><a href="http://cosmologytaskforce.github.com/CosmologyTaskForce/blog/Galaxy%20Surveys/Cosmological%20Surveys/galaxy-surveys/">http://cosmologytaskforce.github.com/CosmologyTaskForce/blog/Galaxy%20Surveys/Cosmological%20Surveys/galaxy-surveys/</a></p>
+<hr />
+<p>了解一下我们在宇宙中的位置：<a href="4015">如何在宇宙中找到我们</a></p>
+<hr />
+<p>BTW，我在使用 octopress 的时候遇到一个问题，就是每次重启机器之后，如果想要使用 rake generate，需要使用 rvm rubygems latest 一次才可以，否则会出现 syntax error。请问这是为什么？感觉好奇怪。</p>
+<p>系统： Ubuntu 12.04<br />
+Ruby：1.9.3<br />
+使用RVM管理</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4006/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>『修改引力理论简介』简要补充</title>
+		<link>http://multiverse.lamost.org/blog/3980</link>
+		<comments>http://multiverse.lamost.org/blog/3980#comments</comments>
+		<pubDate>Fri, 14 Sep 2012 07:31:26 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Dark Energy]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Modified Gravity]]></category>
+		<category><![CDATA[Modified_Gravity]]></category>
+		<category><![CDATA[Modifying Gravity]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[宇宙演化]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=3980</guid>
+		<description><![CDATA[本文是对『修改引力理论简介』一文的简单补充。 补充一：修改引力的背景补充 上个世纪曾经有一段引力理论发展的黄金时期。大约从 Einstein 的 General Relativity 开始，产生了很多的用来描述引力的理论。比较著名比如 Branks-Dicke 的理论，该理论很大限度的包括了 Mach 原理，比如突出的一点是，Brans-Dicke 理论中包含了 Mach 的惯性与环境相关的想法，也就是说在地球上做水桶实验中转动的水桶之所以会呈现出漩涡状，是因为水桶周围有其他物质，整个宇宙合起来造成了我们对惯性的测量，从而可以理解成引力也应当与周围环境有关。后来还有很多类似的理论，这样就产生了一类 Scalar-Tensor 理论。 当时产生的理论大都可以在小尺度上退化到 GR，但是由于当时还没有宇宙加速膨胀的结论，所以大家并没有什么足够强烈的动机来使用这样的理论。但是上个世纪末的超新星测距离实验所带给我们的宇宙加速膨胀的结论，给了我们一个足够的理由来怀疑 GR 在大尺度上的准确性了，毕竟，我们只是在太阳系内比较精密的验证了 GR. 如果我们怀疑 GR 的准确性，那么我们有两条路可以走，一条是创造全新的理论，另一条是在 GR 基础上改造，一般而言，第二条路是更加实惠的方案。 如果要改造 GR， 从作用量出发是比较简单直观的。Einstein 的 General Relativity 理论中，作用量可以写作 &#92;[&#92;frac{1}{16&#92;pi G}&#92;int &#92;mathrm d^4 x &#92;sqrt{-g}...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2782" rel="bookmark" title="修改引力理论[脑图]">修改引力理论[脑图] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1946" rel="bookmark" title="Evolution of Background and Perturbations in {Cosmology} [Intro]">Evolution of Background and Perturbations in {Cosmology} [Intro] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>本文是对『修改引力理论简介』一文的简单补充。</p>
+<h3>补充一：修改引力的背景补充</h3>
+<p>上个世纪曾经有一段引力理论发展的黄金时期。大约从 Einstein 的 General Relativity 开始，产生了很多的用来描述引力的理论。比较著名比如 Branks-Dicke 的理论，该理论很大限度的包括了 Mach 原理，比如突出的一点是，Brans-Dicke 理论中包含了 Mach 的惯性与环境相关的想法，也就是说在地球上做水桶实验中转动的水桶之所以会呈现出漩涡状，是因为水桶周围有其他物质，整个宇宙合起来造成了我们对惯性的测量，从而可以理解成引力也应当与周围环境有关。后来还有很多类似的理论，这样就产生了一类 Scalar-Tensor 理论。<span id="more-3980"></span><br />
+当时产生的理论大都可以在小尺度上退化到 GR，但是由于当时还没有宇宙加速膨胀的结论，所以大家并没有什么足够强烈的动机来使用这样的理论。但是上个世纪末的超新星测距离实验所带给我们的宇宙加速膨胀的结论，给了我们一个足够的理由来怀疑 GR 在大尺度上的准确性了，毕竟，我们只是在太阳系内比较精密的验证了 GR.</p>
+<p>如果我们怀疑 GR 的准确性，那么我们有两条路可以走，一条是创造全新的理论，另一条是在 GR 基础上改造，一般而言，第二条路是更加实惠的方案。</p>
+<p>如果要改造 GR， 从作用量出发是比较简单直观的。Einstein 的 General Relativity 理论中，作用量可以写作</p>
+<p>&#92;[&#92;frac{1}{16&#92;pi G}&#92;int &#92;mathrm d^4 x &#92;sqrt{-g} R(g) + &#92;int &#92;mathrm d^4 x &#92;mathscr L (g, Matter)&#92;]</p>
+<p>我们可以动的地方，可以用下面的这张图来说明：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/modifiedgravitythepage.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/modifiedgravitythepage.jpg" alt="" title="Howtomodifygravity" width="600" /></a><br />
+<center><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/modifiedgravitythepage.jpg">点击图片看大图</a></center></p>
+<h3>补充二：修改引力理论脑图补充</h3>
+<p>截取 <a href="http://lss.bao.ac.cn/meeting/cosmo12/talk/0912am/COSMO12_plenary0912m_PedroFerreira.pdf">Pedro Ferreira 的报告</a>里面的一张幻灯片作为补充:</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/COSMO12_plenary0912m_PedroFerreira_10.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/COSMO12_plenary0912m_PedroFerreira_10.jpg" alt="" title="COSMO12_plenary0912m_PedroFerreira_10" width="600" /></a><br />
+<center><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/COSMO12_plenary0912m_PedroFerreira_10.jpg">点击图片看大图</a></center></p>
+<h3>补充三：其他『没有暗能量/暗能量被掩盖』的理论</h3>
+<p>这部分不算是修改引力的补充，但是暂时也没地方放，所以就附在这里。</p>
+<p>有很多没有暗能量的理论，或者暗能量不是我们所观测到的这样的的理论，比如</p>
+<ul>
+<li><strong>Void</strong></li>
+</ul>
+<p>该模型认为我们生活在一个不均匀的宇宙中并且生活在一个很大的空洞中，这样很容易解释超新星的数据。有些人将这个理论发展的很好了，很多数据都可以解释。</p>
+<ul>
+<li><strong>重新从经典场论的角度考察 Eisntein 的 GR</strong></li>
+</ul>
+<p>通过经典场论的方法来重新考虑 GR 的变分过程（重新理解基本场）。通过仔细的设计，总可以使得作用量中的一些项不出现在运动方程中。例子： <a href="http://arxiv.org/abs/1203.1040">Cleaning Up the Cosmological Constant</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2782" rel="bookmark" title="修改引力理论[脑图]">修改引力理论[脑图] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1946" rel="bookmark" title="Evolution of Background and Perturbations in {Cosmology} [Intro]">Evolution of Background and Perturbations in {Cosmology} [Intro] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/3980/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>谁动了我的飞船——曲率推进概览</title>
+		<link>http://multiverse.lamost.org/blog/3881</link>
+		<comments>http://multiverse.lamost.org/blog/3881#comments</comments>
+		<pubDate>Sun, 02 Sep 2012 02:53:59 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Propulsion Tech]]></category>
+		<category><![CDATA[Star Trek]]></category>
+		<category><![CDATA[Warp Drive]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=3881</guid>
+		<description><![CDATA[正文 序曲 2030年，当我们重新启动 SETI[1] 之后，突然接收到来自编号为 Gliese 581 d[2] 的地外行星的回复电波暨邀请函。该行星的居民十分热情的邀请我们去做客。 可是可是，Gliese 581 d 在哪里呢？Gliese 581 d 是一颗绕 Gliese 581 公转的行星，落在在天秤座内。Gliese 581 距离地球大约 20.3 ly，在现在看，对于载人航行来说，那还是相当的远。 现在大家急切的想要将地球人送到 Gliese 581 d 去，作为星际移民局[3]的推进技术专家的你，不得不承担起这个责任。 首先想到的是，我们 2007 年发射的通信电波，原则上来说，如果当地居民接收到并立刻回复，需要大约四十一年的时间，可是为什么我们的电波到达一年之后，他们的回复就抵达地球了呢？这说明他们有种技术可以将电波以光所不及的速度送到目的地。那么如果我们发射一艘普通的飞船，几百年才到达，他们早等不及了。因此，我们需要使用一种独特的快速推进技术。 最终，你不得不把 warp drive 拿出来了。 曲率推进的历史 （这一小节的内容是参考 wikipedia 编写的，可以点击相应的 footnotes...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/3968" rel="bookmark" title="谁动了我的飞船——『膨胀和收缩』">谁动了我的飞船——『膨胀和收缩』 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<h1><span style="color:white;">正文</span></h1>
+<h2><strong>序曲</strong></h2>
+<p>2030年，当我们重新启动 SETI[<sup id="fnref-3881:1"><a href="#fn-3881:1" rel="footnote">1</a></sup>] 之后，突然接收到来自编号为 Gliese 581 d[<sup id="fnref-3881:2"><a href="#fn-3881:2" rel="footnote">2</a></sup>] 的地外行星的回复电波暨邀请函。该行星的居民十分热情的邀请我们去做客。</p>
+
+<p>可是可是，Gliese 581 d 在哪里呢？Gliese 581 d 是一颗绕 Gliese 581 公转的行星，落在在天秤座内。Gliese 581 距离地球大约 20.3 ly，在现在看，对于载人航行来说，那还是相当的远。</p>
+<p>现在大家急切的想要将地球人送到 Gliese 581 d 去，作为<a href="http://iastro.lamost.org/iia.html">星际移民局</a>[<sup id="fnref-3881:3"><a href="#fn-3881:3" rel="footnote">3</a></sup>]的推进技术专家的你，不得不承担起这个责任。<span id="more-3881"></span></p>
+<p>首先想到的是，我们 2007 年发射的通信电波，原则上来说，如果当地居民接收到并立刻回复，需要大约四十一年的时间，可是为什么我们的电波到达一年之后，他们的回复就抵达地球了呢？这说明他们有种技术可以将电波以光所不及的速度送到目的地。那么如果我们发射一艘普通的飞船，几百年才到达，他们早等不及了。因此，我们需要使用一种独特的快速推进技术。</p>
+<p>最终，你不得不把 warp drive 拿出来了。</p>
+<h2><strong>曲率推进的历史</strong></h2>
+<p>（这一小节的内容是参考 wikipedia 编写的，可以点击相应的 footnotes 来查看更加详细的解释。）</p>
+<p>Warp drive 作为一个科幻概念，在 Star Trek 中被发扬光大。相比 Heart of Gold 的 Infinite Improbability Drive[<sup id="fnref-3881:5"><a href="#fn-3881:5" rel="footnote">4</a></sup>] 而言，warp drive 是一种更加切合实际的设想。</p>
+<h3><strong>什么是 warp drive</strong></h3>
+<p>Warp drive，其实就是通过操控<strong>空间</strong>来从一个地方移动到另一个地方的推进技术。</p>
+<p>如果把<strong>空间</strong>看作是橡皮膜，那么 warp drive 实际上就是在通过压缩前方的空间，拉伸后方的空间来「移动」的。就是说，我们想从 A 点出发到达 B 点，实际上我们只需要把飞船前方的空间压缩一下，全部拿到飞船的后方来，不就可以到达 B 点了么。有点像是，「我不过去，山会过来」。如果我们仅仅操控空间，而不影响时间，那么就太好了，我们可以从 A 以任意<strong>速度</strong>到达 B 地点，但是总会花费一点时间，因为我们把空间这块<strong>橡皮膜</strong>压缩起来或者伸展开去总需要一定的时间吧。</p>
+<p>这种推进有种很大的优势，那就是飞船里面的人不会察觉到飞船移动状况的改变，因为局域的来看，我们实际上根本没动嘛。</p>
+<h3><strong>推进器的重要参数 —— warp factor</strong></h3>
+<p>在 Star Trek 中，速度一直是使用 warp N 来表示的，warp 1 表示一倍光速，其他的按照<br />
+&#92;[v=w^3c&#92;]<br />
+来计算，其中 &#92;(v&#92;) 是闵氏时空中的测量速度，&#92;(c&#92;) 是光速，&#92;(w&#92;) 便是 warp factor（扭曲因子，wikipedia 上翻译为「曲率层级」，我觉得不够直观）。一开始的时候，开到 warp 5 就已经不得了了呢。</p>
+<p>后来的剧集中，Okuda 更改了 warp factor 的定义，新的定义为 warp factor 为 1-9 时<br />
+&#92;[v=w^{10/3}c&#92;]<br />
+而超过 9 就直接手绘了一条趋向无穷的曲线。到了 1995 年，有人给出了一个解析公式。[<sup id="fnref-3881:4"><a href="#fn-3881:4" rel="footnote">5</a></sup>] 下图是 <a href="http://en.wikipedia.org/wiki/File:Warptable.gif">wikipedia 中的新旧 warp factor 的对照表以及其能量需求等等量直接的关系</a>。</p>
+<p><img src="http://upload.wikimedia.org/wikipedia/en/4/4b/Warptable.gif" alt="Warp Factor" /></p>
+<h3><strong>能源</strong></h3>
+<p>在 Star Trek 中，核心的能源是正反物质湮灭提供的，也就是电视剧中的 warp core. 在理想的情况下，这算是最大程度的利用了物质所含能量。所以如果需要用到常规物质的作为能源的话，我们有希望能像电视剧中一样将物质按照 &#92;(E=m c^2&#92;) 转换成可利用的能量。</p>
+<h2><strong>Sci-Fi -> Science?</strong></h2>
+<p>看起来 warp drive 相当不错，可以达到很多倍的光速，而且时间膨胀效应很小，所以 warp drive 就是我们理想的载人航行器！</p>
+<p>可是如何实现这类曲率引擎呢？</p>
+<p>在 1995 年，S. V. Krasnikov 提出一种可以用来连接空间两点的便捷「管道」[<sup id="fnref-3881:6"><a href="#fn-3881:6" rel="footnote">6</a></sup>]，这个「管道」可以使得你从地球出发到达却立刻即到达 20.3ly 那么遥远的 Gliese 581. 问题在于，这个管道是需要修建的，第一次修建的时候，还是需要一个亚光速飞船……</p>
+<p>因此我们暂且排除 Krasnikov 这种方法。Krasnikov 这种方法类似于 hyper jump，广义上来讲，可以跟 warp drive 归于一类，但是因为第一次使用需要修建这一点，所以不能满足大家的要求。</p>
+<p>那么你这位推进专家难道就无计可施了么？那必然不是，因为我们有一位 Alcubierre 大侠。Miguel Alcubierre 提出了一种神秘的度规，这种度规恰好可以帮我们实现曲率推进，该度规就被称为 Alcubierre metric. [<sup id="fnref-3881:7"><a href="#fn-3881:7" rel="footnote">7</a></sup>]</p>
+<p>Alcubierre 度规是像是一个可以将飞船包裹起来的时空泡泡，泡泡内部还是正常的闵氏时空，然而这个时空泡泡却有一个时空剧烈变动的外壳。</p>
+<p>Einstein 的场方程的两端可以分别是物质和时空<br />
+&#92;[G_{&#92;mu&#92;nu}=T_{&#92;mu&#92;nu}&#92;]<br />
+现在你要做的只是设计一个合理的度规，然后按照上面的方程解出所需要的物质的分布和特性。</p>
+<h2><strong>Alcubierre 度规</strong></h2>
+<p>Alcubierre 度规可以从 ADM 形式中猜出来，但是这个 Alcubierre 前辈已经写出来了，所以你只需要把前辈的那个抄过来，<br />
+&#92;[&#92;mathrm ds^2 = -&#92;mathrm dt^2+(&#92;mathrm dx &#8211; v_s f(r_s)&#92;mathrm dt)^2 + &#92;mathrm dy^2 + &#92;mathrm dz^2&#92;]<br />
+其中，&#92;[v_s=&#92;mathrm dx_s/&#92;mathrm dt&#92;]<br />
+&#92;[r_s=((x -x_s)^2 + y^2 + z^2)^{1/2}&#92;]<br />
+&#92;[f(r_s)=&#92;frac{&#92;tanh(&#92;sigma(r_s + R))-&#92;tanh(&#92;sigma(r_s &#8211; R))}{2&#92;tanh(&#92;sigma R)}&#92;]<br />
+并且 &#92;(&#92;sigma>0&#92;)，&#92;(R>0&#92;)。</p>
+<p>怎么看这个度规呢，其实我们可以把飞船看做一个点，放在 &#92;(x_s&#92;)并让飞船的轨迹沿着 x 轴，然后 &#92;(r_s&#92;) 可以看做是离开飞船的距离。然后我们看一下 &#92;(f(r_s)&#92;) 这个函数的渐进行为。这个函数里面的 &#92;(&#92;sigma&#92;) 这个参数是用来调节 &#92;(&#92;tanh&#92;) 函数的陡峭程度的，同时也可以调节 &#92;(f(r_s)&#92;) 这个函数的陡峭程度。下面我们看一个极端情况<br />
+&#92;[&#92;lim_{&#92;sigma&#92;rightarrow&#92;infty} f(r_s)=&#92;begin{cases} 1 &amp; r_s&#92;in [-R, R]&#92;&#92;0 &amp; &#92;text{otherwise.} &#92;end{cases}&#92;]<br />
+也就是说，这是一个帽子函数。&#92;(&#92;sigma&#92;)越大，这个帽子就越陡，而且中心越平坦。<br />
+实际上这保证了离飞船比较远的地方依然是闵氏时空。</p>
+<p>好！有了 metric ，你就可以依据这个 metric 来计算所需要的物质了，然后就是如何得到这种物质并且给出特定的分布。在这之前，你需要检验一下这个度规是否真的满足我们的需求，对不对？</p>
+<p>首先，检查一下飞船远处的时空状况。此时 &#92;(r_s&#92;) 很大，度规退化成<br />
+&#92;[&#92;mathrm ds^2 = -&#92;mathrm dt^2+&#92;mathrm dx ^2 + &#92;mathrm dy^2 + &#92;mathrm dz^2&#92;]<br />
+恰是闵氏度规。</p>
+<p>这样形象的来看，飞船就是被包裹在一个「时空蛋壳」里了。那么这个飞船可以行进多快呢？答案是想多快就多快。</p>
+<p>因为飞船的移动完全依赖于 &#92;(v_s&#92;) 的大小，我们通过调节这个参数的大小，就可以调节飞船在无穷远的人看来的「移动速度」。而且，Alcubierre 证明[<sup id="fnref-3881:8"><a href="#fn-3881:8" rel="footnote">8</a></sup>]，这种移动没有时间上的膨胀效应，也就是说，在无穷远的人看来，如果飞船花了一天从 A 地点到达了 B 地点，那么飞船上的人也是同样这么认为的。完美。</p>
+<h2><strong>有何问题</strong></h2>
+<p>但是，人生最厉害的就是这个「但是」，此推进技术有很多的问题。暂且不管它对一些不是那么确凿的物理定律的违背，在实践上，有个很大的问题是：</p>
+<p>该引擎需要消耗难以想象的能量。</p>
+<p>最初别人估算的是即使消耗掉了整个可观测宇宙，我们都没法移动一个足够大的距离。但是后来的一些估算显示，如果要推动一艘 &#92;(1000&#92;mathrm m^3&#92;) 的飞船会消耗掉整个木星。</p>
+<p>另外，如果有 QFT 的限制，这种驱动是有个速度上限的。诸如此类。</p>
+<p><span style="color:orange;">关于这些问题，以及关于 Alcubierre drive 更加详细的理解，敬请期待第二期：<strong><a href="http://multiverse.lamost.org/blog/3968">谁动了我的飞船——『膨胀和收缩』</a></strong>。</span></p>
+<h1><strong>FOOTNOTES</strong></h1>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-3881:1">
+SETI, <a href="http://en.wikipedia.org/wiki/Search_for_extraterrestrial_intelligence">Search for extraterrestrial intelligence</a>&#160;<a href="#fnref-3881:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3881:2">
+Gliese 581 d, 是一颗围绕红矮星 Gliese 581 公转的行星。该星系位于 Libra 星座内。我们于 2008 年向该行星发射无线电波，预计2029年到达。顺便提一句，该行星并不是一直位于此星系的 Habitable zone 之内，而是有一大半的时间不在 Habitable zone。关于此行星的更多资料请看：<a href="http://exoplanets.org/detail/GJ_581_d">Exoplanets.org:GJ 581 d</a>&#160;<a href="#fnref-3881:2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3881:3">
+星际移民局， Interplanetary Immigration Agency，简称 <a href="http://iastro.lamost.org/iia.html">IIA</a>. 是一个虚构的非营利性组织。该组织倡导自由的星际移民。&#160;<a href="#fnref-3881:3" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3881:5">
+出自 「Hitchhiker&#8217;s Guide to The Galaxies」，详细内容参见 wikipedia 词条: <a href="http://en.wikipedia.org/wiki/Technology_in_The_Hitchhiker%27s_Guide_to_the_Galaxy#Infinite_Improbability_Drive">Technology in The Hitchhiker&#8217;s Guide to the Galaxy</a>&#160;<a href="#fnref-3881:5" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3881:4">
+见中文维基百科词条： <a href="http://zh.wikipedia.org/wiki/%E6%9B%B2%E9%80%9F%E5%BC%95%E6%93%8E#.E6.9B.B2.E9.80.9F.E9.80.9F.E5.BA.A6">曲率引擎</a>&#160;<a href="#fnref-3881:4" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3881:6">
+Krasnikov Tube, wikipedia 词条：<a href="http://en.wikipedia.org/wiki/Krasnikov_tube">Krasnikov Tube</a>，这个 wikipedia 词条提供了一个<a href="http://arcana.wikidot.com/krasnikov-tube">更加科普性的链接</a>；Krasnikov 的论文：<a href="http://arxiv.org/abs/gr-qc/9511068">arXiv:gr-qc/9511068v6</a>&#160;<a href="#fnref-3881:6" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3881:7">
+Alcubierre drive, wikipedia 词条： <a href="http://en.wikipedia.org/wiki/Alcubierre_drive">Alcubierre Drive</a>&#160;<a href="#fnref-3881:7" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3881:8">
+这个地方我有点怀疑 Alcubierre 的说法。暂且留待以后检查吧。&#160;<a href="#fnref-3881:8" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/3968" rel="bookmark" title="谁动了我的飞船——『膨胀和收缩』">谁动了我的飞船——『膨胀和收缩』 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/3881/feed</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>广义相对论考试</title>
+		<link>http://multiverse.lamost.org/blog/1410</link>
+		<comments>http://multiverse.lamost.org/blog/1410#comments</comments>
+		<pubDate>Fri, 27 May 2011 04:07:41 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1410</guid>
+		<description><![CDATA[广相的考试基本都没准备，很多东西都不懂。 这几天背单词累得要命，还有各种事情。 昨天思考以前一个广相作业题，就是对于下面这个度规 \[\mathrm ds^2=-(1-r^2/R^2)\mathrm dt^2+(1-r^2/R^2)^{-1}\mathrm dr^2+r^2(\mathrm d \theta^2+\sin^2\theta\mathrm d\phi^2)\] 如果我们从\(r=0\)一侧，越过\(r=R\)位置，就再也回不来了。 去跟一个师兄讨论，他讲这个问题最好证明\(r=R\)是个单向膜。 那么也就是说，这个超曲面上的切矢不是类时的，而是类光或者类空的，这里当然是证明这个超曲面上的切矢都是类光的。也就是说，只有光子可以在\(r=R\)这个曲面上运动，其他的粒子只能越过这个曲面，而不能在这个曲面上运动。 或者换句话说，这个超曲面上的每一点的光锥都是朝向\(r>R\)这一侧的。越过此超曲面之后，原来的空间轴\(r\)跟时间轴\(t\)（或者说，原来代表时间的基矢\(\mathrm dt\)和代表空间\(r\)的基矢\(\mathrm dr\)）的意义交换了。 P.S. 这篇文章：http://arxiv.org/abs/1005.2240 的abstract写的很好玩，最后一句： Contrary to the relativistic realization of Friedmann equations, we do not clarify the connection between Newtonian cosmology and entropic force because...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2044" rel="bookmark" title="宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？">宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？ </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>广相的考试基本都没准备，很多东西都不懂。</p>
+<p>这几天背单词累得要命，还有各种事情。</p>
+<p>昨天思考以前一个广相作业题，就是对于下面这个度规<span id="more-1410"></span></p>
+<p>\[\mathrm ds^2=-(1-r^2/R^2)\mathrm dt^2+(1-r^2/R^2)^{-1}\mathrm dr^2+r^2(\mathrm d \theta^2+\sin^2\theta\mathrm d\phi^2)\]</p>
+<p>如果我们从\(r=0\)一侧，越过\(r=R\)位置，就再也回不来了。</p>
+<p>去跟一个师兄讨论，他讲这个问题最好证明\(r=R\)是个单向膜。</p>
+<p>那么也就是说，这个超曲面上的切矢不是类时的，而是类光或者类空的，这里当然是证明这个超曲面上的切矢都是类光的。也就是说，只有光子可以在\(r=R\)这个曲面上运动，其他的粒子只能越过这个曲面，而不能在这个曲面上运动。</p>
+<p>或者换句话说，这个超曲面上的每一点的光锥都是朝向\(r>R\)这一侧的。越过此超曲面之后，原来的空间轴\(r\)跟时间轴\(t\)（或者说，原来代表时间的基矢\(\mathrm dt\)和代表空间\(r\)的基矢\(\mathrm dr\)）的意义交换了。</p>
+<p>P.S.</p>
+<p>这篇文章：http://arxiv.org/abs/1005.2240 的abstract写的很好玩，最后一句：</p>
+<blockquote>
+<p>Contrary to the relativistic realization of Friedmann equations, we do not clarify the connection between Newtonian cosmology and entropic force because there is no way of implementing the holographic screen in the Newtonian cosmology.</p></blockquote>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2044" rel="bookmark" title="宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？">宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？ </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/1410/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

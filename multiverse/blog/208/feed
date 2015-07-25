@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 到底应该嫁给谁！</title>
+	<atom:link href="http://multiverse.lamost.org/blog/208/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/208</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 时见疏星</title>
+		<link>http://multiverse.lamost.org/blog/208/comment-page-1#comment-4120</link>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+		<pubDate>Mon, 22 Apr 2013 12:03:27 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=208#comment-4120</guid>
+		<description><![CDATA[哈哈~]]></description>
+		<content:encoded><![CDATA[<p>哈哈~</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 斜阳</title>
+		<link>http://multiverse.lamost.org/blog/208/comment-page-1#comment-4119</link>
+		<dc:creator><![CDATA[斜阳]]></dc:creator>
+		<pubDate>Mon, 22 Apr 2013 07:56:39 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=208#comment-4119</guid>
+		<description><![CDATA[不用算就铁定选择Walter！]]></description>
+		<content:encoded><![CDATA[<p>不用算就铁定选择Walter！</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

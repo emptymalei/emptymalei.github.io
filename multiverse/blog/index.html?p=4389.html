@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+<!-- Mobile viewport optimized -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Favicon -->
+	<link rel="shortcut icon" href="wp-content/uploads/2012/12/Blomos1-1.png" />
+
+<!-- Title -->
+<title>宇宙学中的统计方法【丁】</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://multiverse.lamost.org/blog/xmlrpc.php" />
+
+<!-- WP Head -->
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  showProcessingMessages: false,
+  messageStyle: "none",
+  jax: ["input/TeX", "output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js","fp.js"],
+  TeX: {
+    equationNumbers: {  autoNumber: "AMS"  },
+    extensions: ["xypic.js","AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+  "HTML-CSS": { availableFonts: ["TeX"] },
+  tex2jax: {
+    inlineMath: [ ["\✟","\✟"], ["$","$"], ["\\(","\\)"] ],
+    displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+    processEscapes: true
+  }
+});</script>
+<meta name="generator" content="WordPress 4.2.2" />
+<meta name="template" content="Origin 0.5.8" />
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/105497512905835358378" />
+<meta name="description"  content="宇宙学中的统计方法笔记系列，第四篇：likelihood 函数的计算方法，包括如何剔除没用的模式和如何找到 likelihood 的极值。 系列文章目录： 宇宙学中的统计方法【甲】 宇宙学中的统计方法【乙】 宇宙学中的统计方法【丙】 宇宙学中的统计方法【丁】 在 likelihood" />
+
+<meta name="keywords"  content="statistics,宇宙学,物理,天尽头的纸条" />
+
+<link rel="canonical" href="index.html%3Fp=4389.html" />
+<meta property="og:title" content="宇宙学中的统计方法【丁】" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://multiverse.lamost.org/blog/4389" />
+<meta property="og:image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+<meta property="og:site_name" content="时见疏星" />
+<meta property="og:description" content="宇宙学中的统计方法笔记系列，第四篇：likelihood 函数的计算方法，包括如何剔除没用的模式和如何找到 likelihood 的极值。  系列文章目录：  宇宙学中的统计方法【甲】 宇宙学中的统计方法【乙】 宇宙学中的统计方法【丙】 宇宙学中的统计方法【丁】   在 likelihood 方程里面是需要求解矩阵的逆（可参考CMB 的 likelihood 方程），而实际观测中数据量又极大，所有直接求逆会实际计算很慢，因此一种有效的求解 likelihood function 的方法是很重要的。  Modern Cosmology 里面举了一个具体的例子。  Karhunen-Loeve Techniques 这种方法的主要想法是，丢掉那么严重被噪声污染的模。比如我们发现有用的模只有10%，那么计算逆矩阵的话，计算量就减少到了原来的1/1000。但是如何找出那些有用的模呢？ 如果 covariance matrix 是对角的，我们之前在 【乙】 部分中提到对于对角化的 covariance matrix，我们可以得到 &#092;(C_S/C_N&#092;)，也就是信噪比。通过看信噪比的强弱，就可以知道那些模是有用的。可是真正的观测中，得到的数据的 covariance matrix 并不是对角化的，得到信噪比就比较困难。这正是 Karhunen-Loeve 方法所解决的问题。 现在假定我们有 &#092;(N_p&#092;) 个数据点，&#092;(&#092;Delta_i&#092;)，与之前一样，这个数据点是由信号 &#092;(s_i&#092;) 和噪声 &#092;(n_i&#092;) 组成的。为了简单，我们假定信号和噪声是不关联的。 使用矩阵表达式，那么 covariance martrix 就可以写成 &#092; Karhunen-Loeve technique 是利用一系列矩阵变换把 noise covariance matrix 写成单位阵，然后 signal covariance matrix 写成对角形式，这样就可以比较信号和噪声了，当然我们用的数据矩阵也应该做相应的变换。比如我们把数据矩阵转动 &#092; 那么相应的 covariance matrix 也就变成了 &#092; 如果 &#092;({&#092;bf C}’&#092;)" />
+<meta property="article:published_time" content="2012-12-07T05:05:03Z" />
+<meta property="article:modified_time" content="2012-12-07T05:06:33Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="宇宙学中的统计方法笔记系列，第四篇：likelihood 函数的计算方法，包括如何剔除没用的模式和如何找到 likelihood 的极值。  系列文章目录：  宇宙学中的统计方法【甲】 宇宙学中的统计方法【乙】 宇宙学中的统计方法【丙】 宇宙学中的统计方法【丁】   在 likelihood 方程里面是需要求解矩阵的逆（可参考CMB 的 likelihood 方程），而实际观测中数据量又极大，所有直接求逆会实际计算很慢，因此一种有效的求解 likelihood function 的方法是很重要的。  Modern Cosmology 里面举了一个具体的例子。  Karhunen-Loeve Techniques 这种方法的主要想法是，丢掉那么严重被噪声污染的模。比如我们发现有用的模只有10%，那么计算逆矩阵的话，计算量就减少到了原来的1/1000。但是如何找出那些有用的模呢？ 如果 covariance matrix 是对角的，我们之前在 【乙】 部分中提到对于对角化的 covariance matrix，我们可以得到 &#092;(C_S/C_N&#092;)，也就是信噪比。通过看信噪比的强弱，就可以知道那些模是有用的。可是真正的观测中，得到的数据的 covariance matrix 并不是对角化的，得到信噪比就比较困难。这正是 Karhunen-Loeve 方法所解决的问题。 现在假定我们有 &#092;(N_p&#092;) 个数据点，&#092;(&#092;Delta_i&#092;)，与之前一样，这个数据点是由信号 &#092;(s_i&#092;) 和噪声 &#092;(n_i&#092;) 组成的。为了简单，我们假定信号和噪声是不关联的。 使用矩阵表达式，那么 covariance martrix 就可以写成 &#092; Karhunen-Loeve technique 是利用一系列矩阵变换把 noise covariance matrix 写成单位阵，然后 signal covariance matrix 写成对角形式，这样就可以比较信号和噪声了，当然我们用的数据矩阵也应该做相应的变换。比如我们把数据矩阵转动 &#092; 那么相应的 covariance matrix 也就变成了 &#092; 如果 &#092;({&#092;bf C}’&#092;)" />
+<meta itemprop="image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-17724131-2']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Feed" href="feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Comments Feed" href="comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; 宇宙学中的统计方法【丁】 Comments Feed" href="4389/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/multiverse.lamost.org\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/widget.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='wp-content/themes/origin/style.min.css%3Fver=0.5.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='wp-content/plugins/table-of-contents-plus/screen.css%3Fver=1505.css' type='text/css' media='all' />
+<link rel='stylesheet' id='Tippy-css'  href='wp-content/plugins/tippy/jquery.tippy.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='seed-wnb-css-css'  href='wp-content/plugins/wordpress-notification-bar/inc/css/seed_wnb.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-post-series-frontend-css'  href='wp-content/plugins/wp-post-series/assets/css/post-series.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='origin_fancybox-stylesheet-css'  href='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.css%3Fver=1.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-styles-css'  href='wp-content/plugins/font-awesome/assets/css/font-awesome.min.css%3Fver=3.2.1.css' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='font-awesome-ie7-css'  href='http://multiverse.lamost.org/blog/wp-content/plugins/font-awesome/assets/css/font-awesome-ie7.min.css?ver=3.2.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack_css-css'  href='wp-content/plugins/jetpack/css/jetpack.css%3Fver=3.6.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js%3Fver=1.11.2'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.2.1'></script>
+<script type='text/javascript' src='wp-content/plugins/scroll-to-top/js/stt.js%3Fver=1.0'></script>
+<script type='text/javascript' src='../Apps/MathJax-2.1/MathJax.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/plugins/tippy/jquery.tippy.js%3Fver=6.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var seed_wnb_js_localize = {"msg":"","button_link":"http:\/\/openmetric.org","button_label":"\u6682\u505c\u66f4\u65b0\u5566\uff0c\u70b9\u8fd9\u91cc\u53bb\u65b0\u7ad9\u70b9\uff1a[Dark Hypernova](http:\/\/openmetric.org)","button_target":"_blank"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wordpress-notification-bar/inc/js/seed_wnb.js%3Fver=4.2.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='宇宙学中的统计方法【丙】' href='index.html%3Fp=4364.html' />
+<link rel='next' title='数据可视化' href='index.html%3Fp=4648.html' />
+<link rel='shortlink' href='index.html%3Fp=4389.html' />
+	
+		<!-- by Scrollto Top -->
+		
+ 		<script type="text/javascript">
+ 			//<![CDATA[
+  			jQuery(document).ready(function(){
+    			jQuery("body").append("<div id=\"scroll_to_top\"><a href="http://multiverse.lamost.org/blog/\&quot;#top\"">Top | 回顶部</a></div>");
+    			jQuery("#scroll_to_top a").css({	'display' : 'none', 'z-index' : '9', 'position' : 'fixed', 'top' : '100%', 'width' : '110px', 'margin-top' : '-30px', 'right' : '50%', 'margin-left' : '-50px', 'height' : '20px', 'padding' : '3px 5px', 'font-size' : '14px', 'text-align' : 'center', 'padding' : '3px', 'color' : '#ffa600', 'background-color' : '#ffffff', '-moz-border-radius' : '5px', '-khtml-border-radius' : '5px', '-webkit-border-radius' : '5px', 'opacity' : '.8', 'text-decoration' : 'none'});	
+    			jQuery('#scroll_to_top a').click(function(){
+					jQuery('html, body').animate({scrollTop:0}, 'slow');
+				});
+
+    		});
+  			
+			//]]>
+
+  		</script>
+		<!-- /by Scrollto Top and History Back -->	
+		
+		<style type="text/css">div#toc_container ul li {font-size: 90%;}</style>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+                    jQuery('.tippy').tippy({ position: "link", offsetx: 0, offsety: 10, closetext: "X", hidedelay: 700, showdelay: 100, calcpos: "parent", showspeed: 0, hidespeed: 0, target: "_blank", showtitle: true, hoverpopup: true, draggable: true, dragheader: true, multitip: false, autoshow: false, showheader: true, showclose: true, htmlentities: false });
+                });
+            </script>
+        <style type='text/css'>#bg_color { color:white; }
+.wnb-bar-button {
+  color:black;
+  text-shadow:0 -1px 0 rgba(255,255,255,0.25);
+  background-color:white;
+}
+#wnb-bar {
+  color:white;
+  position:fixed;
+  background-color:#000000;
+  background-image:-moz-linear-gradient(top,#000000,#000000);
+  background-image:-ms-linear-gradient(top,#000000,#000000);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#000000),to(#000000));
+  background-image:-webkit-linear-gradient(top,#000000,#000000);
+  background-image:-o-linear-gradient(top,#000000,#000000);
+  background-image:linear-gradient(top,#000000,#000000);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000',GradientType=0);
+}
+</style>
+
+<!-- WP SinoType typography plugin by graficareal.net -->
+<style>
+body {font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1>*,h2>*,h3>*,h4>*,h5>*,h6>*{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+</style>
+<!-- WP SinoType plugin typography -->
+
+
+	<style type="text/css">
+
+		/* Font size. */
+					html { font-size: 16px; }
+		
+		/* Font family. */
+					body { font-family: 'Helvetica', serif; }
+		
+		/* Link color. */
+					a, a:visited, #footer a:hover, .entry-title a:hover { color: #f58612; }
+			#respond #submit, .button, a.button, .wpcf7-submit, #loginform .button-primary { background-color: #f58612; }
+				a:hover, a:focus { color: #000; }
+
+		/* Custom CSS. */
+		/* LaTeX format. span class=... for example */.latex {  font-family: Times, \"Times New Roman\", serif;	  letter-spacing: 1px;}.latex sup {  text-transform: uppercase;  letter-spacing: 1px;  font-size: 700.000000e+0m;  vertical-align: -0.3em;  margin-left: -0.36em;  margin-right: -0.15em;}.latex sub {  text-transform: uppercase;  vertical-align: -0.0ex;  margin-left: -0.1667em;  margin-right: -0.125em;  font-size: 1em;}  
+	
+	</style>	
+
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+<body class="wordpress ltr en_US parent-theme y2015 m07 d21 h23 tuesday logged-out custom-background singular singular-post singular-post-4389">
+
+	
+	<div id="container">
+		
+		<div class="wrap">
+
+				
+			<div id="header">
+	
+					
+					<div id="branding">
+						
+						<div id="site-title"><a href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a></div>						
+					</div><!-- #branding -->
+					
+					
+	
+	<div id="menu-primary" class="site-navigation menu-container" role="navigation">
+
+		<span class="menu-toggle">Menu</span>
+
+		
+		<div class="menu"><ul id="menu-primary-items" class="nav-menu"><li id="menu-item-4844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4844"><a href="../blog.html">首页</a></li>
+<li id="menu-item-6371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6371"><a title="About">关于</a>
+<ul class="sub-menu">
+	<li id="menu-item-4835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4835"><a href="index.html%3Fp=1196.html">我</a></li>
+	<li id="menu-item-6377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6377"><a href="index.html%3Fp=1571.html">书与电影</a></li>
+	<li id="menu-item-6368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6368"><a href="index.html%3Fp=5003.html">白日梦</a></li>
+	<li id="menu-item-6453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6453"><a href="index.html%3Fp=6447.html">星际移民</a></li>
+</ul>
+</li>
+<li id="menu-item-4836" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4836"><a href="index.html%3Fp=2369.html">档案</a></li>
+<li id="menu-item-4837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4837"><a href="index.html%3Fp=371.html">会客</a></li>
+<li id="menu-item-6404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6404"><a href="index.html%3Fp=6394.html">星际移民中心</a></li>
+</ul></div>
+		
+	</div><!-- #menu-primary .menu-container -->
+
+	
+					
+					<div id="site-description"><span>流年暗中偷换</span></div>	
+						
+				
+		<div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb">
+			<span class="trail-browse">Browse:</span> <span class="trail-begin"><a href="../blog.html" title="时见疏星">Home</a></span>
+			 <span class="sep">&raquo;</span> <span class="trail-end">宇宙学中的统计方法【丁】</span>
+		</div>	
+			</div><!-- #header -->
+	
+				
+				
+			<div id="main">
+	
+				
+	
+	<div id="content">
+
+		
+		<div class="hfeed">
+
+			
+				
+					
+					<div id="post-4389" class="hentry post publish post-1 odd author-emptymalei category-message-from-the-end-of-the-universe post_tag-statistics post_tag-cosmology post_tag-physics">
+
+												
+						<div class="post-content">
+						
+														
+							<h1 class='post-title entry-title'>宇宙学中的统计方法【丁】</h1>
+<div class="byline"><time class="published" datetime="2012-12-07T05:05:03-06:00" title="Friday, December 7th, 2012, 5:05 am">12/07/2012</time> &middot; by <span class="author vcard"><a class="url fn n" rel="author" href="author/emptymalei/index.html" title="时见疏星">时见疏星</a></span> &middot; in <span class="category"><a href="category/message-from-the-end-of-the-universe/index.html" rel="tag">天尽头的纸条</a></span> &middot; <a onclick="TogetherJS(this); return false;" style="font-weight:bold;color:orange;font-style:normal;cursor:default;"><i class="icon-female"></i>  &#91; Co-Reading &#93; <i class="icon-male"></i></a> &middot; </div>							<div class="entry-content">
+								
+								<p>宇宙学中的统计方法笔记系列，第四篇：likelihood 函数的计算方法，包括如何剔除没用的模式和如何找到 likelihood 的极值。<span id="more-4389"></span></p>
+<div id="toc_container" class="toc_wrap_right toc_white no_bullets"><p class="toc_title">Contents</p><ul class="toc_list"><li><a href="index.html%3Fp=4389.html#Karhunen-Loeve_Techniques"><span class="toc_number toc_depth_1">1</span> Karhunen-Loeve Techniques</a></li><li><a href="index.html%3Fp=4389.html#Optimal_Quadratic_Estimator"><span class="toc_number toc_depth_1">2</span> Optimal Quadratic Estimator</a></li></ul></div>
+
+<p>系列文章目录：</p>
+<ul>
+<li><a href="index.html%3Fp=2918.html">宇宙学中的统计方法【甲】</a></li>
+<li><a href="index.html%3Fp=2970.html">宇宙学中的统计方法【乙】</a></li>
+<li><a href="index.html%3Fp=4364.html">宇宙学中的统计方法【丙】</a></li>
+<li><a href="index.html%3Fp=4389.html">宇宙学中的统计方法【丁】</a></li>
+</ul>
+<hr />
+<p>在 likelihood 方程里面是需要求解矩阵的逆（可参考<a href="index.html%3Fp=2970.html#mjx-eqn-eqn-multipixellikelihood" target="_blank">CMB 的 likelihood 方程</a>），而实际观测中数据量又极大，所有直接求逆会实际计算很慢，因此一种有效的求解 likelihood function 的方法是很重要的。</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightgreen;border-left:8px solid lightgreen;border-right:8px solid lightgreen;padding:2px 5px 2px 5px;">
+<em>Modern Cosmology</em> 里面举了一个具体的例子。
+</p>
+<h2><span id="Karhunen-Loeve_Techniques">Karhunen-Loeve Techniques</span></h2>
+<p>这种方法的主要想法是，丢掉那么严重被噪声污染的模。比如我们发现有用的模只有10%，那么计算逆矩阵的话，计算量就减少到了原来的1/1000。但是如何找出那些有用的模呢？</p>
+<p>如果 covariance matrix 是对角的，我们之前在 【乙】 部分中提到对于对角化的 covariance matrix，我们可以得到 &#92;(C_S/C_N&#92;)，也就是信噪比。通过看信噪比的强弱，就可以知道那些模是有用的。可是真正的观测中，得到的数据的 covariance matrix 并不是对角化的，得到信噪比就比较困难。这正是 Karhunen-Loeve 方法所解决的问题。</p>
+<p>现在假定我们有 &#92;(N_p&#92;) 个数据点，&#92;(&#92;Delta_i&#92;)，与之前一样，这个数据点是由信号 &#92;(s_i&#92;) 和噪声 &#92;(n_i&#92;) 组成的。为了简单，我们假定信号和噪声是不关联的。</p>
+<p>使用矩阵表达式，那么 covariance martrix 就可以写成<br />
+&#92;[ {&#92;bf C} &#92;equiv &#92;langle &#92;Delta &#92;Delta^{T} &#92;rangle = {&#92;bf C_S} + {&#92;bf C_N} &#92;]</p>
+<p>Karhunen-Loeve technique 是利用一系列矩阵变换把 noise covariance matrix 写成单位阵，然后 signal covariance matrix 写成对角形式，这样就可以比较信号和噪声了，当然我们用的数据矩阵也应该做相应的变换。比如我们把数据矩阵转动<br />
+&#92;[ {&#92;bf &#92;Delta}&#8217; = {&#92;bf R} {&#92;bf &#92;Delta} &#92;]<br />
+那么相应的 covariance matrix 也就变成了<br />
+&#92;[ {&#92;bf C} = &#92;langle ({&#92;bf R &#92;Delta}) ({&#92;bf R &#92;Delta}) &#92;rangle ={&#92;bf R C R^{T}} &#92;]</p>
+<p>如果 &#92;({&#92;bf C}’&#92;) 是个对角化的形式，那就好办了。所以，Karhunen-Loeve technique 的操作过程应该是：</p>
+<ul>
+<li>通过转动矩阵 &#92;({&#92;bf R_1} &#92;) 把 &#92;({&#92;bf C_N}&#92;) 对角化为 &#92;({&#92;bf C_N}&#8221;&#92;) ；</li>
+<li>通过矩阵 &#92;({&#92;bf R_2}&#92;)把 &#92;({&#92;bf C_N}&#8221;&#92;) 化为单位阵：&#92;[ {&#92;bf C_N}&#8217; = {&#92;bf R_2 R_1 C_N R_1^T R_2^T}&#92;] 其实 &#92;(&#92;bf R_2&#92;) 是个对角阵，所以 &#92;({&#92;bf R_2^T} = {&#92;bf R_2} &#92;) ；</li>
+<li>通过转动矩阵 &#92;({&#92;bf R_3}&#92;) 把进行过 &#92;({&#92;bf R_1}&#92;) 和 &#92;({&#92;bf R_2}&#92;) 操作的 &#92;({&#92;bf C_S}&#92;) 对角化为 &#92;({&#92;bf C_S}&#8217;&#92;) ：&#92;[{&#92;bf C_S}&#8217; = {&#92;bf R_3 R_2 R_1 C_S R_1^T R_2 R_3}&#92;]。同时 &#92;(&#92;bf C_N&#8217;&#92;) 也必须进行 &#92;(&#92;bf R_3&#92;) 操作，但是由于实对称矩阵的对角化通过 unitary 的矩阵来实现的（&#92;({&#92;bf R_3^{-1} = {&#92;bf R_3^T}}&#92;)），所以实际上再对 &#92;(&#92;bf C_N&#8217;&#92;) 进行 &#92;(&#92;bf R_3&#92;) 操作并不改变 &#92;(&#92;bf C_N&#8217;&#92;) 是单位阵的性质，因此这一步不需要任何计算；</li>
+<li>对数据点进行相应的变换 &#92;[ {&#92;bf &#92;Delta&#8217;} = ( {&#92;bf R_3 R_2 R_1 } ){&#92;bf &#92;Delta} &#92;]</li>
+</ul>
+<p>这样变换之后，我们最终拿到的 covariance matrix 是<br />
+&#92;begin{equation}<br />
+{&#92;bf C}‘ &#92;equiv &#92;langle {&#92;bf &#92;Delta&#8217;&#92;Delta&#8217;^T } &#92;rangle =  {&#92;bf C_N&#8217;} + {&#92;bf C_S&#8217;} = {&#92;bf I} + {&#92;bf C_S&#8217;}<br />
+&#92;end{equation}</p>
+<p>通过判断 &#92;(&#92;bf C_S&#8217;&#92;) 的元素（只有对角元）与 1 的大小，可以判断某个模式是否应该舍弃。</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightgreen;border-left:8px solid lightgreen;border-right:8px solid lightgreen;padding:2px 5px 2px 5px;">
+<em>Modern Cosmology</em> P 356 有一个数据矩阵只有两个元素的例子。
+</p>
+<p>Karhunen-Loeve 方法已经有了很重要的应用。下图是 Bunn 和 Bond 用 K L techniques 重分析 COBE 卫星数据的几个图（<em>Modern Cosmology</em> P360）</p>
+<p><img src="wp-content/uploads/2012/12/KLTechniques.jpg" alt="" title="KL Techniques" width="550" /></p>
+<p>图中左上是 signal to noise (S/N) 最大的模式，而右下是 S/N 最小的模式。实际上左上角主要是 quadrupole 的贡献，右下角的图主要是小尺度观测的贡献。</p>
+<p>下图是 K L techniques 用在 galaxy survey 上面的情况（Vogeley 和 Szalay，1996）。（<em>Modern Cosmology</em> P361）</p>
+<p><img src="wp-content/uploads/2012/12/KLTechniques-GalaxySurvey.jpg" alt="" title="KLTechniques-GalaxySurvey" width="550" /></p>
+<p>上图中展示的是 12 个有最大 S/N 的模式，都是大尺度的模。也就是说 K L techniques 恰好吧 galaxy survey 中的大尺度的数据筛选出来了。</p>
+<p>Karhunen-Loeve technique 的另外一个很重要的用途是进行自洽性分析。<em>Modern Cosmology</em> P360 给了一个 the Python experiment 的例子。由于数据点太多，不方便直接检查数据的自洽性。于是他们使用 Karhunen-Loeve technique 把大 S/N 的数据挑出来，然后看看是不是跟观测数据所做的基本的概率假定相符，比如这里数据应该是 Gaussian 的，但是 the Python experiment 小组 第一次所用的 noise covariance matrix 导致筛选出来的这些结果并不是 Gaussian 的，于是他们就用新的 noise covariance matrix 重新做了分析。（具体例子分析请翻阅 <em>Modern Cosmology</em> P360）</p>
+<p>在实际的观测中，这种方法并不是万能的，因为首先我们必须现有一个预设的 signal covariance matrix &#92;(&#92;bf C_S&#92;)，其次，这种方法在进行了上面的这么多的操作进行筛选数据点之后，还是需要按照原来的求解 likelihood 的方法来计算，也就是还是要求逆，虽然我们上面进行过了对角化，但是这只是一个特殊点进行的，也就是选择 &#92;(&#92;bf C_S&#92;) 是所定的点，这样在其他点，这些矩阵并不是对角化的，计算还是比较复杂。</p>
+<h2><span id="Optimal_Quadratic_Estimator">Optimal Quadratic Estimator</span></h2>
+<p>上面的 K L techniques 还是要硬算 likelihood 的，而 optimal quadratic estimator 是一种不需要去完整的求解全局的 likehood 的方法。</p>
+<p>Optimal quadratic estimator 是类似于 Newton 切线法求方程的根的方法，因为实际上我们要求解的量只是 likelihood 极大的时候的参数值，所以我们只需要找到如下方程的根就可以了，<br />
+&#92;[ &#92;left.&#92;frac{&#92;partial &#92;scr L}{&#92;partial &#92;lambda} &#92;right| _ {&#92;lambda = &#92;bar &#92;lambda}= 0 &#92;]<br />
+按照 Newton-Raphson 方法的想法，需要选定一个初始的参数空间的位置 &#92;(&#92;lambda^{(0)}&#92;)，因为对于多项式形式的函数这样的算法比较有优势，所以我们现在假定 likelihood 是 &#92;(&#92;bf C_S&#92;) 和 &#92;(&#92;bf C_N&#92;) 的 Gaussian 函数，那么我们对 likelihood 取 log 之后的式子就变成多项式形式了。这样我们把 &#92;(&#92;ln &#92;scr L&#92;) 在 &#92;(&#92;lambda^{(0)}&#92;) 附近展开</p>
+<p>&#92;[<br />
+(&#92;ln &#92;mathscr L) _{,&#92;lambda} (&#92;lambda) = (&#92;ln &#92;mathscr L) _{,&#92;lambda}(&#92;lambda^{(0)}) + (&#92;ln &#92;mathscr L) _{,&#92;lambda&#92;lambda}(&#92;lambda^{(0)}) ( &#92;lambda &#8211; &#92;lambda^{(0)}) &#92;]</p>
+<p>只取前面的两项，并且把极值点真正的参数值 &#92;(&#92;hat &#92;lambda&#92;)带入，有 &#92;({&#92;ln&#92;scr L}_{,&#92;lambda} = 0&#92;)，即</p>
+<p>&#92;[ &#92;hat&#92;lambda &#92;approx &#92;lambda^{(0)} &#8211; &#92;frac{ (&#92;ln &#92;scr L) _{,&#92;lambda}(&#92;lambda^{(0)}) }{(&#92;ln &#92;scr L) _{,&#92;lambda&#92;lambda}(&#92;lambda^{(0)})} &#92;]</p>
+<p>实际上上式中所谓的 &#92;(&#92;hat &#92;lambda&#92;) 只是一个近似的准确值，因为我们只取了 Taylor 展开的前两项。但是通过迭代的方法，我们就可以无限趋近于真正的极值。</p>
+<p>这种方法中出现了 likelihood 的导数。可以用 CMB 的情况作为例子来看看如何计算。对 CMB 来说<br />
+&#92;[ (&#92;ln &#92;mathscr L) _{,&#92;lambda} = &#92;frac{&#92;partial}{&#92;partial &#92;lambda}&#92;left[ -&#92;frac{1}{2}&#92;ln(&#92;det C) &#8211; &#92;frac{1}{2} &#92;Delta C^{-1}&#92;Delta &#92;right]&#92;]</p>
+<p>利用矩阵的一些计算技巧，&#92;(&#92;ln &#92;det(C) = &#92;mathrm{Tr} &#92;ln(C) &#92;) 和 &#92;( C_{,&#92;lambda}^{-1} = &#8211; C^{-1} C _ {,&#92;lambda} C^{-1} &#92;)<br />
+&#92;begin{eqnarray}<br />
+(&#92;ln &#92;mathscr L)_{,&#92;lambda} &amp;=&amp; &#92;frac{&#92;partial}{&#92;partial &#92;lambda}&#92;left[ -&#92;frac{1}{2}&#92;ln(&#92;det C) &#8211; &#92;frac{1}{2} &#92;Delta C^{-1}&#92;Delta &#92;right] &#92;nonumber &#92;&#92;<br />
+&amp;=&amp; -&#92;frac{1}{2}&#92;frac{&#92;partial}{&#92;partial &#92;lambda} &#92;ln(&#92;det C) &#8211; &#92;frac{1}{2} &#92;Delta &#92;frac{&#92;partial}{&#92;partial &#92;lambda} C^{-1} &#92;Delta  &#92;nonumber &#92;&#92;<br />
+&amp;=&amp; -&#92;frac{1}{2} &#92;mathrm{Tr} [C^{-1} C _ {,&#92;lambda}] + &#92;frac{1}{2}&#92;Delta C^{-1}C _ {,&#92;lambda}C^{-1} &#92;Delta<br />
+&#92;end{eqnarray}</p>
+<p>重复使用上述技巧，可以得出二阶导数<br />
+&#92;[ (&#92;ln &#92;mathscr L) _ {,&#92;lambda&#92;lambda} = -&#92;Delta C^{-1}C _ {,&#92;lambda} C^{-1} C _ {,&#92;lambda} C^{-1}&#92;Delta + &#92;frac{1}{2} &#92;mathrm{Tr} [ C^{-1} C _ {,&#92;lambda} C^{-1} C _ {,&#92;lambda} ] +&#92;frac{1}{2} ( &#92;Delta C^{-1} C _ {,&#92;lambda&#92;lambda} C^{-1} &#92;Delta &#8211; &#92;mathrm {Tr} [ C^{-1} C _ {,&#92;lambda&#92;lambda} ] ) &#92;]</p>
+<p>为了方便，定义一个 curvature，<br />
+&#92;[ &#92;mathscr F = &#8211; &#92;frac{&#92;partial^2 &#92;ln &#92;mathscr L}{&#92;partial &#92;lambda^2} &#92;]</p>
+<p>并且<br />
+&#92;[ F _ {,&#92;lambda&#92;lambda} &#92;equiv &#92;langle &#92;mathscr F &#92;rangle = &#92;frac 1 2 &#92;mathrm{Tr} [ C _ {,&#92;lambda} C^{-1} C _ {,&#92;lambda} C^{-1} ] &#92;]</p>
+<p>于是<br />
+&#92;begin{equation}<br />
+&#92;hat&#92;lambda = &#92;lambda^{(0)} + F^{-1} _ {&#92;lambda&#92;lambda} &#92;frac{&#92;Delta C^{-1}C _ {,&#92;lambda} C^{-1} &#92;Delta &#8211; &#92;mathrm {Tr} [ C^{-1} C _ {,&#92;lambda} ] }{ 2 }<br />
+&#92;end{equation}</p>
+<p>从这个 CMB 的例子可以更好的了解具体如何计算。按照我们一开始的想法，只要我们把按照这个过程多进行几次迭代就可以了。</p>
+<p>但是上面所讲仅仅是一个参数的情况，那么对于多个参数的情况呢？</p>
+<p>多参数的情况就变成了</p>
+<p>&#92;begin{equation}<br />
+&#92;hat &#92;lambda _ &#92;alpha^{(0)} + F^{-1} _ {&#92;alpha&#92;beta} &#92;frac{ &#92;Delta C^{-1} C _ {,&#92;beta} C^{-1} &#92;Delta &#8211; &#92;mathrm{Tr} [ C^{-1} C _ {,&#92;beta} ] }{ 2 }<br />
+&#92;end{equation}</p>
+<p>其中原来的 curvature 变成了 Fisher matrix<br />
+&#92;[ F _ {&#92;alpha&#92;beta} &#92;equiv &#92;langle &#8211; &#92;frac{ &#92;partial^2 (&#92;ln &#92;mathscr L) }{ &#92;partial &#92;lambda _ {&#92;alpha} &#92;partial &#92;lambda _ {&#92;beta} } &#92;rangle = &#92;frac12&#92;mathrm{Tr}[ C _ {,&#92;alpha} C^{-1} C _ {,&#92;beta} C^{-1} ] &#92;]</p>
+<p>到此为止，这种方法告诉我们其实我们不需要曲完整的求解整个参数空间中的 likelihood function，而只需要估计一个参数空间的点，然后通过迭代的方法就可以了。这样只需要求解一个局域的参数空间而已。</p>
+<p>下一步就是要得到参数误差。其实我们已经假定了数据是 Gaussian 的，所以只需要按照 Gaussian 分布来给定误差就可以了。</p>
+<p>因此 variance of estimator 就是<br />
+&#92;[ &#92;langle (&#92;hat&#92;lambda _ &#92;alpha &#8211; &#92;bar &#92;lambda _ &#92;alpha)(&#92;hat &#92;lambda _ &#92;beta &#8211; &#92;bar &#92;lambda _ &#92;beta) &#92;rangle = (F^{-1}) _ {&#92;alpha&#92;beta} &#92;]</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightgreen;border-left:8px solid lightgreen;border-right:8px solid lightgreen;padding:2px 5px 2px 5px;">
+<em>Modern Cosmology</em> P 367 中有关于为什么我们这里求解的 \(\hat\lambda\) 的期望值正好等于真正的理论值 \(\bar \lambda\) 的证明。这个证明从一方面说明了我们按照 Gaussian 分布给出结果的误差是正确的。
+</p>
+<p>Fisher matrix 变得非常重要，因为 Fisher matrix 不仅仅要用来计算参数空间极值，还直接决定了我们的数据拟合结果的好坏。下一篇 post 我们就来看看 Fisher matrix 的计算方法。</p>
+<hr />
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightpink;padding:2px 5px 2px 5px;">
+本文没有 flag。</p>
+<div class='yarpp-related'>
+<hr /><p><big><strong><font color="#ff6600">长程相关:</font></strong></big></p><ol>
+<li><a href="index.html%3Fp=2918.html" rel="bookmark" title="宇宙学中的统计方法【甲】">宇宙学中的统计方法【甲】 </a><hr /></li>
+<li><a href="index.html%3Fp=2970.html" rel="bookmark" title="宇宙学中的统计方法【乙】">宇宙学中的统计方法【乙】 </a><hr /></li>
+<li><a href="index.html%3Fp=4364.html" rel="bookmark" title="宇宙学中的统计方法【丙】">宇宙学中的统计方法【丙】 </a><hr /></li>
+<li><a href="index.html%3Fp=1678.html" rel="bookmark" title="我们的宇宙可能由闭宇宙演化为开宇宙么？[第一节]">我们的宇宙可能由闭宇宙演化为开宇宙么？[第一节] </a><hr /></li>
+</ol>
+</div>
+								
+																
+							</div><!-- .entry-content -->
+
+							<div class="entry-meta"><span class="post_tag"><span class="before">Tags: </span><a href="tag/statistics.html" rel="tag">Statistics</a>, <a href="tag/cosmology/index.html" rel="tag">宇宙学</a>, <a href="tag/physics/index.html" rel="tag">物理</a></span></div>
+													
+						</div><!-- .post-content -->
+
+					</div><!-- .hentry -->
+
+					
+					
+					
+					<script type="text/javascript">
+var duoshuoQuery = {"short_name":"multiverse","sso":{"login":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=duoshuo_login","logout":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=logout&_wpnonce=eedd98a590"},"theme":"bluebox","stylePatch":"wordpress\/Origin"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+(function() {
+    var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
+    ds.charset = 'UTF-8';
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><a name="comments"></a>
+
+<div class="ds-thread" data-thread-key="4389" data-author-key="1" data-title="宇宙学中的统计方法【丁】" data-url="http://multiverse.lamost.org/blog/4389"></div>
+
+<script type="text/javascript">
+	if (typeof DUOSHUO !== 'undefined')
+		DUOSHUO.EmbedThread('.ds-thread');
+</script>
+	<div id="ds-ssr">
+
+		
+            <ol id="commentlist">
+                            </ol>
+
+		            
+    </div>
+				
+			
+		</div><!-- .hfeed -->
+
+		
+		
+	
+		<div class="loop-nav">
+			<div class="previous">&larr; <a href="index.html%3Fp=4364.html" rel="prev">宇宙学中的统计方法【丙】</a></div>			<div class="next"><a href="index.html%3Fp=4648.html" rel="next">数据可视化</a> &rarr;</div>		</div><!-- .loop-nav -->
+
+	
+	</div><!-- #content -->
+
+	
+				
+	
+	<div id="sidebar-primary" class="sidebar">
+
+		
+		<section id="hybrid-search-2" class="widget search widget-search">			<div class="search">
+
+				<form method="get" class="search-form" action="../blog.html">
+				
+				<div>
+					
+					<input class="search-text" type="text" name="s" value="Search this site..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+					
+					<input class="search-submit button" name="submit" type="submit" value="Search" />
+					
+				</div>
+				
+				</form><!-- .search-form -->
+
+			</div><!-- .search --></section><section id="dx_zen_widget-3" class="widget dx_zen_widget_sample_single widget-dx_zen_widget_sample_single"><h3 class="widget-title">禅语 (GitHub Zen)</h3>        		<div>
+        			<p>Avoid administrative distraction.</p>        		</div>
+        	</section><section id="hybrid-nav-menu-2" class="widget nav-menu widget-nav-menu"><h3 class="widget-title">文章分类</h3><nav class="menu-categories-container"><ul id="menu-categories" class="nav-menu"><li id="menu-item-4839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4839"><a href="category/dreams-under-the-starry-sky/index.html">星空下的梦想</a></li><li id="menu-item-4840" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4840"><a href="category/message-from-the-end-of-the-universe/index.html">天尽头的纸条</a></li><li id="menu-item-4841" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4841"><a href="category/world-of-the-internet/index.html">计算中的宇宙</a></li><li id="menu-item-4842" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4842"><a href="category/all-kinds-of-knowledge/index.html">万物皆循因果</a></li><li id="menu-item-4843" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4843"><a href="category/dance-in-heaven/index.html">天幕上的舞蹈</a></li></ul></nav></section><section id="toc-widget-2" class="widget toc_widget widget-toc_widget"><h3 class="widget-title">Contents</h3><ul class="toc_widget_list no_bullets"><li><a href="index.html%3Fp=4389.html#Karhunen-Loeve_Techniques"><span class="toc_number toc_depth_1">1</span> Karhunen-Loeve Techniques</a></li><li><a href="index.html%3Fp=4389.html#Optimal_Quadratic_Estimator"><span class="toc_number toc_depth_1">2</span> Optimal Quadratic Estimator</a></li></ul></section><section id="ds-recent-comments-2" class="widget ds-widget-recent-comments widget-ds-widget-recent-comments"><h3 class="widget-title">最近评论</h3><ul class="ds-recent-comments" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-avatar-size="30" data-excerpt-length="70"></ul></section><script>
+if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.RecentComments && DUOSHUO.RecentComments('.ds-recent-comments');
+</script><section id="hybrid-tags-2" class="widget tags widget-tags"><h3 class="widget-title">Tags</h3><p class="term-cloud post_tag-cloud"><a href='tag/coding/index.html' class='tag-link-117' title='12 topics' style='font-size: 11.3703703704pt;'>Coding</a> <a href='tag/it/index.html' class='tag-link-91' title='32 topics' style='font-size: 16.6851851852pt;'>IT</a> <a href='tag/math/index.html' class='tag-link-96' title='9 topics' style='font-size: 9.94444444444pt;'>Math</a> <a href='tag/physicist.html' class='tag-link-70' title='8 topics' style='font-size: 9.2962962963pt;'>Physicist</a> <a href='tag/statistical-physics/index.html' class='tag-link-86' title='15 topics' style='font-size: 12.537037037pt;'>Statistical Physics</a> <a href='tag/statistics.html' class='tag-link-188' title='8 topics' style='font-size: 9.2962962963pt;'>Statistics</a> <a href='tag/tex.html' class='tag-link-115' title='7 topics' style='font-size: 8.64814814815pt;'>TeX</a> <a href='tag/wordpress/index.html' class='tag-link-101' title='10 topics' style='font-size: 10.462962963pt;'>wordpress</a> <a href='tag/wp_plugin/index.html' class='tag-link-52' title='10 topics' style='font-size: 10.462962963pt;'>WP插件</a> <a href='tag/life/index.html' class='tag-link-93' title='32 topics' style='font-size: 16.6851851852pt;'>人生</a> <a href='tag/philosophy-philosophy-philosophy-philosophy-philosophy/index.html' class='tag-link-95' title='15 topics' style='font-size: 12.537037037pt;'>哲思</a> <a href='tag/astronomy/index.html' class='tag-link-81' title='46 topics' style='font-size: 18.6296296296pt;'>天文</a> <a href='tag/celestial.html' class='tag-link-6' title='7 topics' style='font-size: 8.64814814815pt;'>天象</a> <a href='tag/cosmology/index.html' class='tag-link-8' title='56 topics' style='font-size: 19.7962962963pt;'>宇宙学</a> <a href='tag/cosmological_evolution/index.html' class='tag-link-126' title='13 topics' style='font-size: 11.8888888889pt;'>宇宙演化</a> <a href='tag/to_be_continued.html' class='tag-link-105' title='6 topics' style='font-size: 8pt;'>待续</a> <a href='tag/trouble/index.html' class='tag-link-51' title='37 topics' style='font-size: 17.462962963pt;'>心事</a> <a href='tag/meteor.html' class='tag-link-63' title='6 topics' style='font-size: 8pt;'>流星雨</a> <a href='tag/love/index.html' class='tag-link-49' title='15 topics' style='font-size: 12.537037037pt;'>爱情</a> <a href='tag/physics/index.html' class='tag-link-44' title='84 topics' style='font-size: 22pt;'>物理</a> <a href='tag/crazy_science/index.html' class='tag-link-73' title='68 topics' style='font-size: 20.8333333333pt;'>疯狂的科学</a> <a href='tag/sci_fi/index.html' class='tag-link-46' title='15 topics' style='font-size: 12.537037037pt;'>科幻</a> <a href='tag/�%2591�%259C/index.html' class='tag-link-112' title='22 topics' style='font-size: 14.6111111111pt;'>网络</a> <a href='tag/poem.html' class='tag-link-35' title='6 topics' style='font-size: 8pt;'>诗歌</a> <a href='tag/my_lyrics.html' class='tag-link-56' title='7 topics' style='font-size: 8.64814814815pt;'>配词</a></p></section>
+		
+	</div><!-- #sidebar-primary .aside -->
+
+	
+
+				
+		</div><!-- #main -->
+
+		
+				
+
+		
+		<div id="footer">
+
+			
+			<div class="footer-content">
+				
+				<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17724131-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+Copyleft ©  2010 - 2015  <a class="site-link" href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a> By <a href="http://www.douban.com/people/emptymalei/" title="星河里的章鱼喵@Interplanetary Immigration Agency">章鱼喵</a>. <a href="index.html%3Fp=4389.html#" title="~To tell you the truth, this site will have been established in 2211AD on Mars."> Secret 1. </a> | <a href="index.html%3Fp=4389.html#" title="The  author is SOMEBODY in Interplanetary Immigration Agency">Secret 2</a> | <a href="http://interimm.github.io/" title="Interplanetary Immigration Agency">Interplanetary Immigration Agency.</a> | Co-Reading Uses <a href="http://togetherjs.com" target="_blank">TogetherJS </a><hr/>
+
+<div style="float:left;">
+<div style="display:inline;float:left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="知识共享许可协议" style="border-width:0;height:30px;" src="wp-content/uploads/2012/03/cc-by-nc-sa.gif" /></a></div>
+<div style="display:inline;margin-left:20px;float:left;line-height:15px;">本站作品(如无特别说明)采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><strong>CC BY-NC-SA 3.0</strong></a>。<br>(保留作者并注明出处非商业且相同方式共享。)</div>
+<div style="float:right;line-height:13px;">
+<a href="wp-admin.html" style="font-size:9px;background-color:#7aca29;color:#7aca29;width:30px;">Admin</a>
+<br>
+<a href="https://www.google.com/analytics" style="font-size:9px;background-color:#f58612;color:#f58612;width:30px;">Analytics</a>
+</div>
+</div>
+
+<div style="float:right;font-size:13px;">
+|  <a style="padding:2px 2px 2px 2px;color:#1473D7;" href="http://iastro.lamost.org/x/user/107" title="专业笔记@iAstro">宇宙</a> 
+ | <a style="padding:2px 2px 2px 2px;color:#08C;" href="http://www.douban.com/people/emptymalei" title="我的豆瓣">豆瓣</a>    
+ | <a style="padding:2px 2px 2px 2px;color:orange;" href="http://github.com/emptymalei" title="我的GitHub">GitHub</a>  
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.zhihu.com/people/emptymalei" title="我的知乎">知乎</a>                           
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.quora.com/MA-Lei-1" title="My Quora">Quora</a>   
+ | <a style="padding:2px 2px 2px 2px;color:#c61800;" href="http://www.guokr.com/i/1769480175/" title="时见疏星@果壳网">果壳</a>
+ | </div>
+				
+			</div>
+
+			
+		</div><!-- #footer -->
+
+				
+		</div><!-- .wrap -->
+
+	</div><!-- #container -->
+
+	
+	<link rel='stylesheet' id='yarppRelatedCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/related.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/table-of-contents-plus/front.js%3Fver=1505'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201530'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.pack.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fitvids/jquery.fitvids.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/footer-scripts.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/navigation.js%3Fver=20130228'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/themes/origin/library/js/drop-downs.min.js%3Fver=20130805'></script>
+	
+</body>
+</html>

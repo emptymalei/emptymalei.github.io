@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+<!-- Mobile viewport optimized -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Favicon -->
+	<link rel="shortcut icon" href="wp-content/uploads/2012/12/Blomos1-1.png" />
+
+<!-- Title -->
+<title>线性代数与几何</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://multiverse.lamost.org/blog/xmlrpc.php" />
+
+<!-- WP Head -->
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  showProcessingMessages: false,
+  messageStyle: "none",
+  jax: ["input/TeX", "output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js","fp.js"],
+  TeX: {
+    equationNumbers: {  autoNumber: "AMS"  },
+    extensions: ["xypic.js","AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+  "HTML-CSS": { availableFonts: ["TeX"] },
+  tex2jax: {
+    inlineMath: [ ["\✟","\✟"], ["$","$"], ["\\(","\\)"] ],
+    displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+    processEscapes: true
+  }
+});</script>
+<meta name="generator" content="WordPress 4.2.2" />
+<meta name="template" content="Origin 0.5.8" />
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/105497512905835358378" />
+<meta name="description"  content="线性代数里面我们的矩阵一般是求解方程组引入的。 那么除了求解方程组之外，线性代数还可以做什么呢？ 我们高中学过的线性规划，实际上也可以归结为线性代数问题，里面比较著名的一个方法是单纯形法。那么我们高中学过的几何呢？能不能也用线性代数来解决一些几何的问题呢？ 一个很直观的例子是，我们以前求解距离的问题，可以变成" />
+
+<meta name="keywords"  content="linear algebar,math,万物皆循因果" />
+
+<link rel="canonical" href="index.html%3Fp=5579.html" />
+<meta property="og:title" content="线性代数与几何" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://multiverse.lamost.org/blog/5579" />
+<meta property="og:image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+<meta property="og:site_name" content="时见疏星" />
+<meta property="og:description" content="线性代数里面我们的矩阵一般是求解方程组引入的。 那么除了求解方程组之外，线性代数还可以做什么呢？ 我们高中学过的线性规划，实际上也可以归结为线性代数问题，里面比较著名的一个方法是单纯形法。那么我们高中学过的几何呢？能不能也用线性代数来解决一些几何的问题呢？  一个很直观的例子是，我们以前求解距离的问题，可以变成求解向量积的问题。 $&#092;bf x &#092;cdot &#092;bf x = &#092;sum_{i=1}^n x_i x_i$ 除了这个，还有没有其他的的呢？ 我们还学过二次型的问题。一个二次型的例子是 $ax^2 + b y^2 +c xy = f$ 我们也学习了标准型，也就是 $a x^2 + b y^2 = f$ 我们还学习了如何把二次型标准化。 但是，为什么呢？我们为什么要做这些事情？ 还有，我们学了行列式，行列式的定义，行列式的规则（可恶的沙流氏规则），可是行列式到底是个什么东西啊？  二次型是什么？ 我们看一个例子： $x^2 + y^2 = 1$ 这是个圆，圆心在坐标原点，半径为1。 二次型就是我们原来学习的圆锥曲线。对于高维度的情况，我们也模模糊糊有一个想法，椭球什么的。 太好了，也就是说，我们原来研究的二次型原来是可以跟几何联系起来的。 那么具体是如何建立的联系呢？ 我们再看一个三维空间的例子。 $x^2 + 4xy + 2xz + y^2 + 2yz + 4z^2 = 1$ 按照我们学习的二次型的知识，我们可以把这个写成是 矩阵形式。 $ &#092;begin{pmatrix} x &amp; y &amp; z &#092;end{pmatrix} &#092;left = 1 $ 那么我们这个例子是个什么几何形状呢？我们真的可以通过研究矩阵来了解几何么？ 我们知道，几何里面很重要的一个东西是坐标系。但是，坐标系虽然对于我们计算很重要，但是我们所研究的对象却是跟坐标系无关的。 要建立坐标系，需要选定一组坐标轴（基）。而我们知道，线性代数里面正好有基。向量又正好可以对应坐标。那么我们可以用线性代数里面的基来表示几何里面的坐标轴。  线性代数里面有一种很特殊的向量，就是特征向量。也就是说，一个矩阵作用到这个向量上之后，不会改变这个向量的方向。即： $&#092;mathbf M &#092;mathbf v = &#092;lambda" />
+<meta property="article:published_time" content="2013-04-06T20:48:43Z" />
+<meta property="article:modified_time" content="2013-04-06T22:38:44Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="线性代数里面我们的矩阵一般是求解方程组引入的。 那么除了求解方程组之外，线性代数还可以做什么呢？ 我们高中学过的线性规划，实际上也可以归结为线性代数问题，里面比较著名的一个方法是单纯形法。那么我们高中学过的几何呢？能不能也用线性代数来解决一些几何的问题呢？  一个很直观的例子是，我们以前求解距离的问题，可以变成求解向量积的问题。 $&#092;bf x &#092;cdot &#092;bf x = &#092;sum_{i=1}^n x_i x_i$ 除了这个，还有没有其他的的呢？ 我们还学过二次型的问题。一个二次型的例子是 $ax^2 + b y^2 +c xy = f$ 我们也学习了标准型，也就是 $a x^2 + b y^2 = f$ 我们还学习了如何把二次型标准化。 但是，为什么呢？我们为什么要做这些事情？ 还有，我们学了行列式，行列式的定义，行列式的规则（可恶的沙流氏规则），可是行列式到底是个什么东西啊？  二次型是什么？ 我们看一个例子： $x^2 + y^2 = 1$ 这是个圆，圆心在坐标原点，半径为1。 二次型就是我们原来学习的圆锥曲线。对于高维度的情况，我们也模模糊糊有一个想法，椭球什么的。 太好了，也就是说，我们原来研究的二次型原来是可以跟几何联系起来的。 那么具体是如何建立的联系呢？ 我们再看一个三维空间的例子。 $x^2 + 4xy + 2xz + y^2 + 2yz + 4z^2 = 1$ 按照我们学习的二次型的知识，我们可以把这个写成是 矩阵形式。 $ &#092;begin{pmatrix} x &amp; y &amp; z &#092;end{pmatrix} &#092;left = 1 $ 那么我们这个例子是个什么几何形状呢？我们真的可以通过研究矩阵来了解几何么？ 我们知道，几何里面很重要的一个东西是坐标系。但是，坐标系虽然对于我们计算很重要，但是我们所研究的对象却是跟坐标系无关的。 要建立坐标系，需要选定一组坐标轴（基）。而我们知道，线性代数里面正好有基。向量又正好可以对应坐标。那么我们可以用线性代数里面的基来表示几何里面的坐标轴。  线性代数里面有一种很特殊的向量，就是特征向量。也就是说，一个矩阵作用到这个向量上之后，不会改变这个向量的方向。即： $&#092;mathbf M &#092;mathbf v = &#092;lambda" />
+<meta itemprop="image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-17724131-2']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Feed" href="feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Comments Feed" href="comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; 线性代数与几何 Comments Feed" href="5579/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/multiverse.lamost.org\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/widget.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='wp-content/themes/origin/style.min.css%3Fver=0.5.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='wp-content/plugins/table-of-contents-plus/screen.css%3Fver=1505.css' type='text/css' media='all' />
+<link rel='stylesheet' id='Tippy-css'  href='wp-content/plugins/tippy/jquery.tippy.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='seed-wnb-css-css'  href='wp-content/plugins/wordpress-notification-bar/inc/css/seed_wnb.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-post-series-frontend-css'  href='wp-content/plugins/wp-post-series/assets/css/post-series.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='origin_fancybox-stylesheet-css'  href='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.css%3Fver=1.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-styles-css'  href='wp-content/plugins/font-awesome/assets/css/font-awesome.min.css%3Fver=3.2.1.css' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='font-awesome-ie7-css'  href='http://multiverse.lamost.org/blog/wp-content/plugins/font-awesome/assets/css/font-awesome-ie7.min.css?ver=3.2.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack_css-css'  href='wp-content/plugins/jetpack/css/jetpack.css%3Fver=3.6.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js%3Fver=1.11.2'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.2.1'></script>
+<script type='text/javascript' src='wp-content/plugins/scroll-to-top/js/stt.js%3Fver=1.0'></script>
+<script type='text/javascript' src='../Apps/MathJax-2.1/MathJax.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/plugins/tippy/jquery.tippy.js%3Fver=6.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var seed_wnb_js_localize = {"msg":"","button_link":"http:\/\/openmetric.org","button_label":"\u6682\u505c\u66f4\u65b0\u5566\uff0c\u70b9\u8fd9\u91cc\u53bb\u65b0\u7ad9\u70b9\uff1a[Dark Hypernova](http:\/\/openmetric.org)","button_target":"_blank"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wordpress-notification-bar/inc/js/seed_wnb.js%3Fver=4.2.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='一页纸上的微积分' href='index.html%3Fp=5576.html' />
+<link rel='next' title='我们的征途——系外行星' href='index.html%3Fp=5748.html' />
+<link rel='shortlink' href='index.html%3Fp=5579.html' />
+	
+		<!-- by Scrollto Top -->
+		
+ 		<script type="text/javascript">
+ 			//<![CDATA[
+  			jQuery(document).ready(function(){
+    			jQuery("body").append("<div id=\"scroll_to_top\"><a href="http://multiverse.lamost.org/blog/\&quot;#top\"">Top | 回顶部</a></div>");
+    			jQuery("#scroll_to_top a").css({	'display' : 'none', 'z-index' : '9', 'position' : 'fixed', 'top' : '100%', 'width' : '110px', 'margin-top' : '-30px', 'right' : '50%', 'margin-left' : '-50px', 'height' : '20px', 'padding' : '3px 5px', 'font-size' : '14px', 'text-align' : 'center', 'padding' : '3px', 'color' : '#ffa600', 'background-color' : '#ffffff', '-moz-border-radius' : '5px', '-khtml-border-radius' : '5px', '-webkit-border-radius' : '5px', 'opacity' : '.8', 'text-decoration' : 'none'});	
+    			jQuery('#scroll_to_top a').click(function(){
+					jQuery('html, body').animate({scrollTop:0}, 'slow');
+				});
+
+    		});
+  			
+			//]]>
+
+  		</script>
+		<!-- /by Scrollto Top and History Back -->	
+		
+		<style type="text/css">div#toc_container ul li {font-size: 90%;}</style>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+                    jQuery('.tippy').tippy({ position: "link", offsetx: 0, offsety: 10, closetext: "X", hidedelay: 700, showdelay: 100, calcpos: "parent", showspeed: 0, hidespeed: 0, target: "_blank", showtitle: true, hoverpopup: true, draggable: true, dragheader: true, multitip: false, autoshow: false, showheader: true, showclose: true, htmlentities: false });
+                });
+            </script>
+        <style type='text/css'>#bg_color { color:white; }
+.wnb-bar-button {
+  color:black;
+  text-shadow:0 -1px 0 rgba(255,255,255,0.25);
+  background-color:white;
+}
+#wnb-bar {
+  color:white;
+  position:fixed;
+  background-color:#000000;
+  background-image:-moz-linear-gradient(top,#000000,#000000);
+  background-image:-ms-linear-gradient(top,#000000,#000000);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#000000),to(#000000));
+  background-image:-webkit-linear-gradient(top,#000000,#000000);
+  background-image:-o-linear-gradient(top,#000000,#000000);
+  background-image:linear-gradient(top,#000000,#000000);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000',GradientType=0);
+}
+</style>
+
+<!-- WP SinoType typography plugin by graficareal.net -->
+<style>
+body {font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1>*,h2>*,h3>*,h4>*,h5>*,h6>*{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+</style>
+<!-- WP SinoType plugin typography -->
+
+
+	<style type="text/css">
+
+		/* Font size. */
+					html { font-size: 16px; }
+		
+		/* Font family. */
+					body { font-family: 'Helvetica', serif; }
+		
+		/* Link color. */
+					a, a:visited, #footer a:hover, .entry-title a:hover { color: #f58612; }
+			#respond #submit, .button, a.button, .wpcf7-submit, #loginform .button-primary { background-color: #f58612; }
+				a:hover, a:focus { color: #000; }
+
+		/* Custom CSS. */
+		/* LaTeX format. span class=... for example */.latex {  font-family: Times, \"Times New Roman\", serif;	  letter-spacing: 1px;}.latex sup {  text-transform: uppercase;  letter-spacing: 1px;  font-size: 700.000000e+0m;  vertical-align: -0.3em;  margin-left: -0.36em;  margin-right: -0.15em;}.latex sub {  text-transform: uppercase;  vertical-align: -0.0ex;  margin-left: -0.1667em;  margin-right: -0.125em;  font-size: 1em;}  
+	
+	</style>	
+
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+<body class="wordpress ltr en_US parent-theme y2015 m07 d21 h23 tuesday logged-out custom-background singular singular-post singular-post-5579">
+
+	
+	<div id="container">
+		
+		<div class="wrap">
+
+				
+			<div id="header">
+	
+					
+					<div id="branding">
+						
+						<div id="site-title"><a href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a></div>						
+					</div><!-- #branding -->
+					
+					
+	
+	<div id="menu-primary" class="site-navigation menu-container" role="navigation">
+
+		<span class="menu-toggle">Menu</span>
+
+		
+		<div class="menu"><ul id="menu-primary-items" class="nav-menu"><li id="menu-item-4844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4844"><a href="../blog.html">首页</a></li>
+<li id="menu-item-6371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6371"><a title="About">关于</a>
+<ul class="sub-menu">
+	<li id="menu-item-4835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4835"><a href="index.html%3Fp=1196.html">我</a></li>
+	<li id="menu-item-6377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6377"><a href="index.html%3Fp=1571.html">书与电影</a></li>
+	<li id="menu-item-6368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6368"><a href="index.html%3Fp=5003.html">白日梦</a></li>
+	<li id="menu-item-6453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6453"><a href="index.html%3Fp=6447.html">星际移民</a></li>
+</ul>
+</li>
+<li id="menu-item-4836" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4836"><a href="index.html%3Fp=2369.html">档案</a></li>
+<li id="menu-item-4837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4837"><a href="index.html%3Fp=371.html">会客</a></li>
+<li id="menu-item-6404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6404"><a href="index.html%3Fp=6394.html">星际移民中心</a></li>
+</ul></div>
+		
+	</div><!-- #menu-primary .menu-container -->
+
+	
+					
+					<div id="site-description"><span>流年暗中偷换</span></div>	
+						
+				
+		<div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb">
+			<span class="trail-browse">Browse:</span> <span class="trail-begin"><a href="../blog.html" title="时见疏星">Home</a></span>
+			 <span class="sep">&raquo;</span> <span class="trail-end">线性代数与几何</span>
+		</div>	
+			</div><!-- #header -->
+	
+				
+				
+			<div id="main">
+	
+				
+	
+	<div id="content">
+
+		
+		<div class="hfeed">
+
+			
+				
+					
+					<div id="post-5579" class="hentry post publish post-1 odd author-emptymalei category-all-kinds-of-knowledge post_tag-linear-algebar post_tag-math">
+
+												
+						<div class="post-content">
+						
+														
+							<h1 class='post-title entry-title'>线性代数与几何</h1>
+<div class="byline"><time class="published" datetime="2013-04-06T20:48:43-06:00" title="Saturday, April 6th, 2013, 8:48 pm">04/06/2013</time> &middot; by <span class="author vcard"><a class="url fn n" rel="author" href="author/emptymalei/index.html" title="时见疏星">时见疏星</a></span> &middot; in <span class="category"><a href="category/all-kinds-of-knowledge/index.html" rel="tag">万物皆循因果</a></span> &middot; <a onclick="TogetherJS(this); return false;" style="font-weight:bold;color:orange;font-style:normal;cursor:default;"><i class="icon-female"></i>  &#91; Co-Reading &#93; <i class="icon-male"></i></a> &middot; </div>							<div class="entry-content">
+								
+								<p>线性代数里面我们的矩阵一般是求解方程组引入的。</p>
+<p>那么除了求解方程组之外，线性代数还可以做什么呢？</p>
+<p>我们高中学过的线性规划，实际上也可以归结为线性代数问题，里面比较著名的一个方法是单纯形法。那么我们高中学过的几何呢？能不能也用线性代数来解决一些几何的问题呢？<span id="more-5579"></span></p>
+<hr />
+<p>一个很直观的例子是，我们以前求解距离的问题，可以变成求解向量积的问题。</p>
+<p>$&#92;bf x &#92;cdot &#92;bf x = &#92;sum_{i=1}^n x_i x_i$</p>
+<p>除了这个，还有没有其他的的呢？</p>
+<p>我们还学过二次型的问题。一个二次型的例子是</p>
+<p>$ax^2  + b y^2 +c xy = f$</p>
+<p>我们也学习了标准型，也就是</p>
+<p>$a x^2 + b y^2 = f$</p>
+<p>我们还学习了如何把二次型标准化。</p>
+<p>但是，为什么呢？我们为什么要做这些事情？</p>
+<p>还有，我们学了行列式，行列式的定义，行列式的规则（可恶的沙流氏规则），可是行列式到底是个什么东西啊？</p>
+<hr />
+<p>二次型是什么？</p>
+<p>我们看一个例子：</p>
+<p>$x^2 + y^2 = 1$</p>
+<p>这是个圆，圆心在坐标原点，半径为1。</p>
+<p>二次型就是我们原来学习的圆锥曲线。对于高维度的情况，我们也模模糊糊有一个想法，椭球什么的。</p>
+<p>太好了，也就是说，我们原来研究的二次型原来是可以跟几何联系起来的。</p>
+<p>那么具体是如何建立的联系呢？</p>
+<p>我们再看一个三维空间的例子。</p>
+<p>$x^2 + 4xy + 2xz + y^2 + 2yz + 4z^2 = 1$</p>
+<p>按照我们学习的二次型的知识，我们可以把这个写成是 矩阵形式。</p>
+<p>$<br />
+&#92;begin{pmatrix}<br />
+x &amp; y &amp; z<br />
+&#92;end{pmatrix}<br />
+&#92;left[<br />
+&#92;begin{pmatrix}<br />
+1 &amp; 2 &amp; 1 &#92;&#92;<br />
+2 &amp; 1 &amp; 1 &#92;&#92;<br />
+1 &amp; 1 &amp; 4<br />
+&#92;end{pmatrix}<br />
+&#92;begin{pmatrix}<br />
+x &#92;&#92; y &#92;&#92; z<br />
+&#92;end{pmatrix}<br />
+&#92;right] = 1<br />
+$</p>
+<p>那么我们这个例子是个什么几何形状呢？我们真的可以通过研究矩阵来了解几何么？</p>
+<p>我们知道，几何里面很重要的一个东西是坐标系。但是，坐标系虽然对于我们计算很重要，但是我们所研究的对象却是跟坐标系无关的。<br />
+要建立坐标系，需要选定一组坐标轴（基）。而我们知道，线性代数里面正好有基。向量又正好可以对应坐标。那么我们可以用线性代数里面的基来表示几何里面的坐标轴。</p>
+<hr />
+<p>线性代数里面有一种很特殊的向量，就是特征向量。也就是说，一个矩阵作用到这个向量上之后，不会改变这个向量的方向。即：</p>
+<p>$&#92;mathbf M &#92;mathbf v = &#92;lambda &#92;mathbf v$</p>
+<p>我们还会发现，一个实对称矩阵的特征向量特征值有很好的性质。<br />
+1. 实对称矩阵的特征值总是实数。<br />
+2. 对称矩阵的两个特征向量如果所对应的特征值不同，那么他们正交。<br />
+3. 从任何一个 n*n 的实对称矩阵 M 的特征向量集合中，总是可以为 R^n  选取一组标准正交基。</p>
+<p>这三个性质为什么重要呢？</p>
+<p>有了这三个性质，我们就可以说，对于实系数的二次型，我们总可以找到一组正交的基，同时我们发现（上面的特征向量的定义）在这组基下面，我们的系数矩阵可以化为对角阵，也就是说，原来的丑陋的二次型可以化为一个标准形式。</p>
+<p>比如我们上面的例子的特征值可以求解出来：</p>
+<p>$<br />
+&#92;begin{vmatrix}<br />
+  1-&#92;lambda &amp; 2 &amp; 1 &#92;&#92;<br />
+2 &amp; 1-&#92;lambda &amp; 1 &#92;&#92;<br />
+1 &amp; 1 &amp; 4-&#92;lambda &#92;&#92;<br />
+&#92;end{vmatrix}=0<br />
+$</p>
+<p>求解出来就是</p>
+<p>$&#92;lambda =2,5,-1$</p>
+<p>如此一来，我们的乱七八糟的二次型可以化成</p>
+<p>$2 X^2 + 5 Y^2 + (-1)Z^2 = 1$</p>
+<p>现在我们可以看到这个二次型在新的坐标系下面是个椭球。（椭球图片可以用 Mathematica 绘制。）</p>
+<p>而这里的对称矩阵，实际上只是一个空间上的旋转。</p>
+<p>这样看了，不管我们要处理的是几维的二次曲线（面），总可以通过矩阵特征向量把这个问题转换成一个比较容易看出来的几何体，这就对应我们的二次型标准化的问题。</p>
+<hr />
+<p>行列式有几何意义么？</p>
+<p>我们会记得沙流氏规则。我们可以来看这样一个问题。对于一个二维空间的旋转，我们可以用这样的矩阵来表示</p>
+<p>$<br />
+R = &#92;begin{pmatrix}<br />
+&#92;cos&#92;alpha &amp; &#92;sin&#92;alpha &#92;&#92;<br />
+&#92;sin&#92;alpha &amp; -&#92;cos&#92;alpha &#92;&#92;<br />
+&#92;end{pmatrix}<br />
+$</p>
+<p>如果求解行列式，我们会发现 R 的行列式的绝对值其实是 1。</p>
+<p>旋转有个特点，比如我们转动一个三角形之后，三角形的面积不变。行列式的绝对值为1，正好跟面积不便对应起来。</p>
+<p>对于一个线性映射 M，其行列式恰好是 n 维的单位立方体体积在 M 的操作下发生的伸缩旋转变化的比例因子。</p>
+<p>也就是说，行列式的几何意义也就是在此。</p>
+<p>回想一下，我们当初为什么要引入行列式？</p>
+<p>在求解线性方程的时候，我们需要求解逆阵，求解逆阵，真好需要行列式来判断逆阵是否存在。行列式的一个非常简单的代数定义，居然可以有这么巧妙的几何对应，确实令人惊讶啊。</p>
+<hr />
+<p>附注：</p>
+<ol>
+<li>本文里面的一些定理的证明，请参考《数学桥》一书。</li>
+<li>本文主要是依据《数学桥》一书编辑整理而成。</li>
+</ol>
+<div class='yarpp-related'>
+<hr /><p><big><strong><font color="#ff6600">长程相关:</font></strong></big></p><ol>
+<li><a href="index.html%3Fp=253.html" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+<li><a href="index.html%3Fp=5576.html" rel="bookmark" title="一页纸上的微积分">一页纸上的微积分 </a><hr /></li>
+</ol>
+</div>
+								
+																
+							</div><!-- .entry-content -->
+
+							<div class="entry-meta"><span class="post_tag"><span class="before">Tags: </span><a href="tag/linear-algebar.html" rel="tag">Linear Algebar</a>, <a href="tag/math/index.html" rel="tag">Math</a></span></div>
+													
+						</div><!-- .post-content -->
+
+					</div><!-- .hentry -->
+
+					
+					
+					
+					<script type="text/javascript">
+var duoshuoQuery = {"short_name":"multiverse","sso":{"login":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=duoshuo_login","logout":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=logout&_wpnonce=eedd98a590"},"theme":"bluebox","stylePatch":"wordpress\/Origin"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+(function() {
+    var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
+    ds.charset = 'UTF-8';
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><a name="comments"></a>
+
+<div class="ds-thread" data-thread-key="5579" data-author-key="1" data-title="线性代数与几何" data-url="http://multiverse.lamost.org/blog/5579"></div>
+
+<script type="text/javascript">
+	if (typeof DUOSHUO !== 'undefined')
+		DUOSHUO.EmbedThread('.ds-thread');
+</script>
+	<div id="ds-ssr">
+
+		
+            <ol id="commentlist">
+                		<li class="comment even thread-even depth-1" id="li-comment-4110">
+			<article id="comment-4110" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href='http://weibo.com/fishtreesugar' rel='external nofollow' class='url'>_FTS</a></span> on <a rel="nofollow" href="5579/comment-page-1.html#comment-4110"><time pubdate datetime="2013-04-06T22:01:49+00:00">04/06/2013 at 22:01</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>学到不少东西,补充两个:旋转矩阵θ取π/2的时候特征值是i,正好说明了一个复数乘上i是在复平面上旋转90度二次曲线(面)跟二次型的关系可以用主轴定理来描述</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		<ul class="children">
+		<li class="comment byuser comment-author-emptymalei bypostauthor odd alt depth-2" id="li-comment-4111">
+			<article id="comment-4111" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href='../index.html' rel='external nofollow' class='url'>时见疏星</a></span> on <a rel="nofollow" href="5579/comment-page-1.html#comment-4111"><time pubdate datetime="2013-04-06T22:29:16+00:00">04/06/2013 at 22:29</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>太好了。这些我没想到啊。谢谢你。</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		<ul class="children">
+		<li class="comment even depth-3" id="li-comment-4113">
+			<article id="comment-4113" class="comment">
+				<footer class="comment-meta">
+					<cite class="comment-author vcard">
+						<span class="fn"><a href='http://ilikecss.com/' rel='external nofollow' class='url'>airoschou</a></span> on <a rel="nofollow" href="5579/comment-page-1.html#comment-4113"><time pubdate datetime="2013-04-08T17:37:10+00:00">04/08/2013 at 17:37</time></a> <span class="says">said:</span>					</cite><!-- .comment-author .vcard -->
+				</footer>
+	
+				<div class="comment-content"><p>讨论起数学来了。。。</p>
+</div>
+				
+			</article><!-- #comment-## -->
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+            </ol>
+
+		            
+    </div>
+				
+			
+		</div><!-- .hfeed -->
+
+		
+		
+	
+		<div class="loop-nav">
+			<div class="previous">&larr; <a href="index.html%3Fp=5576.html" rel="prev">一页纸上的微积分</a></div>			<div class="next"><a href="index.html%3Fp=5748.html" rel="next">我们的征途——系外行星</a> &rarr;</div>		</div><!-- .loop-nav -->
+
+	
+	</div><!-- #content -->
+
+	
+				
+	
+	<div id="sidebar-primary" class="sidebar">
+
+		
+		<section id="hybrid-search-2" class="widget search widget-search">			<div class="search">
+
+				<form method="get" class="search-form" action="../blog.html">
+				
+				<div>
+					
+					<input class="search-text" type="text" name="s" value="Search this site..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+					
+					<input class="search-submit button" name="submit" type="submit" value="Search" />
+					
+				</div>
+				
+				</form><!-- .search-form -->
+
+			</div><!-- .search --></section><section id="dx_zen_widget-3" class="widget dx_zen_widget_sample_single widget-dx_zen_widget_sample_single"><h3 class="widget-title">禅语 (GitHub Zen)</h3>        		<div>
+        			<p>Avoid administrative distraction.</p>        		</div>
+        	</section><section id="hybrid-nav-menu-2" class="widget nav-menu widget-nav-menu"><h3 class="widget-title">文章分类</h3><nav class="menu-categories-container"><ul id="menu-categories" class="nav-menu"><li id="menu-item-4839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4839"><a href="category/dreams-under-the-starry-sky/index.html">星空下的梦想</a></li><li id="menu-item-4840" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4840"><a href="category/message-from-the-end-of-the-universe/index.html">天尽头的纸条</a></li><li id="menu-item-4841" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4841"><a href="category/world-of-the-internet/index.html">计算中的宇宙</a></li><li id="menu-item-4842" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4842"><a href="category/all-kinds-of-knowledge/index.html">万物皆循因果</a></li><li id="menu-item-4843" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4843"><a href="category/dance-in-heaven/index.html">天幕上的舞蹈</a></li></ul></nav></section><section id="ds-recent-comments-2" class="widget ds-widget-recent-comments widget-ds-widget-recent-comments"><h3 class="widget-title">最近评论</h3><ul class="ds-recent-comments" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-avatar-size="30" data-excerpt-length="70"></ul></section><script>
+if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.RecentComments && DUOSHUO.RecentComments('.ds-recent-comments');
+</script><section id="hybrid-tags-2" class="widget tags widget-tags"><h3 class="widget-title">Tags</h3><p class="term-cloud post_tag-cloud"><a href='tag/coding/index.html' class='tag-link-117' title='12 topics' style='font-size: 11.3703703704pt;'>Coding</a> <a href='tag/it/index.html' class='tag-link-91' title='32 topics' style='font-size: 16.6851851852pt;'>IT</a> <a href='tag/math/index.html' class='tag-link-96' title='9 topics' style='font-size: 9.94444444444pt;'>Math</a> <a href='tag/physicist.html' class='tag-link-70' title='8 topics' style='font-size: 9.2962962963pt;'>Physicist</a> <a href='tag/statistical-physics/index.html' class='tag-link-86' title='15 topics' style='font-size: 12.537037037pt;'>Statistical Physics</a> <a href='tag/statistics.html' class='tag-link-188' title='8 topics' style='font-size: 9.2962962963pt;'>Statistics</a> <a href='tag/tex.html' class='tag-link-115' title='7 topics' style='font-size: 8.64814814815pt;'>TeX</a> <a href='tag/wordpress/index.html' class='tag-link-101' title='10 topics' style='font-size: 10.462962963pt;'>wordpress</a> <a href='tag/wp_plugin/index.html' class='tag-link-52' title='10 topics' style='font-size: 10.462962963pt;'>WP插件</a> <a href='tag/life/index.html' class='tag-link-93' title='32 topics' style='font-size: 16.6851851852pt;'>人生</a> <a href='tag/philosophy-philosophy-philosophy-philosophy-philosophy/index.html' class='tag-link-95' title='15 topics' style='font-size: 12.537037037pt;'>哲思</a> <a href='tag/astronomy/index.html' class='tag-link-81' title='46 topics' style='font-size: 18.6296296296pt;'>天文</a> <a href='tag/celestial.html' class='tag-link-6' title='7 topics' style='font-size: 8.64814814815pt;'>天象</a> <a href='tag/cosmology/index.html' class='tag-link-8' title='56 topics' style='font-size: 19.7962962963pt;'>宇宙学</a> <a href='tag/cosmological_evolution/index.html' class='tag-link-126' title='13 topics' style='font-size: 11.8888888889pt;'>宇宙演化</a> <a href='tag/to_be_continued.html' class='tag-link-105' title='6 topics' style='font-size: 8pt;'>待续</a> <a href='tag/trouble/index.html' class='tag-link-51' title='37 topics' style='font-size: 17.462962963pt;'>心事</a> <a href='tag/meteor.html' class='tag-link-63' title='6 topics' style='font-size: 8pt;'>流星雨</a> <a href='tag/love/index.html' class='tag-link-49' title='15 topics' style='font-size: 12.537037037pt;'>爱情</a> <a href='tag/physics/index.html' class='tag-link-44' title='84 topics' style='font-size: 22pt;'>物理</a> <a href='tag/crazy_science/index.html' class='tag-link-73' title='68 topics' style='font-size: 20.8333333333pt;'>疯狂的科学</a> <a href='tag/sci_fi/index.html' class='tag-link-46' title='15 topics' style='font-size: 12.537037037pt;'>科幻</a> <a href='tag/�%2591�%259C/index.html' class='tag-link-112' title='22 topics' style='font-size: 14.6111111111pt;'>网络</a> <a href='tag/poem.html' class='tag-link-35' title='6 topics' style='font-size: 8pt;'>诗歌</a> <a href='tag/my_lyrics.html' class='tag-link-56' title='7 topics' style='font-size: 8.64814814815pt;'>配词</a></p></section>
+		
+	</div><!-- #sidebar-primary .aside -->
+
+	
+
+				
+		</div><!-- #main -->
+
+		
+				
+
+		
+		<div id="footer">
+
+			
+			<div class="footer-content">
+				
+				<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17724131-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+Copyleft ©  2010 - 2015  <a class="site-link" href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a> By <a href="http://www.douban.com/people/emptymalei/" title="星河里的章鱼喵@Interplanetary Immigration Agency">章鱼喵</a>. <a href="index.html%3Fp=5579.html#" title="~To tell you the truth, this site will have been established in 2211AD on Mars."> Secret 1. </a> | <a href="index.html%3Fp=5579.html#" title="The  author is SOMEBODY in Interplanetary Immigration Agency">Secret 2</a> | <a href="http://interimm.github.io/" title="Interplanetary Immigration Agency">Interplanetary Immigration Agency.</a> | Co-Reading Uses <a href="http://togetherjs.com" target="_blank">TogetherJS </a><hr/>
+
+<div style="float:left;">
+<div style="display:inline;float:left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="知识共享许可协议" style="border-width:0;height:30px;" src="wp-content/uploads/2012/03/cc-by-nc-sa.gif" /></a></div>
+<div style="display:inline;margin-left:20px;float:left;line-height:15px;">本站作品(如无特别说明)采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><strong>CC BY-NC-SA 3.0</strong></a>。<br>(保留作者并注明出处非商业且相同方式共享。)</div>
+<div style="float:right;line-height:13px;">
+<a href="wp-admin.html" style="font-size:9px;background-color:#7aca29;color:#7aca29;width:30px;">Admin</a>
+<br>
+<a href="https://www.google.com/analytics" style="font-size:9px;background-color:#f58612;color:#f58612;width:30px;">Analytics</a>
+</div>
+</div>
+
+<div style="float:right;font-size:13px;">
+|  <a style="padding:2px 2px 2px 2px;color:#1473D7;" href="http://iastro.lamost.org/x/user/107" title="专业笔记@iAstro">宇宙</a> 
+ | <a style="padding:2px 2px 2px 2px;color:#08C;" href="http://www.douban.com/people/emptymalei" title="我的豆瓣">豆瓣</a>    
+ | <a style="padding:2px 2px 2px 2px;color:orange;" href="http://github.com/emptymalei" title="我的GitHub">GitHub</a>  
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.zhihu.com/people/emptymalei" title="我的知乎">知乎</a>                           
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.quora.com/MA-Lei-1" title="My Quora">Quora</a>   
+ | <a style="padding:2px 2px 2px 2px;color:#c61800;" href="http://www.guokr.com/i/1769480175/" title="时见疏星@果壳网">果壳</a>
+ | </div>
+				
+			</div>
+
+			
+		</div><!-- #footer -->
+
+				
+		</div><!-- .wrap -->
+
+	</div><!-- #container -->
+
+	
+	<link rel='stylesheet' id='yarppRelatedCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/related.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/table-of-contents-plus/front.js%3Fver=1505'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201530'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.pack.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fitvids/jquery.fitvids.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/footer-scripts.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/navigation.js%3Fver=20130228'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/themes/origin/library/js/drop-downs.min.js%3Fver=20130805'></script>
+	
+</body>
+</html>

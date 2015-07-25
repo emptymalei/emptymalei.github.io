@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 换身皮</title>
+	<atom:link href="http://multiverse.lamost.org/blog/889/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/889</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/889/comment-page-1#comment-163</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Sun, 20 Mar 2011 19:49:25 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=889#comment-163</guid>
+		<description><![CDATA[呃，这个是本主题自带的，没用插件&#8230;&#8230; ]]></description>
+		<content:encoded><![CDATA[<p>呃，这个是本主题自带的，没用插件&hellip;&hellip; </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: PianoLover</title>
+		<link>http://multiverse.lamost.org/blog/889/comment-page-1#comment-162</link>
+		<dc:creator><![CDATA[PianoLover]]></dc:creator>
+		<pubDate>Sun, 20 Mar 2011 18:03:25 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=889#comment-162</guid>
+		<description><![CDATA[请问ajax评论是用的哪个插件？ ]]></description>
+		<content:encoded><![CDATA[<p>请问ajax评论是用的哪个插件？ </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: PianoLover</title>
+		<link>http://multiverse.lamost.org/blog/889/comment-page-1#comment-161</link>
+		<dc:creator><![CDATA[PianoLover]]></dc:creator>
+		<pubDate>Sun, 20 Mar 2011 17:59:21 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=889#comment-161</guid>
+		<description><![CDATA[恩 我觉得这个设计的不错 ]]></description>
+		<content:encoded><![CDATA[<p>恩 我觉得这个设计的不错 </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/889/comment-page-1#comment-160</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Sun, 20 Mar 2011 17:55:09 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=889#comment-160</guid>
+		<description><![CDATA[ezengage。 
+其实有很多，我觉得这个比较好用。 ]]></description>
+		<content:encoded><![CDATA[<p>ezengage。<br />
+其实有很多，我觉得这个比较好用。 </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: PianoLover</title>
+		<link>http://multiverse.lamost.org/blog/889/comment-page-1#comment-159</link>
+		<dc:creator><![CDATA[PianoLover]]></dc:creator>
+		<pubDate>Sun, 20 Mar 2011 17:53:32 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=889#comment-159</guid>
+		<description><![CDATA[请问您的blog分享到人人等社交网站的插件叫什么名字 ]]></description>
+		<content:encoded><![CDATA[<p>请问您的blog分享到人人等社交网站的插件叫什么名字 </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

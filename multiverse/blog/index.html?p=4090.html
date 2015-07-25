@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+<!-- Mobile viewport optimized -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Favicon -->
+	<link rel="shortcut icon" href="wp-content/uploads/2012/12/Blomos1-1.png" />
+
+<!-- Title -->
+<title>天体周围引力场和 Birkhoff 定理</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://multiverse.lamost.org/blog/xmlrpc.php" />
+
+<!-- WP Head -->
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  showProcessingMessages: false,
+  messageStyle: "none",
+  jax: ["input/TeX", "output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js","fp.js"],
+  TeX: {
+    equationNumbers: {  autoNumber: "AMS"  },
+    extensions: ["xypic.js","AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+  "HTML-CSS": { availableFonts: ["TeX"] },
+  tex2jax: {
+    inlineMath: [ ["\✟","\✟"], ["$","$"], ["\\(","\\)"] ],
+    displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+    processEscapes: true
+  }
+});</script>
+<meta name="generator" content="WordPress 4.2.2" />
+<meta name="template" content="Origin 0.5.8" />
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/105497512905835358378" />
+<meta name="description"  content="在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。 Birkhoff 定理 Birkhoff 定理的证明用到了如下条件: 真空。实际上可以扩展到带有" />
+
+<meta name="keywords"  content="differential geometry,general relativity,gravity,宇宙学,物理,疯狂的科学,天尽头的纸条" />
+
+<link rel="canonical" href="index.html%3Fp=4090.html" />
+<meta property="og:title" content="天体周围引力场和 Birkhoff 定理" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://multiverse.lamost.org/blog/4090" />
+<meta property="og:image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+<meta property="og:site_name" content="时见疏星" />
+<meta property="og:description" content="在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。 Birkhoff 定理 Birkhoff 定理的证明用到了如下条件:  真空。实际上可以扩展到带有 &#092;(&#092;Lambda&#092;) 的场方程。  不同的度规形式 但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是: &#092; - &#092;beta(r,t)c &#092;mathrm dr&#092;mathrm dt &#092;] 在刘辽的书中，他做了坐标变换，然后变成了一个更加漂亮的形式： &#092; 新的形式（下文称为形式二，第一个度规称为形式一）是一个正交的度规，更简单更漂亮。但是有一个问题，虽然这两个度规在本质上是等价的，但是在用来求解问题的时候，却会出现不同的结果，这是因为不同的坐标限制了不同的观者族，而不同的观者对于某些观测会得到不同的结论。 比如说，我们取上面两种形式的度规都是对角化的形式，也就是说扔掉了 &#092;(&#092;beta(r,t)&#092;)。这这样一个简单情况下，&#092;(&#092;phi&#092;) 坐标的 scale 两种形式有很大的不同，一个是包含 &#092;(r&#092;) 和 &#092;(t&#092;) 的一个函数 &#092;(&#092;alpha(r,t)&#092;)，另一种形式却没有。这一点会对后面各个几何量的求解带来很大的不同，因为涉及到了导数。 计算证明 基于这一点考虑，我算了一种简单的情况，就是 &#092; 为了方便计算，对一些量进行了重定义，最后度规写为如下形式： &#092;} a^2 &amp; 0 &amp; 0 &amp; 0 &#092;&#092; 0 &amp; e^{2 &#092;lambda } a^2 &amp; 0 &amp; 0 &#092;&#092; 0 &amp; 0 &amp; r^2 a^2 &amp; 0 &#092;&#092; 0 &amp; 0 &amp; 0 &amp; r^2 a^2 &#092;text{Sin}^2 &#092;end{array} &#092;right) &#092;] 放在带 &#092;(&#092;Lambda&#092;)" />
+<meta property="article:published_time" content="2012-10-06T23:58:20Z" />
+<meta property="article:modified_time" content="2013-01-10T15:33:08Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。 Birkhoff 定理 Birkhoff 定理的证明用到了如下条件:  真空。实际上可以扩展到带有 &#092;(&#092;Lambda&#092;) 的场方程。  不同的度规形式 但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是: &#092; - &#092;beta(r,t)c &#092;mathrm dr&#092;mathrm dt &#092;] 在刘辽的书中，他做了坐标变换，然后变成了一个更加漂亮的形式： &#092; 新的形式（下文称为形式二，第一个度规称为形式一）是一个正交的度规，更简单更漂亮。但是有一个问题，虽然这两个度规在本质上是等价的，但是在用来求解问题的时候，却会出现不同的结果，这是因为不同的坐标限制了不同的观者族，而不同的观者对于某些观测会得到不同的结论。 比如说，我们取上面两种形式的度规都是对角化的形式，也就是说扔掉了 &#092;(&#092;beta(r,t)&#092;)。这这样一个简单情况下，&#092;(&#092;phi&#092;) 坐标的 scale 两种形式有很大的不同，一个是包含 &#092;(r&#092;) 和 &#092;(t&#092;) 的一个函数 &#092;(&#092;alpha(r,t)&#092;)，另一种形式却没有。这一点会对后面各个几何量的求解带来很大的不同，因为涉及到了导数。 计算证明 基于这一点考虑，我算了一种简单的情况，就是 &#092; 为了方便计算，对一些量进行了重定义，最后度规写为如下形式： &#092;} a^2 &amp; 0 &amp; 0 &amp; 0 &#092;&#092; 0 &amp; e^{2 &#092;lambda } a^2 &amp; 0 &amp; 0 &#092;&#092; 0 &amp; 0 &amp; r^2 a^2 &amp; 0 &#092;&#092; 0 &amp; 0 &amp; 0 &amp; r^2 a^2 &#092;text{Sin}^2 &#092;end{array} &#092;right) &#092;] 放在带 &#092;(&#092;Lambda&#092;)" />
+<meta itemprop="image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-17724131-2']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Feed" href="feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Comments Feed" href="comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; 天体周围引力场和 Birkhoff 定理 Comments Feed" href="4090/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/multiverse.lamost.org\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/widget.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='wp-content/themes/origin/style.min.css%3Fver=0.5.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='wp-content/plugins/table-of-contents-plus/screen.css%3Fver=1505.css' type='text/css' media='all' />
+<link rel='stylesheet' id='Tippy-css'  href='wp-content/plugins/tippy/jquery.tippy.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='seed-wnb-css-css'  href='wp-content/plugins/wordpress-notification-bar/inc/css/seed_wnb.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-post-series-frontend-css'  href='wp-content/plugins/wp-post-series/assets/css/post-series.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='origin_fancybox-stylesheet-css'  href='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.css%3Fver=1.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-styles-css'  href='wp-content/plugins/font-awesome/assets/css/font-awesome.min.css%3Fver=3.2.1.css' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='font-awesome-ie7-css'  href='http://multiverse.lamost.org/blog/wp-content/plugins/font-awesome/assets/css/font-awesome-ie7.min.css?ver=3.2.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack_css-css'  href='wp-content/plugins/jetpack/css/jetpack.css%3Fver=3.6.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js%3Fver=1.11.2'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.2.1'></script>
+<script type='text/javascript' src='wp-content/plugins/scroll-to-top/js/stt.js%3Fver=1.0'></script>
+<script type='text/javascript' src='../Apps/MathJax-2.1/MathJax.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/plugins/tippy/jquery.tippy.js%3Fver=6.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var seed_wnb_js_localize = {"msg":"","button_link":"http:\/\/openmetric.org","button_label":"\u6682\u505c\u66f4\u65b0\u5566\uff0c\u70b9\u8fd9\u91cc\u53bb\u65b0\u7ad9\u70b9\uff1a[Dark Hypernova](http:\/\/openmetric.org)","button_target":"_blank"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wordpress-notification-bar/inc/js/seed_wnb.js%3Fver=4.2.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='谁动了我的飞船——『膨胀和收缩』' href='index.html%3Fp=3968.html' />
+<link rel='next' title='知乎：银河系和狭义相对论' href='index.html%3Fp=4122.html' />
+<link rel='shortlink' href='index.html%3Fp=4090.html' />
+	
+		<!-- by Scrollto Top -->
+		
+ 		<script type="text/javascript">
+ 			//<![CDATA[
+  			jQuery(document).ready(function(){
+    			jQuery("body").append("<div id=\"scroll_to_top\"><a href="http://multiverse.lamost.org/blog/\&quot;#top\"">Top | 回顶部</a></div>");
+    			jQuery("#scroll_to_top a").css({	'display' : 'none', 'z-index' : '9', 'position' : 'fixed', 'top' : '100%', 'width' : '110px', 'margin-top' : '-30px', 'right' : '50%', 'margin-left' : '-50px', 'height' : '20px', 'padding' : '3px 5px', 'font-size' : '14px', 'text-align' : 'center', 'padding' : '3px', 'color' : '#ffa600', 'background-color' : '#ffffff', '-moz-border-radius' : '5px', '-khtml-border-radius' : '5px', '-webkit-border-radius' : '5px', 'opacity' : '.8', 'text-decoration' : 'none'});	
+    			jQuery('#scroll_to_top a').click(function(){
+					jQuery('html, body').animate({scrollTop:0}, 'slow');
+				});
+
+    		});
+  			
+			//]]>
+
+  		</script>
+		<!-- /by Scrollto Top and History Back -->	
+		
+		<style type="text/css">div#toc_container ul li {font-size: 90%;}</style>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+                    jQuery('.tippy').tippy({ position: "link", offsetx: 0, offsety: 10, closetext: "X", hidedelay: 700, showdelay: 100, calcpos: "parent", showspeed: 0, hidespeed: 0, target: "_blank", showtitle: true, hoverpopup: true, draggable: true, dragheader: true, multitip: false, autoshow: false, showheader: true, showclose: true, htmlentities: false });
+                });
+            </script>
+        <style type='text/css'>#bg_color { color:white; }
+.wnb-bar-button {
+  color:black;
+  text-shadow:0 -1px 0 rgba(255,255,255,0.25);
+  background-color:white;
+}
+#wnb-bar {
+  color:white;
+  position:fixed;
+  background-color:#000000;
+  background-image:-moz-linear-gradient(top,#000000,#000000);
+  background-image:-ms-linear-gradient(top,#000000,#000000);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#000000),to(#000000));
+  background-image:-webkit-linear-gradient(top,#000000,#000000);
+  background-image:-o-linear-gradient(top,#000000,#000000);
+  background-image:linear-gradient(top,#000000,#000000);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000',GradientType=0);
+}
+</style>
+
+<!-- WP SinoType typography plugin by graficareal.net -->
+<style>
+body {font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1>*,h2>*,h3>*,h4>*,h5>*,h6>*{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+</style>
+<!-- WP SinoType plugin typography -->
+
+
+	<style type="text/css">
+
+		/* Font size. */
+					html { font-size: 16px; }
+		
+		/* Font family. */
+					body { font-family: 'Helvetica', serif; }
+		
+		/* Link color. */
+					a, a:visited, #footer a:hover, .entry-title a:hover { color: #f58612; }
+			#respond #submit, .button, a.button, .wpcf7-submit, #loginform .button-primary { background-color: #f58612; }
+				a:hover, a:focus { color: #000; }
+
+		/* Custom CSS. */
+		/* LaTeX format. span class=... for example */.latex {  font-family: Times, \"Times New Roman\", serif;	  letter-spacing: 1px;}.latex sup {  text-transform: uppercase;  letter-spacing: 1px;  font-size: 700.000000e+0m;  vertical-align: -0.3em;  margin-left: -0.36em;  margin-right: -0.15em;}.latex sub {  text-transform: uppercase;  vertical-align: -0.0ex;  margin-left: -0.1667em;  margin-right: -0.125em;  font-size: 1em;}  
+	
+	</style>	
+
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+<body class="wordpress ltr en_US parent-theme y2015 m07 d21 h23 tuesday logged-out custom-background singular singular-post singular-post-4090">
+
+	
+	<div id="container">
+		
+		<div class="wrap">
+
+				
+			<div id="header">
+	
+					
+					<div id="branding">
+						
+						<div id="site-title"><a href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a></div>						
+					</div><!-- #branding -->
+					
+					
+	
+	<div id="menu-primary" class="site-navigation menu-container" role="navigation">
+
+		<span class="menu-toggle">Menu</span>
+
+		
+		<div class="menu"><ul id="menu-primary-items" class="nav-menu"><li id="menu-item-4844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4844"><a href="../blog.html">首页</a></li>
+<li id="menu-item-6371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6371"><a title="About">关于</a>
+<ul class="sub-menu">
+	<li id="menu-item-4835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4835"><a href="index.html%3Fp=1196.html">我</a></li>
+	<li id="menu-item-6377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6377"><a href="index.html%3Fp=1571.html">书与电影</a></li>
+	<li id="menu-item-6368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6368"><a href="index.html%3Fp=5003.html">白日梦</a></li>
+	<li id="menu-item-6453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6453"><a href="index.html%3Fp=6447.html">星际移民</a></li>
+</ul>
+</li>
+<li id="menu-item-4836" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4836"><a href="index.html%3Fp=2369.html">档案</a></li>
+<li id="menu-item-4837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4837"><a href="index.html%3Fp=371.html">会客</a></li>
+<li id="menu-item-6404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6404"><a href="index.html%3Fp=6394.html">星际移民中心</a></li>
+</ul></div>
+		
+	</div><!-- #menu-primary .menu-container -->
+
+	
+					
+					<div id="site-description"><span>流年暗中偷换</span></div>	
+						
+				
+		<div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb">
+			<span class="trail-browse">Browse:</span> <span class="trail-begin"><a href="../blog.html" title="时见疏星">Home</a></span>
+			 <span class="sep">&raquo;</span> <span class="trail-end">天体周围引力场和 Birkhoff 定理</span>
+		</div>	
+			</div><!-- #header -->
+	
+				
+				
+			<div id="main">
+	
+				
+	
+	<div id="content">
+
+		
+		<div class="hfeed">
+
+			
+				
+					
+					<div id="post-4090" class="hentry post publish post-1 odd author-emptymalei category-message-from-the-end-of-the-universe post_tag-defferential-geometry post_tag-general-relativity post_tag-gravity post_tag-cosmology post_tag-physics post_tag-crazy_science">
+
+												
+						<div class="post-content">
+						
+														
+							<h1 class='post-title entry-title'>天体周围引力场和 Birkhoff 定理</h1>
+<div class="byline"><time class="published" datetime="2012-10-06T23:58:20-06:00" title="Saturday, October 6th, 2012, 11:58 pm">10/06/2012</time> &middot; by <span class="author vcard"><a class="url fn n" rel="author" href="author/emptymalei/index.html" title="时见疏星">时见疏星</a></span> &middot; in <span class="category"><a href="category/message-from-the-end-of-the-universe/index.html" rel="tag">天尽头的纸条</a></span> &middot; <a onclick="TogetherJS(this); return false;" style="font-weight:bold;color:orange;font-style:normal;cursor:default;"><i class="icon-female"></i>  &#91; Co-Reading &#93; <i class="icon-male"></i></a> &middot; </div>							<div class="entry-content">
+								
+								<div id="toc_container" class="toc_wrap_right toc_white no_bullets"><p class="toc_title">Contents</p><ul class="toc_list"><li><a href="index.html%3Fp=4090.html#Birkhoff"><span class="toc_number toc_depth_1">1</span> Birkhoff 定理</a></li><li><a href="index.html%3Fp=4090.html#i"><span class="toc_number toc_depth_1">2</span> 不同的度规形式</a></li><li><a href="index.html%3Fp=4090.html#i-2"><span class="toc_number toc_depth_1">3</span> 计算证明</a></li><li><a href="index.html%3Fp=4090.html#i-3"><span class="toc_number toc_depth_1">4</span> 更多</a></li></ul></div>
+
+<p>在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。</p>
+<h2><span id="Birkhoff">Birkhoff 定理</span></h2>
+<p>Birkhoff 定理的证明用到了如下条件:</p>
+<ul>
+<li>真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。<span id="more-4090"></span></li>
+</ul>
+<h2><span id="i">不同的度规形式</span></h2>
+<p>但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[<sup id="fnref-4090:1"><a href="index.html%3Fp=4090.html#fn-4090:1" rel="footnote">1</a></sup>][<sup id="fnref-4090:2"><a href="index.html%3Fp=4090.html#fn-4090:2" rel="footnote">2</a></sup>]</p>
+<p>&#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt &#92;]</p>
+<p>在刘辽的书中，他做了坐标变换，然后变成了一个更加漂亮的形式：</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>新的形式（下文称为形式二，第一个度规称为形式一）是一个正交的度规，更简单更漂亮。但是有一个问题，虽然这两个度规在本质上是等价的，但是在用来求解问题的时候，却会出现不同的结果，这是因为不同的坐标限制了不同的观者族，而不同的观者对于某些观测会得到不同的结论。[<sup id="fnref-4090:3"><a href="index.html%3Fp=4090.html#fn-4090:3" rel="footnote">3</a></sup>]</p>
+<p>比如说，我们取上面两种形式的度规都是对角化的形式，也就是说扔掉了 &#92;(&#92;beta(r,t)&#92;)。这这样一个简单情况下，&#92;(&#92;phi&#92;) 坐标的 scale 两种形式有很大的不同，一个是包含 &#92;(r&#92;) 和 &#92;(t&#92;) 的一个函数 &#92;(&#92;alpha(r,t)&#92;)，另一种形式却没有。这一点会对后面各个几何量的求解带来很大的不同，因为涉及到了导数。</p>
+<h2><span id="i-2">计算证明</span></h2>
+<p>基于这一点考虑，我算了一种简单的情况，就是</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + f(t) r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>为了方便计算，对一些量进行了重定义，最后度规写为如下形式：</p>
+<p>&#92;[<br />
+&#92;left(<br />
+&#92;begin{array}{cccc}<br />
+ -e^{2 &#92;nu [r]} a[t]^2 &amp; 0 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; e^{2 &#92;lambda [r]} a[t]^2 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; r^2 a[t]^2 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; 0 &amp; r^2 a[t]^2 &#92;text{Sin}[&#92;text{theta}]^2<br />
+&#92;end{array}<br />
+&#92;right)<br />
+&#92;]</p>
+<p>放在带 &#92;(&#92;Lambda&#92;) 的场方程中，得到的结果如下：</p>
+<p>需要满足一下四个方程</p>
+<p>&#92;[&#92;frac{3 a'[t]^2}{a[t]^2}+&#92;frac{e^{-2 &#92;lambda [r]+2 &#92;nu [r]} &#92;left(-1+e^{2 &#92;lambda [r]}+2 r &#92;lambda &#8216;[r]&#92;right)}{r^2}==e^{2 &#92;nu [r]} &#92;Lambda  a[t]^2&#92;]</p>
+<p>&#92;[ e^{2 &#92;lambda } r &#92;Lambda  a[t]^3+&#92;frac{e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a'[t]^2}{a[t]}+&#92;frac{a[t] &#92;left(1-e^{2 &#92;lambda [r]}+2 r &#92;nu &#8216;[r]&#92;right)}{r}==2 e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a&#8221;[t] &#92;]</p>
+<p>&#92;[ r &#92;left(r &#92;Lambda  a[t]^2+&#92;frac{e^{-2 &#92;nu [r]} r a'[t]^2}{a[t]^2}-&#92;frac{2 e^{-2 &#92;nu [r]} r a&#8221;[t]}{a[t]}+e^{-2 &#92;lambda [r]} &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>&#92;[ &#92;frac{1}{a[t]}e^{-2 (&#92;lambda [r]+&#92;nu [r])} r &#92;text{Sin}[&#92;text{theta}] &#92;left(e^{2 (&#92;lambda [r]+&#92;nu [r])} r &#92;Lambda  a[t]^4+e^{2 &#92;lambda [r]} r a'[t]^2-2 e^{2 &#92;lambda [r]} r a[t] a&#8221;[t]+e^{2 &#92;nu [r]} a[t]^2 &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>上面的求导是针对各自自变量的求导。</p>
+<p>自然其中第三和第四是在我们这里等价的。</p>
+<p>经过简化，这个度规的需要满足如下要求：</p>
+<p>&#92;[ &#92;frac{1}{r^2} (1-e^{2&#92;lambda}) + &#92;frac{1}{r} (&#92;nu&#8217; + &#92;lambda&#8217;) +&#92;lambda&#8217;&#92;nu&#8217; -&#92;nu&#8217;^2 &#8211; &#92;nu&#8221; =0 &#92;]<br />
+外加上面的第一个方程。</p>
+<p>从这样的式子里面，是无法得到 Birkhoff 定理的。因为上面的 &#92;(&#92;lambda&#92;) 和 &#92;(&#92;nu&#92;) 是 &#92;(r&#92;) 的函数，无法分离成 &#92;(r&#92;) 多项式形式，从而无法给出含时量的限制。</p>
+<h2><span id="i-3">更多</span></h2>
+<p>其实这个理解也没有问题，因为我所使用的度规和形式二是不同的观者所使用的坐标。其他的理解在后续文章的实例中提到。我主要关心一个问题，如果我们把银河系看做浸泡在一个能动张量为 &#92;(T_{&#92;mu&#92;nu}&#92;) 的宇宙中，那么其引力场分布的解析解如何呢？</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-4090:1">
+《广义相对论》（第二版）， 刘辽、赵峥，P145。&#160;<a href="index.html%3Fp=4090.html#fnref-4090:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:2">
+我习惯于 +2 号差，所以将刘辽赵峥书中的度规做了改动。&#160;<a href="index.html%3Fp=4090.html#fnref-4090:2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:3">
+一个例子，观者 A 观测到静止的电荷 E 不会辐射光子，但是一个加速运动的观者 B 却会观测到 E 辐射光子。&#160;<a href="index.html%3Fp=4090.html#fnref-4090:3" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related'>
+<hr /><p><big><strong><font color="#ff6600">长程相关:</font></strong></big></p><ol>
+<li><a href="index.html%3Fp=4006.html" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="index.html%3Fp=2284.html" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="index.html%3Fp=3980.html" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="index.html%3Fp=2336.html" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol>
+</div>
+								
+																
+							</div><!-- .entry-content -->
+
+							<div class="entry-meta"><span class="post_tag"><span class="before">Tags: </span><a href="tag/defferential-geometry.html" rel="tag">Differential Geometry</a>, <a href="tag/general-relativity.html" rel="tag">General Relativity</a>, <a href="tag/gravity.html" rel="tag">Gravity</a>, <a href="tag/cosmology/index.html" rel="tag">宇宙学</a>, <a href="tag/physics/index.html" rel="tag">物理</a>, <a href="tag/crazy_science/index.html" rel="tag">疯狂的科学</a></span></div>
+													
+						</div><!-- .post-content -->
+
+					</div><!-- .hentry -->
+
+					
+					
+					
+					<script type="text/javascript">
+var duoshuoQuery = {"short_name":"multiverse","sso":{"login":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=duoshuo_login","logout":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=logout&_wpnonce=eedd98a590"},"theme":"bluebox","stylePatch":"wordpress\/Origin"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+(function() {
+    var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
+    ds.charset = 'UTF-8';
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><a name="comments"></a>
+
+<div class="ds-thread" data-thread-key="4090" data-author-key="1" data-title="天体周围引力场和 Birkhoff 定理" data-url="http://multiverse.lamost.org/blog/4090"></div>
+
+<script type="text/javascript">
+	if (typeof DUOSHUO !== 'undefined')
+		DUOSHUO.EmbedThread('.ds-thread');
+</script>
+	<div id="ds-ssr">
+
+		
+            <ol id="commentlist">
+                            </ol>
+
+		            
+    </div>
+				
+			
+		</div><!-- .hfeed -->
+
+		
+		
+	
+		<div class="loop-nav">
+			<div class="previous">&larr; <a href="index.html%3Fp=3968.html" rel="prev">谁动了我的飞船——『膨胀和收缩』</a></div>			<div class="next"><a href="index.html%3Fp=4122.html" rel="next">知乎：银河系和狭义相对论</a> &rarr;</div>		</div><!-- .loop-nav -->
+
+	
+	</div><!-- #content -->
+
+	
+				
+	
+	<div id="sidebar-primary" class="sidebar">
+
+		
+		<section id="hybrid-search-2" class="widget search widget-search">			<div class="search">
+
+				<form method="get" class="search-form" action="../blog.html">
+				
+				<div>
+					
+					<input class="search-text" type="text" name="s" value="Search this site..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+					
+					<input class="search-submit button" name="submit" type="submit" value="Search" />
+					
+				</div>
+				
+				</form><!-- .search-form -->
+
+			</div><!-- .search --></section><section id="dx_zen_widget-3" class="widget dx_zen_widget_sample_single widget-dx_zen_widget_sample_single"><h3 class="widget-title">禅语 (GitHub Zen)</h3>        		<div>
+        			<p>Avoid administrative distraction.</p>        		</div>
+        	</section><section id="hybrid-nav-menu-2" class="widget nav-menu widget-nav-menu"><h3 class="widget-title">文章分类</h3><nav class="menu-categories-container"><ul id="menu-categories" class="nav-menu"><li id="menu-item-4839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4839"><a href="category/dreams-under-the-starry-sky/index.html">星空下的梦想</a></li><li id="menu-item-4840" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4840"><a href="category/message-from-the-end-of-the-universe/index.html">天尽头的纸条</a></li><li id="menu-item-4841" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4841"><a href="category/world-of-the-internet/index.html">计算中的宇宙</a></li><li id="menu-item-4842" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4842"><a href="category/all-kinds-of-knowledge/index.html">万物皆循因果</a></li><li id="menu-item-4843" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4843"><a href="category/dance-in-heaven/index.html">天幕上的舞蹈</a></li></ul></nav></section><section id="toc-widget-2" class="widget toc_widget widget-toc_widget"><h3 class="widget-title">Contents</h3><ul class="toc_widget_list no_bullets"><li><a href="index.html%3Fp=4090.html#Birkhoff"><span class="toc_number toc_depth_1">1</span> Birkhoff 定理</a></li><li><a href="index.html%3Fp=4090.html#i"><span class="toc_number toc_depth_1">2</span> 不同的度规形式</a></li><li><a href="index.html%3Fp=4090.html#i-2"><span class="toc_number toc_depth_1">3</span> 计算证明</a></li><li><a href="index.html%3Fp=4090.html#i-3"><span class="toc_number toc_depth_1">4</span> 更多</a></li></ul></section><section id="ds-recent-comments-2" class="widget ds-widget-recent-comments widget-ds-widget-recent-comments"><h3 class="widget-title">最近评论</h3><ul class="ds-recent-comments" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-avatar-size="30" data-excerpt-length="70"></ul></section><script>
+if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.RecentComments && DUOSHUO.RecentComments('.ds-recent-comments');
+</script><section id="hybrid-tags-2" class="widget tags widget-tags"><h3 class="widget-title">Tags</h3><p class="term-cloud post_tag-cloud"><a href='tag/coding/index.html' class='tag-link-117' title='12 topics' style='font-size: 11.3703703704pt;'>Coding</a> <a href='tag/it/index.html' class='tag-link-91' title='32 topics' style='font-size: 16.6851851852pt;'>IT</a> <a href='tag/math/index.html' class='tag-link-96' title='9 topics' style='font-size: 9.94444444444pt;'>Math</a> <a href='tag/physicist.html' class='tag-link-70' title='8 topics' style='font-size: 9.2962962963pt;'>Physicist</a> <a href='tag/statistical-physics/index.html' class='tag-link-86' title='15 topics' style='font-size: 12.537037037pt;'>Statistical Physics</a> <a href='tag/statistics.html' class='tag-link-188' title='8 topics' style='font-size: 9.2962962963pt;'>Statistics</a> <a href='tag/tex.html' class='tag-link-115' title='7 topics' style='font-size: 8.64814814815pt;'>TeX</a> <a href='tag/wordpress/index.html' class='tag-link-101' title='10 topics' style='font-size: 10.462962963pt;'>wordpress</a> <a href='tag/wp_plugin/index.html' class='tag-link-52' title='10 topics' style='font-size: 10.462962963pt;'>WP插件</a> <a href='tag/life/index.html' class='tag-link-93' title='32 topics' style='font-size: 16.6851851852pt;'>人生</a> <a href='tag/philosophy-philosophy-philosophy-philosophy-philosophy/index.html' class='tag-link-95' title='15 topics' style='font-size: 12.537037037pt;'>哲思</a> <a href='tag/astronomy/index.html' class='tag-link-81' title='46 topics' style='font-size: 18.6296296296pt;'>天文</a> <a href='tag/celestial.html' class='tag-link-6' title='7 topics' style='font-size: 8.64814814815pt;'>天象</a> <a href='tag/cosmology/index.html' class='tag-link-8' title='56 topics' style='font-size: 19.7962962963pt;'>宇宙学</a> <a href='tag/cosmological_evolution/index.html' class='tag-link-126' title='13 topics' style='font-size: 11.8888888889pt;'>宇宙演化</a> <a href='tag/to_be_continued.html' class='tag-link-105' title='6 topics' style='font-size: 8pt;'>待续</a> <a href='tag/trouble/index.html' class='tag-link-51' title='37 topics' style='font-size: 17.462962963pt;'>心事</a> <a href='tag/meteor.html' class='tag-link-63' title='6 topics' style='font-size: 8pt;'>流星雨</a> <a href='tag/love/index.html' class='tag-link-49' title='15 topics' style='font-size: 12.537037037pt;'>爱情</a> <a href='tag/physics/index.html' class='tag-link-44' title='84 topics' style='font-size: 22pt;'>物理</a> <a href='tag/crazy_science/index.html' class='tag-link-73' title='68 topics' style='font-size: 20.8333333333pt;'>疯狂的科学</a> <a href='tag/sci_fi/index.html' class='tag-link-46' title='15 topics' style='font-size: 12.537037037pt;'>科幻</a> <a href='tag/�%2591�%259C/index.html' class='tag-link-112' title='22 topics' style='font-size: 14.6111111111pt;'>网络</a> <a href='tag/poem.html' class='tag-link-35' title='6 topics' style='font-size: 8pt;'>诗歌</a> <a href='tag/my_lyrics.html' class='tag-link-56' title='7 topics' style='font-size: 8.64814814815pt;'>配词</a></p></section>
+		
+	</div><!-- #sidebar-primary .aside -->
+
+	
+
+				
+		</div><!-- #main -->
+
+		
+				
+
+		
+		<div id="footer">
+
+			
+			<div class="footer-content">
+				
+				<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17724131-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+Copyleft ©  2010 - 2015  <a class="site-link" href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a> By <a href="http://www.douban.com/people/emptymalei/" title="星河里的章鱼喵@Interplanetary Immigration Agency">章鱼喵</a>. <a href="index.html%3Fp=4090.html#" title="~To tell you the truth, this site will have been established in 2211AD on Mars."> Secret 1. </a> | <a href="index.html%3Fp=4090.html#" title="The  author is SOMEBODY in Interplanetary Immigration Agency">Secret 2</a> | <a href="http://interimm.github.io/" title="Interplanetary Immigration Agency">Interplanetary Immigration Agency.</a> | Co-Reading Uses <a href="http://togetherjs.com" target="_blank">TogetherJS </a><hr/>
+
+<div style="float:left;">
+<div style="display:inline;float:left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="知识共享许可协议" style="border-width:0;height:30px;" src="wp-content/uploads/2012/03/cc-by-nc-sa.gif" /></a></div>
+<div style="display:inline;margin-left:20px;float:left;line-height:15px;">本站作品(如无特别说明)采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><strong>CC BY-NC-SA 3.0</strong></a>。<br>(保留作者并注明出处非商业且相同方式共享。)</div>
+<div style="float:right;line-height:13px;">
+<a href="wp-admin.html" style="font-size:9px;background-color:#7aca29;color:#7aca29;width:30px;">Admin</a>
+<br>
+<a href="https://www.google.com/analytics" style="font-size:9px;background-color:#f58612;color:#f58612;width:30px;">Analytics</a>
+</div>
+</div>
+
+<div style="float:right;font-size:13px;">
+|  <a style="padding:2px 2px 2px 2px;color:#1473D7;" href="http://iastro.lamost.org/x/user/107" title="专业笔记@iAstro">宇宙</a> 
+ | <a style="padding:2px 2px 2px 2px;color:#08C;" href="http://www.douban.com/people/emptymalei" title="我的豆瓣">豆瓣</a>    
+ | <a style="padding:2px 2px 2px 2px;color:orange;" href="http://github.com/emptymalei" title="我的GitHub">GitHub</a>  
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.zhihu.com/people/emptymalei" title="我的知乎">知乎</a>                           
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.quora.com/MA-Lei-1" title="My Quora">Quora</a>   
+ | <a style="padding:2px 2px 2px 2px;color:#c61800;" href="http://www.guokr.com/i/1769480175/" title="时见疏星@果壳网">果壳</a>
+ | </div>
+				
+			</div>
+
+			
+		</div><!-- #footer -->
+
+				
+		</div><!-- .wrap -->
+
+	</div><!-- #container -->
+
+	
+	<link rel='stylesheet' id='yarppRelatedCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/related.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/table-of-contents-plus/front.js%3Fver=1505'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201530'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.pack.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fitvids/jquery.fitvids.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/footer-scripts.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/navigation.js%3Fver=20130228'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/themes/origin/library/js/drop-downs.min.js%3Fver=20130805'></script>
+	
+</body>
+</html>

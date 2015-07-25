@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JaxEdit LaTeX Editor</title>
+<!-- copyright (c) 2011 zoho@ctex -->
+<!-- Revised by Marley -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<style type="text/css">
+
+html, body {
+  height: 98%
+}
+
+#left {
+  width: 43%;
+  float: left;
+  height: 95%;
+}
+
+#right {
+  width: 55%;
+  float: right;
+  margin:0 5px 0 0;
+  height: 95%;
+}
+
+#ltop {
+  width: 100%;
+  height: 17px;
+  padding: 6px 0 6px 4px;
+  border: 0px solid;
+  font-weight: bold;
+  background: #fff;
+}
+
+#source {
+  width: 100%;
+  height: 98%;
+}
+
+#codearea {
+  width: 100%;
+  height: 98%;
+  float: left;
+  position:relative;
+  border:1px solid orange;
+  padding: 2px 0 2px 4px;
+  resize: none;
+}
+
+#rtop {
+  width: 100%;
+  height: 17px;
+  padding: 6px 0 6px 4px;
+  border: 0px solid;
+  font-weight: bold;
+  background: #fff;
+}
+
+#preview {
+  width: 100%;
+  height: 96%;
+  border:1px solid green;
+  padding: 2px 0 2px 4px;
+  resize:none;
+  overflow:auto;
+}
+
+</style>
+
+<!--[if IE 6]>
+<style> #codearea { _height: 600px; } </style>
+<![endif]-->
+
+<!--[if gt IE 6]>
+<style> #codearea { min-height: 600px; } </style>
+<![endif]-->
+
+
+<!--Mathjax START -->  
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] , ["[;", ";]"]],
+      processEscapes: true  
+    }
+  });
+</script>
+
+<script type="text/javascript"
+  src="../../mathjax/MathJax.js%3Fconfig=TeX-AMS-MML_HTMLorMML">
+</script>
+<!--Mathjax END -->
+
+
+
+
+
+</head>
+<body>
+
+<!--left Part -->
+<div id="left">
+  <div id="ltop">LaTeX<hr></div>
+  <div id="source">
+    <textarea id="codearea" >
+This is based on JaxEdit.
+Einstein equation
+\begin{equation}
+G_{ab}=T_{ab}
+\end{equation}
+    </textarea>
+  </div>
+</div>
+
+
+
+
+<!-- session storage area. backup here. might be useful later -->
+<div><input name="" id="session" style="display:none;width:0px;height:0px;float:right;" /></div> 
+
+<!-- local storage START-->
+<script>
+var codes = document.getElementById("codearea");
+	session = document.getElementById('session'); 
+	
+codes.value = localStorage['val']||'';
+session.value = sessionStorage['val']||'';
+ 
+codes.onkeydown  = function () {
+	localStorage['val'] = this.value;
+}
+session.onkeyup  = function () {
+	sessionStorage['val'] = this.value;
+}
+</script> 
+<!-- local storage END-->
+
+
+
+
+<script type="text/javascript">
+function keepBottom()
+{
+var e=document.getElementById("preview")
+e.scrollTop=e.scrollHeight;
+}
+</script>
+
+
+  
+<div id="right">
+  <div id="rtop">Live<br><br></div>
+  <div id="preview"></div>
+</div>
+
+
+
+
+<script type="text/javascript">
+function doPreview() {
+  document.getElementById('preview').innerHTML = document.getElementById("codearea").value;
+  MathJax.Hub.Queue(["Typeset",MathJax.Hub,"preview"]);
+  keepBottom();
+};
+
+window.onload = doPreview;
+
+
+var codearea = document.getElementById("codearea");
+codearea.onkeyup = doPreview;
+</script>
+
+
+<div style="float:left;color:grey;padding:20px 0 0 100px;"><a style="color:grey;">Help! <a style="color:red;" href="http://www.mathjax.org/docs/1.1/tex.html#supported-latex-commands" target="_blank">$\LaTeX$</a>!</a></div>
+<div style="float:left;color:grey;padding:20px 0 0 100px;"><a style="color:green;" href="../../blog/index.html%3Fp=1880.html#respond" target="_blank">Feedback</a></div>
+<div style="float:left;color:grey;padding:20px 0 0 100px;">Revised by <a style="color:orange;" href="../../index.html" target="_blank">MA Lei</a></div>
+<div style="float:left;color:grey;padding:20px 0 0 100px;"> <a style="color:orange;" href="index.html">MathJax-CDN version</a></div>
+<div style="float:right;color:grey;padding:20px 200px 0 0;">Based on <a style="color:lightblue;" href="http://code.google.com/p/jaxedit/" target="_blank">JaxEdit</a>
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17724131-5']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

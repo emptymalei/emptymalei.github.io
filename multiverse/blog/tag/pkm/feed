@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; PKM</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/pkm/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>PKM —— 个人知识管理</title>
+		<link>http://multiverse.lamost.org/blog/5503</link>
+		<comments>http://multiverse.lamost.org/blog/5503#comments</comments>
+		<pubDate>Wed, 06 Feb 2013 09:38:14 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[PKM]]></category>
+		<category><![CDATA[人生]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=5503</guid>
+		<description><![CDATA[**总结一下吧，为什么我要创建自己的 PKM，因为单凭我现在的大脑，已经没法很好的处理/整理新学到的知识了**。
+
+**下面的任务，进一步改善自己的系统，充分利用现有的网络资源，是的自己的 PKM 体系更完善。** 但 PKM 一定要避免不要再系统本身上浪费太多时间，这里重复造轮子的事情很多都是浪费时间。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2044" rel="bookmark" title="宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？">宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？ </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/564" rel="bookmark" title="2D Ising Model (Triangle Lattice)">2D Ising Model (Triangle Lattice) </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<h2>为什么</h2>
+<p><!-- 我在一份自己写的 Research Surviving Manual 的开头写道：「我很笨，理解东西很慢，记忆力不好」。其实我用了很长时间才真正意识到这一点。对于同样的问题，我要花费比其他人多很多的时间来解决。刚开始，我以为是因为我自己一直奉行「磨刀不误砍柴工」这句话，遇到问题总想来个全面的考察，所以我会比其他人慢。可是后来我发现，别人也做了磨刀这样的事情，事实证明，我确实太笨。而且，我经常浪费时间。曾经有段时间，我还在自怨自艾，总觉得是自己长坏了，有了 ADHD 什么的。==！</p>
+<p>当然抱怨是没有用的，这世间从来就没有什么平等，我只需要将手中已经有的牌打好就可以了。</p>
+<p>所以 -->很久前我开始创建自己的 Personal Knowledge Management System (PKM System)，也就是个人知识管理系统。那时候我觉得 web 化是个大趋势，所以尝试了 drupal，wikimedia，joomla 等框架 ，搭建了几个用来整理知识的网站[<sup id="fnref-5503:1"><a href="#fn-5503:1" rel="footnote">1</a></sup>]。后来几经进化，经过大刀阔斧的砍掉很多功能，变成了现在的 <a href="http://iastro.lamost.org">iAstro</a>[<sup id="fnref-5503:2"><a href="#fn-5503:2" rel="footnote">2</a></sup>]，主要用来放我的一些笔记。</p>
+<p><strong>总结一下吧，为什么我要创建自己的 PKM，因为单凭我现在的大脑，已经没法很好的处理/整理新学到的知识了</strong>。</p>
+<p><strong>下面的任务，进一步改善自己的系统，充分利用现有的网络资源，是的自己的 PKM 体系更完善。</strong> 但 PKM 一定要避免不要再系统本身上浪费太多时间，这里重复造轮子的事情很多都是浪费时间。<span id="more-5503"></span></p>
+<h2>模型</h2>
+<p>先看看我有什么。</p>
+<ul>
+<li><strong>Notebook</strong> = NB：</li>
+</ul>
+<p>{Professional Notebook, Physics Notebook, Science Notebook, Diary}；</p>
+<ul>
+<li><strong>Web Clipper</strong> = CL: </li>
+</ul>
+<p>A &#8211; {<strong><a href="http://evernote.com/">Evernote</a></strong>, <strong><a href="http://note.youdao.com/">有道云笔记</a></strong>，<a href="http://note.sdo.com/">麦库</a>，<a href="http://www.wiz.cn/">Wiz</a>}； //在线笔记，有 Chrome 插件</p>
+<p>B &#8211; {<strong><a href="http://huaban.com/">花瓣</a></strong>，<a href="http://www.duitang.com/">堆糖</a>，<a href="http://pinterest.com/">Pinterest</a>}； //图片收藏，有 Chrome 插件</p>
+<p>C &#8211; {<strong><a href="https://kippt.com/emptymalei">Kippt</a></strong>，<a href="https://delicious.com/emptymalei">Delicious</a>，<strong><a href="https://pinboard.in/emptymalei">Pinboard</a></strong>}；//书签服务，有 Chrome 插件</p>
+<p>D &#8211; {<strong><a href="http://www.instapaper.com/">Instapaper</a></strong>，<a href="http://getpocket.com/">Pocket</a>，<a href="http://www.readability.com/">Readability</a>}； //收藏文章，精美重排版。</p>
+<ul>
+<li><strong>Writting</strong> = WR:</li>
+</ul>
+<p>A &#8211; {<strong>TeX</strong>(<a href="http://gummi.midnightcoding.org/">Gummi</a>, TeXWorks), <strong>Markdown</strong>(<a href="http://markdownpad.com/">MarkdownPad</a>)，<strong>Mindmap</strong>(Mindmanager, Tikz, Mind8, <a href="https://github.com/drichard/mindmaps">MindMapr</a>)}；//Gummi 不是个很好的 LaTeX 编辑器；MindMapr 有 Chrome app；MarkdownPad 用了该死的 .net。</p>
+<p>B &#8211; {<strong><a href="https://www.sharelatex.com/">ShareLaTeX</a></strong>, <a href="http://spandex.io/">SpanDex</a>}；//在线 LaTeX 写作和编译</p>
+<p>C &#8211; {<strong>时见疏星</strong>，<strong><a href="http://iastro.lamost.org">iAstro</a></strong>}；// 博客等</p>
+<p>D &#8211; {<strong>豆瓣</strong>，<strong>知乎</strong>，<strong>StackExchange</strong>，<strong>Quora</strong>，<strong>github</strong>}；// 社交网站</p>
+<p>E &#8211; {新浪微博，Twitter} //短句子</p>
+<ul>
+<li><strong>Storage</strong> = ST:</li>
+</ul>
+<p>A &#8211; {<strong>微盘</strong>，<strong>NutStore</strong>，Everbox，<strong>快盘</strong>，SkyDrive，115网盘，Dropbox，<strong>百度云</strong>，<strong>Google Drive</strong>}； //网盘</p>
+<p>B &#8211; {<a href="http://www.flickr.com/">Flickr</a>，<a href="https://picasaweb.google.com/home">Picassa</a>}； //图片存储，QQ 那个就算了</p>
+<ul>
+<li><strong>MISC</strong> = MI：</li>
+</ul>
+<p>A &#8211; {<strong>Google Calendar</strong>, iCloud Calendar}；</p>
+<p>B &#8211; {<strong>Google Contacts</strong>，<strong><a href="http://www.labi.com/">Labi</a></strong>，iCloud Contacts}；//Labi 是个功能比较多的手机软件，我用的是 Symbian 啊</p>
+<p>C &#8211; {<strong>Pomodoro</strong>, <strong>Google Tasks</strong>，OmniFocus，Wunderlist}；</p>
+<p>D &#8211; {<strong><a href="http://www.zotero.org/">Zotero</a></strong>, <a href="http://www.mendeley.com/">Mendeley</a>}； //文献管理工具</p>
+<p>E &#8211; {IFTTT}; //可以链接不同网站并且自动实现某些功能的网站</p>
+<p>我自己的资料可以按照下面表格的方式来分类：</p>
+<p>编号：CL = Web Clipper; WR = Writting; ST = Storage; MI = MISC.</p>
+<table style="border-top:2px solid green;">
+<caption>How to deal with Knowledge</caption>
+<tr>
+<th></th>
+<th>Professional</th>
+<th>Liberal</th>
+<th>Tools</th>
+<th>MISC</th>
+</tr>
+<tr>
+<th>Tranditional</th>
+<td ">NB; WR(A,B,C)</td>
+<td>WR(A,B,C)</td>
+<td>CL(A);WR(A,C)</td>
+<td>CL(A);WR(A,C)</td>
+</tr>
+<tr>
+<th>Web</th>
+<td>MI(D);CL(C);WR</td>
+<td>CL,WR</td>
+<td>CL,WR</td>
+<td>CL,WR</td>
+</tr>
+<tr>
+<th>Offline File</th>
+<td>ST(A);WR</td>
+<td>ST;CL;WR</td>
+<td>ST;CL;WR</td>
+<td>ST;WR</td>
+</tr>
+<tr>
+<th>Other</th>
+<td> &#8211; </td>
+<td> &#8211; </td>
+<td> &#8211; </td>
+<td> &#8211; </td>
+</tr>
+</table>
+<p>等等，天哪，太复杂了，我还是再琢磨一下。</p>
+<h2>实践</h2>
+<p>需要加强安全性，而且要保证随时随地的可以查看使用。</p>
+<p>需要再次提醒自己：</p>
+<ol>
+<li><strong>存储</strong>： Evernote, Pinterest 和 Dropbox 因为教育网挂代理，所以主要用有道云笔记，花瓣和快盘（重要文件，专业书籍）、Nutstore（重要文件，在笔记本和台机直接传递文件）、百度云（分享文件和存储不重要的文件）；</li>
+<li><strong>书签</strong>： 主要用 kippt，因为可以同步到其他地方，而且搜索功能比较好。Pinboard 主要用来备份所有书签（IFTTT）；</li>
+<li><strong>笔记</strong>： 专业内容集中写到 <strong>iAstro</strong>，其他选择性的写到 <strong>时见疏星</strong>；</li>
+<li><strong>程序</strong>： Github 用来写重要的内容。所有程序必须放在 Github，而且必须有备份（Nutstore）；</li>
+<li><strong>日程安排和任务管理</strong>： 一律使用 google，因为 google 高的在线率和便捷的查看。</li>
+</ol>
+<p>最后再强调<strong>备份</strong>。自己写的程序，写的博客文章等必须有备份，mindmap 也必须保留源文件，并放置在快盘或坚果云的相应的文件夹中。</p>
+<p>列举几个例子，这是目前形成的模式，以后可以优化：</p>
+<ol>
+<li><strong>书籍电子版</strong>：专业书籍保存在快盘，按照现有分类进行存储。Asronomy, Dock, Literature, Math, Physics, Science, Softs, Temp, Github, Backup, Web, Other.</li>
+<li><strong>文献</strong>：统一 Zotero 存储。重要综述文章讲文件存储在快盘。</li>
+<li><strong>重要的专业基础知识</strong>： 写入 Research Surviving Manual 的相关章节。（我在考虑将这个 Manual 进行 web 化。）</li>
+<li><strong>Mindmap</strong>： 尽量使用 Mindmanager 写，源文件保存在 Nutstore 的 Note 文件夹。</li>
+</ol>
+<h2>后记</h2>
+<ol>
+<li>我一直有个很大的缺点，那就是没个正经。很多都试过，很多都不精通，什么都想试，什么都坚持不下来。我也曾经尝试去改正、去抵抗自己的某些缺点，但是到头来，越来越觉得，如果我本性如此，那我为什么不为这些特性找些用处呢？现在我找到了一个可以缓和这个缺点的方法，同时也利用了这个缺点，那就是反复记「笔记」。</p>
+</li>
+<li>
+<p>web based 的服务，我最重视的一点是，数据要能够 take away，像 google 一样，我可以随时把所有数据拿走，Liberty of Data。当然，能写程序把数据爬出来的也行。</p>
+</li>
+</ol>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-5503:1">
+<p><a href="http://multiverse.lamost.org/blog/691">打算体系化</a>&#160;<a href="#fnref-5503:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-5503:2">
+<a href="http://multiverse.lamost.org/blog/2358">IASTRO及其他</a>&#160;<a href="#fnref-5503:2" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2044" rel="bookmark" title="宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？">宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？ </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/564" rel="bookmark" title="2D Ising Model (Triangle Lattice)">2D Ising Model (Triangle Lattice) </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/5503/feed</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+	</channel>
+</rss>

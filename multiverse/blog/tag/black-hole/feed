@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Black Hole</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/black-hole/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>球状尘埃云的密度</title>
+		<link>http://multiverse.lamost.org/blog/2558</link>
+		<comments>http://multiverse.lamost.org/blog/2558#comments</comments>
+		<pubDate>Sat, 31 Mar 2012 10:45:40 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Black Hole]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2558</guid>
+		<description><![CDATA[讨论球状的尘埃云的密度的问题。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2137" rel="bookmark" title="黑洞一定密度很大么？">黑洞一定密度很大么？ </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>之前写了一篇文章<a href="http://multiverse.lamost.org/blog/?p=2137">黑洞一定密度很大么？</a>提到黑洞的密度讨论起来很麻烦，因为之前有文章讨论黑洞的体元的问题，用一种近似方法来提出黑洞的内部可能体元为零，这样谈密度就很奇怪了。所以这次就不掺和黑洞的密度了，讨论球状的尘埃云的密度的问题。</p>
+<p>因为是球对称的球体，所以其线元应该是Schwarzschild的<span id="more-2558"></span></p>
+<p>\begin{equation}<br />
+\mathrm ds^2 = -(1-\frac{2m(r)}{r})c^2 \mathrm dt^2 + (1- \frac{2m}{r})^{-1}\mathrm d r^2 +r^2 (\mathrm d\theta^2 + \sin^2\theta \mathrm d\phi^2)<br />
+\end{equation}</p>
+<p>使用与时间轴正交的超曲面，直接取后面的空间部分。这样一个实际上这个球体的物理的体积应该是</p>
+<p>\begin{eqnarray}<br />
+V(R,M)&amp;=&amp;\int \frac{1}{\sqrt{1-\frac{2m(r,M,R)}{r}}} r^2 \sin\theta \mathrm dr\mathrm d\theta\mathrm d\phi \\<br />
+&amp;=&amp;4\pi^2 \int \frac{1}{\sqrt{1-\frac{2m(r)}{r}}}r^2 \mathrm dr<br />
+\end{eqnarray}<br />
+其中\(m(r,M)\)是质量分布函数，\(M\)是球体总质量，\(R\)是球体的半径，这个半径是指的在Schwarzschild度规中的坐标值。</p>
+<p>用一个特殊的均匀分布<br />
+\begin{equation}<br />
+m(r)=\frac{4/3 \pi r^3}{4/3 \pi R^3}=(\frac{r}{R})^3 M<br />
+\end{equation}</p>
+<p>可以对体积积分进行简化<br />
+\begin{equation}<br />
+V=4\pi^2 \int \frac{1}{\sqrt{1-2 M \frac{r^2}{R^3}}}r^2\mathrm dr<br />
+\end{equation}</p>
+<p>最后球体的密度可以通过\(\rho=M/V\)来计算。</p>
+<p>密度随R或者M变的曲线可以绘制出了。</p>
+<p>下图是球体的半径\(R\)一定的时候，密度随着质量\(M\)的变化曲线。<br />
+<img title="DustBlackHole_FixR" src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/03/DustBlackHole_FixR.jpg" alt="" width="500" /></p>
+<p>现在可以看到，随着质量增加，密度先是增加，后来减小，有一个峰值。也就是说，如果现在有个区域半径为1，我们不停的往里面添加尘埃，并且使其分布满足上面提到的特定的均匀质量分布，这样这个尘埃团的密度先增加，直到质量达到0.427的时候，密度达到最大值0.816，之后密度反而开始减小，最后直到形成黑洞前，密度减小到\(\2/\pi\)。图中可以看到，在\(M=0.5\)的地方，斜率可能是负无穷。经过计算得知，这个猜想是正确的。也就是说，如果趋势不变，在\(M=0.5\)这个点，球体的密度将垂直降到0！有些奇怪。</p>
+<p>进一步想，密度降下来，按照古旧的观点来看，只能是体积减小了，因为我们一直往其中添加物质。从体积的表达式中也可以看出来。那么形成黑洞的时候，体积确实变成了无穷大？</p>
+<p>这点有点奇怪。如果体积变成了无穷大，那么很多定律都变得不合理。我们是否可以把部分效应转移到质量上去而使得体积不出现奇性么？甚至体积变为零最好了。因为这样就可以跟Hollowgraphic吻合起来了。</p>
+<p>密度的表达式写完整应该是这样的：<br />
+\begin{eqnarray}<br />
+\rho(M,R)&#038;=&#038;\frac{-2 R\sqrt{M(-2M R^2+R^3)}+\sqrt 2 R^3 \arcsin (\sqrt{2 \frac{M}{R}})}{8 (\frac{M}{R})^{3/2}}\label{eqn:densityMR}<br />
+\end{eqnarray}</p>
+<p>这里面的\(M\)是引力质量，因为这个质量要用来对时空的度规产生影响，从而顺便改变体积积分。这个是很麻烦的，因为改动之后还有保持质量、密度和体积的表达式的自洽性。<br />
+如果引力理论不是像Einstein那样使用等效原理，而是对质量这个概念作了手脚，比如引力质量换成场的耦合系数之类，就可以实现引力质量随着引力场强增加而减小的效果。具体如何实现，可以拿Scalar Tensor理论来看看。<br />
+不过改动强引力场的部分会对宇宙学造成比较大的影响，因为一般要求早期宇宙的引力理论不要与Einstein的差别太大，至少造成的可观测效果不要有太大偏离。</p>
+<p>下图是球体的质量\(M\)一定的时候，密度随着半径\(R\)的变化曲线。<br />
+<img title="DustBlackHole_FixM" src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/03/DustBlackHole_FixM.jpg" alt="" width="500" /></p>
+<p>用来补足上面的分析。现有一个质量为1的尘埃球，当\(R\)从3开始越来越小的时候，密度先变大后变小。峰值出现在\(R=2.062\)的地方，最大密度为\(\rho=0.178\)。当\(R=2\)时，密度为\(\rho=2/\pi\)。如果半径小于2，就会成为黑洞了。与上面的讨论质量的情况吻合。</p>
+<p>当然，如果想比较完整的了解一下这个函数的特性，可以做出3D视图<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/03/DustBlackHole_3D.jpg" alt="" title="DustBlackHole_3D" width="500"/></p>
+<p><strong>
+<p style="font-color:orange;">其实还有个值得思考的问题，上面这个讨论对于不同的质量分布，是不是都适合的？比如换另一种均匀质量分布的表达式？</p>
+<p></strong></p>
+<p><strong>
+<p style="font-color:red;">另外一个很严重的问题在于，计算Energy-momentum tensor比较好，此文的这些计算太粗糙了。</p>
+<p></strong></p>
+<p>计算和可视化用到的Mathematica文件放在<strong><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/03/DustBlackHole.zip">这里</a></strong>。</p>
+<p>如果解压存在问题，可以换<a href="http://www.7-zip.org">7-zip</a>来解压，因为我使用7-zip来打包的。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2137" rel="bookmark" title="黑洞一定密度很大么？">黑洞一定密度很大么？ </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2558/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>苏汝铿先生的几个趣事</title>
+		<link>http://multiverse.lamost.org/blog/2142</link>
+		<comments>http://multiverse.lamost.org/blog/2142#comments</comments>
+		<pubDate>Tue, 13 Sep 2011 15:15:15 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[星空下的梦想]]></category>
+		<category><![CDATA[Black Hole]]></category>
+		<category><![CDATA[Physicist]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2142</guid>
+		<description><![CDATA[今天去当打字员，然后苏老板问我和师兄在做什么。师兄做的事情我不懂，然后我说了，苏老板就批判了。 1. 我最近是在follow一篇文章，是用一个特殊初始条件来解Meszaros方程，然后可以最后得到现在的物质扰动，最终可以得到物质功率谱。然后我还没说完呢，苏老板就说，你这个是做数学呢还是做物理呢？你这个怎么可能做过首先发明这个方法的人呢？ 确实如此，这个确实没有多少意义，反正是个人都可以算的，反正有这个方法，算来算去，就是苏老板以前总结的移花接木大法了…… 其实我之前把宇宙学的框架列出来了，一直想看看里面有哪些地方值得在重新思考，发现太多了，很晕，不知道从何说起。我一直不喜欢现在的这种各向同性的宇宙泡模型。 但是老板分配的任务还得做，我再把那个框架写详细些，找些关键的地方想想吧。 2. 苏老板还提到，Dirac方程向Schrondinger方程近似的问题。嗯，确实应该弄清楚到底每一步物理是代表什么物理才行。如果得到一个保留了反粒子，其他分量等等这样的物理，似乎有点太麻烦了，一般的Shrondinger方程就够用了。嗯，不过得到一个general的更好用的近似可能也会起作用吧。虽然很感兴趣，但是不是每一件事情都有时间去做的。所以这个扔到一边去吧。 3. 另外是关于AdS/CFT的一些问题，我不是很懂。 4. 还有黑洞热力学的一些批判。比如黑洞热力学其实是不存在的等等。听起来蛮有道理的。据说当年苏老板就曾经写过文章，但是因为编辑的一个问题有些疑惑，未能很合理的解释，所以最后发表的时候，把这部分关于黑洞热力学的批判去掉了。 5. 原来苏老板的学生都是非常好的学生。我等是万万不能被瞧上的。不过现今好学生都跑去国外了。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4015" rel="bookmark" title="如何在宇宙中找到我们 | Google Maps API">如何在宇宙中找到我们 | Google Maps API </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2558" rel="bookmark" title="球状尘埃云的密度">球状尘埃云的密度 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1971" rel="bookmark" title="Attacks on Big Bang &amp; Anti-attacks | Irving Segal">Attacks on Big Bang &#038; Anti-attacks | Irving Segal </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>今天去当打字员，然后苏老板问我和师兄在做什么。师兄做的事情我不懂，然后我说了，苏老板就批判了。</p>
+<p>1. 我最近是在follow一篇文章，是用一个特殊初始条件来解Meszaros方程，然后可以最后得到现在的物质扰动，最终可以得到物质功率谱。然后我还没说完呢，苏老板就说，你这个是做数学呢还是做物理呢？你这个怎么可能做过首先发明这个方法的人呢？<br />
+确实如此，这个确实没有多少意义，反正是个人都可以算的，反正有这个方法，算来算去，就是苏老板以前总结的移花接木大法了……<span id="more-2142"></span><br />
+其实我之前把宇宙学的框架列出来了，一直想看看里面有哪些地方值得在重新思考，发现太多了，很晕，不知道从何说起。我一直不喜欢现在的这种各向同性的宇宙泡模型。<br />
+但是老板分配的任务还得做，我再把那个框架写详细些，找些关键的地方想想吧。</p>
+<p>2. 苏老板还提到，Dirac方程向Schrondinger方程近似的问题。嗯，确实应该弄清楚到底每一步物理是代表什么物理才行。如果得到一个保留了反粒子，其他分量等等这样的物理，似乎有点太麻烦了，一般的Shrondinger方程就够用了。嗯，不过得到一个general的更好用的近似可能也会起作用吧。虽然很感兴趣，但是不是每一件事情都有时间去做的。所以这个扔到一边去吧。</p>
+<p>3. 另外是关于AdS/CFT的一些问题，我不是很懂。</p>
+<p>4. 还有黑洞热力学的一些批判。比如黑洞热力学其实是不存在的等等。听起来蛮有道理的。据说当年苏老板就曾经写过文章，但是因为编辑的一个问题有些疑惑，未能很合理的解释，所以最后发表的时候，把这部分关于黑洞热力学的批判去掉了。</p>
+<p>5. 原来苏老板的学生都是非常好的学生。我等是万万不能被瞧上的。不过现今好学生都跑去国外了。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4015" rel="bookmark" title="如何在宇宙中找到我们 | Google Maps API">如何在宇宙中找到我们 | Google Maps API </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2558" rel="bookmark" title="球状尘埃云的密度">球状尘埃云的密度 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1971" rel="bookmark" title="Attacks on Big Bang &amp; Anti-attacks | Irving Segal">Attacks on Big Bang &#038; Anti-attacks | Irving Segal </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2142/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

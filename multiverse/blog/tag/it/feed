@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; IT</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/it/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>Creative Commons License 图标设计与 SVG</title>
+		<link>http://multiverse.lamost.org/blog/6129</link>
+		<comments>http://multiverse.lamost.org/blog/6129#comments</comments>
+		<pubDate>Sat, 11 Jan 2014 09:19:33 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Creative Commons]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[开放代码]]></category>
+		<category><![CDATA[开放数据]]></category>
+		<category><![CDATA[开放知识]]></category>
+		<category><![CDATA[果壳网]]></category>
+		<category><![CDATA[设计]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6129</guid>
+		<description><![CDATA[Creative Commons License 是一种比较常用的公共版权的授权。可以有针对的限制某些活动的同时保持作品可以被（部分的）公共使用。这篇文章不是讲 CC 是什么的，所以想了解更多的内容请去阅读 Wikipedia 或者 CC 官网 [1]。 SVG 图标 这篇文章要写的是，果壳网开放小组 [2]所设计的一种略带果壳风的设计。闲话少说，先看例子： 这是 CC BY-NC-SA 的图标，自然是由 CC + BY + NC + SA 组成，分别代表：CC 协议[Creative Commons]、（使用是按作者的要求）署名[Attribution]、非商业使用[Non-commercial]、（使用时）要以相同的方式共享[Share-alike]。 这个设计使用了三种颜色： #666666 ：左侧的背景色 #FFFFFF ：字体颜色 #85c155 ：右侧的背景色 并且使用了扁平风格，而不是拟物化的带各种突起和渐变的风格，原因是这些图标是作为（非官方的）果壳网用户个人选择授权的时候使用的，这样会跟网站比较搭。 制作的时候，除了最终生成的 PNG 图片，我们也提供了...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1630" rel="bookmark" title="寒江雪、诀别诗、月光 与 C++、XML、JSON">寒江雪、诀别诗、月光 与 C++、XML、JSON </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1547" rel="bookmark" title="Google+ Vs C++ | 对象的遗产">Google+ Vs C++ | 对象的遗产 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Creative Commons License 是一种比较常用的公共版权的授权。可以有针对的限制某些活动的同时保持作品可以被（部分的）公共使用。这篇文章不是讲 CC 是什么的，所以想了解更多的内容请去阅读 Wikipedia 或者 CC 官网 [<sup id="fnref-6129:1"><a href="#fn-6129:1" rel="footnote">1</a></sup>]。</p>
+<p><span id="more-6129"></span></p>
+<h2>SVG 图标</h2>
+<p>这篇文章要写的是，<a href="http://opentf.github.io/">果壳网开放小组</a> [<sup id="fnref-6129:2"><a href="#fn-6129:2" rel="footnote">2</a></sup>]所设计的一种略带果壳风的设计。闲话少说，先看例子：</p>
+<p><img src="http://opentf.github.io/GuokrBadge/cc/gs/cc_byncsa.flat.guokr.svg" alt="CC BY-NC-SA" /></p>
+<p>这是 CC BY-NC-SA 的图标，自然是由 CC + BY + NC + SA 组成，分别代表：CC 协议[Creative Commons]、（使用是按作者的要求）署名[Attribution]、非商业使用[Non-commercial]、（使用时）要以相同的方式共享[Share-alike]。</p>
+<p>这个设计使用了三种颜色：</p>
+<ol>
+<li>#666666  ：左侧的背景色</li>
+<li>#FFFFFF  ：字体颜色</li>
+<li>#85c155  ：右侧的背景色</li>
+</ol>
+<p>并且使用了扁平风格，而不是拟物化的带各种突起和渐变的风格，原因是这些图标是作为（非官方的）果壳网用户个人选择授权的时候使用的，这样会跟网站比较搭。</p>
+<p>制作的时候，除了最终生成的 PNG 图片，我们也提供了 SVG 图片。为什么选择 SVG 图片呢？</p>
+<p>SVG，Scalable Vector Graphics，是一种矢量图。如果用文本编辑器打开一个 SVG 图片，我们会发现实际上就是 XML 代码。例如，上面那个 CC BY-NC-SA 的代码的开头部分：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-010123.png" alt="CC BY-NC-SA 代码开头" /></p>
+<p>所以说，实际上 SVG 中大部分都是用代码绘制出来的，当然，SVG 还可以使用很多 HTML 代码，例如链接、插入其他图片等等，也可以使用 javascript，例如可以实现点击一个节点后展开等等。</p>
+<p>因为 SVG 缩放后不会变模糊（当然嵌入到里面的其他的像素图片可能会变模糊），所以常常用来制作各种图标，Logo 等等。而且著名的数据可视化 JavaScript 库，<a href="http://d3js.org/">d3js</a> 默认就是使用的 SVG，可以有很多图片互动。</p>
+<h2>这些图标的使用方法</h2>
+<p>如果没有接触过 CC, Copyleft 等协议，请先从官网等处（例如 <a href="http://creativecommons.org/choose/?lang=zh">CC 官网的程序</a> ）选择好合适的协议。然后从我们的 repo 的说明 （在<a href="https://github.com/opentf/GuokrBadge/blob/master/README.md">这里</a> ） 中挑选自己喜欢的样式，然后从说明中复制出相应的链接，然后在自己的作品中使用 ( img src=&#8221;&#8221; ) 即可。或者可以从我们的 repo 中复制出自己需要的图片，然后放在自己的电脑或者服务器上，但是这种方法不能保证我们以后修改之后于我们同步。</p>
+<p>例如，我们需要使用 CC BY-NC-SA 协议，而且喜欢这种胶囊形状的图标，并且我们想使用 SVG 图片，而不是 PNG 图片。那么从我们的 <a href="https://github.com/opentf/GuokrBadge/blob/master/README.md">README.md</a> 中找到这个协议（在目录中找到胶囊 + 果壳色 CC 协议 ~ SVG 版本）：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-013932.png" alt="README CC BY-NC-SA" /></p>
+<p>看到我们给出了两个不同大小的图片的链接，一个 64px, 一个 32px，这个大小指的是图标的高度。实际上这些 SVG 图片缩放不变，所以大小倒是没有那么重要，只是如果你在一些网站写作品，但是这个网站又不支持自定义图片大小，那么就不得不选择合适大小的图片了。</p>
+<p>例如我们想要使用 32px 高度的图片，那么把那个图片链接复制出来：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-014417.png" alt="Copy the right link" /></p>
+<p>然后在需要的地方使用即可。例如在果壳的编辑框中，插入图片是可以使用外链的，把上面复制的图片链接粘贴过来即可：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-014639.png" alt="2014-01-11 01:46:39"/></p>
+<h2>SVG 图标的制作</h2>
+<p>制作 SVG 图片，一个非常好用的开源软件是 <a href="http://inkscape.org">Inkscape</a>。编辑区域的截图：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-011854.png" alt="Inkscape" /></p>
+<p>当然也可以代码编辑：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-011957.png" alt="Inkscape Code" /></p>
+<p>作为图片编辑器的一个基本功能，Inkscape 也可以显示 Grid：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-10-202206.png" alt="Inkscape Grid etc" /></p>
+<p>上图是在制作图片的时候，使用标尺功能。可以像 Adobe 系列的作图软件一样，从标尺往外拖出一些直线，用来校准。</p>
+<p>当然，如果你是一个代码狂人，你也可以使用著名的前端工具 <a href="http://brackets.io/">Brackets</a> 来制作修改 SVG 图片：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-012537.png" alt="Brackets SVG" /></p>
+<p>会有实时预览，还算不错，如果仅仅改几个字，改一点颜色，即便不懂 SVG 也可以很轻松的修改图片。</p>
+<h2>关于果壳网开放小组</h2>
+<p><strike>开房</strike>开放小组是一个以实际行动倡导开放代码、开放知识、开放数据的小组织，目前成员有程序员，物理学生等。点击<a href="http://opentf.github.io/">这里</a>或者下面图片查看我们的网站：</p>
+<p><a href="http://guokrunion.github.io/"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/guokrunion.png" alt="opentf"   /></a></p>
+<p><a href="https://github.com/opentf/GuokrBadge" target="_blank">制作几种授权的图标</a>只是这个小组织的多个 repo 之一。</p>
+<h2>致谢</h2>
+<p>在制作这些图标的时候，我们使用了来自 Wikipedia 的 <a href="http://en.wikipedia.org/wiki/Creative_Commons_license">Creative Commons License 词条</a>下面的那些 SVG 图标，并且使用了 <a href="http://b.adge.me">b.adge.me</a> 的 Badge 模板。在此向这些作品的作者致以谢意。</p>
+<p>同时开放小组的成员提供了很多参考，特别是 <a href="http://www.guokr.com/i/1960596414/" target="_blank">@光之存在者</a> （如他所说，是光之存在者了，终于……）提供的关于 SVG 的建议非常重要。</p>
+<p>所以实际上我以个人的名义来发这篇日志是在不是那么合适，这是小组集体工作的结果，不过是借用关注的人数多这点来推广罢了。</p>
+<h2>授权</h2>
+<p>本文采用</p>
+<p><img src="https://raw.github.com/opentf/GuokrBadge/master/cc/gs/cc_byncsa.flat.guokr.32.png" alt="CC BY-NC-SA" /></p>
+<h2>P.S.</h2>
+<p>在博客添加了 TogetherJS 功能，可以点击文章上面的 Co-Reading 按钮：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-021631.png" alt="2014-01-11 02:16:31"  /></p>
+<p>获取一个链接，把链接通过 IM 工具分享给好友，就可以同时一起边分析边阅读了。当然，我的文章没这种深度，仅仅测试之用。</p>
+<hr />
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6129:1">
+令人惊讶的 <a href="http://zh-classical.wikipedia.org/wiki/%E5%89%B5%E6%84%8F%E5%85%AC%E7%94%A8%E6%8E%88%E6%AC%8A%E6%A2%9D%E6%AC%BE">文言文版</a> 。&#160;<a href="#fnref-6129:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6129:2">
+一个<strike>由果壳网用户</strike>成立的小组织：<a href="http://opentf.github.io/">http://opentf.github.io/</a>&#160;<a href="#fnref-6129:2" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1630" rel="bookmark" title="寒江雪、诀别诗、月光 与 C++、XML、JSON">寒江雪、诀别诗、月光 与 C++、XML、JSON </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1547" rel="bookmark" title="Google+ Vs C++ | 对象的遗产">Google+ Vs C++ | 对象的遗产 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6129/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>iAstro及其他</title>
+		<link>http://multiverse.lamost.org/blog/2358</link>
+		<comments>http://multiverse.lamost.org/blog/2358#comments</comments>
+		<pubDate>Sun, 22 Jan 2012 07:01:06 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[星空下的梦想]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2358</guid>
+		<description><![CDATA[13号回家，基本什么都没做好，现在很焦虑，主要是因为浪费了时间。
+1.
+这些天把<a href="http://iastro.lamost.org" target_blank>iAstro</a>整理好了，现在已经大致成型了。目前为止，<a href="http://iastro.lamost.org" target_blank>iAstro</a>大致分成了问答、笔记、讲义和文件分享四个部分。到2012-01-22中文，截图如下：<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4015" rel="bookmark" title="如何在宇宙中找到我们 | Google Maps API">如何在宇宙中找到我们 | Google Maps API </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2044" rel="bookmark" title="宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？">宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？ </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>13号回家，基本什么都没做好，现在很焦虑，主要是因为浪费了时间。</p>
+<p>1.<br />
+这些天把<a href="http://iastro.lamost.org" target_blank>iAstro</a>整理好了，现在已经大致成型了。目前为止，<a href="http://iastro.lamost.org" target_blank>iAstro</a>大致分成了问答、笔记、讲义和文件分享四个部分。到2012-01-22中文，截图如下：<span id="more-2358"></span><br />
+<div id="attachment_2359" style="width: 560px" class="wp-caption aligncenter"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/01/iAstro-Screenshot.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/01/iAstro-Screenshot-646x1024.jpg" alt="" title="iAstro-Screenshot" width="550" height="871" class="size-large wp-image-2359" /></a><p class="wp-caption-text">iAstro-Screenshot</p></div></p>
+<p>除了几条线条很不满意之外，整体还是说得过去。其他的页面，有些还很粗糙，这些只能以后在修整了。现在的首要任务是充实内容，没有内容，再怎么好的外表都不行。</p>
+<p>在这个过程中，是先在白板上进行版式设计，然后才开始真正的网页设计的。我对这个过程很满意，因为这说明我已经可以完全自由的设计drupal的页面排版了，随心所欲。<br />
+达到这一步经历了一个很漫长的过程，先是从我选定drupal作为一个起点，那是大约一年前了，我搭建了<a href="http://multiverse.lamost.org/web" target=_blank>COSMOS@星辰忆梦</a>（现在因为内容已经基本转移到了<a href="http://iastro.lamost.org" target_blank>iAstro</a>，所以我已经把这个站点down了），折腾了好久，一开始都不明白里面的百分号替换符是什么意思；然后我搭建了<a href="http://iastro.lamost.org/web" target_blank>iAstro v1</a>，其实就是我试试手，作为开发站点用的，这个站点很快也会被我down掉的。最后才真正的开始着手做现在的这个<a href="http://iastro.lamost.org" target_blank>iAstro</a>。<br />
+可以说到现在这一步，完全是一个错误一个错误的慢慢积累起来的。从小学程序就是try-error方法，估计很多人都是这样的吧。</p>
+<p>2.<br />
+学习了python基础，matplotlib和部分numpy，scipy，sympy。其实学完了基础之后，就没有必要从头到尾的去读manual了，以后用到的时候可以查阅。我学$LaTeX$就是这样，不用那种可以点来点去的编辑器，而是所有的命令自己打，手边放一本manual。开始很慢，但是时间长了就会发现这样是很有效的学习方法。<br />
+对于python，只是学了皮毛，自己想写一个quicksort的程序，想了半天没写对，思路全都在C那里了，其实很多东西python实现起来要比C简洁的多，这是后来看到别人写的，才发现的。</p>
+<p>3.<br />
+看了一部电影<a href="http://movie.douban.com/subject/3338851/" target=_blank>Tinker, Tailor, Soldier, Spy</a>，基本没看懂，看了评论才差不多懂了；最近的两集TBBT，感觉没意思了。</p>
+<p>4.<br />
+做了诸多家务。</p>
+<p>5.<br />
+吃了诸多零食，尤其是橘子……</p>
+<p>年后就需要集中精力做正经事情了，完成CPL参数化的计算和interacting DE的计算，然后写总结。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4015" rel="bookmark" title="如何在宇宙中找到我们 | Google Maps API">如何在宇宙中找到我们 | Google Maps API </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2044" rel="bookmark" title="宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？">宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？ </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2358/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>乔布斯辞世 &#124; Steve Jobs (1955-2011)</title>
+		<link>http://multiverse.lamost.org/blog/2268</link>
+		<comments>http://multiverse.lamost.org/blog/2268#comments</comments>
+		<pubDate>Thu, 06 Oct 2011 00:32:25 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[Steve Jobs]]></category>
+		<category><![CDATA[人生]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2268</guid>
+		<description><![CDATA[今天早上得知消息，看到苹果首页的图片换成了Steve Jobs，然后点进去看到了<a href="http://www.apple.com/stevejobs/" title="SteveJobs" target="_blank">不算是讣告的讣告</a>。
+<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2061" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1453" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>今天早上得知消息，看到苹果首页的图片换成了Steve Jobs，然后点进去看到了<a href="http://www.apple.com/stevejobs/" title="SteveJobs" target="_blank">不算是讣告的讣告</a>。<span id="more-2268"></span></p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/10/SteveJobs.jpg" alt="SteveJobs" title="SteveJobs" width="600"/></p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/10/SteveJobs2.jpg" alt="SteveJobs" title="SteveJobs2" width="600" /></p>
+<p>发布会刚刚完，Jobs就辞世了。</p>
+<p>我不是苹果用户，但是也能够感觉到Apple作为一个商业的公司，在非常的大的程度上改变了世界。</p>
+<p>Hubble改变了世界，Perlmutter改变了世界，可是提到这些，你们会不会想到那种著名的漫画，数学家眼中的世界的终结，仅仅是一个证明的错误，而他们也不一定关系这个到底在多大程度上影响了人们的生活。</p>
+<p>Steve Jobs改变世界，是改变了人们的生活。我常常说，苹果是最优秀的抄袭者，因为我们从来都没有意识到它在抄袭。苹果的产品都是只保留有用的，所以那些没用的都去掉，从来不是为了花哨。我猜这可能是跟Jobs的佛教信仰有关。这是Jobs保有了一生的理念。简单，实用。</p>
+<p>Jobs对产品的设计是很挑剔的。他曾经因为Google的app的icon在iphone上面显示有瑕疵而非工作时间联系Google的相关工作人员。Apple的产品，从外观到操作，都是一致的优秀。Mac的触摸板优秀到甚至觉得鼠标在大多数时候都很难用。</p>
+<p>不关心Apple，只是感叹，一个天才，就此辞世了。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2061" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1453" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2268/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>豆瓣阿尔法城地图 &#124; 关于阿花城的一些小事</title>
+		<link>http://multiverse.lamost.org/blog/2061</link>
+		<comments>http://multiverse.lamost.org/blog/2061#comments</comments>
+		<pubDate>Thu, 01 Sep 2011 00:28:39 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[alphatown]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[网络]]></category>
+		<category><![CDATA[豆瓣]]></category>
+		<category><![CDATA[阿花城]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2061</guid>
+		<description><![CDATA[阿花城地图 阿花城的小事 豆瓣阿花城(Alphatown)地图测绘工程完毕。所得地图如下： 测绘完成日期：2011-09-01 阿花城信息： 按动一次方向键或者按动一次移动按钮，行动的距离是1km。（事实上由于存在时空弯曲，这种定义方法不准确。详情阅读下面的注解。） 阿花城南北横跨51km，东西横跨39km。 共有街道n条。最短的街道长1km，最长的街道长4km。 这里有个更加强大的地图： http://www.douban.com/photos/photo/1191699859/ 注解： 在测绘过程中，发现阿花城并不是建筑在平直的欧几里得空间的，而是存在一定的时空弯曲。比如在下图所示位置处： 从拐角向上走到第一个T字路口，物理距离只有2km，但是共形距离却有3km。其他的类似情况很多。 为了方便查找，本地图测绘使用的是共形距离。简单的说，就是按照测绘生成的地图上最小的街区的长度为3km绘制。 关于阿花城的一些小事 1. 发现在某甲坊大道申请小店只需要1颗小豆。不知道为什么会有这样的情况。 证据在此： 2. 在代码里面发现搜索按钮。证据在此： 3. 2011-9-01早上六点半左右，发现阿花城左下角出现一个小人，小人右边有个进度条。每跑一次，这个进度条就会减少大概五分之一（记不清了），还是有三种颜色的进度条，但是大概意思都是一样的。 大概阿花城真的要变成网游了，连真气值都加进来了哇。 可惜没截图啊。 [本post为豆瓣日记存档。]<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="#alphatownmap">阿花城地图</a><br />
+<a href="#trifling">阿花城的小事</a></p>
+<hr />
+<a name=alphatownmap> </a><br />
+豆瓣阿花城(Alphatown)地图测绘工程完毕。所得地图如下：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/alphamap1.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/alphamap1.jpg" width="520" /></a></p>
+<p>测绘完成日期：2011-09-01</p>
+<p>阿花城信息：</p>
+<p>按动一次方向键或者按动一次移动按钮，行动的距离是1km。（事实上由于存在时空弯曲，这种定义方法不准确。详情阅读下面的注解。）<br />
+阿花城南北横跨51km，东西横跨39km。<br />
+共有街道n条。最短的街道长1km，最长的街道长4km。<span id="more-2061"></span></p>
+<p>这里有个更加强大的地图：<br />
+<a href="http://www.douban.com/photos/photo/1191699859/" target="_blank">http://www.douban.com/photos/photo/1191699859/</a></p>
+<p>注解：</p>
+<p>在测绘过程中，发现阿花城并不是建筑在平直的欧几里得空间的，而是存在一定的时空弯曲。比如在下图所示位置处：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/asdfe-255x300.jpg" alt="" title="AlphaTownSub" width="320" class="aligncenter size-medium wp-image-2063" /></p>
+<p>从拐角向上走到第一个T字路口，物理距离只有2km，但是共形距离却有3km。其他的类似情况很多。<br />
+为了方便查找，本地图测绘使用的是共形距离。简单的说，就是按照测绘生成的地图上最小的街区的长度为3km绘制。</p>
+<hr />
+<a name=trifling>  </a><br />
+关于阿花城的一些小事</p>
+<p>1. 发现在某甲坊大道申请小店只需要1颗小豆。不知道为什么会有这样的情况。<br />
+证据在此：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/1.jpg" alt="" title="CheapSite" width="400"  class="aligncenter size-medium wp-image-2073" /></p>
+<p>2. 在代码里面发现搜索按钮。证据在此：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/searchalphatown.jpg" alt="" title="searchalphatown" width="400"  class="aligncenter size-medium wp-image-2074" /></p>
+<p>3. 2011-9-01早上六点半左右，发现阿花城左下角出现一个小人，小人右边有个进度条。每跑一次，这个进度条就会减少大概五分之一（记不清了），还是有三种颜色的进度条，但是大概意思都是一样的。<br />
+大概阿花城真的要变成网游了，连真气值都加进来了哇。<br />
+可惜没截图啊。</p>
+<p>[本post为豆瓣日记存档。]</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2061/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+		<item>
+		<title>宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？</title>
+		<link>http://multiverse.lamost.org/blog/2044</link>
+		<comments>http://multiverse.lamost.org/blog/2044#comments</comments>
+		<pubDate>Fri, 26 Aug 2011 09:44:27 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2044</guid>
+		<description><![CDATA[当然，<strong>严格来说，我们不能够完全确定大爆炸理论的正确性</strong>，即使我们相信广义相对论的正确性，即使我们相信现在的观测数据，依然不能够100%说明大爆炸理论的正确性。
+问题出在什么地方呢？首先要看看<strong>为什么我们选择大爆炸理论</strong>。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2358" rel="bookmark" title="iAstro及其他">iAstro及其他 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>以前很无聊，玩<a href="http://www.zhihu.com/" target="_blank">知乎</a>。后来发现知乎不怎么好玩，所以后来就不玩了。然后今天又登陆的时候，发现关注居然达到了1027！我的神呐。而且就在我在思考为什么会这么多人的时候，还有人不断的关注。看来离开知乎是很明智的选择，否则徒增虚荣心啊。算了，最后我还是找到为什么了。可能是因为我回答的一个问题的关注度比较高。自己读了一下，作为入门级的非物理科普，那时候的回答还可以，如果再稍微把顺利调整一下就更好了。<br />
+<sub><a href="#zhihuinvi">跳过问题看关于知乎邀请码</a></sub></p>
+<hr />
+<p>问题：</p>
+<blockquote><p><sub><a href="http://www.zhihu.com/question/19635043" target="_blank">http://www.zhihu.com/question/19635043</a></sub></p>
+<p><strong>宇宙的起源是怎样的？“大爆炸理论（the big bang theory）”可信吗？</strong></p></blockquote>
+<p>我当时给的答案是：</p>
+<blockquote><p>当然，<strong>严格来说，我们不能够完全确定大爆炸理论的正确性</strong>，即使我们相信广义相对论的正确性，即使我们相信现在的观测数据，依然不能够100%说明大爆炸理论的正确性。</p>
+<p>问题出在什么地方呢？首先要看看<strong>为什么我们选择大爆炸理论</strong>。</p>
+<p>这个要从标准的宇宙学模型说起。现在的绝大多数的观测数据，包括宇宙学红移、宇宙微波背景辐射、超新星等等，说明从大尺度上讲，我们周围的可见物质都在远离我们。而且我们周围各个方向的物质原理我们的速度差不多。也就是说，每个方向都是相同的。</p>
+<p>然后问题来了，这些东西远离我们，说明了什么？那么我们先要思考一个问题：我们作为宇宙的观察者，到底处于一个什么样的地位？客观的讲，没有什么理由说，我们处在宇宙的中心。（当然，也没有理由说明，我们不是处在中心。剩下的就是信仰问题了。不过从我们的全天扫描来看，宇宙中物质大尺度上分布是很均匀的，既然是均匀的，那么我们就觉得，很可能就没有中心了。）如果我们不是处在中心，那么周围各个方向星系远离我们的速度差不多，说明整个宇宙在膨胀。</p>
+<p>现在我们论证了现在的宇宙在膨胀。然后利用各向同性和均匀性假设（称为宇宙学原理），然后我们知道现有的物质的物态方程，可以发现宇宙过去也是在膨胀。那么我们倒退回去，如果宇宙一直在膨胀，那么过去应该是很小的一个宇宙。这就是大爆炸理论大致的逻辑。</p>
+<p>现在我们返回去看看，这个理论到底是不是肯定正确。那就看看到底这个理论还有没有问题我们想不通。问题很多。有些问题，比如视界问题，可以通过一些办法解决，比如引入暴涨阶段。有些问题，比如，宇宙学原理本身就是个假设；我们现在知道的物质并不一定是宇宙中所有的物质；我们用的广义相对论可能有问题，现在都是不确定是否绝对正确的。</p>
+<p>但是，话说回来，<strong>现在没有一个其他的理论像大爆炸理论这样成功。而且，由于现在宇宙学的一些数据的精度很高，而现在理论又跟数据的吻合这么好，所以可信度还是比较高的。</strong></p>
+<p>对于这个理论中的问题，如果想要解决，那大部分人自然还是在大爆炸的框架下面做。当然，也不能排除将来rule out大爆炸的可能。</p>
+<p>事实上，现在的可能正确的理论远远不限于大爆炸理论一个。只不过这个是“信徒”比较多的理论而已。</p>
+<p><strong>宇宙起源问题，我们没有答案。</strong>所以Edward Witten才会提出这样一个问题：<br />
+How can quantum gravity help explain the orgin of the universe?<br />
+<strong>我们的理论还没有能力探求太早的宇宙。</strong></p>
+<p>多早的宇宙算是太早的宇宙？这个我们有个很聪明的办法来提供一个量级。(这个办法其实就是一个简单的量纲分析。)对于时空曲率太大的情况，现在的广义相对论（我们称之为经典广义相对论）是不能触及的。通过分析知道，在早于10^-43s的时候我们的现有理论是无法理解的。这个短短的时间，就<strong>足以把我们关在探索起源的门外。</strong></p>
+<p>然后很多人会有这样的疑问：那么<strong>宇宙之前是什么？</strong><br />
+答案是，不知道。<br />
+首先说明一点，这个问题很大程度上，只是观念上问题。我们从出生就开始感受我们周围这个小小的世界，我们对于这个世界的理解，很大程度上都是对我们可以感受到的事物和现象的总结可扩展。我们习惯了时间缓缓的稳恒的流淌，习惯了这种近似平坦的闵氏时空。所以我们很难去想象弯曲的时空。自然，我们也很难理解没有时间和没有空间的世界。所以我们会去问，大爆炸之前是什么，宇宙之外是什么。<br />
+可是，如果没有了舞台，戏曲就没法表演。同样，<strong>没有了时空，还谈何事件的发生？不能谈事件发生，我们那样的世界跟不存在又有什么区别呢？</strong><br />
+我提到了没有时间和没有空间，但是事实上我们并不确定大爆炸之前就是没有时空的。这只是<strong>一种可能</strong>的情况。因为上面提到了，我们没有合适的理论来描述太早的宇宙。<strong>或许等我们有了相应的理论，就会发现，原来大爆炸之前，还是可以探寻的。</strong><br />
+<strong><br />
+</strong><br />
+<strong>宇宙就是所有么？</strong><br />
+回答是不。<br />
+我们现在讨论的宇宙，一般只是可观测宇宙，在这部分可观测宇宙之外，还有更大的存在，因为跟我们没有因果联系（严格的说，有因果联系的部分要比可观测宇宙要大，但是先不管），所以我们一般都不管那些，但是我们从现有的宇宙的起源的理论，是可以确定其存在的。</p>
+<p>&nbsp;</p></blockquote>
+<hr />
+<a name="zhihuinvi">&nbsp;</a></p>
+<p>另外，发现有3个知乎的邀请码。不知道有没有人需要。需要邮箱地址。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2358" rel="bookmark" title="iAstro及其他">iAstro及其他 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2044/feed</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>GoldenDict</title>
+		<link>http://multiverse.lamost.org/blog/2020</link>
+		<comments>http://multiverse.lamost.org/blog/2020#comments</comments>
+		<pubDate>Sun, 21 Aug 2011 15:49:58 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Dictionary]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[Software]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2020</guid>
+		<description><![CDATA[关于词典软件，每个人有自己的习惯。有人喜欢用金山，可能是因为已经习惯了金山，再者词典较多；有人喜欢灵格斯，那是后来有段时间很火的软件，同样词典很多；然后很多人喜欢有道，确实还不错，支持stardict的词典；当然，stardict也肯定是有不少铁杆用户的；另外的一些，比如牛津词典（软件），webster，还有一些比较特殊的，比如便于联想记忆的visual thesaurus，等等，用户群体估计也不会少吧。 以前一直在linux下面用的sdcv+GoldenDict，windows下面用的有道+babylon（盗版）。 有道还不错，翻译和软件性能都比较顺手，babylon就不怎么好，虽然词典很好很强大，跟stardict有的一拼，但是软件设计有时候是在是受不了，响应太慢了（最新版本）。 所以我就只好在windows下面试试GoldenDict了。 解释一下： sdcv：可以在命令行里面用的stardict，爱不释手啊。cdl中运行的软件都让人爱不释手。比如cmus，命令行里面的音乐播放器，非常非常好用，主要是看着非常简洁，心里舒服。 GoldenDict 之所以选择GoldenDict，可能是因为我习惯了吧。 另外，GoldenDict确实也不错： GoldenDict支持的词典格式非常多，甚至连babylon的都可以。其实只要支持babylon的和stardict的就基本不再需要什么了……离线词典的相关链接在这里：http://goldendict.org/dictionaries.php GoldenDict支持在线词典，在线的wikipedia等。（实际上，babylon词典有一个是英文wikipedia的，装了那个词典，就不需要在线的wikipedia了。） 一般的词典有的功能，比如平面取词，GoldenDict都有。其实一个词典也没必要有太多的功能吧。 下面是截图： 1. 查询界面 界面还算整洁，虽然有些地方不太好，但是整体还不错。最上面有“历史”查询的功能，第二排中的按钮分别是：后退，前进，打印，保存，屏幕取词，发音，放大，缩小，复原，最后的是选择显示那些词典。 2. 特异功能：可以新建标签页 这个有点用处，但是好像不太大，毕竟有查询历史功能。 3. “词典”设置 可以看到，只需将所有的词典放到一个目录下面，软件就可以递归搜索到所有的可以使用的词典并且安装。其他的一些设置，包括语音、构词法规则、维基、网站（在线的词典网站的单词查找）、forvo（在线语音库）、转写（不太清楚干什么用的）。还可以在词典选项卡中调整词典显示顺序等等。 词典可以分组 4. 可以保存当前选项卡中的内容 只能保持成html格式。这已经不错了。 5. 首选项 GoldenDict是多平台的开源的软件，这里有一堆screenshots。下载在这里：GoldenDict. GoldenDict有些很实用的技巧，比如： 1. 如果在其他地方copy了单词，可以直接往GoldenDict界面上随便ctrl+V，不需要ctrl+V到输入框里面去。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1453" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1245" rel="bookmark" title="网络与科研">网络与科研 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1231" rel="bookmark" title="科研人员需要什么样的SNS">科研人员需要什么样的SNS </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>关于词典软件，每个人有自己的习惯。有人喜欢用<a href="http://ciba.hp009.com/" target="_blank">金山</a>，可能是因为已经习惯了金山，再者词典较多；有人喜欢灵格斯，那是后来有段时间很火的软件，同样词典很多；然后很多人喜欢<a href="http://cidian.youdao.com/" target="_blank">有道</a>，确实还不错，支持stardict的词典；当然，stardict也肯定是有不少铁杆用户的；另外的一些，比如牛津词典（软件），webster，还有一些比较特殊的，比如便于联想记忆的visual thesaurus，等等，用户群体估计也不会少吧。<span id="more-2020"></span></p>
+<p>以前一直在linux下面用的<a href="http://sdcv.sourceforge.net/" target="_blank">sdcv</a>+<a href="http://goldendict.org/" target="_blank">GoldenDict</a>，windows下面用的有道+babylon（盗版）。<br />
+有道还不错，翻译和软件性能都比较顺手，babylon就不怎么好，虽然词典很好很强大，跟stardict有的一拼，但是软件设计有时候是在是受不了，响应太慢了（最新版本）。<br />
+所以我就只好在windows下面试试<a href="http://goldendict.org/" target="_blank">GoldenDict</a>了。</p>
+<blockquote><p>解释一下：<br />
+sdcv：可以在命令行里面用的stardict，爱不释手啊。cdl中运行的软件都让人爱不释手。比如cmus，命令行里面的音乐播放器，非常非常好用，主要是看着非常简洁，心里舒服。</p></blockquote>
+<hr />
+<p><strong>GoldenDict</strong></p>
+<p>之所以选择GoldenDict，可能是因为我习惯了吧。</p>
+<p>另外，GoldenDict确实也不错：</p>
+<ul>
+<li>GoldenDict支持的词典格式非常多，甚至连babylon的都可以。其实只要支持babylon的和stardict的就基本不再需要什么了……离线词典的相关链接在这里：<a href="http://goldendict.org/dictionaries.php" target="_blank">http://goldendict.org/dictionaries.php</a></li>
+<li>GoldenDict支持在线词典，在线的wikipedia等。（实际上，babylon词典有一个是英文wikipedia的，装了那个词典，就不需要在线的wikipedia了。）</li>
+<li>一般的词典有的功能，比如平面取词，GoldenDict都有。其实一个词典也没必要有太多的功能吧。</li>
+</ul>
+<p>下面是截图：<br />
+1. 查询界面<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict1.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict1-300x258.jpg" alt="" title="GoldenDict1" width="500" class="aligncenter size-medium wp-image-2026" /></a><br />
+界面还算整洁，虽然有些地方不太好，但是整体还不错。最上面有“历史”查询的功能，第二排中的按钮分别是：后退，前进，打印，保存，屏幕取词，发音，放大，缩小，复原，最后的是选择显示那些词典。</p>
+<p>2. 特异功能：可以新建标签页<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict2.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict2-300x258.jpg" alt="" title="GoldenDict2" width="500" class="aligncenter size-medium wp-image-2025" /></a><br />
+这个有点用处，但是好像不太大，毕竟有查询历史功能。</p>
+<p>3. “词典”设置<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict3.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict3-300x200.jpg" alt="" title="GoldenDict3" width="500" class="aligncenter size-medium wp-image-2024" /></a><br />
+可以看到，只需将所有的词典放到一个目录下面，软件就可以递归搜索到所有的可以使用的词典并且安装。其他的一些设置，包括语音、构词法规则、维基、网站（在线的词典网站的单词查找）、forvo（在线语音库）、转写（不太清楚干什么用的）。还可以在词典选项卡中调整词典显示顺序等等。</p>
+<p>    词典可以分组<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict4.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict4-300x200.jpg" alt="" title="GoldenDict4" width="500" class="aligncenter size-medium wp-image-2023" /></a></p>
+<p>4. 可以保存当前选项卡中的内容<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict5.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict5-300x258.jpg" alt="" title="GoldenDict5" width="500" class="aligncenter size-medium wp-image-2022" /></a><br />
+只能保持成html格式。这已经不错了。</p>
+<p>5. 首选项<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict6.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/GoldenDict6-300x258.jpg" alt="" title="GoldenDict6" width="500" class="aligncenter size-medium wp-image-2021" /></a></p>
+<hr />
+<p>GoldenDict是<strong>多平台</strong>的<strong>开源</strong>的软件，这里有一堆<a href="http://goldendict.org/screenshots.php" target="_blank"><strong>screenshots</strong></a>。<strong>下载</strong>在这里：<a href="http://goldendict.org/download.php" target="_blank">GoldenDict</a>.</p>
+<hr />
+<p> GoldenDict有些很实用的技巧，比如：<br />
+1. 如果在其他地方copy了单词，可以直接往GoldenDict界面上随便ctrl+V，不需要ctrl+V到输入框里面去。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1453" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1245" rel="bookmark" title="网络与科研">网络与科研 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1231" rel="bookmark" title="科研人员需要什么样的SNS">科研人员需要什么样的SNS </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2020/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>寒江雪、诀别诗、月光 与 C++、XML、JSON</title>
+		<link>http://multiverse.lamost.org/blog/1630</link>
+		<comments>http://multiverse.lamost.org/blog/1630#comments</comments>
+		<pubDate>Sat, 23 Jul 2011 07:06:11 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Coding]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[歌曲]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1630</guid>
+		<description><![CDATA[今天介绍三首歌：寒江雪、诀别诗和月光。同时介绍三种语言，一种是真正的程序语言，另外两种是标记语言。 注意，文中仅仅是示意，很多地方的使用是不严格的。 下面介绍寒江雪。对应的语言是C++。 #include #include using namespace std; class 歌曲： { public: string 歌曲名; string 演唱; string 作词; string 作曲; string 简评; string MV; string Audio; string 歌词; }; int main() { 歌曲 寒江雪： 寒江雪.歌曲名=&#8221;寒江雪&#8221;; 寒江雪.演唱=&#8221;郑源+储兰兰&#8221;; 寒江雪.作词=&#8221;郑源&#8221;； 寒江雪.作曲=&#8221;郑源”； 寒江雪.简评=&#8221; 歌词写得不错。类京剧部分很带劲。实际上类京剧部分是直接取自储兰兰的另一首歌：江雪。...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2061" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1547" rel="bookmark" title="Google+ Vs C++ | 对象的遗产">Google+ Vs C++ | 对象的遗产 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>今天介绍三首歌：寒江雪、诀别诗和月光。同时介绍三种语言，一种是真正的程序语言，另外两种是标记语言。<br />
+注意，文中仅仅是示意，很多地方的使用是不严格的。</p>
+<hr />
+<p>下面介绍寒江雪。对应的语言是C++。<span id="more-1630"></span></p>
+<p>#include <iostream><br />
+#include <string></p>
+<p>using namespace std;</p>
+<p>class 歌曲：<br />
+{<br />
+public:<br />
+string 歌曲名;<br />
+string 演唱;<br />
+string 作词;<br />
+string 作曲;<br />
+string 简评;<br />
+string MV;<br />
+string Audio;<br />
+string 歌词;<br />
+};</p>
+<p>int main()<br />
+{<br />
+歌曲 寒江雪：</p>
+<p>寒江雪.歌曲名=&#8221;寒江雪&#8221;;<br />
+寒江雪.演唱=&#8221;郑源+储兰兰&#8221;;<br />
+寒江雪.作词=&#8221;郑源&#8221;；<br />
+寒江雪.作曲=&#8221;郑源”；</p>
+<p>寒江雪.简评=&#8221;<br />
+歌词写得不错。类京剧部分很带劲。实际上类京剧部分是直接取自储兰兰的另一首歌：<a href="http://www.google.cn/music/album?id=B1584a74a6e77223b" target="_blank">江雪</a>。<br />
+&#8220;;</p>
+<p>寒江雪.MV=&#8221;<a title="寒江雪|在本博客阅读者请用左键打开。其他请依自己习惯。" type="application/x-shockwave-flash" class="lbpModal" href="http://www.yinyuetai.com/video/player/137766/v_0.swf">寒江雪</a>&#8220;;</p>
+<p>寒江雪.Audio=&#8221;<a title="http://www.google.cn/music/album?id=B842c5cbde6819412" href="http://www.google.cn/music/album?id=B842c5cbde6819412" target="_blank">http://www.google.cn/music/album?id=B842c5cbde6819412</a>&#8220;;</p>
+<p>寒江雪.歌词=&#8221;</p>
+<blockquote><p>歌手： 储兰兰 郑源<br />
+专辑： 单曲 &#8211; 寒江雪<br />
+公司： 孔雀唱片<br />
+女: 寒江雪 可怜白屋佳人春华换银蝶<br />
+这一切 是因为你的离别</p>
+<p>男: 寒江雪 映出孤独的离别<br />
+这一夜 寒风冷落无明月<br />
+谁来解 此时心中的情结<br />
+我孤寂 谁来填我心空缺<br />
+心碎着你给的风雪<br />
+思念着不分昼夜<br />
+等待着重逢的季节<br />
+寒江雪终映明月<br />
+女: 闻风雪 柴门之外可有我归来的人<br />
+这一夜 谁在等谁的出现<br />
+寒江雪 可怜白屋佳人春华换银蝶<br />
+这一切 是因为你的离别</p>
+<p>男: 寒江雪 映出孤独的离别<br />
+这一夜 寒风冷落无明月<br />
+谁来解 此时心中的情结<br />
+我孤寂 谁来填我心空缺<br />
+心碎着你给的风雪<br />
+思念着不分昼夜<br />
+等待着重逢的季节<br />
+寒江雪终映明月<br />
+女: 闻风雪 柴门之外可有我归来的人<br />
+这一夜 谁在等谁的出现<br />
+寒江雪 可怜白屋佳人春华换银蝶<br />
+这一切 是因为你的离别<br />
+合 : 闻风雪 柴门之外可有我归来的人<br />
+这一夜 谁在等谁的出现<br />
+寒江雪 可怜白屋佳人春华换银蝶<br />
+这一切 是因为你的离别<br />
+这一切 是因为你的离别<br />
+这一切 是因为你的离别</p></blockquote>
+<p>&#8220;;</p>
+<p>cout &lt;&lt; 寒江雪.歌曲名 &lt;&lt; endl;<br />
+cout &lt;&lt; 寒江雪.演唱 &lt;&lt; endl;<br />
+cout &lt;&lt; 寒江雪.作词 &lt;&lt; endl;<br />
+cout &lt;&lt; 寒江雪.作曲 &lt;&lt; endl;<br />
+cout &lt;&lt; 寒江雪.简评 &lt;&lt; endl;<br />
+cout &lt;&lt; 寒江雪.MV &lt;&lt; endl;<br />
+cout &lt;&lt; 寒江雪.Audio &lt;&lt; endl;<br />
+cout &lt;&lt; 寒江雪.歌词 &lt;&lt; endl;</p>
+<p>return 0;<br />
+}</p>
+<hr width="70%" />
+<p>然后介绍第二首：月光。对应的是XML。我在slash和angular bracket之间使用了空格，是为了避免被浏览器执行。我试过code，但是code的css写的太难看了，所以先这样加空格吧。XML是一种标记语言。更多的教程请看：<a title="ＸＭＬ" href="http://www.w3schools.com/xml/default.asp" target="_blank">http://www.w3schools.com/xml/default.asp</a></p>
+<p>诀别诗&lt; /歌曲名&gt;<br />
+胡彦斌&lt; /演唱&gt;<br />
+&lt; MV &gt; <a class="lbpModal" href="http://www.yinyuetai.com/video/player/1999/v_0.swf">诀别诗 </a>(这个MV很傻) &lt; /MV&gt;<br />
+< 试听 ><embed src="http://www.xiami.com/widget/0_2118493/singlePlayer.swf" type="application/x-shockwave-flash" width="257" height="33" wmode="transparent"/> &lt; /试听&gt;<br />
+<a title="诀别诗" href="http://g.top100.cn/16667639/html/download.html?id=Sdc8961c676b6b8cd" target="_blank">诀别诗(谷歌音乐)</a>&lt; /正版下载&gt;</p>
+<blockquote><p>歌手： 胡彦斌<br />
+专辑： 男人歌<br />
+公司： 百代唱片（EMI MUSIC）<br />
+出鞘剑 杀气荡<br />
+风起无月的战场<br />
+千军万马 独身闯<br />
+一身是胆好儿郎</p>
+<p>儿女情 前世帐<br />
+你的笑 活着怎么忘<br />
+美人泪 断人肠<br />
+这能取人性命是胭脂烫</p>
+<p>绝别诗 两三行<br />
+写在三月春雨的路上<br />
+若还能打着伞走在你的身旁</p>
+<p>绝别诗 两三行<br />
+谁来为我黄泉路上唱<br />
+若我能死在你身旁<br />
+也不枉来人世走这趟</p>
+<p>出鞘剑 杀气荡<br />
+风起无月的战场<br />
+千军万马 独身闯<br />
+一身是胆好儿郎</p>
+<p>儿女情 前世帐<br />
+你的笑 活着怎么忘<br />
+美人泪 断人肠<br />
+这能取人性命是胭脂烫</p>
+<p>绝别诗 两三行<br />
+写在三月春雨的路上<br />
+若还能打着伞走在你的身旁</p>
+<p>绝别诗 两三行<br />
+谁来为我黄泉路上唱<br />
+若我能死在你身旁<br />
+也不枉来人世走这趟</p>
+<p>绝别诗 两三行<br />
+写在三月春雨的路上<br />
+若还能打着伞走在你的身旁</p>
+<p>绝别诗 两三行<br />
+谁来为我黄泉路上唱<br />
+若我能死在你身旁<br />
+也不枉来人世走这趟</p></blockquote>
+<p>&lt; /歌词&gt;<br />
+&lt; /歌曲&gt;</p>
+<hr width="70%" />
+<p>最后一首是月光。对应的是JSON（Javascript Object Notation）。严格的说这不是一种完整的标记语言，只是Javascript的一部分。看我写的也不像是一种完整的语言吧。更多介绍请看：<a href="http://www.json.org/" target="_blank">http://www.json.org/</a></p>
+<p>{<br />
+&#8220;歌曲名&#8221;: &#8220;月光&#8221;,<br />
+&#8220;演唱&#8221;: &#8220;胡彦斌&#8221;,<br />
+&#8220;MV&#8221;: <a class="lbpModal" href="http://www.yinyuetai.com/video/player/73936/v_0.swf">月光 </a><br />
+&#8220;歌词&#8221;:<br />
+[<br />
+{<br />
+&#8220;COMPANY&#8221;: &#8220;EMI MUSIC&#8221;,<br />
+},<br />
+{<br />
+&#8220;CONTENT&#8221;: &#8221;</p>
+<blockquote><p>月光色 女子香 泪断剑 情多长<br />
+有多痛 无字想 忘了你<br />
+孤单魂 随风荡 谁去想 痴情郎<br />
+这红尘的战场 千军万马 有谁能称王<br />
+过情关 谁敢闯 望明月 心悲凉<br />
+千古恨 轮回尝 眼一闭 谁最狂<br />
+这世道的无常<br />
+注定敢爱的人一生伤<br />
+月光色 女子香 泪断剑 情多长<br />
+有多痛 无字想 忘了你<br />
+孤单魂 随风荡 谁去想 痴情郎<br />
+这红尘的战场 千军万马 有谁能称王<br />
+过情关 谁敢闯 望明月 心悲凉<br />
+千古恨 轮回尝 眼一闭 谁最狂<br />
+过情关 谁敢闯 望明月 心悲凉<br />
+千古恨 轮回尝 眼一闭 谁最狂<br />
+这世道的无常<br />
+注定敢爱的人一生伤</p></blockquote>
+<p>&#8221;<br />
+}<br />
+]<br />
+}</p>
+<hr />
+<p>P.S.<br />
+我自己不懂C++，稍微知道些XML，不懂Javascript。我就是无聊写着玩玩。</string></iostream></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2061" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1547" rel="bookmark" title="Google+ Vs C++ | 对象的遗产">Google+ Vs C++ | 对象的遗产 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/1630/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>云输入法</title>
+		<link>http://multiverse.lamost.org/blog/1625</link>
+		<comments>http://multiverse.lamost.org/blog/1625#comments</comments>
+		<pubDate>Tue, 19 Jul 2011 21:13:58 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[WP插件]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1625</guid>
+		<description><![CDATA[搜狗云输入刚刚出来的时候，我用过一段时间，但是用起来非常头疼，别的都好，就是响应非常慢。 今天测试了QQ云输入和搜狗云输入，发现虽然QQ的准确率和纠错能力（主要是纠错能力）要差得多，可是响应速度确实极其快，使用的时候跟本地的输入法基本没什么区别。但是这么久了，搜狗还是一如既往的慢。 在这种情况下，即使搜狗词库做的再好，也定然不能用搜狗了。 我为什么要折腾云输入呢？这个要从很久之前的ubuntu讲起。那时候还没有ibus，各种中文输入跟搜狗的差距极大，打起字来错字连篇，而且速度也极慢。所以我就去折腾搜狗云输入，我把文字先输入到chrome的一个本地数据库的页面中，然后从中copy出来。 那时候虽然搜狗很慢，但是依然比本地输入法快。所以我就一直用搜狗。后来ibus之后，本地输入就有了很大改进，所以就开始用ibus。 今天测试了QQ云输入之后，果断决定要开始用QQ云输入。虽然准确率和纠错能力差些，但是要比ibus好的多。 为了我将来写中文文章，就直接把QQ云输入弄到wordpress来了（插件）。其实我也把搜狗弄过来了，但是因为没什么用处，所以只是用了ctrl+Y这个快捷键才能调出来。 欢迎测试。 此文使用QQ云输入写成，QQ的纠错能力实在太差劲，可能是用搜狗和google习惯了，常常打错拼音，搜狗基本都能纠正过来，可是QQ就不行了啊。 另外，今天偶然间启动了一次IE，发现我的blog在IE里面显示的真丑，那么干净的页面居然显示成那个样子，特别是本来很好的header啊，全乱了。 好吧，看来以后有时间了需要重新写一下页面的代码了。颜色也应该调整一下，IE里面都看不见了。 附录：IMPORTANT： 我错了！！ 原来是网络的原因。我换了网络之后，搜狗的速度仅仅稍稍比QQ慢一点，慢一丁点！！冤枉搜狗了啊。 所以过段时间把搜狗的图标也弄上来吧。只不过可能我一般用不着，因为在办公室的网络用，太慢了。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1429" rel="bookmark" title="Google +1">Google +1 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1285" rel="bookmark" title="写html很累">写html很累 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/889" rel="bookmark" title="换身皮">换身皮 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>搜狗云输入刚刚出来的时候，我用过一段时间，但是用起来非常头疼，别的都好，就是响应非常慢。<br />
+今天测试了QQ云输入和搜狗云输入，发现虽然QQ的准确率和纠错能力（主要是纠错能力）要差得多，可是响应速度确实极其快，使用的时候跟本地的输入法基本没什么区别。但是这么久了，<del datetime="2011-07-19T21:19:13+00:00">搜狗还是一如既往的慢。</del><span id="more-1625"></span><br />
+在这种情况下，即使搜狗词库做的再好，也定然不能用搜狗了。</p>
+<p>我为什么要折腾云输入呢？这个要从很久之前的ubuntu讲起。那时候还没有ibus，各种中文输入跟搜狗的差距极大，打起字来错字连篇，而且速度也极慢。所以我就去折腾搜狗云输入，我把文字先输入到chrome的一个本地数据库的页面中，然后从中copy出来。<br />
+那时候虽然搜狗很慢，但是依然比本地输入法快。所以我就一直用搜狗。后来ibus之后，本地输入就有了很大改进，所以就开始用ibus。</p>
+<p>今天测试了QQ云输入之后，果断决定要开始用QQ云输入。虽然准确率和纠错能力差些，但是要比ibus好的多。</p>
+<p><del datetime="2012-04-05T18:43:41+00:00">为了我将来写中文文章，就直接把QQ云输入弄到wordpress来了（插件）。其实我也把搜狗弄过来了，但是因为没什么用处，所以只是用了ctrl+Y这个快捷键才能调出来。</p>
+<p>欢迎测试。</del></p>
+<hr />
+<p>此文使用QQ云输入写成，QQ的纠错能力实在太差劲，可能是用搜狗和google习惯了，常常打错拼音，搜狗基本都能纠正过来，可是QQ就不行了啊。</p>
+<p>另外，今天偶然间启动了一次IE，发现我的blog在IE里面显示的真丑，那么干净的页面居然显示成那个样子，特别是本来很好的header啊，全乱了。<br />
+好吧，看来以后有时间了需要重新写一下页面的代码了。颜色也应该调整一下，IE里面都看不见了。</p>
+<p>附录：IMPORTANT：<br />
+我错了！！<br />
+原来是网络的原因。我换了网络之后，搜狗的速度仅仅稍稍比QQ慢一点，慢一丁点！！冤枉搜狗了啊。<br />
+所以过段时间把搜狗的图标也弄上来吧。只不过可能我一般用不着，因为在办公室的网络用，太慢了。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1429" rel="bookmark" title="Google +1">Google +1 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1285" rel="bookmark" title="写html很累">写html很累 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/889" rel="bookmark" title="换身皮">换身皮 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/1625/feed</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+		</item>
+		<item>
+		<title>一周总结[2011-07-18][非物理部分]</title>
+		<link>http://multiverse.lamost.org/blog/1600</link>
+		<comments>http://multiverse.lamost.org/blog/1600#comments</comments>
+		<pubDate>Sun, 17 Jul 2011 18:43:49 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[星空下的梦想]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[WP插件]]></category>
+		<category><![CDATA[心事]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1600</guid>
+		<description><![CDATA[网络： 为组里更新了网站。稍微动了下旧版，发现很多table，所以我就打算重写。 当然不能从头开始，就随便找了一个框架进行改动。 第一步先砍掉不必要的东西，剩下支架，这时候原作者的东西基本没有了。 第二部，根据现有框架从新设计网站的版面。由于最近比较流行单页面的网站，所以我就打算写一个单页面的。 然后就开始添加代码，这时候其实还是要把一些原来的代码砍掉。然后为了实现各种功能找想要的js框架等等。这次用到了很多，shadowbox，promote等等等等。 最后就细节更改。前面都完成了。 现在我本人还有很多不满意的地方。比如太空旷，比如内容太靠边，比如配色不好。接下来我把网站暂时挂在一个地方，接下来想想改怎么让页面充实一下，但是同时不要显得太满。 测试地址：http://multiverse.lamost.org/testbed/gcgroup/ 有三个版本，一个是原来的，另一个是快写完了才发现原来只能在chrome下工作所以也没有再继续，是个半成品，还有一个是针对ie设计的。 由于这周比较忙，所以没有怎么上网，对于新鲜的事情不是很清楚，也没有遇到很好的网站。 升级了stickynote，当然只是完完全全的copy了原作者的：https://chrome.google.com/webstore/detail/mmfklpmdfldnnjbkdmamhokiphfkfieg。只不过添加了公式笔记的功能。可以使用LaTeX的语法，公式环境跟其一样。 生活： 前些天在荷兰的一个师兄打电话过来。跟他聊了几句，但是聊不下去。我感觉跟基本没见过的陌生人聊天很痛苦，所以我就把电话传递给别人了。 这几天熬夜，一共没睡几个小时。感觉要死的样子。于是就不停地喝咖啡。 由于基本没睡觉，所以洗澡也是很马虎的冲一下。我现在都感觉到身上有味道了。 胡子挺长了。懒得动。 2011-07-19早 续 将顶部bar改为深色，并将校徽改为红色版本（符合形象识别要求） 将shadowbox去掉，换成fancybox 去掉slidedeck 将不同浏览器之间不兼容的元素去掉，现在两个办法都可以在FF，IE，Chrome下使用 重新设计了版面宽度，主要是div宽度和页面的margin 字体稍微变大 更改部分字体颜色 修正文字错误 修正地图显示 欢迎挑错： 无iframe版本：http://multiverse.lamost.org/testbed/gcgroup/V1/ iframe版本：http://multiverse.lamost.org/testbed/gcgroup/V2/ 对本博客进行如下更改： 调整qq云输入法标志的位置。通过寻找add_action并且comment form之类的字样，找出对于的css class(在css文件的结尾可以找到)。然后添加margin属性，调整到post comment右侧。 然后去掉了在comment form下面的两个图标前面的字，下面的代码中del的部分就是该删掉的部分： add_action('in_admin_header', 'qq_yun_ime');...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2358" rel="bookmark" title="iAstro及其他">iAstro及其他 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1429" rel="bookmark" title="Google +1">Google +1 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<ul>网络：</p>
+<li>为组里更新了网站。稍微动了下旧版，发现很多table，所以我就打算重写。<br />
+当然不能从头开始，就随便找了一个框架进行改动。<br />
+第一步先砍掉不必要的东西，剩下支架，这时候原作者的东西基本没有了。<br />
+第二部，根据现有框架从新设计网站的版面。由于最近比较流行单页面的网站，所以我就打算写一个单页面的。<span id="more-1600"></span><br />
+然后就开始添加代码，这时候其实还是要把一些原来的代码砍掉。然后为了实现各种功能找想要的js框架等等。这次用到了很多，shadowbox，promote等等等等。<br />
+最后就细节更改。前面都完成了。<br />
+现在我本人还有很多不满意的地方。比如太空旷，比如内容太靠边，比如配色不好。接下来我把网站暂时挂在一个地方，接下来想想改怎么让页面充实一下，但是同时不要显得太满。<br />
+测试地址：<a href="http://multiverse.lamost.org/testbed/gcgroup/" title="http://multiverse.lamost.org/testbed/gcgroup/" target="_blank">http://multiverse.lamost.org/testbed/gcgroup/</a><br />
+有三个版本，一个是原来的，另一个是快写完了才发现原来只能在chrome下工作所以也没有再继续，是个半成品，还有一个是针对ie设计的。</li>
+<li>由于这周比较忙，所以没有怎么上网，对于新鲜的事情不是很清楚，也没有遇到很好的网站。</li>
+<li>升级了stickynote，当然只是完完全全的copy了原作者的：<a href="https://chrome.google.com/webstore/detail/mmfklpmdfldnnjbkdmamhokiphfkfieg">https://chrome.google.com/webstore/detail/mmfklpmdfldnnjbkdmamhokiphfkfieg</a>。只不过添加了公式笔记的功能。可以使用LaTeX的语法，公式环境跟其一样。</li>
+</ul>
+<ul>生活：</p>
+<li>前些天在荷兰的一个师兄打电话过来。跟他聊了几句，但是聊不下去。我感觉跟基本没见过的陌生人聊天很痛苦，所以我就把电话传递给别人了。</li>
+<li>这几天熬夜，一共没睡几个小时。感觉要死的样子。于是就不停地喝咖啡。</li>
+<li>由于基本没睡觉，所以洗澡也是很马虎的冲一下。我现在都感觉到身上有味道了。</li>
+<li>胡子挺长了。懒得动。</li>
+</ul>
+<p>2011-07-19早   续</p>
+<p>将顶部bar改为深色，并将校徽改为红色版本（符合形象识别要求）<br />
+将shadowbox去掉，换成fancybox<br />
+去掉slidedeck<br />
+将不同浏览器之间不兼容的元素去掉，现在两个办法都可以在FF，IE，Chrome下使用<br />
+重新设计了版面宽度，主要是div宽度和页面的margin<br />
+字体稍微变大<br />
+更改部分字体颜色<br />
+修正文字错误<br />
+修正地图显示</p>
+<p>欢迎挑错：<br />
+无iframe版本：http://multiverse.lamost.org/testbed/gcgroup/V1/<a href="http://multiverse.lamost.org/testbed/gcgroup/V1/"></a><br />
+iframe版本：<a href="http://multiverse.lamost.org/testbed/gcgroup/V2/">http://multiverse.lamost.org/testbed/gcgroup/V2/</a></p>
+<p>
+对本博客进行如下更改：</p>
+<p>调整qq云输入法标志的位置。通过寻找add_action并且comment form之类的字样，找出对于的css class(在css文件的结尾可以找到)。然后添加margin属性，调整到post comment右侧。<br />
+然后去掉了在comment form下面的两个图标前面的字，下面的代码中del的部分就是该删掉的部分：</p>
+<blockquote><p><code>add_action('in_admin_header', 'qq_yun_ime');<br />
+function qq_yun_ime () {<br />
+	if(is_admin()) {<br />
+		echo ime_core();<br />
+	} else {<br />
+		$char = get_option('qq_yun_ime_char');<br />
+		if($char == 's') {<br />
+			$tips = '<del datetime="2011-07-19T18:55:58+00:00">云输入法</del>';<br />
+		} elseif($char == 't') {<br />
+			$tips = '<del datetime="2011-07-19T18:55:58+00:00">云输入法</del>';<br />
+		}<br />
+		$output = '
+<div id="qq_yun_ime">'.$tips;<br />
+		$output .= ime_core('py', $char);<br />
+		$output .= ime_core('wb', $char);<br />
+		$output .= '
+<div style="clear:both;"></div>
+</div>
+<p>';<br />
+		echo $output;<br />
+	}<br />
+}</code></p></blockquote>
+<p>调整social login div的位置。将wp-connect改为手动放置，注释掉social connect中(social-connect/ui.php中)add_action并且有comment form字样的代码。然后将两个connect的php代码放到想要的地方，并用div包括，然后调整div位置。为了更清晰，添加了一条hr，并且将这些connect设置成opacity 0.5，因为太刺眼了。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2358" rel="bookmark" title="iAstro及其他">iAstro及其他 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1429" rel="bookmark" title="Google +1">Google +1 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/1600/feed</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>豆瓣开始使用Mathjax</title>
+		<link>http://multiverse.lamost.org/blog/1582</link>
+		<comments>http://multiverse.lamost.org/blog/1582#comments</comments>
+		<pubDate>Mon, 11 Jul 2011 11:55:50 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[TeX]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1582</guid>
+		<description><![CDATA[在我离开豆瓣之前，曾经多次写建议到豆瓣的邮箱说可以添加\(\TeX\)支持，然后举了各种例子说mathjax的好处，并且建议豆瓣可以让比较专业的小组，比如物理组数学组申请TeX支持。但是从来没有得到回复。 今天刚刚发现，原来豆瓣在豆瓣读书笔记添加了mathjax. 以前曾经通知作者说，Mathjax有个小问题，作者说在下一个版本中会修复。现在希望下一个版本快点到来，已解决我自己笔记网站的问题。 顺便，豆瓣物理组置顶帖里面蹩脚的插件真是……太蹩脚了……居然还有一堆人在吵吵吵……<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1429" rel="bookmark" title="Google +1">Google +1 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>在我离开豆瓣之前，曾经多次写建议到豆瓣的邮箱说可以添加\(\TeX\)支持，然后举了各种例子说mathjax的好处，并且建议豆瓣可以让比较专业的小组，比如物理组数学组申请TeX支持。但是从来没有得到回复。</p>
+<p>今天刚刚发现，原来豆瓣在豆瓣读书笔记添加了mathjax.<span id="more-1582"></span></p>
+<p>以前曾经通知作者说，Mathjax有个小问题，作者说在下一个版本中会修复。现在希望下一个版本快点到来，已解决我自己笔记网站的问题。</p>
+<p>顺便，豆瓣物理组置顶帖里面蹩脚的插件真是……太蹩脚了……居然还有一堆人在吵吵吵……</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1429" rel="bookmark" title="Google +1">Google +1 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/1582/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+	</channel>
+</rss>

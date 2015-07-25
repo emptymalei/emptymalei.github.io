@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; 天尽头的纸条</title>
+	<atom:link href="http://multiverse.lamost.org/blog/category/message-from-the-end-of-the-universe/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>一张图理清热力学势之间的关系</title>
+		<link>http://multiverse.lamost.org/blog/6266</link>
+		<comments>http://multiverse.lamost.org/blog/6266#comments</comments>
+		<pubDate>Sat, 22 Feb 2014 06:16:55 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6266</guid>
+		<description><![CDATA[今天办公室有个人跟我说她总是记不住 thermodynamic potential 之间的关系。于是我就给她讲了 Legendre transformation. 我想了想，热力学势（特性函数）可以总结成下面的一张图。 这篇文章就是简要的解释一下这张图。这篇文章只是给热力学的初学者看的，如果你已经学过理论力学或者统计物理的，我就是在浪费你的时间了。 本科学习的热力学主要的内容无非就是包括下面几部分（A Modern Course in Statistical Physics by L. E. Reichl）： Thermodynamic variables; extensive, intensive, neither; Equations of state; Four fundamental laws of thermodynamics; Thermodynamics potentials Phase transitions Response Stability 整个的思路跟 mechanics 类似。先搞清楚如何描述一个体系，包括状态和&#8221;kinematics&#8221;，这里...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>今天办公室有个人跟我说她总是记不住 thermodynamic potential 之间的关系。于是我就给她讲了 Legendre transformation. 我想了想，热力学势（特性函数）可以总结成下面的一张图。</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/thermodynamicPotentials1.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/thermodynamicPotentials1.png" alt="Thermodynamic Potentials" /></a></p>
+<p>这篇文章就是简要的解释一下这张图。这篇文章只是给热力学的初学者看的，如果你已经学过理论力学或者统计物理的，我就是在浪费你的时间了。<br />
+<span id="more-6266"></span><br />
+本科学习的热力学主要的内容无非就是包括下面几部分（<em>A Modern Course in Statistical Physics</em> by L. E. Reichl）：</p>
+<ol>
+<li>Thermodynamic variables; extensive, intensive, neither;</li>
+<li>Equations of state;</li>
+<li>Four fundamental laws of thermodynamics;</li>
+<li>Thermodynamics potentials</li>
+<li>Phase transitions</li>
+<li>Response</li>
+<li>Stability</li>
+</ol>
+<p>整个的思路跟 mechanics 类似。先搞清楚如何描述一个体系，包括状态和&#8221;kinematics&#8221;，这里 &#8220;kinematics&#8221;包括状态方程和特性函数。其次，提出“第一性原理”：四条热力学定律。然后研究“动力学”：相变、响应和稳定性。</p>
+<p>如果学的时候用的是汪志诚老先生的的书，在热力学势的地方会有些困惑。汪志诚老先生的书读起来很顺，但是由于很薄，很多东西没详细展开，热力学势就是其中一点。热力学势的关键除了搞清楚每个势的意义，另外就是要搞清楚哪些是变量。而确定哪些是变量的就是 Legendre transformation. 所以，要搞清楚这些势，可以从 Legendre transformation 下手。</p>
+<h2>Legendre Transformation</h2>
+<p>Legendre transformation 的基本定义在《经典力学的数学方法》中有，我写过一篇<a href="http://book.douban.com/people/emptymalei/annotation/1728598/" target="_blank">简单的笔记</a>，当时总结的不是很清楚，而且如果仅仅是为了比较<strong>肤浅</strong>的理清楚热力学势的关系，不太需要很严格的定义。所以我重新功利的说一下。</p>
+<p>如果我们有一个函数 $U(T)$，其中 $T$ 是自变量，而我们想要得到另一个函数 $H(S)$，自变量变成了 $S$，那么在热力学势的范围内，我们只需要做这样的变换：</p>
+<p>$$H(S) = U -TS$$</p>
+<p>当然，这个变换跟书里面的 Legendre transformation 差一个符号，这个并不重要，定义成差一个负号，更加符合物理的理解，因为这些都对应的能量，增加一个量看能量的变化，如果加了负号，增量正好相反，反而不便。</p>
+<p>这样我们说 $U(T)$ 和 $H(T)$ 对偶。（在 mechanics 里面，Lagrangian 和 Hamiltonian 也是对偶，理论力学里面最最重要的一个关系之一。）</p>
+<h2>Coupling</h2>
+<p>图片里面提到了三种不同的 coupling：</p>
+<ol>
+<li>Thermal Coupling: $-TS$</li>
+<li>Mechanical Coupling: $-YX$</li>
+<li>Chemical Coupling: $-\sum_\mu_i N_i$</li>
+</ol>
+<p>其中 $Y$ 是广义力（例如压强 $p$ ），$X$ 是广义位移（例如体积 $V$ ）<sup id="fnref-6266-1"><a href="#fn-6266-1" rel="footnote">1</a></sup>。这个也不需要很多解释吧，深刻的解释我也没用，总之，顾名思义。</p>
+<h2>图片的诠释</h2>
+<p>现在可以开始解释图片的意思了。首先解释各个符号的意思：</p>
+<ol>
+<li>$U$, $H$, $A$, $G$, $\Omega$ 分别是：内能，焓，Helmholtz 自由能，Gibbs 自由能，巨热力学势。</li>
+<li>{$S$, $T$}， {$X$, $Y$}， {$&#123;N_i&#125;,&#123;\mu_i&#125;$} 分别是：{熵，温度}，{广义位移，广义力}， {粒子数，化学势}。</li>
+<li>三种 coupling 上面已经解释了。</li>
+</ol>
+<p>整个图片是从中间的 $U(S,X,&#123;N_i&#125;)$ 开始的，这是内能，内能是熵S、广义位移 X （以及粒子分布 {N_i} ）的函数。。</p>
+<ol>
+<li>如果我们给内能 $U(S, X, &#123;N_i&#125;)$ 加上一个 mechanical coupling $-XY$，那么就得到了焓。从前面的 Legendre transformation 看到，这时候焓 $H$ 变成了 $S, X, &#123;N_i&#125;$ 的函数。所以在气体的理论中，$H$ 是 $S, p$ 的函数，所以等压热容自然是 $C_p = \left( \partial_T H\right)_p$. </li>
+<li>如果我们给内能和焓加上 thermal coupling $-ST$，那么我们就得到了两种自由能，分别是 Helmholtz 自由能和 Gibbs 自由能。同第一条里的道理，可以通过 Legendre transformation 自行分析两个是什么的函数。</li>
+<li>如果我们给 Helmholtz 自由能加上一个 chemical coupling $-\sum_i \mu_i N_i$，那么我们得到了巨热力学势 $\Omega(T,X,&#123;\mu_i&#125;)$。</li>
+</ol>
+<p>至于物理意义，从图上也很明确。例如焓 H 是内能去掉 mechanical coupling，也就是说，焓在不考虑机械功的时候好用，例如焓在考虑其他体积不变的时候好用，因为这时候吸热就是焓。其他的也是同样的方式理解。这样我们<strong>仅仅通过内能 $U(S, X, &#123;N_i&#125;)$ 和 Legendre transformation 就可以获得其他的热力学势</strong>。</p>
+<h3>Maxwell 关系</h3>
+<p>内能 $U(S,X,N)$ 出发，根据不同的 coupling，我们可以导出不同的热力学势是什么的函数（也可以通过 Legendre transformation，这里简单起见只利用图片来做）。例如，H 是什么的函数？$U(S,X,N)$ 我们去掉了 mechanical coupling -YX 那么 得到的 H 就是 $H(S,Y,N)$，因为勒让德变换 $H = U &#8211; YX$ ，原来是变量 X 的函数，要变成 Y  的函数。</p>
+<p>我们知道了这些函数的自变量是什么，下一步就可以写出所有的热力学势的微分式。只举一个例子：</p>
+<p>$$\mathrm d U(S, X) = T\mathrm d S + Y \mathrm d X $$</p>
+<p>然后，我们可以写出这些热力学势的全微分（由偏微分表示的，就是 chain rule）。同样只举一个例子：</p>
+<p>$$\mathrm dU(S, X) = \left(\frac{\partial U}{\partial S}\right)_X \mathrm d S + \left(\frac{\partial U}{\partial X}\right)_S \mathrm X$$</p>
+<p>对比上面两个公式，可以得到两个式子，分别是</p>
+<p>$$T = \left(\frac{\partial U}{\partial S}\right)_X $$</p>
+<p>$$Y =  \left(\frac{\partial U}{\partial X}\right)_S$$</p>
+<p><strong>用同样的方法得到由另外的热力学势表达的 $T$ 和 $Y$，这样就可以获得一组 Maxwell 关系式。然后用类似的方法处理所有的热力学势，就可以获得全部的 Maxwell 关系。</strong></p>
+<p><strong>另外，我们看到热力学量可以通过对相应的热力学势求偏微分来获得，很方便。</strong></p>
+<p>这个推导在物理中很常见，例如电动力学的学习中，磁场能的导出也是用类似的手段。</p>
+<h2>Legendre Transformation Revisited</h2>
+<p>上面除了图片有点物理之外，就是数学了，或者说就是 Legendre transformaton 了。一开始那个 Legendre transformation 看起来就是硬生生的代数呢，感觉并没有什么直观的意义？其实这个 transformation 背后有很多可以挖掘的，包括我们喜欢的简洁明了的图像。</p>
+<p>我们换种方式来找出函数 $f(x)$ 的 Legendre 变换。</p>
+<ol>
+<li>把函数在 x-y 坐标系中画出来（蓝色的实线）。</li>
+<li>做一条直线 $y=px$ . </li>
+<li>我们现在可以定义一个距离，也就是做一条垂直 x 轴的直线，在 $y=px$ 和 $f(x)$ 上的两个交点的距离： $F(x,p) = xp &#8211; f(x)$. 现在看起来已经有了 Legendre transformation 的样子了。但是有个问题，这里 x 和 p 是两个独立的变量。</li>
+<li>Legendre transformation 要求在给定一个直线斜率 p 之后，这个距离 $F(x,p)$ 最大。这样就确定了 x 和 p  的关系。也就是说要求 $\frac{\partial F(x,p)}{\partial x} = 0$，简化之后，$f'(x)=p$。如图所示。</li>
+<li>这样把 x 和 p 的关系 $x(p)$ 代入 $F(x,p)$ 中，我们的距离就变成单单 p 的函数，$F(p)$ 。这就是 $f(x)$ 的 Legendre transformation.</li>
+</ol>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/legendreTransformation.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/legendreTransformation.png" alt="legendreTransformation" width="390" height="256" class="aligncenter size-full wp-image-6503" /></a></p>
+<p>这里面的几何关系就是，$p$ 是斜率，$f'(x)$ 也是斜率。</p>
+<p>说到这里还不够清楚，那么我们重写一下这个关系：</p>
+<p>$$F(p) + f(x) = xp$$</p>
+<p>嗯？非常简单粗暴：$f(x)$ 和 $F(p)$ 具有对称性。等一下，这个关系联想到了什么？我们把上图中的表示切线的点划线延长出来，</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/abcdefghi.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/abcdefghi.png" alt="abcdefghi" width="546" height="386" class="aligncenter size-full wp-image-6504" /></a></p>
+<p>从这个图上，明显的就是斜率 p 乘以 x 得到了 $f(x) + F(p)$，即</p>
+<p>$$f(x)+F(p)=p x$$</p>
+<p>简单明了吧。这就是 f(x) 和 F(p) 之间的 Legendre transformation .明显的这个变换具有对称性，因为 f(x) 和 F(p ) 的地位相同。</p>
+<p>至于更多的关于这个变换的内容，可以参考<a href="http://book.douban.com/subject/1728598/">《经典力学的数学方法》</a>这本书，或者<a href="http://arxiv.org/abs/0806.1147">这篇文献</a>。这是物理上一个非常核心的变换，对于整个物理体系有很重要的作用。</p>
+<h2>微分几何</h2>
+<p>上面的这些东西，是我们本科学习的，我们会觉得好乱！是的，好乱！那是因为我们使用的数学语言很含糊。我们为什么要说一个量是什么什么的函数？因为我们想要求导数。</p>
+<p>如果我们有一种方法，可以得到导数的含义，但是不需要指定一个量是什么什么的函数，那么上面的这些混乱就没有了。是的，这种方法就是外微分。</p>
+<p>至于具体怎么理解这个问题，可以读一下这篇文章：http://www.av8n.com/physics/thermo-forms.htm</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6266-1">
+如果不熟悉广义力的话，这里解释一下，以免后面犯错。因为我们常常讨论系统的能量的增量，所以广义力的通过外界对系统做工来定义的。我们说外界对系统做了功 $\mathrm W = Y \mathrm d X$，这里面就是广义力乘以广义位移，自然就是外界对系统做的功了。需要注意的是，由于我们是说的<strong>外界对系统做功</strong>，所以这个力方向是指向系统的，而不是指向外部的。所以在气体的例子里面 $\mathrm dW = -p \mathrm dV$，广义力是指的 $-p$. 当然，暗能量/ quinessence 这种奇葩的存在，我们先不讨论。&#160;<a href="#fnref-6266-1" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6266/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>量子力学计算的一个小技巧</title>
+		<link>http://multiverse.lamost.org/blog/6056</link>
+		<comments>http://multiverse.lamost.org/blog/6056#comments</comments>
+		<pubDate>Sat, 07 Sep 2013 19:50:38 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<category><![CDATA[Quantum Mechanics]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6056</guid>
+		<description><![CDATA[$$\newcommand{\ud}[1]{{#1^{\dagger}}} \newcommand{\bra}[1]{\left\langle #1\right&#124;} \newcommand{\ket}[1]{\left&#124; #1\right\rangle} \newcommand\Tr{\mathrm{Tr}} \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle} % Math Environment \newcommand\d{\mathrm{d}} \newcommand\I{\mathbb{I}} $$ 量子力学里面很多 e 指数函数，这类函数的一大特点就是导数会出现这个函数本身，所以有时候可以利用这个特点来简化计算。 例如我们有一个初始状态，态矢在位置基矢下的表达式， $$ \phi = C e^{i C _ 1 x} e^{C _ 2 x^2} $$ 当然，这里的三个常数可能是 $$ C = \frac{1}{(\pi...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6359" rel="bookmark" title="第一次见四元数">第一次见四元数 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2744" rel="bookmark" title="Dark Energy Summary Sci-Map">Dark Energy Summary Sci-Map </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>$$\newcommand{\ud}[1]{{#1^{\dagger}}}<br />
+\newcommand{\bra}[1]{\left\langle #1\right|}<br />
+\newcommand{\ket}[1]{\left| #1\right\rangle}<br />
+\newcommand\Tr{\mathrm{Tr}}<br />
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle} % Math Environment<br />
+\newcommand\d{\mathrm{d}}<br />
+\newcommand\I{\mathbb{I}}<br />
+$$</p>
+<p>量子力学里面很多 e 指数函数，这类函数的一大特点就是导数会出现这个函数本身，所以有时候可以利用这个特点来简化计算。<span id="more-6056"></span></p>
+<p>例如我们有一个初始状态，态矢在位置基矢下的表达式，<br />
+$$ \phi = C e^{i C _ 1 x} e^{C _ 2 x^2} $$</p>
+<p>当然，这里的三个常数可能是<br />
+$$ C = \frac{1}{(\pi \eta^2)^{1/4}} $$<br />
+$$ C_1 = p _ 0/\hbar $$<br />
+$$ C_2 = -\frac{1}{2\eta^2} $$<br />
+但是对于我们的计算来说，这些常数是多少，并无大的影响，所以就不再代入具体的形式了。</p>
+<p>而我们要计算的是动量在位置基矢下面的不确定值，计算过程中需要求解这个量：<br />
+ $$\bra{\psi}\hat p^2 \ket{\psi}$$<br />
+ 而求解这个量的过程中，需要用到如下的计算</p>
+<p>$$ \psi^ * \frac{\d}{\d x}\frac{\d}{\d x} \psi $$</p>
+<p>一个比较简便的做法是定义如下的中间量<br />
+$$ G = \frac{\d}{\d x} \psi $$</p>
+<p>至于为什么要这么定义，我们继续计算，就可以看到这样做的好处了。</p>
+<p>先求解 G</p>
+<p>$$ G = \psi (i C _ 1 + 2 C _ 2 x) $$</p>
+<p>我们把这个结果代入要求解的式子中，</p>
+<p>\begin{eqnarray}<br />
+\psi^ * \frac{\d}{\d x}\frac{\d}{\d x}\psi &amp;=&amp; \psi^* \frac{\d}{\d x} ( \psi (i C _ 1 + 2 C _ 2 x) )  &#92;&#92;<br />
+&amp;=&amp; \psi^ * \psi 2 C _ 2 + \psi^ * G (i C _ 1 + 2 C _ 2 x)  &#92;&#92;<br />
+&amp;=&amp; \psi^ * \psi (i C _ 1 + 2 C _ 2 x)^2 + \psi^ * \psi 2C _ 2 &#92;&#92;<br />
+&amp;=&amp; \psi^ * \psi \left[(i C _ 1 + 2 C _ 2 x)^2 + 2C _ 2 \right]<br />
+\end{eqnarray}</p>
+<p>而<br />
+$$\psi^ * \psi$$<br />
+这一项里面的带有虚数指数的部分变成了 1，所以最后的计算就会比较简单，不易出错。</p>
+<p>如果大家有好做法，可以分享一下。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6359" rel="bookmark" title="第一次见四元数">第一次见四元数 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2744" rel="bookmark" title="Dark Energy Summary Sci-Map">Dark Energy Summary Sci-Map </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6056/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>关于宇宙膨胀的两个常见误解</title>
+		<link>http://multiverse.lamost.org/blog/6041</link>
+		<comments>http://multiverse.lamost.org/blog/6041#comments</comments>
+		<pubDate>Thu, 05 Sep 2013 15:23:11 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[宇宙膨胀]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6041</guid>
+		<description><![CDATA[超过光速的膨胀 狭义相对论告诉我们，信息传播不能超过光速，否则会有违反因果律的问题。那么，我们说宇宙在膨胀，宇宙膨胀会超过光速么？ 超越光速 为了看清楚这个问题，我们需要拿出我们的数学工具。假定存在一组随着宇宙一起膨胀的惯性观者，该组观者在观察宇宙中的两个点：${t, r_1,\theta,\phi }$, ${t, r_2,\theta,\phi}$. 这里为了简便，使用了（广义）球坐标。而且，这里使用的是 comoving coordinate，或者叫做共形距离，空间部分并不会变化。 我们通过狭义相对论已经知道了，两点之间的距离的计算方法。实际上在我们常常说的 FRW 宇宙，也就是各项同性且均匀的宇宙中，距离的计算方法是 $$ \mathrm ds^2 = c^2 dt^2 + a(t)^2( \mathrm dr^2 + \chi ( \mathrm d\theta^2 \sin^2\theta \mathrm d\phi^2 ) ) ,$$ 其中 $a(t)$ 是 scale factor，代表了宇宙的尺度的变化，可以说是宇宙中尺子的共形变换因子。...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2782" rel="bookmark" title="修改引力理论[脑图]">修改引力理论[脑图] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2410" rel="bookmark" title="宇宙学笔记本存档">宇宙学笔记本存档 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<h2>超过光速的膨胀</h2>
+<p>狭义相对论告诉我们，信息传播不能超过光速，否则会有违反因果律的问题。那么，我们说宇宙在膨胀，宇宙膨胀会超过光速么？<span id="more-6041"></span></p>
+<h3>超越光速</h3>
+<p>为了看清楚这个问题，我们需要拿出我们的数学工具。假定存在一组随着宇宙一起膨胀的惯性观者，该组观者在观察宇宙中的两个点：${t, r_1,\theta,\phi }$, ${t, r_2,\theta,\phi}$. 这里为了简便，使用了（广义）球坐标。而且，这里使用的是 comoving coordinate，或者叫做共形距离，空间部分并不会变化。</p>
+<p>我们通过狭义相对论已经知道了，两点之间的距离的计算方法。实际上在我们常常说的 FRW 宇宙，也就是各项同性且均匀的宇宙中，距离的计算方法是</p>
+<p>$$ \mathrm ds^2 = c^2 dt^2 + a(t)^2( \mathrm dr^2 + \chi ( \mathrm d\theta^2 \sin^2\theta \mathrm d\phi^2 ) ) ,$$</p>
+<p>其中 $a(t)$ 是 scale factor，代表了宇宙的尺度的变化，可以说是宇宙中尺子的共形变换因子。</p>
+<p>把我们定义的两点的坐标代入进去，会得到</p>
+<p>$$ s = a(t) (r_1 &#8211; r_2) .$$</p>
+<p>我们想要看的是 s 的变化的快慢，也就是「速度」，</p>
+<p>$$ \frac{\mathrm ds}{\mathrm dt} = \dot a (r_1 &#8211; r_2) .$$</p>
+<p>也就是说，只要宇宙膨胀的速度足够快（$\dot a$ 足够大），不管这里两点之间的共形距离多么小，<strong>这个所谓的速度总可能超过光速</strong>。</p>
+<h3>所谓速度</h3>
+<p>我们来看看这个速度是什么意思。</p>
+<p>我们讨论的是一个两个点相互背离的速度，这种算法跟我们在狭义相对论里面的一个常见的计算一样。即，如果有两个飞船分别从南极和北极飞出，各以 0.75c 的速度背离地球。那么我们作为地球上的观察者，这两个飞船相互背离的速度，就只能这样加起来，也就是 1.5c .</p>
+<p>怎么？这个会违背相对论？不会。因为这压根不是任何形式的信息传递速度。</p>
+<p>我们这里计算的所谓的超越光速的膨胀，跟这个例子是一样的，压根就不是真正的物理速度，没有信号传递。</p>
+<h2>什么在膨胀？什么不膨胀？</h2>
+<p>一起这个问题在豆瓣物理组讨论过。我再拿出来说说。</p>
+<p>这个问题是说，如果我们说宇宙在膨胀，现在我们要量两个星系之间的距离，如果尺子也随着宇宙进行相同的膨胀，那么我们用这把尺子量，是不能发现宇宙的膨胀的。当然这只是个很简单的情形，这个问题带来的一个思考是：我们说宇宙膨胀，到底是什么膨胀？尺子会膨胀么？</p>
+<h3>我们的太阳系会膨胀么</h3>
+<p>我们现在考虑，我们的太阳系现在在膨胀么？</p>
+<p>显然我们的太阳系（几乎）没有膨胀。</p>
+<p>那我们的银河系在膨胀么？</p>
+<p>也（几乎）没有。</p>
+<p>那么一个半径 10000 Mpc 的区域呢？</p>
+<p>这个是在膨胀的。</p>
+<p>那么，我们是怎么判断的呢？</p>
+<h3>简单的判据</h3>
+<p>我们还是需要使用数学来做一个简单的推算。</p>
+<p>考虑一个直径为 $D$ 的区域，假定这个区域内的物质分布是均匀的。</p>
+<p>我们知道宇宙的膨胀是通过 $a$ 来体现的，更加确切的说，是通过 $H(a)$ 这个哈勃参数来体现的。实际上 $H(t)$ （常使用 km/s/Mpc 的单位）的意思是值得在每个 MPc 的距离上，星系的推行速度。也就是说，$c H^{-1}$ 就代指了有因果联系的区域的大致的直径大小。</p>
+<p>所以我们的判据应该是：</p>
+<ul>
+<li>如果 $D\gt c H^{-1}$，那么这个区域就是在膨胀的，因为任何形式的束缚场都不能够在大于 $cH^{-1}$ 的区域上进行作用；</li>
+<li>如果 $D\lt c H^{-1}$，那么这个区域是基本不膨胀的，因为这些物体可以被引力（或其他作用）束缚住。</li>
+</ul>
+<p>总之，膨胀还是不膨胀，考虑的是宇宙膨胀的效应和物体之间的束缚场的作用谁强谁弱。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2782" rel="bookmark" title="修改引力理论[脑图]">修改引力理论[脑图] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2410" rel="bookmark" title="宇宙学笔记本存档">宇宙学笔记本存档 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6041/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>我们的征途——系外行星</title>
+		<link>http://multiverse.lamost.org/blog/5748</link>
+		<comments>http://multiverse.lamost.org/blog/5748#comments</comments>
+		<pubDate>Sun, 05 May 2013 11:08:00 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Data Mining]]></category>
+		<category><![CDATA[Data Visualization]]></category>
+		<category><![CDATA[Visualizing Data]]></category>
+		<category><![CDATA[天体]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=5748</guid>
+		<description><![CDATA[星际移民中心整理的一份关于系外行星的文档：系外行星。 在我们人类几千年的文明史中，我们一直试图解释自己： 我们是谁？我们从哪里来？我们向何处去？ 我们是宇宙间孤独的存在么？生命火种真的来自地球么？茫茫星空中还有没有我们可以居住的家园？ 所有这些问题，都或多或少的这样的问题有关联： 宇宙中有没有系外行星？有多少系外行星？系外行星可以承载生命么？ 几千年以来，我们对行星的了解，一直被限制在太阳系内，我们可以计算精确的行星轨道，可以用铅笔发现海王星。但是我们对太阳系内行星了解的越多，就越想知道：行星，真的只在我们的太阳系中么？ 1988 年，Campbell, B., Walker, G. A. H., &#38; Yang, S. 在 Astrophysical Journal 上面发表了一篇题为 A search for substellar companions to solar-type stars (Astrophysical Journal, Part 1 (ISSN 0004-637X), vol. 331, Aug. 15, 1988,...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2327" rel="bookmark" title="工作进展（2011-12-18）">工作进展（2011-12-18） </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1959" rel="bookmark" title="Evolution of Background and Perturbations in {Cosmology} [Details]">Evolution of Background and Perturbations in {Cosmology} [Details] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1766" rel="bookmark" title="我们的宇宙可能由闭宇宙演化为开宇宙么？[第三节]">我们的宇宙可能由闭宇宙演化为开宇宙么？[第三节] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><span style="color:green;"><b>星际移民中心整理的一份关于系外行星的文档：<a href="http://exoplanets.readthedocs.org/">系外行星</a>。</b></span></p>
+<hr />
+<div id="attachment_5600" style="width: 210px" class="wp-caption alignright"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/Twin_Exoplanets_by_mickare-300x187.png" alt="Twin Exoplanets by mickare, A" width="200px"/><p class="wp-caption-text">Twin Exoplanets by mickare [[^0]]</p></div>
+<p>在我们人类几千年的文明史中，我们一直试图解释自己：<br />
+<span style="color:green;"><b>我们是谁？我们从哪里来？我们向何处去？</b></span></p>
+<p><em>我们是宇宙间孤独的存在么？生命火种真的来自地球么？茫茫星空中还有没有我们可以居住的家园？</em><span id="more-5748"></span></p>
+<p>所有这些问题，都或多或少的这样的问题有关联：</p>
+<p><center></p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightgreen;border-left:8px solid lightgreen;border-right:8px solid lightgreen;padding:2px 5px 2px 5px;display:inline-block;">
+<b>宇宙中有没有系外行星？有多少系外行星？系外行星可以承载生命么？</b>
+</p>
+<p></center></p>
+<hr />
+
+<p>几千年以来，我们对行星的了解，一直被限制在太阳系内，我们可以计算精确的行星轨道，可以用铅笔发现海王星。但是我们对太阳系内行星了解的越多，就越想知道：行星，真的只在我们的太阳系中么？</p>
+<p>1988 年，Campbell, B., Walker, G. A. H., &amp; Yang, S. 在 Astrophysical Journal 上面发表了一篇题为 <a href="http://adsbit.harvard.edu/cgi-bin/nph-iarticle_query?bibcode=1988ApJ...331..902C" title="第一颗系外行星的论文" target="_blank">A search for substellar companions to solar-type stars </a> (Astrophysical Journal, Part 1 (ISSN 0004-637X), vol. 331, Aug. 15, 1988, p. 902-921.) 的文章，文章使用 radial velocity 的方法发现恒星异常，只是文章说的很保守，&#8221;these low-mass objects could represent the tip of the planetary mass spectrum&#8221;. 直到 2003 年，Artie P. 等人才使用 4 组不相关的数据来验证了这颗行星的发现（<a href="http://arxiv.org/abs/astro-ph/0305110" title="A Planetary Companion to gamma Cephei A" target="_blank">论文</a>）。这样我们可以说，第一颗系外行星，其实是在 1988 年就发现了。</p>
+<p>间隔十多年，可谓是好事多磨难。现在，随着各类技术的出现，和人们对系外行星的关注度越来越高，系外行星已经不在稀有，被确认的系外行星现在达到了 889 颗（<a href="http://exoplanet.eu/">The Extrasolar Planets Encyclopaedia</a>，截止到2013-05-02），而被列入 Kepler Object of Interest 的候选达到了3541颗（<a href="http://exoplanetarchive.ipac.caltech.edu/cgi-bin/ExoTables/nph-exotbls?dataset=cumulative">NASA</a>，截止到 2013-04-30）。</p>
+<p>越来越多的系外行星的发现，使得有些原来看起来很遥远的科幻，也突然变得亲切起来。似乎我们的世界有了一个很重要的目标，那就是<strong>飞出太阳系，飞向系外行星</strong>。</p>
+<div id="attachment_5630" style="width: 1034px" class="wp-caption alignright"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/exo_prefinal_l.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/exo_prefinal_l-1024x574.png" alt="Exoplanets Visualization. History, Method,etc." width="1024" height="574" class="size-large wp-image-5630" /></a><p class="wp-caption-text">系外行星：历史，方法，恒星属性，距离。点击图片看大图。<br />来自http://www.wired.co.uk/magazine/archive/2011/02/start/infoporn</p></div>
+<h2>什么是系外行星</h2>
+<p>什么是系外行星？自然不在太阳系内的行星就是系外行星。那么什么是行星呢？这是很难定义的，不过 WGESP (Working Group on Extrasolar Planets) 给了一个<a href="http://www.dtm.ciw.edu/boss/definition.html">可行的定义</a>。</p>
+<p>我想严格定义在这里并不重要，其实这类定义是要随着我们的发现更改的。思考定义很枯燥，不过多少有点值得思考的是[<sup id="fnref-5748-1"><a href="#fn-5748-1" rel="footnote">1</a></sup>]：</p>
+<ul>
+<li>进行核聚变天体可以是行星么？</li>
+<li>四处自由流浪的天体可以可以是行星么？</li>
+<li>曾经发生过核聚变但是后来熄灭的天体可以是行星么？</li>
+</ul>
+<p>结论可以看尾注。([<sup id="fnref2:5748-1"><a href="#fn-5748-1" rel="footnote">1</a></sup>])</p>
+<h2>系外行星观测手段</h2>
+<p>系外行星的观测手段在近几年来有了很多进展，而且新的方法还在被提出。[<sup id="fnref-5748-2"><a href="#fn-5748-2" rel="footnote">2</a></sup>]</p>
+<h3>径向速度（Radial Velocity，简称 RV）</h3>
+<p>径向速度是一种很重要的方法，因为径向速度变化可以引起恒星光谱的多普勒偏移，即这种方法是可以跟光谱联系起来的，而光谱的测量，很久以来一直是我们最精密的测量手段之一。目前大多数被确认的系外行星，都是用径向速度的方法首先观测到的。</p>
+<div id="attachment_5638" style="width: 310px" class="wp-caption alignright"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/doppler1.jpg" alt="径向速度（Radial Velocity）变化" width="300" /><p class="wp-caption-text">径向速度（Radial Velocity）变化，引起光谱的多普勒偏移。</p></div>
+<p>这张图片直观的说明了为什么我们可以通过测量恒星的径向速度的变化来得知该恒星是否有行星：围绕恒星转的天体会引起恒星在径向速度上的周期性变化。我们可以根据这个周期性变化来获得另外一个天体的相关数据，例如质量，公转周期等。</p>
+<p>但是这种方法对于那些过于小的行星就不起作用了，因为行星太小的话，恒星的径向速度变化太小，我们很难精确的确认。</p>
+<h3>凌日（Transit Light Curves）</h3>
+<p>当一个行星从恒星面向我们的一面经过时，会遮挡恒星的部分光芒，从而导致我们观测到的恒星的亮度减小。</p>
+<div id="attachment_5644" style="width: 310px" class="wp-caption alignright"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/800px-Planetary_transit_zh.svg_.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/800px-Planetary_transit_zh.svg_-300x93.png" alt="凌日方法寻找行星的原理。" width="300" height="93" class="size-medium wp-image-5644" /></a><p class="wp-caption-text">凌日方法寻找行星的原理。</p></div>
+<p>Kepler 卫星的工作原理主要就是凌日法。这种方法的特点是速度快，而且可以用来寻找直径小得多的行星。但是导致恒星亮度变化的原因很多，行星可能只是其中一种，所以 Kepler 卫星目前找到的是大量的地外行星候选名单，真正的确认一般需要其他方法辅助。[<sup id="fnref-5748-3"><a href="#fn-5748-3" rel="footnote">3</a></sup>]</p>
+<p>我们也可以通过仔细的研究凌日的时刻和持续时间来获得更多的信息。例如对于一个有多个行星的系统，凌日时间可能会有些变化。这样甚至可以发现那些不会发生凌日的行星，因为这些天体之间通过引力相互左右的。这种方法是凌日时间变分法(Transit Timing Variation，TTV)。</p>
+<h3>微引力透镜（Gravitational Micro-lensing）</h3>
+<div id="attachment_5648" style="width: 310px" class="wp-caption alignright"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/Gravitational-Microlensing-timeline.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/Gravitational-Microlensing-timeline-300x245.png" alt="微引力透镜的方法寻找系外行星。" width="300" height="245" class="size-medium wp-image-5648" /></a><p class="wp-caption-text">微引力透镜的方法寻找系外行星。点击图片看大图。</p></div>
+<p>引力透镜效应是一种广义相对论效应：天体的引力场可以使得光线弯曲，从而使得光线不经过次天体时的引力场和经过此天体时的引力场不同。</p>
+<p>配图是一个很好的说明（点击图片看大图）。当引力透镜现象发生时，如果作为透镜的天体是一个带有行星的恒星，那么行星的运动会导致引力透镜效应产生的图像不同，行星也有引力场。</p>
+<h3>其他方法</h3>
+<p>其他还有一些方法，例如直接影像（Direct Imaging，直接拍到系外行星）、脉冲星计时（Pulsar Timing，通过看脉冲星的脉冲计时来判断）等等，应用并不多。详细可以查看维基百科相关词条[<sup id="fnref2:5748-2"><a href="#fn-5748-2" rel="footnote">2</a></sup>]。</p>
+<p>现在相关研究火热，相信将来也会不断有新的方法出来。</p>
+<h2>系外行星数据</h2>
+<p>我不是专门研究系外行星的，我写这篇文章，只是因为最近看了一点相关的文章，想与大家分享。不过，其实这篇文章确实还有只有一个目的：表达我对分享改变世界的信心。（但是不多说啦，我现在还没有资格做过多的评价。）</p>
+<p>系外行星的研究对于普通人来说，似乎只是听听看看就完了的事情。但是并非如此。在天文领域，按照国际惯例，大型天文项目的数据是会变成公共数据的。[<sup id="fnref-5748-4"><a href="#fn-5748-4" rel="footnote">4</a></sup>] Kepler 卫星和大型的系外行星的数据也是开放的，所以每个人都可以拿到数据。<br />
+当然，数据不是力量，我们拿到数据只是第一步，更加关键的是，我们能够从数据中获得什么。很多的网站提供了数据和用来分析数据的工具，我们甚至不需要自己写程序，只需要点点画画，就可以得到一些漂亮的结果。所以，我们每个人都可以参与到地外行星的寻找（看下面开放数据和工具的 Planet Hunters 一条）和分析中来。</p>
+<h3>开放数据和分析工具</h3>
+<p>列举一下我这段时间遇到的一些提供数据和工具的网站：</p>
+<ul>
+<li><a href="http://www.planethunters.org/">http://www.planethunters.org/</a>↓<br />
+<br />Planet Hunters，一个可以帮助 Kepler 寻找行星的网站，只需要点几下，就可以学会如何寻找行星，可以帮助 Kepler 找到行星。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/planetHunters.png" alt="planetHunters" width="500" /></li>
+<li><a href="http://kepler.nasa.gov/">http://kepler.nasa.gov/</a>↓<br />
+<br />NASA 的 Kepler 项目官网。有些科普性的内容不错。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/Kepler.png" alt="Kepler" width="500"/></li>
+<li><a href="http://exoplanets.org/">http://exoplanets.org/</a>↓<br />包括所有的数据和一套用来作图的完整的工具，所有的工作都可以在线完成，包括作图和分析。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/expplanetsORG-300x144.png" alt="http://exoplanets.org" width="500" /></li>
+<li><a href="http://planetquest.jpl.nasa.gov/">http://planetquest.jpl.nasa.gov/</a>↓<br />
+<br />NASA 的 JPL 的网站，除了数据，还有一些科普性的内容，甚至游戏和漫画，也有分析工具。内容很多。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/NASAExoplanets.png" alt="PlanetQuest, JPL@NASA" width="500" /></li>
+<li><a href="http://exoplanetarchive.ipac.caltech.edu/">http://exoplanetarchive.ipac.caltech.edu/</a>↓<br />Exoplanet Archive, CalTech. 提供数据和全面的分析工作。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/CalTech.png" alt="Exoplanet Archive, CalTech" width="500" /></li>
+<li><a href="http://exoplanet.eu/">http://exoplanet.eu/</a>↓<br />
+<br />除了很方便的获取数据，还可以在线绘制散点图和 Histogram 图。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/ExoplanetEU.png" alt="exoplanet.eu" width="500" /></li>
+<li><a href="http://www.openexoplanetcatalogue.com/index.php">http://www.openexoplanetcatalogue.com/index.php</a>↓<br />
+<br />这个网站提供了很棒的可视化工具，包括BubbleChart，Histogram，当然也数据，而且是可以筛选的数据。更可贵的是，他们是开源的。他们有个<a href="http://openexoplanetcatalogue.com/contest/">数据可视化竞赛</a>。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/openexoplanetcatalogue.png" alt="http://www.openexoplanetcatalogue.com/index.php" width="500" /> </li>
+<li><a href="http://www.stefanom.org/SystemicConsole/new/index.html">http://www.stefanom.org/SystemicConsole/new/index.html</a>↓<br />
+<br />一个很棒的程序，用来分析系外行星的数据的。从起的名字来看，似乎是在下一盘很大的棋。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/Systemic.png" alt="Systemic" width="500" /></li>
+<li><a href="http://www.hzgallery.org/">http://www.hzgallery.org/</a><br />
+<br />有一个主题很重要，但是没有提到，因为这个主题我打算下一篇文章再说，那就是宜居带，Habitable Zone. 当然这个主题可以通过维基百科的<a href="http://zh.wikipedia.org/wiki/%E8%A1%8C%E6%98%9F%E9%81%A9%E5%B1%85%E6%80%A7">行星适居性</a>获得很多的知识。另外的途径就是：<a href="http://exoplanet.as.arizona.edu/~lclose/teaching/a202/a202_sched.html">ASTR 202</a>等等教学网站和一些公开课等等。我现在对这个主题了解还仅限于一些片面的文章，我会在接下来的一些时间去学习了解这个主题。<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/Habatiable.png" alt="Habatiable" width="500" /></li>
+</ul>
+<h2>系外行星数据可视化</h2>
+<p>一张合理的图像会给我们比数字更加直观的感受，可以说通过合理的设计图像，可以获得一些看数据得不到的灵感，insight.</p>
+<p>当然可视化是一个很庞大很复杂的话题，我对这个方向了解不多，所以保持对他们的敬畏，这一部分就仅仅列举几个有趣的可视化吧。</p>
+<p><strong>这篇文章的第二张图</strong>，是一张非常棒的图，信息量很大，而且很容易看懂。我再重新贴过来。点击图片看大图（前提是在我的博客这边而不是在豆瓣九点还是什么其他地方）。</p>
+<div id="attachment_5630" style="width: 1034px" class="wp-caption alignright"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/exo_prefinal_l.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/exo_prefinal_l-1024x574.png" alt="Exoplanets Visualization. History, Method,etc." width="1024" height="574" class="size-large wp-image-5630" /></a><p class="wp-caption-text">系外行星：历史，方法，恒星属性，距离。点击图片看大图。<br />来自http://www.wired.co.uk/magazine/archive/2011/02/start/infoporn</p></div>
+<p>图的制作过程见此链接：<br /><a href="http://www.informationisbeautiful.net/book/process/executing-the-exos/">http://www.informationisbeautiful.net/book/process/executing-the-exos/</a></p>
+<p><strong>XKCD 的 1071 号作品</strong>是一个很有趣的可视化，使用了 bubble chart 的手段：</p>
+<div id="attachment_5634" style="width: 750px" class="wp-caption alignright"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/exoplanets.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/05/exoplanets.png" alt="Exoplanets By XKCD. http://xkcd.com/1071/" width="740" height="740" class="size-full wp-image-5634" /></a><p class="wp-caption-text">Exoplanets By XKCD.<br /> http://xkcd.com/1071/</p></div>
+<p>这个图没有交互，交互版本有两个：<a href="http://codementum.org/exoplanets/">http://codementum.org/exoplanets/</a> 或者 <a href="http://openexoplanetcatalogue.com/bubblechart.html">http://openexoplanetcatalogue.com/bubblechart.html</a></p>
+<p><a href="https://github.com/blprnt/Kepler-Visualization"><b>Kepler-Visualization</b></a> 是一个用 Processing 写的可视化程序，把所有的行星都放在一个恒星周围，可以看出恒星距离的分布等等。</p>
+<p><a href="https://github.com/Space-Bangalore/Exoplanet-Arudino">Space-Bangalore / Exoplanet-Arudino</a> 似乎是一个很有趣的 repo，利用 Arduino 来做好玩的玩具。</p>
+<h2>未完</h2>
+<p>系外行星是一个正在热门研究中的话题，所以说，这篇文章是没法作结的。</p>
+<p>或许我们可以想象一下，在不久的将来，我们定位了很多适合生命生存的星球，然后我们进行大规模的星际移民，终于像海因莱茵在《时间足够你爱》里面描述的一样，人类会进入大散居时代，于是人类的未来变得更加广阔，星际成为海洋，我们在这里骄傲的航行。</p>
+<p>再久远一些，或许我们会问，我们的宇宙是独一无二的么？</p>
+<hr />
+<h2>尾注</h2>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-5748-1">
+<div>按照定义，上面的三个问题的答案是这样的：
+<ul>
+<li>不能是一个进行核聚变的天体，因为这样就像恒星了。</li>
+<li>要围绕着一个恒星（或恒星遗迹）转的，要不然就会放任漂泊了，这类也不叫行星，很多可以被归类到次棕矮星（sbu-brown dwarf）。（不过在 Exoplanets 的数据库中有一颗 CFBDSIR2149，是无寄主的行星。）</li>
+<li>即使是现在没有核聚变，那么质量太大了，以至于在 H 的热核聚变的极限质量至上了，甚至可能曾经进行过核聚变，只是不能维持下去罢了，那也不能叫做行星，因为有一类棕矮星（brown dwarf）已经把这类包括进来了。</li>
+</ul>
+</div>
+<p><a href="#fnref-5748-1" rev="footnote">&#8617;</a> <a href="#fnref2:5748-1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-5748-2">
+维基百科有关于观测方法的很好的解释：<a href="http://zh.wikipedia.org/wiki/%E7%B3%BB%E5%A4%96%E8%A1%8C%E6%98%9F%E5%81%B5%E6%B8%AC%E6%B3%95">系外行星侦测法</a>。不过，英文的 Wikipedia 的解释更加全面：<a href="http://en.wikipedia.org/wiki/Methods_of_detecting_extrasolar_planets">Methods of detecting extrasolar planets</a>。&#160;<a href="#fnref-5748-2" rev="footnote">&#8617;</a> <a href="#fnref2:5748-2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-5748-3">
+当然 Kepler 的任务可不仅仅是找候选者。更详细的了解 Kepler 卫星可以阅读<a href="http://zh.wikipedia.org/wiki/%E5%BC%80%E6%99%AE%E5%8B%92%E5%A4%AA%E7%A9%BA%E6%9C%9B%E8%BF%9C%E9%95%9C">维基百科的开普勒太空望远镜词条</a>。&#160;<a href="#fnref-5748-3" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-5748-4">
+这是非常令人欣慰的。然而，很多物理领域的研究生都不知道 arxiv.org，他们每次自己无法下载文章就会抱怨，其实只要大家能够意识到开放知识的重要性，把自己的文章开放，那么我们获取知识就不会有那么多的障碍了。不过我觉得，<span style="color:red;">是否开放是一种个人喜好或信仰，我们不能因为别人不开放就要指责别人，我们也不能因为开放而受到指责，事情总会有转机，是否开放知识，是否开放数据，并不一定是解决问题的唯一途径。应该说，在这种争论里面，没有道德制高点。</span>&#160;<a href="#fnref-5748-4" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2327" rel="bookmark" title="工作进展（2011-12-18）">工作进展（2011-12-18） </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1959" rel="bookmark" title="Evolution of Background and Perturbations in {Cosmology} [Details]">Evolution of Background and Perturbations in {Cosmology} [Details] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1766" rel="bookmark" title="我们的宇宙可能由闭宇宙演化为开宇宙么？[第三节]">我们的宇宙可能由闭宇宙演化为开宇宙么？[第三节] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/5748/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>宇宙学中的统计方法【丁】</title>
+		<link>http://multiverse.lamost.org/blog/4389</link>
+		<comments>http://multiverse.lamost.org/blog/4389#comments</comments>
+		<pubDate>Thu, 06 Dec 2012 21:05:03 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4389</guid>
+		<description><![CDATA[宇宙学中的统计方法笔记系列，第四篇：likelihood 函数的计算方法，包括如何剔除没用的模式和如何找到 likelihood 的极值。 系列文章目录： 宇宙学中的统计方法【甲】 宇宙学中的统计方法【乙】 宇宙学中的统计方法【丙】 宇宙学中的统计方法【丁】 在 likelihood 方程里面是需要求解矩阵的逆（可参考CMB 的 likelihood 方程），而实际观测中数据量又极大，所有直接求逆会实际计算很慢，因此一种有效的求解 likelihood function 的方法是很重要的。 Modern Cosmology 里面举了一个具体的例子。 Karhunen-Loeve Techniques 这种方法的主要想法是，丢掉那么严重被噪声污染的模。比如我们发现有用的模只有10%，那么计算逆矩阵的话，计算量就减少到了原来的1/1000。但是如何找出那些有用的模呢？ 如果 covariance matrix 是对角的，我们之前在 【乙】 部分中提到对于对角化的 covariance matrix，我们可以得到 &#92;(C_S/C_N&#92;)，也就是信噪比。通过看信噪比的强弱，就可以知道那些模是有用的。可是真正的观测中，得到的数据的 covariance matrix 并不是对角化的，得到信噪比就比较困难。这正是 Karhunen-Loeve 方法所解决的问题。 现在假定我们有 &#92;(N_p&#92;)...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4364" rel="bookmark" title="宇宙学中的统计方法【丙】">宇宙学中的统计方法【丙】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2970" rel="bookmark" title="宇宙学中的统计方法【乙】">宇宙学中的统计方法【乙】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2918" rel="bookmark" title="宇宙学中的统计方法【甲】">宇宙学中的统计方法【甲】 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>宇宙学中的统计方法笔记系列，第四篇：likelihood 函数的计算方法，包括如何剔除没用的模式和如何找到 likelihood 的极值。<span id="more-4389"></span></p>
+
+<p>系列文章目录：</p>
+<ul>
+<li><a href="http://multiverse.lamost.org/blog/2918">宇宙学中的统计方法【甲】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/2970">宇宙学中的统计方法【乙】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/4364">宇宙学中的统计方法【丙】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/4389">宇宙学中的统计方法【丁】</a></li>
+</ul>
+<hr />
+<p>在 likelihood 方程里面是需要求解矩阵的逆（可参考<a href="http://multiverse.lamost.org/blog/2970#mjx-eqn-eqn-multipixellikelihood" target="_blank">CMB 的 likelihood 方程</a>），而实际观测中数据量又极大，所有直接求逆会实际计算很慢，因此一种有效的求解 likelihood function 的方法是很重要的。</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightgreen;border-left:8px solid lightgreen;border-right:8px solid lightgreen;padding:2px 5px 2px 5px;">
+<em>Modern Cosmology</em> 里面举了一个具体的例子。
+</p>
+<h2>Karhunen-Loeve Techniques</h2>
+<p>这种方法的主要想法是，丢掉那么严重被噪声污染的模。比如我们发现有用的模只有10%，那么计算逆矩阵的话，计算量就减少到了原来的1/1000。但是如何找出那些有用的模呢？</p>
+<p>如果 covariance matrix 是对角的，我们之前在 【乙】 部分中提到对于对角化的 covariance matrix，我们可以得到 &#92;(C_S/C_N&#92;)，也就是信噪比。通过看信噪比的强弱，就可以知道那些模是有用的。可是真正的观测中，得到的数据的 covariance matrix 并不是对角化的，得到信噪比就比较困难。这正是 Karhunen-Loeve 方法所解决的问题。</p>
+<p>现在假定我们有 &#92;(N_p&#92;) 个数据点，&#92;(&#92;Delta_i&#92;)，与之前一样，这个数据点是由信号 &#92;(s_i&#92;) 和噪声 &#92;(n_i&#92;) 组成的。为了简单，我们假定信号和噪声是不关联的。</p>
+<p>使用矩阵表达式，那么 covariance martrix 就可以写成<br />
+&#92;[ {&#92;bf C} &#92;equiv &#92;langle &#92;Delta &#92;Delta^{T} &#92;rangle = {&#92;bf C_S} + {&#92;bf C_N} &#92;]</p>
+<p>Karhunen-Loeve technique 是利用一系列矩阵变换把 noise covariance matrix 写成单位阵，然后 signal covariance matrix 写成对角形式，这样就可以比较信号和噪声了，当然我们用的数据矩阵也应该做相应的变换。比如我们把数据矩阵转动<br />
+&#92;[ {&#92;bf &#92;Delta}&#8217; = {&#92;bf R} {&#92;bf &#92;Delta} &#92;]<br />
+那么相应的 covariance matrix 也就变成了<br />
+&#92;[ {&#92;bf C} = &#92;langle ({&#92;bf R &#92;Delta}) ({&#92;bf R &#92;Delta}) &#92;rangle ={&#92;bf R C R^{T}} &#92;]</p>
+<p>如果 &#92;({&#92;bf C}’&#92;) 是个对角化的形式，那就好办了。所以，Karhunen-Loeve technique 的操作过程应该是：</p>
+<ul>
+<li>通过转动矩阵 &#92;({&#92;bf R_1} &#92;) 把 &#92;({&#92;bf C_N}&#92;) 对角化为 &#92;({&#92;bf C_N}&#8221;&#92;) ；</li>
+<li>通过矩阵 &#92;({&#92;bf R_2}&#92;)把 &#92;({&#92;bf C_N}&#8221;&#92;) 化为单位阵：&#92;[ {&#92;bf C_N}&#8217; = {&#92;bf R_2 R_1 C_N R_1^T R_2^T}&#92;] 其实 &#92;(&#92;bf R_2&#92;) 是个对角阵，所以 &#92;({&#92;bf R_2^T} = {&#92;bf R_2} &#92;) ；</li>
+<li>通过转动矩阵 &#92;({&#92;bf R_3}&#92;) 把进行过 &#92;({&#92;bf R_1}&#92;) 和 &#92;({&#92;bf R_2}&#92;) 操作的 &#92;({&#92;bf C_S}&#92;) 对角化为 &#92;({&#92;bf C_S}&#8217;&#92;) ：&#92;[{&#92;bf C_S}&#8217; = {&#92;bf R_3 R_2 R_1 C_S R_1^T R_2 R_3}&#92;]。同时 &#92;(&#92;bf C_N&#8217;&#92;) 也必须进行 &#92;(&#92;bf R_3&#92;) 操作，但是由于实对称矩阵的对角化通过 unitary 的矩阵来实现的（&#92;({&#92;bf R_3^{-1} = {&#92;bf R_3^T}}&#92;)），所以实际上再对 &#92;(&#92;bf C_N&#8217;&#92;) 进行 &#92;(&#92;bf R_3&#92;) 操作并不改变 &#92;(&#92;bf C_N&#8217;&#92;) 是单位阵的性质，因此这一步不需要任何计算；</li>
+<li>对数据点进行相应的变换 &#92;[ {&#92;bf &#92;Delta&#8217;} = ( {&#92;bf R_3 R_2 R_1 } ){&#92;bf &#92;Delta} &#92;]</li>
+</ul>
+<p>这样变换之后，我们最终拿到的 covariance matrix 是<br />
+&#92;begin{equation}<br />
+{&#92;bf C}‘ &#92;equiv &#92;langle {&#92;bf &#92;Delta&#8217;&#92;Delta&#8217;^T } &#92;rangle =  {&#92;bf C_N&#8217;} + {&#92;bf C_S&#8217;} = {&#92;bf I} + {&#92;bf C_S&#8217;}<br />
+&#92;end{equation}</p>
+<p>通过判断 &#92;(&#92;bf C_S&#8217;&#92;) 的元素（只有对角元）与 1 的大小，可以判断某个模式是否应该舍弃。</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightgreen;border-left:8px solid lightgreen;border-right:8px solid lightgreen;padding:2px 5px 2px 5px;">
+<em>Modern Cosmology</em> P 356 有一个数据矩阵只有两个元素的例子。
+</p>
+<p>Karhunen-Loeve 方法已经有了很重要的应用。下图是 Bunn 和 Bond 用 K L techniques 重分析 COBE 卫星数据的几个图（<em>Modern Cosmology</em> P360）</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/KLTechniques.jpg" alt="" title="KL Techniques" width="550" /></p>
+<p>图中左上是 signal to noise (S/N) 最大的模式，而右下是 S/N 最小的模式。实际上左上角主要是 quadrupole 的贡献，右下角的图主要是小尺度观测的贡献。</p>
+<p>下图是 K L techniques 用在 galaxy survey 上面的情况（Vogeley 和 Szalay，1996）。（<em>Modern Cosmology</em> P361）</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/KLTechniques-GalaxySurvey.jpg" alt="" title="KLTechniques-GalaxySurvey" width="550" /></p>
+<p>上图中展示的是 12 个有最大 S/N 的模式，都是大尺度的模。也就是说 K L techniques 恰好吧 galaxy survey 中的大尺度的数据筛选出来了。</p>
+<p>Karhunen-Loeve technique 的另外一个很重要的用途是进行自洽性分析。<em>Modern Cosmology</em> P360 给了一个 the Python experiment 的例子。由于数据点太多，不方便直接检查数据的自洽性。于是他们使用 Karhunen-Loeve technique 把大 S/N 的数据挑出来，然后看看是不是跟观测数据所做的基本的概率假定相符，比如这里数据应该是 Gaussian 的，但是 the Python experiment 小组 第一次所用的 noise covariance matrix 导致筛选出来的这些结果并不是 Gaussian 的，于是他们就用新的 noise covariance matrix 重新做了分析。（具体例子分析请翻阅 <em>Modern Cosmology</em> P360）</p>
+<p>在实际的观测中，这种方法并不是万能的，因为首先我们必须现有一个预设的 signal covariance matrix &#92;(&#92;bf C_S&#92;)，其次，这种方法在进行了上面的这么多的操作进行筛选数据点之后，还是需要按照原来的求解 likelihood 的方法来计算，也就是还是要求逆，虽然我们上面进行过了对角化，但是这只是一个特殊点进行的，也就是选择 &#92;(&#92;bf C_S&#92;) 是所定的点，这样在其他点，这些矩阵并不是对角化的，计算还是比较复杂。</p>
+<h2>Optimal Quadratic Estimator</h2>
+<p>上面的 K L techniques 还是要硬算 likelihood 的，而 optimal quadratic estimator 是一种不需要去完整的求解全局的 likehood 的方法。</p>
+<p>Optimal quadratic estimator 是类似于 Newton 切线法求方程的根的方法，因为实际上我们要求解的量只是 likelihood 极大的时候的参数值，所以我们只需要找到如下方程的根就可以了，<br />
+&#92;[ &#92;left.&#92;frac{&#92;partial &#92;scr L}{&#92;partial &#92;lambda} &#92;right| _ {&#92;lambda = &#92;bar &#92;lambda}= 0 &#92;]<br />
+按照 Newton-Raphson 方法的想法，需要选定一个初始的参数空间的位置 &#92;(&#92;lambda^{(0)}&#92;)，因为对于多项式形式的函数这样的算法比较有优势，所以我们现在假定 likelihood 是 &#92;(&#92;bf C_S&#92;) 和 &#92;(&#92;bf C_N&#92;) 的 Gaussian 函数，那么我们对 likelihood 取 log 之后的式子就变成多项式形式了。这样我们把 &#92;(&#92;ln &#92;scr L&#92;) 在 &#92;(&#92;lambda^{(0)}&#92;) 附近展开</p>
+<p>&#92;[<br />
+(&#92;ln &#92;mathscr L) _{,&#92;lambda} (&#92;lambda) = (&#92;ln &#92;mathscr L) _{,&#92;lambda}(&#92;lambda^{(0)}) + (&#92;ln &#92;mathscr L) _{,&#92;lambda&#92;lambda}(&#92;lambda^{(0)}) ( &#92;lambda &#8211; &#92;lambda^{(0)}) &#92;]</p>
+<p>只取前面的两项，并且把极值点真正的参数值 &#92;(&#92;hat &#92;lambda&#92;)带入，有 &#92;({&#92;ln&#92;scr L}_{,&#92;lambda} = 0&#92;)，即</p>
+<p>&#92;[ &#92;hat&#92;lambda &#92;approx &#92;lambda^{(0)} &#8211; &#92;frac{ (&#92;ln &#92;scr L) _{,&#92;lambda}(&#92;lambda^{(0)}) }{(&#92;ln &#92;scr L) _{,&#92;lambda&#92;lambda}(&#92;lambda^{(0)})} &#92;]</p>
+<p>实际上上式中所谓的 &#92;(&#92;hat &#92;lambda&#92;) 只是一个近似的准确值，因为我们只取了 Taylor 展开的前两项。但是通过迭代的方法，我们就可以无限趋近于真正的极值。</p>
+<p>这种方法中出现了 likelihood 的导数。可以用 CMB 的情况作为例子来看看如何计算。对 CMB 来说<br />
+&#92;[ (&#92;ln &#92;mathscr L) _{,&#92;lambda} = &#92;frac{&#92;partial}{&#92;partial &#92;lambda}&#92;left[ -&#92;frac{1}{2}&#92;ln(&#92;det C) &#8211; &#92;frac{1}{2} &#92;Delta C^{-1}&#92;Delta &#92;right]&#92;]</p>
+<p>利用矩阵的一些计算技巧，&#92;(&#92;ln &#92;det(C) = &#92;mathrm{Tr} &#92;ln(C) &#92;) 和 &#92;( C_{,&#92;lambda}^{-1} = &#8211; C^{-1} C _ {,&#92;lambda} C^{-1} &#92;)<br />
+&#92;begin{eqnarray}<br />
+(&#92;ln &#92;mathscr L)_{,&#92;lambda} &amp;=&amp; &#92;frac{&#92;partial}{&#92;partial &#92;lambda}&#92;left[ -&#92;frac{1}{2}&#92;ln(&#92;det C) &#8211; &#92;frac{1}{2} &#92;Delta C^{-1}&#92;Delta &#92;right] &#92;nonumber &#92;&#92;<br />
+&amp;=&amp; -&#92;frac{1}{2}&#92;frac{&#92;partial}{&#92;partial &#92;lambda} &#92;ln(&#92;det C) &#8211; &#92;frac{1}{2} &#92;Delta &#92;frac{&#92;partial}{&#92;partial &#92;lambda} C^{-1} &#92;Delta  &#92;nonumber &#92;&#92;<br />
+&amp;=&amp; -&#92;frac{1}{2} &#92;mathrm{Tr} [C^{-1} C _ {,&#92;lambda}] + &#92;frac{1}{2}&#92;Delta C^{-1}C _ {,&#92;lambda}C^{-1} &#92;Delta<br />
+&#92;end{eqnarray}</p>
+<p>重复使用上述技巧，可以得出二阶导数<br />
+&#92;[ (&#92;ln &#92;mathscr L) _ {,&#92;lambda&#92;lambda} = -&#92;Delta C^{-1}C _ {,&#92;lambda} C^{-1} C _ {,&#92;lambda} C^{-1}&#92;Delta + &#92;frac{1}{2} &#92;mathrm{Tr} [ C^{-1} C _ {,&#92;lambda} C^{-1} C _ {,&#92;lambda} ] +&#92;frac{1}{2} ( &#92;Delta C^{-1} C _ {,&#92;lambda&#92;lambda} C^{-1} &#92;Delta &#8211; &#92;mathrm {Tr} [ C^{-1} C _ {,&#92;lambda&#92;lambda} ] ) &#92;]</p>
+<p>为了方便，定义一个 curvature，<br />
+&#92;[ &#92;mathscr F = &#8211; &#92;frac{&#92;partial^2 &#92;ln &#92;mathscr L}{&#92;partial &#92;lambda^2} &#92;]</p>
+<p>并且<br />
+&#92;[ F _ {,&#92;lambda&#92;lambda} &#92;equiv &#92;langle &#92;mathscr F &#92;rangle = &#92;frac 1 2 &#92;mathrm{Tr} [ C _ {,&#92;lambda} C^{-1} C _ {,&#92;lambda} C^{-1} ] &#92;]</p>
+<p>于是<br />
+&#92;begin{equation}<br />
+&#92;hat&#92;lambda = &#92;lambda^{(0)} + F^{-1} _ {&#92;lambda&#92;lambda} &#92;frac{&#92;Delta C^{-1}C _ {,&#92;lambda} C^{-1} &#92;Delta &#8211; &#92;mathrm {Tr} [ C^{-1} C _ {,&#92;lambda} ] }{ 2 }<br />
+&#92;end{equation}</p>
+<p>从这个 CMB 的例子可以更好的了解具体如何计算。按照我们一开始的想法，只要我们把按照这个过程多进行几次迭代就可以了。</p>
+<p>但是上面所讲仅仅是一个参数的情况，那么对于多个参数的情况呢？</p>
+<p>多参数的情况就变成了</p>
+<p>&#92;begin{equation}<br />
+&#92;hat &#92;lambda _ &#92;alpha^{(0)} + F^{-1} _ {&#92;alpha&#92;beta} &#92;frac{ &#92;Delta C^{-1} C _ {,&#92;beta} C^{-1} &#92;Delta &#8211; &#92;mathrm{Tr} [ C^{-1} C _ {,&#92;beta} ] }{ 2 }<br />
+&#92;end{equation}</p>
+<p>其中原来的 curvature 变成了 Fisher matrix<br />
+&#92;[ F _ {&#92;alpha&#92;beta} &#92;equiv &#92;langle &#8211; &#92;frac{ &#92;partial^2 (&#92;ln &#92;mathscr L) }{ &#92;partial &#92;lambda _ {&#92;alpha} &#92;partial &#92;lambda _ {&#92;beta} } &#92;rangle = &#92;frac12&#92;mathrm{Tr}[ C _ {,&#92;alpha} C^{-1} C _ {,&#92;beta} C^{-1} ] &#92;]</p>
+<p>到此为止，这种方法告诉我们其实我们不需要曲完整的求解整个参数空间中的 likelihood function，而只需要估计一个参数空间的点，然后通过迭代的方法就可以了。这样只需要求解一个局域的参数空间而已。</p>
+<p>下一步就是要得到参数误差。其实我们已经假定了数据是 Gaussian 的，所以只需要按照 Gaussian 分布来给定误差就可以了。</p>
+<p>因此 variance of estimator 就是<br />
+&#92;[ &#92;langle (&#92;hat&#92;lambda _ &#92;alpha &#8211; &#92;bar &#92;lambda _ &#92;alpha)(&#92;hat &#92;lambda _ &#92;beta &#8211; &#92;bar &#92;lambda _ &#92;beta) &#92;rangle = (F^{-1}) _ {&#92;alpha&#92;beta} &#92;]</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightgreen;border-left:8px solid lightgreen;border-right:8px solid lightgreen;padding:2px 5px 2px 5px;">
+<em>Modern Cosmology</em> P 367 中有关于为什么我们这里求解的 \(\hat\lambda\) 的期望值正好等于真正的理论值 \(\bar \lambda\) 的证明。这个证明从一方面说明了我们按照 Gaussian 分布给出结果的误差是正确的。
+</p>
+<p>Fisher matrix 变得非常重要，因为 Fisher matrix 不仅仅要用来计算参数空间极值，还直接决定了我们的数据拟合结果的好坏。下一篇 post 我们就来看看 Fisher matrix 的计算方法。</p>
+<hr />
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightpink;padding:2px 5px 2px 5px;">
+本文没有 flag。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4364" rel="bookmark" title="宇宙学中的统计方法【丙】">宇宙学中的统计方法【丙】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2970" rel="bookmark" title="宇宙学中的统计方法【乙】">宇宙学中的统计方法【乙】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2918" rel="bookmark" title="宇宙学中的统计方法【甲】">宇宙学中的统计方法【甲】 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4389/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>宇宙学中的统计方法【丙】</title>
+		<link>http://multiverse.lamost.org/blog/4364</link>
+		<comments>http://multiverse.lamost.org/blog/4364#comments</comments>
+		<pubDate>Sat, 01 Dec 2012 12:45:45 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4364</guid>
+		<description><![CDATA[宇宙学中的统计方法笔记系列，第三篇：Galaxy Survey 中的统计方法。 系列文章目录： 宇宙学中的统计方法【甲】 宇宙学中的统计方法【乙】 宇宙学中的统计方法【丙】 宇宙学中的统计方法【丁】 【乙】中讲到的是 CMB 的统计。CMB 是一个二维面上的连续的温度场，而且是我们做了简单的假设说是 Gaussian 分布的。Galaxy Survey 跟 CMB 有很大的不同，它是三维空间中的分立的星系分布，而且这里 Non-Gaussian 很重要。 Galaxy Survey 的数据 Galaxy survey 是这样进行的：先把要进行巡天的天空分成足够小的区域，每个小区域有足够多的星系用来统计。然后都每个区域进行计数，分别除以每个小区域的体积就是星系的数密度，平均数密度就是总星系个数除以总体积。 数学上，Tegmark 提出了一个 galaxy survey 中的一个像素点上的数据的定义 &#92;begin{equation} &#92;Delta_i = &#92;int&#92;mathrm d^3x &#92;psi_i(&#92;vec x) &#92;left[ &#92;frac{n(&#92;vec...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4389" rel="bookmark" title="宇宙学中的统计方法【丁】">宇宙学中的统计方法【丁】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2970" rel="bookmark" title="宇宙学中的统计方法【乙】">宇宙学中的统计方法【乙】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2918" rel="bookmark" title="宇宙学中的统计方法【甲】">宇宙学中的统计方法【甲】 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>宇宙学中的统计方法笔记系列，第三篇：Galaxy Survey 中的统计方法。<span id="more-4364"></span></p>
+
+<p>系列文章目录：</p>
+<ul>
+<li><a href="http://multiverse.lamost.org/blog/2918">宇宙学中的统计方法【甲】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/2970">宇宙学中的统计方法【乙】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/4364">宇宙学中的统计方法【丙】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/4389">宇宙学中的统计方法【丁】</a></li>
+</ul>
+<hr />
+<p>【乙】中讲到的是 CMB 的统计。CMB 是一个<strong>二维</strong>面上的<strong>连续</strong>的温度场，而且是我们做了简单的假设说是 <strong>Gaussian</strong> 分布的。Galaxy Survey 跟 CMB 有很大的不同，它是<strong>三维</strong>空间中的<strong>分立</strong>的星系分布，而且这里 <strong>Non-Gaussian</strong> 很重要。</p>
+<h2>Galaxy Survey 的数据</h2>
+<p>Galaxy survey 是这样进行的：先把要进行巡天的天空分成足够小的区域，每个小区域有足够多的星系用来统计。然后都每个区域进行计数，分别除以每个小区域的体积就是星系的数密度，平均数密度就是总星系个数除以总体积。</p>
+<p>数学上，Tegmark 提出了一个 galaxy survey 中的一个像素点上的数据的定义<br />
+&#92;begin{equation}<br />
+&#92;Delta_i = &#92;int&#92;mathrm d^3x &#92;psi_i(&#92;vec x) &#92;left[ &#92;frac{n(&#92;vec x) &#8211; &#92;bar n(&#92;vec x)}{&#92;bar n(&#92;vec x)} &#92;right] &#92;label{eqn-def-pixeldata}<br />
+&#92;end{equation}<br />
+其中 &#92;(n(&#92;vec x)&#92;) 是位置 &#92;(&#92;vec x&#92;) 处的星系数密度，&#92;(&#92;bar n(&#92;vec x)&#92;) 是平均数密度，&#92;(&#92;psi_i(&#92;vec x)&#92;) 是不同的区域的权重。<br />
+对于 &#92;(&#92;psi_i(&#92;vec x)&#92;) 的选择根据情况而定，其中有两种选择，分别是实空间里的和 Fourier 空间里的，<br />
+&#92;[<br />
+&#92;psi_i^{&#92;text{CIC}}(&#92;vec x) = &#92;left&#92;{<br />
+&#92;begin{array}{ll}<br />
+&#92;bar n(&#92;vec x) &amp;&#92;mbox{if &#92;(&#92;vec x&#92;) is in the &#92;(i&#92;)th sub-volume}&#92;&#92;<br />
+0      &amp;&#92;mbox{otherwise}<br />
+&#92;end{array}<br />
+&#92;right.<br />
+&#92;]<br />
+这个权重是说，在考虑某个点的数据的时候，仅仅考虑这个点上的星系分布，其他的点处的星系分布不会影响当前位置的星系数密度。<br />
+而 Fourier 空间中的写法是<br />
+&#92;[<br />
+&#92;psi_i^{&#92;text{Fourier}}(&#92;vec x) = &#92;frac{e^{i&#92;vec k_i &#92;cdot &#92;vec x}}{V}&#92;left&#92;{<br />
+&#92;begin{array}{ll}<br />
+1 &amp;&#92;mbox{&#92;(&#92;vec x&#92;) inside the survey volume} &#92;&#92;<br />
+0 &amp;&#92;mbox{&#92;(&#92;vec x&#92;) outside survey volume}<br />
+&#92;end{array}<br />
+&#92;right.<br />
+&#92;]</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+扩充两种情况的物理。 flag 1
+</p>
+<h2>Galaxy Survey 的 likelihood</h2>
+<p>因为结构形成的理论比较复杂，星系的分布也是一个高度非线性的体系。所以想要写出一个简单的 likelihood 的表达式是很难的。</p>
+<p>定义 &#92;(&#92;Delta_i(&#92;vec x)&#92;) 为某个像素点的 fractional overdensity，这便是我们测量的量。物理上讲，我们可以知道 &#92;(&#92;Delta_i(x)&#92;) 的期望值应该是 0。我们可以定义出一个 covariance matrix<br />
+&#92;[ &#92;langle&#92;Delta_i &#92;Delta_j^*&#92;rangle = (C_S)_{ij} + (C_N)_{ij} &#92;]</p>
+<p>这很像是 CMB 数据分析的情况。</p>
+<h2>Covariance Matrix</h2>
+<p>Galaxy survey 与 CMB 不同的是，covariance matrix  更容易得到。</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+根据后面的章节补充 covariance matrix 的获得。补充无信号的时候 \(\langle n^2(\vec x) \rangle\) 与 \({\bar n}^2\) 并不相等。 flag 2
+</p>
+<h2>Window Function</h2>
+<p>如果把方程 (&#92;ref{eqn-def-pixeldata}) 重新写成<br />
+&#92;[ &#92;Delta_i = &#92;int&#92;mathrm d^3x &#92;psi_i(&#92;vec x) &#92;delta(&#92;vec x) &#92;]<br />
+即重定义了中括号里面的部分。&#92;(&#92;delta(&#92;vec x)&#92;) 是 overdensity 。<br />
+如此，covaricance matrix 变成了</p>
+<p>&#92;begin{eqnarray}<br />
+({&#92;bf C_S})_{ij} &amp;=&amp; &#92;langle &#92;Delta_i&#92;Delta_j &#92;rangle &#92;vert _{&#92;text{no noise}} &#92;nonumber&#92;&#92;<br />
+&amp;=&amp; &#92;int &#92;mathrm d x^3&#92;mathrm dx&#8217;^3 &#92;psi_i(&#92;vec x) &#92;psi_j(&#92;vec x&#8217;) &#92;langle &#92;delta(&#92;vec x) &#92;delta(&#92;vec x&#8217;)&#92;rangle &#92;nonumber&#92;&#92;<br />
+&amp;=&amp; &#92;int &#92;mathrm d x^3&#92;mathrm dx&#8217;^3 &#92;psi_i(&#92;vec x) &#92;psi_j(&#92;vec x&#8217;) &#92;xi(&#92;vec x &#8211; &#92;vec x&#8217;)&#92;nonumber<br />
+&#92;end{eqnarray}</p>
+<p>其中利用了</p>
+<p>&#92;begin{equation}<br />
+&#92;xi(&#92;vec x -&#92;vec x&#8217;) &#92;equiv &#92;langle &#92;delta(&#92;vec x)&#92;delta(&#92;vec x&#8217;) &#92;rangle  = &#92;int &#92;mathrm d^3 &#92;frac{P(k)e^{i&#92;vec k&#92;cdot (&#92;vec x &#8211; &#92;vec x&#8217;)}}{(2&#92;pi)^3} &#92;label{eqn-def-corr-power}<br />
+&#92;end{equation}</p>
+<p>而这里的 &#92;(x(&#92;vec x &#8211; &#92;vec x&#8217;)&#92;) 实际上是 correlation function。而 correlation function 正好用来定义 power spectrum，即方程 (&#92;ref{eqn-def-corr-power}) 第二个等号。</p>
+<p>&#92;begin{eqnarray}<br />
+({&#92;bf C_S})_{ij} &amp;=&amp; &#92;int &#92;mathrm d x^3&#92;mathrm dx&#8217;^3 &#92;int &#92;frac{&#92;mathrm d^3k}{2&#92;pi}&#92;frac{&#92;mathrm d^3k&#8217;}{2&#92;pi}&#92;frac{&#92;mathrm d^3k&#8221;}{2&#92;pi} &#92;tilde&#92;psi_i(&#92;vec k) &#92;tilde&#92;psi_j^*(&#92;vec k&#8217;) P(k&#8221;) e^{i[&#92;vec k+&#92;vec l&#8221;]&#92;cdot &#92;vec x &#8211; i[&#92;vec k&#8217; + &#92;vec k&#8221;]&#92;cdot &#92;vec x&#8217;} &#92;nonumber&#92;&#92;<br />
+&amp;=&amp; &#92;int &#92;frac{&#92;mathrm d^3k}{(2&#92;pi)^3} P(k)&#92;tilde &#92;psi_i(&#92;vec k) &#92;tilde &#92;psi_j^*(&#92;vec k) &#92;label{eqn-covmat}<br />
+&#92;end{eqnarray}</p>
+<p>分解 (&#92;ref{eqn-covmat}) 式为径向积分和立体角积分</p>
+<p>&#92;begin{eqnarray}<br />
+({&#92;bf C_S})_{ij} &amp;=&amp; &#92;int &#92;frac{&#92;mathrm dk}{k} &#92;int &#92;frac{&#92;mathrm d&#92;Omega_k}{4&#92;pi} &#92;frac{k^3 P(k)}{2&#92;pi^2} &#92;tilde &#92;psi_i(&#92;vec k) &#92;tilde &#92;psi_j^*(&#92;vec k) &#92;nonumber<br />
+&#92;end{eqnarray}</p>
+<p>这样可以把立体角积分的部分就是 window function 了。</p>
+<p>&#92;[ W_{ij}(k) = &#92;int &#92;frac{&#92;mathrm d&#92;Omega_k}{4&#92;pi} &#92;tilde &#92;psi_i(&#92;vec k) &#92;tilde &#92;psi_j(&#92;vec k) &#92;]</p>
+<p>从这里可以看到 galaxy survey 和 CMB 的相似之处： Window function 上，都是 weighting function 的 Fourier 变换的立体角积分，也就是立体角上的平均值，而剩余的项都与方向无关。</p>
+<h3>Volume-Limited Survey</h3>
+<p>这个例子是我们的巡天是限制在半径为 &#92;(R&#92;) 的区域内，并且选用 Fourier pixel 形式的 pixelization，那么 weighting function 在巡天范围之内可以写成<br />
+&#92;[&#92;psi_i(&#92;vec x) = &#92;frac{e^{i&#92;vec k_i &#92;cdot &#92;vec x}}{V} &#92;]</p>
+<p>做 Fourier 变换，得到<br />
+&#92;[&#92;tilde &#92;psi_i(&#92;vec x) = &#92;int_{&#92;vert x&#92;vert &lt;r } &#92;mathrm d^3x &#92;frac{e^{i&#92;vec k_i &#92;cdot &#92;vec x}}{V} e^{-i&#92;vec k &#92;cdot &#92;vec x} &#92;]</p>
+<p>积分<br />
+&#92;[ &#92;tilde &#92;psi_i(&#92;vec k) = &#92;int x^2 &#92;mathrm dx &#92;int &#92;mathrm d&#92;Omega &#92;frac{e^{i&#92;vec k_i &#92;cdot &#92;vec x-i&#92;vec k &#92;cdot &#92;vec x}}{V} = &#92;frac{4&#92;pi}{V&#92;vert &#92;vec k -&#92;vec k_i&#92;vert }  &#92;int _0^R &#92;mathrm dx x&#92;sin(&#92;vert &#92;vec k &#8211; &#92;vec k_i&#92;vert x) &#92;]</p>
+<p>最后<br />
+&#92;[ &#92;tilde &#92;psi_i(&#92;vec k) = &#92;frac{4&#92;pi}{V(&#92;vert &#92;vec k &#8211; &#92;vec k_i &#92;vert)^3} [ -&#92;vert &#92;vec k -&#92;vec k_i &#92;vert R &#92;cos(&#92;vert &#92;vec k -&#92;vec k_i &#92;vert R) +&#92;sin(&#92;vert &#92;vec k -&#92;vec k_i &#92;vert R) ] &#92;]</p>
+<p>做代换，&#92;(y&#92;equiv &#92;vert &#92;vec k -&#92;vec k_i &#92;vert R &#92;) ，&#92;(&#92;mu = &#92;cos &#92;phi_{&#92;vec k,&#92;vec k_i}&#92;)。然后将上面的 Fourier 空间的 weighting function 模方然后取角平均，得到 window function<br />
+&#92;[ W_{ii}(k) = &#92;frac{(4&#92;pi R^3)^2}{V^2} &#92;int_{-1}^1 &#92;frac{&#92;mathrm d&#92;mu}{2} &#92;int_{0}^{2&#92;pi} &#92;frac{&#92;mathrm d&#92;phi}{2&#92;pi} &#92;frac{ (&#92;sin y &#8211; y &#92;cos y)^2 }{ y^6 } &#92;&#92;<br />
+=&#92;frac{8&#92;pi^2 R^6}{V^2} &#92;int_{-1}^{1} &#92;frac{&#92;mathrm d&#92;mu}{y^6}(&#92;sin y &#8211; y &#92;cos y)^2 &#92;]</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+下面这个结果我没算，直接从书上抄来的。 flag 3</p>
+<p>最后利用 &#92;(y&#92;) 和 &#92;(&#92;mu&#92;) 的关系换积分元，利用 &#92;(V = 4&#92;pi R^3 /3&#92;)<br />
+&#92;[ W_{ii} = &#92;frac{9}{2k k_i R^2} &#92;int_{&#92;vert k &#8211; k_i&#92;vert R}^{&#92;vert k + k_i&#92;vert R} &#92;frac{&#92;mathrm dy}{y} j_1^2(y) &#92;]</p>
+<p>这里出现了 Bessel 函数。</p>
+<p>这个结果告诉我们一个很自然的结论，因为 Bessel 函数的原因，window function 会在比较大的 &#92;(k_i R&#92;) 的情况下，变得很尖锐，也就是说，最后为 covariance matrix 做贡献的，只有 &#92;(k = k_i&#92;) 附近的那些模；相反，如果 &#92;(k_i R&#92;) 比较小，那么 window function 的展宽比较大，这样就是说，对于这样情况，covariance matrix 的贡献来自于大多数模。</p>
+<p>下面是在这种巡天中，对其<strong>Covariance Matix 的几点讨论</strong></p>
+<p>从 window function，我们可以得到 covariance matrix。</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+具体过程暂略。flag 4
+</p>
+<p>当 &#92;(k_i R &#92;gt 1&#92;) 时，信号 matrix 和 noise matrix 分别是</p>
+<p>&#92;[(C_S)_{ii}&#92;sim &#92;frac{P(k_i)}{V}&#92;]</p>
+<p>&#92;[ (C_N)_{ii}=&#92;frac{1}{&#92;bar n V} &#92;]</p>
+<p>这样得到一个比较重要的比值</p>
+<p>&#92;begin{equation}<br />
+&#92;frac{ (C_S) } {(C_N) }&#92;vert _{ii} &#92;sim P(k_i) &#92;bar n<br />
+&#92;end{equation}</p>
+<p>这个结果是说，为了能够看清信号，功率谱越大越好，数密度平均值越大越好。实际上，在比较小的尺度上，这个信号噪声比已经很小了。</p>
+<p>这种 window function 的几个例子可以看图：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/VolumeLimitedSurveyWindowFunction.jpg" alt="" title="Volume Limited Survey Window Function" width="550"/></p>
+<p>对于大范围的 pixel，也就是小的 &#92;(k_i&#92;)，几乎所有的模都会对我们的 covariance matrix 有影响，而对于小范围的，也就是大的 &#92;(k_i&#92;)，只有接近 &#92;(k_i&#92;) 的才会对 covariance matrix 有影响。</p>
+<h3>Pencil-Beam Survey</h3>
+<p>Pencil-Beam Survey 就是无广度但是有深度的巡天，所探测的区域在 3D 上看来，像支铅笔，故名。</p>
+<p>写成数学形式，需要用到 step function &#92;(&#92;Theta()&#92;)，通过 step function 方法可以构造出在一个在 &#92;(z&#92;) 在 &#92;([-L/2,L/2]&#92;) 内的圆柱体，具体形式是</p>
+<p>&#92;[ &#92;psi_i(&#92;vec x) = &#92;frac{1}{&#92;pi R^2 L} &#92;Theta (z+L/2)&#92;Theta(L/2 -z)&#92;Theta(R^2 &#8211; x^2 -y^2) &#92;]</p>
+<p>对于这种情况，我们同样可以写出 weighting function 的 Fourier 变换，记 &#92;(&#92;vec q  = &#92;vec k_i &#8211; &#92;vec k&#92;)。<br />
+&#92;[ &#92;tilde&#92;psi_i(&#92;vec k) = &#92;int &#92;frac{&#92;mathrm d^3x}{&#92;pi R^2 L}e^{i(&#92;vec k_i &#8211; &#92;vec k)&#92;cdot &#92;vec x} &#92;Theta (z+L/2)&#92;Theta(L/2 -z)&#92;Theta(R^2 &#8211; x^2 -y^2) &#92;]</p>
+<p>这时候用柱坐标（积分元 &#92;(r&#92;mathrm dr&#92;mathrm d&#92;theta&#92;mathrm dz&#92;)）比较方便，</p>
+<p>&#92;[&#92;tilde &#92;psi_i(&#92;vec k) = &#92;frac{1}{&#92;pi R^2 L} &#92;int_{-L/2}^{L/2}&#92;mathrm d z e^{iq_z z} &#92;int_{0}^{R}&#92;mathrm dr r&#92;int_0^{2&#92;pi}&#92;mathrm d&#92;theta e^{iq_r r&#92;cos&#92;theta} &#92;label{eqn-} &#92;]</p>
+<p>通过写出各个分量的积分上下限，去掉了 step function。</p>
+<p>利用如下的积分技巧<br />
+&#92;[ &#92;int_0^&#92;infty &#92;mathrm dx x^{n-2} j_l^2(x) = 2^{n-4} &#92;pi &#92;frac{&#92;Gamma(l+n/2 &#8211; 1/2)&#92;Gamma(3-n)}{&#92;Gamma(l+5/2-n/2)&#92;Gamma^2(2-n/2)} &#92;]</p>
+<p>其中 &#92;(&#92;Gamma(z) = &#92;int_0^{&#92;infty} &#92;mathrm dt t^{z-1}e^{-t}&#92;)。这样就可以把 weighting function 写成 SphericalBesselJ 函数(&#92;(j_n(z) = &#92;sqrt{&#92;pi/2} /&#92;sqrt{z} J_{n+1/2}(z) &#92;))和 Bessel 函数(&#92;(J_{n+1/2}&#92;))的形式了。</p>
+<p>&#92;[ &#92;tilde &#92;psi_i(&#92;vec k) = &#92;frac{2}{R^2} j_0(q_z L/2)&#92;int_0^R &#92;mathrm dr r J_0(q_r r) &#92;]</p>
+<p>利用 &#92;[ &#92;frac{&#92;mathrm d}{&#92;mathrm dx}[xJ_1(x)] = x J_0(x) &#92;] 把积分写出来</p>
+<p>&#92;[ &#92;tilde &#92;psi_i(&#92;vec k) = &#92;frac{2}{(q_r R)} j_0(q_zL/2) J_1(q_rR) &#92;]</p>
+<p>有了 Weighting function，就可以模仿之前的方法计算 window function 了。Window function 的行为由 Bessel related functions 来决定的。下图是从 <em>Modern Cosmology</em> 里面截取出来的一张图。图中用是当 &#92;(q_r = 0&#92;) 的特殊情况。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/PencilBeamSurveyWindowFunction.jpg" alt="" title="Pencil-Beam Survey Window Function" width="550"/></p>
+<p>跟之前的情况不同的是，现在对于大范围的 pixel （小&#92;(k_i R&#92;)）来说，几乎所有的模都对 covariance matix 起作用，这与上面的球形的 volume-limited survey 是一样的，但是对于小范围的 pixel （大&#92;(k_i R&#92;)）来说，&#92;(k&#92;lt k_i&#92;) 大的模都会 covariance matrix 起作用，而之前的 volume-limited survey 却是只有 &#92;(k&#92;approx k_i&#92;) 的模才会对 covariance matrix 有贡献，原因就在于 pencil-beam 是长条状的，而 window function 是要对所有三个方向的模分量来平均的。在图中所示的情况下（&#92;(q_r  = 0&#92;)），如果是要取 &#92;(q_r&#92;) 和 &#92;(q_z&#92;) 的平均然后限制其大小在 &#92;(q_{&#92;text{limit}}&#92;) 内，自然 &#92;(q_z&#92;) 会比 &#92;(q_{&#92;text{limit}}&#92;) 大多了。所以即使对于较大的 &#92;(k_i R&#92;) 会有一些比 &#92;(k &#92;lt k_i&#92;) 的模贡献进来。</p>
+<hr />
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightpink;padding:2px 5px 2px 5px;">
+本文共有 4 个 flag。请仔细检阅并消除所有 flag。
+</p>
+<p></r></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4389" rel="bookmark" title="宇宙学中的统计方法【丁】">宇宙学中的统计方法【丁】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2970" rel="bookmark" title="宇宙学中的统计方法【乙】">宇宙学中的统计方法【乙】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2918" rel="bookmark" title="宇宙学中的统计方法【甲】">宇宙学中的统计方法【甲】 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4364/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>宇宙学中的统计方法【乙】</title>
+		<link>http://multiverse.lamost.org/blog/2970</link>
+		<comments>http://multiverse.lamost.org/blog/2970#comments</comments>
+		<pubDate>Sat, 01 Dec 2012 08:24:29 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2970</guid>
+		<description><![CDATA[宇宙学中的统计方法笔记系列，第二篇：CMB 中的统计方法。 系列文章目录： 宇宙学中的统计方法【甲】 宇宙学中的统计方法【乙】 宇宙学中的统计方法【丙】 宇宙学中的统计方法【丁】 继续前面的 likelihood 的讨论，不过现在要扩展到 CMB 中来。与前面的不同的地方是，之前的例子中，我们的测量是每次一个值的，但是在 CMB 的测量中，我们的数据是一个分布，而且之前的例子的每个数据点我们是有理论可以完全预测的，而在 CMB 中，我们的分布的一个特定的数据点，我们是没有理论来完整预测的，而是只有一个对所有点的统计的预测。 CMB 的数据记录和相关理论 CMB 测量方法和数据记录待补充。flag 1 CMB 的观测中，我们把天空分成很多像素点，针对每个像素点记录温度各项异性。下面的分析中我们使用的温度各项异性，是相对于平均温度的差异。 对于各项异性的理论预言，我们选择较为简单的 Gaussian 分布的情况，即每个像素点上的温度差异分布符合 Gaussian 分布。 单像素点的 likelihood 现在我们先建立数学描述。对于天空上的一个点，我们可以测量温度各项异性，其值为 &#92;(s&#92;)，而预测值（estimator）记做 &#92;(&#92;Delta&#92;)。跟前面的例子一样，我们同样会有一个代表预测结果可靠性的量（ Modern Cosmology 中把这个叫做 variance of the estimator）的量...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4389" rel="bookmark" title="宇宙学中的统计方法【丁】">宇宙学中的统计方法【丁】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4364" rel="bookmark" title="宇宙学中的统计方法【丙】">宇宙学中的统计方法【丙】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2918" rel="bookmark" title="宇宙学中的统计方法【甲】">宇宙学中的统计方法【甲】 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>宇宙学中的统计方法笔记系列，第二篇：CMB 中的统计方法。<span id="more-2970"></span></p>
+
+<p>系列文章目录：</p>
+<ul>
+<li><a href="http://multiverse.lamost.org/blog/2918">宇宙学中的统计方法【甲】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/2970">宇宙学中的统计方法【乙】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/4364">宇宙学中的统计方法【丙】</a></li>
+<li><a href="http://multiverse.lamost.org/blog/4389">宇宙学中的统计方法【丁】</a></li>
+</ul>
+<hr />
+<p>继续前面的 likelihood 的讨论，不过现在要扩展到 CMB 中来。与前面的不同的地方是，之前的例子中，我们的测量是每次一个值的，但是在 CMB 的测量中，我们的数据是一个分布，而且之前的例子的每个数据点我们是有理论可以完全预测的，而在 CMB 中，我们的分布的一个特定的数据点，我们是没有理论来完整预测的，而是只有一个对所有点的统计的预测。</p>
+<h2>CMB 的数据记录和相关理论</h2>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+CMB 测量方法和数据记录待补充。flag 1
+</p>
+<p>CMB 的观测中，我们把天空分成很多像素点，针对每个像素点记录温度各项异性。下面的分析中我们使用的温度各项异性，是相对于平均温度的差异。</p>
+<p>对于各项异性的理论预言，我们选择较为简单的 Gaussian 分布的情况，即每个像素点上的温度差异分布符合 Gaussian 分布。</p>
+<h2>单像素点的 likelihood</h2>
+<p>现在我们先建立数学描述。对于天空上的一个点，我们可以测量温度各项异性，其值为 &#92;(s&#92;)，而预测值（estimator）记做 &#92;(&#92;Delta&#92;)。跟前面的例子一样，我们同样会有一个代表预测结果可靠性的量（ <em>Modern Cosmology</em> 中把这个叫做 variance of the estimator）的量 &#92;(C_N&#92;)，类似前面的例子，对于 &#92;(s&#92;) 和 &#92;(&#92;Delta&#92;) 同样有一个分布，<br />
+&#92;[ P[s] = &#92;frac{1}{&#92;sqrt{ 2&#92;pi C_N }} &#92;exp&#92;left( -&#92;frac{(&#92;Delta &#8211; s)^2}{2C_N}&#92;right) &#92;]<br />
+对于理论预测，如果我们取暴涨模型所给定的 Gaussian 分布，那么就有下面的这个关于 &#92;(S&#92;) 的分布，其中参量有 &#92;(s&#92;) 和 &#92;(C_S&#92;)<br />
+&#92;[ P[&#92;theta(&#92;Delta,s)] = &#92;frac{1}{&#92;sqrt{2&#92;pi C_S}}&#92;exp&#92;left( -&#92;frac{s^2}{2C_S}&#92;right) &#92;]</p>
+<p>现在，我们关心的两个量是 &#92;(&#92;Delta&#92;) 和 &#92;(C_S&#92;)，因为 &#92;(&#92;Delta&#92;) 是我们要的温度各项异性值，而 &#92;(C_S&#92;) 直接跟我们后面要了解的一个量 &#92;(C_l&#92;) 关联，&#92;(C_l&#92;) 是我们要的最终结果，而 &#92;(s&#92;) 这样的量我们并不关心。所以，现在这种情况下，我们需要求的 likelihood 其实是 &#92;(P[&#92;Delta|C_S]&#92;)，也就是给定一个带有参数 &#92;(C_l&#92;) 的理论，得到数据 &#92;(&#92;Delta&#92;) 的概率。<br />
+那么根据概率论（之前的例子中有具体计算步骤）<br />
+&#92;[ P[&#92;Delta|C_S] = &#92;sum_s P[&#92;Delta|s] &#92;times P[s|C_S] &#92;]</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+在 <em>Modern Cosmology</em> 中，Scott Dodelson 并没有对这里的 likelihood 进行很多解释。这里 flag 一下，提醒以后注意回来检查精简这段描述。flag 2
+</p>
+<p>于是 Likelihood function 是概率密度的积分<br />
+&#92;[ {&#92;scr L} = &#92;int^&#92;infty_{-&#92;infty} &#92;mathrm ds &#92;frac{1}{&#92;sqrt{2&#92;pi C_S}}&#92;exp&#92;left( -&#92;frac{s^2}{2C_S}&#92;right) &#92;frac{1}{&#92;sqrt{ 2&#92;pi C_N }} &#92;exp&#92;left( -&#92;frac{(&#92;Delta &#8211; s)^2}{2C_N}&#92;right) &#92;]</p>
+<p>定义 &#92;(C=C_S+C_N&#92;) 是 full covariance matrix，把  &#92;(s&#92;) 积分积掉，</p>
+<p>&#92;begin{eqnarray}<br />
+{&#92;scr L} &amp;=&amp; &#92;int &#92;mathrm ds &#92;frac{1}{2&#92;pi &#92;sqrt{C_S C_N}} &#92;exp&#92;left( -&#92;frac{s^2 C_N + (&#92;Delta &#8211; s)^2C_S}{2C_S C_N} &#92;right) &#92;&#92;<br />
+&amp;=&amp; &#92;frac{1}{2&#92;pi&#92;sqrt{C_S C_N}} &#92;int &#92;mathrm ds &#92;exp&#92;left( -&#92;frac{ C(s- C_S &#92;Delta/C)^2 + &#92;Delta^2 (C_S C_N/C) }{2C_N C_S} &#92;right) &#92;&#92;<br />
+&amp;=&amp; &#92;frac{1}{&#92;sqrt{2&#92;pi C_S}}&#92;exp&#92;left( &#8211; &#92;frac{&#92;Delta^2}{2C} &#92;right) &#92;int &#92;mathrm d(s &#8211; C_S&#92;Delta/C)&#92;exp&#92;left( &#8211; &#92;frac{C(s &#8211; C_S&#92;Delta/C)^2 }{2C_S C_N} &#92;right) &#92;&#92;<br />
+&amp;=&amp; &#92;frac{1}{&#92;sqrt{2&#92;pi C}}&#92;exp&#92;left( -&#92;frac{&#92;Delta^2}{2C} &#92;right)<br />
+&#92;end{eqnarray}</p>
+<h2>多像素点情况</h2>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+待补充。详细说明为何可以使用矩阵形式。flag 3
+</p>
+<p>这样我们就得到了天空中一个像素点的情况，可以推广到 N 个像素点的情况，<br />
+&#92;begin{equation}<br />
+{&#92;scr L} = &#92;frac{1}{(2&#92;pi)^{N/2}(&#92;mathrm {det} &#92;bf C)^{1/2}} &#92;exp&#92;left( &#8211; &#92;frac{1}{2} &#92;bf &#92;Delta &#92;bf C^{-1} &#92;bf&#92;Delta &#92;right) &#92;label{eqn-multipixellikelihood}<br />
+&#92;end{equation}</p>
+<p>上式（方程(&#92;ref{eqn-multipixellikelihood})）中 &#92;(&#92;Delta&#92;) 是长度为 &#92;( N &#92;)测量数据矢量，而 &#92;(C&#92;) 是 &#92;(N&#92;times N&#92;) 的 full corariance matrix。</p>
+<h2>Covariance Matrix</h2>
+<p>上面出现的三个 covariance matrix 分别是 &#92;(C_S&#92;)，&#92;(C_N&#92;)，&#92;(C&#92;)。其中 &#92;(C_S&#92;) 是出现在 &#92;(s&#92;) 的分布中的，也就是说是理论上 &#92;(s&#92;) 的分布宽度，称之为 signal covariance matrix，与测量中的噪声无关。从 &#92;(C_S&#92;) 到 &#92;(C&#92;) 其实是个很复杂的过程，严格的说，&#92;(C&#92;) 中需要考虑到任意的两个 parameter 直接的关联。</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+详细说明如何关联。flag 4
+</p>
+<h3>Covariance Matrix 的求解</h3>
+<p>如果我们之考虑 covariance matrix 的对角项，<br />
+&#92;[ C_{S,ii} &#92;equiv &#92;langle s_i s_i &#92;rangle &#92;]<br />
+其中元素<br />
+&#92;[ s_i = &#92;int &#92;mathrm d  &#92;hat n&#92;Theta(&#92;hat n) B_i(&#92;hat n) &#92;]<br />
+其中 &#92;(&#92;Theta(&#92;hat n)&#92;) 是温度背景，&#92;(B_i&#92;) 是 beam pattern，也就是代表信号的性质的量。对于每个像素点都要把所有的方向的光子都考虑进来。<br />
+把 &#92;(s_i&#92;) 带入 &#92;(C_{S,ii}&#92;) 可以得到 covariance matrix</p>
+<p>\[ \frac{C_{S,ii}}{T^2} = \int \mathrm d\hat n \int \mathrm d\hat n&#8217; B_i(\hat n)B_i(\hat n&#8217;) \sum_{lm} Y_{lm}(\hat n)\sum_{l&#8217;m&#8217;} Y_{l&#8217;m&#8217;}^*(\hat n&#8217;)\langle a_{lm}a_{l&#8217;m&#8217;}^* \rangle \]</p>
+<p>其中用到了<br />
+&#92;[ &#92;Theta(&#92;hat n) = &#92;sum_{i=1}^&#92;infty &#92;sum_{m=-l}^{l} a_{lm} T Y_{lm}(&#92;hat n) &#92;]</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+*Modern Cosmology* 中写 \(\Theta\) 时不含 \(T\)，但是书中 11.35 式却含有 \(T\)，所以我把 \(T\) 添加到了 \(\Theta\) 的分解中。 flag 5
+</p>
+<p>把下式带入 covariance matrix 的表达式<br />
+&#92;[ &#92;langle a_{lm} &#92;rangle; &#92;langle a_{lm} a_{l&#8217;m&#8217;}^* &#92;rangle = &#92;delta_{ll&#8217;}&#92;delta_{mm&#8217;}C_l &#92;]<br />
+把 &#92;(l&#8217;,m&#8217;&#92;) 的求和求出来<br />
+&#92;[ &#92;frac{C_{S,ii}}{T^2} = &#92;int &#92;mathrm d&#92;hat n &#92;int &#92;mathrm d&#92;hat n&#8217; B_i(&#92;hat n) B_i(&#92;hat n&#8217;) &#92;sum_{l} C_l &#92;sum_m Y_{lm}(&#92;hat n) Y_{lm}^*(&#92;hat n&#8217;) &#92;]</p>
+<p>我们知道球谐函数有如下性质<br />
+&#92;[ &#92;sum_m Y_{lm}(&#92;hat n)Y_{lm}^*(&#92;hat n&#8217;) = (2l+1) P_l (&#92;hat n&#92;cdot  &#92;hat n&#8217;)/4&#92;pi &#92;]<br />
+定义<br />
+&#92;[ W_{l,ii} = &#92;int &#92;mathrm d&#92;hat n&#92;int &#92;mathrm d&#92;hat n&#8217; B_i(&#92;hat n)B_i(&#92;hat n&#8217;) P_l(&#92;hat n&#92;cdot &#92;hat n&#8217;) &#92;]<br />
+其中的 &#92;(&#92;hat n &#92;cdot &#92;hat n&#8217;&#92;) 可以写成 &#92;(&#92;cos(x)&#92;)，其中 &#92;(x&#92;) 是 &#92;(&#92;hat n&#92;) 和 &#92;(&#92;hat n&#8217;&#92;) 之间所夹的弧长。这样我们可以在一个二维平面上定义两个矢量，&#92;(&#92;vec x&#92;) 和 &#92;(&#92;vec x&#8217;&#92;)，使得  &#92;( &#92;cos(x) = &#92;cos(|&#92;vec x &#8211; &#92;vec x&#8217;|) &#92;)，即 &#92;(&#92;hat n&#92;cdot &#92;hat n&#8217; = &#92;cos(&#92;vec x &#8211; &#92;vec x&#8217;)&#92;)<br />
+于是<br />
+&#92;[ W_{l,ii} = &#92;int &#92;mathrm d^2x&#92;int &#92;mathrm d^2 x&#8217; B_i(x) B_i(x&#8217;) P_l(&#92;cos(|&#92;vec x &#8211; &#92;vec x&#8217;|) ) &#92;]</p>
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightblue;padding:2px 5px 2px 5px;">
+为什么变成二次导数了？我求的是一次导数。回来看看。下面还是继续按照 *Modern Cosmology* 里面所讲的来写。 flag 6
+</p>
+<p>所以 covariance matrix 变成<br />
+&#92;[ &#92;frac{C_{S,ii}}{T^2} = &#92;sum_l &#92;frac{2l+1}{4&#92;pi} C_l W_{l,ii} &#92;]</p>
+<p>关于上面提到的 window function &#92;(W_{l,ii}&#92;)， 还可以继续化简。首先，我们把 Legendre polynomials 表达出来，不过这里要用一个近似，就是在 l 很大的时候， Legendre polynomials 近似变成 Bessel function.<br />
+&#92;[ P_{l} (&#92;cos(|&#92;vec x &#8211; &#92;vec x&#8217;|)) &#92;rightarrow J_0 (l|&#92;vec x &#8211; &#92;vec x&#8217;|) = &#92;frac{1}{2&#92;pi} &#92;int_0^{2&#92;pi} &#92;mathrm d&#92;phi &#92;exp{-il |&#92;vec x &#8211; &#92;vec x&#8217;| &#92;cos&#92;phi} &#92;]<br />
+其中 &#92;(&#92;phi&#92;) 的意思是 &#92;(l&#92;) 和 &#92;(&#92;vec x &#8211; &#92;vec x&#8217;&#92;) 之间的额夹角。&#92;(l&#92;) 的方向可以选做某条坐标轴的方向比较方便。<br />
+这样我们就可以把 window function 简化成<br />
+&#92;[ W_{l,ii} = &#92;frac{1}{2&#92;pi} &#92;int_0^{2&#92;pi}&#92;mathrm d&#92;phi |&#92;tilde B_i(&#92;vec l)|^2 &#92;]<br />
+其中<br />
+&#92;[ &#92;tilde B_i(&#92;vec l) &#92;equiv &#92;int &#92;mathrm d^2x B_i(&#92;vec x)e^{-i &#92;vec l &#92;vec x} &#92;]<br />
+是 &#92;(B_i&#92;) 的 Fourier 变换。</p>
+<p>这样我们就可以把 covariance matrix 的对角项表示出来了，选择特定的 window function，就可以求解。</p>
+<p>但是这只是对角项，实际上非对角项也是存在的，严格的计算需要把非对角项也包括进来。</p>
+<h3>Window Function 的例子</h3>
+<h4>Gaussian Beam</h4>
+<p>对于 Guassian beam 的情况，beam pattern 写作<br />
+&#92;[ B_i(&#92;vec x) = &#92;frac{1}{2&#92;pi &#92;sigma} &#92;exp&#92;left( -&#92;frac{(&#92;vec x -&#92;vec x_i)^2}{2&#92;sigma^2} &#92;right) &#92;]<br />
+先令 &#92;(&#92;vec x_i = 0&#92;)，方便 Fourier 变换。<br />
+Fourier 变换得到<br />
+&#92;[ &#92;tilde B_i(&#92;vec l) =&#92;frac{1}{2&#92;pi &#92;sigma^2} &#92;int &#92;mathrm d^2x e^{-i&#92;vec l &#92;cdot&#92;vec x} &#92;exp&#92;left( -&#92;frac{x^2}{2&#92;sigma^2} &#92;right) = e^{-l^2&#92;sigma^2/2} &#92;]<br />
+因为 Fourier 变换之后并不涉及 &#92;(&#92;vec l&#92;) 方向，所以 window function 可以立刻得出来<br />
+&#92;[ W_{l,ii} = e^{-l^2&#92;sigma^2} &#92;]</p>
+<p>这个函数的行为我们都很熟悉，如下所示，</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/expplot.jpg" width="500" /></p>
+<p>也就是说对于很大的 &#92;(l&#92;)，window function 会消失。换句话说，因为很大 &#92;(l&#92;) 正好对应很小的角分辨率，所以就是说，对于那些角分辨率小于 beam 的宽度的时候，这部分对于 covariance matrix 的贡献就自动被 window function 过滤掉了。</p>
+<p>下面是一个例子。左上图是实空间里面的 beam 的 pattern，右上图表示 beam 做 Fourier 展开后在 Fourier 空间中的 pattern，下部图表示 window function。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/GaussianBeam.png" alt="" title="GaussianBeam" width="550" /></p>
+<h4>Differencing a Gaussian Beam</h4>
+<p>Beam function 也可以选择如下形式<br />
+&#92;[ B(x,y) = &#92;delta(y)[&#92;delta(x-x_0) &#8211; &#92;delta(x + x_0)] &#92;]<br />
+这样的 beam function 意思是？</p>
+<p>做 Fourier 变换，得到<br />
+&#92;[ &#92;tilde B (&#92;vec l) = 2i&#92;sin(l_x x_0) &#92;]</p>
+<p>带入 window function 得到<br />
+&#92;begin{eqnarray}<br />
+W_l &amp;=&amp; &#92;frac{1}{2&#92;pi} 4 &#92;int _0^{2&#92;pi} &#92;mathrm d&#92;phi &#92;sin^2(lx_0&#92;cos&#92;phi) &#92;&#92;<br />
+&amp;=&amp; &#92;frac{1}{&#92;pi}&#92;int_0^{2&#92;pi} &#92;mathrm d&#92;phi (1-&#92;cos(2lx_0&#92;cos&#92;phi)) &#92;&#92;<br />
+&amp;=&amp; 2(1-P_l[&#92;cos(2x_0)])<br />
+&#92;end{eqnarray}<br />
+这里又用了前面用过的 Bessel function 和 Legendre function 之间的近似。</p>
+<p>那么如果 beam 的宽度不是无穷小，而是有限大的，那么前面的 &#92;(&#92;delta&#92;) 函数就变化成积分就好了，也就是说<br />
+&#92;[ B(x,y) =  &#92;frac{ 2&#92;pi &#92;sigma^2 } &#92;int &#92;mathrm dx&#8217;&#92;mathrm dy&#8217;&#92;exp&#92;left( -&#92;frac{(x-x&#8217;)^2 + (y -y&#8217;)^2}{2&#92;sigma} &#92;right) &#92;times &#92;delta(y&#8217;) [&#92;delta(x&#8217; &#8211; x_0) &#8211; &#92;delta(x&#8217; + x_0)] &#92;]</p>
+<p>那么相应的 window function 变换就是<br />
+&#92;[ W_l = e^{-l^2&#92;sigma^2} (1 &#8211; P_l[&#92;cos(2x_0)]) &#92;]</p>
+<p>下面是一个例子。左上图是实空间里面的 beam 的 pattern，右上图表示 beam 做 Fourier 展开后在 Fourier 空间中的 pattern，下部图表示 window function。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/DifferencingGaussianBeam.png" alt="" title="Differencing Gaussian Beam" width="550" /></p>
+<p>下图是一个更加紧致的 beam 的情况。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/DifferencingGaussianBeam2.jpg" alt="" title="DifferencingGaussianBeam2" width="550" /></p>
+<hr />
+<p style="background:#f0ffff;margin:5px 15px 5px 20px;border:1px solid lightblue;border-left:8px solid lightpink;padding:2px 5px 2px 5px;">
+本文共有 6 个 flag。请仔细检阅并消除所有 flag。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4389" rel="bookmark" title="宇宙学中的统计方法【丁】">宇宙学中的统计方法【丁】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4364" rel="bookmark" title="宇宙学中的统计方法【丙】">宇宙学中的统计方法【丙】 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2918" rel="bookmark" title="宇宙学中的统计方法【甲】">宇宙学中的统计方法【甲】 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2970/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>天体周围引力场和 Birkhoff 定理</title>
+		<link>http://multiverse.lamost.org/blog/4090</link>
+		<comments>http://multiverse.lamost.org/blog/4090#comments</comments>
+		<pubDate>Sat, 06 Oct 2012 15:58:20 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4090</guid>
+		<description><![CDATA[在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。 Birkhoff 定理 Birkhoff 定理的证明用到了如下条件: 真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。 不同的度规形式 但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[1][2] &#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<p>在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。</p>
+<h2>Birkhoff 定理</h2>
+<p>Birkhoff 定理的证明用到了如下条件:</p>
+<ul>
+<li>真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。<span id="more-4090"></span></li>
+</ul>
+<h2>不同的度规形式</h2>
+<p>但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[<sup id="fnref-4090:1"><a href="#fn-4090:1" rel="footnote">1</a></sup>][<sup id="fnref-4090:2"><a href="#fn-4090:2" rel="footnote">2</a></sup>]</p>
+<p>&#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt &#92;]</p>
+<p>在刘辽的书中，他做了坐标变换，然后变成了一个更加漂亮的形式：</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>新的形式（下文称为形式二，第一个度规称为形式一）是一个正交的度规，更简单更漂亮。但是有一个问题，虽然这两个度规在本质上是等价的，但是在用来求解问题的时候，却会出现不同的结果，这是因为不同的坐标限制了不同的观者族，而不同的观者对于某些观测会得到不同的结论。[<sup id="fnref-4090:3"><a href="#fn-4090:3" rel="footnote">3</a></sup>]</p>
+<p>比如说，我们取上面两种形式的度规都是对角化的形式，也就是说扔掉了 &#92;(&#92;beta(r,t)&#92;)。这这样一个简单情况下，&#92;(&#92;phi&#92;) 坐标的 scale 两种形式有很大的不同，一个是包含 &#92;(r&#92;) 和 &#92;(t&#92;) 的一个函数 &#92;(&#92;alpha(r,t)&#92;)，另一种形式却没有。这一点会对后面各个几何量的求解带来很大的不同，因为涉及到了导数。</p>
+<h2>计算证明</h2>
+<p>基于这一点考虑，我算了一种简单的情况，就是</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + f(t) r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>为了方便计算，对一些量进行了重定义，最后度规写为如下形式：</p>
+<p>&#92;[<br />
+&#92;left(<br />
+&#92;begin{array}{cccc}<br />
+ -e^{2 &#92;nu [r]} a[t]^2 &amp; 0 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; e^{2 &#92;lambda [r]} a[t]^2 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; r^2 a[t]^2 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; 0 &amp; r^2 a[t]^2 &#92;text{Sin}[&#92;text{theta}]^2<br />
+&#92;end{array}<br />
+&#92;right)<br />
+&#92;]</p>
+<p>放在带 &#92;(&#92;Lambda&#92;) 的场方程中，得到的结果如下：</p>
+<p>需要满足一下四个方程</p>
+<p>&#92;[&#92;frac{3 a'[t]^2}{a[t]^2}+&#92;frac{e^{-2 &#92;lambda [r]+2 &#92;nu [r]} &#92;left(-1+e^{2 &#92;lambda [r]}+2 r &#92;lambda &#8216;[r]&#92;right)}{r^2}==e^{2 &#92;nu [r]} &#92;Lambda  a[t]^2&#92;]</p>
+<p>&#92;[ e^{2 &#92;lambda } r &#92;Lambda  a[t]^3+&#92;frac{e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a'[t]^2}{a[t]}+&#92;frac{a[t] &#92;left(1-e^{2 &#92;lambda [r]}+2 r &#92;nu &#8216;[r]&#92;right)}{r}==2 e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a&#8221;[t] &#92;]</p>
+<p>&#92;[ r &#92;left(r &#92;Lambda  a[t]^2+&#92;frac{e^{-2 &#92;nu [r]} r a'[t]^2}{a[t]^2}-&#92;frac{2 e^{-2 &#92;nu [r]} r a&#8221;[t]}{a[t]}+e^{-2 &#92;lambda [r]} &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>&#92;[ &#92;frac{1}{a[t]}e^{-2 (&#92;lambda [r]+&#92;nu [r])} r &#92;text{Sin}[&#92;text{theta}] &#92;left(e^{2 (&#92;lambda [r]+&#92;nu [r])} r &#92;Lambda  a[t]^4+e^{2 &#92;lambda [r]} r a'[t]^2-2 e^{2 &#92;lambda [r]} r a[t] a&#8221;[t]+e^{2 &#92;nu [r]} a[t]^2 &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>上面的求导是针对各自自变量的求导。</p>
+<p>自然其中第三和第四是在我们这里等价的。</p>
+<p>经过简化，这个度规的需要满足如下要求：</p>
+<p>&#92;[ &#92;frac{1}{r^2} (1-e^{2&#92;lambda}) + &#92;frac{1}{r} (&#92;nu&#8217; + &#92;lambda&#8217;) +&#92;lambda&#8217;&#92;nu&#8217; -&#92;nu&#8217;^2 &#8211; &#92;nu&#8221; =0 &#92;]<br />
+外加上面的第一个方程。</p>
+<p>从这样的式子里面，是无法得到 Birkhoff 定理的。因为上面的 &#92;(&#92;lambda&#92;) 和 &#92;(&#92;nu&#92;) 是 &#92;(r&#92;) 的函数，无法分离成 &#92;(r&#92;) 多项式形式，从而无法给出含时量的限制。</p>
+<h2>更多</h2>
+<p>其实这个理解也没有问题，因为我所使用的度规和形式二是不同的观者所使用的坐标。其他的理解在后续文章的实例中提到。我主要关心一个问题，如果我们把银河系看做浸泡在一个能动张量为 &#92;(T_{&#92;mu&#92;nu}&#92;) 的宇宙中，那么其引力场分布的解析解如何呢？</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-4090:1">
+《广义相对论》（第二版）， 刘辽、赵峥，P145。&#160;<a href="#fnref-4090:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:2">
+我习惯于 +2 号差，所以将刘辽赵峥书中的度规做了改动。&#160;<a href="#fnref-4090:2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:3">
+一个例子，观者 A 观测到静止的电荷 E 不会辐射光子，但是一个加速运动的观者 B 却会观测到 E 辐射光子。&#160;<a href="#fnref-4090:3" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4090/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>谁动了我的飞船——『膨胀和收缩』</title>
+		<link>http://multiverse.lamost.org/blog/3968</link>
+		<comments>http://multiverse.lamost.org/blog/3968#comments</comments>
+		<pubDate>Fri, 05 Oct 2012 17:00:52 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Propulsion Tech]]></category>
+		<category><![CDATA[Star Trek]]></category>
+		<category><![CDATA[Warp Drive]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=3968</guid>
+		<description><![CDATA[前一节：谁动了我的飞船——曲率推进概览 正文 前情回顾 地球收到来自遥远的 Gliese 581 的信号，我们需要驱船前往，只是前提是有一艘能够快速航行的飞船。你作为 IIA 的推进技术专家，最终决定采用 warp drive 来推动这艘前所未有的飞船。 基本构思 为了看明白对时空的操纵是如何影响我们的推进技术的，先看两个简单的例子吧。 一 假设我们和 Gliese 581 d 行星一样生活在一个膨胀时空中，在目前时刻我们相距 20.3 ly。时空图如下所示，将这个时空图弯曲起来是为了能够让我们看的更清楚，并没有其他的深刻的含义。[1] 图中纵向网格线的意义是，地球参考系中钉在不同时空点的物体的世界线。其中褐色的线为地球，黄色的线为 Gliese 581 d，红色的线表示从行星出发的光子（这里我们并未用到）。从图中的网格可以看到，这是一个在不停膨胀的时空，虽然地球和飞船之间的网格数不变，但是由于时空的膨胀，每个网格的长度所代表的物理的距离已经越来越大，如果某时刻时空膨胀停止了，那么我们现在从地球到 Gliese 581 d 的距离已经变大。 二 下面假设我们跟 Gliese 581 d 行星一样生活在一个收缩的时空中。时空图如下：[2] 与前面例一的情况相反，这是一个不断收缩的宇宙。其中黄色线为地球，褐色线为 Gliese 581 d。同上面类似的理由，在后来时刻，地球和...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3881" rel="bookmark" title="谁动了我的飞船——曲率推进概览">谁动了我的飞船——曲率推进概览 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>前一节：<a href="http://multiverse.lamost.org/blog/3881">谁动了我的飞船——曲率推进概览</a></p>
+<h1><span style="color:white;">正文</span></h1>
+<h2><strong>前情回顾</strong></h2>
+
+<p>地球收到来自遥远的 Gliese 581 的信号，我们需要驱船前往，只是前提是有一艘能够快速航行的飞船。你作为 IIA 的推进技术专家，最终决定采用 warp drive 来推动这艘前所未有的飞船。</p>
+<h2><strong>基本构思</strong></h2>
+<p>为了看明白对时空的操纵是如何影响我们的推进技术的，先看两个简单的例子吧。<span id="more-3968"></span></p>
+<p><strong>一</strong></p>
+<p>假设我们和 Gliese 581 d 行星一样生活在一个膨胀时空中，在目前时刻我们相距 20.3 ly。时空图如下所示，将这个时空图弯曲起来是为了能够让我们看的更清楚，并没有其他的深刻的含义。[<sup id="fnref-3968:1"><a href="#fn-3968:1" rel="footnote">1</a></sup>]</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/10/Embedded_LambdaCDM_geometry-1.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/10/Embedded_LambdaCDM_geometry-1.png" alt="" title="Embedded_LambdaCDM_geometry (1)" width="560" /></a></p>
+<p>图中纵向网格线的意义是，地球参考系中钉在不同时空点的物体的世界线。其中褐色的线为地球，黄色的线为 Gliese 581 d，红色的线表示从行星出发的光子（这里我们并未用到）。从图中的网格可以看到，这是一个在不停膨胀的时空，虽然地球和飞船之间的网格数不变，但是由于时空的膨胀，每个网格的长度所代表的物理的距离已经越来越大，如果某时刻时空膨胀停止了，那么我们现在从地球到 Gliese 581 d 的距离已经变大。</p>
+<p><strong>二</strong></p>
+<p>下面假设我们跟 Gliese 581 d 行星一样生活在一个收缩的时空中。时空图如下：[<sup id="fnref-3968:2"><a href="#fn-3968:2" rel="footnote">2</a></sup>]</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/10/Embedded_LambdaCDM_geometry.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/10/Embedded_LambdaCDM_geometry.png" alt="" title="Embedded_LambdaCDM_geometry" width="560" /></a></p>
+<p>与前面例一的情况相反，这是一个不断收缩的宇宙。其中黄色线为地球，褐色线为 Gliese 581 d。同上面类似的理由，在后来时刻，地球和 Gliese 581 d 之间的物理距离越来越小。在晚期，我们旅行到 Gliese 581 d 行星所需走的距离要比早期少。</p>
+<p>这两截然相反的例子说明了不同的时空对我们旅行的影响。如果我们能够操控时空，使之成为<strong>二</strong>所表现的收缩型，那么我们就可以把我们的目的地拉到我们身边来，想要飞到目的地也就容易多了。</p>
+<p>但是如果我们把整个目的地拉到地球附近的话，会导致很多天体靠近，改变星系的结构。</p>
+<p>那么我们就让飞船和目的地之间的时空收缩，飞船和家之间的时空膨胀，这样就可以尽量保持地球和目的地之间的原有距离。</p>
+<p>等等，我们这是在做什么？我们要改变宇宙的演化么？！这可不成，第一我们没有足够的能源，第二我们不能因为一次小小的旅行破坏了这么大的「星际生态」吧。[<sup id="fnref-3968:3"><a href="#fn-3968:3" rel="footnote">3</a></sup>]</p>
+<h2><strong>物理图像</strong></h2>
+<p>那我们可以采取的措施是？</p>
+<p>改变局域的时空。也就是说，我们只改变飞船附近的时空结构，在远离飞船的地方的时空要回归到宇宙原来的时空。</p>
+<p>那么从物理上讲，这是否可行呢？</p>
+<p><!--既然是前所未有的探索，你自然应当评估尽可能多的方案，然后找到 global fittest. </p>
+<p>对于曲率推进，广义上讲，我们可以认为任何通过操作时空背景来推动飞船的推进方式，都可以归到曲率推进一类中。</p>
+<p>这么一来，如果考虑 3+1 形式，大致可以分成两类的，一类是仅仅涉及空间操作，比如仅仅压缩飞船前方空间膨胀飞船后方空间，实现起来应该是比较困难；另一类是涉及到时间的操控。</p>
+<p>比如有这样一个例子。</p>
+<p>我们知道宇宙中存在一种现象，就是大尺度上时空在膨胀，也就是说，可能存在一种有着很大的压强的能量（「暗能量」），或者引力定律在大尺度上需要修改，不管如何，总之，有种现象是时空膨胀。这样一来，如果这种现象的「元凶」是暗能量，那么我们可以局域增加暗能量的能量密度，是的该区域有着很大的压强，这样时空就会「被膨胀」，反之，如果减小，那么收到周围的暗能量影响，该区域的时空就会被压缩。<br />
+形象的来想想，我们可以把时空看做流体（这是宇宙学/广相中常用的假设），而且是可压缩的流体。如此一来，如果我们可以压缩膨胀时空来驱动我们了。</p>
+<p>还是来个详细的例子吧。</p>
+<p>现在假定我们--></p>
+<h1><strong>FOOTNOTES</strong></h1>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-3968:1">
+此图取自 Wikipedia 词条 <a href="http://en.wikipedia.org/wiki/Metric_expansion_of_space#How_are_distances_between_two_points_measured_if_space_is_expanding.3F">Metric_expansion_of_space</a>.&#160;<a href="#fnref-3968:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3968:2">
+此图改编自 Wikipedia 词条 <a href="http://en.wikipedia.org/wiki/Metric_expansion_of_space#How_are_distances_between_two_points_measured_if_space_is_expanding.3F">Metric_expansion_of_space</a>.&#160;<a href="#fnref-3968:2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-3968:3">
+改变星系旁边的引力场可以改变星系的结构。例如在太阳系附近放置一个足够大的引力场，就可能改变太阳系内的天体的排列。&#160;<a href="#fnref-3968:3" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3881" rel="bookmark" title="谁动了我的飞船——曲率推进概览">谁动了我的飞船——曲率推进概览 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/3968/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>星系巡天</title>
+		<link>http://multiverse.lamost.org/blog/4006</link>
+		<comments>http://multiverse.lamost.org/blog/4006#comments</comments>
+		<pubDate>Mon, 01 Oct 2012 12:27:53 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Dark Energy]]></category>
+		<category><![CDATA[Galaxy Survey]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Modified_Gravity]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4006</guid>
+		<description><![CDATA[为了创建自己的引力理论测试资料库，我在 github 上创立一个 repository，来收集巡天，太阳系和地面试验的资料，并且使用 octopress 创立了一系列 html 页面，以方便查阅。 欢迎 fork! 星系巡天可以为了解大尺度结构和检查引力理论提供很重要的数据。为了方便以后查阅，现在依照以下模板来统计： Objectives: XXXXXX &#124; Completed Parameters: Facilities: Frequency/Channel: Objects: XXXX &#124; about how many XXXX measured Distance: Area: Resolution: Results Image here. What does that figure mean? Links: XXX XXX...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><strong>为了创建自己的引力理论测试资料库，我<a href="https://github.com/CosmologyTaskForce/CosmologyTaskForce">在 github 上创立一个 repository，来收集巡天，太阳系和地面试验的资料</a>，并且<a href="http://cosmologytaskforce.github.com/CosmologyTaskForce/">使用 octopress 创立了一系列 html 页面</a>，以方便查阅。</strong></p>
+<p><a href="https://github.com/CosmologyTaskForce/CosmologyTaskForce/tree/source">欢迎 fork!</a></p>
+<hr />
+<p>星系巡天可以为了解大尺度结构和检查引力理论提供很重要的数据。为了方便以后查阅，现在依照以下模板来统计：<span id="more-4006"></span></p>
+<ul>
+<li><strong>Objectives</strong>: XXXXXX | <strong>Completed</strong></p>
+</li>
+<li>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li>Facilities: </li>
+<li>Frequency/Channel:</li>
+<li>Objects: XXXX | about how many XXXX measured</li>
+<li>Distance: </li>
+<li>Area: </li>
+<li>Resolution:</li>
+</ul>
+</li>
+</ul>
+<p><strong>Results</strong></p>
+<p>Image here.</p>
+<p>What does that figure mean?</p>
+<p><strong>Links</strong>:</p>
+<ol>
+<li>XXX</li>
+<li>XXX</li>
+</ol>
+<hr />
+<p>正在进行中的项目：</p>
+<p><a href="http://cosmologytaskforce.github.com/CosmologyTaskForce/blog/Galaxy%20Surveys/Cosmological%20Surveys/galaxy-surveys/">http://cosmologytaskforce.github.com/CosmologyTaskForce/blog/Galaxy%20Surveys/Cosmological%20Surveys/galaxy-surveys/</a></p>
+<hr />
+<p>了解一下我们在宇宙中的位置：<a href="4015">如何在宇宙中找到我们</a></p>
+<hr />
+<p>BTW，我在使用 octopress 的时候遇到一个问题，就是每次重启机器之后，如果想要使用 rake generate，需要使用 rvm rubygems latest 一次才可以，否则会出现 syntax error。请问这是为什么？感觉好奇怪。</p>
+<p>系统： Ubuntu 12.04<br />
+Ruby：1.9.3<br />
+使用RVM管理</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4006/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

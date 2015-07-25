@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 修改引力理论[脑图]</title>
+	<atom:link href="http://multiverse.lamost.org/blog/2782/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/2782</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 时见疏星</title>
+		<link>http://multiverse.lamost.org/blog/2782/comment-page-1#comment-600</link>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+		<pubDate>Sun, 06 May 2012 14:16:21 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2782#comment-600</guid>
+		<description><![CDATA[呃，是破解的。一开始用photoshop，太慢。后来用xmind的，不过似乎xmind打开一段时间后系统占用巨大。freemind也不太好用，而且做出图来有点难看。最后发现mindmanager实在太好用了，所以开始用破解了。]]></description>
+		<content:encoded><![CDATA[<p>呃，是破解的。一开始用photoshop，太慢。后来用xmind的，不过似乎xmind打开一段时间后系统占用巨大。freemind也不太好用，而且做出图来有点难看。最后发现mindmanager实在太好用了，所以开始用破解了。</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: cmp0xff</title>
+		<link>http://multiverse.lamost.org/blog/2782/comment-page-1#comment-599</link>
+		<dc:creator><![CDATA[cmp0xff]]></dc:creator>
+		<pubDate>Sun, 06 May 2012 14:00:57 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2782#comment-599</guid>
+		<description><![CDATA[您是买了mind manager? 还是？]]></description>
+		<content:encoded><![CDATA[<p>您是买了mind manager? 还是？</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: cmp0xff</title>
+		<link>http://multiverse.lamost.org/blog/2782/comment-page-1#comment-598</link>
+		<dc:creator><![CDATA[cmp0xff]]></dc:creator>
+		<pubDate>Sun, 06 May 2012 14:00:30 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2782#comment-598</guid>
+		<description><![CDATA[您是买了mind map？还是破解了？]]></description>
+		<content:encoded><![CDATA[<p>您是买了mind map？还是破解了？</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

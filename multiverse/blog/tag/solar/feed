@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; 太阳系</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/solar/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>Universe Sandbox</title>
+		<link>http://multiverse.lamost.org/blog/1908</link>
+		<comments>http://multiverse.lamost.org/blog/1908#comments</comments>
+		<pubDate>Mon, 08 Aug 2011 16:41:39 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天幕上的舞蹈]]></category>
+		<category><![CDATA[土星]]></category>
+		<category><![CDATA[天体]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[太阳系]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1908</guid>
+		<description><![CDATA[目录： 简介 详细说明 下载 简介&#124;返回目录 Universe Sandbox是一个模拟类的软件，可以用来模拟天体甚至星系尺度上的物理。有视频为证： Link:http://www.tudou.com/programs/view/jp1hW04Ze2g/ 另外一个比较短的视频： http://www.tudou.com/programs/view/qHW_muydGWI/ 上面给的两个视频都是旧版本的Universe Sandbox。新版本的对UI做了改进（能看到的，其他内部的算法改进就不知道了），新版的UI要好用的多。另外新版内置了更多的模型。 有图为证： 相册中提到的Fomalhaut，可以查看这里：http://en.wikipedia.org/wiki/Fomalhaut 详细介绍&#124;返回目录 下面仔细看一下界面： [右侧panel]一些综合设置： [右侧pandel]设置内禀属性： [右侧panel]设置轨道参数等： 上面那是在运行模式下面，除了这个模式，还有edit mode和display mode。 可以添加天体。可以添加的包括星系，恒星，星系，卫星等等，甚至可以添加足球…… 下载：&#124;返回目录 最后，哪里可以下载？ http://universesandbox.com/ Back to top<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/510" rel="bookmark" title="Solar Missions">Solar Missions </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/505" rel="bookmark" title="Rockets">Rockets </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/467" rel="bookmark" title="土星环的理论解释">土星环的理论解释 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><a name="con">目录：</a><br />
+<a href="#">简介</a><br />
+<a href="#detail">详细说明</a><br />
+<a href="#download">下载</a></p>
+<hr />
+简介|<sub><a href="#con">返回目录</a></sub></p>
+<p><a href="http://universesandbox.com/" target="_blank">Universe Sandbox</a>是一个模拟类的软件，可以用来模拟天体甚至星系尺度上的物理。有视频为证：</p>
+<p><embed src="http://www.tudou.com/v/jp1hW04Ze2g/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="480" height="400"/><br />
+<sup>Link:<a href="http://www.tudou.com/programs/view/jp1hW04Ze2g/" target="_blank">http://www.tudou.com/programs/view/jp1hW04Ze2g/</a></sup></p>
+<p>另外一个比较短的视频：<br />
+<a title="UniverseSandbox" class="lbpModal" href="http://www.tudou.com/v/qHW_muydGWI/v.swf">http://www.tudou.com/programs/view/qHW_muydGWI/</a></p>
+<p>上面给的两个视频都是旧版本的Universe Sandbox。新版本的对UI做了改进（能看到的，其他内部的算法改进就不知道了），新版的UI要好用的多。另外新版内置了更多的模型。<span id="more-1908"></span></p>
+<p>有图为证：</p>
+
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox1'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox1-150x150.png" class="attachment-thumbnail" alt="universe_sandbox1" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox2'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox2-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox2" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox3'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox3-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox3" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox4'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox4-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox4" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox5'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox5-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox5" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox6'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox6-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox6" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox7'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox7-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox7" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox8'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox8-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox8" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox9'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox9-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox9" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox10'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox10-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox10" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox11'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox11-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox11" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox12'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox12-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox12" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox13'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox13-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox13" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox14'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox14-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox14" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox15_editmode'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox15_editmode-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox15_editmode" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox16_displaymode'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox16_displaymode-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox16_displaymode" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox17_add'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox17_add-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox17_add" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox18'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox18-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox18" /></a>
+<a href='http://multiverse.lamost.org/blog/1908/universe_sandbox19_sym'><img width="150" height="150" src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox19_sym-150x150.jpg" class="attachment-thumbnail" alt="universe_sandbox19_sym" /></a>
+
+<p>相册中提到的Fomalhaut，可以查看这里：<a href="http://en.wikipedia.org/wiki/Fomalhaut" target="_blank">http://en.wikipedia.org/wiki/Fomalhaut</a></p>
+<hr />
+<a name="detail">详细介绍</a>|<sub><a href="#con">返回目录</a></sub></p>
+<p>下面仔细看一下界面：</p>
+<p>[右侧panel]一些综合设置：<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox12.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox12-1024x673.jpg" alt="" title="universe_sandbox12" width="550" height="361" class="aligncenter size-large wp-image-1924" /></a></p>
+<p>[右侧pandel]设置内禀属性：<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox13.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox13-1024x673.jpg" alt="" title="universe_sandbox13" width="550" height="361" class="aligncenter size-large wp-image-1925" /></a></p>
+<p>[右侧panel]设置轨道参数等：<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox14.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox14-1024x671.jpg" alt="" title="universe_sandbox14" width="550" height="360" class="aligncenter size-large wp-image-1926" /></a></p>
+<p>上面那是在运行模式下面，除了这个模式，还有edit mode和display mode。<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox15_editmode.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox15_editmode-1024x671.jpg" alt="" title="universe_sandbox15_editmode" width="550" height="360" class="aligncenter size-large wp-image-1927" /></a></p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox16_displaymode.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox16_displaymode-1024x665.jpg" alt="" title="universe_sandbox16_displaymode" width="550" height="357" class="aligncenter size-large wp-image-1928" /></a></p>
+<p>可以添加天体。可以添加的包括星系，恒星，星系，卫星等等，甚至可以添加足球……<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox17_add.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/08/universe_sandbox17_add-1024x671.jpg" alt="" title="universe_sandbox17_add" width="550" height="360" class="aligncenter size-large wp-image-1929" /></a></p>
+<hr />
+<a name="download">下载：</a>|<sub><a href="#con">返回目录</a></sub></p>
+<p>最后，哪里可以下载？<br />
+<a href="http://universesandbox.com/" target="_blank">http://universesandbox.com/</a></p>
+<p><a href="#top">Back to top</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/510" rel="bookmark" title="Solar Missions">Solar Missions </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/505" rel="bookmark" title="Rockets">Rockets </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/467" rel="bookmark" title="土星环的理论解释">土星环的理论解释 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/1908/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>Solar Missions</title>
+		<link>http://multiverse.lamost.org/blog/510</link>
+		<comments>http://multiverse.lamost.org/blog/510#comments</comments>
+		<pubDate>Fri, 31 Dec 2010 06:29:32 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天幕上的舞蹈]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[太阳系]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=510</guid>
+		<description><![CDATA[<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1908" rel="bookmark" title="Universe Sandbox">Universe Sandbox </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/505" rel="bookmark" title="Rockets">Rockets </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/467" rel="bookmark" title="土星环的理论解释">土星环的理论解释 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<div id="attachment_511" style="width: 1034px" class="wp-caption aligncenter"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2010/12/test.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2010/12/test-1024x452.jpg" alt="Solar Missions" title="Missions" width="1024" height="452" class="size-large wp-image-511" /></a><p class="wp-caption-text">Solar Missions</p></div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1908" rel="bookmark" title="Universe Sandbox">Universe Sandbox </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/505" rel="bookmark" title="Rockets">Rockets </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/467" rel="bookmark" title="土星环的理论解释">土星环的理论解释 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/510/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Rockets</title>
+		<link>http://multiverse.lamost.org/blog/505</link>
+		<comments>http://multiverse.lamost.org/blog/505#comments</comments>
+		<pubDate>Fri, 31 Dec 2010 06:27:24 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天幕上的舞蹈]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[太阳系]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=505</guid>
+		<description><![CDATA[<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1908" rel="bookmark" title="Universe Sandbox">Universe Sandbox </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/510" rel="bookmark" title="Solar Missions">Solar Missions </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/467" rel="bookmark" title="土星环的理论解释">土星环的理论解释 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2010/12/rockets_of_the_world.jpg"><img title="rockets of the world" src="http://multiverse.lamost.org/blog/wp-content/uploads/2010/12/rockets_of_the_world.jpg" alt="" width="669" /></a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1908" rel="bookmark" title="Universe Sandbox">Universe Sandbox </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/510" rel="bookmark" title="Solar Missions">Solar Missions </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/467" rel="bookmark" title="土星环的理论解释">土星环的理论解释 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/505/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>土星环的理论解释</title>
+		<link>http://multiverse.lamost.org/blog/467</link>
+		<comments>http://multiverse.lamost.org/blog/467#comments</comments>
+		<pubDate>Mon, 29 Nov 2010 16:03:45 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[土星]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[太阳系]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=467</guid>
+		<description><![CDATA[土星环的理论解释。 Slides： (Slides)A_Theoretical_View_of_Saturn’s_Ring Slides的讲稿： NotesofATheoreticalViewOfSatrun&#8217;sRing 比较完整的paper： (Paper)ATheoreticalViewOfSatrun&#8217;sRing<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4122" rel="bookmark" title="知乎：银河系和狭义相对论">知乎：银河系和狭义相对论 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2418" rel="bookmark" title="我在知乎回答的问题 | 2012-03-04">我在知乎回答的问题 | 2012-03-04 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1908" rel="bookmark" title="Universe Sandbox">Universe Sandbox </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>土星环的理论解释。</p>
+<p>Slides：<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/06/SlidesA_Theoretical_View_of_Saturn’s_Ring.pdf'>(Slides)A_Theoretical_View_of_Saturn’s_Ring</a></p>
+<p>Slides的讲稿：<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2010/11/NotesofATheoreticalViewOfSatrunsRing.pdf'>NotesofATheoreticalViewOfSatrun&#8217;sRing</a></p>
+<p>比较完整的paper：<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2010/11/PaperATheoreticalViewOfSatrunsRing.pdf'>(Paper)ATheoreticalViewOfSatrun&#8217;sRing</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4122" rel="bookmark" title="知乎：银河系和狭义相对论">知乎：银河系和狭义相对论 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2418" rel="bookmark" title="我在知乎回答的问题 | 2012-03-04">我在知乎回答的问题 | 2012-03-04 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1908" rel="bookmark" title="Universe Sandbox">Universe Sandbox </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/467/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Saturn&#8217;s Ring</title>
+		<link>http://multiverse.lamost.org/blog/465</link>
+		<comments>http://multiverse.lamost.org/blog/465#comments</comments>
+		<pubDate>Mon, 29 Nov 2010 05:02:59 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[土星]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[太阳系]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=465</guid>
+		<description><![CDATA[最近读了些土星环的文章，最大的感想是，这个东西比想象的要麻烦！ 发现一种比较好的方法是把环看成流体，利用流体力学和近平衡态统计的方法来做些工作。这个方法可以到处土星环不稳定，在扰动下会分成很多小环，也就是现在的图像环的状态。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4648" rel="bookmark" title="数据可视化">数据可视化 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4122" rel="bookmark" title="知乎：银河系和狭义相对论">知乎：银河系和狭义相对论 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1908" rel="bookmark" title="Universe Sandbox">Universe Sandbox </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>最近读了些土星环的文章，最大的感想是，这个东西比想象的要麻烦！</p>
+<p>发现一种比较好的方法是把环看成流体，利用流体力学和近平衡态统计的方法来做些工作。这个方法可以到处土星环不稳定，在扰动下会分成很多小环，也就是现在的图像环的状态。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4648" rel="bookmark" title="数据可视化">数据可视化 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4122" rel="bookmark" title="知乎：银河系和狭义相对论">知乎：银河系和狭义相对论 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1908" rel="bookmark" title="Universe Sandbox">Universe Sandbox </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/465/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

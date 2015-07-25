@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 一周总结[2011-07-18][非物理部分]</title>
+	<atom:link href="http://multiverse.lamost.org/blog/1600/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/1600</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 李 白</title>
+		<link>http://multiverse.lamost.org/blog/1600/comment-page-1#comment-310</link>
+		<dc:creator><![CDATA[李 白]]></dc:creator>
+		<pubDate>Mon, 18 Jul 2011 13:52:48 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1600#comment-310</guid>
+		<description><![CDATA[我感觉导航栏的颜色还是可以的，这让我想起了Windows7网站的颜色。]]></description>
+		<content:encoded><![CDATA[<p>我感觉导航栏的颜色还是可以的，这让我想起了Windows7网站的颜色。</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 明月稀星河畔</title>
+		<link>http://multiverse.lamost.org/blog/1600/comment-page-1#comment-309</link>
+		<dc:creator><![CDATA[明月稀星河畔]]></dc:creator>
+		<pubDate>Mon, 18 Jul 2011 12:44:11 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1600#comment-309</guid>
+		<description><![CDATA[不知道为什么，我就是看着我做的这个很别扭。不知道哪里不对劲。
+是不是排版很乱？]]></description>
+		<content:encoded><![CDATA[<p>不知道为什么，我就是看着我做的这个很别扭。不知道哪里不对劲。<br />
+是不是排版很乱？</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 李 白</title>
+		<link>http://multiverse.lamost.org/blog/1600/comment-page-1#comment-308</link>
+		<dc:creator><![CDATA[李 白]]></dc:creator>
+		<pubDate>Mon, 18 Jul 2011 05:37:36 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1600#comment-308</guid>
+		<description><![CDATA[空旷的原因可能是间距太大，都像Research那部分的话可能效果要好得多。]]></description>
+		<content:encoded><![CDATA[<p>空旷的原因可能是间距太大，都像Research那部分的话可能效果要好得多。</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Differential Geometry</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/defferential-geometry/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>天体周围引力场和 Birkhoff 定理</title>
+		<link>http://multiverse.lamost.org/blog/4090</link>
+		<comments>http://multiverse.lamost.org/blog/4090#comments</comments>
+		<pubDate>Sat, 06 Oct 2012 15:58:20 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4090</guid>
+		<description><![CDATA[在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。 Birkhoff 定理 Birkhoff 定理的证明用到了如下条件: 真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。 不同的度规形式 但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[1][2] &#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<p>在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。</p>
+<h2>Birkhoff 定理</h2>
+<p>Birkhoff 定理的证明用到了如下条件:</p>
+<ul>
+<li>真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。<span id="more-4090"></span></li>
+</ul>
+<h2>不同的度规形式</h2>
+<p>但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[<sup id="fnref-4090:1"><a href="#fn-4090:1" rel="footnote">1</a></sup>][<sup id="fnref-4090:2"><a href="#fn-4090:2" rel="footnote">2</a></sup>]</p>
+<p>&#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt &#92;]</p>
+<p>在刘辽的书中，他做了坐标变换，然后变成了一个更加漂亮的形式：</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>新的形式（下文称为形式二，第一个度规称为形式一）是一个正交的度规，更简单更漂亮。但是有一个问题，虽然这两个度规在本质上是等价的，但是在用来求解问题的时候，却会出现不同的结果，这是因为不同的坐标限制了不同的观者族，而不同的观者对于某些观测会得到不同的结论。[<sup id="fnref-4090:3"><a href="#fn-4090:3" rel="footnote">3</a></sup>]</p>
+<p>比如说，我们取上面两种形式的度规都是对角化的形式，也就是说扔掉了 &#92;(&#92;beta(r,t)&#92;)。这这样一个简单情况下，&#92;(&#92;phi&#92;) 坐标的 scale 两种形式有很大的不同，一个是包含 &#92;(r&#92;) 和 &#92;(t&#92;) 的一个函数 &#92;(&#92;alpha(r,t)&#92;)，另一种形式却没有。这一点会对后面各个几何量的求解带来很大的不同，因为涉及到了导数。</p>
+<h2>计算证明</h2>
+<p>基于这一点考虑，我算了一种简单的情况，就是</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + f(t) r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>为了方便计算，对一些量进行了重定义，最后度规写为如下形式：</p>
+<p>&#92;[<br />
+&#92;left(<br />
+&#92;begin{array}{cccc}<br />
+ -e^{2 &#92;nu [r]} a[t]^2 &amp; 0 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; e^{2 &#92;lambda [r]} a[t]^2 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; r^2 a[t]^2 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; 0 &amp; r^2 a[t]^2 &#92;text{Sin}[&#92;text{theta}]^2<br />
+&#92;end{array}<br />
+&#92;right)<br />
+&#92;]</p>
+<p>放在带 &#92;(&#92;Lambda&#92;) 的场方程中，得到的结果如下：</p>
+<p>需要满足一下四个方程</p>
+<p>&#92;[&#92;frac{3 a'[t]^2}{a[t]^2}+&#92;frac{e^{-2 &#92;lambda [r]+2 &#92;nu [r]} &#92;left(-1+e^{2 &#92;lambda [r]}+2 r &#92;lambda &#8216;[r]&#92;right)}{r^2}==e^{2 &#92;nu [r]} &#92;Lambda  a[t]^2&#92;]</p>
+<p>&#92;[ e^{2 &#92;lambda } r &#92;Lambda  a[t]^3+&#92;frac{e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a'[t]^2}{a[t]}+&#92;frac{a[t] &#92;left(1-e^{2 &#92;lambda [r]}+2 r &#92;nu &#8216;[r]&#92;right)}{r}==2 e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a&#8221;[t] &#92;]</p>
+<p>&#92;[ r &#92;left(r &#92;Lambda  a[t]^2+&#92;frac{e^{-2 &#92;nu [r]} r a'[t]^2}{a[t]^2}-&#92;frac{2 e^{-2 &#92;nu [r]} r a&#8221;[t]}{a[t]}+e^{-2 &#92;lambda [r]} &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>&#92;[ &#92;frac{1}{a[t]}e^{-2 (&#92;lambda [r]+&#92;nu [r])} r &#92;text{Sin}[&#92;text{theta}] &#92;left(e^{2 (&#92;lambda [r]+&#92;nu [r])} r &#92;Lambda  a[t]^4+e^{2 &#92;lambda [r]} r a'[t]^2-2 e^{2 &#92;lambda [r]} r a[t] a&#8221;[t]+e^{2 &#92;nu [r]} a[t]^2 &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>上面的求导是针对各自自变量的求导。</p>
+<p>自然其中第三和第四是在我们这里等价的。</p>
+<p>经过简化，这个度规的需要满足如下要求：</p>
+<p>&#92;[ &#92;frac{1}{r^2} (1-e^{2&#92;lambda}) + &#92;frac{1}{r} (&#92;nu&#8217; + &#92;lambda&#8217;) +&#92;lambda&#8217;&#92;nu&#8217; -&#92;nu&#8217;^2 &#8211; &#92;nu&#8221; =0 &#92;]<br />
+外加上面的第一个方程。</p>
+<p>从这样的式子里面，是无法得到 Birkhoff 定理的。因为上面的 &#92;(&#92;lambda&#92;) 和 &#92;(&#92;nu&#92;) 是 &#92;(r&#92;) 的函数，无法分离成 &#92;(r&#92;) 多项式形式，从而无法给出含时量的限制。</p>
+<h2>更多</h2>
+<p>其实这个理解也没有问题，因为我所使用的度规和形式二是不同的观者所使用的坐标。其他的理解在后续文章的实例中提到。我主要关心一个问题，如果我们把银河系看做浸泡在一个能动张量为 &#92;(T_{&#92;mu&#92;nu}&#92;) 的宇宙中，那么其引力场分布的解析解如何呢？</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-4090:1">
+《广义相对论》（第二版）， 刘辽、赵峥，P145。&#160;<a href="#fnref-4090:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:2">
+我习惯于 +2 号差，所以将刘辽赵峥书中的度规做了改动。&#160;<a href="#fnref-4090:2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:3">
+一个例子，观者 A 观测到静止的电荷 E 不会辐射光子，但是一个加速运动的观者 B 却会观测到 E 辐射光子。&#160;<a href="#fnref-4090:3" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4090/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>How to construct the metric tensor?</title>
+		<link>http://multiverse.lamost.org/blog/2284</link>
+		<comments>http://multiverse.lamost.org/blog/2284#comments</comments>
+		<pubDate>Fri, 07 Oct 2011 17:45:35 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2284</guid>
+		<description><![CDATA[前段时间算metric，读了一些资料，摸索了一下，总结了算metric的一般方法，下面的这个方法当然只对natural coordinate system才有效，而且例子中是正交的坐标系。更一般的方法可以使用form来做，这个会在后面的form的笔记中提到。 Let&#8217;s check the definition of metric again. If we choose a basis ✟\hat e_\mu✟, then a vector (at one certain point) in this coordinate system is \begin{equation} x^a=x^\mu \hat e_\mu \end{equation} Then we can construct the expression...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2258" rel="bookmark" title="李导数和Killing矢量场 | Lie Derivative, Killing Vector Field">李导数和Killing矢量场 | Lie Derivative, Killing Vector Field </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>前段时间算metric，读了一些资料，摸索了一下，总结了算metric的一般方法，下面的这个方法当然只对natural coordinate system才有效，而且例子中是正交的坐标系。更一般的方法可以使用form来做，这个会在后面的form的笔记中提到。</p>
+<hr />
+<p>Let&#8217;s check the definition of metric again.<span id="more-2284"></span></p>
+<p>If we choose a basis ✟\hat e_\mu✟, then a vector (at one certain point) in this coordinate system is<br />
+\begin{equation}<br />
+x^a=x^\mu \hat e_\mu<br />
+\end{equation}</p>
+<p>Then we can construct the expression of metric of this point under this coordinate system,<br />
+\begin{equation}<br />
+g_{\mu\nu}=\hat e_\mu\cdot \hat e_\nu<br />
+\end{equation}</p>
+<p>For example, in spherical coordinate system,<br />
+\begin{equation}<br />
+\vec x=r\sin \theta\cos\phi \hat e_x+r\sin\theta\sin\phi \hat e_y+r\cos\theta \hat e_z \label{eq:relativity_metric_point}<br />
+\end{equation}</p>
+<p>Now we have to find the basis under spherical coordinate system. Assume the basis is ✟\hat e_r, \hat e_\theta, \hat e_\phi✟. Choose some scale factors ✟h_r=1, h_\theta=r, h_\phi=r\sin\theta✟. Then the basis is<br />
+✟\hat e_r=\frac{\partial \vec x}{h_r\partial r}=\hat e_x \sin\theta\cos\phi+\hat e_y \sin\theta\sin\phi+\hat e_z \cos\theta✟, etc. Then collect the terms in formula \ref{eq:relativity_metric_point} is we get ✟\vec x=r\hat e_r✟, this is incomplete. So we check the derivative.<br />
+\begin{eqnarray}<br />
+\mathrm d\vec x&#038;=&#038; \hat e_x (\mathrm dr \sin\theta\cos\phi+r\cos\theta\cos\phi\mathrm d\theta-r\sin\theta\sin\phi\mathrm d\phi)\\<br />
+&#038;&#038;\hat e_y (\mathrm dr\sin\theta\sin\phi+r\cos\theta\sin\phi\mathrm d\theta+r\sin\theta\cos\phi\mathrm d\phi) \\<br />
+&#038;&#038;\hat e_z (\mathrm dr\cos\theta-r\sin\theta\mathrm d\theta) \\<br />
+&#038;=&#038;\mathrm dr(\hat e_x\sin\theta\cos\phi +\hat e_y \sin\theta\sin\phi -\hat e_z \cos\theta)  \\<br />
+&#038;&#038;\mathrm d\theta (\hat e_x\cos\theta\cos\phi +\hat e_y \cos\theta\sin\phi &#8211; \hat e_z \sin\theta)r \\<br />
+&#038;&#038;\mathrm d\phi (-\hat e_x\sin\phi +\hat e_y \cos\phi)r\sin\theta  \\<br />
+&#038;=&#038;\hat e_r\mathrm dr+\hat e_\theta r\mathrm d\theta +\hat e_\phi r\sin\theta\mathrm d \phi<br />
+\end{eqnarray}</p>
+<p>Once we reach here, the component (✟e_r ,e_\theta, e_\phi✟) of the point under the spherical coordinates system basis (✟\hat e_r, \hat e_\theta, \hat e_\phi✟) at this point are clear, i.e.,</p>
+<p>\begin{eqnarray}<br />
+\mathrm d\vec x&#038;=&#038;\hat e_r\mathrm d r+\hat e_\theta r\mathrm d \theta+\hat e_\phi r\sin\theta \mathrm d\phi \\<br />
+&#038;=&#038;e_r\mathrm d r+e_\theta \mathrm d\theta+e_\phi \mathrm d\phi<br />
+\end{eqnarray}</p>
+<p>In this way, the metric tensor for spherical coordinates is<br />
+\begin{equation}<br />
+g_{\mu\nu}=(e_\mu\cdot e_\nu)=\left(\begin{matrix}<br />
+1 &#038;0&#038;0 \\<br />
+0&#038; r^2&#038;0 \\<br />
+0&#038;0&#038; r^2\sin^2\theta \\<br />
+\end{matrix}\right)<br />
+\end{equation}</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2258" rel="bookmark" title="李导数和Killing矢量场 | Lie Derivative, Killing Vector Field">李导数和Killing矢量场 | Lie Derivative, Killing Vector Field </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2284/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>李导数和Killing矢量场 &#124; Lie Derivative, Killing Vector Field</title>
+		<link>http://multiverse.lamost.org/blog/2258</link>
+		<comments>http://multiverse.lamost.org/blog/2258#comments</comments>
+		<pubDate>Wed, 05 Oct 2011 23:19:42 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Symmetry]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2258</guid>
+		<description><![CDATA[Lie derivative(读音/li:/)翻译为李导数，是与协变导数(covariant derivative)不同的一种导数。简单的说，Lie derivative是用来比较流形上两个不同点的张量的不同的，或者说，是用来衡量张量场沿着曲线族移动时的变化的，再或者说，是用来描述流形上的张量场被沿着矢量场(或者说是曲线的切矢场)拖拽时的变化的。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2782" rel="bookmark" title="修改引力理论[脑图]">修改引力理论[脑图] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>本文是关于李导数和Killing矢量场的笔记。如果发现概念和公式错误，一定要指出并强烈的谴责我。</p>
+<p>目录：<br />
+<a href=#1ld style="color:orange;">1 Lie Derivative</a><br />
+  <a href=#1_1pre style="color:green;"> ~1.1 预备知识</a><br />
+  <a href=#1_2ld style="color:green;"> ~1.2 Lie Derivative</a><br />
+<a href=#2kv style="color:orange;">2  Killing Vector Field</a></p>
+<hr />
+<p><strong><a name=1ld style="color:orange;">1 Lie Derivative</a></strong></p>
+<p>Lie derivative(读音/li:/)翻译为李导数，是与协变导数(covariant derivative)不同的一种导数。简单的说，Lie derivative是用来比较流形上两个不同点的张量的不同的，或者说，是用来衡量张量场沿着曲线族移动时的变化的，再或者说，是用来描述流形上的张量场被沿着矢量场(或者说是曲线的切矢场)拖拽时的变化的。</p>
+<p>由于wikipedia和一般的教科书上都有着很严格的定义和介绍，本文仅仅是作为一份note，来记录我的一些理解。文中不在重复严格定义。所以说读此文的时候需要准备一本教材来作为准确定义的参考，比如梁灿斌（第四章）。<span id="more-2258"></span></p>
+<p><strong><a name=1_1pre style="color:green;"> ~1.1 预备知识</a></strong></p>
+<p>如果有两个流形 ✟&#92;mathscr{M}✟ 和 ✟&#92;mathscr{N}✟ ，并且 ✟&#92;phi✟ 是从 ✟&#92;mathscr{M}✟ 到 ✟&#92;mathscr{N}✟ 的映射。</p>
+<p>Pull back,是将流形✟&#92;mathscr{N}✟上的张量场映射为流形✟&#92;mathscr{M}✟上的张量场的映射。比如流形✟&#92;mathscr{N}✟上定义了一个光滑函数的集合，现在可以通过pull back在流形✟&#92;mathscr M✟上建立一个光滑函数的集合。实际就是建立两个流形上的张量场的关系。不过这种映射是从标量场的映射推广来的，所以实际上是对张量的下指标起作用。</p>
+<p>Push forward，恰恰相反，是将流形上✟&#92;mathscr M✟上的张量场推到流形✟&#92;mathscr N✟上。也就是说，原来有一个张量场定义在✟&#92;mathscr M✟上，现在通过push forward在流形✟&#92;mathscr N✟上建立一个新的张量场。Push forward 是从矢量场的映射推广的，对张量场的上指标起作用。原来的意思是说，如果想要从 ✟&#92;mathscr M✟ 得到 ✟&#92;mathscr N✟ 上的矢量场，可以先把 ✟&#92;mathscr M✟ 上的矢量场映射到 ✟&#92;mathscr N✟ 上，这样通过矢量场的定义（作用在标量函数上），得到 ✟&#92;mathscr N✟ 上的矢量场。</p>
+<p>这两者的区别就在于，到底原来的张量场是切矢场的并矢，还是其对偶矢量场的并矢，或者说，是影响上指标还是影响张量下指标的。至于名字到底是pull back还是push forward，我猜大概是因为一开始的时候定义scalar field的pull back，是按照如下定义的。</p>
+<p>&#92;begin{equation}<br />
+&#92;mathscr M|<em>P &#92;xrightarrow{&#92;phi} &#92;mathscr N|</em>{&#92;phi(P)}&#92;xrightarrow{f}&#92;mathscr R<br />
+&#92;end{equation}</p>
+<p>这个定义的意思是说，P是流形✟&#92;mathscr M✟上的一点，那么通过映射✟&#92;phi✟将✟&#92;mathscr M✟光滑映射到✟&#92;mathscr N✟上，对应的点为✟&#92;phi(P)✟。函数✟f✟是定义在✟&#92;mathscr N✟上的。那么实际上✟f&#92;circ  &#92;phi✟就是函数✟f✟的pull back映射。从这个定义中可以看到，之所以叫做pull back是因为这个映射像是将✟&#92;mathscr N✟上的函数映射到了✟&#92;mathscr M✟上来，而原来的流形间的映射是✟&#92;mathscr M&#92;xrightarrow{&#92;phi}&#92;mathscr N✟，pull back正好与此相反，就像是把✟&#92;phi✟做的事情pull back一样。这样相反的那个就只好叫做push forward了。</p>
+<p><strong><a name=1_2ld style="color:green;"> ~1.2 Lie Derivative</a></strong></p>
+<p>物理中常常需要对比两个点的张量。一种最简单的方法是直接作如下定义：</p>
+<p>&#92;begin{equation}<br />
+&#92;lim&#92;limits_{&#92;delta&#92;rightarrow 0}&#92;frac{V(x+&#92;delta)-V(x)}{&#92;delta}<br />
+&#92;end{equation}<br />
+但是这样做会发现，在简单的平直空间中，这样定义得到的还是张量，但是如果是一个更加复杂的流行，张量性质就不能保证。然而我们又是非常希望能够得到一个张量，因为张量方程才可以保证协变性的定律。</p>
+<p>对这个定义改进，添加联络项，将非张量的部分抵消掉，就可以得到协变导数。这个不多说。</p>
+<p>另外一种比较的方法是，利用选定的曲线移动张量场。（实际上这个并不是与协变导数最大的区别，联络其实也可以看成是带有曲线移动性质的一项。）Lie derivative就是这样的一种方法。</p>
+<p>Lie derivative可以理解为沿着流形上的整个原来的张量场沿着矢量场移动(对应于原来的两个流形直接的映射✟&#92;phi✟，或者理解为沿着以此矢量场为切矢场的曲线移动)之后，然后通过pull back把移动后的张量场pull回来，跟原来的张量场再进行比较。（所以这里有一个在preliminary的时候就每个人都会问的问题：为什么沿着曲线移动整个张量场之后，再pull back，同一点的张量场却不同了？另外，在Lie derivative作用在scalar field这种特殊情况下，退化成普通导数，跟covariant derivative类似。）</p>
+<p>因为映射✟&#92;phi✟也可以描述成坐标变换，所以Lie derivative可以通过坐标变换来理解。虽然这使得Lie derivative变得狭隘了。（下面的部分参考徐建军广义相对论课件。为了使得描述更清楚，我更改了部分符号。）</p>
+<p>流形上一点✟P✟。映射✟&#92;phi_t✟可以看着是无穷小坐标变换，✟x&#8217;^&#92;mu(P)=x^&#92;mu(P)-&#92;epsilon &#92;xi^&#92;mu(P)+&#8230;✟，此处只保留了线性项。（负号是个习惯，如果是另外一种理解，即，点的移动，而不是坐标系的移动，我们常常使用正号。）<br />
+定义一个矢量场✟V^&#92;mu✟,下面考虑无穷小坐标变换后，<br />
+&#92;begin{eqnarray}<br />
+V&#8217;^&#92;mu(x&#8217;)&amp;=&amp;&#92;frac{&#92;partial x&#8217;^&#92;mu}{&#92;partial x^&#92;nu}V^&#92;nu(x) &#92;&#92;<br />
+&amp;=&amp;(&#92;delta^&#92;mu_&#92;nu-&#92;epsilon&#92;xi^&#92;mu_{,&#92;nu})V^&#92;mu(x) &#92;&#92;<br />
+&amp;=&amp;V^&#92;mu(x)-&#92;epsilon &#92;xi^&#92;mu_{,&#92;nu}V^&#92;nu(x)<br />
+&#92;end{eqnarray}</p>
+<p>另一方面说，可以做Taylor展开，<br />
+&#92;begin{eqnarray}<br />
+V&#8217;^&#92;mu(x&#8217;)&amp;=&amp;V&#8217;&#92;mu(x)+(x&#8217;-x)V^&#92;mu_{,&#92;nu}+&#8230; &#92;&#92;<br />
+&amp;=&amp; V&#8217;^&#92;mu(x)-&#92;epsilon &#92;xi^&#92;nu V^&#92;mu_{,&#92;nu}+&#8230;<br />
+&#92;end{eqnarray}</p>
+<p>然后对比这两个式子，可以得到<br />
+&#92;begin{equation}<br />
+V^&#92;mu(x)=V&#8217;^&#92;mu(x)-&#92;epsilon &#92;xi^&#92;nu V^&#92;mu_{,&#92;nu}(x)+&#92;epsilon &#92;xi ^&#92;mu_{,&#92;nu}V^&#92;nu (x)+&#8230;<br />
+&#92;end{equation}</p>
+<p>有了这个表达式，就可以定义Lie derivative了。<br />
+&#92;begin{eqnarray}<br />
+&#92;mathscr L_&#92;xi&amp;=&amp;&#92;lim&#92;limits_{&#92;epsilon&#92;rightarrow 0}&#92;frac{V&#8217;&#92;mu(x)-V^&#92;mu(x)}{&#92;epsilon} &#92;&#92;<br />
+&amp;=&amp; V^&#92;mu_{,&#92;nu}(x)&#92;xi^&#92;nu-V^&#92;nu(x)&#92;xi^&#92;mu_{,&#92;nu} &#92;&#92;<br />
+&amp;=&amp;V^{&#92;mu}<em>{;&#92;nu}(x)&#92;xi^&#92;nu-V^&#92;nu(x)&#92;xi^&#92;mu</em>{;&#92;nu}<br />
+&#92;end{eqnarray}</p>
+<p><strong><a name=2kv style="color:orange;">2  Killing Vector Field</a></strong></p>
+<p>有了Lie derivative的定义，Killing矢量场的定义就容易多了（但是并不代表Killing矢量场容易）。Killing矢量场定义为使得度规的李导数为零的矢量场，或者说，是沿着矢量场的移动保证度规不变，或者说矢量场给出单参等度规群。后两者都是指的locality的不变。</p>
+<p>所以写成公式，就是✟&#92;mathscr L_&#92;xi g_{ab}=0✟。或者按照定义写开，<br />
+&#92;begin{equation}<br />
+&#92;xi_{(a;b)}=0<br />
+&#92;end{equation}<br />
+这个方程被称为Killing方程。</p>
+<p>Killing矢量场的定义比较容易理解。但是为什么？为什么我们要定义一个这样的特殊的矢量场？或者说Killing矢量场物理上讲到底是什么意思？</p>
+<p>Killing矢量场对应着一些不变性，也就是对称性。因为如果我们能够找到一个Killing矢量场，那么因为沿着以这个矢量场为切矢场的曲线移动带有物理意义的张量场，那么可以保证度规的不变。换句话说，这族曲线给我们提供了一个好用的方向。那么我们就可以选择这个方向作为坐标系的坐标轴，这样描述物理现象时，因为沿着这个轴的张量场移动具备等度规性，度规的坐标分量将与这个坐标轴对应的变量无关。而且，如果所有的Killing矢量对易，那么沿着所有Killing矢量建立坐标轴的坐标系，将会具有不含所有这些轴所对应的变量的度规(坐标分量)。</p>
+<p>保度规的变换的多少可以反映空间的对称性，因为所有我们谈论的都是检查在移动张量场时发生的情况。</p>
+<p>另外一个有趣的事情是，如果✟&#92;xi^a✟为Killing矢量场，✟T^a✟为测地线的切矢场，那么✟T^a&#92;xi_a✟沿测地线平移。</p>
+<p><strong><a name=3end style="color:orangen;">3 结语</a></strong></p>
+<p>以上便是关于Lie derivative和Killing矢量场的一点note。这份note会随着时间的推移（严格的说是随着我在学习研究中用到的相关知识的增多）而增加新的内容。</p>
+<hr />
+<p><strong>参考:</strong><br />
+a <a href="http://book.douban.com/subject/1725267/" target="_blank">梁灿斌，<em>微分几何入门与广义相对论</em></a>；<br />
+b <a href="http://panda.unm.edu/Courses/Finley/p570.html" target="_blank">http://panda.unm.edu/Courses/Finley/p570.html</a> Thanks Kevin Cahill for sharing the link.</p>
+<hr />
+<p>好不容易搞好了中文的✟&#92;LaTeX✟所以写了一份note放在这里供下载：</p>
+<p><a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/10/LieDerivative_KillingVector.pdf'>LieDerivative_KillingVector</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2782" rel="bookmark" title="修改引力理论[脑图]">修改引力理论[脑图] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2258/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>外微分形式 &#124; {Differential Forms} [3]</title>
+		<link>http://multiverse.lamost.org/blog/2173</link>
+		<comments>http://multiverse.lamost.org/blog/2173#comments</comments>
+		<pubDate>Wed, 21 Sep 2011 17:47:52 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2173</guid>
+		<description><![CDATA[1. In \(\mathsf E^3\), \(\vec x\) is an a point described by \(\mathrm d \vec x=\sigma_1\hat e_1+\sigma_2\hat e_2+\sigma_3\hat e_3\). It should be made clear that \(\sigma_i\) are 1-forms and \(\hat e_i\) are bases. In fact, \(\mathrm d\vec x\) is a 1-form here.<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6266" rel="bookmark" title="一张图理清热力学势之间的关系">一张图理清热力学势之间的关系 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>不定期的贴出比较完整的外微分形式(exterior differential forms)的大纲。大部分只是简单的从书本中摘出来的，以便以后快速回想和查阅使用。初学者可能会犯很多错误，强烈要求指正。<br />
+所读书本为Harley Flanders的书，Google Books链接在文末给出</p>
+<p>第一部分：<a href="http://multiverse.lamost.org/blog/?p=2091">http://multiverse.lamost.org/blog/?p=2091</a><br />
+第二部分：<a href="http://multiverse.lamost.org/blog/?p=2167">http://multiverse.lamost.org/blog/?p=2167</a><br />
+第三部分：<a href="http://multiverse.lamost.org/blog/?p=2173">http://multiverse.lamost.org/blog/?p=2173</a></p>
+<hr />
+<p>Contents:<br />
+<a href="#chap1">Chapter 4   Applications: Moving Frames, Laplacian, Coordinates and Surfaces</a></p>
+<hr />
+<p><a name=chap1>Chapter 4   Applications: Moving Frames, Laplacian, Coordinates and Surfaces</a></p>
+<p>1. In \(\mathsf E^3\), \(\vec x\) is an a point described by \(\mathrm d \vec x=\sigma_1\hat e_1+\sigma_2\hat e_2+\sigma_3\hat e_3\). It should be made clear that \(\sigma_i\) are 1-forms and \(\hat e_i\) are bases. In fact, \(\mathrm d\vec x\) is a 1-form here.</p>
+<p>\(\mathrm d \hat e_i=\omega_{i1}\hat e_1 +\omega_{i2}\hat e_2+\omega_{i3}\hat e_3\) is the exterior differential of the basis.</p>
+<p>For convenience of denoting, we collect the terms as matrices.<br />
+\begin{eqnarray}<br />
+\hat e = \left (\begin{matrix}<br />
+	\hat e_1\\<br />
+	\hat e_2\\<br />
+	\hat e_3\\<br />
+\end{matrix} \right ), \sigma=(\sigma_1,\sigma_2,\sigma_3), \Omega=||\omega_{ij}||<br />
+\end{eqnarray}</p>
+<p>Structure equations<br />
+\begin{eqnarray}<br />
+\mathrm d \vec x &#038;=&#038; \sigma \vec x \\<br />
+\mathrm d \hat e &#038;=&#038; \Omega \hat e \\<br />
+\Omega &#038;=&#038; ^t\Omega<br />
+\end{eqnarray}</p>
+<p>The last equation says \(\Omega\) is a skrew-symmetric or anti-symmetric matrix. This is deeply rooted in the linear property of the exterior diff and the orthogonal property of the basis.</p>
+<p>Another set of equations that counts is the integrability equations.<br />
+\begin{eqnarray}<br />
+\mathrm d\sigma &#038;=&#038; \sigma \Omega \\<br />
+\mathrm \Omega &#038;=&#038; \Omega^2<br />
+\end{eqnarray}</p>
+<p>These equations are results of Poncare Lemma.</p>
+<p>Examples of the structure eqns and the integrablilty eqns are given in the book.</p>
+<p>2.  Flanders gives an example of 6-dim frame space by combining \(\mathsf E^1,\mathsf E^2, \mathsf E^3\).</p>
+<p>3. \(\vec x (u, v ,w)\) is a point in \(\mathsf U\), which is a domain in \(\mathsf E^3\). We can always use basis that is orthonormal,<br />
+\begin{eqnarray}<br />
+\hat e_1=\frac 1\lambda \frac{\partial \vec x}{\partial u}, \hat e_2=\frac 1 \mu \frac{\partial \vec x}{\partial v}, \hat e_3=\frac 1\nu \frac{\partial \vec x}{\partial w}<br />
+\end{eqnarray}</p>
+<p> Under such basis,<br />
+ \begin{eqnarray}<br />
+\mathrm d\vec x&#038;=&#038;\mathrm du\frac{\partial \vec x}{\partial u}+\mathrm dv\frac{\partial \vec x}{\partial v}+\mathrm dw\frac{\partial \vec x}{\partial w} \\<br />
+&#038;=&#038;(\lambda \mathrm d u)\hat e_1+(\mu\mathrm dv)\hat e_2+(\nu\mathrm dw)\hat e_3 \\<br />
+&#038;=&#038;\sigma_1\hat e_1+\sigma_2\hat e_2+\sigma_3\hat e_3<br />
+ \end{eqnarray}</p>
+<p>Here \(\lambda, \mu,\nu\) are called scale factors sometimes.</p>
+<p>Laplacian is<br />
+\begin{equation}<br />
+\delta f =\mathrm d *\mathrm d f=(\delta f)\sigma_1\sigma_2\sigma_3<br />
+\end{equation}</p>
+<p>Just apply the constants, one would get the expression for Laplacian.</p>
+<p>4.  Gaussian curvature etc. This part is familiar to most of us.</p>
+<hr />
+<strong>Reference:</strong></p>
+<p><a href="http://books.google.com/books?id=pG0PllIO08kC&#038;dq" target="_blank">Differential forms with applications to the physical sciences<br />
+By By Harley Flanders</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6266" rel="bookmark" title="一张图理清热力学势之间的关系">一张图理清热力学势之间的关系 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2173/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>外微分形式 &#124; {Differential Forms} [2]</title>
+		<link>http://multiverse.lamost.org/blog/2167</link>
+		<comments>http://multiverse.lamost.org/blog/2167#comments</comments>
+		<pubDate>Tue, 20 Sep 2011 18:55:28 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2167</guid>
+		<description><![CDATA[1. Exterior derivatives are mappings from smooth manifold \(\mathcal{M}\), which is m dimensional, to itself, that satisfy the following conditions.<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6266" rel="bookmark" title="一张图理清热力学势之间的关系">一张图理清热力学势之间的关系 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2173" rel="bookmark" title="外微分形式 | {Differential Forms} [3]">外微分形式 | {Differential Forms} [3] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>从今天开始，会不定期的贴出比较完整的外微分形式(exterior differential forms)的大纲。大部分只是简单的从书本中摘出来的，以便以后快速回想和查阅使用。初学者可能会犯很多错误，强烈要求指正。<br />
+所读书本为Harley Flanders的书，Google Books链接在文末给出。</p>
+<p>第一部分：<a href="http://multiverse.lamost.org/blog/?p=2091">http://multiverse.lamost.org/blog/?p=2091</a><br />
+第二部分：<a href="http://multiverse.lamost.org/blog/?p=2167">http://multiverse.lamost.org/blog/?p=2167</a><br />
+第三部分：<a href="http://multiverse.lamost.org/blog/?p=2173">http://multiverse.lamost.org/blog/?p=2173</a></p>
+<hr />
+<p>Contents:<br />
+<a href="#chap3">Chapter 3   The Exterior Derivative</a></p>
+<hr />
+<p><a name=chap3>Chapter 3   The Exterior Derivative</a></p>
+<p>1. Exterior derivatives are mappings from smooth manifold \(\mathcal{M}\), which is m dimensional, to itself, that satisfy the following conditions.</p>
+<p>\begin{eqnarray}<br />
+&#038;&#038;\mathrm d(\omega+\eta)=\mathrm d\omega+\mathrm d \eta  \\<br />
+&#038;&#038;\mathrm d(\lambda\wedge\mu)=\mathrm d\lambda\wedge\mu+(-1)^{\text{deg}\lambda}\lambda\wedge\mathrm d\mu \\<br />
+&#038;&#038;\text{For each } \omega, \mathrm d (\mathrm d\omega)=0 \text{. This is the Poncare Lemma.}\\<br />
+&#038;&#038;\text{For each smooth function }f,  \mathrm d f=\Sigma \frac{\partial f}{\partial x^i}\mathrm d x^i  \\<br />
+\end{eqnarray}</p>
+<p>A reminder: do not try to prove the Poncare lemma using the ordinary partial derivatives. It is easy to prove it using the defination.</p>
+<p>2.  Mappings are very important here. Two of the most important mappings are pull back and push forwad. A figure is useful for understanding.</p>
+<p>\begin{equation}<br />
+\mathcal{R} \xleftarrow{\phi^*g=g\circ \phi} \mathcal{U}  \xrightarrow{\phi} \mathcal{V} \xrightarrow{g} \mathcal{R}<br />
+\end{equation}</p>
+<p>In this schematic figure, \(\phi\) is pull back mapping and \(\phi^*\) is the push forward mapping. Since \(g\) is a function, \(\phi^*\) should be a map from \(F^0(V)\) to \(F^0(U)\).</p>
+<p>We need these mappings because we want to move p-forms from one manifold to another. Thus extending this from scalar function to p-forms is useful. (\(\mathcal {W,U,V}\) are p-form spaces.)</p>
+<p>\begin{equation}<br />
+\mathcal{W} \xleftarrow{\psi\circ \phi} \mathcal{U}  \xrightarrow{\phi} \mathcal{V} \xrightarrow{\psi} \mathcal{W}<br />
+\end{equation}</p>
+<p>Since \(\mathcal W\) is a p-form space now, the push forward map can not be as simple as the previous one.</p>
+<p>Now we will define it,<br />
+\begin{equation}<br />
+F^p(\mathcal W) \xrightarrow{(\psi\circ\phi)^*=\phi^*\circ\psi^*} F^p(\mathcal{U})  \xleftarrow{\phi^*} F^p(\mathcal{V}) \xleftarrow{\psi^*} F^p\mathcal{(W)}<br />
+\end{equation}</p>
+<p>All the mappings about p-forms are done under corresponding points if they are in different domains.</p>
+<p>3. An important relation that shows <strong>the exterior derivative of a differential form is independent of the coordinate system in which it is calculated</strong> is shown here.<br />
+\begin{equation}<br />
+\mathrm d \phi^*\omega=\phi^*\mathrm d \omega<br />
+\end{equation}</p>
+<hr />
+<strong>Reference:</strong></p>
+<p><a href="http://books.google.com/books?id=pG0PllIO08kC&#038;dq" target="_blank">Differential forms with applications to the physical sciences<br />
+By By Harley Flanders</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6266" rel="bookmark" title="一张图理清热力学势之间的关系">一张图理清热力学势之间的关系 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2173" rel="bookmark" title="外微分形式 | {Differential Forms} [3]">外微分形式 | {Differential Forms} [3] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2167/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>外微分形式 &#124; {Differential Forms} [1]</title>
+		<link>http://multiverse.lamost.org/blog/2091</link>
+		<comments>http://multiverse.lamost.org/blog/2091#comments</comments>
+		<pubDate>Wed, 07 Sep 2011 17:31:29 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2091</guid>
+		<description><![CDATA[从今天开始，会不定期的贴出比较完整的外微分形式(exterior differential forms)的大纲。大部分只是简单的从书本中摘出来的，以便以后快速回想和查阅使用。初学者可能会犯很多错误，强烈要求指正。 所读书本为Harley Flanders的书，Google Books链接在文末给出。 第一部分：http://multiverse.lamost.org/blog/?p=2091 第二部分：http://multiverse.lamost.org/blog/?p=2167 第三部分：http://multiverse.lamost.org/blog/?p=2173 Contents: Chapter 1 Why forms? Chapter 2 Exterior Algebra Chapter 1 Why forms? Orientation of the integration, determined by the argument. More simple for some calculation. I always encounter calculations hard...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2173" rel="bookmark" title="外微分形式 | {Differential Forms} [3]">外微分形式 | {Differential Forms} [3] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>从今天开始，会不定期的贴出比较完整的外微分形式(exterior differential forms)的大纲。大部分只是简单的从书本中摘出来的，以便以后快速回想和查阅使用。初学者可能会犯很多错误，强烈要求指正。<br />
+所读书本为Harley Flanders的书，Google Books链接在文末给出。<span id="more-2091"></span></p>
+<p>第一部分：<a href="http://multiverse.lamost.org/blog/?p=2091">http://multiverse.lamost.org/blog/?p=2091</a><br />
+第二部分：<a href="http://multiverse.lamost.org/blog/?p=2167">http://multiverse.lamost.org/blog/?p=2167</a><br />
+第三部分：<a href="http://multiverse.lamost.org/blog/?p=2173">http://multiverse.lamost.org/blog/?p=2173</a></p>
+<hr />
+<p>Contents:<br />
+<a href="#chap1">Chapter 1   Why forms?</a><br />
+<a href="#chap2">Chapter 2   Exterior Algebra</a></p>
+<hr />
+<p><a name=chap1>Chapter 1   Why forms?</a></p>
+<p>Orientation of the integration, determined by the argument.</p>
+<p>More simple for some calculation. I always encounter calculations hard to be solved only with tensor analysis. That is why I started to learn a little about exterior differential forms.</p>
+<p>&#8230;</p>
+<p><a name=chap2>Chapter 2   Exterior Algebra</a></p>
+<p>1. Set up the space we will work on.</p>
+<p>✟\mathcal{R}✟: field of real numbers.</p>
+<p>✟\mathcal{L}✟: n dimensional space over ✟\mathcal{R}✟ with elements ✟\alpha✟, ✟\beta✟, ✟\dots✟</p>
+<p>✟\wedge^p \mathcal{L}✟: space of p-vectors on ✟\mathcal{L}✟. This will be made clear later.</p>
+<p>2. Basic rules for basis.</p>
+<p>Linear: ✟(a \alpha +b \beta)\wedge \alpha_2\wedge\cdots\wedge\alpha_p = a(\alpha\wedge\alpha_2\wedge\cdots\wedge\alpha_p)+b(\beta\wedge\alpha_2\wedge\cdots\wedge\alpha_p)✟</p>
+<p>Any of the terms repeated in the expression ✟\alpha_1\wedge\alpha_2\wedge\cdots\wedge\alpha_p✟ leads the whole to 0.</p>
+<p>Interchanging between two terms in ✟\alpha_1\wedge\alpha_2\wedge\cdots\wedge\alpha_p✟ changes the whole&#8217;s sign.</p>
+<p>3. Properties of p-vector space</p>
+<p>Function g can be defined on ✟\mathcal{L}✟ and mapping f on ✟\wedge^p \mathcal{L}✟, satisfying ✟f(\alpha_1\wedge\cdots\wedge\alpha_p)=g(\alpha_1, \cdots, \alpha_p)✟.</p>
+<p>4. Determinants</p>
+<p>Function ✟g_A✟: ✟\bigotimes^n \mathcal{L} \rightarrow \wedge^n \mathcal{L}✟ and ✟f_A✟: ✟\wedge^n\mathcal{L}\rightarrow\wedge^n\mathcal{L}✟ can be related by<br />
+\begin{equation}<br />
+f_A(\alpha_1\wedge\cdots\wedge\alpha_p)=g_A(\alpha_1,\cdots, \alpha_p)\equiv A\alpha_1\wedge\cdots\wedge A\alpha_p<br />
+\end{equation}</p>
+<p>Since only one kind of transformation the linear function ✟f_A✟ has, the only possible expression for ✟f_A✟ is ✟|A|\alpha_1\wedge\cdots\wedge\alpha_p✟, where ✟|A|✟ is a scalar. Define ✟\wedge^p(\alpha_1\wedge\cdots\wedge\alpha_p)\equiv A\alpha_1\wedge\cdots\wedge A\alpha_p✟.</p>
+<p>Another way of looking at ✟g_A✟ is ✟A\alpha_1\wedge\cdots\wedge A\alpha_p = |a^i_j|\alpha_1\wedge\cdots\wedge\alpha_p✟, if we have ✟A\sigma^i=\Sigma a^i_j \sigma^j✟.</p>
+<p>Comparing the two understandings, we find ✟|A|=|a^i_j|✟. Here ✟|A|✟ is the determinant.</p>
+<p>5. Exterior products</p>
+<p>Basic rules: (✟\mu✟ and ✟\lambda✟ are p vector and q vector respectively)</p>
+<p>a. ✟\mu\wedge\lambda✟ distribuative</p>
+<p>b. associative</p>
+<p>c. ✟\mu\wedge\lambda=(-1)^{pq}\lambda\wedge\mu✟</p>
+<p>6. Linear transformations</p>
+<p>Linear spaces: ✟\mathcal{M},\mathcal{N}✟ with dimension m and n respectively. The basis of ✟\mathcal{M}✟ is ✟\sigma^i✟.</p>
+<p>Define a linear transformation A : ✟\mathcal M \rightarrow \mathcal N✟, which is<br />
+\begin{equation}<br />
+(\alpha_1, \cdots, \alpha_p) \rightarrow A\alpha_1\wedge\cdots\wedge A\alpha_p .<br />
+\end{equation}</p>
+<p>This is a map from ✟\bigotimes^p\mathcal M✟ to ✟\wedge^p \mathcal N✟.</p>
+<p>One would find a useful linear transformation can be denoted ✟\wedge^p A✟ : ✟\wedge^p \mathcal M\rightarrow \wedge^p\mathcal N✟.</p>
+<p>Note that ✟\wedge^p A✟ has matrix representation.</p>
+<p>7. Inner product spaces</p>
+<p>Basic rules</p>
+<p>a. Linear in each variable</p>
+<p>b. Symmetric: ✟(\alpha, \beta)=(\beta, \alpha)✟</p>
+<p>c. Nondegenerate: if for fiexed ✟\alpha✟, ✟(\alpha,\beta)=0✟ for all ✟\beta✟, then ✟\alpha=0✟.</p>
+<p>Properties:</p>
+<p>a. Each inner product space ✟\mathcal L✟ has an orthonormal basis.</p>
+<p>b. ✟f✟: linear function on ✟\mathcal L✟. Then there is a vector ✟\beta✟ in ✟\mathcal L✟ such that ✟f(\alpha)=(\alpha, \beta)✟. (This property is very important.)</p>
+<p>8. Inner product of p-vectors</p>
+<p>Vector space ✟\mathcal L✟ has inner product ✟(\alpha,\beta)✟ on it. Define ✟(\lambda,\mu)=|(\alpha_i,\beta_j)|✟ on ✟(\wedge^p \mathcal L)\bigotimes (\wedge^p\mathcal L)✟, in which ✟\lambda=\alpha_1\wedge\cdots\wedge\alpha_p✟, ✟\mu=\beta_1\wedge\cdots\wedge\beta_p✟.</p>
+<p>9. Hodge star</p>
+<p>Linear transformation on ✟\wedge^p\mathcal L\rightarrow \wedge^{n-p}\mathcal L✟. (Depends on inner product and orientation. Orientation of ✟\mathcal L✟ which will remain fixed means we hake on basis for ✟\mathcal L✟ and only consider other basis which are expressed in terms of this one by a matrix with positive determinant.)<br />
+\begin{equation}<br />
+\lambda\wedge\mu=(*\lambda, \mu)\sigma (=f_\lambda (\mu)\sigma)<br />
+\end{equation}</p>
+<p>here * map is a linear one ✟\wedge^p\mathcal L\rightarrow \wedge^{n-p}\mathcal L✟.</p>
+<blockquote><p>
+注： ✟f_\lambda(\mu)✟把✟\mu✟从✟\wedge^p\mathcal L✟映射到✟\wedge^n\mathcal L✟。✟\lambda✟是✟\wedge^p\mathcal L✟上，✟\mu✟是✟\wedge^{n-p}\mathcal L✟上的，为了定义出这个线性的✟f_\lambda(\mu)✟，想到inner product,这样需要把✟\lambda✟，✟\mu✟放在同样的space中，故通过*来把✟\lambda✟从✟\wedge^p\mathcal L✟映射到✟\wedge^{n-p}\mathcal L✟上。</p></blockquote>
+<hr />
+<strong>Reference:</strong></p>
+<p><a href="http://books.google.com/books?id=pG0PllIO08kC&#038;dq" target="_blank">Differential forms with applications to the physical sciences<br />
+By By Harley Flanders</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2173" rel="bookmark" title="外微分形式 | {Differential Forms} [3]">外微分形式 | {Differential Forms} [3] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2091/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

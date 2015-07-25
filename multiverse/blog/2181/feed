@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 中微子比光快实验中的引力效应分析</title>
+	<atom:link href="http://multiverse.lamost.org/blog/2181/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/2181</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 明月稀星河畔</title>
+		<link>http://multiverse.lamost.org/blog/2181/comment-page-1#comment-402</link>
+		<dc:creator><![CDATA[明月稀星河畔]]></dc:creator>
+		<pubDate>Tue, 27 Sep 2011 02:03:39 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2181#comment-402</guid>
+		<description><![CDATA[啊，我靠这个吃饭啊~侯哥现在还不是靠广相吃饭嘛~
+
+我不懂QFT，量子都快忘记了……]]></description>
+		<content:encoded><![CDATA[<p>啊，我靠这个吃饭啊~侯哥现在还不是靠广相吃饭嘛~</p>
+<p>我不懂QFT，量子都快忘记了……</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 荊陽青龍公</title>
+		<link>http://multiverse.lamost.org/blog/2181/comment-page-1#comment-400</link>
+		<dc:creator><![CDATA[荊陽青龍公]]></dc:creator>
+		<pubDate>Mon, 26 Sep 2011 17:12:21 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2181#comment-400</guid>
+		<description><![CDATA[可惜呀，我都還不懂呢]]></description>
+		<content:encoded><![CDATA[<p>可惜呀，我都還不懂呢</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 明月稀星河畔</title>
+		<link>http://multiverse.lamost.org/blog/2181/comment-page-1#comment-396</link>
+		<dc:creator><![CDATA[明月稀星河畔]]></dc:creator>
+		<pubDate>Sun, 25 Sep 2011 05:40:34 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2181#comment-396</guid>
+		<description><![CDATA[那是因为我用了号差-2的度规，也就是对角元为(1,-1,-1,-1)。
+之所以称为线性近似，是因为\(\frac{2MG}{rc^2}\)很小，我把原来的那个倒数的式子Taylor展开取了一阶项。也就是
+\begin{equation}
+\frac{1}{1-x}\sim 1+x, x\rightarrow 0
+\end{equation}
+
+
+&lt;font style=&quot;color:red;&quot;&gt;不过我原来\(r^2\mathrm d\theta^2\）前面的符号抄错了，算的时候没错。&lt;/font&gt;]]></description>
+		<content:encoded><![CDATA[<p>那是因为我用了号差-2的度规，也就是对角元为(1,-1,-1,-1)。<br />
+之所以称为线性近似，是因为\(\frac{2MG}{rc^2}\)很小，我把原来的那个倒数的式子Taylor展开取了一阶项。也就是<br />
+\begin{equation}<br />
+\frac{1}{1-x}\sim 1+x, x\rightarrow 0<br />
+\end{equation}</p>
+<p><font style="color:red;">不过我原来\(r^2\mathrm d\theta^2\）前面的符号抄错了，算的时候没错。</font></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 李 白</title>
+		<link>http://multiverse.lamost.org/blog/2181/comment-page-1#comment-395</link>
+		<dc:creator><![CDATA[李 白]]></dc:creator>
+		<pubDate>Sun, 25 Sep 2011 05:02:28 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2181#comment-395</guid>
+		<description><![CDATA[我现在还没有搞懂广义相对论，因此我只是弱弱地问一下：
+你的“Schwarzschild度规的线性近似”式子是否正确，其中的两个正号确实是正确的吗？我怎么看书上是负的？第二项dr方的系数好像应该是倒数吧？]]></description>
+		<content:encoded><![CDATA[<p>我现在还没有搞懂广义相对论，因此我只是弱弱地问一下：<br />
+你的“Schwarzschild度规的线性近似”式子是否正确，其中的两个正号确实是正确的吗？我怎么看书上是负的？第二项dr方的系数好像应该是倒数吧？</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

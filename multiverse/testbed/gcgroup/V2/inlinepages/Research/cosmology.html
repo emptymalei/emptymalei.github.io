@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Website Horizontal Scrolling with CSS &amp; jQuery &ndash; Sunflowa Media Web Site</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+<!-- The JavaScript -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('ul.nav a').bind('click',function(event){
+			var $anchor = $(this);
+			/*
+			if you want to use one of the easing effects:
+			$('html, body').stop().animate({
+				scrollLeft: $($anchor.attr('href')).offset().left
+			}, 1500,'easeInOutExpo');
+			 */
+			$('html, body').stop().animate({
+				scrollLeft: $($anchor.attr('href')).offset().left
+			}, 1000);
+			event.preventDefault();
+		});
+	});
+</script>
+
+
+
+
+<body>
+
+
+
+
+<div id="wrap">
+    <div id="container-wrap"> 
+ 
+        <div class="section white" id="section1">
+         <h2>Dark Energy</h2>
+                         <p> 
+                         <IMG src="images/Darkenergy.jpg" width="207" height="150" align="right">
+					
+                         <span>Recently, the modern cosmology has been experiencing a rapid development facilitated by the unprecedented improvement in the accuracy of observations. The latest experiments suggest that our universe consists of 73% dark energy (DE), 23% cold dark matter (CDM) and the usual baryonic matter only accounts for a small fraction of the content with no more than 4% in amount. Nevertheless, it is dramatic to know that the dominated bulk of the universe is an exotic field divergent from the usual one with positive energy density but negative pressure. The mystery of the existence of such ingredient in the universe has attracted most of the brilliant brains to come up with various theories to unveil its nature. During the last decade, great effort has been made both in experiments and theories, however, the questions in regards dark energy are still challenging: 
+						 </span>
+						 </p>
+
+                         <blockquote>
+                         <p><em> What is the dark energy? </em></p>
+                         <p><em>Is it much different from the sauce? How did it taste? </em></p>
+                        </blockquote>
+           
+      
+            <ul class="nav">
+                <li>1</li>
+                <li><a href="cosmology.html#section2">2</a></li>
+                <li><a href="cosmology.html#section3">3</a></li>
+				<li><a href="cosmology.html#section4">4</a></li>
+				<li><a href="cosmology.html#section5">5</a></li>
+            </ul>
+        </div>
+		
+	
+        <div class="section white" id="section2">
+            <h2>Cosmic Microwave Background</h2>
+   <p> 
+                       <img src="images/CMB.jpg" width="254" height="128" align="right">
+					
+                       <span>The research on Cosmic Microwave Background (CMB) was honored twice by Nobel Prize in Physics. The first one was given to two American engineers Penzias and Wilson in 1978 for their discovery of the remains of the black body spectrum of cosmic background radiation. The second one was awarded to John C.Mather and George F.Smoot in 2006 for their remarkable leadership of the COBE science group on finding the anisotropies of the CMB. The figure on the right shows the most recent results of such anisotropy which was got by WMAP satellite launched in 2001 by NASA. The unprecedented precise and accurate result from WMAP is a milestone which ushers us in the era of precision cosmology. The map encodes the very information that we want to unveil the nature of the universe. 
+					   </span>
+					   </p>
+					   
+            <ul class="nav">
+                <li><a href="cosmology.html#section1">1</a></li>
+                <li>2</li>
+                <li><a href="cosmology.html#section3">3</a></li>
+					<li><a href="cosmology.html#section4">4</a></li>
+				<li><a href="cosmology.html#section5">5</a></li>
+            </ul>
+        </div>
+		
+		
+		
+        <div class="section white" id="section3">
+            <h2>Large Scale Structure</h2>
+                              <p> 
+                       <img src="images/structureformation.jpg" width="150" height="150" align="right">
+                       <span>The large-scale structure of the universe refers to the characterization of observable distributions of matter and light on the largest scales. There is much work in cosmology which attempts to model the large-scale structure of the universe. Using the big bang model and assumptions about the type of matter that makes up the universe, it is possible to predict the expected distribution of matter, and by comparison with observation work backward to support and refute certain cosmological theories.  The figure on the right displays the evolution of these foam and filament structure in the universe. 
+					   </span>
+					   </p>					   
+					   
+                <ul class="nav">
+                <li><a href="cosmology.html#section1">1</a></li>
+                <li><a href="cosmology.html#section2">2</a></li>
+                <li>3</li>
+				<li><a href="cosmology.html#section4">4</a></li>
+				<li><a href="cosmology.html#section5">5</a></li>
+            </ul>
+        </div>
+
+        <div class="section white" id="section4">
+            <h2>Parallel Computing</h2>
+                       <p> 
+                       <img src="images/cluster.jpg" width="112" height="150" align="right">
+                       <span>In the simplest sense, parallel computing is the simultaneous use of multiple compute resources to solve a computational problem. When the problem is time exhaust by using a single CPU, or it needs to handle a large system with millions of particles, the parallel computing is powerful on this occasion. Our department can provide an excellent service of the compute resources. There are several well operated clusters in the department, which can provide thousands of CPU hours annually for clients. Now, we are trying to exploit a new direction by making use of these facilities to implement a N-body simulation code to investigate the Large-scale structures of the universe under various cosmological models.
+					   </span>
+					   </p> 
+					  
+	
+            <ul class="nav">
+                <li><a href="cosmology.html#section1">1</a></li>
+                <li><a href="cosmology.html#section2">2</a></li>
+                <li><a href="cosmology.html#section3">3</a></li>
+				<li>4</li>
+				<li><a href="cosmology.html#section5">5</a></li>
+			</ul>
+        </div>
+
+
+        <div class="section white" id="section5">
+            <h2>Feather Reading</h2>
+
+                     <p>
+                       <strong>Dark Energy: </strong><br>Report of the dark energy task force, <a href="http://arxiv.org/abs/astro-ph/0609591">arXiv:astro-ph/0609591</a><br><br>
+                      <strong> Cosmic Microwave Background: <br></strong>R. Durrer, arXiv,  <a href="http://arxiv.org/abs/astro-ph/0109522" >arXiv:astro-ph/0109522</a><br>
+                      
+                         M. Giovannini,Int.J.Mod.Phys. D14,363(2005),<a href="http://arxiv.org/abs/astro-ph/0412601">arXiv:astro-ph/0412601</a>
+                         <br>
+                             A. Riotto, <a href="http://arxiv.org/abs/hep-ph/0210162">arXiv:hep-ph/0210162</a>
+<br>
+                        C. G. Tsagas, A. Challinor, R. Maartens,<a href="http://arxiv.org/abs/0705.4397"> arXiv:astro-ph/0705.4397</a>                      <br>
+                            G. F. R Ellis, H. V. Elst, </a><a href="http://arxiv.org/abs/gr-qc/9812046">arXiv:gr-qc/9812046</a>
+                         <br><br>
+
+                             <strong>The Large-scale Structure : </strong><br>L. Wang, P. J. Steinhardt,<a href="http://arxiv.org/abs/astro-ph/9804015">arXiv:astro-ph/9804015</a>
+</p>
+					   
+					   
+            <ul class="nav">
+                <li><a href="cosmology.html#section1">1</a></li>
+                <li><a href="cosmology.html#section2">2</a></li>
+				<li><a href="cosmology.html#section3">3</a></li>
+				<li><a href="cosmology.html#section4">4</a></li>
+                <li>5</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

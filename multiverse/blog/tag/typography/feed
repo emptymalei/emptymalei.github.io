@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Typography</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/typography/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>Typography Prezi by Travis Hitchcock</title>
+		<link>http://multiverse.lamost.org/blog/2733</link>
+		<comments>http://multiverse.lamost.org/blog/2733#comments</comments>
+		<pubDate>Wed, 11 Apr 2012 15:51:28 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Coding]]></category>
+		<category><![CDATA[TeX]]></category>
+		<category><![CDATA[Typography]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2733</guid>
+		<description><![CDATA[Travis Hitchcock写了一个很简单的typography的presentation~非常非常简单的…… 即使不关心typography，知道这些对用\(LaTeX\)也是很有帮助的。 Typography on Prezi<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2145" rel="bookmark" title="Eclipse + CDT | Gedit plugin">Eclipse + CDT | Gedit plugin </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Travis Hitchcock写了一个很简单的typography的presentation~非常非常简单的……</p>
+<p>即使不关心typography，知道这些对用\(LaTeX\)也是很有帮助的。<span id="more-2733"></span></p>
+<div class="prezi-player">
+<style type="text/css" media="screen">.prezi-player { width: 550px; } .prezi-player-links { text-align: center; }</style>
+<p><object id="prezi_ufnrer-swszq" name="prezi_ufnrer-swszq" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="550" height="400"><param name="movie" value="http://prezi.com/bin/preziloader.swf"/><param name="allowfullscreen" value="true"/><param name="allowscriptaccess" value="always"/><param name="bgcolor" value="#ffffff"/><param name="flashvars" value="prezi_id=ufnrer-swszq&amp;lock_to_path=1&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0"/><embed id="preziEmbed_ufnrer-swszq" name="preziEmbed_ufnrer-swszq" src="http://prezi.com/bin/preziloader.swf" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="550" height="400" bgcolor="#ffffff" flashvars="prezi_id=ufnrer-swszq&amp;lock_to_path=1&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0"/></object>
+<div class="prezi-player-links">
+<p><a title="Typography" href="http://prezi.com/ufnrer-swszq/typography/">Typography</a> on <a href="http://prezi.com">Prezi</a></p>
+</div>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2145" rel="bookmark" title="Eclipse + CDT | Gedit plugin">Eclipse + CDT | Gedit plugin </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2733/feed</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+	</channel>
+</rss>

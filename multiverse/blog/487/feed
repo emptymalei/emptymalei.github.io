@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: The Far Future of Us</title>
+	<atom:link href="http://multiverse.lamost.org/blog/487/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/487</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/487/comment-page-1#comment-101</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Tue, 21 Dec 2010 11:32:08 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=487#comment-101</guid>
+		<description><![CDATA[嗯，这个模板很流行，而且有很多版本~只可惜信息量太少，适合做miniblog ]]></description>
+		<content:encoded><![CDATA[<p>嗯，这个模板很流行，而且有很多版本~只可惜信息量太少，适合做miniblog </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 白李</title>
+		<link>http://multiverse.lamost.org/blog/487/comment-page-1#comment-100</link>
+		<dc:creator><![CDATA[白李]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2010 20:42:48 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=487#comment-100</guid>
+		<description><![CDATA[从你这里点开了ChANG&#039;s Superspace，竟然发现他的blog与目前我的电脑上安装的一个网站用的是相同的WordPress模板。不过，我可是做了大部分汉化的。 ]]></description>
+		<content:encoded><![CDATA[<p>从你这里点开了ChANG&#039;s Superspace，竟然发现他的blog与目前我的电脑上安装的一个网站用的是相同的WordPress模板。不过，我可是做了大部分汉化的。 </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 白李</title>
+		<link>http://multiverse.lamost.org/blog/487/comment-page-1#comment-99</link>
+		<dc:creator><![CDATA[白李]]></dc:creator>
+		<pubDate>Mon, 20 Dec 2010 20:38:25 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=487#comment-99</guid>
+		<description><![CDATA[我觉得任何一个问题一旦要认真分析起来，都会变得十分复杂。 ]]></description>
+		<content:encoded><![CDATA[<p>我觉得任何一个问题一旦要认真分析起来，都会变得十分复杂。 </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; 微积分</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/%e5%be%ae%e7%a7%af%e5%88%86/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>一页纸上的微积分</title>
+		<link>http://multiverse.lamost.org/blog/5576</link>
+		<comments>http://multiverse.lamost.org/blog/5576#comments</comments>
+		<pubDate>Sat, 06 Apr 2013 12:46:09 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[微积分]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=5576</guid>
+		<description><![CDATA[我们都说微分和积分是一对互逆的运算，那么究竟怎么个互逆法呢？ 花了点时间把微分和积分的相应内容列举出来了： 微积分学过已经有五六年了，很多内容想不起来了，所以暂时先列举这些，以后可能还会添加内容。 相关的内容放在这个 repo： https://github.com/emptymalei/MathPrimer 本文所在的目录是： DifferentialIntegral 内有 TeX 代码，pdf 文件和 png 图片。请使用 XeTeX 编译源码。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/5579" rel="bookmark" title="线性代数与几何">线性代数与几何 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/253" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>我们都说微分和积分是一对互逆的运算，那么究竟怎么个互逆法呢？</p>
+<p>花了点时间把微分和积分的相应内容列举出来了：<span id="more-5576"></span></p>
+<p><img src="https://raw.github.com/emptymalei/MathPrimer/master/DifferentialIntegral/DifferentialANDIntegralOnOnePage.png"/></p>
+<p>微积分学过已经有五六年了，很多内容想不起来了，所以暂时先列举这些，以后可能还会添加内容。</p>
+<hr />
+<p>相关的内容放在这个 repo：</p>
+<p><a href="https://github.com/emptymalei/MathPrimer">https://github.com/emptymalei/MathPrimer</a></p>
+<p>本文所在的目录是：<br />
+DifferentialIntegral<br />
+内有 TeX 代码，pdf 文件和 png 图片。请使用 XeTeX 编译源码。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/5579" rel="bookmark" title="线性代数与几何">线性代数与几何 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/253" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/5576/feed</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+		</item>
+	</channel>
+</rss>

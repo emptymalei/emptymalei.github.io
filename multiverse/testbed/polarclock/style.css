@@ -1,0 +1,391 @@
+/* Global reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, cite, code, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	
+	vertical-align: baseline;
+}
+/**************************/
+
+::selection {
+	color:#FFF;
+	background-color: #F63;
+}
+/************************/
+#polar{
+	width: 650px;
+	margin:auto;
+
+	
+	
+}
+/********************/
+
+
+#label {
+
+    position: absolute;
+
+    bottom: 10px;
+
+    right: 10px;
+
+    font: 10px sans-serif;
+
+    color: #666;
+
+}
+
+#label a {
+
+    color: #252525;
+
+    text-decoration:none;
+
+    padding-left: 3px;
+
+    padding-right: 3px;
+
+}
+
+
+/***************************/
+#canvas{
+	width:600px;
+	margin:auto;
+	display:block;
+	margin-top:5%;
+	
+}
+
+/***********options**************/
+.options{
+	 font-family:Arial, Helvetica, sans-serif;
+	 padding: 10px;
+	 margin:auto;
+	 
+}
+
+
+.options h1{
+	font-size:40px;
+	font-weight:bold;
+	margin-bottom: 20px
+		
+}
+
+.options h3{
+	margin-top: 30px;
+	font-size: 12px;
+	
+}
+
+.options a{
+	text-decoration:none;
+	color:#333;
+	border-bottom:#333 dotted 1px;
+	
+}
+
+.options a:hover{
+	color:#000;
+	border-bottom:#000 dotted 1px;
+	text-align: center;
+	
+}
+/*******************/
+#bg_color{
+	height: 20px;
+	width:  80px;
+	border:none;
+	padding: 10px;
+	font: 14px Arial, Helvetica, sans-serif;
+	
+	-webkit-border-radius: 3px;
+
+	
+}
+#picker{
+	margin-bottom: 20px;
+	
+	
+}
+/*****************/
+#update{
+	/******************/
+	
+	     display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+    *display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	
+	/********************/
+	
+	 color: #FFF;
+	border: solid 1px #555;
+	background: #6e6e6e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+	background: -moz-linear-gradient(top,  #888,  #575757);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+	
+}
+
+#update:hover {
+    background: #616161;
+    background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+    background: -moz-linear-gradient(top,  #757575,  #4b4b4b);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#4b4b4b');
+}
+#update:active {
+    color: #afafaf;
+    background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#888));
+    background: -moz-linear-gradient(top,  #575757,  #888);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#888888');
+}
+
+
+
+/***************************************************/
+
+/*****************/
+#save{
+	/******************/
+	
+	     display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+    *display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	
+	/********************/
+	
+	 color: #FFF;
+	border: solid 1px #555;
+	background: #6e6e6e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+	background: -moz-linear-gradient(top,  #888,  #575757);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+	
+}
+
+#save:hover {
+    background: #616161;
+    background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+    background: -moz-linear-gradient(top,  #757575,  #4b4b4b);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#4b4b4b');
+}
+#save:active {
+    color: #afafaf;
+    background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#888));
+    background: -moz-linear-gradient(top,  #575757,  #888);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#888888');
+}
+
+
+/********************** notice*****/
+body { }
+#statusWrapper {
+	margin: 1em 0;
+	padding: 0.5em;
+	font-size: 80%;
+	text-align: left;
+	background-color: #FFF;
+	color: #333;
+}
+#request {
+	text-align: center;
+	font-size: 24pt;
+	margin-top: 25px;
+}
+#request, #request input {
+	font-size: 22pt;
+}
+#request input {
+	text-align: center;
+	color: #333;
+}
+#request p {
+	margin: 0.2em 0;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 40px;	 
+	  }
+
+
+/************/
+ #request  button {
+	display: inline-block;
+	zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+ *display: inline;
+	vertical-align: baseline;
+	margin: 0 2px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+#request  button:hover {
+	text-decoration: none;
+}
+#request  button:active {
+	position: relative;
+	top: 1px;
+}
+
+.gray {
+	color: #e9e9e9;
+	border: solid 1px #555;
+	background: #6e6e6e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+	background: -moz-linear-gradient(top, #888, #575757);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+}
+.gray:hover {
+	background: #616161;
+	background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+	background: -moz-linear-gradient(top, #757575, #4b4b4b);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#4b4b4b');
+}
+.gray:active {
+	color: #afafaf;
+	background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#888));
+	background: -moz-linear-gradient(top, #575757, #888);
+ filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#888888');
+}
+
+/************/
+@-webkit-keyframes pulse {
+ from { margin-right: 400px; }
+ to { margin-right: 0; }
+}
+#status.visible {
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+}
+
+/************end notice *******************/
+
+
+/********************info**********************/
+
+#info{
+	padding: 10px;
+	
+}
+
+
+#info p{
+	
+	font-family:"Courier New", Courier, monospace;
+	font-size: 12px;
+	
+	
+}
+
+#info strong{
+	font-weight: bold;
+	
+}
+
+/****/
+html {
+overflow-y: auto;
+background-color: transparent;
+}
+
+#info   {
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 10px;
+overflow-y: scroll;
+overflow-x: hidden;
+}
+
+
+
+::-webkit-scrollbar {
+width: 10px;
+height: 10px;
+}
+
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+height: 30px;
+display: block;
+background-color: transparent;
+
+}
+
+::-webkit-scrollbar-track-piece  {
+background-color: #3b3b3b;
+-webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+height: 50px;
+background-color: #666;
+-webkit-border-radius: 6px;
+}
+
+/***help**/
+
+#notice-help p{
+	
+	font-size:12px;
+	
+	
+}
+
+
+
+
+
+/***************************en info***********/
+

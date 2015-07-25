@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 我们的征途——系外行星</title>
+	<atom:link href="http://multiverse.lamost.org/blog/5748/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/5748</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 时见疏星</title>
+		<link>http://multiverse.lamost.org/blog/5748/comment-page-1#comment-4125</link>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+		<pubDate>Sat, 11 May 2013 12:21:20 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=5748#comment-4125</guid>
+		<description><![CDATA[不是。我是宇宙学的。对这个东西多少感兴趣些，随便看看。你是做这个的？]]></description>
+		<content:encoded><![CDATA[<p>不是。我是宇宙学的。对这个东西多少感兴趣些，随便看看。你是做这个的？</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 胡晓</title>
+		<link>http://multiverse.lamost.org/blog/5748/comment-page-1#comment-4124</link>
+		<dc:creator><![CDATA[胡晓]]></dc:creator>
+		<pubDate>Sat, 11 May 2013 04:52:08 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=5748#comment-4124</guid>
+		<description><![CDATA[你也是做exo planet的？]]></description>
+		<content:encoded><![CDATA[<p>你也是做exo planet的？</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

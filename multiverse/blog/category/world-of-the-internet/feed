@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; 计算中的宇宙</title>
+	<atom:link href="http://multiverse.lamost.org/blog/category/world-of-the-internet/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>第一次见四元数</title>
+		<link>http://multiverse.lamost.org/blog/6359</link>
+		<comments>http://multiverse.lamost.org/blog/6359#comments</comments>
+		<pubDate>Tue, 20 May 2014 20:15:42 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<category><![CDATA[Quantum Mechanics]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6359</guid>
+		<description><![CDATA[上周 colloquium 的时候，第一次听到 quaternion 这个词，觉得很新鲜。quaternion 的矩阵表示是 \begin{equation} q = \begin{pmatrix}\;z &#38; w &#92;&#92; -w^* &#38; \;z^*\end{pmatrix} . \end{equation} 当时这个定义写出来，我立刻就想到了复数 $C = a+ib $的矩阵表达， \begin{equation} C = \begin{pmatrix} \;\; a &#38; b &#92;&#92; &#8211; b &#38; a \end{pmatrix}. \end{equation} 但不同的是，quaternion 矩阵表示的元素是复数。...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6056" rel="bookmark" title="量子力学计算的一个小技巧">量子力学计算的一个小技巧 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>上周 colloquium 的时候，第一次听到 quaternion 这个词，觉得很新鲜。quaternion 的矩阵表示是<br />
+<span id="more-6359"></span></p>
+<p>\begin{equation}<br />
+q = \begin{pmatrix}\;z &amp; w &#92;&#92; -w^* &amp; \;z^*\end{pmatrix} .<br />
+\end{equation}</p>
+<p>当时这个定义写出来，我立刻就想到了复数 $C = a+ib $的矩阵表达，</p>
+<p>\begin{equation}<br />
+C = \begin{pmatrix}<br />
+  \;\; a &amp;   b  &#92;&#92;<br />
+  &#8211; b &amp;  a<br />
+\end{pmatrix}.<br />
+\end{equation}</p>
+<p>但不同的是，quaternion 矩阵表示的元素是复数。</p>
+<p>做了这样的推广之后，quaternion 还有还好的性质，</p>
+<ol>
+<li>在加法，乘法和实数乘法下面是 closed.</li>
+<li>模是两个复数的模之和。</li>
+</ol>
+<p>这些性质都很容易验证，特别是在 closed 这条，我们可以进一步验证这构成一个群。</p>
+<p>还有一个非常漂亮的性质就是自己乘以自己的 hermitian comjugate 等于其模乘以单位矩阵，</p>
+<p>\begin{equation}<br />
+q^\dagger q= q q^\dagger = &#124; q &#124;^2 I.<br />
+\end{equation}</p>
+<p>为什么这个漂亮呢？因为这样我们就可以往 $2\times2$矩阵里面随便插入这个量除以其模。</p>
+<p>另外一个非常有趣的事情是，quaternion 可以跟 Pauli matrices 联系起来。一个任意的 quaternion，可以通过 Pauli matrices $\vec \sigma$ 和一个四向量 $\vec x$ 来生成，</p>
+<p>\begin{align}<br />
+q(x) &amp; = x^0 &#8211; i \vec \sigma \cdot \vec x &#92;&#92;<br />
+&amp; = \begin{pmatrix} x^0 &#8211; i x^3 &amp; -x^2 -ix^1 &#92;&#92; x^2 -i x^1 &amp; x^0 + i x^3 \end{pmatrix}.<br />
+\end{align}</p>
+<p>这个也正好体现了 Pauli matrices 外加单位矩阵的完备性。</p>
+<p>再加上 Pauli matrices 跟转动有关，所以这个简单的推广在物理中有很重要的应用。</p>
+<p>回想一下，欧式空间的转动，</p>
+<p>\begin{equation}<br />
+R \circeq \begin{pmatrix}\cos\theta &amp; -\sin\theta &#92;&#92; \sin\theta &amp; \cos\theta\end{pmatrix},<br />
+\end{equation}</p>
+<p>显然这个转动是个复数，写成常见的复数形式，应该是</p>
+<p>\begin{equation}<br />
+R \circeq \cos\theta &#8211; i \sin\theta,<br />
+\end{equation}</p>
+<p>进一步用欧拉公式，</p>
+<p>\begin{equation}<br />
+R\circeq e^{-i \theta}.<br />
+\end{equation}</p>
+<p>然后这里可就让我们想到了这是二维欧式空间转动的生成元。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6056" rel="bookmark" title="量子力学计算的一个小技巧">量子力学计算的一个小技巧 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6359/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Creative Commons License 图标设计与 SVG</title>
+		<link>http://multiverse.lamost.org/blog/6129</link>
+		<comments>http://multiverse.lamost.org/blog/6129#comments</comments>
+		<pubDate>Sat, 11 Jan 2014 09:19:33 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Creative Commons]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[开放代码]]></category>
+		<category><![CDATA[开放数据]]></category>
+		<category><![CDATA[开放知识]]></category>
+		<category><![CDATA[果壳网]]></category>
+		<category><![CDATA[设计]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6129</guid>
+		<description><![CDATA[Creative Commons License 是一种比较常用的公共版权的授权。可以有针对的限制某些活动的同时保持作品可以被（部分的）公共使用。这篇文章不是讲 CC 是什么的，所以想了解更多的内容请去阅读 Wikipedia 或者 CC 官网 [1]。 SVG 图标 这篇文章要写的是，果壳网开放小组 [2]所设计的一种略带果壳风的设计。闲话少说，先看例子： 这是 CC BY-NC-SA 的图标，自然是由 CC + BY + NC + SA 组成，分别代表：CC 协议[Creative Commons]、（使用是按作者的要求）署名[Attribution]、非商业使用[Non-commercial]、（使用时）要以相同的方式共享[Share-alike]。 这个设计使用了三种颜色： #666666 ：左侧的背景色 #FFFFFF ：字体颜色 #85c155 ：右侧的背景色 并且使用了扁平风格，而不是拟物化的带各种突起和渐变的风格，原因是这些图标是作为（非官方的）果壳网用户个人选择授权的时候使用的，这样会跟网站比较搭。 制作的时候，除了最终生成的 PNG 图片，我们也提供了...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1630" rel="bookmark" title="寒江雪、诀别诗、月光 与 C++、XML、JSON">寒江雪、诀别诗、月光 与 C++、XML、JSON </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1547" rel="bookmark" title="Google+ Vs C++ | 对象的遗产">Google+ Vs C++ | 对象的遗产 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Creative Commons License 是一种比较常用的公共版权的授权。可以有针对的限制某些活动的同时保持作品可以被（部分的）公共使用。这篇文章不是讲 CC 是什么的，所以想了解更多的内容请去阅读 Wikipedia 或者 CC 官网 [<sup id="fnref-6129:1"><a href="#fn-6129:1" rel="footnote">1</a></sup>]。</p>
+<p><span id="more-6129"></span></p>
+<h2>SVG 图标</h2>
+<p>这篇文章要写的是，<a href="http://opentf.github.io/">果壳网开放小组</a> [<sup id="fnref-6129:2"><a href="#fn-6129:2" rel="footnote">2</a></sup>]所设计的一种略带果壳风的设计。闲话少说，先看例子：</p>
+<p><img src="http://opentf.github.io/GuokrBadge/cc/gs/cc_byncsa.flat.guokr.svg" alt="CC BY-NC-SA" /></p>
+<p>这是 CC BY-NC-SA 的图标，自然是由 CC + BY + NC + SA 组成，分别代表：CC 协议[Creative Commons]、（使用是按作者的要求）署名[Attribution]、非商业使用[Non-commercial]、（使用时）要以相同的方式共享[Share-alike]。</p>
+<p>这个设计使用了三种颜色：</p>
+<ol>
+<li>#666666  ：左侧的背景色</li>
+<li>#FFFFFF  ：字体颜色</li>
+<li>#85c155  ：右侧的背景色</li>
+</ol>
+<p>并且使用了扁平风格，而不是拟物化的带各种突起和渐变的风格，原因是这些图标是作为（非官方的）果壳网用户个人选择授权的时候使用的，这样会跟网站比较搭。</p>
+<p>制作的时候，除了最终生成的 PNG 图片，我们也提供了 SVG 图片。为什么选择 SVG 图片呢？</p>
+<p>SVG，Scalable Vector Graphics，是一种矢量图。如果用文本编辑器打开一个 SVG 图片，我们会发现实际上就是 XML 代码。例如，上面那个 CC BY-NC-SA 的代码的开头部分：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-010123.png" alt="CC BY-NC-SA 代码开头" /></p>
+<p>所以说，实际上 SVG 中大部分都是用代码绘制出来的，当然，SVG 还可以使用很多 HTML 代码，例如链接、插入其他图片等等，也可以使用 javascript，例如可以实现点击一个节点后展开等等。</p>
+<p>因为 SVG 缩放后不会变模糊（当然嵌入到里面的其他的像素图片可能会变模糊），所以常常用来制作各种图标，Logo 等等。而且著名的数据可视化 JavaScript 库，<a href="http://d3js.org/">d3js</a> 默认就是使用的 SVG，可以有很多图片互动。</p>
+<h2>这些图标的使用方法</h2>
+<p>如果没有接触过 CC, Copyleft 等协议，请先从官网等处（例如 <a href="http://creativecommons.org/choose/?lang=zh">CC 官网的程序</a> ）选择好合适的协议。然后从我们的 repo 的说明 （在<a href="https://github.com/opentf/GuokrBadge/blob/master/README.md">这里</a> ） 中挑选自己喜欢的样式，然后从说明中复制出相应的链接，然后在自己的作品中使用 ( img src=&#8221;&#8221; ) 即可。或者可以从我们的 repo 中复制出自己需要的图片，然后放在自己的电脑或者服务器上，但是这种方法不能保证我们以后修改之后于我们同步。</p>
+<p>例如，我们需要使用 CC BY-NC-SA 协议，而且喜欢这种胶囊形状的图标，并且我们想使用 SVG 图片，而不是 PNG 图片。那么从我们的 <a href="https://github.com/opentf/GuokrBadge/blob/master/README.md">README.md</a> 中找到这个协议（在目录中找到胶囊 + 果壳色 CC 协议 ~ SVG 版本）：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-013932.png" alt="README CC BY-NC-SA" /></p>
+<p>看到我们给出了两个不同大小的图片的链接，一个 64px, 一个 32px，这个大小指的是图标的高度。实际上这些 SVG 图片缩放不变，所以大小倒是没有那么重要，只是如果你在一些网站写作品，但是这个网站又不支持自定义图片大小，那么就不得不选择合适大小的图片了。</p>
+<p>例如我们想要使用 32px 高度的图片，那么把那个图片链接复制出来：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-014417.png" alt="Copy the right link" /></p>
+<p>然后在需要的地方使用即可。例如在果壳的编辑框中，插入图片是可以使用外链的，把上面复制的图片链接粘贴过来即可：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-014639.png" alt="2014-01-11 01:46:39"/></p>
+<h2>SVG 图标的制作</h2>
+<p>制作 SVG 图片，一个非常好用的开源软件是 <a href="http://inkscape.org">Inkscape</a>。编辑区域的截图：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-011854.png" alt="Inkscape" /></p>
+<p>当然也可以代码编辑：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-011957.png" alt="Inkscape Code" /></p>
+<p>作为图片编辑器的一个基本功能，Inkscape 也可以显示 Grid：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-10-202206.png" alt="Inkscape Grid etc" /></p>
+<p>上图是在制作图片的时候，使用标尺功能。可以像 Adobe 系列的作图软件一样，从标尺往外拖出一些直线，用来校准。</p>
+<p>当然，如果你是一个代码狂人，你也可以使用著名的前端工具 <a href="http://brackets.io/">Brackets</a> 来制作修改 SVG 图片：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-012537.png" alt="Brackets SVG" /></p>
+<p>会有实时预览，还算不错，如果仅仅改几个字，改一点颜色，即便不懂 SVG 也可以很轻松的修改图片。</p>
+<h2>关于果壳网开放小组</h2>
+<p><strike>开房</strike>开放小组是一个以实际行动倡导开放代码、开放知识、开放数据的小组织，目前成员有程序员，物理学生等。点击<a href="http://opentf.github.io/">这里</a>或者下面图片查看我们的网站：</p>
+<p><a href="http://guokrunion.github.io/"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/guokrunion.png" alt="opentf"   /></a></p>
+<p><a href="https://github.com/opentf/GuokrBadge" target="_blank">制作几种授权的图标</a>只是这个小组织的多个 repo 之一。</p>
+<h2>致谢</h2>
+<p>在制作这些图标的时候，我们使用了来自 Wikipedia 的 <a href="http://en.wikipedia.org/wiki/Creative_Commons_license">Creative Commons License 词条</a>下面的那些 SVG 图标，并且使用了 <a href="http://b.adge.me">b.adge.me</a> 的 Badge 模板。在此向这些作品的作者致以谢意。</p>
+<p>同时开放小组的成员提供了很多参考，特别是 <a href="http://www.guokr.com/i/1960596414/" target="_blank">@光之存在者</a> （如他所说，是光之存在者了，终于……）提供的关于 SVG 的建议非常重要。</p>
+<p>所以实际上我以个人的名义来发这篇日志是在不是那么合适，这是小组集体工作的结果，不过是借用关注的人数多这点来推广罢了。</p>
+<h2>授权</h2>
+<p>本文采用</p>
+<p><img src="https://raw.github.com/opentf/GuokrBadge/master/cc/gs/cc_byncsa.flat.guokr.32.png" alt="CC BY-NC-SA" /></p>
+<h2>P.S.</h2>
+<p>在博客添加了 TogetherJS 功能，可以点击文章上面的 Co-Reading 按钮：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/2014-01-11-021631.png" alt="2014-01-11 02:16:31"  /></p>
+<p>获取一个链接，把链接通过 IM 工具分享给好友，就可以同时一起边分析边阅读了。当然，我的文章没这种深度，仅仅测试之用。</p>
+<hr />
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6129:1">
+令人惊讶的 <a href="http://zh-classical.wikipedia.org/wiki/%E5%89%B5%E6%84%8F%E5%85%AC%E7%94%A8%E6%8E%88%E6%AC%8A%E6%A2%9D%E6%AC%BE">文言文版</a> 。&#160;<a href="#fnref-6129:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6129:2">
+一个<strike>由果壳网用户</strike>成立的小组织：<a href="http://opentf.github.io/">http://opentf.github.io/</a>&#160;<a href="#fnref-6129:2" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1630" rel="bookmark" title="寒江雪、诀别诗、月光 与 C++、XML、JSON">寒江雪、诀别诗、月光 与 C++、XML、JSON </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1547" rel="bookmark" title="Google+ Vs C++ | 对象的遗产">Google+ Vs C++ | 对象的遗产 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6129/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>量子力学框架回顾一</title>
+		<link>http://multiverse.lamost.org/blog/6083</link>
+		<comments>http://multiverse.lamost.org/blog/6083#comments</comments>
+		<pubDate>Sat, 09 Nov 2013 21:40:15 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[量子]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6083</guid>
+		<description><![CDATA[量子力学回顾系列是为果壳的 纠缠与相干 小组写的基础知识帖子。主要的受众应该是学过一点量子力学，但是后来很久没有再接触过量子力学的人或者没有学过量子力学但是有些物理基础的人。 $$ \newcommand{\ud}[1]{{#1^{\dagger}}} \newcommand{\bra}[1]{\left\langle #1\right&#124;} \newcommand{\ket}[1]{\left&#124; #1\right\rangle} \newcommand\Tr{\mathrm{Tr}} \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle} \newcommand\d{\mathrm{d}} \newcommand\I{\mathbb{I}} \newcommand{\avg}[1]{\left&#60; #1 \right>} $$ 初等量子力学其实核心内容非常少，甚至可以在一个帖子里面说完。 这个帖子中，我们会回顾一下量子力学，这样可以给没学过量子力学的同学一些概念，也可以帮助那些很久没有再碰过量子的同学一些复习的机会。 因为有很多东西我不知道怎么翻译，所以就直接使用英文名称了，反正就是个代号，应该无妨。 量子力学的前三个假设 1. Physical State 是使用希尔伯特空间的一个 ket 来表示的，通常写作 $\ket{\psi}$。如果要看这个 state 具体是什么样子，我们需要指定一组完备的基矢 $\ket{i}$，通过把 state 在基矢上展开，我们可以得到一些具体的表达式，例如一个矢量，例如一个函数，取决于我们的基矢是连续的还是离散的。 $$\ket{\psi} = \sum_i...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1309" rel="bookmark" title="个人信息文件">个人信息文件 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/810" rel="bookmark" title="20维球体体积的估算">20维球体体积的估算 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>量子力学回顾系列是为果壳的 <a href="http://www.guokr.com/group/394/" title="纠缠与相干">纠缠与相干</a> 小组写的基础知识帖子。主要的受众应该是学过一点量子力学，但是后来很久没有再接触过量子力学的人或者没有学过量子力学但是有些物理基础的人。<br />
+<span id="more-6083"></span></p>
+<p>$$<br />
+\newcommand{\ud}[1]{{#1^{\dagger}}}<br />
+\newcommand{\bra}[1]{\left\langle #1\right|}<br />
+\newcommand{\ket}[1]{\left| #1\right\rangle}<br />
+\newcommand\Tr{\mathrm{Tr}}<br />
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}<br />
+\newcommand\d{\mathrm{d}}<br />
+\newcommand\I{\mathbb{I}}<br />
+\newcommand{\avg}[1]{\left&lt; #1 \right>}<br />
+$$</p>
+<hr />
+<p>初等量子力学其实核心内容非常少，甚至可以在一个帖子里面说完。</p>
+<p>这个帖子中，我们会回顾一下量子力学，这样可以给没学过量子力学的同学一些概念，也可以帮助那些很久没有再碰过量子的同学一些复习的机会。</p>
+<p>因为有很多东西我不知道怎么翻译，所以就直接使用英文名称了，反正就是个代号，应该无妨。</p>
+<h2>量子力学的前三个假设</h2>
+<p>1.</p>
+<p>Physical State 是使用希尔伯特空间的一个 ket 来表示的，通常写作 $\ket{\psi}$。如果要看这个 state 具体是什么样子，我们需要指定一组完备的基矢 $\ket{i}$，通过把 state 在基矢上展开，我们可以得到一些具体的表达式，例如一个矢量，例如一个函数，取决于我们的基矢是连续的还是离散的。</p>
+<p>$$\ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}$$</p>
+<p>这个跟相对论或者更简单（对物理学家来说是更复杂的）刚体力学里面类似，本质上类似微分几何里面要写出矢量具体形式，需要给出基矢。或者在简单的情况下，这个就等价于说，矢量是矢量分量和基矢，而不是我们小学中学学的那种只有一组分量的形式。这点很关键，如果不明白这一点，在做坐标变换的时候，常常就会搞混。</p>
+<p>物理里面最重要事情之一就是找不变量，除了做了好的可观测量，不变量还可以帮助我们做很多事情，因为不变，所以坐标变换下面也不变，这样才可以把不同的坐标下面的物理联系起来。</p>
+<p>State 是什么？就是一个用来表征一个体系所处的状态的。有了 state，我们就可以得到我们想要的任何的观测量。所以用 state 来代表一个体系的状态是个很好的选择。我们不再用 坐标，动量 来表示状态，因为我们有了 state，可以得到坐标和动量，state 要比他们更基本。</p>
+<p>2.</p>
+<p>Operators 通常是 Hermitian 算符。测量在量子力学里面（形式上）意味着 $\hat \Omega$作用在 state 上面，这样会自动挑选出这个测量的本征态 $\ket{\omega}$，其中可能的本征态出现的概率是：</p>
+<p>$$\left|\braket{\omega}{\psi}\right|^2$$</p>
+<p>这个怎么理解呢？算符就是个操作，作用就是投影。</p>
+<p>我们可以看一个平面几何的例子：</p>
+<p>如果我们有个矢量 $\vec r$，我们要把这个矢量投影到 $\vec x$ 轴上，怎么做呢？如果我们把 $\vec x$ 轴的基矢（单位矢量）写作 $\vec e_x$，那么这个投影就是</p>
+<p>$$ \vec e_x \cdot \vec r$$</p>
+<p>实际上，我为什么要把 x 轴基矢的指标写在下面呢？</p>
+<p>上面我们说了一个矢量应该包含分量和（正交）基矢，所以说，严格的写出来，</p>
+<p>$$r=r^x e_x + r^y e_y + r^z e_z$$</p>
+<p>这里 $e_x$ 等等坐标基矢。那么如何写出x轴的单位矢量呢？那应该是</p>
+<p>$$x= x^x e_x$$</p>
+<p>没有其它的分量。不过因为这个是单位矢量，所以（欧式空间）长度应该是 1，所以我们可以简单的写作</p>
+<p>$$I=e^x e_x$$</p>
+<p>给 $e^x$ 看起来像是 $e_x$ 的对偶。从这个例子可以看出来，其实我们可以简单的把基矢的对偶作用在一个矢量上面，从而把相应的分量挑选出来，例如我们把 $e^x$ 作用在 r 矢量上</p>
+<p>$$e^x (r^x e_x + r^y e_y + r^z e_z) = e^x r^x e_x = r_x$$</p>
+<p>（用了正交条件, $e^x e_y = 0$）</p>
+<p>结果正好是 x 轴方向的分量，也就是说，投影操作其实是这样的。</p>
+<p>（实际上上面那个 $ \vec e_x \cdot \vec r$ 应该写作 $e^x r$，那我为什么把指标放在下面也对呢？因为在欧式空间里面 $e^x$ 和 $e_x$ 是等价的，原因在度规是个单位张量。）</p>
+<p>这么说来，算符像是个投影的作用，那 state 投影在某个方向上。为什么可以这么说呢？我们可以把上面那个投影的操作翻译成 Dirac 符号，</p>
+<p>$e_x$ -> $\ket{x}$</p>
+<p>$e^x$ -> $\bra{x}$</p>
+<p>这样就可以把上面那个投影的矢量的运算翻译成使用 Dirac 符号来表示了</p>
+<p>$$\bra{x}(rx \ket{x} + ry \ket{y} + rz \ket{z}) = rx \braket{x}{x} = rx$$</p>
+<p>（同样用了正交条件， $\bra{x}\ket{y}=\bra{x}\ket{z}=0$）</p>
+<p>如果我们把 $rx \ket{x} + ry \ket{y} + rz \ket{z}$ 看做是一个 state，即 $\ket{\psi} = rx \ket{x} + ry \ket{y} + rz \ket{z}$。那么就是说</p>
+<p>$$\braket{x}{\psi}= rx $$</p>
+<p>这里写 $\braket{x}{\psi}$ 的实际意思是 $\bra{x}\ket{\psi}$。</p>
+<p>看到了吧，算符操作本质上就类似于投影。后面我们还会提到更多的算符的事情，因为这比较是量子力学里面最最核心的概念之一。</p>
+<p>（有没有一种感觉，如果我们用 Dirac 符号来讲这些简单的几何和线性代数，那可多干净啊~）</p>
+<p>3.</p>
+<p>State 的演化遵从 Schrodinger 方程（就不打那两个点了&#8230;.希望 Schrodinger 先生不要介意）</p>
+<p>$$<br />
+i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)}<br />
+$$</p>
+<p>$\hat H$ 是 Hamiltonian Operator.</p>
+<h3>这三个假设说的什么</h3>
+<p>这三个假设的整体的逻辑是这样的：</p>
+<p><strong>我们先得找出一种方法来描述一个物理体系（Postulate 1），然后我们得找到一种方法来获取我们想要的客观测量的信息（Postulate 2），其次我们需要知道体系随时间的演化（Postulate 3）.</strong></p>
+<p>但是还有一些问题，例如我们如何知道想要的算符是什么样子呢？</p>
+<h3>仅仅利用前三个假设可以做很多事情</h3>
+<p>如何来描述一个体系的演化呢？我们当然可以直接用 Schrodinger 方程，但是问题在于，对于一些简单的情况，例如我们常见的那种 Hamiltonian 不含时间的情况，会不会有更加简单的形式呢？</p>
+<p>（另外很重要的一件事情是 Picture：Schrodinger Picture 和 Heisenberg Picture。这两个说的是量子力学里面的一种相对性，更详细的说是坐标变换的相对性，坐标变换的时候我们可以理解为点不变而坐标系变化，也可以理解为点的变换坐标系不变。这种相对性在经典力学里面也有，只是我们不常提到。如果学刚体力学的话，可能会提到这一点。）</p>
+<p>下面我们开始使用 Black Magic，定义一个神奇的算符：</p>
+<p>$$\hat U \ket{\psi(t_0)} = \ket{\psi(t)}$$</p>
+<p>有了这个神奇的算符 $\hat U$ 和一个初始状态，我们就可以得到任意时刻的状态了！</p>
+<p>那么我们可以得到这个神奇的算符么？</p>
+<p>到目前为止，我们知道的位移的有关 state 演化的知识就是 Schrodinger 方程（第三个假设），所以我们就试试。把这个等式代入到 Schrodinger 方程中。</p>
+<p>\begin{eqnarray}<br />
+     i\hbar \frac{\d }{\d t}\ket{\psi(t)} &amp;=&amp; \hat H \ket{\psi(t)} &#92;&#92;<br />
+     i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\psi(t_0)} &#92;&#92;<br />
+     i\hbar \frac{\d }{\d t}\hat U &amp;=&amp; \hat H \hat U<br />
+\end{eqnarray}</p>
+<p>这个结果看起来是不是很熟悉？这个方程的解（如果 Hamiltonian 是不含时间的）就是如下简单的指数形式</p>
+<p>$$\hat U = e^{- i \hat H (t-t_0)/\hbar}$$</p>
+<p>我们可以证明这个神奇的算符是 Unitary 的，只要 $\hat H$ 是 Hermitian 的（这通常是对的，但是也有 non Hermitian 的一些唯像的例子）。</p>
+<p>上面我们得到了这个神奇的演化算符的形式，但是只有那个形式通常不好用，所以我们会在 Hamiltonian 本征基矢（离散）下面写出来, $\ket{\epsilon_i}$,</p>
+<p>\begin{eqnarray}<br />
+     \hat U \ket{\phi} &amp;=&amp; e^{- i \hat H (t-t_0)/\hbar} \ket{\psi}   &#92;&#92;<br />
+     \hat U \ket{\phi} &amp;=&amp; \sum_i e^{- i \hat H (t-t_0)/\hbar} \ket{\epsilon_i}\braket{\epsilon_i}{\psi}  &#92;&#92;<br />
+     \hat U \ket{\phi} &amp;=&amp; \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\braket{\epsilon_i}{\psi}<br />
+\end{eqnarray}</p>
+<p>我们通常会用下面的形式来写这个演化算符：</p>
+<p>$$\hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}$$</p>
+<h3>几点数学知识</h3>
+<p>说到这里，我们得加一点其他的数学知识了。</p>
+<p><strong>Hermitian Conjugate</strong></p>
+<p>${}^\dagger$ 是 Hermitian Conjugate 的符号，例如<br />
+$$\hat A^\dagger$$<br />
+是算符 $\hat A$ 的 Hermitian Conjugate.</p>
+<p>对于 state，我们有<br />
+$$\ket{\psi}^\dagger = \bra{\psi}$$</p>
+<p><strong>Hermitian</strong></p>
+<p>我们说一个东西是 Hermtian 的如果它的 Hermitian Conjugate 是它本身，即<br />
+$$\hat A^\dagger = \hat A$$</p>
+<p><strong>Identity</strong></p>
+<p>Identity 就是一个作用在一个 state 或者算符上面不改变 state 或者算符的一个东西。既然不改变原来的内容，那么为什么我们会需要这个东西呢？</p>
+<p>这就是量子力学里面最大的秘密了。量子力学里面最大的秘密就是往式子里面插入 Identity。</p>
+<p>我们可以看一个例子。先考虑一个问题，一个矩阵的函数 $f(\mathbf A)$ 是如何定义的呢？<br />
+矩阵基本运算我们只知道加法和乘法，所以要定义一个函数，需要把这个写成加法和乘法的样子。哎，我们不是有个叫做 Taylor 展开的东西么，这个展开的结果就只有乘法和加法，所以我们定义矩阵的函数是通过 Taylor 展开来做的。</p>
+<p>量子力学里面离散的基矢下面的算符就是矩阵的形式，所以实际上我们定义量子力学里面的算符也是通过 Taylor 展开定义的。下面我们证明一个量子力学里面常用的式子</p>
+<p>\begin{eqnarray}<br />
+&amp;&amp;\hat A^\dagger e^\hat B \hat A &#92;&#92;<br />
+&amp;=&amp; \hat A^\dagger \left( \sum_n \frac{1}{n!}\hat B^n \right) \hat A&#92;&#92;<br />
+&amp;=&amp;\hat A^\dagger \left( \hat B + \frac{1}{2!}\hat B^2 + \frac{1}{3!}\hat B ^3 + \cdots \right) &#92;&#92;<br />
+&amp;=&amp; \hat A^\dagger \hat B \hat A + \frac{1}{2!} \hat A^\dagger \hat B^2 \hat A + \frac{1}{3!}\hat A^\dagger \hat B^3 \hat A + \cdots<br />
+\end{eqnarray}</p>
+<p>如果我们的$\hat A$是 Unitary 的（看下面的关于 Unitary 的说明），即，$\hat A^\dagger \hat A = \hat I$ .然后我们可以往里面加 Identity （$\hat I$），例如<br />
+$$ \hat A^\dagger \hat B^2 \hat A = \hat A^\dagger \hat B \hat I \hat B \hat A = \hat A^\dagger \hat B \hat A \hat A^\dagger \hat B \hat A = (\hat A^\dagger \hat B \hat A)^2$$</p>
+<p>用同样的方法，可以得到一个关于 $\hat A^\dagger f(\hat B)\hat A$ 的等式。（请自行证明。）</p>
+<p><strong>Unitary</strong></p>
+<p>我们说一个算符是 Unitary 的，如果<br />
+$$\hat U^\dagger \hat U = \hat I $$</p>
+<p>$\hat I$ 是单位算符，通常可以简单写成 $I$。</p>
+<p>Unitary 是个非常重要的 ，它对于理解体系演化有非常重要的作用。后面我们会看到。</p>
+<p><strong>Eigenstate</strong></p>
+<p>如果<br />
+$$\hat \Omega \ket{\omega}=\omega \ket{\omega}$$<br />
+即如果一个算符作用在这个态上面不改变这个态，那么我们说这个态是一个算符的本征态（eigenstate）。</p>
+<p>其中 $\omega$ 是本征值。</p>
+<p>这些定义跟线性代数里面的是一样的。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1309" rel="bookmark" title="个人信息文件">个人信息文件 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/810" rel="bookmark" title="20维球体体积的估算">20维球体体积的估算 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6083/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>西夏項目</title>
+		<link>http://multiverse.lamost.org/blog/4238</link>
+		<comments>http://multiverse.lamost.org/blog/4238#comments</comments>
+		<pubDate>Sun, 25 Nov 2012 10:47:13 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Timeline]]></category>
+		<category><![CDATA[历史]]></category>
+		<category><![CDATA[时间线]]></category>
+		<category><![CDATA[网络]]></category>
+		<category><![CDATA[西夏]]></category>
+		<category><![CDATA[西夏学]]></category>
+		<category><![CDATA[西夏文]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4238</guid>
+		<description><![CDATA[迷失在歷史中的西夏王朝，失傳已久的神秘文字。 西夏，即白高大夏國，是公元一零三八年到一二二七年間存在於中國西北部的一個王朝。西夏國輝煌一時，雖然夏國曾經接受宋、金冊封，但夏國有強大的軍事實力、輝煌的文化發展，作爲附屬國燒有些喧賓奪主（？）之意。甚至元昊當朝時期，宋史所記載的宋、夏之間的戰役，大都以宋敗而終。夏國創蕃書（即西夏文），置十二監軍司，置學堂，辦策試，仿漢人建立官制。 雖然，後來夏國遭受旱災和地震等天災，而且政權不穩定，但是也曾經出現國很長的一段盛世時期，但最終，一二二七年被強大的蒙古軍隊圍攻都城中興府，末代皇帝李睍被迫投降，西夏滅國。可嘆的是，雖然當時成吉思汗已死，卻留下遺命要殺主屠城，於是夏末帝被拖雷殺害。 之後元甚至沒有爲西夏修史，或許因爲西夏抵抗強烈，或許因爲西夏曾經收留蒙古叛徒，再或者，因爲西夏的實錄在戰爭中被毀，總之，後世所傳下來的關於西夏的史料少的可憐，而且很多史書中記載的歷史事件並不可信，導致我們所知的西夏歷史出現很多空白。 西夏歷史線項目 我和一位朋友建立了一個西夏项目。 西夏歷史線項目目前只是會把西夏的歷史通過時間線的方式來呈現出來，大致如下圖所示： 概覽 最基本的目標是準確，數據需要從正史中提取，而且對於像宋史這樣的有很多錯誤的史書，需要輔以其它資料。有鑑於史書所記載的時間的具體時間精度都不夠，所有只好按照年來將事件封裝，每年爲一組。 issues 和 todo 包括： 參考文獻的引用格式和詳細內容的改進。考慮到可能會有極長的段落，可以添加自動將內容 cut 成爲一段標準長度，防止內容溢出屏幕，可以採用 fancybox 形式。 年號紀年應當與公元紀年來並列顯示，不管在時間軸上還是在每個 slide 中。採用長條顯示紀年，或者乾脆標示在時間軸上。 豎排顯示內容。內容採用豎排顯示。字體改用宋體，註釋改用仿宋體。關於字體的考慮還在進行中，所以暫且不設定。 快速跳轉年份。增加快速跳轉年份功能。 數據和呈現 數據最終決定採用 JSONP 格式，借用 TimelineJS 框架來呈現。 數據目前有兩個人來提供： @星河逍遥 @自由的大梁 歡迎加入我們。 呈現數據分以下幾步： 從史書中摘錄。將事件的時間（公元紀年和「年號紀年」）、事件的描述、參考文獻、備註（例如關於該事件的爭議等等）這些列舉出來。 將幾個人的記錄合併，並按照時間順序排列。 製作成爲 JSON 格式的數據。如果不習慣文本編輯，可以使用http://emptymalei.github.com/jsoneditoronline來輔助編輯。或者客戶端的 JSON...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/5475" rel="bookmark" title="西夏语语法">西夏语语法 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2061" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>迷失在歷史中的西夏王朝，失傳已久的神秘文字。</p>
+<p>西夏，即白高大夏國，是公元一零三八年到一二二七年間存在於中國西北部的一個王朝。西夏國輝煌一時，雖然夏國曾經接受宋、金冊封，但夏國有強大的軍事實力、輝煌的文化發展，作爲附屬國燒有些喧賓奪主（？）之意。甚至元昊當朝時期，宋史所記載的宋、夏之間的戰役，大都以宋敗而終。夏國創蕃書（即西夏文），置十二監軍司，置學堂，辦策試，仿漢人建立官制。<br />
+<span id="more-4238"></span><br />
+雖然，後來夏國遭受旱災和地震等天災，而且政權不穩定，但是也曾經出現國很長的一段盛世時期，但最終，一二二七年被強大的蒙古軍隊圍攻都城中興府，末代皇帝李睍被迫投降，西夏滅國。可嘆的是，雖然當時成吉思汗已死，卻留下遺命要殺主屠城，於是夏末帝被拖雷殺害。</p>
+<p>之後元甚至沒有爲西夏修史，或許因爲西夏抵抗強烈，或許因爲西夏曾經收留蒙古叛徒，再或者，因爲西夏的實錄在戰爭中被毀，總之，後世所傳下來的關於西夏的史料少的可憐，而且很多史書中記載的歷史事件並不可信，導致我們所知的西夏歷史出現很多空白。</p>
+<h2>西夏歷史線項目</h2>
+<p>我和一位朋友建立了一個<a href="http://emptymalei.github.com/WesternXia/" title="西夏歷史線" target="_blank">西夏项目</a>。</p>
+<p><a href="http://emptymalei.github.com/WesternXia/" title="西夏歷史線" target="_blank">西夏歷史線項目目前只是會把西夏的歷史通過時間線的方式來呈現出來</a>，大致如下圖所示：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/11/Screenshot-from-2012-11-25-165248.png"><img style="border:1px solid green;" src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/11/Screenshot-from-2012-11-25-165248.png" alt="Timeline of Western Xia History" title="WesternXiaHistoryLine" width="550" class="aligncenter size-full wp-image-4239" /></a></p>
+<h3>概覽</h3>
+<p>最基本的目標是準確，數據需要從正史中提取，而且對於像宋史這樣的有很多錯誤的史書，需要輔以其它資料。有鑑於史書所記載的時間的具體時間精度都不夠，所有只好按照年來將事件封裝，每年爲一組。</p>
+<p><a href="https://github.com/emptymalei/WesternXia/issues">issues 和 todo</a> 包括：</p>
+<ul>
+<li>參考文獻的引用格式和詳細內容的改進。考慮到可能會有極長的段落，可以添加自動將內容 cut 成爲一段標準長度，防止內容溢出屏幕，可以採用 fancybox 形式。</li>
+<li>年號紀年應當與公元紀年來並列顯示，不管在時間軸上還是在每個 slide 中。採用長條顯示紀年，或者乾脆標示在時間軸上。</li>
+<li>豎排顯示內容。內容採用豎排顯示。字體改用宋體，註釋改用仿宋體。關於字體的考慮還在進行中，所以暫且不設定。</li>
+<li>快速跳轉年份。增加快速跳轉年份功能。</li>
+</ul>
+<h3>數據和呈現</h3>
+<p>數據最終決定採用 JSONP 格式，借用 TimelineJS 框架來呈現。</p>
+<p>數據目前有兩個人來提供：</p>
+<ul>
+<li><a href="http://weibo.com/emptymalei" style="font-style:bold;">@星河逍遥</a></li>
+<li><a href="http://weibo.com/liangchen0802" style="font-style:bold;">@自由的大梁</a></li>
+</ul>
+<p><strong style="color:orange;">歡迎加入我們。</strong></p>
+<p>呈現數據分以下幾步：</p>
+<ul>
+<li>從史書中摘錄。將事件的時間（公元紀年和「年號紀年」）、事件的描述、參考文獻、備註（例如關於該事件的爭議等等）這些列舉出來。</li>
+<li>將幾個人的記錄合併，並按照時間順序排列。</li>
+<li>製作成爲 JSON 格式的數據。如果不習慣文本編輯，可以使用<a href="http://emptymalei.github.com/jsoneditoronline">http://emptymalei.github.com/jsoneditoronline</a>來輔助編輯。或者客戶端的 JSON 編輯軟件。</li>
+<li>於原有的數據合併，並上載到<a href="http://emptymalei.github.com/WesternXia/"> github 項目</a> 的 gh-pages 分支的 timeline/data 文件夾中。</li>
+</ul>
+<p>所使用的文獻：</p>
+<ul>
+<li>宋、遼、金、元史</li>
+<li>劍橋中國史的遼西夏金部分</li>
+<li>草原帝國</li>
+<li>資治通鑑</li>
+<li>續資治通鑑長編</li>
+<li>西夏文文獻，如《餓藏黑水城文獻》等</li>
+</ul>
+<h3>備註</h3>
+<p><strong>我們都是理科生，對於歷史研究非常業餘，如果歷史系考古系等專業的人員能夠給我們提供建議，比如應該從何種史書中搜集資料等，我們將非常感謝。</strong></p>
+<h2>西夏項目</h2>
+<p>歷史線只是<a href="http://emptymalei.github.com/WesternXia/" style="color:red;font-style:bold;" target="_blank">整個項目的一部分</a>，因爲這種形式只能呈現西夏自己的歷史，而西夏與其它宋、遼、金、吐蕃等的關係沒有很形象的呈現出來，所以將來還會有更加立體化的方式來呈現這個曾經輝煌的王朝。</p>
+<h3>TimelineJS 與 HTML5 Presentation</h3>
+<p>結合 TimelineJS 的單一性與現在流行的多向甚至 3D 元素結合起來，更好的呈現歷史。</p>
+<p>可能用到的工具：</p>
+<ul>
+<li><a href="http://slides.html5rocks.com/">http://slides.html5rocks.com/</a></li>
+<li><a href="https://github.com/bartaz/impress.js">https://github.com/bartaz/impress.js</a> (我已經 fork 出來了 <a href="https://github.com/emptymalei/impress.js">https://github.com/emptymalei/impress.js</a></li>
+<li><a href="https://github.com/hakimel/reveal.js">https://github.com/hakimel/reveal.js</a> (我已經 fork 出來了 <a href="https://github.com/emptymalei/reveal.js">https://github.com/emptymalei/reveal.js</a> )</li>
+<li><a href="https://github.com/imakewebthings/deck.js">https://github.com/imakewebthings/deck.js</a> (我已經 fork 出來了 <a href="https://github.com/emptymalei/deck.js">https://github.com/emptymalei/deck.js</a> )</li>
+</ul>
+<p>其中 impress.js 我曾經用過，算是一個比較合理的工具，可以製作 3D canvas。這樣可以將各個國家的關係立體的呈現出來。</p>
+<h3>西夏文</h3>
+<p>經過<a href="http://www.zhihu.com/question/20605362" style="color:green;font-style:bold;" target="_blank">知乎朋友的幫助</a>，我現在可以將大部分的西夏文在網頁上顯示，只是處於字體版權的原因，現在還不能放在網上。</p>
+<p>我希望將自己的西夏文學習過程整個顯示在網頁上，成爲西夏文教學網頁。同時可以順手建立網頁版的西夏文簡易詞典。計劃能否兌現，取決於我在自學西夏文這條路上能堅持多遠……</p>
+<h1>后记</h1>
+<p>（2012-10-25）</p>
+<p>（抱歉突然转简化字。因为上面部分是从项目的介绍直接copy来的，所以保留了原来的字体。但是我从小受到简化字的教育，所以更喜欢简化汉字，因为简化可以提高书写速率。但是由于简化导致了简并等现象，所以处理古籍历史等事情是，还是需要使用繁体字来去简并，故项目介绍使用了繁体字。）</p>
+<p>很久以来我一直对历史很感兴趣，只是我有一个很大的问题，对数字不敏感，因此历史时间总是记错，最终结果就是历史学的很差。但是这并不阻止我的兴趣，同学朋友凑到一起，涉及到历史事件，常常详细的像大家请教。所以时间，一般都是令我痛心的地方。</p>
+<p>建立这个项目后，我就可以对整个历史有个大概的了解，同时也可以看到历史在哪些地方有了断层，哪些地方记载比较多，在时间线上，这些都一目了然。</p>
+<p>我不是历史系的学生，而是一个毫不搭边的物理专业的学生，因此很有可能会把历史弄错。所以我必须提醒大家，这个项目的数据在经过专业人士校对之前，只能算是一个玩玩而已的项目，即便有些内容看上去很正式。</p>
+<p>同时我也很希望有专业的历史学生来给我们提点建议之类，或者帮我们处理一下历史数据。专业的西夏学学者的给我们的批评我们也会虚心接受。</p>
+<p>目前项目只有两个人，但是我希望有更多的人参与进来，我们可以一起让更多的人知道这段历史，让更多的人对西夏学感兴趣。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/5475" rel="bookmark" title="西夏语语法">西夏语语法 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2061" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4238/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Typography Prezi by Travis Hitchcock</title>
+		<link>http://multiverse.lamost.org/blog/2733</link>
+		<comments>http://multiverse.lamost.org/blog/2733#comments</comments>
+		<pubDate>Wed, 11 Apr 2012 15:51:28 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Coding]]></category>
+		<category><![CDATA[TeX]]></category>
+		<category><![CDATA[Typography]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2733</guid>
+		<description><![CDATA[Travis Hitchcock写了一个很简单的typography的presentation~非常非常简单的…… 即使不关心typography，知道这些对用\(LaTeX\)也是很有帮助的。 Typography on Prezi<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2145" rel="bookmark" title="Eclipse + CDT | Gedit plugin">Eclipse + CDT | Gedit plugin </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Travis Hitchcock写了一个很简单的typography的presentation~非常非常简单的……</p>
+<p>即使不关心typography，知道这些对用\(LaTeX\)也是很有帮助的。<span id="more-2733"></span></p>
+<div class="prezi-player">
+<style type="text/css" media="screen">.prezi-player { width: 550px; } .prezi-player-links { text-align: center; }</style>
+<p><object id="prezi_ufnrer-swszq" name="prezi_ufnrer-swszq" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="550" height="400"><param name="movie" value="http://prezi.com/bin/preziloader.swf"/><param name="allowfullscreen" value="true"/><param name="allowscriptaccess" value="always"/><param name="bgcolor" value="#ffffff"/><param name="flashvars" value="prezi_id=ufnrer-swszq&amp;lock_to_path=1&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0"/><embed id="preziEmbed_ufnrer-swszq" name="preziEmbed_ufnrer-swszq" src="http://prezi.com/bin/preziloader.swf" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="550" height="400" bgcolor="#ffffff" flashvars="prezi_id=ufnrer-swszq&amp;lock_to_path=1&amp;color=ffffff&amp;autoplay=no&amp;autohide_ctrls=0"/></object>
+<div class="prezi-player-links">
+<p><a title="Typography" href="http://prezi.com/ufnrer-swszq/typography/">Typography</a> on <a href="http://prezi.com">Prezi</a></p>
+</div>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2145" rel="bookmark" title="Eclipse + CDT | Gedit plugin">Eclipse + CDT | Gedit plugin </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2733/feed</wfw:commentRss>
+		<slash:comments>11</slash:comments>
+		</item>
+		<item>
+		<title>LaTeX中文</title>
+		<link>http://multiverse.lamost.org/blog/2513</link>
+		<comments>http://multiverse.lamost.org/blog/2513#comments</comments>
+		<pubDate>Wed, 28 Mar 2012 08:40:27 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[TeX]]></category>
+		<category><![CDATA[XeLaTeX]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2513</guid>
+		<description><![CDATA[自从从CJK转到XeLaTeX specfont，写中文的LaTeX就方便多了。
+
+使用specfont最麻烦的地方是选择合适的字体，当然这很容易搞定，因为可以在windows/linux命令行里面使用"fc-list"命令来列出所有的安装过的字体，然后可以从中找到自己喜欢的。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2733" rel="bookmark" title="Typography Prezi by Travis Hitchcock">Typography Prezi by Travis Hitchcock </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2145" rel="bookmark" title="Eclipse + CDT | Gedit plugin">Eclipse + CDT | Gedit plugin </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>自从从CJK转到XeLaTeX specfont，写中文的LaTeX就方便多了。</p>
+<p>使用specfont最麻烦的地方是选择合适的字体，当然这很容易搞定，因为可以在windows/linux命令行里面使用&#8221;fc-list&#8221;命令来列出所有的安装过的字体，然后可以从中找到自己喜欢的。<span id="more-2513"></span></p>
+<p>然后因为中文字体在使用的时候如用中文字体名字，比较麻烦。这时候可以使用</p>
+<blockquote><p>\newfontfamily\yahei{&#8220;微软雅黑&#8221;}</p></blockquote>
+<p>来重新定义一下。</p>
+<p>注：使用XeLaTeX编译！</p>
+<p>下面是一个例子：<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2012/03/Chinese.zip'>XeLaTeX_specfont_Chinese</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2733" rel="bookmark" title="Typography Prezi by Travis Hitchcock">Typography Prezi by Travis Hitchcock </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2145" rel="bookmark" title="Eclipse + CDT | Gedit plugin">Eclipse + CDT | Gedit plugin </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2513/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Linux bashrc备份及说明</title>
+		<link>http://multiverse.lamost.org/blog/2489</link>
+		<comments>http://multiverse.lamost.org/blog/2489#comments</comments>
+		<pubDate>Thu, 22 Mar 2012 05:49:30 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2489</guid>
+		<description><![CDATA[以前图方便对bashrc做了些更改，为了迎接即将到来的12年版本的ubuntu（可能我会换成其他的系统，因为对unity太失望了），所以在此备份并注释。 alias部分： # lx -x for short alias ll=&#8217;ls -alF&#8217; alias la=&#8217;ls -A&#8217; alias l=&#8217;ls -CF&#8217; alias lt=&#8217;ls -t&#8217; alias llt=&#8217;ll -t&#8217; # safe rm. -i: prompt at every action; -v lists what have been done. alias rm=&#8221;rm -i -v&#8221;...<div class='yarpp-related-rss yarpp-related-none'>
+
+Ops, nothing related to this post. Buy yourself a lottery
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>以前图方便对bashrc做了些更改，为了迎接即将到来的12年版本的ubuntu（可能我会换成其他的系统，因为对unity太失望了），所以在此备份并注释。<br />
+<span id="more-2489"></span></p>
+<p>alias部分：</p>
+<blockquote><p>
+# lx -x for short<br />
+alias ll=&#8217;ls -alF&#8217;<br />
+alias la=&#8217;ls -A&#8217;<br />
+alias l=&#8217;ls -CF&#8217;<br />
+alias lt=&#8217;ls -t&#8217;<br />
+alias llt=&#8217;ll -t&#8217;</p>
+<p># safe rm. -i: prompt at every action; -v lists what have been done.<br />
+alias rm=&#8221;rm -i -v&#8221;</p>
+<p># iopen: open file with default application.<br />
+alias iopen=&#8221;gnome-open&#8221;</p>
+<p># gcc-> gcc -g by default. For debugging<br />
+alias gcc=&#8221;gcc -g&#8221;</p>
+<p># 方便访问文件夹，赋予较长的路径别名<br />
+alias nutstored=&#8221;cd ~/program/nutstore&#8221;</p>
+<p># update, upgrade, etc<br />
+alias sagu=&#8221;sudo apt-get update&#8221;<br />
+alias sagg=&#8221;sudo apt-get upgrade&#8221;<br />
+alisa sagi=&#8221;sudo apt-get install&#8221;
+</p></blockquote>
+<p>export部分：<br />
+此部分主要是为cmbeasy和gadget指定库位置。</p>
+<blockquote><p>
+export CMBEASYDIR=~/program/CMBEASY_Original/<br />
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/hdf5-1.6.10/lib/<br />
+export PGPLOT_DIR=/usr/lib/ # This is for splash. Splash2 needs pgplot.<br />
+export PGPLOT_DEV=&#8217;/xw&#8217;<br />
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PGPLOT_DIR<br />
+export PATH=$PATH:/home/marvin/program/Gadget-2.0.7/Gadget2
+</p></blockquote>
+<div class='yarpp-related-rss yarpp-related-none'>
+<p>Ops, nothing related to this post. Buy yourself a lottery</p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2489/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>乔布斯辞世 &#124; Steve Jobs (1955-2011)</title>
+		<link>http://multiverse.lamost.org/blog/2268</link>
+		<comments>http://multiverse.lamost.org/blog/2268#comments</comments>
+		<pubDate>Thu, 06 Oct 2011 00:32:25 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[Steve Jobs]]></category>
+		<category><![CDATA[人生]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2268</guid>
+		<description><![CDATA[今天早上得知消息，看到苹果首页的图片换成了Steve Jobs，然后点进去看到了<a href="http://www.apple.com/stevejobs/" title="SteveJobs" target="_blank">不算是讣告的讣告</a>。
+<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2061" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1453" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>今天早上得知消息，看到苹果首页的图片换成了Steve Jobs，然后点进去看到了<a href="http://www.apple.com/stevejobs/" title="SteveJobs" target="_blank">不算是讣告的讣告</a>。<span id="more-2268"></span></p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/10/SteveJobs.jpg" alt="SteveJobs" title="SteveJobs" width="600"/></p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/10/SteveJobs2.jpg" alt="SteveJobs" title="SteveJobs2" width="600" /></p>
+<p>发布会刚刚完，Jobs就辞世了。</p>
+<p>我不是苹果用户，但是也能够感觉到Apple作为一个商业的公司，在非常的大的程度上改变了世界。</p>
+<p>Hubble改变了世界，Perlmutter改变了世界，可是提到这些，你们会不会想到那种著名的漫画，数学家眼中的世界的终结，仅仅是一个证明的错误，而他们也不一定关系这个到底在多大程度上影响了人们的生活。</p>
+<p>Steve Jobs改变世界，是改变了人们的生活。我常常说，苹果是最优秀的抄袭者，因为我们从来都没有意识到它在抄袭。苹果的产品都是只保留有用的，所以那些没用的都去掉，从来不是为了花哨。我猜这可能是跟Jobs的佛教信仰有关。这是Jobs保有了一生的理念。简单，实用。</p>
+<p>Jobs对产品的设计是很挑剔的。他曾经因为Google的app的icon在iphone上面显示有瑕疵而非工作时间联系Google的相关工作人员。Apple的产品，从外观到操作，都是一致的优秀。Mac的触摸板优秀到甚至觉得鼠标在大多数时候都很难用。</p>
+<p>不关心Apple，只是感叹，一个天才，就此辞世了。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2061" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1453" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2268/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Eclipse + CDT &#124; Gedit plugin</title>
+		<link>http://multiverse.lamost.org/blog/2145</link>
+		<comments>http://multiverse.lamost.org/blog/2145#comments</comments>
+		<pubDate>Wed, 14 Sep 2011 13:57:13 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Coding]]></category>
+		<category><![CDATA[TeX]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2145</guid>
+		<description><![CDATA[此文仅用于存档。 一 Eclipse + CDT 前些日子见到师兄用的编辑器可以查找函数变量等的declaration，很是新奇。于是照师兄所说，也装了eclipse。 一开始感觉非常糟。我用的编辑器都是很简单的，vim，gedit，gummi等，看起来清爽，也从来不会用什么自动完成，自动加括号，自动缩进什么的，觉得这些事情都是要自己干才放心。 但是在一个很大的project中找declaration和definition之类的，很是麻烦。我之前都是依靠界面很不爽的notepad++的搜索所有文件来完成的（呃，看了我真是一直使用最原始的方法）。发现eclipse+cdt可以自动把自己带到declaration那里之后，就装了。 装好eclipse，发现不会用！这么复杂！ 于是尝试建了一个project。打开左面板，就是project explorer，发现有个src文件夹，于是把source全部copy到了src目录中。这样好像eclipse就认出来了。然后选中一个函数之类的，右键，有个open declaration F3的选项，点击就可以跳转到声明了。 缺点是如果声明是在同一个文件中，就不知道如何返回到原来的位置了…… BTW ubuntu直接 sudo apt-get install eclipse和eclipse-cdt就可以了。 二 Gedit sudo apt-get install gedit&#8230;.. 省略号表示自己tab一下去看看，发现有plugin和latex，这两个很有用，所以就直接撞上来了。 发现： LaTeX插件可以在右侧预览，还不错。 其他很多plugin有很多也很有用，比如自动修正格式，自动完成之类的。==!看来我真是变懒了……居然也开始关心这种插件……<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2733" rel="bookmark" title="Typography Prezi by Travis Hitchcock">Typography Prezi by Travis Hitchcock </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<blockquote><p>此文仅用于存档。</p></blockquote>
+<hr />
+<p>一   Eclipse + CDT</p>
+<hr />
+<p>前些日子见到师兄用的编辑器可以查找函数变量等的declaration，很是新奇。于是照师兄所说，也装了eclipse。</p>
+<p>一开始感觉非常糟。我用的编辑器都是很简单的，vim，gedit，gummi等，看起来清爽，也从来不会用什么自动完成，自动加括号，自动缩进什么的，觉得这些事情都是要自己干才放心。<span id="more-2145"></span></p>
+<p>但是在一个很大的project中找declaration和definition之类的，很是麻烦。我之前都是依靠界面很不爽的notepad++的搜索所有文件来完成的（呃，看了我真是一直使用最原始的方法）。发现eclipse+cdt可以自动把自己带到declaration那里之后，就装了。</p>
+<p>装好eclipse，发现不会用！这么复杂！</p>
+<p>于是尝试建了一个project。打开左面板，就是project explorer，发现有个src文件夹，于是把source全部copy到了src目录中。这样好像eclipse就认出来了。然后选中一个函数之类的，右键，有个open declaration F3的选项，点击就可以跳转到声明了。</p>
+<p>缺点是如果声明是在同一个文件中，就不知道如何返回到原来的位置了……</p>
+<p>BTW</p>
+<p>ubuntu直接 sudo apt-get install eclipse和eclipse-cdt就可以了。</p>
+<hr size="2"/>
+<p>二   Gedit</p>
+<hr />
+<p>sudo apt-get install gedit&#8230;..</p>
+<p>省略号表示自己tab一下去看看，发现有plugin和latex，这两个很有用，所以就直接撞上来了。</p>
+<p>发现：<br />
+LaTeX插件可以在右侧预览，还不错。<br />
+其他很多plugin有很多也很有用，比如自动修正格式，自动完成之类的。==!看来我真是变懒了……居然也开始关心这种插件……</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2733" rel="bookmark" title="Typography Prezi by Travis Hitchcock">Typography Prezi by Travis Hitchcock </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1880" rel="bookmark" title="Online Html+Mathjax Editor">Online Html+Mathjax Editor </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2145/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>豆瓣阿尔法城地图 &#124; 关于阿花城的一些小事</title>
+		<link>http://multiverse.lamost.org/blog/2061</link>
+		<comments>http://multiverse.lamost.org/blog/2061#comments</comments>
+		<pubDate>Thu, 01 Sep 2011 00:28:39 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[alphatown]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[网络]]></category>
+		<category><![CDATA[豆瓣]]></category>
+		<category><![CDATA[阿花城]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2061</guid>
+		<description><![CDATA[阿花城地图 阿花城的小事 豆瓣阿花城(Alphatown)地图测绘工程完毕。所得地图如下： 测绘完成日期：2011-09-01 阿花城信息： 按动一次方向键或者按动一次移动按钮，行动的距离是1km。（事实上由于存在时空弯曲，这种定义方法不准确。详情阅读下面的注解。） 阿花城南北横跨51km，东西横跨39km。 共有街道n条。最短的街道长1km，最长的街道长4km。 这里有个更加强大的地图： http://www.douban.com/photos/photo/1191699859/ 注解： 在测绘过程中，发现阿花城并不是建筑在平直的欧几里得空间的，而是存在一定的时空弯曲。比如在下图所示位置处： 从拐角向上走到第一个T字路口，物理距离只有2km，但是共形距离却有3km。其他的类似情况很多。 为了方便查找，本地图测绘使用的是共形距离。简单的说，就是按照测绘生成的地图上最小的街区的长度为3km绘制。 关于阿花城的一些小事 1. 发现在某甲坊大道申请小店只需要1颗小豆。不知道为什么会有这样的情况。 证据在此： 2. 在代码里面发现搜索按钮。证据在此： 3. 2011-9-01早上六点半左右，发现阿花城左下角出现一个小人，小人右边有个进度条。每跑一次，这个进度条就会减少大概五分之一（记不清了），还是有三种颜色的进度条，但是大概意思都是一样的。 大概阿花城真的要变成网游了，连真气值都加进来了哇。 可惜没截图啊。 [本post为豆瓣日记存档。]<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><a href="#alphatownmap">阿花城地图</a><br />
+<a href="#trifling">阿花城的小事</a></p>
+<hr />
+<a name=alphatownmap> </a><br />
+豆瓣阿花城(Alphatown)地图测绘工程完毕。所得地图如下：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/alphamap1.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/alphamap1.jpg" width="520" /></a></p>
+<p>测绘完成日期：2011-09-01</p>
+<p>阿花城信息：</p>
+<p>按动一次方向键或者按动一次移动按钮，行动的距离是1km。（事实上由于存在时空弯曲，这种定义方法不准确。详情阅读下面的注解。）<br />
+阿花城南北横跨51km，东西横跨39km。<br />
+共有街道n条。最短的街道长1km，最长的街道长4km。<span id="more-2061"></span></p>
+<p>这里有个更加强大的地图：<br />
+<a href="http://www.douban.com/photos/photo/1191699859/" target="_blank">http://www.douban.com/photos/photo/1191699859/</a></p>
+<p>注解：</p>
+<p>在测绘过程中，发现阿花城并不是建筑在平直的欧几里得空间的，而是存在一定的时空弯曲。比如在下图所示位置处：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/asdfe-255x300.jpg" alt="" title="AlphaTownSub" width="320" class="aligncenter size-medium wp-image-2063" /></p>
+<p>从拐角向上走到第一个T字路口，物理距离只有2km，但是共形距离却有3km。其他的类似情况很多。<br />
+为了方便查找，本地图测绘使用的是共形距离。简单的说，就是按照测绘生成的地图上最小的街区的长度为3km绘制。</p>
+<hr />
+<a name=trifling>  </a><br />
+关于阿花城的一些小事</p>
+<p>1. 发现在某甲坊大道申请小店只需要1颗小豆。不知道为什么会有这样的情况。<br />
+证据在此：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/1.jpg" alt="" title="CheapSite" width="400"  class="aligncenter size-medium wp-image-2073" /></p>
+<p>2. 在代码里面发现搜索按钮。证据在此：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/09/searchalphatown.jpg" alt="" title="searchalphatown" width="400"  class="aligncenter size-medium wp-image-2074" /></p>
+<p>3. 2011-9-01早上六点半左右，发现阿花城左下角出现一个小人，小人右边有个进度条。每跑一次，这个进度条就会减少大概五分之一（记不清了），还是有三种颜色的进度条，但是大概意思都是一样的。<br />
+大概阿花城真的要变成网游了，连真气值都加进来了哇。<br />
+可惜没截图啊。</p>
+<p>[本post为豆瓣日记存档。]</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1513" rel="bookmark" title="美丽的TeX： texample.net | txt2tags.org | S5">美丽的TeX： texample.net | txt2tags.org | S5 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1506" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2061/feed</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>

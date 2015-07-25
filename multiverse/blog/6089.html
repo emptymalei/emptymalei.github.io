@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+<!-- Mobile viewport optimized -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Favicon -->
+	<link rel="shortcut icon" href="wp-content/uploads/2012/12/Blomos1-1.png" />
+
+<!-- Title -->
+<title>O&#8217;Neill 空间站中物体的运动</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://multiverse.lamost.org/blog/xmlrpc.php" />
+
+<!-- WP Head -->
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  showProcessingMessages: false,
+  messageStyle: "none",
+  jax: ["input/TeX", "output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js","fp.js"],
+  TeX: {
+    equationNumbers: {  autoNumber: "AMS"  },
+    extensions: ["xypic.js","AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+  "HTML-CSS": { availableFonts: ["TeX"] },
+  tex2jax: {
+    inlineMath: [ ["\✟","\✟"], ["$","$"], ["\\(","\\)"] ],
+    displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+    processEscapes: true
+  }
+});</script>
+<meta name="generator" content="WordPress 4.2.2" />
+<meta name="template" content="Origin 0.5.8" />
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/105497512905835358378" />
+<meta name="description"  content="我们在地球上生活，会体验到重力作用。虽然很多时候我们都想摆脱重力，自由的飞翔，但是重力对于我们的生活和健康有很重要的作用。例如我们走路，如果没有重力，轻轻一碰地面就飘起来了，走起路来可就得手脚并用了。或许这并不坏，可是如果我们想要冲一杯热茶，谁知道却怎么也没法把热水倒出来。更要命的事情是，在失重状态下，人的骨骼和肌肉的" />
+
+<meta name="keywords"  content="物理,疯狂的科学,科幻,万物皆循因果" />
+
+<link rel="canonical" href="index.html%3Fp=6089.html" />
+<meta property="og:title" content="O&#8217;Neill 空间站中物体的运动" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://multiverse.lamost.org/blog/6089" />
+<meta property="og:image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+<meta property="og:site_name" content="时见疏星" />
+<meta property="og:description" content="我们在地球上生活，会体验到重力作用。虽然很多时候我们都想摆脱重力，自由的飞翔，但是重力对于我们的生活和健康有很重要的作用。例如我们走路，如果没有重力，轻轻一碰地面就飘起来了，走起路来可就得手脚并用了。或许这并不坏，可是如果我们想要冲一杯热茶，谁知道却怎么也没法把热水倒出来。更要命的事情是，在失重状态下，人的骨骼和肌肉的会有严重的问题。 所以，如果要建造大规模的民用空间站，需要先解决失重的问题。一个比较有趣的方法是 O&#039;Neill 提出的通过让空间站旋转来模拟重力。  O&#039;Neill Cylinder O&#039;Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下图里面这个大型的桶状结构：  （图片来源：http://imageshack.us/photo/my-images/11/1109702023694.jpg/ ） 当然，我们要研究物理，不需要这么花哨，只需要画一个圆筒就行了：  （图片来源 http://www.dvandom.com/coriolis/spacestation.html ） 只要让这个圆筒适当的旋转，生活在圆筒内壁的人就可以体验到模拟的重力。这是一个比较容易理解的现象，比如杂技团常常表演的水流星节目，也就是拿了一对盛有水的碗，用绳子连起来，然后旋转他们，如下图：  旋转时让碗口朝向内侧，这样水不会洒出来。原因大家也都清楚，是一种离心作用。 Coriolis Effect 但是，站在空间站内壁的人们还会体验到另外一种作用，就是 Coriolis 作用。关于这种作用，可以看下面的这个视频：  （iOS请点击视频链接：http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html ） 这个视频说的是，如果我们站在一个转动的圆盘上面开炮，会发现似乎有一只神奇的手把炮弹推向了一边，而不是我们常识中的（在地面的投影）是一条直线。这只神奇的手就是科里奥利力。当然，如果我们站在地面上看，而不是圆盘上，炮弹自然还是一条直线。 当然 Coriolis effect 在地球表面（绝大多数地点）也是有的，只不过在日常起居生活中这种效应很小，所以我们下面的讨论自由落体运动的时候就忽略地表的 Coriolis effect 了。 自由落体运动 我们生活中最熟悉的运动之一是自由落体运动，例如：" />
+<meta property="article:published_time" content="2013-11-14T08:27:59Z" />
+<meta property="article:modified_time" content="2014-01-03T15:25:44Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="我们在地球上生活，会体验到重力作用。虽然很多时候我们都想摆脱重力，自由的飞翔，但是重力对于我们的生活和健康有很重要的作用。例如我们走路，如果没有重力，轻轻一碰地面就飘起来了，走起路来可就得手脚并用了。或许这并不坏，可是如果我们想要冲一杯热茶，谁知道却怎么也没法把热水倒出来。更要命的事情是，在失重状态下，人的骨骼和肌肉的会有严重的问题。 所以，如果要建造大规模的民用空间站，需要先解决失重的问题。一个比较有趣的方法是 O&#039;Neill 提出的通过让空间站旋转来模拟重力。  O&#039;Neill Cylinder O&#039;Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下图里面这个大型的桶状结构：  （图片来源：http://imageshack.us/photo/my-images/11/1109702023694.jpg/ ） 当然，我们要研究物理，不需要这么花哨，只需要画一个圆筒就行了：  （图片来源 http://www.dvandom.com/coriolis/spacestation.html ） 只要让这个圆筒适当的旋转，生活在圆筒内壁的人就可以体验到模拟的重力。这是一个比较容易理解的现象，比如杂技团常常表演的水流星节目，也就是拿了一对盛有水的碗，用绳子连起来，然后旋转他们，如下图：  旋转时让碗口朝向内侧，这样水不会洒出来。原因大家也都清楚，是一种离心作用。 Coriolis Effect 但是，站在空间站内壁的人们还会体验到另外一种作用，就是 Coriolis 作用。关于这种作用，可以看下面的这个视频：  （iOS请点击视频链接：http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html ） 这个视频说的是，如果我们站在一个转动的圆盘上面开炮，会发现似乎有一只神奇的手把炮弹推向了一边，而不是我们常识中的（在地面的投影）是一条直线。这只神奇的手就是科里奥利力。当然，如果我们站在地面上看，而不是圆盘上，炮弹自然还是一条直线。 当然 Coriolis effect 在地球表面（绝大多数地点）也是有的，只不过在日常起居生活中这种效应很小，所以我们下面的讨论自由落体运动的时候就忽略地表的 Coriolis effect 了。 自由落体运动 我们生活中最熟悉的运动之一是自由落体运动，例如：" />
+<meta itemprop="image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-17724131-2']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Feed" href="feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Comments Feed" href="comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; O&#8217;Neill 空间站中物体的运动 Comments Feed" href="6089/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/multiverse.lamost.org\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/widget.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='wp-content/themes/origin/style.min.css%3Fver=0.5.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='wp-content/plugins/table-of-contents-plus/screen.css%3Fver=1505.css' type='text/css' media='all' />
+<link rel='stylesheet' id='Tippy-css'  href='wp-content/plugins/tippy/jquery.tippy.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='seed-wnb-css-css'  href='wp-content/plugins/wordpress-notification-bar/inc/css/seed_wnb.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-post-series-frontend-css'  href='wp-content/plugins/wp-post-series/assets/css/post-series.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='origin_fancybox-stylesheet-css'  href='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.css%3Fver=1.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-styles-css'  href='wp-content/plugins/font-awesome/assets/css/font-awesome.min.css%3Fver=3.2.1.css' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='font-awesome-ie7-css'  href='http://multiverse.lamost.org/blog/wp-content/plugins/font-awesome/assets/css/font-awesome-ie7.min.css?ver=3.2.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack_css-css'  href='wp-content/plugins/jetpack/css/jetpack.css%3Fver=3.6.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js%3Fver=1.11.2'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.2.1'></script>
+<script type='text/javascript' src='wp-content/plugins/scroll-to-top/js/stt.js%3Fver=1.0'></script>
+<script type='text/javascript' src='../Apps/MathJax-2.1/MathJax.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/plugins/tippy/jquery.tippy.js%3Fver=6.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var seed_wnb_js_localize = {"msg":"","button_link":"http:\/\/openmetric.org","button_label":"\u6682\u505c\u66f4\u65b0\u5566\uff0c\u70b9\u8fd9\u91cc\u53bb\u65b0\u7ad9\u70b9\uff1a[Dark Hypernova](http:\/\/openmetric.org)","button_target":"_blank"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wordpress-notification-bar/inc/js/seed_wnb.js%3Fver=4.2.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='量子力学框架回顾一' href='index.html%3Fp=6083.html' />
+<link rel='next' title='Creative Commons License 图标设计与 SVG' href='index.html%3Fp=6129.html' />
+<link rel='shortlink' href='index.html%3Fp=6089.html' />
+	
+		<!-- by Scrollto Top -->
+		
+ 		<script type="text/javascript">
+ 			//<![CDATA[
+  			jQuery(document).ready(function(){
+    			jQuery("body").append("<div id=\"scroll_to_top\"><a href="http://multiverse.lamost.org/blog/\&quot;#top\"">Top | 回顶部</a></div>");
+    			jQuery("#scroll_to_top a").css({	'display' : 'none', 'z-index' : '9', 'position' : 'fixed', 'top' : '100%', 'width' : '110px', 'margin-top' : '-30px', 'right' : '50%', 'margin-left' : '-50px', 'height' : '20px', 'padding' : '3px 5px', 'font-size' : '14px', 'text-align' : 'center', 'padding' : '3px', 'color' : '#ffa600', 'background-color' : '#ffffff', '-moz-border-radius' : '5px', '-khtml-border-radius' : '5px', '-webkit-border-radius' : '5px', 'opacity' : '.8', 'text-decoration' : 'none'});	
+    			jQuery('#scroll_to_top a').click(function(){
+					jQuery('html, body').animate({scrollTop:0}, 'slow');
+				});
+
+    		});
+  			
+			//]]>
+
+  		</script>
+		<!-- /by Scrollto Top and History Back -->	
+		
+		<style type="text/css">div#toc_container ul li {font-size: 90%;}</style>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+                    jQuery('.tippy').tippy({ position: "link", offsetx: 0, offsety: 10, closetext: "X", hidedelay: 700, showdelay: 100, calcpos: "parent", showspeed: 0, hidespeed: 0, target: "_blank", showtitle: true, hoverpopup: true, draggable: true, dragheader: true, multitip: false, autoshow: false, showheader: true, showclose: true, htmlentities: false });
+                });
+            </script>
+        <style type='text/css'>#bg_color { color:white; }
+.wnb-bar-button {
+  color:black;
+  text-shadow:0 -1px 0 rgba(255,255,255,0.25);
+  background-color:white;
+}
+#wnb-bar {
+  color:white;
+  position:fixed;
+  background-color:#000000;
+  background-image:-moz-linear-gradient(top,#000000,#000000);
+  background-image:-ms-linear-gradient(top,#000000,#000000);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#000000),to(#000000));
+  background-image:-webkit-linear-gradient(top,#000000,#000000);
+  background-image:-o-linear-gradient(top,#000000,#000000);
+  background-image:linear-gradient(top,#000000,#000000);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000',GradientType=0);
+}
+</style>
+
+<!-- WP SinoType typography plugin by graficareal.net -->
+<style>
+body {font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1>*,h2>*,h3>*,h4>*,h5>*,h6>*{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+</style>
+<!-- WP SinoType plugin typography -->
+
+
+	<style type="text/css">
+
+		/* Font size. */
+					html { font-size: 16px; }
+		
+		/* Font family. */
+					body { font-family: 'Helvetica', serif; }
+		
+		/* Link color. */
+					a, a:visited, #footer a:hover, .entry-title a:hover { color: #f58612; }
+			#respond #submit, .button, a.button, .wpcf7-submit, #loginform .button-primary { background-color: #f58612; }
+				a:hover, a:focus { color: #000; }
+
+		/* Custom CSS. */
+		/* LaTeX format. span class=... for example */.latex {  font-family: Times, \"Times New Roman\", serif;	  letter-spacing: 1px;}.latex sup {  text-transform: uppercase;  letter-spacing: 1px;  font-size: 700.000000e+0m;  vertical-align: -0.3em;  margin-left: -0.36em;  margin-right: -0.15em;}.latex sub {  text-transform: uppercase;  vertical-align: -0.0ex;  margin-left: -0.1667em;  margin-right: -0.125em;  font-size: 1em;}  
+	
+	</style>	
+
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+<body class="wordpress ltr en_US parent-theme y2015 m07 d21 h21 tuesday logged-out custom-background singular singular-post singular-post-6089">
+
+	
+	<div id="container">
+		
+		<div class="wrap">
+
+				
+			<div id="header">
+	
+					
+					<div id="branding">
+						
+						<div id="site-title"><a href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a></div>						
+					</div><!-- #branding -->
+					
+					
+	
+	<div id="menu-primary" class="site-navigation menu-container" role="navigation">
+
+		<span class="menu-toggle">Menu</span>
+
+		
+		<div class="menu"><ul id="menu-primary-items" class="nav-menu"><li id="menu-item-4844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4844"><a href="../blog.html">首页</a></li>
+<li id="menu-item-6371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6371"><a title="About">关于</a>
+<ul class="sub-menu">
+	<li id="menu-item-4835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4835"><a href="index.html%3Fp=1196.html">我</a></li>
+	<li id="menu-item-6377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6377"><a href="index.html%3Fp=1571.html">书与电影</a></li>
+	<li id="menu-item-6368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6368"><a href="index.html%3Fp=5003.html">白日梦</a></li>
+	<li id="menu-item-6453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6453"><a href="index.html%3Fp=6447.html">星际移民</a></li>
+</ul>
+</li>
+<li id="menu-item-4836" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4836"><a href="index.html%3Fp=2369.html">档案</a></li>
+<li id="menu-item-4837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4837"><a href="index.html%3Fp=371.html">会客</a></li>
+<li id="menu-item-6404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6404"><a href="index.html%3Fp=6394.html">星际移民中心</a></li>
+</ul></div>
+		
+	</div><!-- #menu-primary .menu-container -->
+
+	
+					
+					<div id="site-description"><span>流年暗中偷换</span></div>	
+						
+				
+		<div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb">
+			<span class="trail-browse">Browse:</span> <span class="trail-begin"><a href="../blog.html" title="时见疏星">Home</a></span>
+			 <span class="sep">&raquo;</span> <span class="trail-end">O&#8217;Neill 空间站中物体的运动</span>
+		</div>	
+			</div><!-- #header -->
+	
+				
+				
+			<div id="main">
+	
+				
+	
+	<div id="content">
+
+		
+		<div class="hfeed">
+
+			
+				
+					
+					<div id="post-6089" class="hentry post publish post-1 odd author-emptymalei category-all-kinds-of-knowledge post_tag-physics post_tag-crazy_science post_tag-sci_fi">
+
+												
+						<div class="post-content">
+						
+														
+							<h1 class='post-title entry-title'>O&#8217;Neill 空间站中物体的运动</h1>
+<div class="byline"><time class="published" datetime="2013-11-14T08:27:59-06:00" title="Thursday, November 14th, 2013, 8:27 am">11/14/2013</time> &middot; by <span class="author vcard"><a class="url fn n" rel="author" href="author/emptymalei/index.html" title="时见疏星">时见疏星</a></span> &middot; in <span class="category"><a href="category/all-kinds-of-knowledge/index.html" rel="tag">万物皆循因果</a></span> &middot; <a onclick="TogetherJS(this); return false;" style="font-weight:bold;color:orange;font-style:normal;cursor:default;"><i class="icon-female"></i>  &#91; Co-Reading &#93; <i class="icon-male"></i></a> &middot; </div>							<div class="entry-content">
+								
+								<div id="toc_container" class="toc_wrap_right toc_white no_bullets"><p class="toc_title">Contents</p><ul class="toc_list"><li><a href="index.html%3Fp=6089.html#O8217Neill_Cylinder"><span class="toc_number toc_depth_1">1</span> O&#8217;Neill Cylinder</a></li><li><a href="index.html%3Fp=6089.html#Coriolis_Effect"><span class="toc_number toc_depth_1">2</span> Coriolis Effect</a></li><li><a href="index.html%3Fp=6089.html#i"><span class="toc_number toc_depth_1">3</span> 自由落体运动</a></li><li><a href="index.html%3Fp=6089.html#O8217Neill_Cylinder-2"><span class="toc_number toc_depth_1">4</span> O&#8217;Neill Cylinder 中的“自由落体运动”</a></li><li><a href="index.html%3Fp=6089.html#i-2"><span class="toc_number toc_depth_1">5</span> 其他运动</a></li><li><a href="index.html%3Fp=6089.html#i-3"><span class="toc_number toc_depth_1">6</span> 参考</a></li><li><a href="index.html%3Fp=6089.html#i-4"><span class="toc_number toc_depth_1">7</span> 附录</a></li></ul></div>
+
+<p>我们在地球上生活，会体验到重力作用。虽然很多时候我们都想摆脱重力，自由的飞翔，但是重力对于我们的生活和健康有很重要的作用。例如我们走路，如果没有重力，轻轻一碰地面就飘起来了，走起路来可就得手脚并用了。或许这并不坏，可是如果我们想要冲一杯热茶，谁知道却怎么也没法把热水倒出来。更要命的事情是，在失重状态下，人的骨骼和肌肉的会有严重的问题。[<sup id="fnref-6089:1"><a href="index.html%3Fp=6089.html#fn-6089:1" rel="footnote">1</a></sup>]</p>
+<p>所以，如果要建造大规模的民用空间站，需要先解决失重的问题。一个比较有趣的方法是 O&#8217;Neill 提出的通过让空间站旋转来模拟重力。<br />
+<span id="more-6089"></span></p>
+<h2><span id="O8217Neill_Cylinder">O&#8217;Neill Cylinder</span></h2>
+<p>O&#8217;Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下图里面这个大型的桶状结构：</p>
+<p><img src="wp-content/uploads/2013/11/spacestation-636x310.jpg" alt="spacestation" width="550" /></p>
+<p>（图片来源：http://imageshack.us/photo/my-images/11/1109702023694.jpg/ ）</p>
+<p>当然，我们要研究物理，不需要这么花哨，只需要画一个圆筒就行了：</p>
+<p><img src="wp-content/uploads/2013/11/oneilcan.jpg" alt="oneilcan"/></p>
+<p>（图片来源 http://www.dvandom.com/coriolis/spacestation.html ）</p>
+<p>只要让这个圆筒适当的旋转，生活在圆筒内壁的人就可以体验到模拟的重力。这是一个比较容易理解的现象，比如杂技团常常表演的水流星节目，也就是拿了一对盛有水的碗，用绳子连起来，然后旋转他们，如下图：<br />
+<img src="wp-content/uploads/2013/11/waterMeteor.gif" alt="waterMeteor" width="174"/></p>
+<p>旋转时让碗口朝向内侧，这样水不会洒出来。原因大家也都清楚，是一种离心作用。</p>
+<h2><span id="Coriolis_Effect">Coriolis Effect</span></h2>
+<p>但是，站在空间站内壁的人们还会体验到另外一种作用，就是 Coriolis 作用。关于这种作用，可以看下面的这个视频：<br />
+<embed src="http://player.youku.com/player.php/sid/XNjA0NjY5MzY=/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"/><br />
+（iOS请点击视频链接：<a href="http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html">http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html</a> ）</p>
+<p>这个视频说的是，如果我们站在一个转动的圆盘上面开炮，会发现似乎有一只神奇的手把炮弹推向了一边，而不是我们常识中的（在地面的投影）是一条直线。这只神奇的手就是科里奥利力。当然，如果我们站在地面上看，而不是圆盘上，炮弹自然还是一条直线。</p>
+<p>当然 Coriolis effect 在地球表面（绝大多数地点）也是有的，只不过在日常起居生活中这种效应很小，所以我们下面的讨论自由落体运动的时候就忽略地表的 Coriolis effect 了。</p>
+<h2><span id="i">自由落体运动</span></h2>
+<p>我们生活中最熟悉的运动之一是自由落体运动，例如：<br />
+<img src="wp-content/uploads/2013/11/falling.jpg" alt="falling" width="500"/></p>
+<p>（当然，我们通常说的自由落体是指是理想的情况，没有空气阻力。）</p>
+<p>初速度为零，从距离地面高度为 h 的地方开始自由落体的物体的运动是由下面的公式描述的：</p>
+<p>\begin{equation}<br />
+x=h-\frac{1}{2}g t^2<br />
+\end{equation}</p>
+<p>其中 g 是指的重力常数。</p>
+<p>那么如果我们在 O&#8217;Neill Cylinder 这种空间站中还会有这种自由落体运动么？</p>
+<h2><span id="O8217Neill_Cylinder-2">O&#8217;Neill Cylinder 中的“自由落体运动”</span></h2>
+<p>如果我们在空间站中建造一个比萨斜塔，高度为 h，然后我们从斜塔上面让一个小球自由的下落（从空间站参考系来看），那么小球的运动是什么样的呢？</p>
+<p>简单的想想，落体运动应该是还有的，因为我们在斜塔顶部放手之后，从一个外部的观察者看来，小球接下来是在做匀速直线运动，这样总会撞到桶壁。只是这种运动还会是跟地面上的自由落体运动一样么？</p>
+<p>经过简单的计算，在一个半径为 R 的旋转角速度为 $\omega$ 的 O&#8217;Neill Cylinder 中，如果斜塔的高度 h&lt; &lt;R，并且小球落地的时间是远远小于圆筒转动一个周期的时间，那么我们可以得到从斜塔上面落体的运动方程（保留到 $(\omega t)^3$）：</p>
+<p>\begin{equation}<br />
+z'(t) = h &#8211; \frac{1}{2} R (\omega t)^2 &#92;&#92;<br />
+x'(t) = -\frac{1}{3}R(\omega t)^3<br />
+\end{equation}</p>
+<p>这里的 z&#8217; 坐标半径方向的，也就是空间站内部人看来的竖直向上，x&#8217; 是指的沿着转动方向与 z&#8217; 轴垂直的轴的坐标。下面是一个空间站的截面图，里面绘制了坐标的约定：<br />
+<img src="wp-content/uploads/2013/11/ScreenshotAt.png" alt="ScreenshotAt" width="550"/></p>
+<p>如果仅仅保留到 $(\omega t)^3$ 阶，那么在竖直方向上，确实看起来是一个自由落体运动，只需要让空间站的参数满足 $R\omega^2 = g$ 就可以跟地面一样了（g 是重力加速度）。但是，同时在（空间站内部看来的切平面）“水平”方向有个偏离（由上面提到的 Coriolis effect 引起的），但是这个偏离很小，如果空间站参数满足了竖直方向的自由落体运动跟地面一样，那么当物体“落地”后，这个偏离跟下落高度 h 的比值只有</p>
+<p>\begin{equation}<br />
+\frac{x&#8217;}{h} = -\frac{2\sqrt{2}}{3}\sqrt{\frac{h}{R}}<br />
+\end{equation}</p>
+<p>在上面所说的参数下，只要我们的下落高度跟空间站半径比起来小得多，这个偏离就可以忽略，空间站里面的自由落体就跟地面的自由落体相差不多。</p>
+<p>如果我们的下落高度 h 太大，那么物体就会偏离半径这条线比较大了。</p>
+<p>如果我们建造一个半径 10km 的空间站，并且让空间站转动角速度大约为 0.03 rad/s，那么空间站的内壁上面就会有一个跟地球表面重力加速度一样的“模拟的重力加速度”。如果我们从 10m 的地方让一个物体自由落体，“水平”方向的偏离只有 0.3 米。在正常生活中，完全是一个可以接受的偏离。</p>
+<h2><span id="i-2">其他运动</span></h2>
+<p>这篇文章只是分析了自由落体运动，这个分析起来非常简单，我们甚至可以轻松的写出不带近似的完整的运动方程。那么，其他的运动如何？几个有趣的事情是：</p>
+<ol>
+<li>在空间站内踢足球</li>
+<li>在空间站内制作单摆（或者使用摆钟）</li>
+<li>开车（高速和低速）</li>
+</ol>
+<p>这些都是可以分析的。</p>
+<hr />
+<h2><span id="i-3">参考</span></h2>
+<hr />
+<h2><span id="i-4">附录</span></h2>
+<p>这个问题的解法在这里：<br />
+<a href="wp-content/uploads/2013/11/ONeilCylinder.pdf">ONeilCylinder</a> (Credit: <a href="http://en.wikipedia.org/wiki/Carlton_M._Caves" title="Carlton M. Caves">Carlton M. Caves</a>)</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6089:1">
+http://science1.nasa.gov/science-news/science-at-nasa/2001/ast02aug_1/&#160;<a href="index.html%3Fp=6089.html#fnref-6089:1" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related'>
+<hr /><p><big><strong><font color="#ff6600">长程相关:</font></strong></big></p><ol>
+<li><a href="index.html%3Fp=5927.html" rel="bookmark" title="如何攻击巨人——立体行动装置使用要点">如何攻击巨人——立体行动装置使用要点 </a><hr /></li>
+<li><a href="index.html%3Fp=253.html" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+<li><a href="index.html%3Fp=5794.html" rel="bookmark" title="孩童的宇宙">孩童的宇宙 </a><hr /></li>
+<li><a href="index.html%3Fp=6318.html" rel="bookmark" title="你我之上的幽灵">你我之上的幽灵 </a><hr /></li>
+</ol>
+</div>
+								
+																
+							</div><!-- .entry-content -->
+
+							<div class="entry-meta"><span class="post_tag"><span class="before">Tags: </span><a href="tag/physics/index.html" rel="tag">物理</a>, <a href="tag/crazy_science/index.html" rel="tag">疯狂的科学</a>, <a href="tag/sci_fi/index.html" rel="tag">科幻</a></span></div>
+													
+						</div><!-- .post-content -->
+
+					</div><!-- .hentry -->
+
+					
+					
+					
+					<script type="text/javascript">
+var duoshuoQuery = {"short_name":"multiverse","sso":{"login":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=duoshuo_login","logout":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=logout&_wpnonce=eedd98a590"},"theme":"bluebox","stylePatch":"wordpress\/Origin"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+(function() {
+    var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
+    ds.charset = 'UTF-8';
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><a name="comments"></a>
+
+<div class="ds-thread" data-thread-key="6089" data-author-key="1" data-title="O&#039;Neill 空间站中物体的运动" data-url="http://multiverse.lamost.org/blog/6089"></div>
+
+<script type="text/javascript">
+	if (typeof DUOSHUO !== 'undefined')
+		DUOSHUO.EmbedThread('.ds-thread');
+</script>
+	<div id="ds-ssr">
+
+		
+            <ol id="commentlist">
+                            </ol>
+
+		            
+    </div>
+				
+			
+		</div><!-- .hfeed -->
+
+		
+		
+	
+		<div class="loop-nav">
+			<div class="previous">&larr; <a href="index.html%3Fp=6083.html" rel="prev">量子力学框架回顾一</a></div>			<div class="next"><a href="index.html%3Fp=6129.html" rel="next">Creative Commons License 图标设计与 SVG</a> &rarr;</div>		</div><!-- .loop-nav -->
+
+	
+	</div><!-- #content -->
+
+	
+				
+	
+	<div id="sidebar-primary" class="sidebar">
+
+		
+		<section id="hybrid-search-2" class="widget search widget-search">			<div class="search">
+
+				<form method="get" class="search-form" action="../blog.html">
+				
+				<div>
+					
+					<input class="search-text" type="text" name="s" value="Search this site..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+					
+					<input class="search-submit button" name="submit" type="submit" value="Search" />
+					
+				</div>
+				
+				</form><!-- .search-form -->
+
+			</div><!-- .search --></section><section id="dx_zen_widget-3" class="widget dx_zen_widget_sample_single widget-dx_zen_widget_sample_single"><h3 class="widget-title">禅语 (GitHub Zen)</h3>        		<div>
+        			<p>Non-blocking is better than blocking.</p>        		</div>
+        	</section><section id="hybrid-nav-menu-2" class="widget nav-menu widget-nav-menu"><h3 class="widget-title">文章分类</h3><nav class="menu-categories-container"><ul id="menu-categories" class="nav-menu"><li id="menu-item-4839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4839"><a href="category/dreams-under-the-starry-sky/index.html">星空下的梦想</a></li><li id="menu-item-4840" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4840"><a href="category/message-from-the-end-of-the-universe/index.html">天尽头的纸条</a></li><li id="menu-item-4841" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4841"><a href="category/world-of-the-internet/index.html">计算中的宇宙</a></li><li id="menu-item-4842" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4842"><a href="category/all-kinds-of-knowledge/index.html">万物皆循因果</a></li><li id="menu-item-4843" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4843"><a href="category/dance-in-heaven/index.html">天幕上的舞蹈</a></li></ul></nav></section><section id="toc-widget-2" class="widget toc_widget widget-toc_widget"><h3 class="widget-title">Contents</h3><ul class="toc_widget_list no_bullets"><li><a href="index.html%3Fp=6089.html#O8217Neill_Cylinder"><span class="toc_number toc_depth_1">1</span> O&#8217;Neill Cylinder</a></li><li><a href="index.html%3Fp=6089.html#Coriolis_Effect"><span class="toc_number toc_depth_1">2</span> Coriolis Effect</a></li><li><a href="index.html%3Fp=6089.html#i"><span class="toc_number toc_depth_1">3</span> 自由落体运动</a></li><li><a href="index.html%3Fp=6089.html#O8217Neill_Cylinder-2"><span class="toc_number toc_depth_1">4</span> O&#8217;Neill Cylinder 中的“自由落体运动”</a></li><li><a href="index.html%3Fp=6089.html#i-2"><span class="toc_number toc_depth_1">5</span> 其他运动</a></li><li><a href="index.html%3Fp=6089.html#i-3"><span class="toc_number toc_depth_1">6</span> 参考</a></li><li><a href="index.html%3Fp=6089.html#i-4"><span class="toc_number toc_depth_1">7</span> 附录</a></li></ul></section><section id="ds-recent-comments-2" class="widget ds-widget-recent-comments widget-ds-widget-recent-comments"><h3 class="widget-title">最近评论</h3><ul class="ds-recent-comments" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-avatar-size="30" data-excerpt-length="70"></ul></section><script>
+if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.RecentComments && DUOSHUO.RecentComments('.ds-recent-comments');
+</script><section id="hybrid-tags-2" class="widget tags widget-tags"><h3 class="widget-title">Tags</h3><p class="term-cloud post_tag-cloud"><a href='tag/coding/index.html' class='tag-link-117' title='12 topics' style='font-size: 11.3703703704pt;'>Coding</a> <a href='tag/it/index.html' class='tag-link-91' title='32 topics' style='font-size: 16.6851851852pt;'>IT</a> <a href='tag/math/index.html' class='tag-link-96' title='9 topics' style='font-size: 9.94444444444pt;'>Math</a> <a href='tag/physicist.html' class='tag-link-70' title='8 topics' style='font-size: 9.2962962963pt;'>Physicist</a> <a href='tag/statistical-physics/index.html' class='tag-link-86' title='15 topics' style='font-size: 12.537037037pt;'>Statistical Physics</a> <a href='tag/statistics.html' class='tag-link-188' title='8 topics' style='font-size: 9.2962962963pt;'>Statistics</a> <a href='tag/tex.html' class='tag-link-115' title='7 topics' style='font-size: 8.64814814815pt;'>TeX</a> <a href='tag/wordpress/index.html' class='tag-link-101' title='10 topics' style='font-size: 10.462962963pt;'>wordpress</a> <a href='tag/wp_plugin/index.html' class='tag-link-52' title='10 topics' style='font-size: 10.462962963pt;'>WP插件</a> <a href='tag/life/index.html' class='tag-link-93' title='32 topics' style='font-size: 16.6851851852pt;'>人生</a> <a href='tag/philosophy-philosophy-philosophy-philosophy-philosophy/index.html' class='tag-link-95' title='15 topics' style='font-size: 12.537037037pt;'>哲思</a> <a href='tag/astronomy/index.html' class='tag-link-81' title='46 topics' style='font-size: 18.6296296296pt;'>天文</a> <a href='tag/celestial.html' class='tag-link-6' title='7 topics' style='font-size: 8.64814814815pt;'>天象</a> <a href='tag/cosmology/index.html' class='tag-link-8' title='56 topics' style='font-size: 19.7962962963pt;'>宇宙学</a> <a href='tag/cosmological_evolution/index.html' class='tag-link-126' title='13 topics' style='font-size: 11.8888888889pt;'>宇宙演化</a> <a href='tag/to_be_continued.html' class='tag-link-105' title='6 topics' style='font-size: 8pt;'>待续</a> <a href='tag/trouble/index.html' class='tag-link-51' title='37 topics' style='font-size: 17.462962963pt;'>心事</a> <a href='tag/meteor.html' class='tag-link-63' title='6 topics' style='font-size: 8pt;'>流星雨</a> <a href='tag/love/index.html' class='tag-link-49' title='15 topics' style='font-size: 12.537037037pt;'>爱情</a> <a href='tag/physics/index.html' class='tag-link-44' title='84 topics' style='font-size: 22pt;'>物理</a> <a href='tag/crazy_science/index.html' class='tag-link-73' title='68 topics' style='font-size: 20.8333333333pt;'>疯狂的科学</a> <a href='tag/sci_fi/index.html' class='tag-link-46' title='15 topics' style='font-size: 12.537037037pt;'>科幻</a> <a href='tag/�%2591�%259C/index.html' class='tag-link-112' title='22 topics' style='font-size: 14.6111111111pt;'>网络</a> <a href='tag/poem.html' class='tag-link-35' title='6 topics' style='font-size: 8pt;'>诗歌</a> <a href='tag/my_lyrics.html' class='tag-link-56' title='7 topics' style='font-size: 8.64814814815pt;'>配词</a></p></section>
+		
+	</div><!-- #sidebar-primary .aside -->
+
+	
+
+				
+		</div><!-- #main -->
+
+		
+				
+
+		
+		<div id="footer">
+
+			
+			<div class="footer-content">
+				
+				<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17724131-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+Copyleft ©  2010 - 2015  <a class="site-link" href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a> By <a href="http://www.douban.com/people/emptymalei/" title="星河里的章鱼喵@Interplanetary Immigration Agency">章鱼喵</a>. <a href="index.html%3Fp=6089.html#" title="~To tell you the truth, this site will have been established in 2211AD on Mars."> Secret 1. </a> | <a href="index.html%3Fp=6089.html#" title="The  author is SOMEBODY in Interplanetary Immigration Agency">Secret 2</a> | <a href="http://interimm.github.io/" title="Interplanetary Immigration Agency">Interplanetary Immigration Agency.</a> | Co-Reading Uses <a href="http://togetherjs.com" target="_blank">TogetherJS </a><hr/>
+
+<div style="float:left;">
+<div style="display:inline;float:left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="知识共享许可协议" style="border-width:0;height:30px;" src="wp-content/uploads/2012/03/cc-by-nc-sa.gif" /></a></div>
+<div style="display:inline;margin-left:20px;float:left;line-height:15px;">本站作品(如无特别说明)采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><strong>CC BY-NC-SA 3.0</strong></a>。<br>(保留作者并注明出处非商业且相同方式共享。)</div>
+<div style="float:right;line-height:13px;">
+<a href="wp-admin.html" style="font-size:9px;background-color:#7aca29;color:#7aca29;width:30px;">Admin</a>
+<br>
+<a href="https://www.google.com/analytics" style="font-size:9px;background-color:#f58612;color:#f58612;width:30px;">Analytics</a>
+</div>
+</div>
+
+<div style="float:right;font-size:13px;">
+|  <a style="padding:2px 2px 2px 2px;color:#1473D7;" href="http://iastro.lamost.org/x/user/107" title="专业笔记@iAstro">宇宙</a> 
+ | <a style="padding:2px 2px 2px 2px;color:#08C;" href="http://www.douban.com/people/emptymalei" title="我的豆瓣">豆瓣</a>    
+ | <a style="padding:2px 2px 2px 2px;color:orange;" href="http://github.com/emptymalei" title="我的GitHub">GitHub</a>  
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.zhihu.com/people/emptymalei" title="我的知乎">知乎</a>                           
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.quora.com/MA-Lei-1" title="My Quora">Quora</a>   
+ | <a style="padding:2px 2px 2px 2px;color:#c61800;" href="http://www.guokr.com/i/1769480175/" title="时见疏星@果壳网">果壳</a>
+ | </div>
+				
+			</div>
+
+			
+		</div><!-- #footer -->
+
+				
+		</div><!-- .wrap -->
+
+	</div><!-- #container -->
+
+	
+	<link rel='stylesheet' id='yarppRelatedCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/related.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/table-of-contents-plus/front.js%3Fver=1505'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201530'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.pack.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fitvids/jquery.fitvids.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/footer-scripts.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/navigation.js%3Fver=20130228'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/themes/origin/library/js/drop-downs.min.js%3Fver=20130805'></script>
+	
+</body>
+</html>

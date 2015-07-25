@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Ubuntu</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/ubuntu/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>GADGET-2安装</title>
+		<link>http://multiverse.lamost.org/blog/2336</link>
+		<comments>http://multiverse.lamost.org/blog/2336#comments</comments>
+		<pubDate>Tue, 27 Dec 2011 11:39:49 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Coding]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[天象]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[宇宙演化]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2336</guid>
+		<description><![CDATA[Gadget-2：N-Body simulation的程序。&#124;2011-12-27 http://www.gadgetcode.org/ http://www.mpa-garching.mpg.de/galform/gadget/ Gadget-2的安装（Ubuntu 11-10）： 1.准备：fftw的2.x的版本（3不支持多核），gsl，mpi，hdf5-1.6.10（1.8.8有些函数改动，不再适合这个程序，www.hdfgroup.org/HDF5/）；Gadget2的主程序。 2.安装各种程序。 a. Install lam-7.1.4. to some path like /opt/lam-7.1.4. (Put it anywhere you like, not necessarily opt.) b. export PATH=$PATH:/opt/lam-7.1.4 c. apt-get install gfortran. To configure lam, use ./configure &#8211;prefix=/opt/lam7.1.4 &#8211;with-fc=gfortran d. Install...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1946" rel="bookmark" title="Evolution of Background and Perturbations in {Cosmology} [Intro]">Evolution of Background and Perturbations in {Cosmology} [Intro] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Gadget-2：N-Body simulation的程序。|2011-12-27</p>
+<p><a href="http://www.gadgetcode.org/" title="http://www.gadgetcode.org/" target="_blank">http://www.gadgetcode.org/</a><br />
+<a href="http://www.mpa-garching.mpg.de/galform/gadget/" title="http://www.mpa-garching.mpg.de/galform/gadget/" target="_blank">http://www.mpa-garching.mpg.de/galform/gadget/</a></p>
+<p><span id="more-2336"></span></p>
+<p>Gadget-2的安装（Ubuntu 11-10）：</p>
+<p>1.准备：fftw的2.x的版本（3不支持多核），gsl，mpi，hdf5-1.6.10（1.8.8有些函数改动，不再适合这个程序，www.hdfgroup.org/HDF5/）；Gadget2的主程序。<br />
+2.安装各种程序。<br />
+  a. Install lam-7.1.4. to some path like /opt/lam-7.1.4. (Put it anywhere you like, not necessarily opt.)<br />
+  b.<br />
+<blockquote>export PATH=$PATH:/opt/lam-7.1.4</p></blockquote>
+<p>  c. apt-get install gfortran. To configure lam, use </p>
+<blockquote><p>./configure &#8211;prefix=/opt/lam7.1.4 &#8211;with-fc=gfortran</p></blockquote>
+<p>  d. Install fftw. Configure:</p>
+<blockquote><p>./configure &#8211;enable-mpi &#8211;enable-type-prefix &#8211;enable-float </p></blockquote>
+<blockquote><p>./configure &#8211;prefix=/opt/fftw-2.1.5 &#8211;enable-mpi &#8211;enable-type-prefix &#8211;enable-float</p></blockquote>
+<p>  e. Install hdf5.<br />
+  f. Make Gadget2. Make sure all LD_LIBRARY_PATH are exported. If some error like libgsl.so.0 not found, try to modify /etc/ld.so.conf, type the path of the gsl library (/opt/gsl-1.15/lib for example) in, and &#8216;sudo ldconfig&#8217; to load this configuration.</p>
+<p>3.分析数据如果需要可视化，可以使用gsplash。也就是要装splash（http://users.monash.edu.au/~dprice/splash/download.html）。<br />
+ 但是splash依赖于pgplot。故先要装pgplot。可以通过apt-get install pgplot5来安装。<br />
+ splash needs libX11-dev package. Install this dev package first.<br />
+4.在另外合适的地方mkdir一个合适的文件夹，比如galaxy。然后把cp Gadget2到这个galaxy。因为Gadget运行需要一个参数文件，所以要将参数文件也要cp到此处。另外按需要建立输出文件夹。<br />
+5.直接运行Gadget2.等很长很长很长很长时间，然后可以拿到snapshot文件。使用gsplash可以查看这些文件。</p>
+<p>遇到的问题：<br />
+1. 注意gfrotran的版本，在下载hdf5的时候对应好版本，如果没有合适的版本，需要下载源码自己编译。<br />
+2. 注意hdf5的版本hdf5-1.6.10.  hdf5-1.8.8是不行的。<br />
+3. splash安装的时候，pgplot的库路径找不到。需要去splash下build目录下的Makefile中在</p>
+<blockquote><p>LDFLAGS= $(X11LIBS) $(PGPLOTLIBS)</p></blockquote>
+<p>的两个库前后更换。即</p>
+<blockquote><p>LDFLAGS= $(PGPLOTLIBS) $(X11LIBS)</p></blockquote>
+<p>或者在</p>
+<blockquote><p>PGPLOTLIBS=-L$(PGPLOT_DIR) -lpgplot -lpng</p></blockquote>
+<p>后面告诉makefile，X11库的路径。在Ubuntu11.10中，应该改为</p>
+<blockquote><p>PGPLOTLIBS=-L$(PGPLOT_DIR) -lpgplot -lpng -L/usr/i386-linux-gnu -lX11</p></blockquote>
+<p>给一张例子：</p>
+<div id="attachment_2349" style="width: 510px" class="wp-caption aligncenter"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/12/Screenshot-at-2011-12-27-223955.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/12/Screenshot-at-2011-12-27-223955.png" alt="N-Body Simulation Gas" title="N-Body Simulation Gas" width="500" /></a><p class="wp-caption-text">N-Body Simulation Gas</p></div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2377" rel="bookmark" title="宇宙各成分之间关系 | Tikz和PGF">宇宙各成分之间关系 | Tikz和PGF </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1946" rel="bookmark" title="Evolution of Background and Perturbations in {Cosmology} [Intro]">Evolution of Background and Perturbations in {Cosmology} [Intro] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2336/feed</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>为即将到来的ubuntu netbook 11.04做准备</title>
+		<link>http://multiverse.lamost.org/blog/789</link>
+		<comments>http://multiverse.lamost.org/blog/789#comments</comments>
+		<pubDate>Thu, 24 Feb 2011 17:39:36 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=789</guid>
+		<description><![CDATA[现在用的是ubuntu netbook 10.10。 因为新的即将到来，如果还是按照以前的传统，自己装过非官方的软件或者用了repository的就不能正常升级到高版本，所以我大致记录一下如果重装需要做些什么事情。 1. gummi：tex 2. 如果11.04还是用rhythmbox，那么记得解决中文支持问题。 3. ntfs自动挂载问题。 4. chrome 5. terminal的快捷键。 6. synpase, 类似于gnome go的快速启动器。 7. stellarium 8. skype 9. tsclient，链接window等远程桌面用。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1453" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1317" rel="bookmark" title="几件小事">几件小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1231" rel="bookmark" title="科研人员需要什么样的SNS">科研人员需要什么样的SNS </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>现在用的是ubuntu netbook 10.10。<br />
+因为新的即将到来，如果还是按照以前的传统，自己装过非官方的软件或者用了repository的就不能正常升级到高版本，所以我大致记录一下如果重装需要做些什么事情。</p>
+<p>1. gummi：tex<br />
+2. 如果11.04还是用rhythmbox，那么记得解决中文支持问题。<br />
+3. ntfs自动挂载问题。<br />
+4. chrome<br />
+5. terminal的快捷键。<br />
+6. synpase, 类似于gnome go的快速启动器。<br />
+7. stellarium<br />
+8. skype<br />
+9. tsclient，链接window等远程桌面用。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1453" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1317" rel="bookmark" title="几件小事">几件小事 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1231" rel="bookmark" title="科研人员需要什么样的SNS">科研人员需要什么样的SNS </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/789/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>rhythmbox乱码</title>
+		<link>http://multiverse.lamost.org/blog/730</link>
+		<comments>http://multiverse.lamost.org/blog/730#comments</comments>
+		<pubDate>Tue, 15 Feb 2011 05:55:12 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=730</guid>
+		<description><![CDATA[因为写文章写代码什么的很少用windows，笔记本上windows几十秒的启动时间我实在受不了，所以现在娱乐也转移到ubuntu下面了，越来越喜欢ubuntu这种很优秀的图标集成了。音量图标邮件图标等等什么的真的很好用，可是笔记本上的ubuntu netbook version下自带的rhythmbox导入文件的时候总是出现乱码，google之，发现原来rhythmbox默认使用utf-8的encoding，但是我win下面的那些music很多是使用的gbk的编码，所以就出现乱码了。 网上的解决方法有三种，一种更改music文件本身的tag方式，第二种更改环境变量，我使用的是第三种，即： 去ubuntu的preferance>Main Menu，找到rhythmbox，然后更改它的属性为： env GST_ID3_TAG_ENCODING=GBK rhythmbox %U 原来为rhythmbox %U 然后删除原来的列表，重新导入文件或文件夹即可。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1429" rel="bookmark" title="Google +1">Google +1 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1285" rel="bookmark" title="写html很累">写html很累 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1137" rel="bookmark" title="网站出路">网站出路 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>因为写文章写代码什么的很少用windows，笔记本上windows几十秒的启动时间我实在受不了，所以现在娱乐也转移到ubuntu下面了，越来越喜欢ubuntu这种很优秀的图标集成了。音量图标邮件图标等等什么的真的很好用，可是笔记本上的ubuntu netbook version下自带的rhythmbox导入文件的时候总是出现乱码，google之，发现原来rhythmbox默认使用utf-8的encoding，但是我win下面的那些music很多是使用的gbk的编码，所以就出现乱码了。<br />
+网上的解决方法有<a href="http://www.softbunny.net/post/rhythmbox_encoding.shtml">三种</a>，一种更改music文件本身的tag方式，第二种更改环境变量，我使用的是第三种，即：</p>
+<p>去ubuntu的preferance>Main Menu，找到rhythmbox，然后更改它的属性为：<br />
+<code>env GST_ID3_TAG_ENCODING=GBK rhythmbox %U</code><br />
+原来为<code>rhythmbox %U</code><br />
+然后删除原来的列表，重新导入文件或文件夹即可。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1429" rel="bookmark" title="Google +1">Google +1 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1285" rel="bookmark" title="写html很累">写html很累 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1137" rel="bookmark" title="网站出路">网站出路 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/730/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

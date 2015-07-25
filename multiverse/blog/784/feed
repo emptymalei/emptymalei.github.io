@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: WordPress3.1</title>
+	<atom:link href="http://multiverse.lamost.org/blog/784/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/784</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/784/comment-page-1#comment-134</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Thu, 24 Feb 2011 00:29:30 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=784#comment-134</guid>
+		<description><![CDATA[手机回复也很方便。mobilepress插件果然很给力～ ]]></description>
+		<content:encoded><![CDATA[<p>手机回复也很方便。mobilepress插件果然很给力～ </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

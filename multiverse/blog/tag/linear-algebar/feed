@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Linear Algebar</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/linear-algebar/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>线性代数与几何</title>
+		<link>http://multiverse.lamost.org/blog/5579</link>
+		<comments>http://multiverse.lamost.org/blog/5579#comments</comments>
+		<pubDate>Sat, 06 Apr 2013 12:48:43 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Linear Algebar]]></category>
+		<category><![CDATA[Math]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=5579</guid>
+		<description><![CDATA[线性代数里面我们的矩阵一般是求解方程组引入的。 那么除了求解方程组之外，线性代数还可以做什么呢？ 我们高中学过的线性规划，实际上也可以归结为线性代数问题，里面比较著名的一个方法是单纯形法。那么我们高中学过的几何呢？能不能也用线性代数来解决一些几何的问题呢？ 一个很直观的例子是，我们以前求解距离的问题，可以变成求解向量积的问题。 $&#92;bf x &#92;cdot &#92;bf x = &#92;sum_{i=1}^n x_i x_i$ 除了这个，还有没有其他的的呢？ 我们还学过二次型的问题。一个二次型的例子是 $ax^2 + b y^2 +c xy = f$ 我们也学习了标准型，也就是 $a x^2 + b y^2 = f$ 我们还学习了如何把二次型标准化。 但是，为什么呢？我们为什么要做这些事情？ 还有，我们学了行列式，行列式的定义，行列式的规则（可恶的沙流氏规则），可是行列式到底是个什么东西啊？ 二次型是什么？ 我们看一个例子： $x^2 + y^2 =...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/5576" rel="bookmark" title="一页纸上的微积分">一页纸上的微积分 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/253" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>线性代数里面我们的矩阵一般是求解方程组引入的。</p>
+<p>那么除了求解方程组之外，线性代数还可以做什么呢？</p>
+<p>我们高中学过的线性规划，实际上也可以归结为线性代数问题，里面比较著名的一个方法是单纯形法。那么我们高中学过的几何呢？能不能也用线性代数来解决一些几何的问题呢？<span id="more-5579"></span></p>
+<hr />
+<p>一个很直观的例子是，我们以前求解距离的问题，可以变成求解向量积的问题。</p>
+<p>$&#92;bf x &#92;cdot &#92;bf x = &#92;sum_{i=1}^n x_i x_i$</p>
+<p>除了这个，还有没有其他的的呢？</p>
+<p>我们还学过二次型的问题。一个二次型的例子是</p>
+<p>$ax^2  + b y^2 +c xy = f$</p>
+<p>我们也学习了标准型，也就是</p>
+<p>$a x^2 + b y^2 = f$</p>
+<p>我们还学习了如何把二次型标准化。</p>
+<p>但是，为什么呢？我们为什么要做这些事情？</p>
+<p>还有，我们学了行列式，行列式的定义，行列式的规则（可恶的沙流氏规则），可是行列式到底是个什么东西啊？</p>
+<hr />
+<p>二次型是什么？</p>
+<p>我们看一个例子：</p>
+<p>$x^2 + y^2 = 1$</p>
+<p>这是个圆，圆心在坐标原点，半径为1。</p>
+<p>二次型就是我们原来学习的圆锥曲线。对于高维度的情况，我们也模模糊糊有一个想法，椭球什么的。</p>
+<p>太好了，也就是说，我们原来研究的二次型原来是可以跟几何联系起来的。</p>
+<p>那么具体是如何建立的联系呢？</p>
+<p>我们再看一个三维空间的例子。</p>
+<p>$x^2 + 4xy + 2xz + y^2 + 2yz + 4z^2 = 1$</p>
+<p>按照我们学习的二次型的知识，我们可以把这个写成是 矩阵形式。</p>
+<p>$<br />
+&#92;begin{pmatrix}<br />
+x &amp; y &amp; z<br />
+&#92;end{pmatrix}<br />
+&#92;left[<br />
+&#92;begin{pmatrix}<br />
+1 &amp; 2 &amp; 1 &#92;&#92;<br />
+2 &amp; 1 &amp; 1 &#92;&#92;<br />
+1 &amp; 1 &amp; 4<br />
+&#92;end{pmatrix}<br />
+&#92;begin{pmatrix}<br />
+x &#92;&#92; y &#92;&#92; z<br />
+&#92;end{pmatrix}<br />
+&#92;right] = 1<br />
+$</p>
+<p>那么我们这个例子是个什么几何形状呢？我们真的可以通过研究矩阵来了解几何么？</p>
+<p>我们知道，几何里面很重要的一个东西是坐标系。但是，坐标系虽然对于我们计算很重要，但是我们所研究的对象却是跟坐标系无关的。<br />
+要建立坐标系，需要选定一组坐标轴（基）。而我们知道，线性代数里面正好有基。向量又正好可以对应坐标。那么我们可以用线性代数里面的基来表示几何里面的坐标轴。</p>
+<hr />
+<p>线性代数里面有一种很特殊的向量，就是特征向量。也就是说，一个矩阵作用到这个向量上之后，不会改变这个向量的方向。即：</p>
+<p>$&#92;mathbf M &#92;mathbf v = &#92;lambda &#92;mathbf v$</p>
+<p>我们还会发现，一个实对称矩阵的特征向量特征值有很好的性质。<br />
+1. 实对称矩阵的特征值总是实数。<br />
+2. 对称矩阵的两个特征向量如果所对应的特征值不同，那么他们正交。<br />
+3. 从任何一个 n*n 的实对称矩阵 M 的特征向量集合中，总是可以为 R^n  选取一组标准正交基。</p>
+<p>这三个性质为什么重要呢？</p>
+<p>有了这三个性质，我们就可以说，对于实系数的二次型，我们总可以找到一组正交的基，同时我们发现（上面的特征向量的定义）在这组基下面，我们的系数矩阵可以化为对角阵，也就是说，原来的丑陋的二次型可以化为一个标准形式。</p>
+<p>比如我们上面的例子的特征值可以求解出来：</p>
+<p>$<br />
+&#92;begin{vmatrix}<br />
+  1-&#92;lambda &amp; 2 &amp; 1 &#92;&#92;<br />
+2 &amp; 1-&#92;lambda &amp; 1 &#92;&#92;<br />
+1 &amp; 1 &amp; 4-&#92;lambda &#92;&#92;<br />
+&#92;end{vmatrix}=0<br />
+$</p>
+<p>求解出来就是</p>
+<p>$&#92;lambda =2,5,-1$</p>
+<p>如此一来，我们的乱七八糟的二次型可以化成</p>
+<p>$2 X^2 + 5 Y^2 + (-1)Z^2 = 1$</p>
+<p>现在我们可以看到这个二次型在新的坐标系下面是个椭球。（椭球图片可以用 Mathematica 绘制。）</p>
+<p>而这里的对称矩阵，实际上只是一个空间上的旋转。</p>
+<p>这样看了，不管我们要处理的是几维的二次曲线（面），总可以通过矩阵特征向量把这个问题转换成一个比较容易看出来的几何体，这就对应我们的二次型标准化的问题。</p>
+<hr />
+<p>行列式有几何意义么？</p>
+<p>我们会记得沙流氏规则。我们可以来看这样一个问题。对于一个二维空间的旋转，我们可以用这样的矩阵来表示</p>
+<p>$<br />
+R = &#92;begin{pmatrix}<br />
+&#92;cos&#92;alpha &amp; &#92;sin&#92;alpha &#92;&#92;<br />
+&#92;sin&#92;alpha &amp; -&#92;cos&#92;alpha &#92;&#92;<br />
+&#92;end{pmatrix}<br />
+$</p>
+<p>如果求解行列式，我们会发现 R 的行列式的绝对值其实是 1。</p>
+<p>旋转有个特点，比如我们转动一个三角形之后，三角形的面积不变。行列式的绝对值为1，正好跟面积不便对应起来。</p>
+<p>对于一个线性映射 M，其行列式恰好是 n 维的单位立方体体积在 M 的操作下发生的伸缩旋转变化的比例因子。</p>
+<p>也就是说，行列式的几何意义也就是在此。</p>
+<p>回想一下，我们当初为什么要引入行列式？</p>
+<p>在求解线性方程的时候，我们需要求解逆阵，求解逆阵，真好需要行列式来判断逆阵是否存在。行列式的一个非常简单的代数定义，居然可以有这么巧妙的几何对应，确实令人惊讶啊。</p>
+<hr />
+<p>附注：</p>
+<ol>
+<li>本文里面的一些定理的证明，请参考《数学桥》一书。</li>
+<li>本文主要是依据《数学桥》一书编辑整理而成。</li>
+</ol>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/5576" rel="bookmark" title="一页纸上的微积分">一页纸上的微积分 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/253" rel="bookmark" title="推荐：话说微积分">推荐：话说微积分 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/5579/feed</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

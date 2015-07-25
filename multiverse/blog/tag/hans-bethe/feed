@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Hans Bethe</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/hans-bethe/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>物理问题的超级杀手：Hans Bethe的一生及其科学生涯</title>
+		<link>http://multiverse.lamost.org/blog/42</link>
+		<comments>http://multiverse.lamost.org/blog/42#comments</comments>
+		<pubDate>Thu, 24 Jul 2008 13:59:00 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Hans Bethe]]></category>
+		<category><![CDATA[Physicist]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=42</guid>
+		<description><![CDATA[&#160; 这篇文章是对由世界科学出版社（World Scientific Publishing）2006年出版的传记《 Hans Bethe And His Physics》一书的评论，此书由Gerald E. Brown和Chang-Hwan Lee编辑。 &#160; 大概是在二十年前，我在冬天的时候通过了博士论文答辩。我异常兴奋地走出加州理工（California Institute of Technology）的West Bridge，准备提交刚刚通过的论文并注册博士学位。当我昂首阔步地走过校园中心高大的水泥拱门的时候，我注意到一位体格魁梧的男子正在喷泉的另一侧缓缓走动，他注视着池中的泉水，在思考着什么。我想过去和他聊几句，顺便告诉他我刚才已经通过博士论文答辩了，但是话到了喉咙口却还是把它咽下去了，我静静地站在一边。即使是在我满怀兴奋的时候，我也清醒地知道，最好不要在Hans Bethe思考的时候打扰他。我花了六年的时间才完成了没有多大深度但是勉强可以通过的论文，但是Bethe一个下午的思考却可以改变整个物理学。 这种对Bethe和他工作的敬畏在所有认识他的人当中普遍存在，而所有为《Hans Bethe and His Physics》投稿的作者们当然也不例外。Freeman Dyson称他为“二十世纪超级的问题解决者”，普林斯顿的John Bahcall说Bethe的工作看起来是由几个人合作完成的，只是在署名的时候写的是同一个名字。在他从事科学研究的一生中，他的工作产量几乎是无可匹敌的——早在1924年Bethe十八岁的时候他就发表了第一篇，这是和他的父亲合作完成的；而他的最后一篇文章则是由他的合作者在他于2005年三月份去世后六个月提交到预印本服务器的。在这段时间中，Bethe于1967年获得了诺贝尔物理学奖，这主要是由于他在三十年代的时候解释了恒星中的产能机制（Energy-Production Mechanism）；他提出了Bethe方案（Bethe Ansatz），这一方案在物理和数学中有广泛的应用；他于1936年至1937年为《现代物理学评论》（Reviews of Modern Physics）写的三篇长文被人们称为“Bethe圣经”，据说这三篇文章中不仅包括了其他人知道的关于核物理的所有内容，而且还有很多人们不清楚的东西；还有很多现在很重要的计算核质量的公式是以他的名字命名的。 Bethe于1947年计算了兰姆移位（Lamb Shift），这个例子可能最能显示Bethe解决物理问题的方式：单刀直入。在战后的第一次长岛（Long Island）会议上，Willis Lamb声称对氢原子精细结构（Fine Structure）的测量和流行的狄拉克（Paul Dirac）电动力学理论不符。当时很多物理学大家，包括泰斗级的玻尔（Niels Bohr）以及奥本海默（Robert Oppenheimer），将这个现象视为物理学的一个重大危机，预示着理论的发展需要新的革命性突破。在离开长岛回去的火车上，Bethe考虑了这个问题，成功地得到了和实验观测相符合的兰姆移位值，而火车还没有走完这次长度仅为75公里的旅途。Bethe的计算并没有带来什么物理学的新革命，仅通过简单的计算就得到了和实验结果相符的数值。这就是Bethe的风格，就像他说的那样：“学习数学是为了以备万一，但是对于具体的物理问题只要能够解决问题就足够了”以及“如果必要的话不妨大胆猜测”。所有实际问题的解决都是近似的，因此物理学中的高手们常常知道怎样避重就轻，而Bethe就是个中高手。他对于兰姆移位的计算使得其他人都相信，刚刚起步的量子电动力学（QED: Quantum...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2244" rel="bookmark" title="2011年诺贝尔物理学奖">2011年诺贝尔物理学奖 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1829" rel="bookmark" title="写给站在人生分叉口的物理本科生">写给站在人生分叉口的物理本科生 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/457" rel="bookmark" title="十个问题？是个问题！">十个问题？是个问题！ </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>&#160;</p>
+<p>这篇文章是对由世界科学出版社（World Scientific Publishing）2006年出版的传记《<a href="http://www.amazon.com/gp/product/9812566104?ie=UTF8&amp;tag=gezhi-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=9812566104"> Hans Bethe And His Physics</a>》一书的评论，此书由Gerald E. Brown和Chang-Hwan Lee编辑。</p>
+<p>&#160;</p>
+<p>大概是在二十年前，我在冬天的时候通过了博士论文答辩。我异常兴奋地走出加州理工（California Institute of Technology）的West Bridge，准备提交刚刚通过的论文并注册博士学位。当我昂首阔步地走过校园中心高大的水泥拱门的时候，我注意到一位体格魁梧的男子正在喷泉的另一侧缓缓走动，他注视着池中的泉水，在思考着什么。我想过去和他聊几句，顺便告诉他我刚才已经通过博士论文答辩了，但是话到了喉咙口却还是把它咽下去了，我静静地站在一边。即使是在我满怀兴奋的时候，我也清醒地知道，最好不要在Hans Bethe思考的时候打扰他。我花了六年的时间才完成了没有多大深度但是勉强可以通过的论文，但是Bethe一个下午的思考却可以改变整个物理学。</p>
+<p>这种对Bethe和他工作的敬畏在所有认识他的人当中普遍存在，而所有为《Hans Bethe and His Physics》投稿的作者们当然也不例外。Freeman Dyson称他为“二十世纪超级的问题解决者”，普林斯顿的John Bahcall说Bethe的工作看起来是由几个人合作完成的，只是在署名的时候写的是同一个名字。在他从事科学研究的一生中，他的工作产量几乎是无可匹敌的——早在1924年Bethe十八岁的时候他就发表了第一篇，这是和他的父亲合作完成的；而他的最后一篇文章则是由他的合作者在他于2005年三月份去世后六个月提交到预印本服务器的。在这段时间中，Bethe于1967年获得了诺贝尔物理学奖，这主要是由于他在三十年代的时候解释了恒星中的产能机制（Energy-Production Mechanism）；他提出了Bethe方案（Bethe Ansatz），这一方案在物理和数学中有广泛的应用；他于1936年至1937年为《现代物理学评论》（Reviews of Modern Physics）写的三篇长文被人们称为“Bethe圣经”，据说这三篇文章中不仅包括了其他人知道的关于核物理的所有内容，而且还有很多人们不清楚的东西；还有很多现在很重要的计算核质量的公式是以他的名字命名的。</p>
+<p>Bethe于1947年计算了兰姆移位（Lamb Shift），这个例子可能最能显示Bethe解决物理问题的方式：单刀直入。在战后的第一次长岛（Long Island）会议上，Willis Lamb声称对氢原子精细结构（Fine Structure）的测量和流行的狄拉克（Paul Dirac）电动力学理论不符。当时很多物理学大家，包括泰斗级的玻尔（Niels Bohr）以及奥本海默（Robert Oppenheimer），将这个现象视为物理学的一个重大危机，预示着理论的发展需要新的革命性突破。在离开长岛回去的火车上，Bethe考虑了这个问题，成功地得到了和实验观测相符合的兰姆移位值，而火车还没有走完这次长度仅为75公里的旅途。Bethe的计算并没有带来什么物理学的新革命，仅通过简单的计算就得到了和实验结果相符的数值。这就是Bethe的风格，就像他说的那样：“学习数学是为了以备万一，但是对于具体的物理问题只要能够解决问题就足够了”以及“如果必要的话不妨大胆猜测”。所有实际问题的解决都是近似的，因此物理学中的高手们常常知道怎样避重就轻，而Bethe就是个中高手。他对于兰姆移位的计算使得其他人都相信，刚刚起步的量子电动力学（QED: Quantum Electrodynamics）这一方向是正确的，并且刺激了导致量子电动力学巨大成功的一系列发展，最终成为了现代物理学的主流。Bethe在康乃尔大学（Cornell）执教七十一年，他对于计算的务实态度影响了一大批学生，现在仍然影响着整个物理学领域。</p>
+<p>在曼哈顿工程（Manhattan Project）中，Bethe是洛斯·阿拉莫斯（Los Alamos）实验室的理论部负责人，他在制造第一件核武器的过程中扮演了关键的角色。作为从希特勒统治下的德国逃脱出来的难民，Bethe深知核武器被极权主义政府（Totalitarian Regime）掌握的可怕后果。因此，和其它许多从法西斯（Fascism）魔掌中逃脱出来的科学家一样，Bethe投入到民主政府主导的核武器研制计划中，以帮助他们首先掌握核武器。战后，Bethe非常敏锐地感觉到，无论他做什么，美国政府都会继续核武器的研制。他继续参与这些项目，因为他坚信这样可以从内部更为有效地进行调解——虽然他对于这种工作一度感到左右为难：“我有时希望我是一个一贯的理想主义者”。Bethe还是一位有威望并且很有成效的军控（Arms Control）和国际合作的倡导者。</p>
+<p>如果要完整地描述这样一长串令人敬畏的成果，将会让许多学者在未来可预见的将来忙活一阵。这本Bethe的传记《Hans Bethe and His Physics》实在是太短了，要想完成这个任务几乎是不可能的。这本书源自Bethe自己的一个请求，他希望Gerry Brown向世界解释他的物理；最后由Brown和Chang-Hwan Lee编辑了这本书。这不是一本完整的传记——它更像是美食爱好者从不同餐馆带回来的菜单。按照Bethe的工作，这本书的内容涵盖了从非常细节的物理学到对于人类重要问题的深邃思考。对于一些重要问题的精彩见解并不需要有一定的物理学基础。</p>
+<p>我特别将这本书推荐给所有和书中内容有关的读者，因为它重现了许多我们不大了解或是只听过其大名的物理学家。阅读Bethe用简单的手法解决一个又一个物理问题后的快乐可以给我们灵感——我就常常忍不住要拿起笔来跟着他演算。在他的一生中，Bethe一直保持着这种快乐。一位就在Bethe去世的那一个星期在康乃尔做讨论会报告的同事告诉我，Bethe在整个报告的过程中一直很有兴趣地听着。在本书最为感人的一篇文章中提到，Bethe给年轻物理学家的最后一句话是：“坚持”（Carry On）。我们会的，Hans。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2244" rel="bookmark" title="2011年诺贝尔物理学奖">2011年诺贝尔物理学奖 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1829" rel="bookmark" title="写给站在人生分叉口的物理本科生">写给站在人生分叉口的物理本科生 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/457" rel="bookmark" title="十个问题？是个问题！">十个问题？是个问题！ </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/42/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

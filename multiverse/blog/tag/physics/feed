@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; 物理</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/physics/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>第一次见四元数</title>
+		<link>http://multiverse.lamost.org/blog/6359</link>
+		<comments>http://multiverse.lamost.org/blog/6359#comments</comments>
+		<pubDate>Tue, 20 May 2014 20:15:42 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<category><![CDATA[Quantum Mechanics]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6359</guid>
+		<description><![CDATA[上周 colloquium 的时候，第一次听到 quaternion 这个词，觉得很新鲜。quaternion 的矩阵表示是 \begin{equation} q = \begin{pmatrix}\;z &#38; w &#92;&#92; -w^* &#38; \;z^*\end{pmatrix} . \end{equation} 当时这个定义写出来，我立刻就想到了复数 $C = a+ib $的矩阵表达， \begin{equation} C = \begin{pmatrix} \;\; a &#38; b &#92;&#92; &#8211; b &#38; a \end{pmatrix}. \end{equation} 但不同的是，quaternion 矩阵表示的元素是复数。...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6056" rel="bookmark" title="量子力学计算的一个小技巧">量子力学计算的一个小技巧 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>上周 colloquium 的时候，第一次听到 quaternion 这个词，觉得很新鲜。quaternion 的矩阵表示是<br />
+<span id="more-6359"></span></p>
+<p>\begin{equation}<br />
+q = \begin{pmatrix}\;z &amp; w &#92;&#92; -w^* &amp; \;z^*\end{pmatrix} .<br />
+\end{equation}</p>
+<p>当时这个定义写出来，我立刻就想到了复数 $C = a+ib $的矩阵表达，</p>
+<p>\begin{equation}<br />
+C = \begin{pmatrix}<br />
+  \;\; a &amp;   b  &#92;&#92;<br />
+  &#8211; b &amp;  a<br />
+\end{pmatrix}.<br />
+\end{equation}</p>
+<p>但不同的是，quaternion 矩阵表示的元素是复数。</p>
+<p>做了这样的推广之后，quaternion 还有还好的性质，</p>
+<ol>
+<li>在加法，乘法和实数乘法下面是 closed.</li>
+<li>模是两个复数的模之和。</li>
+</ol>
+<p>这些性质都很容易验证，特别是在 closed 这条，我们可以进一步验证这构成一个群。</p>
+<p>还有一个非常漂亮的性质就是自己乘以自己的 hermitian comjugate 等于其模乘以单位矩阵，</p>
+<p>\begin{equation}<br />
+q^\dagger q= q q^\dagger = &#124; q &#124;^2 I.<br />
+\end{equation}</p>
+<p>为什么这个漂亮呢？因为这样我们就可以往 $2\times2$矩阵里面随便插入这个量除以其模。</p>
+<p>另外一个非常有趣的事情是，quaternion 可以跟 Pauli matrices 联系起来。一个任意的 quaternion，可以通过 Pauli matrices $\vec \sigma$ 和一个四向量 $\vec x$ 来生成，</p>
+<p>\begin{align}<br />
+q(x) &amp; = x^0 &#8211; i \vec \sigma \cdot \vec x &#92;&#92;<br />
+&amp; = \begin{pmatrix} x^0 &#8211; i x^3 &amp; -x^2 -ix^1 &#92;&#92; x^2 -i x^1 &amp; x^0 + i x^3 \end{pmatrix}.<br />
+\end{align}</p>
+<p>这个也正好体现了 Pauli matrices 外加单位矩阵的完备性。</p>
+<p>再加上 Pauli matrices 跟转动有关，所以这个简单的推广在物理中有很重要的应用。</p>
+<p>回想一下，欧式空间的转动，</p>
+<p>\begin{equation}<br />
+R \circeq \begin{pmatrix}\cos\theta &amp; -\sin\theta &#92;&#92; \sin\theta &amp; \cos\theta\end{pmatrix},<br />
+\end{equation}</p>
+<p>显然这个转动是个复数，写成常见的复数形式，应该是</p>
+<p>\begin{equation}<br />
+R \circeq \cos\theta &#8211; i \sin\theta,<br />
+\end{equation}</p>
+<p>进一步用欧拉公式，</p>
+<p>\begin{equation}<br />
+R\circeq e^{-i \theta}.<br />
+\end{equation}</p>
+<p>然后这里可就让我们想到了这是二维欧式空间转动的生成元。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6056" rel="bookmark" title="量子力学计算的一个小技巧">量子力学计算的一个小技巧 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2167" rel="bookmark" title="外微分形式 | {Differential Forms} [2]">外微分形式 | {Differential Forms} [2] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6359/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>你我之上的幽灵</title>
+		<link>http://multiverse.lamost.org/blog/6318</link>
+		<comments>http://multiverse.lamost.org/blog/6318#comments</comments>
+		<pubDate>Sun, 13 Apr 2014 08:55:35 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+		<category><![CDATA[网络]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6318</guid>
+		<description><![CDATA["孩童之时，所言俱为孩童，所感如是孩童，所思亦复孩童，唯成年之后，便将童心摈弃。” （《攻壳 2.0》）个体不过是演化的道具，是信息的节点，是演化为了达到某个目的而保留的一段信息。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<div id="attachment_6320" style="width: 1034px" class="wp-caption aligncenter"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/04/gaia_by_matkraken.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/04/gaia_by_matkraken-1024x558.jpg" alt="Image From http://gasolin.github.io/gaia-repo/?full#gaiarepo" width="1024" height="558" class="size-large wp-image-6320" /></a><p class="wp-caption-text">Image From http://gasolin.github.io/gaia-repo/?full#gaiarepo</p></div>
+<blockquote><p>孩童之时，所言俱为孩童，所感如是孩童，所思亦复孩童，唯成年之后，便将童心摈弃。</p></blockquote>
+<p>上面这段话出自<a href="http://movie.douban.com/subject/3142101/">《攻壳机动队 2.0》</a>。素子和傀儡师融合之后，借少女义体说出的台词。</p>
+<p>个体不过是演化的道具，是信息的节点和载体，是演化为了达到某个目的而保留的一段信息。如果一个人所携带的所有的信息定义了这个个体，要让自己真的活下来，那这个个体只能存活在一个绝热的环境中，没有信息的进入也没有信息的流失。可是生命的本质，低熵的维持决定了单个生命。人类个体的自我执著，在一定程度上保证了“自我”。只可惜，这个“自我”正在人类科技的协助下逐渐弱化消失。“生、老、病、死、爱别离、怨憎会、求不得”，是“我执”的苦，是想要定义自我的痛。因为自己存在，因为自我迷失，因为世界的演化，所以才苦。<span id="more-6318"></span></p>
+<p>（然而我并不是想说什么人生，在我这里没有人生。）</p>
+<p>在统计物理中，我们知道理想气体是没有相变的，因为组成它的粒子之间的相互作用太简单。对于 Van der Waals 气体，因为有了相互作用既有吸引又有排除，所以有了相变。相变是一种很有趣的现象，发生相变的时候，系统在不同的组织序之间变化，从无组织突然间变得有组织，或者部分有组织。而且在适当的相互作用中，系统可以从杂乱无章的非平衡可以变成非常有秩序的情况，或者部分有秩序的情况。同样的现象在人类社会中也有，人类会从杂乱无章的个体行为自动的组织起来，个体和个体之间的信息交流增强，这样让个体的智慧集中起来。当然，所谓的个体的存在就越来越弱化。</p>
+<p>什么是自我，在现在信息交流的密度越来越高的世界中，变成了一个更加复杂的问题。现在的孩子从小接受类似的教育，看到类似的社会，玩类似的游戏。你并不是你，而是一个被世界的其他部分塑造起来的工具。现在，当一个信息传播的时候，不同个体的思维会自动组织起来，形成不同的集体思维。如果信息交流的密度达到一个临界值，我们的社会就不再能区分个体和集体。</p>
+<p>如果我们可以把整个的人放在一个相空间，那么我们会发现，在信息交流越来越多的情况下，人类社会中的个体就会出现越来越强的相似性，会在相空间（按照统计物理的逻辑，是 mu 空间）形成有组织性的结构，或者说花样。如果我们对这个相空间中的体系用统计物理的粗粒化方法，就可以找到不同的群体，他们相互关联，组成每个群体的个体有很强的相似性。由于信息传播的便利性，这些个体甚至都不会意识到他们是在一个群体中，他们（在某些方面）的思维跟这个群体中的其他的个体很相似。</p>
+<blockquote><p>你我犹如隔镜视物，所见无非虚幻迷蒙。</p></blockquote>
+<p>在统计物理中，一个非常赞的 H 定理，Boltzmann 在一个人类尚未认识到物质是由分子原子组成的年代，证明了即便组成体系的是可逆运动，整个体系依然有一个量，称作 H，是一直减小，直到平衡态。换句话说，体系是不可逆的。这大概是第一个个体不能决定所有集体行为的证明。</p>
+<p>集体行为反过来非常强烈的改变的个体的行为。加上个体行为不能决定所有的集体行为这点，就让“我”的存在性变得越来越模糊。在很多相互作用强的体系中，整个体系的行为对个体行为的走向有着几乎决定性的作用。所有如果任何人之间的信息交换密度足够大，我们一样会迷失个体，变成一个整个的生命。</p>
+<p>当然，人类并不是在一个绝热的环境中。虽然在某种程度上，把人类说成是一个“我”是非常好的近似。但是如果从非常非常长的时间尺度上来看，人类会跟其他的个体相互作用，这使得人类这个生命也不是一个严格的“我”。甚至盖娅也不是严格的“我”，因为盖娅的发展基本上借助外在的能源，即太阳能。</p>
+<p>只是以现在这种信息交换的密度来看，人类的寿命太短了。如果信息交换的密度足够大（如果人类能够摆脱逐渐产生的知识红移，避免进入魔法世界的状态），我们将会感受到一种自我的迷失，并且同时所有人将会感受到同一个“我”，那时候，我们才会感受到那个作为集体的生命。然而，即便现在，我们也不能因为非常明确的感受不到她，就否认她的存在。</p>
+<p>那时候，我们会真正的体会到，“孩童之时，所言俱为孩童，所感如是孩童，所思亦复孩童，唯成年之后，便将童心摈弃。”那时候作为个体的你我，会感受到苦痛，那是”我执“的痛，只是这种痛，远远都不能够抗衡她的力量。</p>
+<p><strong>Ghost in the grand shell.</strong></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6318/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>一张图理清热力学势之间的关系</title>
+		<link>http://multiverse.lamost.org/blog/6266</link>
+		<comments>http://multiverse.lamost.org/blog/6266#comments</comments>
+		<pubDate>Sat, 22 Feb 2014 06:16:55 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Math]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6266</guid>
+		<description><![CDATA[今天办公室有个人跟我说她总是记不住 thermodynamic potential 之间的关系。于是我就给她讲了 Legendre transformation. 我想了想，热力学势（特性函数）可以总结成下面的一张图。 这篇文章就是简要的解释一下这张图。这篇文章只是给热力学的初学者看的，如果你已经学过理论力学或者统计物理的，我就是在浪费你的时间了。 本科学习的热力学主要的内容无非就是包括下面几部分（A Modern Course in Statistical Physics by L. E. Reichl）： Thermodynamic variables; extensive, intensive, neither; Equations of state; Four fundamental laws of thermodynamics; Thermodynamics potentials Phase transitions Response Stability 整个的思路跟 mechanics 类似。先搞清楚如何描述一个体系，包括状态和&#8221;kinematics&#8221;，这里...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>今天办公室有个人跟我说她总是记不住 thermodynamic potential 之间的关系。于是我就给她讲了 Legendre transformation. 我想了想，热力学势（特性函数）可以总结成下面的一张图。</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/thermodynamicPotentials1.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/thermodynamicPotentials1.png" alt="Thermodynamic Potentials" /></a></p>
+<p>这篇文章就是简要的解释一下这张图。这篇文章只是给热力学的初学者看的，如果你已经学过理论力学或者统计物理的，我就是在浪费你的时间了。<br />
+<span id="more-6266"></span><br />
+本科学习的热力学主要的内容无非就是包括下面几部分（<em>A Modern Course in Statistical Physics</em> by L. E. Reichl）：</p>
+<ol>
+<li>Thermodynamic variables; extensive, intensive, neither;</li>
+<li>Equations of state;</li>
+<li>Four fundamental laws of thermodynamics;</li>
+<li>Thermodynamics potentials</li>
+<li>Phase transitions</li>
+<li>Response</li>
+<li>Stability</li>
+</ol>
+<p>整个的思路跟 mechanics 类似。先搞清楚如何描述一个体系，包括状态和&#8221;kinematics&#8221;，这里 &#8220;kinematics&#8221;包括状态方程和特性函数。其次，提出“第一性原理”：四条热力学定律。然后研究“动力学”：相变、响应和稳定性。</p>
+<p>如果学的时候用的是汪志诚老先生的的书，在热力学势的地方会有些困惑。汪志诚老先生的书读起来很顺，但是由于很薄，很多东西没详细展开，热力学势就是其中一点。热力学势的关键除了搞清楚每个势的意义，另外就是要搞清楚哪些是变量。而确定哪些是变量的就是 Legendre transformation. 所以，要搞清楚这些势，可以从 Legendre transformation 下手。</p>
+<h2>Legendre Transformation</h2>
+<p>Legendre transformation 的基本定义在《经典力学的数学方法》中有，我写过一篇<a href="http://book.douban.com/people/emptymalei/annotation/1728598/" target="_blank">简单的笔记</a>，当时总结的不是很清楚，而且如果仅仅是为了比较<strong>肤浅</strong>的理清楚热力学势的关系，不太需要很严格的定义。所以我重新功利的说一下。</p>
+<p>如果我们有一个函数 $U(T)$，其中 $T$ 是自变量，而我们想要得到另一个函数 $H(S)$，自变量变成了 $S$，那么在热力学势的范围内，我们只需要做这样的变换：</p>
+<p>$$H(S) = U -TS$$</p>
+<p>当然，这个变换跟书里面的 Legendre transformation 差一个符号，这个并不重要，定义成差一个负号，更加符合物理的理解，因为这些都对应的能量，增加一个量看能量的变化，如果加了负号，增量正好相反，反而不便。</p>
+<p>这样我们说 $U(T)$ 和 $H(T)$ 对偶。（在 mechanics 里面，Lagrangian 和 Hamiltonian 也是对偶，理论力学里面最最重要的一个关系之一。）</p>
+<h2>Coupling</h2>
+<p>图片里面提到了三种不同的 coupling：</p>
+<ol>
+<li>Thermal Coupling: $-TS$</li>
+<li>Mechanical Coupling: $-YX$</li>
+<li>Chemical Coupling: $-\sum_\mu_i N_i$</li>
+</ol>
+<p>其中 $Y$ 是广义力（例如压强 $p$ ），$X$ 是广义位移（例如体积 $V$ ）<sup id="fnref-6266-1"><a href="#fn-6266-1" rel="footnote">1</a></sup>。这个也不需要很多解释吧，深刻的解释我也没用，总之，顾名思义。</p>
+<h2>图片的诠释</h2>
+<p>现在可以开始解释图片的意思了。首先解释各个符号的意思：</p>
+<ol>
+<li>$U$, $H$, $A$, $G$, $\Omega$ 分别是：内能，焓，Helmholtz 自由能，Gibbs 自由能，巨热力学势。</li>
+<li>{$S$, $T$}， {$X$, $Y$}， {$&#123;N_i&#125;,&#123;\mu_i&#125;$} 分别是：{熵，温度}，{广义位移，广义力}， {粒子数，化学势}。</li>
+<li>三种 coupling 上面已经解释了。</li>
+</ol>
+<p>整个图片是从中间的 $U(S,X,&#123;N_i&#125;)$ 开始的，这是内能，内能是熵S、广义位移 X （以及粒子分布 {N_i} ）的函数。。</p>
+<ol>
+<li>如果我们给内能 $U(S, X, &#123;N_i&#125;)$ 加上一个 mechanical coupling $-XY$，那么就得到了焓。从前面的 Legendre transformation 看到，这时候焓 $H$ 变成了 $S, X, &#123;N_i&#125;$ 的函数。所以在气体的理论中，$H$ 是 $S, p$ 的函数，所以等压热容自然是 $C_p = \left( \partial_T H\right)_p$. </li>
+<li>如果我们给内能和焓加上 thermal coupling $-ST$，那么我们就得到了两种自由能，分别是 Helmholtz 自由能和 Gibbs 自由能。同第一条里的道理，可以通过 Legendre transformation 自行分析两个是什么的函数。</li>
+<li>如果我们给 Helmholtz 自由能加上一个 chemical coupling $-\sum_i \mu_i N_i$，那么我们得到了巨热力学势 $\Omega(T,X,&#123;\mu_i&#125;)$。</li>
+</ol>
+<p>至于物理意义，从图上也很明确。例如焓 H 是内能去掉 mechanical coupling，也就是说，焓在不考虑机械功的时候好用，例如焓在考虑其他体积不变的时候好用，因为这时候吸热就是焓。其他的也是同样的方式理解。这样我们<strong>仅仅通过内能 $U(S, X, &#123;N_i&#125;)$ 和 Legendre transformation 就可以获得其他的热力学势</strong>。</p>
+<h3>Maxwell 关系</h3>
+<p>内能 $U(S,X,N)$ 出发，根据不同的 coupling，我们可以导出不同的热力学势是什么的函数（也可以通过 Legendre transformation，这里简单起见只利用图片来做）。例如，H 是什么的函数？$U(S,X,N)$ 我们去掉了 mechanical coupling -YX 那么 得到的 H 就是 $H(S,Y,N)$，因为勒让德变换 $H = U &#8211; YX$ ，原来是变量 X 的函数，要变成 Y  的函数。</p>
+<p>我们知道了这些函数的自变量是什么，下一步就可以写出所有的热力学势的微分式。只举一个例子：</p>
+<p>$$\mathrm d U(S, X) = T\mathrm d S + Y \mathrm d X $$</p>
+<p>然后，我们可以写出这些热力学势的全微分（由偏微分表示的，就是 chain rule）。同样只举一个例子：</p>
+<p>$$\mathrm dU(S, X) = \left(\frac{\partial U}{\partial S}\right)_X \mathrm d S + \left(\frac{\partial U}{\partial X}\right)_S \mathrm X$$</p>
+<p>对比上面两个公式，可以得到两个式子，分别是</p>
+<p>$$T = \left(\frac{\partial U}{\partial S}\right)_X $$</p>
+<p>$$Y =  \left(\frac{\partial U}{\partial X}\right)_S$$</p>
+<p><strong>用同样的方法得到由另外的热力学势表达的 $T$ 和 $Y$，这样就可以获得一组 Maxwell 关系式。然后用类似的方法处理所有的热力学势，就可以获得全部的 Maxwell 关系。</strong></p>
+<p><strong>另外，我们看到热力学量可以通过对相应的热力学势求偏微分来获得，很方便。</strong></p>
+<p>这个推导在物理中很常见，例如电动力学的学习中，磁场能的导出也是用类似的手段。</p>
+<h2>Legendre Transformation Revisited</h2>
+<p>上面除了图片有点物理之外，就是数学了，或者说就是 Legendre transformaton 了。一开始那个 Legendre transformation 看起来就是硬生生的代数呢，感觉并没有什么直观的意义？其实这个 transformation 背后有很多可以挖掘的，包括我们喜欢的简洁明了的图像。</p>
+<p>我们换种方式来找出函数 $f(x)$ 的 Legendre 变换。</p>
+<ol>
+<li>把函数在 x-y 坐标系中画出来（蓝色的实线）。</li>
+<li>做一条直线 $y=px$ . </li>
+<li>我们现在可以定义一个距离，也就是做一条垂直 x 轴的直线，在 $y=px$ 和 $f(x)$ 上的两个交点的距离： $F(x,p) = xp &#8211; f(x)$. 现在看起来已经有了 Legendre transformation 的样子了。但是有个问题，这里 x 和 p 是两个独立的变量。</li>
+<li>Legendre transformation 要求在给定一个直线斜率 p 之后，这个距离 $F(x,p)$ 最大。这样就确定了 x 和 p  的关系。也就是说要求 $\frac{\partial F(x,p)}{\partial x} = 0$，简化之后，$f'(x)=p$。如图所示。</li>
+<li>这样把 x 和 p 的关系 $x(p)$ 代入 $F(x,p)$ 中，我们的距离就变成单单 p 的函数，$F(p)$ 。这就是 $f(x)$ 的 Legendre transformation.</li>
+</ol>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/legendreTransformation.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/legendreTransformation.png" alt="legendreTransformation" width="390" height="256" class="aligncenter size-full wp-image-6503" /></a></p>
+<p>这里面的几何关系就是，$p$ 是斜率，$f'(x)$ 也是斜率。</p>
+<p>说到这里还不够清楚，那么我们重写一下这个关系：</p>
+<p>$$F(p) + f(x) = xp$$</p>
+<p>嗯？非常简单粗暴：$f(x)$ 和 $F(p)$ 具有对称性。等一下，这个关系联想到了什么？我们把上图中的表示切线的点划线延长出来，</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/abcdefghi.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/abcdefghi.png" alt="abcdefghi" width="546" height="386" class="aligncenter size-full wp-image-6504" /></a></p>
+<p>从这个图上，明显的就是斜率 p 乘以 x 得到了 $f(x) + F(p)$，即</p>
+<p>$$f(x)+F(p)=p x$$</p>
+<p>简单明了吧。这就是 f(x) 和 F(p) 之间的 Legendre transformation .明显的这个变换具有对称性，因为 f(x) 和 F(p ) 的地位相同。</p>
+<p>至于更多的关于这个变换的内容，可以参考<a href="http://book.douban.com/subject/1728598/">《经典力学的数学方法》</a>这本书，或者<a href="http://arxiv.org/abs/0806.1147">这篇文献</a>。这是物理上一个非常核心的变换，对于整个物理体系有很重要的作用。</p>
+<h2>微分几何</h2>
+<p>上面的这些东西，是我们本科学习的，我们会觉得好乱！是的，好乱！那是因为我们使用的数学语言很含糊。我们为什么要说一个量是什么什么的函数？因为我们想要求导数。</p>
+<p>如果我们有一种方法，可以得到导数的含义，但是不需要指定一个量是什么什么的函数，那么上面的这些混乱就没有了。是的，这种方法就是外微分。</p>
+<p>至于具体怎么理解这个问题，可以读一下这篇文章：http://www.av8n.com/physics/thermo-forms.htm</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6266-1">
+如果不熟悉广义力的话，这里解释一下，以免后面犯错。因为我们常常讨论系统的能量的增量，所以广义力的通过外界对系统做工来定义的。我们说外界对系统做了功 $\mathrm W = Y \mathrm d X$，这里面就是广义力乘以广义位移，自然就是外界对系统做的功了。需要注意的是，由于我们是说的<strong>外界对系统做功</strong>，所以这个力方向是指向系统的，而不是指向外部的。所以在气体的例子里面 $\mathrm dW = -p \mathrm dV$，广义力是指的 $-p$. 当然，暗能量/ quinessence 这种奇葩的存在，我们先不讨论。&#160;<a href="#fnref-6266-1" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2292" rel="bookmark" title="Relativistic Thermal Dynamics | 相对论性热力学">Relativistic Thermal Dynamics | 相对论性热力学 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2284" rel="bookmark" title="How to construct the metric tensor?">How to construct the metric tensor? </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6266/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>心理叠加态：从量子爱情到人的所有心理</title>
+		<link>http://multiverse.lamost.org/blog/6250</link>
+		<comments>http://multiverse.lamost.org/blog/6250#comments</comments>
+		<pubDate>Sun, 16 Feb 2014 07:54:38 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[Statistics]]></category>
+		<category><![CDATA[心理学]]></category>
+		<category><![CDATA[爱情]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6250</guid>
+		<description><![CDATA[$$\newcommand{\bra}[1]{\left\langle #1\right&#124;} \newcommand{\ket}[1]{\left&#124; #1\right\rangle} \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle} \newcommand{\avg}[1]{\left&#60; #1 \right>}$$ 系列文章目录： 第一篇：爱情的严格量子力学描述 第二篇：爱情的量子理论2 第三篇：心理叠加态：从量子爱情到人的所有心理 第四篇：基于统计数据的量子爱情 最近写了两篇关于用量子理论的方法来描述爱情的文章1，经过一些思考，我现在觉得我们可以把这个思路的核心概念提取出来，并且加以推广。如果我下面的整个想法是在重复造轮子，请见谅。我非常愿意学习理论心理学中类似的理论。我思考这个问题的初衷只是复习量子，但我对理论心理学所知极少，所有可能我的想法在理论心理学家那里会很幼稚而且极可能跟先前的理论重复。 我知道理论心理学有个分支叫做 Quantum Psychology，不过似乎是一种更加深层次理论，要解释从现实到心理的映射，我下面要说的是讨论用量子力学的方法来做唯像的心理学。 出发点：心理状态可以用态空间（一般为 Hilbert 空间）中的态来描述，这也就是说，这个空间中任意两个态的叠加也可以是人的心理状态，例如处在高兴和悲伤的叠加态等等。 之前所写的文章中的性格态，我很明确的提出了是心理性格。所以之前的模型中，无论是爱情状态和是性格状态，都是心理或者思维的状态。所以总的来说，我觉得有可能把爱情和性格可以叠加的想法推广到所有的心理状态都可以叠加，只要是我们所说的心理状态出在同一个态空间。所以这需要一种心理理论，把人的所有的心理或者性格分类，也就是说，要把人的完整心理分成不同的子空间，这些子空间的直和就可以组成整个心理。当然，具体的讨论中，不太可能讨论完整的心理，所以我们可以仅研究我们关心的一组子空间直和。 从提问题开始吧。 为什么量子的方法有效 第一个要问的问题是，为什么我们可以用类似量子力学的方法来描述心理状态呢？ 我们能这样做的原因是，心理状态常常并不是那么确定的，例如我们说一个人在做决定的时候，可能会犹豫，这就是说如果我们要在$&#92;{\ket{\mathrm{Yes}},\ket{\mathrm{No} } &#92;}$ 这样态空间基矢下面讨论问题，那么我们会发现犹豫的状态可以用这两个本征态的叠加来描述 $$C_1\ket{\mathrm{Yes}}+ C_2 \ket{\mathrm{No}} $$ 到底这个人倾向于回答是还是否，取决于两个系数的模（因为可能为复数）的大小。 当然，我们也可以找到一组更好的基矢，一般而言正交的基矢比较好用，例如对于这样一个心理状态 $$ \ket{\mathrm{Yes}}+...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6318" rel="bookmark" title="你我之上的幽灵">你我之上的幽灵 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<p>$$\newcommand{\bra}[1]{\left\langle #1\right|}<br />
+\newcommand{\ket}[1]{\left| #1\right\rangle}<br />
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}<br />
+\newcommand{\avg}[1]{\left&lt; #1 \right>}$$</p>
+<p>系列文章目录：<br />
+第一篇：<a href="http://multiverse.lamost.org/blog/6207">爱情的严格量子力学描述</a><br />
+第二篇：<a href="http://multiverse.lamost.org/blog/6229">爱情的量子理论2</a><br />
+第三篇：<a href="http://multiverse.lamost.org/blog/6250">心理叠加态：从量子爱情到人的所有心理</a><br />
+第四篇：<a href="http://multiverse.lamost.org/blog/6328">基于统计数据的量子爱情</a></p>
+<hr />
+<p>最近写了两篇关于用量子理论的方法来描述爱情的文章<sup id="fnref-6250-0"><a href="#fn-6250-0" rel="footnote">1</a></sup>，经过一些思考，我现在觉得我们可以把这个思路的核心概念提取出来，并且加以推广。<strong>如果我下面的整个想法是在重复造轮子，请见谅。我非常愿意学习理论心理学中类似的理论。我思考这个问题的初衷只是复习量子，但我对理论心理学所知极少，所有可能我的想法在理论心理学家那里会很幼稚而且极可能跟先前的理论重复。</strong><br />
+<span id="more-6250"></span><br />
+我知道理论心理学有个分支叫做 Quantum Psychology，不过似乎是一种更加深层次理论，要解释从现实到心理的映射，我下面要说的是讨论用量子力学的方法来做唯像的心理学。</p>
+<p><strong>出发点：心理状态可以用态空间（一般为 Hilbert 空间）中的态来描述，这也就是说，这个空间中任意两个态的叠加也可以是人的心理状态，例如处在高兴和悲伤的叠加态等等。</strong></p>
+<p>之前所写的文章中的性格态，我很明确的提出了是心理性格。所以之前的模型中，无论是爱情状态和是性格状态，都是心理或者思维的状态。所以总的来说，我觉得<strong>有可能把爱情和性格可以叠加的想法推广到所有的心理状态都可以叠加，只要是我们所说的心理状态出在同一个态空间</strong>。所以这需要一种心理理论，把人的所有的心理或者性格分类，也就是说，<strong>要把人的完整心理分成不同的子空间，这些子空间的直和就可以组成整个心理</strong>。当然，具体的讨论中，不太可能讨论完整的心理，所以我们<strong>可以仅研究我们关心的一组子空间直和</strong>。</p>
+<p>从提问题开始吧。</p>
+<h2>为什么量子的方法有效</h2>
+<p><strong>第一个要问的问题是，为什么我们可以用类似量子力学的方法来描述心理状态呢？</strong></p>
+<p>我们能这样做的原因是，心理状态常常并不是那么确定的，例如我们说一个人在做决定的时候，可能会犹豫，这就是说如果我们要在$&#92;{\ket{\mathrm{Yes}},\ket{\mathrm{No} } &#92;}$ 这样态空间基矢下面讨论问题，那么我们会发现犹豫的状态可以用这两个本征态的叠加来描述</p>
+<p>$$C_1\ket{\mathrm{Yes}}+ C_2 \ket{\mathrm{No}}  $$</p>
+<p>到底这个人倾向于回答是还是否，取决于两个系数的模（因为可能为复数）的大小。</p>
+<p>当然，我们也可以找到一组更好的基矢，一般而言正交的基矢比较好用，例如对于这样一个心理状态</p>
+<p>$$ \ket{\mathrm{Yes}}+ \ket{\mathrm{No}}  $$</p>
+<p>我们可以重新选取基矢 $&#92;{\ket{\psi_1}=\ket{\mathrm{Yes}}+\ket{\mathrm{No} },\ket{\psi_2} = \ket{\mathrm{Yes}}-\ket{\mathrm{No} } &#92;}$，然后心理状态就可以描述成</p>
+<p>$$\ket{\mathrm{\psi_1}}$$</p>
+<p>或者，甚至可能会出现像中微子那样的问题，就是类似味道本征态常常不是我们关心的本征态，质量本征态才是。或许 Yes 和 No 的本征态，并不是我们关心的本征态，或许中立本征态才是我们关心的，数学上就是刚刚举得例子。</p>
+<h2>如何建立模型</h2>
+<p><strong>第二个问题是，如果要建立一个比较完整的关于心理的模型，对心理状态的拆分有哪些要求呢？</strong></p>
+<p>开始提到了，要把<strong>复杂心理空间</strong>（就是我们关心的所有的心理）拆分成可以独立演化的心理，这些元素化的心理就是元空间（似乎理论心理学中有类似的概念，心理学元理论？<sup id="fnref-6250-1"><a href="#fn-6250-1" rel="footnote">2</a></sup>），要求在我们所要研究的整个复杂心理空间是元空间的直积，这也是为什么随便起了个名字叫元空间，而不叫子空间的原因。</p>
+<p>除此之外，在一般情况下似乎没有什么特殊的限制，甚至连不同的元空间中有相同的元素都没关系，不过可能会使得计算变得复杂。</p>
+<p>更进一步，我们可以利用群论来讨论对称性，子群，陪集等等等等。这是一个非常非常深的坑坑。</p>
+<h2>用于更大的人群样本——统计问题</h2>
+<p><strong>之前用这种方法来描述爱情（哎，只是描述了而已，希望能更快的做出演化理论），可以用来描述单人体系或者二人体系，到了二人体系的结果的理解和解释有点困难了。如果我们用上统计的方法呢？例如我们处理一个人的一段时间内的平均心理，或者多次测量的平均心理，或者多人的平均心理（有点像系综理论）等等。</strong></p>
+<p>一个公式来说，就是</p>
+<p>$$ \avg{O} = \sum_i \rho_i \ket{\mathrm{ \psi_i }} $$</p>
+<p>$\rho_i$ 是概率权重。只要找到这个量，所有的问题就解决了。</p>
+<h2>能谱问题</h2>
+<p>上面提到了统计，在物理中，我们会有能谱的概念，那么能谱这个概念可以借用过来么？</p>
+<p>我们可以举个例子，例如我们把疼痛分成 0~10 级别，那么我们可以写下能谱，</p>
+<table>
+<thead>
+<tr>
+<th>所谓能量</th>
+<th align="center">对应的态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td align="center">$\ket{0}$</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="center">$\ket{1}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">$\ket{2}$</td>
+</tr>
+<tr>
+<td>&#8230;</td>
+<td align="center">&#8230;</td>
+</tr>
+<tr>
+<td>10</td>
+<td align="center">$\ket{10}$</td>
+</tr>
+</tbody>
+</table>
+<p>这样就可以建立类似物理中能谱的概念，但是，不同的是，通常这种能谱在统计中的体现，不是出现在 Boltzmann 因子中的，因为并不是这个数字越高，就越难出现，也不是数字越小，就越难出现。或者，如果想要用 Boltzmann 因子，那就要好好的定义一套关于态密度的理论。<sup id="fnref-6250-2"><a href="#fn-6250-2" rel="footnote">3</a></sup></p>
+<h2>总之</h2>
+<p>总之，大致看来，从心理叠加态这个假设出发来描述人的心理，是很可能行得通的。</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6250-0">
+<a href="http://multiverse.lamost.org/blog/6207">爱情的严格量子力学描述</a> 和 <a href="http://multiverse.lamost.org/blog/6229">爱情的量子理论2</a>&#160;<a href="#fnref-6250-0" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6250-1">
+我并不知道，我对心理学知道的极少。&#160;<a href="#fnref-6250-1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6250-2">
+态密度是一个必须考虑的问题，记录一下。&#160;<a href="#fnref-6250-2" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6318" rel="bookmark" title="你我之上的幽灵">你我之上的幽灵 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6250/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>爱情的量子理论2</title>
+		<link>http://multiverse.lamost.org/blog/6229</link>
+		<comments>http://multiverse.lamost.org/blog/6229#comments</comments>
+		<pubDate>Sat, 15 Feb 2014 06:59:32 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<category><![CDATA[Quantum Mechanics]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[爱情]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6229</guid>
+		<description><![CDATA[$$\newcommand{\bra}[1]{\left\langle #1\right&#124;} \newcommand{\ket}[1]{\left&#124; #1\right\rangle} \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}$$ 系列文章目录： 第一篇：爱情的严格量子力学描述 第二篇：爱情的量子理论2 第三篇：心理叠加态：从量子爱情到人的所有心理 第四篇：基于统计数据的量子爱情 这是系列文的第二篇，第一篇在此：爱情的严格量子力学描述 之前写过 爱情的严格量子力学描述，由于只是初步想法，所以很多事情没有说清楚。这篇文章就尝试把这些概念弄清楚。所要讨论的大致包括主要假设的确定，状态的描述，演化方程以及结果的提取。 总的说来，思路是这样的，我们提取了量子力学里面的一些方法，然后找出合适的方法来描述爱情。总结在一个 Mindmap 中，是这样的： ( Quantum Theory of Love，源文件在此：Mindmap of QuantumLove@GitHub，可以用这个 Mindmup 看。) 基本假设 上面那个 Mindmap 做成英语的是因为打算跟系里的人讨论，为了方便阅读，做一个中文的表格吧。 ~ 量子力学 爱情理论 爱情中的例子 状态描述 Hilbert 空间的态矢...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6328" rel="bookmark" title="量子爱情，统计数据以及认知模型">量子爱情，统计数据以及认知模型 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<p>$$\newcommand{\bra}[1]{\left\langle #1\right|}<br />
+\newcommand{\ket}[1]{\left| #1\right\rangle}<br />
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}$$</p>
+<p>系列文章目录：<br />
+第一篇：<a href="http://multiverse.lamost.org/blog/6207">爱情的严格量子力学描述</a><br />
+第二篇：<a href="http://multiverse.lamost.org/blog/6229">爱情的量子理论2</a><br />
+第三篇：<a href="http://multiverse.lamost.org/blog/6250">心理叠加态：从量子爱情到人的所有心理</a><br />
+第四篇：<a href="http://multiverse.lamost.org/blog/6328">基于统计数据的量子爱情</a></p>
+<hr />
+<p>这是系列文的第二篇，第一篇在此：<a href="http://multiverse.lamost.org/blog/6207">爱情的严格量子力学描述</a></p>
+<hr />
+<p>之前写过 <a href="http://multiverse.lamost.org/blog/6207">爱情的严格量子力学描述</a>，由于只是初步想法，所以很多事情没有说清楚。这篇文章就尝试把这些概念弄清楚。所要讨论的大致包括主要假设的确定，状态的描述，演化方程以及结果的提取。</p>
+<p>总的说来，思路是这样的，我们提取了量子力学里面的一些方法，然后找出合适的方法来描述爱情。总结在一个 Mindmap 中，是这样的：<span id="more-6229"></span></p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/Quantum-Love.png"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/Quantum-Love-1024x618.png" alt="Quantum Love" width="100%" class="aligncenter size-large wp-image-6230" /></a><br />
+( <a href="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/Quantum-Love.png">Quantum Theory of Love</a>，源文件在此：<a href="https://raw.github.com/emptymalei/QuantumLove/master/mindmap/quantumLove.mup">Mindmap of QuantumLove@GitHub</a>，可以用这个 <a href="http://www.mindmup.com/">Mindmup</a> 看。)</p>
+<h2>基本假设</h2>
+<p>上面那个 Mindmap 做成英语的是因为打算跟系里的人讨论，为了方便阅读，做一个中文的表格吧。</p>
+<table>
+<thead>
+<tr>
+<th align="left">~</th>
+<th align="center">量子力学</th>
+<th align="center">爱情理论</th>
+<th align="center">爱情中的例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">状态描述</td>
+<td align="center">Hilbert 空间的态矢</td>
+<td align="center">Hilbert 空间态矢</td>
+<td align="center">$\ket{\mathrm{Boy}} + \ket{\mathrm{Girl}}$</td>
+</tr>
+<tr>
+<td align="left">对易子</td>
+<td align="center">$[\hat x, \hat p]=\mathrm i \hbar$</td>
+<td align="center">（似乎暂时不需要）</td>
+<td align="center">~</td>
+</tr>
+<tr>
+<td align="left">全同粒子</td>
+<td align="center">粒子交换算符作用</td>
+<td align="center">同样要考虑人的全同性<sup id="fnref-6229-1"><a href="#fn-6229-1" rel="footnote">1</a></sup></td>
+<td align="center">性别单态和三重态<sup id="fnref2:6229-1"><a href="#fn-6229-1" rel="footnote">1</a></sup></td>
+</tr>
+<tr>
+<td align="left">算符</td>
+<td align="center">Hermitian 的算符</td>
+<td align="center">待讨论<sup id="fnref-6229-2"><a href="#fn-6229-2" rel="footnote">2</a></sup></td>
+<td align="center">~</td>
+</tr>
+<tr>
+<td align="left">测量</td>
+<td align="center">坍缩或退相干</td>
+<td align="center">坍缩或退相干</td>
+<td align="center">$\ket{\mathrm{Boy}}\bra{\mathrm{Boy}}$ 作用在 $\ket{\mathrm{Boy}} + \ket{\mathrm{Girl}}$ 上态会变成 $\ket{\mathrm{Boy}}$ 因为这是此算符的本征态</td>
+</tr>
+<tr>
+<td align="left">演化</td>
+<td align="center">Schrödinger 方程；密度算符</td>
+<td align="center">Schrödinger 方程；密度算符</td>
+<td align="center">$\mathrm i \hbar = [\hat H, \hat \rho]$</td>
+</tr>
+</tbody>
+</table>
+<p>这里面比较重要的是态的描述、测量和演化。</p>
+<p><strong>态的描述中提到了一个人的状态是 Hilbert 空间的态矢，这非常重要，因为这样一来，同一个空间中的态的线性叠加还是这个空间中的一个态。也就是说这允许我们这样来描述性别和爱情状态的叠加态。</strong></p>
+<p>我们为什么要把性别描述成叠加态呢？因为从心理上来看，男性心理和女性心理之间的区别并不是那么大。但是从测量上来看，我们需要一个性别的算符，因为这是我们关心的事情：男孩暗恋女孩、女孩爱着男孩。所以性别是我们喜欢用的态空间，即</p>
+<p>$$ &#92;{\ket{\mathrm{Boy}},\ket{\mathrm{Girl}} &#92;} $$</p>
+<p>用花括号括起来的态来表示空间，意思是这两个态以及他们的线性组合。</p>
+<p>所以如果我们写下一个态，</p>
+<p>$$C_1 \ket{\mathrm{Boy}} + C_2 \ket{\mathrm{Girl} }$$</p>
+<p>表示一个人是有 $|C_1|^2$ 成分的男孩和 $|C_2|^2$ 的女孩组成的。我个人觉得这是通常的一种情况吧，有时候像个男孩，有时候像个女孩。</p>
+<p>这样当我们测量性别本征态的时候，单次测量的结果是以 $|C_1|^2/(|C_1|^2 + |C_2|^2)$ 的概率出现男孩，$|C_2|^2/(|C_1|^2 + |C_2|^2)$ 的概率出现女孩。</p>
+<p>那么，你会问，我们的算符应该是什么样呢？</p>
+<p>回忆一下，在 Stern Gerlach 实验中，对于自旋 1/2 的电子测量的时候，如果使用了 Pauli 矩阵，</p>
+<p>$ \sigma_z = \begin{pmatrix}1 &amp; 0&#92;&#92; 0 &amp; -1\end{pmatrix}$</p>
+<p>同样，我们可以使用 $&#92;{ \ket{\mathrm{Boy}},\ket{\mathrm{Girl}} &#92;}$, 然后处在男孩态可以写成 $(1,0)^T$。那么测量男孩女孩就对应于</p>
+<p>$ G_z = \begin{pmatrix}1 &amp; 0&#92;&#92; 0 &amp; -1\end{pmatrix}$</p>
+<p>我们会发现男孩女孩态正好是这个算符的本征态。</p>
+<p>对于演化，通常的 Hamiltonian 是不含时间的，所以我们可以定义一个非常简单的幺正的算符，Propagator, $\hat U(t,t_0)$，可以把一个状态从 $\ket{\mathrm{\psi(t_0)}}$ 演化到 $\ket{\mathrm{\psi(t)}}$ ，不含时间的 Hamiltonian 对于的 propagator 比较简单，就是</p>
+<p>$$\hat U(t,t_0) = e^{-\mathrm i \hat H (t-t_0)/t}$$</p>
+<p>所以，到目前为止，只要我们找出合适的 Hamiltonian，剩下的问题（一般而言）就是解方程了。</p>
+<h2>态的解释</h2>
+<p>解释(interpretate)一个态是什么意思，在我们在一个领域中引入新的方法的时候变得非常重要，因为无论如何，我们至少应该能够跟对应的具体的问题对应起来。</p>
+<p>之前我们引入了直积，并且提到了两个人放在一起可以组成两类状态，一类是性格三重态，其中一种是</p>
+<p>$$\ket{\psi_{t0}} = \frac{1}{\sqrt{2}} (\ket{\mathrm{Boy}}\ket{\mathrm{Girl}} + \ket{\mathrm{Girl}}\ket{\mathrm{Boy}} )$$</p>
+<p>另一类是性格单态，</p>
+<p>$$\ket{\psi_{s}} = \frac{1}{\sqrt{2}} (\ket{\mathrm{Boy}}\ket{\mathrm{Girl}} &#8211; \ket{\mathrm{Girl}}\ket{\mathrm{Boy}} )$$</p>
+<p>这里面有了纠缠，就是说如果现在有两个人，他们处在 $\ket{\psi_{t0}}$ 态，那么如果我们通过测量知道一个人是 $\ket{\mathrm{Boy}}$ 态，那么另一个人必然是 $\ket{\mathrm{Girl}}$ 态。这个结果是不是说的过去，我并不是非常的确定。从豆瓣的一些帖子或者我说来看，似乎给我一种印象是，爱情中的两个人似乎常常是一个偏女性，一个偏男性，这么说来似乎也说的过去。另外一对情侣，常常是一个主内一个主外，两个同时主内或者两个同时主外，似乎会有冲突，从波函数来看，同时发现他们主内或者同时发现他们主外的概率是零。</p>
+<p><strong>这就是所谓的 Pauli 不相容原理。根源上还是人的全同性，即，在我们的简单的模型中，如果爱情状态波函数相同，去掉了性别属性波函数，剩下的是完全相同的，把他们混在一起，是无法区分两个人的。</strong>例如，两个人的爱情状态都是单身，</p>
+<p>$$\ket{p_1} = \ket{\mathrm{Single}}$$<br />
+$$\ket{p_2} = \ket{\mathrm{Single}}$$</p>
+<p>那么我们把这两个人自由的放在一起（等价于说体系的 Hamiltonian 是 $\hat H = \hat H_1 + \hat H_2$），不考虑性别状态，总的波函数应该是，</p>
+<p>$$\ket{\psi(1,2)} = \ket{\mathrm{Single}}\otimes \ket{\mathrm{Single}}$$</p>
+<p>是么？显然不一定。取决于性别状态波函数是什么样子的。</p>
+<p>一个比较有趣的情形是，如果两个人处在性别三重态上，性别波函数是对称的，由于总的波函数应该是反对称的，两个人组成的体系的爱情状态应该是</p>
+<p>$$\ket{L} = \frac{1}{\sqrt{2}}( \ket{\mathrm{inLove}}\ket{\mathrm{Single}} &#8211; \ket{\mathrm{Single}}\ket{\mathrm{inLove}} )$$</p>
+<p>我们不能同时发现两个人处在相同的状态上，在现实中，可以解释为，如果两个人处在性别三重态，那么两个人不能同时 inLove 或者同时 Single。物理问题中，原因当然是交换算符的作用。那么现实中原因是什么呢？可以理解为，这种情况可以理解为单恋。</p>
+<p>如果两个人处在性别单态上，那么</p>
+<p>$$\ket{L} = \frac{1}{\sqrt{2}}( \ket{\mathrm{inLove}}\ket{\mathrm{Single}} + \ket{\mathrm{Single}}\ket{\mathrm{inLove}} )$$</p>
+<p>对应单恋，</p>
+<p>或者</p>
+<p>$$\ket{L} = \ket{\mathrm{inLove}}\ket{\mathrm{inLove}}$$</p>
+<p>对应两人相爱，</p>
+<p>再或者</p>
+<p>$$\ket{L} = \ket{\mathrm{Single}}\ket{\mathrm{Single}}$$</p>
+<p>两人对对方相互没感觉。</p>
+<p><strong>这里可以看到，虽然，性别三重态显然决定了两个人不能相爱，但是到底两个人是相爱、单恋还是对对方无感，并不仅仅取决于性别态，因为处在性别单态的两个人，可以有三种可能情况。</strong></p>
+<p>到现在位置，我们讨论了很多状态的描述和解释，以及测量的问题。另外一个大问题是演化的问题，这也涉及到如何让两个原本不想爱的人相爱，如何让爱你的人爱上你，如何让爱你的人变得不爱你这样的问题。关于这些，我会写在量子爱情系列的下一篇中。</p>
+<hr />
+<p>这是系列文的第二篇，第一篇在此：<a href="http://multiverse.lamost.org/blog/6207">爱情的严格量子力学描述</a></p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6229-1">
+之前的文章中提到了：<a href="http://multiverse.lamost.org/blog/6207">爱情的严格量子力学描述</a>。&#160;<a href="#fnref-6229-1" rev="footnote">&#8617;</a> <a href="#fnref2:6229-1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6229-2">
+由于暂时没有实数本征值的需求，索要待讨论。&#160;<a href="#fnref-6229-2" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6328" rel="bookmark" title="量子爱情，统计数据以及认知模型">量子爱情，统计数据以及认知模型 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6229/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>爱情的严格量子力学描述</title>
+		<link>http://multiverse.lamost.org/blog/6207</link>
+		<comments>http://multiverse.lamost.org/blog/6207#comments</comments>
+		<pubDate>Fri, 14 Feb 2014 07:04:40 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[爱情]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6207</guid>
+		<description><![CDATA[$$\newcommand{\bra}[1]{\left\langle #1\right&#124;} \newcommand{\ket}[1]{\left&#124; #1\right\rangle} \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}$$ 返回来看一下，真是漏洞百出，丢人啊。 系列文章目录： 第一篇：爱情的严格量子力学描述 第二篇：爱情的量子理论2 第三篇：心理叠加态：从量子爱情到人的所有心理 第四篇：基于统计数据的量子爱情 呐，本文的主要目的是卖萌、买萌，总之是萌的交流，而不是知识技术的交流。嗯呐。 另外，本文没有任何性别和性取向歧视的意思，非常欢迎大家做出一个更加全面的“理论”。 提醒：阅读本文需要量子力学基础。 要描述一个体系，按照力学的观点，有就是牛顿那个无法实现的理想，应该是包括以下几步： 描述一个体系的状态。例如如何把初始状态描述出来。 描述一个体系的时间演化。 从计算结果中提取我们想要的信息，例如可观测量，物理量等等。 当然在牛顿力学中我们有一套方法，在统计中有一套方法，量子中，基本上就是两者的结合。我们今天要尝试的是，使用量子力学来描述情人节的我。 从非常简单的假设出发，得出了几个结论，不严格的说： 一个单身的人，如果不接触其他人是不能脱单的（废话 ==）； 一个单身的人，自己是不完备（有严格定义）的（废话 == ）； 对于处在单身和恋爱叠加态的人，是可以通过测量理论给出严格的不同的表白结果概率的； 两个单身男女放在一起，是可能存在纯洁的友谊的，但需要特殊的性别叠加态； 两个单身的男女放在一起，如果想要脱单，必须两者之间存在相互作用（废话 ==）。 单个体的理论 状态的描述 首先，我是一个单身的男（zhuang）孩(chun)。 ( Source ) 所以要描述我的状态，必须有一个表示爱情状态的波函数...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6318" rel="bookmark" title="你我之上的幽灵">你我之上的幽灵 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<p>$$\newcommand{\bra}[1]{\left\langle #1\right|}<br />
+\newcommand{\ket}[1]{\left| #1\right\rangle}<br />
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}$$</p>
+<p><strong>返回来看一下，真是漏洞百出，丢人啊。</strong></p>
+<p>系列文章目录：<br />
+第一篇：<a href="http://multiverse.lamost.org/blog/6207">爱情的严格量子力学描述</a><br />
+第二篇：<a href="http://multiverse.lamost.org/blog/6229">爱情的量子理论2</a><br />
+第三篇：<a href="http://multiverse.lamost.org/blog/6250">心理叠加态：从量子爱情到人的所有心理</a><br />
+第四篇：<a href="http://multiverse.lamost.org/blog/6328">基于统计数据的量子爱情</a></p>
+<hr />
+<p>呐，本文的主要目的是卖萌、买萌，总之是萌的交流，而不是知识技术的交流。嗯呐。</p>
+<p>另外，本文没有任何性别和性取向歧视的意思，非常欢迎大家做出一个更加全面的“理论”。</p>
+<p><strong>提醒：阅读本文需要量子力学基础</strong>。</p>
+<p><span id="more-6207"></span></p>
+<p>要描述一个体系，按照力学的观点，有就是牛顿那个无法实现的理想，应该是包括以下几步：</p>
+<ol>
+<li>描述一个体系的状态。例如如何把初始状态描述出来。</li>
+<li>描述一个体系的时间演化。</li>
+<li>从计算结果中提取我们想要的信息，例如可观测量，物理量等等。</li>
+</ol>
+<p>当然在牛顿力学中我们有一套方法，在统计中有一套方法，量子中，基本上就是两者的结合。我们今天要尝试的是，使用量子力学来描述情人节的我。</p>
+<p>从非常简单的假设出发，得出了几个结论，不严格的说：</p>
+<ol>
+<li>一个单身的人，如果不接触其他人是不能脱单的（废话 ==）；</li>
+<li>一个单身的人，自己是不完备（有严格定义）的（废话 == ）；</li>
+<li>对于处在单身和恋爱叠加态的人，是可以通过测量理论给出严格的不同的表白结果概率的；</li>
+<li>两个单身男女放在一起，是可能存在纯洁的友谊的，但需要特殊的性别叠加态；</li>
+<li>两个单身的男女放在一起，如果想要脱单，必须两者之间存在相互作用（废话 ==）。</li>
+</ol>
+<h2>单个体的理论</h2>
+<h3>状态的描述</h3>
+<p>首先，我是一个单身的男（zhuang）孩(chun)。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/02/single.gif" alt="Single" /></p>
+<p>( <a href="http://hongzai-story.blogspot.com/2010/10/blog-post.html">Source</a> )</p>
+<p>所以要描述我的状态，必须有一个表示爱情状态的波函数</p>
+<p>$$\ket{\mathrm{Single}} .$$</p>
+<p>另外，我是一个“男孩”，所以必须有</p>
+<p>$$\ket{\mathrm{Boy}} .$$</p>
+<p>这两个是不同的相空间，这类体系的哈密顿量也是简单的两个不同的哈密顿量的直和，所以实际上能够描述我的态矢是，</p>
+<p>$$\ket{\mathrm{Lei}} = \ket{\mathrm{Single}}\otimes \ket{\mathrm{Boy}} .$$</p>
+<p>这是一个不严格的套路，更加严格的套路必须先定义空间，当然有了上面的灵感，完整的空间应该是</p>
+<p>$$&#92;{ \ket{\mathrm{Boy}},\ket{\mathrm{Girl}} &#92;} \otimes &#92;{ \ket{ \mathrm{Single}},\ket{\mathrm{Non-Single} }&#92;} .$$</p>
+<p>为了简化，我们就简单的认为</p>
+<p>$$\ket{\mathrm{Non-Single}} = \ket{\mathrm{inLove} }.$$</p>
+<p>并且每个子空间中的态矢是正交归一的。</p>
+<h4>仅有状态描述得出的推论</h4>
+<p><strong>我自己是不完备的</strong>，因为</p>
+<p>$$ \ket{\mathrm{Boy} }\bra{\mathrm{Boy}} + \ket{\mathrm{Girl} }\bra{\mathrm{Girl}} = \hat I .$$</p>
+<h3>时间演化</h3>
+<p>原则上可以用 Schrödinger 方程，这里我们不用它，而是用另一种更加漂亮的描述。</p>
+<p>$$\mathrm{i}\hbar \frac{\partial}{\partial t} \hat \rho = \left[ \hat H, \hat \rho \right]$$</p>
+<p>毫无疑问，这里用到了对易子算符。<sup id="fnref-6207-1"><a href="#fn-6207-1" rel="footnote">1</a></sup></p>
+<p>那么对于一个有我自己组成的孤立体系，是不可能从 $\ket{\mathrm{Single}}$ 演化到 $\ket{\mathrm{inLove}}$ 的。所以，我现在的状态</p>
+<p>$$\ket{\mathrm{Lei}} = \ket{\mathrm{Single}}\otimes \ket{\mathrm{Boy}} $$</p>
+<p>是我自己孤立体系的 Hamilton 的一个本征态。换句话说，</p>
+<p>$$ \left[ \hat H, \hat \rho \right] = 0 $$</p>
+<p>这样一来，我这个孤立体系是没法从演化到 $\ket{\mathrm{inLove}}$ 态的。所以我需要外界的帮助，当然对我来说，这个外界的帮助是一个女孩跟我相互作用。</p>
+<h3>结果的提取</h3>
+<p>通过上面的这些讨论，我们可以直接借用 QM 中的测量理论，如果我处在体系（现在可以扩展，不一定是我自己的孤立体系的 Hamilton 了）的本征态上，那么我就是 Stationary 的，换句话说，如果我处在$\ket{\mathrm{Single}}$态（只看这个子空间）上，那么怎么测量我都是这个态，没有时间演化。</p>
+<p>但是如果我处在一个叠加态 $\ket{\mathrm{Single}} + \ket{\mathrm{inLove}}$，那么单次测量，我就跳到某一个本征态上，这个情况下当然是概率相等，不过如果我处在 $ C_1\ket{\mathrm{Single}} + C_2 \ket{\mathrm{inLove}}$，那就不等概率了，而且可以计算。（算个球球，你得找个办法得出两个系数好嘛，总不能靠猜。）</p>
+<h2>二人体系</h2>
+<p>呐，我们要不要考虑二人（这里仅仅指男 + 女）体系？要考虑这个问题，需要搞清楚这样两个事情：</p>
+<ol>
+<li>二人的相互作用项应该是什么样？</li>
+<li>全同粒子理论会对结果有影响么？</li>
+</ol>
+<h3>状态描述</h3>
+<p>无相互作用的情况下，一个比较自然的想法是，我们可以直接把两个人的波函数乘起来嘛，因为如果没有相互作用，总的 Hamilton 就是</p>
+<p>$$\hat H(\vec r_1,\vec r_2) = \hat H_1(\vec r_1) + \hat H_2(\vec r_2)$$</p>
+<p>这里呢，$\vec r_i$ 是指的各自在总空间的坐标，也就是说，我们可以制作对于二人体系的一个完备基矢 $&#92;{ \ket{r_1,r_2} &#92;}$.</p>
+<p>这样一来，二人体系的波函数可以写作</p>
+<p>$$\ket{\psi} = \ket{\psi_1}\otimes \ket{\psi_2}$$</p>
+<p>有什么问题？</p>
+<ol>
+<li>需要考虑全同粒子么？<br />
+需要考虑的理由是，如果去掉性别属性，那么所有的人（在我们这个理想模型中）都是全同的，所有性别属性就等价于自旋之类的属性，而且比较简单，因为我们只考虑两个性别（一个更加全面的理论应该考虑所有的情况，例如 Trans）。所以我们必须考虑全同粒子带来的问题。</li>
+<li>相互作用该不该考虑？<br />
+需要考虑。因为如果我们不考虑相互作用，那么对于两个处在各自 Hamilton 本征态的人，即便放在了一起，也不能演化成 $\ket{\mathrm{Non-Single}} = \ket{\mathrm{inLove}}$.</li>
+</ol>
+<p>所以我们下面需要挨个考虑这两个问题。</p>
+<h4>全同粒子效应</h4>
+<p>性别可以组成两个不连通的子空间，一个是性别单态，一个是性别三重态。</p>
+<p>性别单态对应的波函数分别是：</p>
+<p>$$ \ket{g=0,m_g=0} = \frac{1}{\sqrt{2}} (\ket{\mathrm{Boy, Girl}} &#8211;  \ket{\mathrm{Girl, Boy} } ) $$</p>
+<p>性别三重态对应的波函数：</p>
+<p>$$ \ket{g=1,m_g=0} = \frac{1}{\sqrt{2}} (\ket{\mathrm{Boy, Girl}} + \ket{\mathrm{Girl, Boy} } )$$</p>
+<p>$$ \ket{g=1,m_g=-1} = \ket{\mathrm{Boy, Boy}}  $$</p>
+<p>$$ \ket{g=1,m_g=1} = \ket{\mathrm{Girl, Girl}}  $$</p>
+<p>呐，我们现在只讨论其中一类情况，就是 $m_g = 0$ 的情况，因为对称性比较好。</p>
+<h5>性别单态</h5>
+<p>这样看来，我们的体系是费米子体系，也就是说粒子交换算符 $P_{12} = -1$ 的体系。</p>
+<p>因为性别波函数已经是反对称了，所以我们不需要对爱情状态波函数进行特殊处理，就保持原样即可，因为原来就是对称的。这样合起来的总的波函数是反对称的，符合要求。</p>
+<h5>性别三重态</h5>
+<p>只讨论 $m_g = 0$. 性别波函数是对称的，所以需要是的状态波函数反对称。</p>
+<p>$$ \ket{\psi} = \frac{1}{\sqrt{2}}( \ket{\mathrm{Boy&#8217;s State1}} \ket{\mathrm{Girl&#8217;s State}}  &#8211; \ket{\mathrm{Girl&#8217;s State1}} \ket{\mathrm{Boy&#8217;s State}} ) $$</p>
+<p>大家可以发现，三重态中，两个都单身的男女组成的体系中，在本征态中找到两个人同时处在单身的状态是不可能的，这就是对应的 Pauli 不相容原理。</p>
+<p>但是这个只是对三重态成立，对于单态，就不存在这个结论。</p>
+<h4>相互作用</h4>
+<p>相互作用比较麻烦，我会在另一篇文章中详细讨论这个问题。等这个写全了，可以弄个 April Fool&#8217;s Day 文什么的。</p>
+<hr />
+<p>第二篇：<a href="http://multiverse.lamost.org/blog/6229">爱情的量子理论2</a></p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6207-1">
+biu biu biu，跟统计物理里面的 Hamilton Dynamics 差不多嘛，多了个虚数（好神奇哦），多了个代表量子力学的基本量（好神奇哦），Poisson 括号变成对易子（好神奇哦）。真打脸。刚才说量子力学是统计物理和经典力学的杂交（真的么？）。&#160;<a href="#fnref-6207-1" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6318" rel="bookmark" title="你我之上的幽灵">你我之上的幽灵 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6250" rel="bookmark" title="心理叠加态：从量子爱情到人的所有心理">心理叠加态：从量子爱情到人的所有心理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6207/feed</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>球状闪电：千百年的“幽灵”</title>
+		<link>http://multiverse.lamost.org/blog/6160</link>
+		<comments>http://multiverse.lamost.org/blog/6160#comments</comments>
+		<pubDate>Sun, 19 Jan 2014 02:56:59 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Ball Lightning]]></category>
+		<category><![CDATA[Lightning]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6160</guid>
+		<description><![CDATA[已经在媒体发表，请勿转载。 雷电交加的雨夜，一个球状的幽灵的在半空飘荡，它开始漫无目的随机游走，后来似乎对附近的人产生了兴趣。十几秒过去之后，这个闪着橙色光芒的幽灵便消失不见了。 早在 1596 年，就曾经有一起出现在英格兰萨默塞特郡的韦尔斯的一起球状闪电事件的记录。1 几百年来，虽然有着众多的球状闪电目击记录，人们却一直没有揭开这个幽灵的面纱。 （图片来源：Ball Lightning from Wikimedia Commons） 在更早的北宋时期，沈括在《梦溪笔谈》中记载了一次非常类似球状闪电的过程：雷火从窗子里面穿过来，暴雷过后，木制物品并无损坏，但是银饰却融化了。2 目击记录 在一篇上世纪六十年代的文章中，提到了 Brand 收集处理的关于球状闪电的报告，Brand 相信他所统计调查的 600 项事件中，只有 215 项还算是可信。另外，文章还提到了对美国橡树岭国家实验室的一项比较初级的问卷调查，1962 个被调查的人中，有 110 个人说自己看到过球状闪电，比例高达 5.6%。虽然后来对所有的 Union Carbide Nuclear Company 的所有人员的调查中，只有 3.1% 的人说见过球状闪电，但是这依然可以说明，球状闪电的目击者并不稀有。3也就是说，球状闪电在某些时间段某些地区，算不上是一个非常罕见的现象。 大家对球状闪电的描述，从运动到形态，甚至消失的方式常常有很大的差异。Smirnov 在一篇论文中，根据当时大家收集的观测数据总结了球状闪电的一些特征。 亮度：大约一盏 100W 的灯。 颜色：黄色，橙色，红色（粉色）和白色居多。 消失的方式：多数是以爆炸的形式消失的。 直径：主要在...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2454" rel="bookmark" title="X光和量子论实验的讲义">X光和量子论实验的讲义 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2244" rel="bookmark" title="2011年诺贝尔物理学奖">2011年诺贝尔物理学奖 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/835" rel="bookmark" title="经典电动力学中电磁张量">经典电动力学中电磁张量 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><strong>已经在媒体发表，请勿转载。</strong></p>
+
+<p>雷电交加的雨夜，一个球状的幽灵的在半空飘荡，它开始漫无目的随机游走，后来似乎对附近的人产生了兴趣。十几秒过去之后，这个闪着橙色光芒的幽灵便消失不见了。<span id="more-6160"></span></p>
+<p>早在 1596 年，就曾经有一起出现在英格兰萨默塞特郡的韦尔斯的一起球状闪电事件的记录。<sup id="fnref-6160-1"><a href="#fn-6160-1" rel="footnote">1</a></sup> 几百年来，虽然有着众多的球状闪电目击记录，人们却一直没有揭开这个幽灵的面纱。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Ball_lightning.png" alt="Ball Lightning Image" /></p>
+<p>（图片来源：<a href="https://en.wikipedia.org/wiki/File:Ball_lightning.png">Ball Lightning from  Wikimedia Commons</a>）</p>
+<p>在更早的北宋时期，沈括在《梦溪笔谈》中记载了一次非常类似球状闪电的过程：雷火从窗子里面穿过来，暴雷过后，木制物品并无损坏，但是银饰却融化了。<sup id="fnref-6160-12"><a href="#fn-6160-12" rel="footnote">2</a></sup></p>
+<h2>目击记录</h2>
+<p>在一篇上世纪六十年代的文章中，提到了 Brand 收集处理的关于球状闪电的报告，Brand 相信他所统计调查的 600 项事件中，只有 215 项还算是可信。另外，文章还提到了对美国橡树岭国家实验室的一项比较初级的问卷调查，1962 个被调查的人中，有 110 个人说自己看到过球状闪电，比例高达 5.6%。虽然后来对所有的 Union Carbide Nuclear Company 的所有人员的调查中，只有 3.1% 的人说见过球状闪电，但是这依然可以说明，球状闪电的目击者并不稀有。<sup id="fnref-6160-2"><a href="#fn-6160-2" rel="footnote">3</a></sup>也就是说，球状闪电在某些时间段某些地区，算不上是一个非常罕见的现象。</p>
+<p>大家对球状闪电的描述，从运动到形态，甚至消失的方式常常有很大的差异。Smirnov 在一篇论文中，根据当时大家收集的观测数据总结了球状闪电的一些特征。</p>
+<p>亮度：大约一盏 100W 的灯。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/brightness.png" alt="brightness" /></p>
+<p>颜色：黄色，橙色，红色（粉色）和白色居多。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/color.png" alt="color" /></p>
+<p>消失的方式：多数是以爆炸的形式消失的。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/decay.png" alt="decay" /></p>
+<p>直径：主要在 10cm 到 50cm 之间。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/diameter.png" alt="diameter" /></p>
+<p>寿命：大多小于 50 秒。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/lifetime.png" alt="lifetime" /></p>
+<p>出现的地方：多数在导体附近。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/origin.png" alt="origin" /></p>
+<p>出现的季节：多出现在七月。（季节和时间的统计结果还受到样本的气候和人群的作息的影响。）</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/season.png" alt="season" /></p>
+<p>出现在一天中的时段：9 点到 18 点之间。（季节和时间的统计结果还受到样本的气候和人群的作息的影响。）</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/time.png" alt="time" /></p>
+<p>（后两项比较容易理解，统计的样本大多是北半球（人类大多聚集在北半球，俄罗斯对于球状闪电的关注和研究又较多），晚上大家都睡觉了，出现了也不太容易被人发现。）</p>
+<h2>理论研究</h2>
+<p>关于球状闪电的理论有很多，其中有一个理论是 cloud-to-ground 闪电击中土壤，发生化学反应，使得土壤中的硅元素被释放出来，并在空气中形成一个漂浮着 Si，SiO，SiC 的纳米颗粒的区域，这些颗粒以化学能的形式储存了之前闪电的部分能量。之后这些颗粒逐渐氧化，把储存的闪电能量释放出来，便形成了一个发光发热的球状闪电。<sup id="fnref-6160-5"><a href="#fn-6160-5" rel="footnote">4</a></sup>这样可以解释大多数的球状闪电的特性，包括寿命，亮度，产生的地点。</p>
+<p>当然因为缺乏直接详细的测量，各种理论层出不穷。比如 Muldrew 有个分层模型<sup id="fnref-6160-6"><a href="#fn-6160-6" rel="footnote">5</a></sup>，</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/MuldrewModel.png" alt="Muldrew" /></p>
+<p>（Muldrew 分层的模型）</p>
+<p>这个模型中，球状闪电是由一个固态的核外加电子层和等离子层组成的。这个球体之所以不会立刻坍缩是因为核心和电子组成的薄层之间有特殊的电磁场形成了一层势垒。当电子慢慢穿过电磁场势垒或者核心慢慢破坏之后，球状闪电就慢慢消失了。</p>
+<p>有些模型中甚至使用了黑洞<sup id="fnref-6160-7"><a href="#fn-6160-7" rel="footnote">6</a></sup>。</p>
+<p>总之，各种各样的模型很多，可是这事儿不能就单凭一些目击者数据来定论吧。</p>
+<h2>观测</h2>
+<p>有很多想要拍摄球状闪电的科学项目，但是这些项目到目前大都还没有拍到<sup id="fnref-6160-8"><a href="#fn-6160-8" rel="footnote">7</a></sup>。不过在 2012 年，来自兰州西北师范大学的岑建勇，袁萍，薛思敏在一次常规闪电观测（青藏高原？原文 Qinghai Plateau，不知如何翻译）中拍到了球状闪电的高速录像和光谱。</p>
+<p>2012 年 7 月 23 日 21:54:59，他们是在进行 cloud-to-ground 闪电观测的时候，球状闪电突然出现。他们的仪器拍下了整个过程，包括视频，声音和 82 张图像。整个球状闪电发光的时间是 1.64 秒。下面是他们拍到的影像和光谱：</p>
+<p><embed src="http://player.youku.com/player.php/sid/XNjYzNDY5NzA0/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"/></p>
+<p>球状闪电产生的时候的光谱可以在下面图片中看到。上图是拍到的第一张图片，中间的图是第二张。可以明显的看到球状闪电的 光谱和常规的 cloud-to-ground 闪电是不同的。</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/prl.aps_.org-pdf-PRL-v112-i3-e035001-at-5.30.38-PM.png" alt="BL Spectrum" /></p>
+<p>（图片来源:Observation of the Optical and Spectral Characteristics of Ball Lightning<sup id="fnref-6160-9"><a href="#fn-6160-9" rel="footnote">8</a></sup>）</p>
+<p>他们经过分析，发现 Si I, Fe I, 和 Ca I 的谱线在整个球状闪电过程中都存在。其中，Si I 的谱线甚至一直到最后的阶段也有。另外 N I 和 O I 近红外谱线先后出现，并且在球状闪电的亮度达到最大的时候强度达到最大，之后便逐渐减弱并且以与出现的顺序相反的次序消失。<sup id="fnref-6160-10"><a href="#fn-6160-10" rel="footnote">9</a></sup></p>
+<p>总之，球状闪电中含有 Si，Fe，Ca 等元素，这些元素正好是土壤中所大量含有的<sup id="fnref-6160-11"><a href="#fn-6160-11" rel="footnote">10</a></sup>。因此这个观测在一定程度上支持某些类型的球状闪电跟土壤有关的理论，但是需要更多的观测和实验验证。</p>
+<h2>应用</h2>
+<p>龟！派！气！功！</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2014/01/guipaiqigong.jpg" alt="龟派气功" /></p>
+<hr />
+<h2>参考</h2>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6160-1">
+<a href="https://en.wikipedia.org/wiki/Ball_lightning#Historical_accounts">Ball Lightning on Wikipedia</a>&#160;<a href="#fnref-6160-1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-12">
+「内侍李舜举家曾为暴雷所震。其堂之西室，雷火自窗间出，赫然出檐，人以为堂屋已焚，皆出避之。及雷止，其舍宛然，墙壁窗纸皆黔。有一木格，其中杂贮诸器，其漆器银饫者，银悉槠流在地，漆器曾不焦灼。有一宝刀，极坚钢，就刀室中槠为汁，而室亦俨然。人必谓火当先焚草木，然后流金石，今乃金石皆铄，而草木无一毁者，非人情所测也。佛书言“龙火得水而炽，人火得水而灾”，此理信然。人但知人境中事耳，人境之外，事有何限？欲以区区世智情识，穷测至理，不其难哉！」&#160;<a href="#fnref-6160-12" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-2">
+J. R. McNally. (1960). Preliminary Report on Ball Lightning. Proceedings of the Second Annual Meeting of the Division of Plasma Physics of the American Physical Society, Gatlinburg, No. 2AD5 [1960], Paper J-15, pp. 1AD25&#160;<a href="#fnref-6160-2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-5">
+John Abrahamson and James Dinniss. (2000). Ball lightning caused by oxidation of nanoparticle networks from normal lightning strikes on soil. Nature 403, 519-521. <a href="http://www.nature.com/nature/journal/v403/n6769/full/403519a0.html">doi:10.1038/35000525</a> .&#160;<a href="#fnref-6160-5" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-6">
+D. B. Muldrew. (2010). Solid charged-core model of ball lightning. Ann. Geophys., 28, 223-232. <a href="http://www.ann-geophys.net/28/223/2010/angeo-28-223-2010.html">doi:10.5194/angeo-28-223-2010</a> .&#160;<a href="#fnref-6160-6" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-7">
+Mario Rabinowitz. (1999). Little Black Holes: Dark Matter and Ball Lightning. Astrophys.Space Sci. 262, 391-410. doi:10.1023/A:1001865715833 . <a href="http://arxiv.org/abs/astro-ph/0212251">arXiv:astro-ph/0212251</a> .&#160;<a href="#fnref-6160-7" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-8">
+我没有找到官方的项目网站，这个结论是从<a href="http://physics.aps.org/articles/v7/5">这里</a>看到的。&#160;<a href="#fnref-6160-8" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-9">
+Jianyong Cen, Ping Yuan, and Simin Xue. (2014). Observation of the Optical and Spectral Characteristics of Ball Lightning. Phys. Rev. Lett. 112, 035001. <a href="http://prl.aps.org/abstract/PRL/v112/i3/e035001">doi:10.1103/PhysRevLett.112.035001</a> .&#160;<a href="#fnref-6160-9" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-10">
+I 表示离子的价态。&#160;<a href="#fnref-6160-10" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-6160-11">
+<a href="http://zh.wikipedia.org/zh-cn/%E5%9C%B0%E7%90%83%E7%9A%84%E5%9C%B0%E6%AE%BC%E5%85%83%E7%B4%A0%E8%B1%90%E5%BA%A6%E5%88%97%E8%A1%A8">地球的地壳元素丰度列表</a>&#160;<a href="#fnref-6160-11" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2454" rel="bookmark" title="X光和量子论实验的讲义">X光和量子论实验的讲义 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2244" rel="bookmark" title="2011年诺贝尔物理学奖">2011年诺贝尔物理学奖 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/835" rel="bookmark" title="经典电动力学中电磁张量">经典电动力学中电磁张量 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6160/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>O&#8217;Neill 空间站中物体的运动</title>
+		<link>http://multiverse.lamost.org/blog/6089</link>
+		<comments>http://multiverse.lamost.org/blog/6089#comments</comments>
+		<pubDate>Thu, 14 Nov 2013 00:27:59 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+		<category><![CDATA[科幻]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6089</guid>
+		<description><![CDATA[我们在地球上生活，会体验到重力作用。虽然很多时候我们都想摆脱重力，自由的飞翔，但是重力对于我们的生活和健康有很重要的作用。例如我们走路，如果没有重力，轻轻一碰地面就飘起来了，走起路来可就得手脚并用了。或许这并不坏，可是如果我们想要冲一杯热茶，谁知道却怎么也没法把热水倒出来。更要命的事情是，在失重状态下，人的骨骼和肌肉的会有严重的问题。[1] 所以，如果要建造大规模的民用空间站，需要先解决失重的问题。一个比较有趣的方法是 O&#8217;Neill 提出的通过让空间站旋转来模拟重力。 O&#8217;Neill Cylinder O&#8217;Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下图里面这个大型的桶状结构： （图片来源：http://imageshack.us/photo/my-images/11/1109702023694.jpg/ ） 当然，我们要研究物理，不需要这么花哨，只需要画一个圆筒就行了： （图片来源 http://www.dvandom.com/coriolis/spacestation.html ） 只要让这个圆筒适当的旋转，生活在圆筒内壁的人就可以体验到模拟的重力。这是一个比较容易理解的现象，比如杂技团常常表演的水流星节目，也就是拿了一对盛有水的碗，用绳子连起来，然后旋转他们，如下图： 旋转时让碗口朝向内侧，这样水不会洒出来。原因大家也都清楚，是一种离心作用。 Coriolis Effect 但是，站在空间站内壁的人们还会体验到另外一种作用，就是 Coriolis 作用。关于这种作用，可以看下面的这个视频： （iOS请点击视频链接：http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html ） 这个视频说的是，如果我们站在一个转动的圆盘上面开炮，会发现似乎有一只神奇的手把炮弹推向了一边，而不是我们常识中的（在地面的投影）是一条直线。这只神奇的手就是科里奥利力。当然，如果我们站在地面上看，而不是圆盘上，炮弹自然还是一条直线。 当然 Coriolis effect 在地球表面（绝大多数地点）也是有的，只不过在日常起居生活中这种效应很小，所以我们下面的讨论自由落体运动的时候就忽略地表的 Coriolis effect 了。 自由落体运动 我们生活中最熟悉的运动之一是自由落体运动，例如： （当然，我们通常说的自由落体是指是理想的情况，没有空气阻力。） 初速度为零，从距离地面高度为 h 的地方开始自由落体的物体的运动是由下面的公式描述的： \begin{equation} x=h-\frac{1}{2}g t^2...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6318" rel="bookmark" title="你我之上的幽灵">你我之上的幽灵 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/5927" rel="bookmark" title="如何攻击巨人——立体行动装置使用要点">如何攻击巨人——立体行动装置使用要点 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/5794" rel="bookmark" title="孩童的宇宙">孩童的宇宙 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<p>我们在地球上生活，会体验到重力作用。虽然很多时候我们都想摆脱重力，自由的飞翔，但是重力对于我们的生活和健康有很重要的作用。例如我们走路，如果没有重力，轻轻一碰地面就飘起来了，走起路来可就得手脚并用了。或许这并不坏，可是如果我们想要冲一杯热茶，谁知道却怎么也没法把热水倒出来。更要命的事情是，在失重状态下，人的骨骼和肌肉的会有严重的问题。[<sup id="fnref-6089:1"><a href="#fn-6089:1" rel="footnote">1</a></sup>]</p>
+<p>所以，如果要建造大规模的民用空间站，需要先解决失重的问题。一个比较有趣的方法是 O&#8217;Neill 提出的通过让空间站旋转来模拟重力。<br />
+<span id="more-6089"></span></p>
+<h2>O&#8217;Neill Cylinder</h2>
+<p>O&#8217;Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下图里面这个大型的桶状结构：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/spacestation-636x310.jpg" alt="spacestation" width="550" /></p>
+<p>（图片来源：http://imageshack.us/photo/my-images/11/1109702023694.jpg/ ）</p>
+<p>当然，我们要研究物理，不需要这么花哨，只需要画一个圆筒就行了：</p>
+<p><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/oneilcan.jpg" alt="oneilcan"/></p>
+<p>（图片来源 http://www.dvandom.com/coriolis/spacestation.html ）</p>
+<p>只要让这个圆筒适当的旋转，生活在圆筒内壁的人就可以体验到模拟的重力。这是一个比较容易理解的现象，比如杂技团常常表演的水流星节目，也就是拿了一对盛有水的碗，用绳子连起来，然后旋转他们，如下图：<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/waterMeteor.gif" alt="waterMeteor" width="174"/></p>
+<p>旋转时让碗口朝向内侧，这样水不会洒出来。原因大家也都清楚，是一种离心作用。</p>
+<h2>Coriolis Effect</h2>
+<p>但是，站在空间站内壁的人们还会体验到另外一种作用，就是 Coriolis 作用。关于这种作用，可以看下面的这个视频：<br />
+<embed src="http://player.youku.com/player.php/sid/XNjA0NjY5MzY=/v.swf" allowFullScreen="true" quality="high" width="480" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"/><br />
+（iOS请点击视频链接：<a href="http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html">http://v.youku.com/v_show/id_XNjA0NjY5MzY=.html</a> ）</p>
+<p>这个视频说的是，如果我们站在一个转动的圆盘上面开炮，会发现似乎有一只神奇的手把炮弹推向了一边，而不是我们常识中的（在地面的投影）是一条直线。这只神奇的手就是科里奥利力。当然，如果我们站在地面上看，而不是圆盘上，炮弹自然还是一条直线。</p>
+<p>当然 Coriolis effect 在地球表面（绝大多数地点）也是有的，只不过在日常起居生活中这种效应很小，所以我们下面的讨论自由落体运动的时候就忽略地表的 Coriolis effect 了。</p>
+<h2>自由落体运动</h2>
+<p>我们生活中最熟悉的运动之一是自由落体运动，例如：<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/falling.jpg" alt="falling" width="500"/></p>
+<p>（当然，我们通常说的自由落体是指是理想的情况，没有空气阻力。）</p>
+<p>初速度为零，从距离地面高度为 h 的地方开始自由落体的物体的运动是由下面的公式描述的：</p>
+<p>\begin{equation}<br />
+x=h-\frac{1}{2}g t^2<br />
+\end{equation}</p>
+<p>其中 g 是指的重力常数。</p>
+<p>那么如果我们在 O&#8217;Neill Cylinder 这种空间站中还会有这种自由落体运动么？</p>
+<h2>O&#8217;Neill Cylinder 中的“自由落体运动”</h2>
+<p>如果我们在空间站中建造一个比萨斜塔，高度为 h，然后我们从斜塔上面让一个小球自由的下落（从空间站参考系来看），那么小球的运动是什么样的呢？</p>
+<p>简单的想想，落体运动应该是还有的，因为我们在斜塔顶部放手之后，从一个外部的观察者看来，小球接下来是在做匀速直线运动，这样总会撞到桶壁。只是这种运动还会是跟地面上的自由落体运动一样么？</p>
+<p>经过简单的计算，在一个半径为 R 的旋转角速度为 $\omega$ 的 O&#8217;Neill Cylinder 中，如果斜塔的高度 h&lt; &lt;R，并且小球落地的时间是远远小于圆筒转动一个周期的时间，那么我们可以得到从斜塔上面落体的运动方程（保留到 $(\omega t)^3$）：</p>
+<p>\begin{equation}<br />
+z'(t) = h &#8211; \frac{1}{2} R (\omega t)^2 &#92;&#92;<br />
+x'(t) = -\frac{1}{3}R(\omega t)^3<br />
+\end{equation}</p>
+<p>这里的 z&#8217; 坐标半径方向的，也就是空间站内部人看来的竖直向上，x&#8217; 是指的沿着转动方向与 z&#8217; 轴垂直的轴的坐标。下面是一个空间站的截面图，里面绘制了坐标的约定：<br />
+<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/ScreenshotAt.png" alt="ScreenshotAt" width="550"/></p>
+<p>如果仅仅保留到 $(\omega t)^3$ 阶，那么在竖直方向上，确实看起来是一个自由落体运动，只需要让空间站的参数满足 $R\omega^2 = g$ 就可以跟地面一样了（g 是重力加速度）。但是，同时在（空间站内部看来的切平面）“水平”方向有个偏离（由上面提到的 Coriolis effect 引起的），但是这个偏离很小，如果空间站参数满足了竖直方向的自由落体运动跟地面一样，那么当物体“落地”后，这个偏离跟下落高度 h 的比值只有</p>
+<p>\begin{equation}<br />
+\frac{x&#8217;}{h} = -\frac{2\sqrt{2}}{3}\sqrt{\frac{h}{R}}<br />
+\end{equation}</p>
+<p>在上面所说的参数下，只要我们的下落高度跟空间站半径比起来小得多，这个偏离就可以忽略，空间站里面的自由落体就跟地面的自由落体相差不多。</p>
+<p>如果我们的下落高度 h 太大，那么物体就会偏离半径这条线比较大了。</p>
+<p>如果我们建造一个半径 10km 的空间站，并且让空间站转动角速度大约为 0.03 rad/s，那么空间站的内壁上面就会有一个跟地球表面重力加速度一样的“模拟的重力加速度”。如果我们从 10m 的地方让一个物体自由落体，“水平”方向的偏离只有 0.3 米。在正常生活中，完全是一个可以接受的偏离。</p>
+<h2>其他运动</h2>
+<p>这篇文章只是分析了自由落体运动，这个分析起来非常简单，我们甚至可以轻松的写出不带近似的完整的运动方程。那么，其他的运动如何？几个有趣的事情是：</p>
+<ol>
+<li>在空间站内踢足球</li>
+<li>在空间站内制作单摆（或者使用摆钟）</li>
+<li>开车（高速和低速）</li>
+</ol>
+<p>这些都是可以分析的。</p>
+<hr />
+<h2>参考</h2>
+<hr />
+<h2>附录</h2>
+<p>这个问题的解法在这里：<br />
+<a href="http://multiverse.lamost.org/blog/wp-content/uploads/2013/11/ONeilCylinder.pdf">ONeilCylinder</a> (Credit: <a href="http://en.wikipedia.org/wiki/Carlton_M._Caves" title="Carlton M. Caves">Carlton M. Caves</a>)</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-6089:1">
+http://science1.nasa.gov/science-news/science-at-nasa/2001/ast02aug_1/&#160;<a href="#fnref-6089:1" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6318" rel="bookmark" title="你我之上的幽灵">你我之上的幽灵 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/5927" rel="bookmark" title="如何攻击巨人——立体行动装置使用要点">如何攻击巨人——立体行动装置使用要点 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/5794" rel="bookmark" title="孩童的宇宙">孩童的宇宙 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6089/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>量子力学框架回顾一</title>
+		<link>http://multiverse.lamost.org/blog/6083</link>
+		<comments>http://multiverse.lamost.org/blog/6083#comments</comments>
+		<pubDate>Sat, 09 Nov 2013 21:40:15 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[量子]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6083</guid>
+		<description><![CDATA[量子力学回顾系列是为果壳的 纠缠与相干 小组写的基础知识帖子。主要的受众应该是学过一点量子力学，但是后来很久没有再接触过量子力学的人或者没有学过量子力学但是有些物理基础的人。 $$ \newcommand{\ud}[1]{{#1^{\dagger}}} \newcommand{\bra}[1]{\left\langle #1\right&#124;} \newcommand{\ket}[1]{\left&#124; #1\right\rangle} \newcommand\Tr{\mathrm{Tr}} \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle} \newcommand\d{\mathrm{d}} \newcommand\I{\mathbb{I}} \newcommand{\avg}[1]{\left&#60; #1 \right>} $$ 初等量子力学其实核心内容非常少，甚至可以在一个帖子里面说完。 这个帖子中，我们会回顾一下量子力学，这样可以给没学过量子力学的同学一些概念，也可以帮助那些很久没有再碰过量子的同学一些复习的机会。 因为有很多东西我不知道怎么翻译，所以就直接使用英文名称了，反正就是个代号，应该无妨。 量子力学的前三个假设 1. Physical State 是使用希尔伯特空间的一个 ket 来表示的，通常写作 $\ket{\psi}$。如果要看这个 state 具体是什么样子，我们需要指定一组完备的基矢 $\ket{i}$，通过把 state 在基矢上展开，我们可以得到一些具体的表达式，例如一个矢量，例如一个函数，取决于我们的基矢是连续的还是离散的。 $$\ket{\psi} = \sum_i...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1309" rel="bookmark" title="个人信息文件">个人信息文件 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/810" rel="bookmark" title="20维球体体积的估算">20维球体体积的估算 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>量子力学回顾系列是为果壳的 <a href="http://www.guokr.com/group/394/" title="纠缠与相干">纠缠与相干</a> 小组写的基础知识帖子。主要的受众应该是学过一点量子力学，但是后来很久没有再接触过量子力学的人或者没有学过量子力学但是有些物理基础的人。<br />
+<span id="more-6083"></span></p>
+<p>$$<br />
+\newcommand{\ud}[1]{{#1^{\dagger}}}<br />
+\newcommand{\bra}[1]{\left\langle #1\right|}<br />
+\newcommand{\ket}[1]{\left| #1\right\rangle}<br />
+\newcommand\Tr{\mathrm{Tr}}<br />
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle}<br />
+\newcommand\d{\mathrm{d}}<br />
+\newcommand\I{\mathbb{I}}<br />
+\newcommand{\avg}[1]{\left&lt; #1 \right>}<br />
+$$</p>
+<hr />
+<p>初等量子力学其实核心内容非常少，甚至可以在一个帖子里面说完。</p>
+<p>这个帖子中，我们会回顾一下量子力学，这样可以给没学过量子力学的同学一些概念，也可以帮助那些很久没有再碰过量子的同学一些复习的机会。</p>
+<p>因为有很多东西我不知道怎么翻译，所以就直接使用英文名称了，反正就是个代号，应该无妨。</p>
+<h2>量子力学的前三个假设</h2>
+<p>1.</p>
+<p>Physical State 是使用希尔伯特空间的一个 ket 来表示的，通常写作 $\ket{\psi}$。如果要看这个 state 具体是什么样子，我们需要指定一组完备的基矢 $\ket{i}$，通过把 state 在基矢上展开，我们可以得到一些具体的表达式，例如一个矢量，例如一个函数，取决于我们的基矢是连续的还是离散的。</p>
+<p>$$\ket{\psi} = \sum_i \ket{i}\bra{i}\ket{\psi} = \sum_i C_i \ket{i}$$</p>
+<p>这个跟相对论或者更简单（对物理学家来说是更复杂的）刚体力学里面类似，本质上类似微分几何里面要写出矢量具体形式，需要给出基矢。或者在简单的情况下，这个就等价于说，矢量是矢量分量和基矢，而不是我们小学中学学的那种只有一组分量的形式。这点很关键，如果不明白这一点，在做坐标变换的时候，常常就会搞混。</p>
+<p>物理里面最重要事情之一就是找不变量，除了做了好的可观测量，不变量还可以帮助我们做很多事情，因为不变，所以坐标变换下面也不变，这样才可以把不同的坐标下面的物理联系起来。</p>
+<p>State 是什么？就是一个用来表征一个体系所处的状态的。有了 state，我们就可以得到我们想要的任何的观测量。所以用 state 来代表一个体系的状态是个很好的选择。我们不再用 坐标，动量 来表示状态，因为我们有了 state，可以得到坐标和动量，state 要比他们更基本。</p>
+<p>2.</p>
+<p>Operators 通常是 Hermitian 算符。测量在量子力学里面（形式上）意味着 $\hat \Omega$作用在 state 上面，这样会自动挑选出这个测量的本征态 $\ket{\omega}$，其中可能的本征态出现的概率是：</p>
+<p>$$\left|\braket{\omega}{\psi}\right|^2$$</p>
+<p>这个怎么理解呢？算符就是个操作，作用就是投影。</p>
+<p>我们可以看一个平面几何的例子：</p>
+<p>如果我们有个矢量 $\vec r$，我们要把这个矢量投影到 $\vec x$ 轴上，怎么做呢？如果我们把 $\vec x$ 轴的基矢（单位矢量）写作 $\vec e_x$，那么这个投影就是</p>
+<p>$$ \vec e_x \cdot \vec r$$</p>
+<p>实际上，我为什么要把 x 轴基矢的指标写在下面呢？</p>
+<p>上面我们说了一个矢量应该包含分量和（正交）基矢，所以说，严格的写出来，</p>
+<p>$$r=r^x e_x + r^y e_y + r^z e_z$$</p>
+<p>这里 $e_x$ 等等坐标基矢。那么如何写出x轴的单位矢量呢？那应该是</p>
+<p>$$x= x^x e_x$$</p>
+<p>没有其它的分量。不过因为这个是单位矢量，所以（欧式空间）长度应该是 1，所以我们可以简单的写作</p>
+<p>$$I=e^x e_x$$</p>
+<p>给 $e^x$ 看起来像是 $e_x$ 的对偶。从这个例子可以看出来，其实我们可以简单的把基矢的对偶作用在一个矢量上面，从而把相应的分量挑选出来，例如我们把 $e^x$ 作用在 r 矢量上</p>
+<p>$$e^x (r^x e_x + r^y e_y + r^z e_z) = e^x r^x e_x = r_x$$</p>
+<p>（用了正交条件, $e^x e_y = 0$）</p>
+<p>结果正好是 x 轴方向的分量，也就是说，投影操作其实是这样的。</p>
+<p>（实际上上面那个 $ \vec e_x \cdot \vec r$ 应该写作 $e^x r$，那我为什么把指标放在下面也对呢？因为在欧式空间里面 $e^x$ 和 $e_x$ 是等价的，原因在度规是个单位张量。）</p>
+<p>这么说来，算符像是个投影的作用，那 state 投影在某个方向上。为什么可以这么说呢？我们可以把上面那个投影的操作翻译成 Dirac 符号，</p>
+<p>$e_x$ -> $\ket{x}$</p>
+<p>$e^x$ -> $\bra{x}$</p>
+<p>这样就可以把上面那个投影的矢量的运算翻译成使用 Dirac 符号来表示了</p>
+<p>$$\bra{x}(rx \ket{x} + ry \ket{y} + rz \ket{z}) = rx \braket{x}{x} = rx$$</p>
+<p>（同样用了正交条件， $\bra{x}\ket{y}=\bra{x}\ket{z}=0$）</p>
+<p>如果我们把 $rx \ket{x} + ry \ket{y} + rz \ket{z}$ 看做是一个 state，即 $\ket{\psi} = rx \ket{x} + ry \ket{y} + rz \ket{z}$。那么就是说</p>
+<p>$$\braket{x}{\psi}= rx $$</p>
+<p>这里写 $\braket{x}{\psi}$ 的实际意思是 $\bra{x}\ket{\psi}$。</p>
+<p>看到了吧，算符操作本质上就类似于投影。后面我们还会提到更多的算符的事情，因为这比较是量子力学里面最最核心的概念之一。</p>
+<p>（有没有一种感觉，如果我们用 Dirac 符号来讲这些简单的几何和线性代数，那可多干净啊~）</p>
+<p>3.</p>
+<p>State 的演化遵从 Schrodinger 方程（就不打那两个点了&#8230;.希望 Schrodinger 先生不要介意）</p>
+<p>$$<br />
+i\hbar \frac{\d}{\d t}\ket{\psi(t)} = \hat H \ket{\psi(t)}<br />
+$$</p>
+<p>$\hat H$ 是 Hamiltonian Operator.</p>
+<h3>这三个假设说的什么</h3>
+<p>这三个假设的整体的逻辑是这样的：</p>
+<p><strong>我们先得找出一种方法来描述一个物理体系（Postulate 1），然后我们得找到一种方法来获取我们想要的客观测量的信息（Postulate 2），其次我们需要知道体系随时间的演化（Postulate 3）.</strong></p>
+<p>但是还有一些问题，例如我们如何知道想要的算符是什么样子呢？</p>
+<h3>仅仅利用前三个假设可以做很多事情</h3>
+<p>如何来描述一个体系的演化呢？我们当然可以直接用 Schrodinger 方程，但是问题在于，对于一些简单的情况，例如我们常见的那种 Hamiltonian 不含时间的情况，会不会有更加简单的形式呢？</p>
+<p>（另外很重要的一件事情是 Picture：Schrodinger Picture 和 Heisenberg Picture。这两个说的是量子力学里面的一种相对性，更详细的说是坐标变换的相对性，坐标变换的时候我们可以理解为点不变而坐标系变化，也可以理解为点的变换坐标系不变。这种相对性在经典力学里面也有，只是我们不常提到。如果学刚体力学的话，可能会提到这一点。）</p>
+<p>下面我们开始使用 Black Magic，定义一个神奇的算符：</p>
+<p>$$\hat U \ket{\psi(t_0)} = \ket{\psi(t)}$$</p>
+<p>有了这个神奇的算符 $\hat U$ 和一个初始状态，我们就可以得到任意时刻的状态了！</p>
+<p>那么我们可以得到这个神奇的算符么？</p>
+<p>到目前为止，我们知道的位移的有关 state 演化的知识就是 Schrodinger 方程（第三个假设），所以我们就试试。把这个等式代入到 Schrodinger 方程中。</p>
+<p>\begin{eqnarray}<br />
+     i\hbar \frac{\d }{\d t}\ket{\psi(t)} &amp;=&amp; \hat H \ket{\psi(t)} &#92;&#92;<br />
+     i\hbar \frac{\d }{\d t}\hat U \ket{\psi(t_0)} &amp;=&amp; \hat H \hat U \ket{\psi(t_0)} &#92;&#92;<br />
+     i\hbar \frac{\d }{\d t}\hat U &amp;=&amp; \hat H \hat U<br />
+\end{eqnarray}</p>
+<p>这个结果看起来是不是很熟悉？这个方程的解（如果 Hamiltonian 是不含时间的）就是如下简单的指数形式</p>
+<p>$$\hat U = e^{- i \hat H (t-t_0)/\hbar}$$</p>
+<p>我们可以证明这个神奇的算符是 Unitary 的，只要 $\hat H$ 是 Hermitian 的（这通常是对的，但是也有 non Hermitian 的一些唯像的例子）。</p>
+<p>上面我们得到了这个神奇的演化算符的形式，但是只有那个形式通常不好用，所以我们会在 Hamiltonian 本征基矢（离散）下面写出来, $\ket{\epsilon_i}$,</p>
+<p>\begin{eqnarray}<br />
+     \hat U \ket{\phi} &amp;=&amp; e^{- i \hat H (t-t_0)/\hbar} \ket{\psi}   &#92;&#92;<br />
+     \hat U \ket{\phi} &amp;=&amp; \sum_i e^{- i \hat H (t-t_0)/\hbar} \ket{\epsilon_i}\braket{\epsilon_i}{\psi}  &#92;&#92;<br />
+     \hat U \ket{\phi} &amp;=&amp; \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\braket{\epsilon_i}{\psi}<br />
+\end{eqnarray}</p>
+<p>我们通常会用下面的形式来写这个演化算符：</p>
+<p>$$\hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}$$</p>
+<h3>几点数学知识</h3>
+<p>说到这里，我们得加一点其他的数学知识了。</p>
+<p><strong>Hermitian Conjugate</strong></p>
+<p>${}^\dagger$ 是 Hermitian Conjugate 的符号，例如<br />
+$$\hat A^\dagger$$<br />
+是算符 $\hat A$ 的 Hermitian Conjugate.</p>
+<p>对于 state，我们有<br />
+$$\ket{\psi}^\dagger = \bra{\psi}$$</p>
+<p><strong>Hermitian</strong></p>
+<p>我们说一个东西是 Hermtian 的如果它的 Hermitian Conjugate 是它本身，即<br />
+$$\hat A^\dagger = \hat A$$</p>
+<p><strong>Identity</strong></p>
+<p>Identity 就是一个作用在一个 state 或者算符上面不改变 state 或者算符的一个东西。既然不改变原来的内容，那么为什么我们会需要这个东西呢？</p>
+<p>这就是量子力学里面最大的秘密了。量子力学里面最大的秘密就是往式子里面插入 Identity。</p>
+<p>我们可以看一个例子。先考虑一个问题，一个矩阵的函数 $f(\mathbf A)$ 是如何定义的呢？<br />
+矩阵基本运算我们只知道加法和乘法，所以要定义一个函数，需要把这个写成加法和乘法的样子。哎，我们不是有个叫做 Taylor 展开的东西么，这个展开的结果就只有乘法和加法，所以我们定义矩阵的函数是通过 Taylor 展开来做的。</p>
+<p>量子力学里面离散的基矢下面的算符就是矩阵的形式，所以实际上我们定义量子力学里面的算符也是通过 Taylor 展开定义的。下面我们证明一个量子力学里面常用的式子</p>
+<p>\begin{eqnarray}<br />
+&amp;&amp;\hat A^\dagger e^\hat B \hat A &#92;&#92;<br />
+&amp;=&amp; \hat A^\dagger \left( \sum_n \frac{1}{n!}\hat B^n \right) \hat A&#92;&#92;<br />
+&amp;=&amp;\hat A^\dagger \left( \hat B + \frac{1}{2!}\hat B^2 + \frac{1}{3!}\hat B ^3 + \cdots \right) &#92;&#92;<br />
+&amp;=&amp; \hat A^\dagger \hat B \hat A + \frac{1}{2!} \hat A^\dagger \hat B^2 \hat A + \frac{1}{3!}\hat A^\dagger \hat B^3 \hat A + \cdots<br />
+\end{eqnarray}</p>
+<p>如果我们的$\hat A$是 Unitary 的（看下面的关于 Unitary 的说明），即，$\hat A^\dagger \hat A = \hat I$ .然后我们可以往里面加 Identity （$\hat I$），例如<br />
+$$ \hat A^\dagger \hat B^2 \hat A = \hat A^\dagger \hat B \hat I \hat B \hat A = \hat A^\dagger \hat B \hat A \hat A^\dagger \hat B \hat A = (\hat A^\dagger \hat B \hat A)^2$$</p>
+<p>用同样的方法，可以得到一个关于 $\hat A^\dagger f(\hat B)\hat A$ 的等式。（请自行证明。）</p>
+<p><strong>Unitary</strong></p>
+<p>我们说一个算符是 Unitary 的，如果<br />
+$$\hat U^\dagger \hat U = \hat I $$</p>
+<p>$\hat I$ 是单位算符，通常可以简单写成 $I$。</p>
+<p>Unitary 是个非常重要的 ，它对于理解体系演化有非常重要的作用。后面我们会看到。</p>
+<p><strong>Eigenstate</strong></p>
+<p>如果<br />
+$$\hat \Omega \ket{\omega}=\omega \ket{\omega}$$<br />
+即如果一个算符作用在这个态上面不改变这个态，那么我们说这个态是一个算符的本征态（eigenstate）。</p>
+<p>其中 $\omega$ 是本征值。</p>
+<p>这些定义跟线性代数里面的是一样的。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1309" rel="bookmark" title="个人信息文件">个人信息文件 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/810" rel="bookmark" title="20维球体体积的估算">20维球体体积的估算 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6083/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>量子力学计算的一个小技巧</title>
+		<link>http://multiverse.lamost.org/blog/6056</link>
+		<comments>http://multiverse.lamost.org/blog/6056#comments</comments>
+		<pubDate>Sat, 07 Sep 2013 19:50:38 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Quantum]]></category>
+		<category><![CDATA[Quantum Mechanics]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=6056</guid>
+		<description><![CDATA[$$\newcommand{\ud}[1]{{#1^{\dagger}}} \newcommand{\bra}[1]{\left\langle #1\right&#124;} \newcommand{\ket}[1]{\left&#124; #1\right\rangle} \newcommand\Tr{\mathrm{Tr}} \newcommand{\braket}[2]{\langle #1 \mid #2 \rangle} % Math Environment \newcommand\d{\mathrm{d}} \newcommand\I{\mathbb{I}} $$ 量子力学里面很多 e 指数函数，这类函数的一大特点就是导数会出现这个函数本身，所以有时候可以利用这个特点来简化计算。 例如我们有一个初始状态，态矢在位置基矢下的表达式， $$ \phi = C e^{i C _ 1 x} e^{C _ 2 x^2} $$ 当然，这里的三个常数可能是 $$ C = \frac{1}{(\pi...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/6359" rel="bookmark" title="第一次见四元数">第一次见四元数 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2744" rel="bookmark" title="Dark Energy Summary Sci-Map">Dark Energy Summary Sci-Map </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>$$\newcommand{\ud}[1]{{#1^{\dagger}}}<br />
+\newcommand{\bra}[1]{\left\langle #1\right|}<br />
+\newcommand{\ket}[1]{\left| #1\right\rangle}<br />
+\newcommand\Tr{\mathrm{Tr}}<br />
+\newcommand{\braket}[2]{\langle #1 \mid #2 \rangle} % Math Environment<br />
+\newcommand\d{\mathrm{d}}<br />
+\newcommand\I{\mathbb{I}}<br />
+$$</p>
+<p>量子力学里面很多 e 指数函数，这类函数的一大特点就是导数会出现这个函数本身，所以有时候可以利用这个特点来简化计算。<span id="more-6056"></span></p>
+<p>例如我们有一个初始状态，态矢在位置基矢下的表达式，<br />
+$$ \phi = C e^{i C _ 1 x} e^{C _ 2 x^2} $$</p>
+<p>当然，这里的三个常数可能是<br />
+$$ C = \frac{1}{(\pi \eta^2)^{1/4}} $$<br />
+$$ C_1 = p _ 0/\hbar $$<br />
+$$ C_2 = -\frac{1}{2\eta^2} $$<br />
+但是对于我们的计算来说，这些常数是多少，并无大的影响，所以就不再代入具体的形式了。</p>
+<p>而我们要计算的是动量在位置基矢下面的不确定值，计算过程中需要求解这个量：<br />
+ $$\bra{\psi}\hat p^2 \ket{\psi}$$<br />
+ 而求解这个量的过程中，需要用到如下的计算</p>
+<p>$$ \psi^ * \frac{\d}{\d x}\frac{\d}{\d x} \psi $$</p>
+<p>一个比较简便的做法是定义如下的中间量<br />
+$$ G = \frac{\d}{\d x} \psi $$</p>
+<p>至于为什么要这么定义，我们继续计算，就可以看到这样做的好处了。</p>
+<p>先求解 G</p>
+<p>$$ G = \psi (i C _ 1 + 2 C _ 2 x) $$</p>
+<p>我们把这个结果代入要求解的式子中，</p>
+<p>\begin{eqnarray}<br />
+\psi^ * \frac{\d}{\d x}\frac{\d}{\d x}\psi &amp;=&amp; \psi^* \frac{\d}{\d x} ( \psi (i C _ 1 + 2 C _ 2 x) )  &#92;&#92;<br />
+&amp;=&amp; \psi^ * \psi 2 C _ 2 + \psi^ * G (i C _ 1 + 2 C _ 2 x)  &#92;&#92;<br />
+&amp;=&amp; \psi^ * \psi (i C _ 1 + 2 C _ 2 x)^2 + \psi^ * \psi 2C _ 2 &#92;&#92;<br />
+&amp;=&amp; \psi^ * \psi \left[(i C _ 1 + 2 C _ 2 x)^2 + 2C _ 2 \right]<br />
+\end{eqnarray}</p>
+<p>而<br />
+$$\psi^ * \psi$$<br />
+这一项里面的带有虚数指数的部分变成了 1，所以最后的计算就会比较简单，不易出错。</p>
+<p>如果大家有好做法，可以分享一下。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/6359" rel="bookmark" title="第一次见四元数">第一次见四元数 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/6229" rel="bookmark" title="爱情的量子理论2">爱情的量子理论2 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2744" rel="bookmark" title="Dark Energy Summary Sci-Map">Dark Energy Summary Sci-Map </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/6056/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; 看星空</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/stellerium/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>Stellarium中文乱码问题</title>
+		<link>http://multiverse.lamost.org/blog/71</link>
+		<comments>http://multiverse.lamost.org/blog/71#comments</comments>
+		<pubDate>Wed, 02 Sep 2009 14:52:00 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天幕上的舞蹈]]></category>
+		<category><![CDATA[stellarium]]></category>
+		<category><![CDATA[看星空]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=71</guid>
+		<description><![CDATA[Stellarium官方下载的版本，当设置程序界面语言为中文时，会发现里面的许多字体都变成方框里。 解决办法如下： 从系统盘的Windows目录下找到fonts文件夹，从里面找到自己喜欢的中文字体。然后将字体复制到stellarium安装目录的data文件夹中。然后修改fontmap.dat ，（当然不放心的话可以做好备份，但是实际上无所谓。） 用记事本之类的工具打开此文件，把 zh_CN ukai.ttf 1.2 ukai.ttf 1.2 zh_CN ×.ttf 1.2 ×.ttf 1.2 （×表示所复制过来的字体文件的文件名称） 然后修改~/.stellarium/config.ini ， 同样适用记事本之类的工具打开，使用查找（Ctrl+F快捷键）查找base，点击下一个知道找到 base_font_name = xxx.ttf            （xxx表示原来的内容） 把它改为 base_font_name = ×.ttf                   （×表示你所复制过来的字体的文件名） 如果没有下边这一行，就加上它。 base_cfont_name = ×.ttf                    （×表示你所复制过来的字体的文件名） 这样就可以完成了。 在打开，选择中文（china），就可以使用了。 关于字体的问题： http://www.stellarium.org/wiki/index.php/中文字体文件——Stellarium_汉化的基础<div class='yarpp-related-rss yarpp-related-none'>
+
+Ops, nothing related to this post. Buy yourself a lottery
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Stellarium官方下载的版本，当设置程序界面语言为中文时，会发现里面的许多字体都变成方框里。</p>
+<p>解决办法如下：<span id="more-71"></span></p>
+<p>从系统盘的Windows目录下找到fonts文件夹，从里面找到自己喜欢的中文字体。然后将字体复制到stellarium安装目录的data文件夹中。然后修改fontmap.dat ，（当然不放心的话可以做好备份，但是实际上无所谓。）<br />
+用记事本之类的工具打开此文件，把<br />
+zh_CN ukai.ttf 1.2 ukai.ttf 1.2<br />
+zh_CN ×.ttf 1.2 ×.ttf 1.2</p>
+<p>（×表示所复制过来的字体文件的文件名称）<br />
+然后修改~/.stellarium/config.ini ， 同样适用记事本之类的工具打开，使用查找（Ctrl+F快捷键）查找base，点击下一个知道找到<br />
+base_font_name = xxx.ttf            （xxx表示原来的内容）<br />
+把它改为<br />
+base_font_name = ×.ttf                   （×表示你所复制过来的字体的文件名）<br />
+如果没有下边这一行，就加上它。<br />
+base_cfont_name = ×.ttf                    （×表示你所复制过来的字体的文件名）</p>
+<p>这样就可以完成了。</p>
+<p>在打开，选择中文（china），就可以使用了。</p>
+<p>关于字体的问题：</p>
+<p><a href="http://www.stellarium.org/wiki/index.php/%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E6%96%87%E4%BB%B6%E2%80%94%E2%80%94Stellarium_%E6%B1%89%E5%8C%96%E7%9A%84%E5%9F%BA%E7%A1%80">http://www.stellarium.org/wiki/index.php/中文字体文件——Stellarium_汉化的基础</a></p>
+<div class='yarpp-related-rss yarpp-related-none'>
+<p>Ops, nothing related to this post. Buy yourself a lottery</p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/71/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

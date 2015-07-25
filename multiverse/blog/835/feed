@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 经典电动力学中电磁张量</title>
+	<atom:link href="http://multiverse.lamost.org/blog/835/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/835</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: cmp0xff</title>
+		<link>http://multiverse.lamost.org/blog/835/comment-page-1#comment-168</link>
+		<dc:creator><![CDATA[cmp0xff]]></dc:creator>
+		<pubDate>Fri, 25 Mar 2011 12:55:28 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=835#comment-168</guid>
+		<description><![CDATA[无忌真是个好东西啊，quadrupole也是无忌，不过他用了球鞋函数来说明，没搞明白。。 ]]></description>
+		<content:encoded><![CDATA[<p>无忌真是个好东西啊，quadrupole也是无忌，不过他用了球鞋函数来说明，没搞明白。。 </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/835/comment-page-1#comment-166</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Fri, 25 Mar 2011 04:18:56 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=835#comment-166</guid>
+		<description><![CDATA[==，我只是想说，定义成对称无迹张量也可以&#8230;&#8230; ]]></description>
+		<content:encoded><![CDATA[<p>==，我只是想说，定义成对称无迹张量也可以&hellip;&hellip; </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: cmp0xff</title>
+		<link>http://multiverse.lamost.org/blog/835/comment-page-1#comment-164</link>
+		<dc:creator><![CDATA[cmp0xff]]></dc:creator>
+		<pubDate>Thu, 24 Mar 2011 19:24:03 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=835#comment-164</guid>
+		<description><![CDATA[另一条路是通过相对论的Lagrangian推导四维形式的运动方程啊，会直接得到电磁反对称张量。 ]]></description>
+		<content:encoded><![CDATA[<p>另一条路是通过相对论的Lagrangian推导四维形式的运动方程啊，会直接得到电磁反对称张量。 </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

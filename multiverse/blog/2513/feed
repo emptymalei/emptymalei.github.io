@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: LaTeX中文</title>
+	<atom:link href="http://multiverse.lamost.org/blog/2513/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/2513</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 时见疏星</title>
+		<link>http://multiverse.lamost.org/blog/2513/comment-page-1#comment-593</link>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+		<pubDate>Tue, 01 May 2012 12:45:17 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2513#comment-593</guid>
+		<description><![CDATA[很高兴我这个还有点用……]]></description>
+		<content:encoded><![CDATA[<p>很高兴我这个还有点用……</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: cmp0xff</title>
+		<link>http://multiverse.lamost.org/blog/2513/comment-page-1#comment-592</link>
+		<dc:creator><![CDATA[cmp0xff]]></dc:creator>
+		<pubDate>Tue, 01 May 2012 11:17:49 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2513#comment-592</guid>
+		<description><![CDATA[以前我不知道fc-list]]></description>
+		<content:encoded><![CDATA[<p>以前我不知道fc-list</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 星河逍遥</title>
+		<link>http://multiverse.lamost.org/blog/2513/comment-page-1#comment-576</link>
+		<dc:creator><![CDATA[星河逍遥]]></dc:creator>
+		<pubDate>Wed, 28 Mar 2012 10:37:47 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2513#comment-576</guid>
+		<description><![CDATA[&lt;p&gt;是啊是啊，好像你们教给我的吧~不知道具体是谁了，估计有你~&lt;/p&gt;]]></description>
+		<content:encoded><![CDATA[<p>是啊是啊，好像你们教给我的吧~不知道具体是谁了，估计有你~</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: directus</title>
+		<link>http://multiverse.lamost.org/blog/2513/comment-page-1#comment-575</link>
+		<dc:creator><![CDATA[directus]]></dc:creator>
+		<pubDate>Wed, 28 Mar 2012 08:53:24 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2513#comment-575</guid>
+		<description><![CDATA[&lt;p&gt;哈哈～ XeLaTeX 对字体支持很友好啊。&lt;/p&gt;]]></description>
+		<content:encoded><![CDATA[<p>哈哈～ XeLaTeX 对字体支持很友好啊。</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

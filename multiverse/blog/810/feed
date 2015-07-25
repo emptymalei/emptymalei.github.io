@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 20维球体体积的估算</title>
+	<atom:link href="http://multiverse.lamost.org/blog/810/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/810</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: 止战</title>
+		<link>http://multiverse.lamost.org/blog/810/comment-page-1#comment-4161</link>
+		<dc:creator><![CDATA[止战]]></dc:creator>
+		<pubDate>Mon, 04 Nov 2013 13:03:57 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=810#comment-4161</guid>
+		<description><![CDATA[Let me have a view]]></description>
+		<content:encoded><![CDATA[<p>Let me have a view</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/810/comment-page-1#comment-167</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Fri, 25 Mar 2011 04:20:06 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=810#comment-167</guid>
+		<description><![CDATA[==，目的不是求出球的体积，而是利用重要性抽样&#8230;&#8230; 
+这个方法用途很多啊，比如我们现在就用11维的积分&#8230;&#8230; ]]></description>
+		<content:encoded><![CDATA[<p>==，目的不是求出球的体积，而是利用重要性抽样&hellip;&hellip;<br />
+这个方法用途很多啊，比如我们现在就用11维的积分&hellip;&hellip; </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: cmp0xff</title>
+		<link>http://multiverse.lamost.org/blog/810/comment-page-1#comment-165</link>
+		<dc:creator><![CDATA[cmp0xff]]></dc:creator>
+		<pubDate>Thu, 24 Mar 2011 19:33:06 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=810#comment-165</guid>
+		<description><![CDATA[蒙特卡洛法啊，球体体积有精确公式的啊，可以自己推或者查微积分手册。并且你这个代码坏掉了，尖括号里面的都没了。 ]]></description>
+		<content:encoded><![CDATA[<p>蒙特卡洛法啊，球体体积有精确公式的啊，可以自己推或者查微积分手册。并且你这个代码坏掉了，尖括号里面的都没了。 </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/810/comment-page-1#comment-137</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Sat, 26 Feb 2011 23:55:43 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=810#comment-137</guid>
+		<description><![CDATA[不然我就改成对未登录用户显示验证码吧，那样对登录用户方便些，现在我做了这么多的sns和openid登录，应该很方便登录了，所以还是应该麻烦一下未登录用户，方便一下登录用户～ ]]></description>
+		<content:encoded><![CDATA[<p>不然我就改成对未登录用户显示验证码吧，那样对登录用户方便些，现在我做了这么多的sns和openid登录，应该很方便登录了，所以还是应该麻烦一下未登录用户，方便一下登录用户～ </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/810/comment-page-1#comment-136</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Sat, 26 Feb 2011 23:42:51 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=810#comment-136</guid>
+		<description><![CDATA[防垃圾评论，我开放了不用登陆就可以评论，但是来了很多很多的垃圾评论，大概几分钟一条。所以我就装了这个了，本来想用验证码的，但是验证码比这个麻烦。 
+我改了很长时间的php代码，让登陆用户不用再拖这个条，但是一直会出bug，再过几天有时间了再仔细看看~登陆用户还显示这个确实很麻烦的~ ]]></description>
+		<content:encoded><![CDATA[<p>防垃圾评论，我开放了不用登陆就可以评论，但是来了很多很多的垃圾评论，大概几分钟一条。所以我就装了这个了，本来想用验证码的，但是验证码比这个麻烦。</p>
+<p>我改了很长时间的php代码，让登陆用户不用再拖这个条，但是一直会出bug，再过几天有时间了再仔细看看~登陆用户还显示这个确实很麻烦的~ </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: astrofanlee</title>
+		<link>http://multiverse.lamost.org/blog/810/comment-page-1#comment-135</link>
+		<dc:creator><![CDATA[astrofanlee]]></dc:creator>
+		<pubDate>Sat, 26 Feb 2011 23:36:41 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=810#comment-135</guid>
+		<description><![CDATA[你要干么啊？拖到右边有些麻烦。 ]]></description>
+		<content:encoded><![CDATA[<p>你要干么啊？拖到右边有些麻烦。 </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

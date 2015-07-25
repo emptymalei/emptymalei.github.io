@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Monte Carlo</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/monte-carlo/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>2D Ising Model (Triangle Lattice)</title>
+		<link>http://multiverse.lamost.org/blog/564</link>
+		<comments>http://multiverse.lamost.org/blog/564#comments</comments>
+		<pubDate>Fri, 07 Jan 2011 16:50:16 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Ising模型]]></category>
+		<category><![CDATA[Monte Carlo]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=564</guid>
+		<description><![CDATA[Q: Using the simplest program to calculate the 2D Ising model upon triangle lattice. A: 1. Hamiltonian: [eq]H=J\sum\limits_{i,j}{{s_{i}}{s_{j}}}[/eq] 2. Lattice: 3. Summary image: &#8212;&#8212;CODE&#038;SUMMARY&#8212;&#8212; *PDF file (some results shown in it): 2D_Ising_Model(Triangle) (A little reminder: I am not really working...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/516" rel="bookmark" title="Monte Carlo Investigation of Frustrated Heisenberg Model">Monte Carlo Investigation of Frustrated Heisenberg Model </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Q: Using the simplest program to calculate the 2D Ising model upon triangle lattice.<br />
+A:<br />
+1. Hamiltonian:<br />
+<center>[eq]H=J\sum\limits_{i,j}{{s_{i}}{s_{j}}}[/eq]</center><br />
+2. Lattice:<br />
+<div id="attachment_565" style="width: 310px" class="wp-caption aligncenter"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Fig3-Triangle-2D-Ising.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Fig3-Triangle-2D-Ising-300x297.jpg" alt="Fig3-Triangle-2D-Ising" title="Fig3-Triangle-2D-Ising" width="300" height="297" class="size-medium wp-image-565" /></a><p class="wp-caption-text">Fig3-Triangle-2D-Ising</p></div></p>
+<p>3. Summary image:<br />
+<div id="attachment_566" style="width: 254px" class="wp-caption aligncenter"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/2D_Triangle_Ising_Model.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/2D_Triangle_Ising_Model-244x300.jpg" alt="2D_Triangle_Ising_Model" title="2D_Triangle_Ising_Model" width="244" height="300" class="size-medium wp-image-566" /></a><p class="wp-caption-text">2D_Triangle_Ising_Model</p></div></p>
+<p><center>&#8212;&#8212;CODE&#038;SUMMARY&#8212;&#8212;</center><br />
+*PDF file (some results shown in it):<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/2D_Ising_ModelTriangle.pdf'>2D_Ising_Model(Triangle)</a><br />
+(A little reminder: I am not really working on this kind of things. The only reason I did this is that I have to hand in a copy of my homework. So IF U R LOOKING FOR SOME REAL INSPIRING CODES, NEVER STUDY MINE!)</p>
+<p>*CODE file (html):<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Triangle-2DIsingModel.c.html'>CODE_2DIsingModel-Triangle</a></p>
+<p>My CODE is appended here:<br />
+<span id="more-564"></span><br />
+/*This program calculates the energy, heat capacity, magnetization, magnetic permitivity.*/<br />
+/*Boundary condition: periodic boundary condition.*/<br />
+/*In this program, J&#038;k are put into T. To fill it to the expressions, just consider the dimensions.*/</p>
+<p>#include <stdio .h><br />
+#include <stdlib .h><br />
+#include <time .h><br />
+#include<br />
+<math .h>
+<p>#define L 32<br />
+#define NGL   100000            /*Samples Neglected*/<br />
+#define N_t 5100000         /*Total samples*/<br />
+#define N (N_t-NGL)<br />
+#define T_i 0.5<br />
+#define T_f 10.5<br />
+#define Tstep 0.05<br />
+#define SIZE_T 500          /*The size of emcx in T axis. Check this before compiling!*/<br />
+#define SIZE_R 60           /*The size of emcx in R axis. Check this before compiling!*/<br />
+#define R_i -6                      /*Ration of J2/J1. Initial value.*/<br />
+#define R_step 0.1              /*step*/<br />
+#define R_f 0                   /*End of R*/</p>
+<p>int sum_M;<br />
+int s[L][L];                            /*Size of the lattice*/<br />
+double sum_E;<br />
+double T;</p>
+<p>struct Obsv<br />
+{<br />
+    double C;<br />
+    double X;<br />
+    double M;<br />
+    double E;<br />
+};</p>
+<p>void Inist();<br />
+void Mag();<br />
+void Energy(double R);<br />
+void MCP(double R);<br />
+struct Obsv Cac_obsv(double R);</p>
+<p>int main()<br />
+{<br />
+    int i,j;<br />
+    double R;<br />
+    struct Obsv emcx[SIZE_T][SIZE_R];<br />
+    FILE *ft,*fm,*fx,*fc,*fe,*fr;<br />
+    fr=fopen(&#8220;R.txt&#8221;,&#8221;w&#8221;);<br />
+    ft=fopen(&#8220;T.txt&#8221;,&#8221;w&#8221;);<br />
+    fx=fopen(&#8220;X.txt&#8221;,&#8221;w&#8221;);<br />
+    fc=fopen(&#8220;C.txt&#8221;,&#8221;w&#8221;);<br />
+    fm=fopen(&#8220;M.txt&#8221;,&#8221;w&#8221;);<br />
+    fe=fopen(&#8220;E.txt&#8221;,&#8221;w&#8221;);</p>
+<p>    R=R_i;<br />
+    srand(time(NULL));<br />
+    for(j=0;R< =R_f;j++)<br />
+    {<br />
+        T=T_i;<br />
+        for(i=0;T<=T_f;i++)<br />
+        {<br />
+            Inist();<br />
+            emcx[i][j]=Cac_obsv(R);<br />
+            fprintf(fr,"%f\n",R);<br />
+            fprintf(ft,"%f\n",T);<br />
+            fprintf(fx,"%f\n",emcx[i][j].X);<br />
+            fprintf(fc,"%f\n",emcx[i][j].C);<br />
+            fprintf(fm,"%f\n",emcx[i][j].M);<br />
+            fprintf(fe,"%f\n",emcx[i][j].E);<br />
+            printf("-------------\n");<br />
+            printf("R=%f\n",R);<br />
+            printf("T=%f\n",T);<br />
+            printf("X=%f\n",emcx[i][j].X);<br />
+            printf("C=%f\n",emcx[i][j].C);<br />
+            printf("M=%f\n",emcx[i][j].M);<br />
+            printf("E=%f\n",emcx[i][j].E);<br />
+            T = T+Tstep;<br />
+        }<br />
+        R+=R_step;<br />
+    }<br />
+    fclose(ft);<br />
+    fclose(fx);<br />
+    fclose(fc);<br />
+    fclose(fm);<br />
+    fclose(fe);<br />
+    printf("The End!\n");<br />
+}</p>
+<p>void Inist()<br />
+{<br />
+    int i,j;<br />
+    for(i=0;i<L;i++)<br />
+    {<br />
+        for(j=0;j<L;j++)<br />
+        {<br />
+            s[i][j]=1;<br />
+        }<br />
+    }<br />
+}</p>
+<p>void MCP(double R)<br />
+{<br />
+    int i,j;<br />
+    double sum,dE;<br />
+    i=rand()%L;<br />
+    j=rand()%L;</p>
+<p>    sum=s[i][j]*(s[(L+i-1)%L][j]+s[(i+1)%L][j]+s[i][(j-1+L)%L]+s[i][ (j+1)%L]+R*(s[(i+1)%L][(j-1+L)%L]+s[(i-1+L)%L][(j+1)%L]));<br />
+    //printf("chk2.sum=%d\n",sum);<br />
+    //switch(sum)<br />
+    //{<br />
+    //  case 4: dE= 8; break;<br />
+    //  case 2: dE= 4; break;<br />
+    //  case 0: dE= 0; break;<br />
+    //  case -2: dE= -4; break;<br />
+    //  case -4: dE= -8; break;<br />
+    //  default: printf("sum=%d. Attention!\n",sum); break;<br />
+    //}</p>
+<p>    dE=2*sum;<br />
+    if( dE>0 )<br />
+    {<br />
+        if(((double)rand()/RAND_MAX)< =exp((-1.0)*dE/T))<br />
+        {<br />
+            s[i][j]=-s[i][j];<br />
+            sum_M+=2*s[i][j];<br />
+            sum_E+=dE;<br />
+        }<br />
+    }<br />
+    else<br />
+    {<br />
+        s[i][j]=-s[i][j];<br />
+        sum_M+=2*s[i][j];<br />
+        sum_E+=dE;<br />
+    }<br />
+ }</p>
+<p>struct Obsv Cac_obsv(double R)<br />
+{<br />
+    int i;<br />
+    double E_avg=0.0;<br />
+    double E_as=0.0;<br />
+    double M_avg=0.0;<br />
+    double M_as=0.0;<br />
+    struct Obsv emcx;<br />
+    Mag();<br />
+    Energy(R);</p>
+<p>    for(i=0; i<N_t; i++)<br />
+    {<br />
+        MCP(R);<br />
+        if(i>=NGL)<br />
+        {<br />
+            E_avg+=(double)sum_E/N;<br />
+            E_as+=(double)sum_E*sum_E/N;<br />
+            M_avg+=(double)sum_M/N;<br />
+            M_as+=(double)sum_M*sum_M/N;<br />
+        }<br />
+    }<br />
+    emcx.E=E_avg;<br />
+    emcx.M=M_avg;<br />
+    emcx.C=(E_as &#8211; E_avg*E_avg)/T/T;<br />
+    emcx.X=(M_as &#8211; M_avg*M_avg)/T;</p>
+<p>    return emcx;<br />
+}</p>
+<p>void Mag()<br />
+{<br />
+    int i,j;<br />
+    int dM_tmp=0;<br />
+    for(i=0;i<l ;i++)<br />
+    {<br />
+        for(j=0;j<L;j++)<br />
+            dM_tmp+=s[i][j];<br />
+    }<br />
+    sum_M=dM_tmp;<br />
+}</p>
+<p>void Energy(double R)<br />
+{<br />
+    double dE_tmp=0.0;<br />
+    int i,j;<br />
+    for(i=0;i<L;i++)<br />
+    {<br />
+        for(j=0;j<L;j++)<br />
+        {<br />
+            dE_tmp+=0.5*(s[i][j]*(s[(i-1+L)%L][j]+s[(i+1)%L][j]+s[i][(j-1+L)%L]+s[i][(j+1)%L])+R*s[i][j]*(s[(i+1)%L][(j-1+L)%L]+s[(i-1+L)%L][(j+1)%L]));<br />
+    //      printf("chk1.dE_tmp=%f\n",dE_tmp);<br />
+        }<br />
+    }<br />
+    sum_E=dE_tmp;<br />
+}</math>
+<p></l></math>
+<p></time></stdlib></stdio></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/1447" rel="bookmark" title="最近很满意">最近很满意 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/516" rel="bookmark" title="Monte Carlo Investigation of Frustrated Heisenberg Model">Monte Carlo Investigation of Frustrated Heisenberg Model </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/564/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Monte Carlo Investigation of Frustrated Heisenberg Model</title>
+		<link>http://multiverse.lamost.org/blog/516</link>
+		<comments>http://multiverse.lamost.org/blog/516#comments</comments>
+		<pubDate>Sat, 01 Jan 2011 07:43:54 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[万物皆循因果]]></category>
+		<category><![CDATA[Monte Carlo]]></category>
+		<category><![CDATA[Statistical Physics]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=516</guid>
+		<description><![CDATA[Draft ( PDF file, click to view or download): Frustrated-Honeycomb Heisenberg-Model We did not do much on this because of the limitation of time. One should be careful of the possible mistakes in this draft. Here we have some slides...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/933" rel="bookmark" title="相对论心理学1">相对论心理学1 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/564" rel="bookmark" title="2D Ising Model (Triangle Lattice)">2D Ising Model (Triangle Lattice) </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>Draft ( PDF file, click to view or download):<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Frustrated-Honeycomb-Heisenberg-Model.pdf'>Frustrated-Honeycomb Heisenberg-Model</a></p>
+<p>We did not do much on this because of the limitation of time.<br />
+One should be careful of the possible mistakes in this draft.</p>
+<p>Here we have some slides to show the main idea of this work.<br />
+<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/二维蜂窝模型.pdf'>2D_Honeycomb_Frustrated_Heisenberg_Model_Monte Carlo</a></p>
+<p>Codes:<br />
+原始的：<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Rvaries-Honeycomb-2DIsingModel.c'>Honeycomb-2DIsingModel</a><br />
+大致看了下类似刚度之类的性质：<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Rigid-Honeycomb-2DIsingModel.c'>Rigid-Honeycomb-2DIsingModel</a><br />
+OPENGL的可视化：<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Visual-Honeycomb.c'>Visual-Honeycomb</a><br />
+但是这个可视化不太好，跟slide里面那个可视化不太一样。这里使用颜色深度表示方向的。我在slides里面其实只是把某时刻的状态记录到一个文件中，然后用sigmaplot画的……囧~这个的code在这里：<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Final-pirntspin-Honeycomb.c'>Final-pirntspin-Honeycomb</a><br />
+三角格子的（因为在某极限下本模型趋向于三角格子，所以就单独算了一下三角格子的作为对照）：<a href='http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Rvaries-Triangle-2DIsingModel.c'>Rvaries-Triangle-2DIsingModel</a></p>
+<p>============= Divider of Main Text================<br />
+A simple vector model in 2 dimensions.<br />
+Its Hamiltonian can be written as<br />
+<center>[eq]H={{J}<em>{1}}&#92;sum&#92;limits</em>{i,j}{{{s}<em>{i}}{{s}</em>{j}}}+{{J}<em>{2}}&#92;sum&#92;limits</em>{i&#8217;,j&#8217;}{{{s}<em>{i&#8217;}}{{s}</em>{j&#8217;}}}[/eq]</center><br />
+,in which i,j means the nearest neighbor interaction when i&#8217;, j&#8217; means the next nearest neighbor interaction.<br />
+We designed the program under Honeycomb lattice, i.e.,<br />
+<div id="attachment_535" style="width: 310px" class="wp-caption aligncenter"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Graphene.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/Graphene-300x214.jpg" alt="Scheme of a honeycomb lattice" title="Honeycomb Lattice" width="300" height="214" class="size-medium wp-image-535" /></a><p class="wp-caption-text">Scheme of a honeycomb lattice</p></div></p>
+<p>To make it clear for programming, we reshaped the lattice under homeomorphic：<br />
+<div id="attachment_536" style="width: 310px" class="wp-caption aligncenter"><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/MCLattice.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2011/01/MCLattice-300x281.jpg" alt="Transformation of honeycomb lattice" title="Transformation of honeycomb lattice" width="300" height="281" class="size-medium wp-image-536" /></a><p class="wp-caption-text">Transformation of honeycomb lattice for MC program</p></div></p>
+<p>I wrote the Metropolis CODE with C:<br />
+<span id="more-516"></span><br />
+<code>/<em>This program calculates the energy, heat capacity, magnetization, magnetic permitivity.</em>/<br />
+/<em>Boundary condition: periodic boundary condition.</em>/<br />
+/<em>In this program, J&amp;k are put into T. To fill it to the expressions, just consider the dimensions.</em>/</p>
+<h1>include <stdio .h></h1>
+<h1>include <stdlib .h></h1>
+<h1>include <time .h></h1>
+<h1>include</h1>
+<math .h>
+<p>#define L 100<br />
+#define NGL  1000000            /*Samples Neglected*/<br />
+#define N_t 51000000            /*Total samples*/<br />
+#define N (N_t-NGL)<br />
+#define T_i 0.1<br />
+#define T_f 1.0<br />
+#define Tstep 0.1<br />
+#define SIZE_T 500              /*The size of emcx in T axis. Check this before compiling!*/<br />
+#define SIZE_R 60               /*The size of emcx in R axis. Check this before compiling!*/<br />
+#define R_i 50.0                    /*Ration of J2/J1. Initial value.*/<br />
+#define R_step 0.1              /*step*/<br />
+#define R_f 50.0                    /*End of R*/<br />
+#define Pi 3.1415926536</p>
+<p>double sum_M[2];                    /*sum_M[0] denotes the cos part; sum_M[1] denotes the sin part*/<br />
+double sum_Mag;<br />
+double s[L][L];                     /*Size of the lattice*/<br />
+double sum_E;<br />
+double T;</p>
+<p>struct Obsv<br />
+{<br />
+    double C;<br />
+    double X;<br />
+    double M;<br />
+    double E;<br />
+};</p>
+<p>/********************************/<br />
+//  FILE *fchk; //chk_sum_E<br />
+/********************************/</p>
+<p>void Inist();<br />
+void Mag();<br />
+void Energy(double R);<br />
+void MCP(double R);<br />
+struct Obsv Cac_obsv(double R);</p>
+<p>int main()<br />
+{<br />
+    int i,j;<br />
+    double R;<br />
+    struct Obsv emcx[SIZE_T][SIZE_R];<br />
+    FILE *ft,*fm,*fx,*fc,*fe,*fr;<br />
+    fr=fopen("R.txt","w");<br />
+    ft=fopen("T.txt","w");<br />
+    fx=fopen("X.txt","w");<br />
+    fc=fopen("C.txt","w");<br />
+    fm=fopen("M.txt","w");<br />
+    fe=fopen("E.txt","w");<br />
+/**********************************/<br />
+//fchk=fopen("Chk_dE.txt","w");<br />
+/**********************************/</p>
+<p>    R=R_i;<br />
+    srand(time(NULL));<br />
+    for(j=0;R< =R_f;j++)<br />
+    {<br />
+        T=T_i;<br />
+        for(i=0;T<=T_f;i++)<br />
+        {<br />
+            Inist();<br />
+            emcx[i][j]=Cac_obsv(R);<br />
+            fprintf(fr,"%f\n",R);<br />
+            fprintf(ft,"%f\n",T);<br />
+            fprintf(fx,"%f\n",emcx[i][j].X);<br />
+            fprintf(fc,"%f\n",emcx[i][j].C);<br />
+            fprintf(fm,"%f\n",emcx[i][j].M);<br />
+            fprintf(fe,"%f\n",emcx[i][j].E);<br />
+            printf("-------------\n");<br />
+            printf("R=%f\n",R);<br />
+            printf("T=%f\n",T);<br />
+            printf("X=%f\n",emcx[i][j].X);<br />
+            printf("C=%f\n",emcx[i][j].C);<br />
+            printf("M=%f\n",emcx[i][j].M);<br />
+            printf("E=%f\n",emcx[i][j].E);<br />
+            T = T+Tstep;<br />
+        }<br />
+        R+=R_step;<br />
+    }<br />
+    fclose(fr);<br />
+    fclose(ft);<br />
+    fclose(fx);<br />
+    fclose(fc);<br />
+    fclose(fm);<br />
+    fclose(fe);<br />
+/*****************************/<br />
+//fclose(fchk);<br />
+/*****************************/<br />
+    printf("The End!\n");<br />
+}</p>
+<p>void Inist()                                /*Initialized lattice. All oriented to one direction*/<br />
+{<br />
+    int i,j;<br />
+    for(i=0;i<L;i++)<br />
+    {<br />
+        for(j=0;j<L;j++)<br />
+        {<br />
+            s[i][j]=0;<br />
+        }<br />
+    }<br />
+}</p>
+<p>struct Obsv Cac_obsv(double R)<br />
+{<br />
+    int i;<br />
+    double E_avg=0.0;<br />
+    double E_as=0.0;<br />
+    double M_avg=0.0;<br />
+    double M_as=0.0;<br />
+    struct Obsv emcx;</p>
+<p>    Mag();<br />
+    Energy(R);</p>
+<p>    for(i=0; i<N_t; i++)<br />
+    {<br />
+        MCP(R);<br />
+/********************************/<br />
+//printf("chk.Cac_obsv.sum_Mag=%f\n",sum_Mag);<br />
+//printf("chk.Cac_obsv.sum_E=%f\n",sum_E);<br />
+//fprintf(fchk,"%f\n",sum_E);<br />
+/********************************/<br />
+        if(i>=NGL)<br />
+        {<br />
+            E_avg+=(double)sum_E/N;<br />
+            E_as+=(double)sum_E*sum_E/N;<br />
+            M_avg+=(double)sum_Mag/N;<br />
+            M_as+=(double)sum_Mag*sum_Mag/N;<br />
+        }<br />
+    }<br />
+    emcx.E=E_avg;<br />
+    emcx.M=M_avg;<br />
+    emcx.C=(E_as - E_avg*E_avg)/T/T;<br />
+    emcx.X=(M_as - M_avg*M_avg)/T;</p>
+<p>    return emcx;<br />
+}</p>
+<p>/*Monte Carlo process.*/<br />
+void MCP(double R)<br />
+{<br />
+    int i,j;<br />
+    double agl_rdm;<br />
+    double sum,sum_tmp,dE;                                          /*sum_tmp is used to cal the energy difference*/<br />
+    i=rand()%L;<br />
+    j=rand()%L;<br />
+    agl_rdm=(double)rand()/RAND_MAX*2*Pi;                           /*What if I just make it (double)rand()*/</p>
+<p>    /*Cal the energy before we add a random angle to s[i][j]*/<br />
+    if(j%2==0)<br />
+    {<br />
+        if(i%2==0)<br />
+        {<br />
+            sum_tmp=cos(s[i][j]-s[i][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][j])+cos(s[i][j]-s[(i-1+L)%L][j]);<br />
+            sum_tmp+=R*(cos(s[i][j]-s[(i+1)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+2)%L][j])+cos(s[i][j]-s[(i-2+L)%L][j]));<br />
+        }<br />
+        else if(i%2==1)<br />
+        {<br />
+            sum_tmp=cos(s[i][j]-s[i][(j+1)%L])+cos(s[i][j]-s[(i+1)%L][j])+cos(s[i][j]-s[(i-1+L)%L][j]);<br />
+            sum_tmp+=R*(cos(s[i][j]-s[(i+1)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+2)%L][j])+cos(s[i][j]-s[(i-2+L)%L][j]));<br />
+        }<br />
+    }<br />
+    else if(j%2==1)<br />
+    {<br />
+        if(i%2==1)<br />
+        {<br />
+            sum_tmp=cos(s[i][j]-s[i][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][j])+cos(s[i][j]-s[(i-1+L)%L][j]);<br />
+            sum_tmp+=R*(cos(s[i][j]-s[(i+1)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+2)%L][j])+cos(s[i][j]-s[(i-2+L)%L][j]));<br />
+        }<br />
+        else if(i%2==0)<br />
+        {<br />
+            sum_tmp=cos(s[i][j]-s[i][(j+1)%L])+cos(s[i][j]-s[(i+1)%L][j])+cos(s[i][j]-s[(i-1+L)%L][j]);<br />
+            sum_tmp+=R*(cos(s[i][j]-s[(i+1)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+2)%L][j])+cos(s[i][j]-s[(i-2+L)%L][j]));<br />
+        }<br />
+    }<br />
+    else<br />
+    {<br />
+        printf("Checkpoint 1! j is neither odd nor even! Attention!");<br />
+    }<br />
+/****************************/<br />
+//printf("chk.MCP.sum_tmp=%f\n",sum_tmp);<br />
+/****************************/</p>
+<p>    /*Add a random angle to s[i][j]*/<br />
+    s[i][j]+=agl_rdm;                                                       /*Exceeding 2*Pi makes not sense in cos or sin func*/</p>
+<p>    /*Cal the energy after we add a random to s[i][j]*/<br />
+    if(j%2==0)<br />
+    {<br />
+        if(i%2==0)<br />
+        {<br />
+            sum=cos(s[i][j]-s[i][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][j])+cos(s[i][j]-s[(i-1+L)%L][j]);<br />
+            sum+=R*(cos(s[i][j]-s[(i+1)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+2)%L][j])+cos(s[i][j]-s[(i-2+L)%L][j]));<br />
+        }<br />
+        else if(i%2==1)<br />
+        {<br />
+            sum=cos(s[i][j]-s[i][(j+1)%L])+cos(s[i][j]-s[(i+1)%L][j])+cos(s[i][j]-s[(i-1+L)%L][j]);<br />
+            sum+=R*(cos(s[i][j]-s[(i+1)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+2)%L][j])+cos(s[i][j]-s[(i-2+L)%L][j]));<br />
+        }<br />
+    }<br />
+    else if(j%2==1)<br />
+    {<br />
+        if(i%2==1)<br />
+        {<br />
+            sum=cos(s[i][j]-s[i][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][j])+cos(s[i][j]-s[(i-1+L)%L][j]);<br />
+            sum+=R*(cos(s[i][j]-s[(i+1)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+2)%L][j])+cos(s[i][j]-s[(i-2+L)%L][j]));<br />
+        }<br />
+        else if(i%2==0)<br />
+        {<br />
+            sum=cos(s[i][j]-s[i][(j+1)%L])+cos(s[i][j]-s[(i+1)%L][j])+cos(s[i][j]-s[(i-1+L)%L][j]);<br />
+            sum+=R*(cos(s[i][j]-s[(i+1)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+1)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j+1)%L])+cos(s[i][j]-s[(i-1+L)%L][(j-1+L)%L])+cos(s[i][j]-s[(i+2)%L][j])+cos(s[i][j]-s[(i-2+L)%L][j]));<br />
+        }<br />
+    }<br />
+    else<br />
+    {<br />
+        printf("Checkpoint 2! j is neither odd nor even! Attention!");<br />
+    }<br />
+/********************************/<br />
+//printf("chk.MCP.sum=%f\n",sum);<br />
+/********************************/<br />
+    dE=sum-sum_tmp;                                                 /*Attention!*/</p>
+<p>/********************************/<br />
+//printf("chk.MCP.dE=%f\n",dE);<br />
+/********************************/</p>
+<p>    if(dE< =0)<br />
+    {<br />
+        sum_M[0]+=cos(s[i][j])-cos(s[i][j]-agl_rdm);                    /*Accept&#038;Cal*/<br />
+        sum_M[1]+=sin(s[i][j])-sin(s[i][j]-agl_rdm);<br />
+        sum_Mag=sqrt(sum_M[0]*sum_M[0]+sum_M[1]*sum_M[1]);<br />
+        sum_E+=dE;<br />
+    }<br />
+    else if(((double)rand()/RAND_MAX)<exp((-1.0)*dE/T))<br />
+    {<br />
+        sum_M[0]+=cos(s[i][j])-cos(s[i][j]-agl_rdm);                    /*Accept&#038;Cal*/<br />
+        sum_M[1]+=sin(s[i][j])-sin(s[i][j]-agl_rdm);<br />
+        sum_Mag=sqrt(sum_M[0]*sum_M[0]+sum_M[1]*sum_M[1]);<br />
+        sum_E+=dE;</p>
+<p>    }<br />
+    else<br />
+    {<br />
+        s[i][j]=s[i][j]-agl_rdm;                                        /*Reject the change*/<br />
+    }</p>
+<p>/********************************/<br />
+//printf("chk.MCP.sum_M[0]=%f\n",sum_M[0]);<br />
+//printf("chk.MCP.sum_M[1]=%f\n",sum_M[1]);<br />
+//printf("chk.MCP.cos(s[i][j])-cos(s[i][j]-agl_rdm)=%f\n",cos(s[i][j])-cos(s[i][j]-agl_rdm));<br />
+/********************************/<br />
+}</p>
+<p>void Mag()<br />
+{<br />
+//  int i,j;<br />
+//  double dM_tmp[2]={0};</p>
+<p>//  for(i=0;i<L;i++)<br />
+//  {<br />
+//      for(j=0;j<L;j++)<br />
+//          dM_tmp[0]+=cos(s[i][j]);<br />
+//          dM_tmp[1]+=sin(s[i][j]);<br />
+//  }<br />
+//  sum_M[0]=dM_tmp[0];<br />
+//  sum_M[1]=dM_tmp[1];<br />
+    sum_M[0]=1.0*L*L;<br />
+    sum_M[1]=0.0;</p>
+<p>/********************************/<br />
+//printf("chk.Mag.sum_M[0]=%f\n",sum_M[0]);<br />
+//printf("chk.Mag.sum_M[1]=%f\n",sum_M[1]);<br />
+/********************************/<br />
+}</p>
+<p>void Energy(double R)<br />
+{<br />
+//  double dE_tmp;<br />
+//  dE_tmp=(3.0+R*6.0)*L*L/2.0;<br />
+    sum_E=(3.0+R*6.0)*L*L/2.0;<br />
+}</math>
+</math>
+<p></time></stdlib></stdio></code></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/933" rel="bookmark" title="相对论心理学1">相对论心理学1 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/593" rel="bookmark" title="A Brief Summary of Statistical Physics">A Brief Summary of Statistical Physics </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/564" rel="bookmark" title="2D Ising Model (Triangle Lattice)">2D Ising Model (Triangle Lattice) </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/516/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+	</channel>
+</rss>

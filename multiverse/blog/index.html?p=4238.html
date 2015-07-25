@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+<!-- Mobile viewport optimized -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- Favicon -->
+	<link rel="shortcut icon" href="wp-content/uploads/2012/12/Blomos1-1.png" />
+
+<!-- Title -->
+<title>西夏項目</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://multiverse.lamost.org/blog/xmlrpc.php" />
+
+<!-- WP Head -->
+
+<script type='text/x-mathjax-config'>
+MathJax.Hub.Config({
+  showProcessingMessages: false,
+  messageStyle: "none",
+  jax: ["input/TeX", "output/HTML-CSS"],
+  extensions: ["tex2jax.js","MathMenu.js","MathZoom.js","fp.js"],
+  TeX: {
+    equationNumbers: {  autoNumber: "AMS"  },
+    extensions: ["xypic.js","AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+  },
+  "HTML-CSS": { availableFonts: ["TeX"] },
+  tex2jax: {
+    inlineMath: [ ["\✟","\✟"], ["$","$"], ["\\(","\\)"] ],
+    displayMath: [ ["$$","$$"], ["\\[","\\]"] ],
+    processEscapes: true
+  }
+});</script>
+<meta name="generator" content="WordPress 4.2.2" />
+<meta name="template" content="Origin 0.5.8" />
+
+<!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<link rel="author" href="https://plus.google.com/105497512905835358378" />
+<meta name="description"  content="迷失在歷史中的西夏王朝，失傳已久的神秘文字。 西夏，即白高大夏國，是公元一零三八年到一二二七年間存在於中國西北部的一個王朝。西夏國輝煌一時，雖然夏國曾經接受宋、金冊封，但夏國有強大的軍事實力、輝煌的文化發展，作爲附屬國燒有些喧賓奪主（？）之意。甚至元昊當朝時期，宋史所記載的宋、夏之間的戰役，大都以宋敗而終。夏國創蕃書" />
+
+<meta name="keywords"  content="timeline,历史,时间线,网络,西夏,西夏学,西夏文,计算中的宇宙" />
+
+<link rel="canonical" href="index.html%3Fp=4238.html" />
+<meta property="og:title" content="西夏項目" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://multiverse.lamost.org/blog/4238" />
+<meta property="og:image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+<meta property="og:site_name" content="时见疏星" />
+<meta property="og:description" content="迷失在歷史中的西夏王朝，失傳已久的神秘文字。 西夏，即白高大夏國，是公元一零三八年到一二二七年間存在於中國西北部的一個王朝。西夏國輝煌一時，雖然夏國曾經接受宋、金冊封，但夏國有強大的軍事實力、輝煌的文化發展，作爲附屬國燒有些喧賓奪主（？）之意。甚至元昊當朝時期，宋史所記載的宋、夏之間的戰役，大都以宋敗而終。夏國創蕃書（即西夏文），置十二監軍司，置學堂，辦策試，仿漢人建立官制。  雖然，後來夏國遭受旱災和地震等天災，而且政權不穩定，但是也曾經出現國很長的一段盛世時期，但最終，一二二七年被強大的蒙古軍隊圍攻都城中興府，末代皇帝李睍被迫投降，西夏滅國。可嘆的是，雖然當時成吉思汗已死，卻留下遺命要殺主屠城，於是夏末帝被拖雷殺害。 之後元甚至沒有爲西夏修史，或許因爲西夏抵抗強烈，或許因爲西夏曾經收留蒙古叛徒，再或者，因爲西夏的實錄在戰爭中被毀，總之，後世所傳下來的關於西夏的史料少的可憐，而且很多史書中記載的歷史事件並不可信，導致我們所知的西夏歷史出現很多空白。 西夏歷史線項目 我和一位朋友建立了一個西夏项目。 西夏歷史線項目目前只是會把西夏的歷史通過時間線的方式來呈現出來，大致如下圖所示：  概覽 最基本的目標是準確，數據需要從正史中提取，而且對於像宋史這樣的有很多錯誤的史書，需要輔以其它資料。有鑑於史書所記載的時間的具體時間精度都不夠，所有只好按照年來將事件封裝，每年爲一組。 issues 和 todo 包括：  參考文獻的引用格式和詳細內容的改進。考慮到可能會有極長的段落，可以添加自動將內容 cut 成爲一段標準長度，防止內容溢出屏幕，可以採用 fancybox 形式。 年號紀年應當與公元紀年來並列顯示，不管在時間軸上還是在每個 slide 中。採用長條顯示紀年，或者乾脆標示在時間軸上。 豎排顯示內容。內容採用豎排顯示。字體改用宋體，註釋改用仿宋體。關於字體的考慮還在進行中，所以暫且不設定。 快速跳轉年份。增加快速跳轉年份功能。  數據和呈現 數據最終決定採用 JSONP 格式，借用 TimelineJS 框架來呈現。 數據目前有兩個人來提供：  @星河逍遥 @自由的大梁  歡迎加入我們。 呈現數據分以下幾步：  從史書中摘錄。將事件的時間（公元紀年和「年號紀年」）、事件的描述、參考文獻、備註（例如關於該事件的爭議等等）這些列舉出來。" />
+<meta property="article:published_time" content="2012-11-25T18:47:13Z" />
+<meta property="article:modified_time" content="2012-12-01T08:19:23Z" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="迷失在歷史中的西夏王朝，失傳已久的神秘文字。 西夏，即白高大夏國，是公元一零三八年到一二二七年間存在於中國西北部的一個王朝。西夏國輝煌一時，雖然夏國曾經接受宋、金冊封，但夏國有強大的軍事實力、輝煌的文化發展，作爲附屬國燒有些喧賓奪主（？）之意。甚至元昊當朝時期，宋史所記載的宋、夏之間的戰役，大都以宋敗而終。夏國創蕃書（即西夏文），置十二監軍司，置學堂，辦策試，仿漢人建立官制。  雖然，後來夏國遭受旱災和地震等天災，而且政權不穩定，但是也曾經出現國很長的一段盛世時期，但最終，一二二七年被強大的蒙古軍隊圍攻都城中興府，末代皇帝李睍被迫投降，西夏滅國。可嘆的是，雖然當時成吉思汗已死，卻留下遺命要殺主屠城，於是夏末帝被拖雷殺害。 之後元甚至沒有爲西夏修史，或許因爲西夏抵抗強烈，或許因爲西夏曾經收留蒙古叛徒，再或者，因爲西夏的實錄在戰爭中被毀，總之，後世所傳下來的關於西夏的史料少的可憐，而且很多史書中記載的歷史事件並不可信，導致我們所知的西夏歷史出現很多空白。 西夏歷史線項目 我和一位朋友建立了一個西夏项目。 西夏歷史線項目目前只是會把西夏的歷史通過時間線的方式來呈現出來，大致如下圖所示：  概覽 最基本的目標是準確，數據需要從正史中提取，而且對於像宋史這樣的有很多錯誤的史書，需要輔以其它資料。有鑑於史書所記載的時間的具體時間精度都不夠，所有只好按照年來將事件封裝，每年爲一組。 issues 和 todo 包括：  參考文獻的引用格式和詳細內容的改進。考慮到可能會有極長的段落，可以添加自動將內容 cut 成爲一段標準長度，防止內容溢出屏幕，可以採用 fancybox 形式。 年號紀年應當與公元紀年來並列顯示，不管在時間軸上還是在每個 slide 中。採用長條顯示紀年，或者乾脆標示在時間軸上。 豎排顯示內容。內容採用豎排顯示。字體改用宋體，註釋改用仿宋體。關於字體的考慮還在進行中，所以暫且不設定。 快速跳轉年份。增加快速跳轉年份功能。  數據和呈現 數據最終決定採用 JSONP 格式，借用 TimelineJS 框架來呈現。 數據目前有兩個人來提供：  @星河逍遥 @自由的大梁  歡迎加入我們。 呈現數據分以下幾步：  從史書中摘錄。將事件的時間（公元紀年和「年號紀年」）、事件的描述、參考文獻、備註（例如關於該事件的爭議等等）這些列舉出來。" />
+<meta itemprop="image" content="http://multiverse.lamost.org/blog/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png" />
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-17724131-2']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+<!-- /all in one seo pack -->
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Feed" href="feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; Comments Feed" href="comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="时见疏星 &raquo; 西夏項目 Comments Feed" href="4238/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/multiverse.lamost.org\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.2"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/widget.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='wp-content/themes/origin/style.min.css%3Fver=0.5.8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='wp-content/plugins/table-of-contents-plus/screen.css%3Fver=1505.css' type='text/css' media='all' />
+<link rel='stylesheet' id='Tippy-css'  href='wp-content/plugins/tippy/jquery.tippy.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='seed-wnb-css-css'  href='wp-content/plugins/wordpress-notification-bar/inc/css/seed_wnb.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-post-series-frontend-css'  href='wp-content/plugins/wp-post-series/assets/css/post-series.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='origin_fancybox-stylesheet-css'  href='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.css%3Fver=1.css' type='text/css' media='screen' />
+<link rel='stylesheet' id='font-awesome-styles-css'  href='wp-content/plugins/font-awesome/assets/css/font-awesome.min.css%3Fver=3.2.1.css' type='text/css' media='all' />
+<!--[if lte IE 7]>
+<link rel='stylesheet' id='font-awesome-ie7-css'  href='http://multiverse.lamost.org/blog/wp-content/plugins/font-awesome/assets/css/font-awesome-ie7.min.css?ver=3.2.1' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='jetpack_css-css'  href='wp-content/plugins/jetpack/css/jetpack.css%3Fver=3.6.css' type='text/css' media='all' />
+<script type='text/javascript' src='wp-includes/js/jquery/jquery.js%3Fver=1.11.2'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js%3Fver=1.2.1'></script>
+<script type='text/javascript' src='wp-content/plugins/scroll-to-top/js/stt.js%3Fver=1.0'></script>
+<script type='text/javascript' src='../Apps/MathJax-2.1/MathJax.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/plugins/tippy/jquery.tippy.js%3Fver=6.0.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var seed_wnb_js_localize = {"msg":"","button_link":"http:\/\/openmetric.org","button_label":"\u6682\u505c\u66f4\u65b0\u5566\uff0c\u70b9\u8fd9\u91cc\u53bb\u65b0\u7ad9\u70b9\uff1a[Dark Hypernova](http:\/\/openmetric.org)","button_target":"_blank"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/wordpress-notification-bar/inc/js/seed_wnb.js%3Fver=4.2.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php%3Frsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='落凡尘' href='index.html%3Fp=4200.html' />
+<link rel='next' title='宇宙学中的统计方法【乙】' href='index.html%3Fp=2970.html' />
+<link rel='shortlink' href='index.html%3Fp=4238.html' />
+	
+		<!-- by Scrollto Top -->
+		
+ 		<script type="text/javascript">
+ 			//<![CDATA[
+  			jQuery(document).ready(function(){
+    			jQuery("body").append("<div id=\"scroll_to_top\"><a href="http://multiverse.lamost.org/blog/\&quot;#top\"">Top | 回顶部</a></div>");
+    			jQuery("#scroll_to_top a").css({	'display' : 'none', 'z-index' : '9', 'position' : 'fixed', 'top' : '100%', 'width' : '110px', 'margin-top' : '-30px', 'right' : '50%', 'margin-left' : '-50px', 'height' : '20px', 'padding' : '3px 5px', 'font-size' : '14px', 'text-align' : 'center', 'padding' : '3px', 'color' : '#ffa600', 'background-color' : '#ffffff', '-moz-border-radius' : '5px', '-khtml-border-radius' : '5px', '-webkit-border-radius' : '5px', 'opacity' : '.8', 'text-decoration' : 'none'});	
+    			jQuery('#scroll_to_top a').click(function(){
+					jQuery('html, body').animate({scrollTop:0}, 'slow');
+				});
+
+    		});
+  			
+			//]]>
+
+  		</script>
+		<!-- /by Scrollto Top and History Back -->	
+		
+		<style type="text/css">div#toc_container ul li {font-size: 90%;}</style>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+                    jQuery('.tippy').tippy({ position: "link", offsetx: 0, offsety: 10, closetext: "X", hidedelay: 700, showdelay: 100, calcpos: "parent", showspeed: 0, hidespeed: 0, target: "_blank", showtitle: true, hoverpopup: true, draggable: true, dragheader: true, multitip: false, autoshow: false, showheader: true, showclose: true, htmlentities: false });
+                });
+            </script>
+        <style type='text/css'>#bg_color { color:white; }
+.wnb-bar-button {
+  color:black;
+  text-shadow:0 -1px 0 rgba(255,255,255,0.25);
+  background-color:white;
+}
+#wnb-bar {
+  color:white;
+  position:fixed;
+  background-color:#000000;
+  background-image:-moz-linear-gradient(top,#000000,#000000);
+  background-image:-ms-linear-gradient(top,#000000,#000000);
+  background-image:-webkit-gradient(linear,0 0,0 100%,from(#000000),to(#000000));
+  background-image:-webkit-linear-gradient(top,#000000,#000000);
+  background-image:-o-linear-gradient(top,#000000,#000000);
+  background-image:linear-gradient(top,#000000,#000000);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000',endColorstr='#000000',GradientType=0);
+}
+</style>
+
+<!-- WP SinoType typography plugin by graficareal.net -->
+<style>
+body {font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+h1>*,h2>*,h3>*,h4>*,h5>*,h6>*{font-family:Arial, Helvetica, sans-serif,Hei,"Microsoft YaHei";}
+</style>
+<!-- WP SinoType plugin typography -->
+
+
+	<style type="text/css">
+
+		/* Font size. */
+					html { font-size: 16px; }
+		
+		/* Font family. */
+					body { font-family: 'Helvetica', serif; }
+		
+		/* Link color. */
+					a, a:visited, #footer a:hover, .entry-title a:hover { color: #f58612; }
+			#respond #submit, .button, a.button, .wpcf7-submit, #loginform .button-primary { background-color: #f58612; }
+				a:hover, a:focus { color: #000; }
+
+		/* Custom CSS. */
+		/* LaTeX format. span class=... for example */.latex {  font-family: Times, \"Times New Roman\", serif;	  letter-spacing: 1px;}.latex sup {  text-transform: uppercase;  letter-spacing: 1px;  font-size: 700.000000e+0m;  vertical-align: -0.3em;  margin-left: -0.36em;  margin-right: -0.15em;}.latex sub {  text-transform: uppercase;  vertical-align: -0.0ex;  margin-left: -0.1667em;  margin-right: -0.125em;  font-size: 1em;}  
+	
+	</style>	
+
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+<body class="wordpress ltr en_US parent-theme y2015 m07 d21 h23 tuesday logged-out custom-background singular singular-post singular-post-4238">
+
+	
+	<div id="container">
+		
+		<div class="wrap">
+
+				
+			<div id="header">
+	
+					
+					<div id="branding">
+						
+						<div id="site-title"><a href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a></div>						
+					</div><!-- #branding -->
+					
+					
+	
+	<div id="menu-primary" class="site-navigation menu-container" role="navigation">
+
+		<span class="menu-toggle">Menu</span>
+
+		
+		<div class="menu"><ul id="menu-primary-items" class="nav-menu"><li id="menu-item-4844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-4844"><a href="../blog.html">首页</a></li>
+<li id="menu-item-6371" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6371"><a title="About">关于</a>
+<ul class="sub-menu">
+	<li id="menu-item-4835" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4835"><a href="index.html%3Fp=1196.html">我</a></li>
+	<li id="menu-item-6377" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6377"><a href="index.html%3Fp=1571.html">书与电影</a></li>
+	<li id="menu-item-6368" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6368"><a href="index.html%3Fp=5003.html">白日梦</a></li>
+	<li id="menu-item-6453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6453"><a href="index.html%3Fp=6447.html">星际移民</a></li>
+</ul>
+</li>
+<li id="menu-item-4836" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4836"><a href="index.html%3Fp=2369.html">档案</a></li>
+<li id="menu-item-4837" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4837"><a href="index.html%3Fp=371.html">会客</a></li>
+<li id="menu-item-6404" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6404"><a href="index.html%3Fp=6394.html">星际移民中心</a></li>
+</ul></div>
+		
+	</div><!-- #menu-primary .menu-container -->
+
+	
+					
+					<div id="site-description"><span>流年暗中偷换</span></div>	
+						
+				
+		<div class="breadcrumb-trail breadcrumbs" itemprop="breadcrumb">
+			<span class="trail-browse">Browse:</span> <span class="trail-begin"><a href="../blog.html" title="时见疏星">Home</a></span>
+			 <span class="sep">&raquo;</span> <span class="trail-end">西夏項目</span>
+		</div>	
+			</div><!-- #header -->
+	
+				
+				
+			<div id="main">
+	
+				
+	
+	<div id="content">
+
+		
+		<div class="hfeed">
+
+			
+				
+					
+					<div id="post-4238" class="hentry post publish post-1 odd author-emptymalei category-world-of-the-internet post_tag-timeline post_tag-183 post_tag-186 post_tag-112 post_tag-184 post_tag-185 post_tag-179">
+
+												
+						<div class="post-content">
+						
+														
+							<h1 class='post-title entry-title'>西夏項目</h1>
+<div class="byline"><time class="published" datetime="2012-11-25T18:47:13-06:00" title="Sunday, November 25th, 2012, 6:47 pm">11/25/2012</time> &middot; by <span class="author vcard"><a class="url fn n" rel="author" href="author/emptymalei/index.html" title="时见疏星">时见疏星</a></span> &middot; in <span class="category"><a href="category/world-of-the-internet/index.html" rel="tag">计算中的宇宙</a></span> &middot; <a onclick="TogetherJS(this); return false;" style="font-weight:bold;color:orange;font-style:normal;cursor:default;"><i class="icon-female"></i>  &#91; Co-Reading &#93; <i class="icon-male"></i></a> &middot; </div>							<div class="entry-content">
+								
+								<p>迷失在歷史中的西夏王朝，失傳已久的神秘文字。</p>
+<p>西夏，即白高大夏國，是公元一零三八年到一二二七年間存在於中國西北部的一個王朝。西夏國輝煌一時，雖然夏國曾經接受宋、金冊封，但夏國有強大的軍事實力、輝煌的文化發展，作爲附屬國燒有些喧賓奪主（？）之意。甚至元昊當朝時期，宋史所記載的宋、夏之間的戰役，大都以宋敗而終。夏國創蕃書（即西夏文），置十二監軍司，置學堂，辦策試，仿漢人建立官制。<br />
+<span id="more-4238"></span><br />
+雖然，後來夏國遭受旱災和地震等天災，而且政權不穩定，但是也曾經出現國很長的一段盛世時期，但最終，一二二七年被強大的蒙古軍隊圍攻都城中興府，末代皇帝李睍被迫投降，西夏滅國。可嘆的是，雖然當時成吉思汗已死，卻留下遺命要殺主屠城，於是夏末帝被拖雷殺害。</p>
+<p>之後元甚至沒有爲西夏修史，或許因爲西夏抵抗強烈，或許因爲西夏曾經收留蒙古叛徒，再或者，因爲西夏的實錄在戰爭中被毀，總之，後世所傳下來的關於西夏的史料少的可憐，而且很多史書中記載的歷史事件並不可信，導致我們所知的西夏歷史出現很多空白。</p>
+<h2>西夏歷史線項目</h2>
+<p>我和一位朋友建立了一個<a href="http://emptymalei.github.com/WesternXia/" title="西夏歷史線" target="_blank">西夏项目</a>。</p>
+<p><a href="http://emptymalei.github.com/WesternXia/" title="西夏歷史線" target="_blank">西夏歷史線項目目前只是會把西夏的歷史通過時間線的方式來呈現出來</a>，大致如下圖所示：</p>
+<p><a href="wp-content/uploads/2012/11/Screenshot-from-2012-11-25-165248.png"><img style="border:1px solid green;" src="wp-content/uploads/2012/11/Screenshot-from-2012-11-25-165248.png" alt="Timeline of Western Xia History" title="WesternXiaHistoryLine" width="550" class="aligncenter size-full wp-image-4239" /></a></p>
+<h3>概覽</h3>
+<p>最基本的目標是準確，數據需要從正史中提取，而且對於像宋史這樣的有很多錯誤的史書，需要輔以其它資料。有鑑於史書所記載的時間的具體時間精度都不夠，所有只好按照年來將事件封裝，每年爲一組。</p>
+<p><a href="https://github.com/emptymalei/WesternXia/issues">issues 和 todo</a> 包括：</p>
+<ul>
+<li>參考文獻的引用格式和詳細內容的改進。考慮到可能會有極長的段落，可以添加自動將內容 cut 成爲一段標準長度，防止內容溢出屏幕，可以採用 fancybox 形式。</li>
+<li>年號紀年應當與公元紀年來並列顯示，不管在時間軸上還是在每個 slide 中。採用長條顯示紀年，或者乾脆標示在時間軸上。</li>
+<li>豎排顯示內容。內容採用豎排顯示。字體改用宋體，註釋改用仿宋體。關於字體的考慮還在進行中，所以暫且不設定。</li>
+<li>快速跳轉年份。增加快速跳轉年份功能。</li>
+</ul>
+<h3>數據和呈現</h3>
+<p>數據最終決定採用 JSONP 格式，借用 TimelineJS 框架來呈現。</p>
+<p>數據目前有兩個人來提供：</p>
+<ul>
+<li><a href="http://weibo.com/emptymalei" style="font-style:bold;">@星河逍遥</a></li>
+<li><a href="http://weibo.com/liangchen0802" style="font-style:bold;">@自由的大梁</a></li>
+</ul>
+<p><strong style="color:orange;">歡迎加入我們。</strong></p>
+<p>呈現數據分以下幾步：</p>
+<ul>
+<li>從史書中摘錄。將事件的時間（公元紀年和「年號紀年」）、事件的描述、參考文獻、備註（例如關於該事件的爭議等等）這些列舉出來。</li>
+<li>將幾個人的記錄合併，並按照時間順序排列。</li>
+<li>製作成爲 JSON 格式的數據。如果不習慣文本編輯，可以使用<a href="http://emptymalei.github.com/jsoneditoronline">http://emptymalei.github.com/jsoneditoronline</a>來輔助編輯。或者客戶端的 JSON 編輯軟件。</li>
+<li>於原有的數據合併，並上載到<a href="http://emptymalei.github.com/WesternXia/"> github 項目</a> 的 gh-pages 分支的 timeline/data 文件夾中。</li>
+</ul>
+<p>所使用的文獻：</p>
+<ul>
+<li>宋、遼、金、元史</li>
+<li>劍橋中國史的遼西夏金部分</li>
+<li>草原帝國</li>
+<li>資治通鑑</li>
+<li>續資治通鑑長編</li>
+<li>西夏文文獻，如《餓藏黑水城文獻》等</li>
+</ul>
+<h3>備註</h3>
+<p><strong>我們都是理科生，對於歷史研究非常業餘，如果歷史系考古系等專業的人員能夠給我們提供建議，比如應該從何種史書中搜集資料等，我們將非常感謝。</strong></p>
+<h2>西夏項目</h2>
+<p>歷史線只是<a href="http://emptymalei.github.com/WesternXia/" style="color:red;font-style:bold;" target="_blank">整個項目的一部分</a>，因爲這種形式只能呈現西夏自己的歷史，而西夏與其它宋、遼、金、吐蕃等的關係沒有很形象的呈現出來，所以將來還會有更加立體化的方式來呈現這個曾經輝煌的王朝。</p>
+<h3>TimelineJS 與 HTML5 Presentation</h3>
+<p>結合 TimelineJS 的單一性與現在流行的多向甚至 3D 元素結合起來，更好的呈現歷史。</p>
+<p>可能用到的工具：</p>
+<ul>
+<li><a href="http://slides.html5rocks.com/">http://slides.html5rocks.com/</a></li>
+<li><a href="https://github.com/bartaz/impress.js">https://github.com/bartaz/impress.js</a> (我已經 fork 出來了 <a href="https://github.com/emptymalei/impress.js">https://github.com/emptymalei/impress.js</a></li>
+<li><a href="https://github.com/hakimel/reveal.js">https://github.com/hakimel/reveal.js</a> (我已經 fork 出來了 <a href="https://github.com/emptymalei/reveal.js">https://github.com/emptymalei/reveal.js</a> )</li>
+<li><a href="https://github.com/imakewebthings/deck.js">https://github.com/imakewebthings/deck.js</a> (我已經 fork 出來了 <a href="https://github.com/emptymalei/deck.js">https://github.com/emptymalei/deck.js</a> )</li>
+</ul>
+<p>其中 impress.js 我曾經用過，算是一個比較合理的工具，可以製作 3D canvas。這樣可以將各個國家的關係立體的呈現出來。</p>
+<h3>西夏文</h3>
+<p>經過<a href="http://www.zhihu.com/question/20605362" style="color:green;font-style:bold;" target="_blank">知乎朋友的幫助</a>，我現在可以將大部分的西夏文在網頁上顯示，只是處於字體版權的原因，現在還不能放在網上。</p>
+<p>我希望將自己的西夏文學習過程整個顯示在網頁上，成爲西夏文教學網頁。同時可以順手建立網頁版的西夏文簡易詞典。計劃能否兌現，取決於我在自學西夏文這條路上能堅持多遠……</p>
+<h1>后记</h1>
+<p>（2012-10-25）</p>
+<p>（抱歉突然转简化字。因为上面部分是从项目的介绍直接copy来的，所以保留了原来的字体。但是我从小受到简化字的教育，所以更喜欢简化汉字，因为简化可以提高书写速率。但是由于简化导致了简并等现象，所以处理古籍历史等事情是，还是需要使用繁体字来去简并，故项目介绍使用了繁体字。）</p>
+<p>很久以来我一直对历史很感兴趣，只是我有一个很大的问题，对数字不敏感，因此历史时间总是记错，最终结果就是历史学的很差。但是这并不阻止我的兴趣，同学朋友凑到一起，涉及到历史事件，常常详细的像大家请教。所以时间，一般都是令我痛心的地方。</p>
+<p>建立这个项目后，我就可以对整个历史有个大概的了解，同时也可以看到历史在哪些地方有了断层，哪些地方记载比较多，在时间线上，这些都一目了然。</p>
+<p>我不是历史系的学生，而是一个毫不搭边的物理专业的学生，因此很有可能会把历史弄错。所以我必须提醒大家，这个项目的数据在经过专业人士校对之前，只能算是一个玩玩而已的项目，即便有些内容看上去很正式。</p>
+<p>同时我也很希望有专业的历史学生来给我们提点建议之类，或者帮我们处理一下历史数据。专业的西夏学学者的给我们的批评我们也会虚心接受。</p>
+<p>目前项目只有两个人，但是我希望有更多的人参与进来，我们可以一起让更多的人知道这段历史，让更多的人对西夏学感兴趣。</p>
+<div class='yarpp-related'>
+<hr /><p><big><strong><font color="#ff6600">长程相关:</font></strong></big></p><ol>
+<li><a href="index.html%3Fp=5475.html" rel="bookmark" title="西夏语语法">西夏语语法 </a><hr /></li>
+<li><a href="index.html%3Fp=1453.html" rel="bookmark" title="Google Guitar Doodle">Google Guitar Doodle </a><hr /></li>
+<li><a href="index.html%3Fp=1506.html" rel="bookmark" title="Tumblr，点点，推他 |下厨房 | sinaapp">Tumblr，点点，推他 |下厨房 | sinaapp </a><hr /></li>
+<li><a href="index.html%3Fp=2061.html" rel="bookmark" title="豆瓣阿尔法城地图 | 关于阿花城的一些小事">豆瓣阿尔法城地图 | 关于阿花城的一些小事 </a><hr /></li>
+</ol>
+</div>
+								
+																
+							</div><!-- .entry-content -->
+
+							<div class="entry-meta"><span class="post_tag"><span class="before">Tags: </span><a href="tag/timeline.html" rel="tag">Timeline</a>, <a href="tag/�%258E%2586�%258F�.html" rel="tag">历史</a>, <a href="tag/�%2597��%2597�线.html" rel="tag">时间线</a>, <a href="tag/�%2591�%259C/index.html" rel="tag">网络</a>, <a href="tag/西�%258F.html" rel="tag">西夏</a>, <a href="tag/西�%258F学.html" rel="tag">西夏学</a>, <a href="tag/西�%258F�%2596%2587.html" rel="tag">西夏文</a></span></div>
+													
+						</div><!-- .post-content -->
+
+					</div><!-- .hentry -->
+
+					
+					
+					
+					<script type="text/javascript">
+var duoshuoQuery = {"short_name":"multiverse","sso":{"login":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=duoshuo_login","logout":"http:\/\/multiverse.lamost.org\/blog\/wp-login.php?action=logout&_wpnonce=eedd98a590"},"theme":"bluebox","stylePatch":"wordpress\/Origin"};
+duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+(function() {
+    var ds = document.createElement('script'); ds.type = 'text/javascript'; ds.async = true;
+    ds.charset = 'UTF-8';
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script><a name="comments"></a>
+
+<div class="ds-thread" data-thread-key="4238" data-author-key="1" data-title="西夏項目" data-url="http://multiverse.lamost.org/blog/4238"></div>
+
+<script type="text/javascript">
+	if (typeof DUOSHUO !== 'undefined')
+		DUOSHUO.EmbedThread('.ds-thread');
+</script>
+	<div id="ds-ssr">
+
+		
+            <ol id="commentlist">
+                            </ol>
+
+		            
+    </div>
+				
+			
+		</div><!-- .hfeed -->
+
+		
+		
+	
+		<div class="loop-nav">
+			<div class="previous">&larr; <a href="index.html%3Fp=4200.html" rel="prev">落凡尘</a></div>			<div class="next"><a href="index.html%3Fp=2970.html" rel="next">宇宙学中的统计方法【乙】</a> &rarr;</div>		</div><!-- .loop-nav -->
+
+	
+	</div><!-- #content -->
+
+	
+				
+	
+	<div id="sidebar-primary" class="sidebar">
+
+		
+		<section id="hybrid-search-2" class="widget search widget-search">			<div class="search">
+
+				<form method="get" class="search-form" action="../blog.html">
+				
+				<div>
+					
+					<input class="search-text" type="text" name="s" value="Search this site..." onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;" />
+					
+					<input class="search-submit button" name="submit" type="submit" value="Search" />
+					
+				</div>
+				
+				</form><!-- .search-form -->
+
+			</div><!-- .search --></section><section id="dx_zen_widget-3" class="widget dx_zen_widget_sample_single widget-dx_zen_widget_sample_single"><h3 class="widget-title">禅语 (GitHub Zen)</h3>        		<div>
+        			<p>Avoid administrative distraction.</p>        		</div>
+        	</section><section id="hybrid-nav-menu-2" class="widget nav-menu widget-nav-menu"><h3 class="widget-title">文章分类</h3><nav class="menu-categories-container"><ul id="menu-categories" class="nav-menu"><li id="menu-item-4839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4839"><a href="category/dreams-under-the-starry-sky/index.html">星空下的梦想</a></li><li id="menu-item-4840" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4840"><a href="category/message-from-the-end-of-the-universe/index.html">天尽头的纸条</a></li><li id="menu-item-4841" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4841"><a href="category/world-of-the-internet/index.html">计算中的宇宙</a></li><li id="menu-item-4842" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4842"><a href="category/all-kinds-of-knowledge/index.html">万物皆循因果</a></li><li id="menu-item-4843" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4843"><a href="category/dance-in-heaven/index.html">天幕上的舞蹈</a></li></ul></nav></section><section id="ds-recent-comments-2" class="widget ds-widget-recent-comments widget-ds-widget-recent-comments"><h3 class="widget-title">最近评论</h3><ul class="ds-recent-comments" data-num-items="3" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-avatar-size="30" data-excerpt-length="70"></ul></section><script>
+if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.RecentComments && DUOSHUO.RecentComments('.ds-recent-comments');
+</script><section id="hybrid-tags-2" class="widget tags widget-tags"><h3 class="widget-title">Tags</h3><p class="term-cloud post_tag-cloud"><a href='tag/coding/index.html' class='tag-link-117' title='12 topics' style='font-size: 11.3703703704pt;'>Coding</a> <a href='tag/it/index.html' class='tag-link-91' title='32 topics' style='font-size: 16.6851851852pt;'>IT</a> <a href='tag/math/index.html' class='tag-link-96' title='9 topics' style='font-size: 9.94444444444pt;'>Math</a> <a href='tag/physicist.html' class='tag-link-70' title='8 topics' style='font-size: 9.2962962963pt;'>Physicist</a> <a href='tag/statistical-physics/index.html' class='tag-link-86' title='15 topics' style='font-size: 12.537037037pt;'>Statistical Physics</a> <a href='tag/statistics.html' class='tag-link-188' title='8 topics' style='font-size: 9.2962962963pt;'>Statistics</a> <a href='tag/tex.html' class='tag-link-115' title='7 topics' style='font-size: 8.64814814815pt;'>TeX</a> <a href='tag/wordpress/index.html' class='tag-link-101' title='10 topics' style='font-size: 10.462962963pt;'>wordpress</a> <a href='tag/wp_plugin/index.html' class='tag-link-52' title='10 topics' style='font-size: 10.462962963pt;'>WP插件</a> <a href='tag/life/index.html' class='tag-link-93' title='32 topics' style='font-size: 16.6851851852pt;'>人生</a> <a href='tag/philosophy-philosophy-philosophy-philosophy-philosophy/index.html' class='tag-link-95' title='15 topics' style='font-size: 12.537037037pt;'>哲思</a> <a href='tag/astronomy/index.html' class='tag-link-81' title='46 topics' style='font-size: 18.6296296296pt;'>天文</a> <a href='tag/celestial.html' class='tag-link-6' title='7 topics' style='font-size: 8.64814814815pt;'>天象</a> <a href='tag/cosmology/index.html' class='tag-link-8' title='56 topics' style='font-size: 19.7962962963pt;'>宇宙学</a> <a href='tag/cosmological_evolution/index.html' class='tag-link-126' title='13 topics' style='font-size: 11.8888888889pt;'>宇宙演化</a> <a href='tag/to_be_continued.html' class='tag-link-105' title='6 topics' style='font-size: 8pt;'>待续</a> <a href='tag/trouble/index.html' class='tag-link-51' title='37 topics' style='font-size: 17.462962963pt;'>心事</a> <a href='tag/meteor.html' class='tag-link-63' title='6 topics' style='font-size: 8pt;'>流星雨</a> <a href='tag/love/index.html' class='tag-link-49' title='15 topics' style='font-size: 12.537037037pt;'>爱情</a> <a href='tag/physics/index.html' class='tag-link-44' title='84 topics' style='font-size: 22pt;'>物理</a> <a href='tag/crazy_science/index.html' class='tag-link-73' title='68 topics' style='font-size: 20.8333333333pt;'>疯狂的科学</a> <a href='tag/sci_fi/index.html' class='tag-link-46' title='15 topics' style='font-size: 12.537037037pt;'>科幻</a> <a href='tag/�%2591�%259C/index.html' class='tag-link-112' title='22 topics' style='font-size: 14.6111111111pt;'>网络</a> <a href='tag/poem.html' class='tag-link-35' title='6 topics' style='font-size: 8pt;'>诗歌</a> <a href='tag/my_lyrics.html' class='tag-link-56' title='7 topics' style='font-size: 8.64814814815pt;'>配词</a></p></section>
+		
+	</div><!-- #sidebar-primary .aside -->
+
+	
+
+				
+		</div><!-- #main -->
+
+		
+				
+
+		
+		<div id="footer">
+
+			
+			<div class="footer-content">
+				
+				<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17724131-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+Copyleft ©  2010 - 2015  <a class="site-link" href="../blog.html" title="时见疏星" rel="home"><span>时见疏星</span></a> By <a href="http://www.douban.com/people/emptymalei/" title="星河里的章鱼喵@Interplanetary Immigration Agency">章鱼喵</a>. <a href="index.html%3Fp=4238.html#" title="~To tell you the truth, this site will have been established in 2211AD on Mars."> Secret 1. </a> | <a href="index.html%3Fp=4238.html#" title="The  author is SOMEBODY in Interplanetary Immigration Agency">Secret 2</a> | <a href="http://interimm.github.io/" title="Interplanetary Immigration Agency">Interplanetary Immigration Agency.</a> | Co-Reading Uses <a href="http://togetherjs.com" target="_blank">TogetherJS </a><hr/>
+
+<div style="float:left;">
+<div style="display:inline;float:left;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="知识共享许可协议" style="border-width:0;height:30px;" src="wp-content/uploads/2012/03/cc-by-nc-sa.gif" /></a></div>
+<div style="display:inline;margin-left:20px;float:left;line-height:15px;">本站作品(如无特别说明)采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><strong>CC BY-NC-SA 3.0</strong></a>。<br>(保留作者并注明出处非商业且相同方式共享。)</div>
+<div style="float:right;line-height:13px;">
+<a href="wp-admin.html" style="font-size:9px;background-color:#7aca29;color:#7aca29;width:30px;">Admin</a>
+<br>
+<a href="https://www.google.com/analytics" style="font-size:9px;background-color:#f58612;color:#f58612;width:30px;">Analytics</a>
+</div>
+</div>
+
+<div style="float:right;font-size:13px;">
+|  <a style="padding:2px 2px 2px 2px;color:#1473D7;" href="http://iastro.lamost.org/x/user/107" title="专业笔记@iAstro">宇宙</a> 
+ | <a style="padding:2px 2px 2px 2px;color:#08C;" href="http://www.douban.com/people/emptymalei" title="我的豆瓣">豆瓣</a>    
+ | <a style="padding:2px 2px 2px 2px;color:orange;" href="http://github.com/emptymalei" title="我的GitHub">GitHub</a>  
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.zhihu.com/people/emptymalei" title="我的知乎">知乎</a>                           
+ | <a style="padding:2px 2px 2px 2px;color:#2A8000;" href="http://www.quora.com/MA-Lei-1" title="My Quora">Quora</a>   
+ | <a style="padding:2px 2px 2px 2px;color:#c61800;" href="http://www.guokr.com/i/1769480175/" title="时见疏星@果壳网">果壳</a>
+ | </div>
+				
+			</div>
+
+			
+		</div><!-- #footer -->
+
+				
+		</div><!-- .wrap -->
+
+	</div><!-- #container -->
+
+	
+	<link rel='stylesheet' id='yarppRelatedCss-css'  href='wp-content/plugins/yet-another-related-posts-plugin/style/related.css%3Fver=4.2.2.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"show","visibility_hide":"hide","width":"Auto"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='wp-content/plugins/table-of-contents-plus/front.js%3Fver=1505'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/core.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/widget.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/mouse.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='wp-includes/js/jquery/ui/draggable.min.js%3Fver=1.11.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201530'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fancybox/jquery.fancybox-1.3.4.pack.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/fitvids/jquery.fitvids.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/footer-scripts.js%3Fver=1.0'></script>
+<script type='text/javascript' src='wp-content/themes/origin/js/navigation.js%3Fver=20130228'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js%3Fver=4.2.2'></script>
+<script type='text/javascript' src='wp-content/themes/origin/library/js/drop-downs.min.js%3Fver=20130805'></script>
+	
+</body>
+</html>

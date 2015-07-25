@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; Gravity</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/gravity/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>天体周围引力场和 Birkhoff 定理</title>
+		<link>http://multiverse.lamost.org/blog/4090</link>
+		<comments>http://multiverse.lamost.org/blog/4090#comments</comments>
+		<pubDate>Sat, 06 Oct 2012 15:58:20 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Differential Geometry]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4090</guid>
+		<description><![CDATA[在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。 Birkhoff 定理 Birkhoff 定理的证明用到了如下条件: 真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。 不同的度规形式 但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[1][2] &#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[
+<p>在广相中，有一个很好的定理是说，真空中的球对称引力场一定是静态的。这就是 Birkhoff 定理。Birkhoff 定理不仅可以帮助我们获得引力场分布和引力波辐射的物理图像，还可以帮助我们简化很多计算。</p>
+<h2>Birkhoff 定理</h2>
+<p>Birkhoff 定理的证明用到了如下条件:</p>
+<ul>
+<li>真空。实际上可以扩展到带有 &#92;(&#92;Lambda&#92;) 的场方程。<span id="more-4090"></span></li>
+</ul>
+<h2>不同的度规形式</h2>
+<p>但是这里有个地方我没有想明白，就是一个球对称的线元的普遍形式应该是:[<sup id="fnref-4090:1"><a href="#fn-4090:1" rel="footnote">1</a></sup>][<sup id="fnref-4090:2"><a href="#fn-4090:2" rel="footnote">2</a></sup>]</p>
+<p>&#92;[&#92;mathrm ds^2 = -&#92;gamma(r,t)c^2 &#92;mathrm dt^2 + &#92;alpha(r,t) [ &#92;mathrm dr^2 + r^2 ( &#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2 ) ] &#8211; &#92;beta(r,t)c &#92;mathrm dr&#92;mathrm dt &#92;]</p>
+<p>在刘辽的书中，他做了坐标变换，然后变成了一个更加漂亮的形式：</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>新的形式（下文称为形式二，第一个度规称为形式一）是一个正交的度规，更简单更漂亮。但是有一个问题，虽然这两个度规在本质上是等价的，但是在用来求解问题的时候，却会出现不同的结果，这是因为不同的坐标限制了不同的观者族，而不同的观者对于某些观测会得到不同的结论。[<sup id="fnref-4090:3"><a href="#fn-4090:3" rel="footnote">3</a></sup>]</p>
+<p>比如说，我们取上面两种形式的度规都是对角化的形式，也就是说扔掉了 &#92;(&#92;beta(r,t)&#92;)。这这样一个简单情况下，&#92;(&#92;phi&#92;) 坐标的 scale 两种形式有很大的不同，一个是包含 &#92;(r&#92;) 和 &#92;(t&#92;) 的一个函数 &#92;(&#92;alpha(r,t)&#92;)，另一种形式却没有。这一点会对后面各个几何量的求解带来很大的不同，因为涉及到了导数。</p>
+<h2>计算证明</h2>
+<p>基于这一点考虑，我算了一种简单的情况，就是</p>
+<p>&#92;[ &#92;mathrm ds^2 = -b(r,t) c^2&#92;mathrm dt^2 + a(r,t) &#92;mathrm dr^2 + f(t) r^2 (&#92;mathrm d&#92;theta^2 + &#92;sin^2&#92;theta &#92;mathrm d&#92;phi^2) &#92;]</p>
+<p>为了方便计算，对一些量进行了重定义，最后度规写为如下形式：</p>
+<p>&#92;[<br />
+&#92;left(<br />
+&#92;begin{array}{cccc}<br />
+ -e^{2 &#92;nu [r]} a[t]^2 &amp; 0 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; e^{2 &#92;lambda [r]} a[t]^2 &amp; 0 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; r^2 a[t]^2 &amp; 0 &#92;&#92;<br />
+ 0 &amp; 0 &amp; 0 &amp; r^2 a[t]^2 &#92;text{Sin}[&#92;text{theta}]^2<br />
+&#92;end{array}<br />
+&#92;right)<br />
+&#92;]</p>
+<p>放在带 &#92;(&#92;Lambda&#92;) 的场方程中，得到的结果如下：</p>
+<p>需要满足一下四个方程</p>
+<p>&#92;[&#92;frac{3 a'[t]^2}{a[t]^2}+&#92;frac{e^{-2 &#92;lambda [r]+2 &#92;nu [r]} &#92;left(-1+e^{2 &#92;lambda [r]}+2 r &#92;lambda &#8216;[r]&#92;right)}{r^2}==e^{2 &#92;nu [r]} &#92;Lambda  a[t]^2&#92;]</p>
+<p>&#92;[ e^{2 &#92;lambda } r &#92;Lambda  a[t]^3+&#92;frac{e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a'[t]^2}{a[t]}+&#92;frac{a[t] &#92;left(1-e^{2 &#92;lambda [r]}+2 r &#92;nu &#8216;[r]&#92;right)}{r}==2 e^{2 &#92;lambda [r]-2 &#92;nu [r]} r a&#8221;[t] &#92;]</p>
+<p>&#92;[ r &#92;left(r &#92;Lambda  a[t]^2+&#92;frac{e^{-2 &#92;nu [r]} r a'[t]^2}{a[t]^2}-&#92;frac{2 e^{-2 &#92;nu [r]} r a&#8221;[t]}{a[t]}+e^{-2 &#92;lambda [r]} &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>&#92;[ &#92;frac{1}{a[t]}e^{-2 (&#92;lambda [r]+&#92;nu [r])} r &#92;text{Sin}[&#92;text{theta}] &#92;left(e^{2 (&#92;lambda [r]+&#92;nu [r])} r &#92;Lambda  a[t]^4+e^{2 &#92;lambda [r]} r a'[t]^2-2 e^{2 &#92;lambda [r]} r a[t] a&#8221;[t]+e^{2 &#92;nu [r]} a[t]^2 &#92;left(&#92;nu &#8216;[r]+r &#92;nu &#8216;[r]^2-&#92;lambda &#8216;[r] &#92;left(1+r &#92;nu &#8216;[r]&#92;right)+r &#92;nu &#8221;[r]&#92;right)&#92;right)==0 &#92;]</p>
+<p>上面的求导是针对各自自变量的求导。</p>
+<p>自然其中第三和第四是在我们这里等价的。</p>
+<p>经过简化，这个度规的需要满足如下要求：</p>
+<p>&#92;[ &#92;frac{1}{r^2} (1-e^{2&#92;lambda}) + &#92;frac{1}{r} (&#92;nu&#8217; + &#92;lambda&#8217;) +&#92;lambda&#8217;&#92;nu&#8217; -&#92;nu&#8217;^2 &#8211; &#92;nu&#8221; =0 &#92;]<br />
+外加上面的第一个方程。</p>
+<p>从这样的式子里面，是无法得到 Birkhoff 定理的。因为上面的 &#92;(&#92;lambda&#92;) 和 &#92;(&#92;nu&#92;) 是 &#92;(r&#92;) 的函数，无法分离成 &#92;(r&#92;) 多项式形式，从而无法给出含时量的限制。</p>
+<h2>更多</h2>
+<p>其实这个理解也没有问题，因为我所使用的度规和形式二是不同的观者所使用的坐标。其他的理解在后续文章的实例中提到。我主要关心一个问题，如果我们把银河系看做浸泡在一个能动张量为 &#92;(T_{&#92;mu&#92;nu}&#92;) 的宇宙中，那么其引力场分布的解析解如何呢？</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn-4090:1">
+《广义相对论》（第二版）， 刘辽、赵峥，P145。&#160;<a href="#fnref-4090:1" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:2">
+我习惯于 +2 号差，所以将刘辽赵峥书中的度规做了改动。&#160;<a href="#fnref-4090:2" rev="footnote">&#8617;</a>
+</li>
+<li id="fn-4090:3">
+一个例子，观者 A 观测到静止的电荷 E 不会辐射光子，但是一个加速运动的观者 B 却会观测到 E 辐射光子。&#160;<a href="#fnref-4090:3" rev="footnote">&#8617;</a>
+</li>
+</ol>
+</div>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4090/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>星系巡天</title>
+		<link>http://multiverse.lamost.org/blog/4006</link>
+		<comments>http://multiverse.lamost.org/blog/4006#comments</comments>
+		<pubDate>Mon, 01 Oct 2012 12:27:53 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Dark Energy]]></category>
+		<category><![CDATA[Galaxy Survey]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Modified_Gravity]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+		<category><![CDATA[疯狂的科学]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=4006</guid>
+		<description><![CDATA[为了创建自己的引力理论测试资料库，我在 github 上创立一个 repository，来收集巡天，太阳系和地面试验的资料，并且使用 octopress 创立了一系列 html 页面，以方便查阅。 欢迎 fork! 星系巡天可以为了解大尺度结构和检查引力理论提供很重要的数据。为了方便以后查阅，现在依照以下模板来统计： Objectives: XXXXXX &#124; Completed Parameters: Facilities: Frequency/Channel: Objects: XXXX &#124; about how many XXXX measured Distance: Area: Resolution: Results Image here. What does that figure mean? Links: XXX XXX...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p><strong>为了创建自己的引力理论测试资料库，我<a href="https://github.com/CosmologyTaskForce/CosmologyTaskForce">在 github 上创立一个 repository，来收集巡天，太阳系和地面试验的资料</a>，并且<a href="http://cosmologytaskforce.github.com/CosmologyTaskForce/">使用 octopress 创立了一系列 html 页面</a>，以方便查阅。</strong></p>
+<p><a href="https://github.com/CosmologyTaskForce/CosmologyTaskForce/tree/source">欢迎 fork!</a></p>
+<hr />
+<p>星系巡天可以为了解大尺度结构和检查引力理论提供很重要的数据。为了方便以后查阅，现在依照以下模板来统计：<span id="more-4006"></span></p>
+<ul>
+<li><strong>Objectives</strong>: XXXXXX | <strong>Completed</strong></p>
+</li>
+<li>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li>Facilities: </li>
+<li>Frequency/Channel:</li>
+<li>Objects: XXXX | about how many XXXX measured</li>
+<li>Distance: </li>
+<li>Area: </li>
+<li>Resolution:</li>
+</ul>
+</li>
+</ul>
+<p><strong>Results</strong></p>
+<p>Image here.</p>
+<p>What does that figure mean?</p>
+<p><strong>Links</strong>:</p>
+<ol>
+<li>XXX</li>
+<li>XXX</li>
+</ol>
+<hr />
+<p>正在进行中的项目：</p>
+<p><a href="http://cosmologytaskforce.github.com/CosmologyTaskForce/blog/Galaxy%20Surveys/Cosmological%20Surveys/galaxy-surveys/">http://cosmologytaskforce.github.com/CosmologyTaskForce/blog/Galaxy%20Surveys/Cosmological%20Surveys/galaxy-surveys/</a></p>
+<hr />
+<p>了解一下我们在宇宙中的位置：<a href="4015">如何在宇宙中找到我们</a></p>
+<hr />
+<p>BTW，我在使用 octopress 的时候遇到一个问题，就是每次重启机器之后，如果想要使用 rake generate，需要使用 rvm rubygems latest 一次才可以，否则会出现 syntax error。请问这是为什么？感觉好奇怪。</p>
+<p>系统： Ubuntu 12.04<br />
+Ruby：1.9.3<br />
+使用RVM管理</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2336" rel="bookmark" title="GADGET-2安装">GADGET-2安装 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/4006/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>『修改引力理论简介』简要补充</title>
+		<link>http://multiverse.lamost.org/blog/3980</link>
+		<comments>http://multiverse.lamost.org/blog/3980#comments</comments>
+		<pubDate>Fri, 14 Sep 2012 07:31:26 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Dark Energy]]></category>
+		<category><![CDATA[General Relativity]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Modified Gravity]]></category>
+		<category><![CDATA[Modified_Gravity]]></category>
+		<category><![CDATA[Modifying Gravity]]></category>
+		<category><![CDATA[天文]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[宇宙演化]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=3980</guid>
+		<description><![CDATA[本文是对『修改引力理论简介』一文的简单补充。 补充一：修改引力的背景补充 上个世纪曾经有一段引力理论发展的黄金时期。大约从 Einstein 的 General Relativity 开始，产生了很多的用来描述引力的理论。比较著名比如 Branks-Dicke 的理论，该理论很大限度的包括了 Mach 原理，比如突出的一点是，Brans-Dicke 理论中包含了 Mach 的惯性与环境相关的想法，也就是说在地球上做水桶实验中转动的水桶之所以会呈现出漩涡状，是因为水桶周围有其他物质，整个宇宙合起来造成了我们对惯性的测量，从而可以理解成引力也应当与周围环境有关。后来还有很多类似的理论，这样就产生了一类 Scalar-Tensor 理论。 当时产生的理论大都可以在小尺度上退化到 GR，但是由于当时还没有宇宙加速膨胀的结论，所以大家并没有什么足够强烈的动机来使用这样的理论。但是上个世纪末的超新星测距离实验所带给我们的宇宙加速膨胀的结论，给了我们一个足够的理由来怀疑 GR 在大尺度上的准确性了，毕竟，我们只是在太阳系内比较精密的验证了 GR. 如果我们怀疑 GR 的准确性，那么我们有两条路可以走，一条是创造全新的理论，另一条是在 GR 基础上改造，一般而言，第二条路是更加实惠的方案。 如果要改造 GR， 从作用量出发是比较简单直观的。Einstein 的 General Relativity 理论中，作用量可以写作 &#92;[&#92;frac{1}{16&#92;pi G}&#92;int &#92;mathrm d^4 x &#92;sqrt{-g}...<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2782" rel="bookmark" title="修改引力理论[脑图]">修改引力理论[脑图] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1946" rel="bookmark" title="Evolution of Background and Perturbations in {Cosmology} [Intro]">Evolution of Background and Perturbations in {Cosmology} [Intro] </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>本文是对『修改引力理论简介』一文的简单补充。</p>
+<h3>补充一：修改引力的背景补充</h3>
+<p>上个世纪曾经有一段引力理论发展的黄金时期。大约从 Einstein 的 General Relativity 开始，产生了很多的用来描述引力的理论。比较著名比如 Branks-Dicke 的理论，该理论很大限度的包括了 Mach 原理，比如突出的一点是，Brans-Dicke 理论中包含了 Mach 的惯性与环境相关的想法，也就是说在地球上做水桶实验中转动的水桶之所以会呈现出漩涡状，是因为水桶周围有其他物质，整个宇宙合起来造成了我们对惯性的测量，从而可以理解成引力也应当与周围环境有关。后来还有很多类似的理论，这样就产生了一类 Scalar-Tensor 理论。<span id="more-3980"></span><br />
+当时产生的理论大都可以在小尺度上退化到 GR，但是由于当时还没有宇宙加速膨胀的结论，所以大家并没有什么足够强烈的动机来使用这样的理论。但是上个世纪末的超新星测距离实验所带给我们的宇宙加速膨胀的结论，给了我们一个足够的理由来怀疑 GR 在大尺度上的准确性了，毕竟，我们只是在太阳系内比较精密的验证了 GR.</p>
+<p>如果我们怀疑 GR 的准确性，那么我们有两条路可以走，一条是创造全新的理论，另一条是在 GR 基础上改造，一般而言，第二条路是更加实惠的方案。</p>
+<p>如果要改造 GR， 从作用量出发是比较简单直观的。Einstein 的 General Relativity 理论中，作用量可以写作</p>
+<p>&#92;[&#92;frac{1}{16&#92;pi G}&#92;int &#92;mathrm d^4 x &#92;sqrt{-g} R(g) + &#92;int &#92;mathrm d^4 x &#92;mathscr L (g, Matter)&#92;]</p>
+<p>我们可以动的地方，可以用下面的这张图来说明：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/modifiedgravitythepage.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/modifiedgravitythepage.jpg" alt="" title="Howtomodifygravity" width="600" /></a><br />
+<center><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/modifiedgravitythepage.jpg">点击图片看大图</a></center></p>
+<h3>补充二：修改引力理论脑图补充</h3>
+<p>截取 <a href="http://lss.bao.ac.cn/meeting/cosmo12/talk/0912am/COSMO12_plenary0912m_PedroFerreira.pdf">Pedro Ferreira 的报告</a>里面的一张幻灯片作为补充:</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/COSMO12_plenary0912m_PedroFerreira_10.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/COSMO12_plenary0912m_PedroFerreira_10.jpg" alt="" title="COSMO12_plenary0912m_PedroFerreira_10" width="600" /></a><br />
+<center><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/09/COSMO12_plenary0912m_PedroFerreira_10.jpg">点击图片看大图</a></center></p>
+<h3>补充三：其他『没有暗能量/暗能量被掩盖』的理论</h3>
+<p>这部分不算是修改引力的补充，但是暂时也没地方放，所以就附在这里。</p>
+<p>有很多没有暗能量的理论，或者暗能量不是我们所观测到的这样的的理论，比如</p>
+<ul>
+<li><strong>Void</strong></li>
+</ul>
+<p>该模型认为我们生活在一个不均匀的宇宙中并且生活在一个很大的空洞中，这样很容易解释超新星的数据。有些人将这个理论发展的很好了，很多数据都可以解释。</p>
+<ul>
+<li><strong>重新从经典场论的角度考察 Eisntein 的 GR</strong></li>
+</ul>
+<p>通过经典场论的方法来重新考虑 GR 的变分过程（重新理解基本场）。通过仔细的设计，总可以使得作用量中的一些项不出现在运动方程中。例子： <a href="http://arxiv.org/abs/1203.1040">Cleaning Up the Cosmological Constant</a></p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/2782" rel="bookmark" title="修改引力理论[脑图]">修改引力理论[脑图] </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1946" rel="bookmark" title="Evolution of Background and Perturbations in {Cosmology} [Intro]">Evolution of Background and Perturbations in {Cosmology} [Intro] </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/3980/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>修改引力理论[脑图]</title>
+		<link>http://multiverse.lamost.org/blog/2782</link>
+		<comments>http://multiverse.lamost.org/blog/2782#comments</comments>
+		<pubDate>Fri, 27 Apr 2012 12:22:08 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[天尽头的纸条]]></category>
+		<category><![CDATA[Gravity]]></category>
+		<category><![CDATA[Mind Map]]></category>
+		<category><![CDATA[Modifying Gravity]]></category>
+		<category><![CDATA[宇宙学]]></category>
+		<category><![CDATA[物理]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=2782</guid>
+		<description><![CDATA[修改引力理论的脑图： 一篇修改引力理论的简介，点击http://astroleaks.lamost.org/?p=5374阅读。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>修改引力理论的脑图：</p>
+<p><a href="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/ModifyingGravity.jpg"><img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/04/ModifyingGravity.jpg" alt="" title="ModifyingGravity" width="560" /></a></p>
+<p>一篇修改引力理论的简介，点击<a href="http://astroleaks.lamost.org/?p=5374">http://astroleaks.lamost.org/?p=5374</a>阅读。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/4090" rel="bookmark" title="天体周围引力场和 Birkhoff 定理">天体周围引力场和 Birkhoff 定理 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/4006" rel="bookmark" title="星系巡天">星系巡天 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/3980" rel="bookmark" title="『修改引力理论简介』简要补充">『修改引力理论简介』简要补充 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/2782/feed</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+	</channel>
+</rss>

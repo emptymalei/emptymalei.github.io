@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>时见疏星 &#187; 数据库</title>
+	<atom:link href="http://multiverse.lamost.org/blog/tag/database/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Tue, 28 Apr 2015 15:55:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>时光倒流了</title>
+		<link>http://multiverse.lamost.org/blog/1266</link>
+		<comments>http://multiverse.lamost.org/blog/1266#comments</comments>
+		<pubDate>Tue, 26 Apr 2011 15:52:41 +0000</pubDate>
+		<dc:creator><![CDATA[时见疏星]]></dc:creator>
+				<category><![CDATA[计算中的宇宙]]></category>
+		<category><![CDATA[IT]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[人生]]></category>
+		<category><![CDATA[数据库]]></category>
+
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=1266</guid>
+		<description><![CDATA[由于本人操作不慎，误将整个数据库清空。所以，你们所看到的所有的在这篇post之前的东西，包括其他附属站点的东西，都是我在4-25做的备份！时光顿时倒流到了4-25！ 对于李白的评论和我写的很长的回复，都无法挽救了…… 大致看了下，drupal站那边应该没什么损失。<div class='yarpp-related-rss'>
+<hr />
+<big><strong><font color="#ff6600">长程相关文章:</font></strong></big><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1625" rel="bookmark" title="云输入法">云输入法 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1245" rel="bookmark" title="网络与科研">网络与科研 </a><hr /></li>
+</ol>
+</div>
+]]></description>
+				<content:encoded><![CDATA[<p>由于本人操作不慎，误将整个数据库清空。所以，你们所看到的所有的在这篇post之前的东西，包括其他附属站点的东西，都是我在4-25做的备份！时光顿时倒流到了4-25！</p>
+<p>对于李白的评论和我写的很长的回复，都无法挽救了……</p>
+<p>大致看了下，drupal站那边应该没什么损失。</p>
+<div class='yarpp-related-rss'>
+<hr /><p><big><strong><font color="#ff6600">长程相关文章:</font></strong></big></p><ol>
+<li><a href="http://multiverse.lamost.org/blog/2268" rel="bookmark" title="乔布斯辞世 | Steve Jobs (1955-2011)">乔布斯辞世 | Steve Jobs (1955-2011) </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1625" rel="bookmark" title="云输入法">云输入法 </a><hr /></li>
+<li><a href="http://multiverse.lamost.org/blog/1245" rel="bookmark" title="网络与科研">网络与科研 </a><hr /></li>
+</ol></p>
+</div>
+]]></content:encoded>
+			<wfw:commentRss>http://multiverse.lamost.org/blog/1266/feed</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

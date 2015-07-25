@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>Comments on: 关于六维空间的积分计算</title>
+	<atom:link href="http://multiverse.lamost.org/blog/101/feed" rel="self" type="application/rss+xml" />
+	<link>http://multiverse.lamost.org/blog/101</link>
+	<description>流年暗中偷换</description>
+	<lastBuildDate>Thu, 18 Jun 2015 01:43:53 +0000</lastBuildDate>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.2</generator>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/101/comment-page-1#comment-18</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Sun, 08 Aug 2010 22:18:57 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=101#comment-18</guid>
+		<description><![CDATA[哇~我才2万&#8230;&#8230; ]]></description>
+		<content:encoded><![CDATA[<p>哇~我才2万&hellip;&hellip; </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: 6v积分...</title>
+		<link>http://multiverse.lamost.org/blog/101/comment-page-1#comment-17</link>
+		<dc:creator><![CDATA[6v积分...]]></dc:creator>
+		<pubDate>Sun, 08 Aug 2010 21:43:58 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=101#comment-17</guid>
+		<description><![CDATA[最近刚攒到2,000,000. 
+我真是个数字控. ]]></description>
+		<content:encoded><![CDATA[<p>最近刚攒到2,000,000.<br />
+我真是个数字控. </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: Marvin</title>
+		<link>http://multiverse.lamost.org/blog/101/comment-page-1#comment-10</link>
+		<dc:creator><![CDATA[Marvin]]></dc:creator>
+		<pubDate>Mon, 02 Aug 2010 21:22:05 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=101#comment-10</guid>
+		<description><![CDATA[原本想测试一下ＧＮＵＰｌｏｔ的，可是最后发现不好用，只好插图片了～ ]]></description>
+		<content:encoded><![CDATA[<p>原本想测试一下ＧＮＵＰｌｏｔ的，可是最后发现不好用，只好插图片了～ </p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>By: chancewu</title>
+		<link>http://multiverse.lamost.org/blog/101/comment-page-1#comment-9</link>
+		<dc:creator><![CDATA[chancewu]]></dc:creator>
+		<pubDate>Mon, 02 Aug 2010 21:17:18 +0000</pubDate>
+		<guid isPermaLink="false">http://multiverse.lamost.org/blog/?p=101#comment-9</guid>
+		<description><![CDATA[用mathematica? 
+==&#124;...看错了 我以为你算的事dim=6的积分...我说嘛...那有啥好算得... ]]></description>
+		<content:encoded><![CDATA[<p>用mathematica?<br />
+==|&#8230;看错了 我以为你算的事dim=6的积分&#8230;我说嘛&#8230;那有啥好算得&#8230; </p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>
