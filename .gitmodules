@@ -4,3 +4,6 @@
 [submodule "survive-research"]
 	path = survive-research
 	url = https://github.com/emptymalei/survive-research.git
+[submodule "tool"]
+	path = tool
+	url = https://github.com/emptymalei/survive-research.git
