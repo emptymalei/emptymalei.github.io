@@ -51,7 +51,13 @@ disqus-shortname:
 duoshuo-shortname: openmetric
 
 
+# Plugins for github pages
 
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
 
 
 
