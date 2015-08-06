@@ -22,8 +22,8 @@ layout: default
 				{{ content }}
 				<hr />
 				<footer class="page-footer">
-					{% if page.categories %} {% case condition %}  {% when lang == cn %} {% include page-author-cn.html %} {% else %} {% include page-author.html %} {% endcase %} {% endif %}
-					{% if page.share != false %}  {% case condition %}  {% when sharelang == cn %} {% include share-this-cn.html %} {% else %} {% include share-this.html %} {% endcase %} {% endif %}
+					{% if page.categories %} {% include page-author.html %}  {% endif %}
+					{% if page.share != false %} {% include share-this.html %} {% endif %}
 					{% include page-meta.html %}
 				</footer><!-- /.footer -->
 				<aside>
