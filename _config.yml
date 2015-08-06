@@ -46,9 +46,10 @@ owner:
     ad-slot: 
   bio: "Physics is the game."
   avatar: octomiao.png # 160x160 px image for author byline
-  weibo: 十只手的章鱼喵
-disqus-shortname: 
+  weibo: 章鱼喵-十只手
+disqus-shortname: darkhypernova
 duoshuo-shortname: openmetric
+swiftype: kGzvV1L-RzYo_pfREF9P
 
 
 # Plugins for github pages
