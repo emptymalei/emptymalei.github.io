@@ -23,7 +23,7 @@ layout: default
 				<hr />
 				<footer class="page-footer">
 					{% if page.categories %} {% case condition %} {% when lang == cn %} {% include page-author-cn.html %} {% else %} {% include page-author.html %} {% endcase %}  {% endif %}
-					{% if page.share != false %} {% if sharelang == null %} {% case condition %} {% when sharelang == cn %} {% include share-this-cn.html %} {% else %} {% include share-this.html %} {% endcase %} {% elsif sharelang == en %}  {% include share-this-en.html %} {% elsif sharelang == cn %}  {% include share-this-cn.html %} {% endif %} {% endif %}
+					{% if page.share != false %} {% case condition %} {% when sharelang == cn %} {% include share-this-cn.html %} {% else %} {% include share-this.html %} {% endcase %} {% endif %}
 					{% case condition %} {% when lang == cn %} {% include page-meta-cn.html %} {% else %} {% include page-meta.html %} {% endcase %}
 				</footer><!-- /.footer -->
 				<aside>
