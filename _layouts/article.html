@@ -12,7 +12,7 @@ layout: default
 			</div><!-- /.page-image -->
 		</div><!-- /.page-feature -->
 		{% endif %}
-		{% if page.categories %}{% include breadcrumbs.{{ lang }}.html %}{% endif %}
+		{% if page.categories %} {% case condition %} {% when lang == cn %} {% include breadcrumbs-cn.html %} {% else %} {% include breadcrumbs-en.html %} {% endcase %} {% endif %}
 		<div class="page-title">
 			<h1>{{ page.title }}</h1>
 		</div>
