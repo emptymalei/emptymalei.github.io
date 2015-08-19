@@ -1,9 +1,0 @@
-.spacegallery {
-	POSITION: relative; OVERFLOW: hidden
-}
-.spacegallery IMG {
-	POSITION: absolute; RIGHT: 0px
-}
-.spacegallery A {
-	Z-INDEX: 1000; POSITION: absolute; WIDTH: 100%; DISPLAY: block; BACKGROUND: url(http://multiverse.lamost.org/testbed/historyguide1/css/images/blank.gif); HEIGHT: 100%; TOP: 0px; LEFT: 0px
-}
