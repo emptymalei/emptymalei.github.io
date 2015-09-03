@@ -9,7 +9,7 @@ title: Today I Learned
 
 
 <div class="front-cover" style="background:url(../images/{{ site.cover_image }}) no-repeat fixed center;background-size:cover;overflow:hidden;">
-    
+
     <section>
         <div class="container" style="padding-top:0.5em;">
             <h1 style="text-align:center;color:#fff;font-weight:600;" id="site-title-front">#TIL#</h1>
@@ -45,3 +45,7 @@ Generating more TILs
 ## Reading
 
 
+Things to remember:
+
+1. Energy and temeprature: $$\frac{1}{40}\mathrm{eV} = 300\mathrm{K} k_B .$$
+2. Natural units: energy is related to length by $$ 1\mathrm{fm} = \frac{1}{197\mathrm{MeV}}.$$
