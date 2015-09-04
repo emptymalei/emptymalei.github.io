@@ -43,9 +43,3 @@ Generating more TILs
 -----
 
 ## Reading
-
-
-Things to remember:
-
-1. Energy and temeprature: $$\frac{1}{40}\mathrm{eV} = 300\mathrm{K} k_B .$$
-2. Natural units: energy is related to length by $$ 1\mathrm{fm} = \frac{1}{197\mathrm{MeV}}.$$
