@@ -43,7 +43,7 @@ owner:
   twitter: emptymalei
   google:
     ad-client:
-    ad-slot: 
+    ad-slot:
   bio: "Physics is the game."
   avatar: octomiao.png # 160x160 px image for author byline
   weibo: 章鱼喵-十只手
@@ -61,16 +61,8 @@ gems:
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
+- jekyll-feed
 
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
-
-
-
-
-
-
-
-
-
