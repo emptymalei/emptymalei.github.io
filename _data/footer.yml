@@ -1,14 +1,5 @@
 # Footer navigation links
 
-- title: Subscribe
-  url: /subscribe/
-
-- title: Research Tools
-  url: /tool/
-
-- title: Kerbal
-  url: /ksp/
-
 - title: 娱乐
   url: /ent/
 
@@ -20,6 +11,18 @@
 
 - title: NeuronStar
   url: http://neuronstar.github.io
+
+- title: Kerbal
+  url: /ksp/
+
+- title: Subscribe
+  url: /subscribe/
+
+- title: Research Tools
+  url: /tool/
+
+- title: Neutrino.xyz
+  url: http://neutrino.xyz
 
 - title: GitHub
   url: http://github.com/emptymalei
