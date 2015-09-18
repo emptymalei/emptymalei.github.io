@@ -8,17 +8,17 @@ More about the author: [OctoMiao: Open is the key](http://openmetric.org/me/)
 
 Some GitHub repos to check out,
 
-1. [Physics Research Survival Manual](http://prsm.readthedocs.org/): Some notes on physics and math, with some fun facts in physics.
-2. [Statistical Physics](http://emptymalei.github.io/StatisticalPhysics): Statistical Physics lecture notes.
-3. [Survive Research](http://emptymalei.gitbooks.io/gssm/): Some tools to help you survive scientific research.
-4. [Neutrino](http://neutrino.readthedocs.org): A doc about neutrinos.
+1. [Physics Research Survival Manual](http://openmetric.org/physics): Some notes on physics and math, with some fun facts in physics.
+2. [Statistical Physics](http://emptymalei.github.io/statisticalphysics): Statistical Physics lecture notes.
+3. [Survive Research](http://emptymalei.github.io/tool/): Some tools to help you survive scientific research.
+4. [Neutrino Physics](http://docs.neutrino.xyz): About neutrinos.
 
 
 
 Some interesting GitHub organizations
 
 1. [NeuPhysics](https://github.com/NeuPhysics): An organization about neutrino physics.
-2. [CosmologyTaskForce](): Not exactly cosmology but some half-finished work on cosmology, physics, etc.
+2. [CosmologyTaskForce](https://github.com/CosmologyTaskForce): Not exactly cosmology but some half-finished work on cosmology, physics, etc.
 3. [JuliaQuantum](https://github.com/JuliaQuantum): Quantum using Julia Language
 
 
@@ -30,9 +30,6 @@ Some interesting GitHub organizations
 
 -----
 
-这个小本本是基于 jekyll 的，使用了 [Skinny Bones Jekyll Starter](http://mmistakes.github.io/skinny-bones-jekyll) 主题，做了很多修改以适应中文环境。
+这个小本本的主题是基于 jekyll 的，使用了 [Skinny Bones Jekyll Starter](http://mmistakes.github.io/skinny-bones-jekyll) 主题，做了很多修改以适应中文环境。修改后的主题在此：[planets-jekyll](https://github.com/emptymalei/planets-jekyll).
 
 同时[星际移民中心的星海航纪](http://interimm.org/magazine)也是使用了这个主题。
-
-
-
