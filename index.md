@@ -1,12 +1,12 @@
 ---
 layout: archive
 permalink: /
-title: 
+title:
 ---
 
 
 <div class="front-cover" style="background:url(./images/{{ site.cover_image }}) no-repeat fixed center;background-size:cover;overflow:hidden;height:400px !important;">
-    
+
     <section>
         <div class="container" style="padding-top:1em;">
             <h1 style="text-align:center;color:#fff;font-weight:600;" id="site-title-front">{{ site.title }}</h1>
@@ -46,7 +46,7 @@ No TIL, for now.
 
 
 
-## 近期科学
+## Science
 
 <div class="tiles">
 {% for post in site.categories.science limit:5 %}
@@ -78,5 +78,3 @@ No Science, for now.
 		{% else %}
 No Stories, for now.
 		{% endif %}
-
-
