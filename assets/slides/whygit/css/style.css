@@ -1,0 +1,69 @@
+.reveal i {
+    font-family: 'FontAwesome';
+    font-style: normal;
+}
+/*.reveal .controls div {
+    border: 10px solid rgba(0, 0, 0, 0) !important;
+}*/
+
+body::selection {
+    color: #C3E99E !important;
+}
+.reveal .controls {
+    opacity: 0.3 !important;
+}
+.flash-span {
+    -vendor-animation-duration: 10s;
+    -vendor-animation-delay: 2s;
+    -vendor-animation-iteration-count: infinite;
+}
+/* LIST #2 */
+
+#list-num {
+    width: 320px;
+}
+#list-num ol {
+    font-style: italic;
+    font-family: Georgia, Times, serif;
+    font-size: 24px;
+    color: #bfe1f1;
+}
+#list-num ol li {} #list-num ol li p {
+    padding: 8px;
+    font-style: normal;
+    font-family: Arial;
+    font-size: 13px;
+    color: #eee;
+    border-left: 1px solid #999;
+}
+#list-num ol li p em {
+    display: block;
+}
+.greeny {
+    color: #00AC71;
+}
+.purply {
+    color: #754582;
+}
+.bluy {
+    color: #6287A6;
+}
+/*.strike {
+    text-decoration: line-through;
+}*/
+
+.reveal .slides section .fragment.strike {
+    opacity: 1;
+}
+.reveal .slides section .fragment.strike.visible {
+    text-decoration: line-through;
+}
+.bordered-thin {
+    border: 1px solid grey;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.buttonb a{
+border: 1px solid grey;
+}

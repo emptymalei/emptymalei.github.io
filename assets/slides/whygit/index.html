@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Why Git in Physics Department</title>
+
+    <meta name="description" content="A git presentation in physics department">
+    <meta name="author" content="Octokitty">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+
+    <!--    <link rel="stylesheet" href="css/buttons.css">
+    <script type="text/javascript" src="js/buttons.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>-->
+    <!-- Only used in buttons -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>Why Physicists Should Use Git</h1>
+                <h3>Or why everyone should try git</h3>
+                <p>
+                    <small>Created by
+                        <a href="http://emptymalei.github.io">Octokitty</a>
+                    </small>
+                </p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>If
+                        <strong>
+                            <span class="bluy">git</span>
+                        </strong>is the
+                        <span class="greeny">answer</span>,</h3>
+                    <h2>what is the
+                        <span class="purply">question</span>?</h2>
+                    <p class="fragment fade-in">
+                        Let's go shopping.
+                        <span class="animated shake" style="display:block;">
+                            <i class="fa fa-shopping-cart fa-3"></i>
+                            <i class="fa fa-level-down"></i>
+                        </span>
+                    </p>
+
+                    <aside class="notes">
+                        Get your shopping cart and move.
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h3>How Do We Track What We Have Done?</h3>
+                    <h4>Shopping List - Add & Commit</h4>
+                    <ol>
+                        <li class="fragment strike">Apple</li>
+                        <li class="fragment strike">Orange</li>
+                        <li class="fragment strike">Milk</li>
+                        <li>Beef</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h3>How Do Alice and Bob Shop Together?</h3>
+                    <h4>Collaborative Shopping - Push & Pull</h4>
+                    <div style="display:block;">
+                        <div style="float:left;width:50%;">
+                            <h4>Alice</h4>
+                            <ul>
+                                <li class="fragment" data-fragment-index="1">Apple</li>
+                                <li class="fragment" data-fragment-index="3">Orange</li>
+                                <li class="fragment" data-fragment-index="5">
+                                    <span class="purply">Beef</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="float:right;width:50%;">
+                            <h4>Bob</h4>
+                            <ul>
+                                <li class="fragment" data-fragment-index="2">Milk</li>
+                                <li class="fragment" data-fragment-index="4">Cereal</li>
+                                <li class="fragment" data-fragment-index="6">
+                                    <span class="purply fragment strike" data-fragment-index="7">Beef</span>
+                                </li>
+                                <li class="fragment" data-fragment-index="8">Chocolate</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <section>
+                    <h3>Social Shopping - Fork & Pull Request</h3>
+                    <div>
+                        <p class="greeny fragment" style="border:1px solid grey;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">Look at Charles. He's got nice things in his cart. Let's just copy it.</p>
+                        <p class="bluy fragment" style="border:1px solid grey;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">Alice, I think Charles should also get a lot more to eat. Let's tell him.</p>
+                        <p class="purply fragment" style="border:1px solid grey;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">Hey I do need them. I'll merge your cart to mine.</p>
+                    </div>
+
+
+                    <aside class="notes">
+                        They live in the Matrix.
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h3>
+                        <span class="bluy">Git</span>, Is Much More Powerful!
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                    </h3>
+
+
+                </section>
+
+
+            </section>
+
+
+            <section>
+
+                <section data-background="img/branching-illustration@2x-op3.png">
+
+                    <h2>Git</h2>
+                    <h3 class="fragment">
+                        Is a
+                        <span class="bluy">Distributed&nbsp;</span>Version Control System</h3>
+                    <h3 class="fragment">blesses your files and data</h3>
+                    <h3 class="fragment">is Fast and easy to use</h3>
+                    <h3 class="fragment">is Open Source</h3>
+
+                </section>
+
+                <section>
+                    <h3>
+                        <span class="bluy">Distributed&nbsp;</span>Version Control System</h3>
+                    <div>
+                        <h4>Version Control</h4>
+                        <p>
+                            <img src="img/branches@2x.png">
+                        </p>
+                    </div>
+
+
+                </section>
+                <section>
+                    <h3>
+                        <span class="bluy">Distributed&nbsp;</span>Version Control System</h3>
+
+                    <div>
+                        <h4>
+                            <span class="bluy">Distributed</span>
+                        </h4>
+                        <p>
+                            <img src="img/network.png" width="100%">
+                        </p>
+                        <p>Decentralization</p>
+
+                    </div>
+
+                </section>
+
+                <section>
+                    <h3>files and data assurance</h3>
+                    <p>
+                        Git always adds things, even you do deletions.
+                    </p>
+                    <p>
+                        Records of each change are kept safe.
+                    </p>
+                    <p>
+                        Rolling back to previous commits is easy.
+                    </p>
+                </section>
+                <section>
+                    <h3>Easy to Use</h3>
+                    <p>GUI for Mac, Linux and even Windows</p>
+                    <p>CL involves only 4 or 5 commands for beginners.
+                        <img src="img/index1@2x.png">
+                    </p>
+
+
+                    <aside class="notes">Yet so powerful that it might take one several months or years to be an expert.</aside>
+                </section>
+                <section>
+                    <h3>Open Source and Free to Use</h3>
+                    <p>
+                        <img src="img/behroze-gnu-button2.png">
+                    </p>
+                </section>
+
+            </section>
+
+
+
+            <section>
+                <section>
+                    <h2>Git in Action</h2>
+                    <h3>Writing An Essay: Offline and Alone</h3>
+                </section>
+
+                <section>
+                    <h3>One Person Workflow
+
+                        <img src="img/gitalone.png">
+                    </h3>
+
+                    <div>
+                        <h5>How do we keep track of revision history?
+                            <img src="img/index2@2x.png" height="30%" caption="aaa">
+                        </h5>
+
+                    </div>
+                </section>
+                <section>
+                    <h3>files in the cloud</h3>
+                    <p>Push to remote server</p>
+                    <p>
+                        <img src="img/githubcloud.jpg" alt="http://octodex.github.com/cloud/" width="40%">
+                        <p>http://octodex.github.com/cloud/</p>
+                    </p>
+
+                </section>
+            </section>
+
+
+
+            <section>
+
+                <section>
+                    <h3>What if we want to collaborate?</h3>
+                    <p>
+                        <img src="img/gittrees.png">
+                        <p style="font-size:60%;color:grey;">http://git-scm.com/blog</p>
+                    </p>
+                    <p>Git is a
+                        <span class="bluy">DISTRIBUTED&nbsp;</span>tool.</p>
+                    <aside class="notes">This is why I highlighted distributed</aside>
+                </section>
+
+                <section>
+                    <h3>GitHub</h3>
+                    <p>
+                        <img src="img/github-logo-social-coding.png">
+                    </p>
+                </section>
+
+                <section>
+                    <h3>Collaborate on GitHub</h3>
+                    <div style="padding:1em 0 2em 0;">
+                        <ul>
+                            <li class="fragment">Push</li>
+                            <li class="fragment">Pull</li>
+                            <li class="fragment">Fork</li>
+                            <li class="fragment">Pull Request</li>
+                            <li class="fragment">Network Graph</li>
+                        </ul>
+
+                    </div>
+                    <div class="fragment">GitHub is designed to be Decentralized.</div>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <h2>Git in Action</h2>
+                    <h3>Writing An Essay: Collaboration</h3>
+                </section>
+                <section>
+                    <h3>Network Graph of
+                        <a href="https://github.com/certik/theoretical-physics" target="_blank">Theoretical Physics Repo</a>
+                    </h3>
+
+                    <div>
+                        <img src="img/thphynetwork.png">
+                    </div>
+
+
+                </section>
+
+
+                <section>
+                    <h3>Network Graph of
+                        <a href="https://github.com/certik/theoretical-physics" target="_blank">Theoretical Physics Repo</a>
+                    </h3>
+                    <h4>Decentralization</h4>
+                    <div>
+                        <img src="img/thphynetwork2.png">
+                    </div>
+                    <p>When I say decentralization I do mean
+                        <span style="display:block;">D-E-C-E-N-T-R-A-L-I-Z-A-T-I-O-N.</span>
+                    </p>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <h3>GitHub, Social Coding?</h3>
+                    <div>
+                        <h4>
+                            GitHub is not only for programmers.
+                        </h4>
+                        <ul>
+                            <li class="fragment">A New Filesystem</li>
+                            <li class="fragment">GitHub "Organizations"</li>
+                            <li class="fragment">GitHub Pages</li>
+                            <li class="fragment">Open Science?</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Not A Programmer? No Problem.</h3>
+                    <div>
+                        <h4>So many ways to use GitHub</h4>
+                        <ul>
+                            <li class="fragment">
+                                <span class="purply">Teaching</span>
+                                <ul>
+                                    <li>Lecture Notes</li>
+                                    <li>Students' Work Tracking</li>
+                                    <li>Course Webpage</li>
+                                    <li>Collaboration</li>
+                                    <li>Assignments</li>
+
+                                    <li>
+                                        <i class="fa fa-ellipsis-h"></i>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="fragment">Book Writing</li>
+                            <li class="fragment">Blogging</li>
+                            <li class="fragment">Photographing</li>
+                            <li class="fragment">Music Composing</li>
+                            <li class="fragment">3D Modeling</li>
+                            <li class="fragment">Geomapping</li>
+                            <li class="fragment">Even
+                                <a href="https://github.com/bundestag/gesetze">German Federal Law</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+            </section>
+
+
+            <section>
+                <section>
+                    <h3>Wait, I thought we were talking about Git.</h3>
+                    <h4 class="fragment">GitHub is the largest and probably the best.</h4>
+                    <h4 class="fragment">We do have a bunch of alternatives.</h4>
+                    <div class="fragment">
+                        <ul>
+                            <li>
+                                <a href="https://bitbucket.org/">Bitbucket</a>- #service#</li>
+                            <li>
+                                <a href="https://codeplane.com/">CODEPLANE</a>-#service#</li>
+                            <li>
+                                <a href="https://www.gitorious.org/">Gitorious</a>- #selfhosted#</li>
+                            <li>
+                                <a href="https://www.gitlab.com/">GitLab</a>-#selfhosted#</li>
+                            <li>
+                                <i class="fa fa-ellipsis-h"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </section>
+
+
+            <section>
+                <section>
+                    <h3>What About My Privacy?</h3>
+                    <div>
+                        <p>Work offline or as a better choice use private repository.
+
+                        </p>
+                        <ul>
+                            <li>Buy GitHub Pro Account</li>
+                            <li>Apply for Free Student Account</li>
+                            <li>Switch to
+                                <a href="https://bitbucket.org/">Bitbucket</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Open Science</h2>
+                    <h3>Science is open already, but we need more.</h3>
+
+                    <p class="fragment">The workflow of science is like our git workflow. It's just not git enough.</p>
+                    <p class="fragment">Fork a work, not just a paper.</p>
+                    <p class="fragment">Decentralize research by open science. Fight Matthew effect.</p>
+                    <p class="fragment">New Evaluation Procedure for scientists is one of the keypoints.</p>
+
+                </section>
+            </section>
+
+            <section>
+                <h3>Get Started</h3>
+                <div>
+                    <h4>Resources</h4>
+                    <p>
+                        <a href="http://git-scm.com/" target="_blank">git-scm</a>&nbsp; | &nbsp;
+                        <a href="http://github.com" target="_blank">GitHub</a>
+                        <br>
+                        <a href="http://www.youtube.com/user/GitHubGuides" style="dislay:block;" target="_blank">GitHub Training & Guides@Youtube</a>
+                        <br>
+                        <a href="https://education.github.com/" target="_blank">Benefit from GitHub Education</a>
+
+
+                    </p>
+                </div>
+                <div>
+
+                    <img src="img/octobiwan.jpg" alt="http://octodex.github.com/octobiwan/" width="40%">
+                    <span style="display:block;font-size:60%;">http://octodex.github.com/octobiwan/</span>
+                </div>
+            </section>
+            <section>
+                <h3>This page doesn't exist!</h3>
+                <hr>
+                <p>
+                <p>Source of this presentation is <a href="http://github.com/emptymalei/gradschool/tree/gh-pages" target="_blank">here (gradschool)</a>. [Presentations/whygit]
+                </p>
+                <p>I use <a href="https://github.com/hakimel/reveal.js" target="_blank">reveal.js</a> to make these slides. It's a great tool.
+                </p>
+                </p>
+                <hr>
+                <p>My GitHub Account:
+                    <a href="http://github.com/emptymalei" target="_blank">@OctoKitty</a>
+                </p>
+                <p>A HTML4Scientists Template:
+                    <a href="https://github.com/opentf/html4scientists" target="_blank">HTML4Scientists</a>
+                </p>
+                <p>Survive Grad School:
+                    <a href="http://emptymalei.github.io/gradschool/" target="_blank">GradSchool Repo</a>
+                </p>
+                <hr>
+                <h4>AND, USE THE COMMAND LINE TOOL, LUKE.</h4>
+            </section>
+
+
+
+
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        // Full list of configuration options available here:
+         // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            progress: true,
+            fragments: true,
+            slideNumber: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
+    </script>
+    
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49034078-2', 'emptymalei.github.io');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
