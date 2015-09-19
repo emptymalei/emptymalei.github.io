@@ -6,7 +6,7 @@ modified: 2013-01-22 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
+categories: sciencecn
 summary: 西夏文虽然是模仿中原的汉字所创造的文字，但是由于西夏语属于汉藏语系中的藏缅语族，而汉语是汉语语族，所以两者在语法上有很大的差别。
 ---
 

@@ -6,7 +6,7 @@ modified: 2013-04-06 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
+categories: sciencecn
 summary: 线性代数里面我们的矩阵一般是求解方程组引入的。那么除了求解方程组之外，线性代数还可以做什么呢？
 ---
 
@@ -63,7 +63,7 @@ $$x^2 + 4xy + 2xz + y^2 + 2yz + 4z^2 = 1$$
 
 $$
 \begin{pmatrix}
-x & y & z 
+x & y & z
 \end{pmatrix}
 \left[
 \begin{pmatrix}
@@ -159,5 +159,3 @@ $$
 
 1. 本文里面的一些定理的证明，请参考《数学桥》一书。
 2. 本文主要是依据《数学桥》一书编辑整理而成。
-
-

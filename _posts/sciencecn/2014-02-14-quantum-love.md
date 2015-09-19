@@ -6,7 +6,7 @@ modified: 2014-02-14 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: sciencecn
 summary: 用量子力学的基础知识来描述爱情。
 ---
 
@@ -84,7 +84,7 @@ $$\ket{\mathrm{Lei}} = \ket{\mathrm{Single}}\otimes \ket{\mathrm{Boy}} .$$
 
 $$\{ \ket{\mathrm{Boy}},\ket{\mathrm{Girl}} \} \otimes \{ \ket{ \mathrm{Single}},\ket{\mathrm{Non-Single} }\} .$$
 
-为了简化，我们就简单的认为 
+为了简化，我们就简单的认为
 
 $$\ket{\mathrm{Non-Single}} = \ket{\mathrm{inLove} }.$$
 
@@ -137,7 +137,7 @@ $$ \left[ \hat H, \hat \rho \right] = 0 $$
 
 $$\hat H(\vec r_1,\vec r_2) = \hat H_1(\vec r_1) + \hat H_2(\vec r_2)$$
 
-这里呢，$\vec r_i$ 是指的各自在总空间的坐标，也就是说，我们可以制作对于二人体系的一个完备基矢 $\{ \ket{r_1,r_2} \}$. 
+这里呢，$\vec r_i$ 是指的各自在总空间的坐标，也就是说，我们可以制作对于二人体系的一个完备基矢 $\{ \ket{r_1,r_2} \}$.
 
 这样一来，二人体系的波函数可以写作
 
@@ -201,9 +201,3 @@ $$ \ket{\psi} = \frac{1}{\sqrt{2}}( \ket{\mathrm{Boy's State1}} \ket{\mathrm{Gir
 
 [^0]: 赶紧划掉，已经不是单身了。
 [^1]:  biu biu biu，跟统计物理里面的 Hamilton Dynamics 差不多嘛，多了个虚数（好神奇哦），多了个代表量子力学的基本量（好神奇哦），Poisson 括号变成对易子（好神奇哦）。真打脸。刚才说量子力学是统计物理和经典力学的杂交（真的么？）。
-
-
-
-
-
-

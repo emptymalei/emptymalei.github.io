@@ -6,7 +6,7 @@ modified: 2013-07-23 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: sciencecn
 summary: Alan Sandage 曾经说过 Cosmology 的任务就是要寻找两个参数：哈勃常数 $H_0$ 和减速因子 $q_0$。这两个分别给出了宇宙膨胀的「速度」和「加速度」。如今我们的技术已经有了很大的进步，同样我们也早已不满足仅仅寻找这两个参数。
 ---
 
@@ -79,11 +79,11 @@ $$ H(z) = -\frac{1}{z+1}\frac{\mathrm dz}{\mathrm dt} $$
 
 ### Redshift Drift
 
-除了 DAG，我们还可以直接测量以我们当地时间为基准的红移变化率，即 
+除了 DAG，我们还可以直接测量以我们当地时间为基准的红移变化率，即
 
 $$ z(t_0+\Delta t_0) = \frac{a(t_0 + \Delta t_0)}{a(t_s + \Delta t_0)} - 1 $$
 
-当 $\Delta t_0$ 很小的时候，我们可以根据导数的定义求的 redshift drift [[^redshiftdrift1]] 
+当 $\Delta t_0$ 很小的时候，我们可以根据导数的定义求的 redshift drift [[^redshiftdrift1]]
 
 $$\dot z= \mathrm dz / \mathrm dt_0 =\lim_{\Delta t_0 \rightarrow 0} \frac{\Delta z}{\Delta t_0} = \lim_{\Delta t_0\rightarrow 0} \frac{\dot a(t_0) - \dot a(t_s)}{a(t_s)} = (1+z)H_0 - H(z) $$.
 

@@ -6,7 +6,7 @@ modified: 2014-01-11 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
+categories: sciencecn
 summary: Creative Commons License 是一种比较常用的公共版权的授权。可以有针对的限制某些活动的同时保持作品可以被（部分的）公共使用。
 ---
 

@@ -6,7 +6,7 @@ modified: 2014-05-21 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
+categories: sciencecn
 summary: 关于四元数和转动的关系
 ---
 
@@ -89,7 +89,3 @@ R\circeq e^{-i \theta}.
 $$
 
 然后这里可就让我们想到了这是二维欧式空间转动的生成元。
-
-
-
-

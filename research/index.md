@@ -26,6 +26,16 @@ Topics I have worked on:
 [My ResearchGate profile](https://www.researchgate.net/profile/Lei_MA).
 
 
+## Presentations & Talks
+
+My Speaker Deck is here: [https://speakerdeck.com/emptymalei](https://speakerdeck.com/emptymalei)
+
+* [Why Git](/assets/whygit)
+* [Accretion Disc Around Black Hole](https://speakerdeck.com/emptymalei/accretion-disc-around-black-hole)
+* [Neutrino Oscillations in Matter](https://speakerdeck.com/emptymalei/neutrino-oscillations-in-matter)
+* [Majorana Fermions](https://speakerdeck.com/emptymalei/majorana-fermion)
+
+
 ## Online Docs
 
 1. [NeuPhysics](https://github.com/NeuPhysics): A GitHub Organization for Neutrino Physics.

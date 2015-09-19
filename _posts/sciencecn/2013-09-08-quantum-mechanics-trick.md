@@ -6,7 +6,7 @@ modified: 2013-08-09 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
+categories: sciencecn
 summary: 量子力学里面很多 e 指数函数，这类函数的一大特点就是导数会出现这个函数本身，所以有时候可以利用这个特点来简化计算。
 ---
 
@@ -27,7 +27,7 @@ $$ C_2 = -\frac{1}{2\eta^2} $$
  $$\bra{\psi}\hat p^2 \ket{\psi}$$
 
 而求解这个量的过程中，需要用到如下的计算
- 
+
 $$ \psi^ * \frac{\d}{\d x}\frac{\d}{\d x} \psi $$
 
 一个比较简便的做法是定义如下的中间量
@@ -50,7 +50,7 @@ $$
 \end{eqnarray}
 $$
 
-而 
+而
 $$\psi^ * \psi$$
 这一项里面的带有虚数指数的部分变成了 1，所以最后的计算就会比较简单，不易出错。
 

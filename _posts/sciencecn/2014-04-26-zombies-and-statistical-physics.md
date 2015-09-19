@@ -6,7 +6,7 @@ modified: 2014-04-26 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: sciencecn
 summary: 这是一个关于僵尸的悲惨的故事。有一位可怜的僵尸小朋友，他的名字叫做小喵。他不幸走进了一个神奇的僵尸魔环，任他怎么努力，都走不出去了。他很沮丧，但是现在不是失去理智的时候。他需要快速的计算一下自己的存活率。
 published:false
 ---
@@ -222,7 +222,7 @@ $$
 \end{equation}
 $$
 
-其中 
+其中
 
 $$
 \begin{equation}

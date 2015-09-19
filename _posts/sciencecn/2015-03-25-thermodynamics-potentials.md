@@ -6,7 +6,7 @@ modified: 2015-03-25
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: sciencecn
 summary: 热力学势之间的关系以及 Legendre 变换
 ---
 
@@ -81,7 +81,7 @@ $$H(S) = U -TS$$
 
 整个图片是从中间的 $U(S,X,\{N_i\})$ 开始的，这是内能，内能是熵S、广义位移 X （以及粒子分布 {N_i} ）的函数。。
 
-1. 如果我们给内能 $U(S, X, \{N_i\})$ 加上一个 mechanical coupling $-XY$，那么就得到了焓。从前面的 Legendre transformation 看到，这时候焓 $H$ 变成了 $S, X, \{N_i\}$ 的函数。所以在气体的理论中，$H$ 是 $S, p$ 的函数，所以等压热容自然是 $C_p = \left( \partial_T H\right)_p$. 
+1. 如果我们给内能 $U(S, X, \{N_i\})$ 加上一个 mechanical coupling $-XY$，那么就得到了焓。从前面的 Legendre transformation 看到，这时候焓 $H$ 变成了 $S, X, \{N_i\}$ 的函数。所以在气体的理论中，$H$ 是 $S, p$ 的函数，所以等压热容自然是 $C_p = \left( \partial_T H\right)_p$.
 2. 如果我们给内能和焓加上 thermal coupling $-ST$，那么我们就得到了两种自由能，分别是 Helmholtz 自由能和 Gibbs 自由能。同第一条里的道理，可以通过 Legendre transformation 自行分析两个是什么的函数。
 3. 如果我们给 Helmholtz 自由能加上一个 chemical coupling $-\sum_i \mu_i N_i$，那么我们得到了巨热力学势 $\Omega(T,X,\{\mu_i\})$。
 
@@ -120,7 +120,7 @@ $$Y =  \left(\frac{\partial U}{\partial X}\right)_S$$
 我们换种方式来找出函数 $f(x)$ 的 Legendre 变换。
 
 1. 把函数在 x-y 坐标系中画出来（蓝色的实线）。
-2. 做一条直线 $y=px$ . 
+2. 做一条直线 $y=px$ .
 3. 我们现在可以定义一个距离，也就是做一条垂直 x 轴的直线，在 $y=px$ 和 $f(x)$ 上的两个交点的距离： $F(x,p) = xp - f(x)$. 现在看起来已经有了 Legendre transformation 的样子了。但是有个问题，这里 x 和 p 是两个独立的变量。
 4. Legendre transformation 要求在给定一个直线斜率 p 之后，这个距离 $F(x,p)$ 最大。这样就确定了 x 和 p  的关系。也就是说要求 $\frac{\partial F(x,p)}{\partial x} = 0$，简化之后，$f'(x)=p$。如图所示。
 5. 这样把 x 和 p 的关系 $x(p)$ 代入 $F(x,p)$ 中，我们的距离就变成单单 p 的函数，$F(p)$ 。这就是 $f(x)$ 的 Legendre transformation.
@@ -165,7 +165,7 @@ $$f(x)+F(p)=p x$$
 
 至于具体怎么理解这个问题，可以读一下[这篇文章](http://www.av8n.com/physics/thermo-forms.htm)。
 
- 
+
 
 
 
@@ -175,4 +175,3 @@ $$f(x)+F(p)=p x$$
 
 
 [^1]:  如果不熟悉广义力的话，这里解释一下，以免后面犯错。因为我们常常讨论系统的能量的增量，所以广义力的通过外界对系统做工来定义的。我们说外界对系统做了功 $\mathrm W = Y \mathrm d X$，这里面就是广义力乘以广义位移，自然就是外界对系统做的功了。需要注意的是，由于我们是说的**外界对系统做功**，所以这个力方向是指向系统的，而不是指向外部的。所以在气体的例子里面 $\mathrm dW = -p \mathrm dV$，广义力是指的 $-p$. 当然，暗能量/ quinessence 这种奇葩的存在，我们不讨论。
-

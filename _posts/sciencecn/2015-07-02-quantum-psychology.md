@@ -6,7 +6,7 @@ modified: 2015-03-25
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: sciencecn
 summary: 构建量子心理学
 published:false
 ---

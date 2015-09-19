@@ -6,8 +6,8 @@ modified: 2013-01-14 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: true
 comments: true
-categories: science
-summary: 
+categories: sciencecn
+summary:
 ---
 
 
@@ -60,7 +60,7 @@ Cloud Atlas 中共有六个故事。
 
 * 1849 年，一艘太平洋上的船
 * 1936 年，Edinburgh 一位作曲家的家中
-* 1973 年，San Francisco 的一座核电站附近 
+* 1973 年，San Francisco 的一座核电站附近
 * 2012 年，Edinburgh 的一个奇异的养护中心和 London
 * 2144 年，Neo-Seoul，未来韩国的 Seoul？（没见过正式的英文字母，猜测如此拼写）
 * 2321 年，Hawaii 的一个山谷，和山谷附近的山上

@@ -6,7 +6,7 @@ modified: 2014-04-13 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
+categories: sciencecn
 summary: 孩童之时，所言俱为孩童，所感如是孩童，所思亦复孩童，唯成年之后，便将童心摈弃。
 ---
 

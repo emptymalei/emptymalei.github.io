@@ -6,8 +6,8 @@ modified: 2014-02-16 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
-summary: 
+categories: sciencecn
+summary:
 published:false
 ---
 
@@ -66,5 +66,4 @@ Cogito, ergo sum.（我思，故我在。）
 在系外行星的研究中，我们并不是缺少数据，相反，我们获取了大量的信息，然而，如何从这些信息中得到一些有用的知识呢？
 
 
-## 
-
+##

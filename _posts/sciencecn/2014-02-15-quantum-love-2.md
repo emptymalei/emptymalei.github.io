@@ -6,7 +6,7 @@ modified: 2014-05-21 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: sciencecn
 summary: 之前写过《爱情的严格量子力学描述》，由于只是初步想法，所以很多事情没有说清楚。这篇文章就尝试把这些概念弄清楚。所要讨论的大致包括主要假设的确定，状态的描述，演化方程以及结果的提取。
 ---
 
@@ -45,7 +45,7 @@ Quantum Theory of Love，源文件在此：<a href="https://raw.github.com/empty
 
 上面那个 Mindmap 做成英语的是因为打算跟系里的人讨论，为了方便阅读，做一个中文的表格吧。
 
-|  ~            |  量子力学           |     爱情理论  |   爱情中的例子    | 
+|  ~            |  量子力学           |     爱情理论  |   爱情中的例子    |
 |:------------- |:-----------------:|:------------:|:---------------:|
 |   状态描述     |  Hilbert 空间的态矢  | Hilbert 空间态矢 | $\ket{\mathrm{Boy}} + \ket{\mathrm{Girl}}$  |
 |     对易子     |  $[\hat x, \hat p]=\mathrm i \hbar$      |   （似乎暂时不需要） | ~ |
@@ -59,7 +59,7 @@ Quantum Theory of Love，源文件在此：<a href="https://raw.github.com/empty
 
 **态的描述中提到了一个人的状态是 Hilbert 空间的态矢，这非常重要，因为这样一来，同一个空间中的态的线性叠加还是这个空间中的一个态。也就是说这允许我们这样来描述性别和爱情状态的叠加态。**
 
-我们为什么要把性别描述成叠加态呢？因为从心理上来看，男性心理和女性心理之间的区别并不是那么大。但是从测量上来看，我们需要一个性别的算符，因为这是我们关心的事情：男孩暗恋女孩、女孩爱着男孩。所以性别是我们喜欢用的态空间，即 
+我们为什么要把性别描述成叠加态呢？因为从心理上来看，男性心理和女性心理之间的区别并不是那么大。但是从测量上来看，我们需要一个性别的算符，因为这是我们关心的事情：男孩暗恋女孩、女孩爱着男孩。所以性别是我们喜欢用的态空间，即
 
 $$ \{\ket{\mathrm{Boy}},\ket{\mathrm{Girl}} \} $$
 
@@ -86,7 +86,7 @@ $$ G_z = \begin{pmatrix}1 & 0\\ 0 & -1\end{pmatrix}$$
 我们会发现男孩女孩态正好是这个算符的本征态。
 
 
-对于演化，通常的 Hamiltonian 是不含时间的，所以我们可以定义一个非常简单的幺正的算符，Propagator, $\hat U(t,t_0)$，可以把一个状态从 $\ket{\mathrm{\psi(t_0)}}$ 演化到 $\ket{\mathrm{\psi(t)}}$ ，不含时间的 Hamiltonian 对于的 propagator 比较简单，就是 
+对于演化，通常的 Hamiltonian 是不含时间的，所以我们可以定义一个非常简单的幺正的算符，Propagator, $\hat U(t,t_0)$，可以把一个状态从 $\ket{\mathrm{\psi(t_0)}}$ 演化到 $\ket{\mathrm{\psi(t)}}$ ，不含时间的 Hamiltonian 对于的 propagator 比较简单，就是
 
 $$\hat U(t,t_0) = e^{-\mathrm i \hat H (t-t_0)/t}$$
 

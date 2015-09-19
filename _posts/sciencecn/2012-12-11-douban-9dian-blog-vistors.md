@@ -6,7 +6,7 @@ modified: 2012-12-11 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
+categories: sciencecn
 summary: 到现在为止，我的博文两次上了豆瓣九点科技，所以我有两份豆瓣九点带来访客的数据。既然有了数据，那自然要利用一下。
 ---
 
@@ -151,4 +151,3 @@ This Year
 -----
 
 关于作图的 post 都写完了，赶紧干正事吧~ 还要处理 BAO 的数据呢~
-

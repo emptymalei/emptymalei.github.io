@@ -6,7 +6,7 @@ modified: 2014-05-21 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: sciencecn
 summary: 如果要建造大规模的民用空间站，需要先解决失重的问题。
 ---
 
@@ -37,7 +37,7 @@ O'Neill 这种空间站的最简单的模型是一个旋转的圆桶，例如下
 
 <figure markdown="1">
 <figcaption>
-图片来源 http://www.dvandom.com/coriolis/spacestation.html 
+图片来源 http://www.dvandom.com/coriolis/spacestation.html
 </figcaption>
 ![]({{site.url}}/images/posts/oneill-space-station/oneilcan.jpg)
 </figure>

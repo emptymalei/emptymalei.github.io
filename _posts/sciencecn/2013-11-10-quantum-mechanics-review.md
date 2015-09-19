@@ -6,7 +6,7 @@ modified: 2013-11-18 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: true
 comments: true
-categories: science
+categories: sciencecn
 summary: 量子力学回顾系列是为果壳的 [纠缠与相干](http://www.guokr.com/group/394/) 小组写的基础知识帖子。主要的受众应该是学过一点量子力学，但是后来很久没有再接触过量子力学的人或者没有学过量子力学但是有些物理基础的人。
 ---
 
@@ -116,7 +116,7 @@ summary: 量子力学回顾系列是为果壳的 [纠缠与相干](http://www.gu
 
 但是还有一些问题，例如我们如何知道想要的算符是什么样子呢？
 
- 
+
 ### 仅仅利用前三个假设可以做很多事情
 
 如何来描述一个体系的演化呢？我们当然可以直接用 Schrodinger 方程，但是问题在于，对于一些简单的情况，例如我们常见的那种 Hamiltonian 不含时间的情况，会不会有更加简单的形式呢？
@@ -158,7 +158,7 @@ $$
 	 \hat U \ket{\phi} &=& \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\braket{\epsilon_i}{\psi}
 \end{eqnarray}
 $$
- 	
+
 我们通常会用下面的形式来写这个演化算符：
 
 $$\hat U = \sum_i e^{- i \epsilon_i (t-t_0)/\hbar} \ket{\epsilon_i}\bra{\epsilon_i}$$

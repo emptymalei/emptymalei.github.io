@@ -6,7 +6,7 @@ modified: 2013-04-06 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false
 comments: true
-categories: science
+categories: sciencecn
 summary: 我们都说微分和积分是一对互逆的运算，那么究竟怎么个互逆法呢？
 ---
 
