@@ -40,6 +40,7 @@ title:
 15. 大风起兮裙飞扬。（从果壳老猫那里听说的）
 16. 你有没有听说一首歌叫做相约酒吧啊。
 17. In the future, a soul encounters another intelligent AI on the internet, one of them said, "Let's carbon date".
+18. 在遥远的未来，智慧的人类发明了曲率引擎。作为商业运作的第一艘飞船，每当人们登船之后，广播中会反复提示：半人马座 Alpha 将会在本船停靠。
 
 
 ## 科技
