@@ -16,6 +16,9 @@ published: true
    * MOD - Kerbalstuff: http://kerbalstuff.com
    * MOD - Curse：http://www.curse.com/ksp-mods/kerbal
    * Craft Sharing - KerbalX: http://kerbalx.com
+   * Kerbal Proof: http://kerbalproof.com/
+   * Maps - Kerbal Maps: http://www.kerbalmaps.com/
+   * Tutorial - Fly on budget: http://flyonbudget.one-giant-leap.info/index.html
 
 
 
