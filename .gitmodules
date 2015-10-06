@@ -1,3 +1,6 @@
 [submodule "tool"]
 	path = tool
 	url = https://github.com/emptymalei/awesome-research.git
+[submodule "physicsporn"]
+	path = physicsporn
+	url = https://github.com/emptymalei/physicsporn.git
