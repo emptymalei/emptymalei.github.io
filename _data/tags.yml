@@ -1,0 +1,14 @@
+- slug: en
+  name: English Posts
+- slug: cn
+  name: Chinese Posts
+- slug: papers
+  name: Interesting and Fun Papers
+- slug: biology
+  name: Biology
+- slug: neuroscience
+  name: Neuroscience
+- slug: neutrino
+  name: Neutrinos
+- slug: dark-matter
+  name: Dark Matter

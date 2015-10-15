@@ -43,3 +43,17 @@ Generating more TILs
 -----
 
 ## Reading
+
+I always love to read interesting papers in physics. Here are some notes I wrote. Think of this as a lab notebook.
+
+{% if site.categories.papers.size %}
+## {{ site.categories.papers.size }} Paper Notes
+		{% else %}
+Generating more Paper Notes
+		{% endif %}
+
+<div class="tiles">
+{% for post in site.categories.papers %}
+	{% include post-list.html %}
+{% endfor %}
+</div><!-- /.tiles -->
