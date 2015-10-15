@@ -38,3 +38,19 @@ No Science Posts.
 	{% include post-list-cn.html %}
 {% endfor %}
 </div><!-- /.tiles -->
+
+---
+
+### 数值计算（中文）
+
+{% if site.categories.numericalcn.size %}
+共有 {{ site.categories.numericalcn.size }} 篇中文数值计算文章。
+		{% else %}
+暂无中文数值计算类文章。
+		{% endif %}
+
+<div class="tiles">
+{% for post in site.categories.numericalcn %}
+	{% include post-list-cn.html %}
+{% endfor %}
+</div><!-- /.tiles -->
