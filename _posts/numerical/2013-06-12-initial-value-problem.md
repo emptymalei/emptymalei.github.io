@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Initial Value Problem"
-date: 2013-06-12 # not necessarily the date created but to ensure the sorting of posts
+date: 2013-06-12
 modified: 2013-06-12 # 2015-02-03 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 toc: false

@@ -1,8 +1,8 @@
 ---
 layout: article
 title: "A Basic Jacobi Iteration Procedure"
-date: 2013-07-15 # not necessarily the date created but to ensure the sorting of posts
-modified: 2013-07-15 # 2015-02-03 #2014-08-27T11:57:41-04:00
+date: 2013-07-15
+modified: 2013-07-15
 author: OctoMiao
 toc: false
 comments: true

@@ -66,7 +66,12 @@ $$\frac{\mathrm d y(a)}{\mathrm dt} = A$$
 
 用图像表示就是
 
-![Shooting](http://iastro.lamost.org/x/sites/default/files/attach/2013/6/Week1-3.x.png)
+<figure markdown="1">
+<figcaption>
+Path
+</figcaption>
+![]({{site.url}}/images/posts/numerical/boundaryValueProblemRandom.png)
+</figure>
 
 类似于我们要用枪命中圆圈的点，现在我们随便开了一枪，发现太高了，然后我们把枪放低些再射击，发现太低了。那么我们下一次就调整为第一次和第二次射击的角度的中间值，再试。第三次可能还没有命中，再根据第三次的具体情况跟第一次或第二次的射击角度取平均值。
 
