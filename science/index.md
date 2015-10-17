@@ -5,9 +5,6 @@ layout: archive
 
 
 
-
-
-
 ### Science Posts in English
 
 {% if site.categories.science.size %}
@@ -43,14 +40,21 @@ No Science Posts.
 
 ### 数值计算（中文）
 
-{% if site.categories.numericalcn.size %}
-共有 {{ site.categories.numericalcn.size }} 篇中文数值计算文章。
-		{% else %}
-暂无中文数值计算类文章。
-		{% endif %}
+Resources
 
-<div class="tiles">
-{% for post in site.categories.numericalcn %}
-	{% include post-list-cn.html %}
-{% endfor %}
-</div><!-- /.tiles -->
+* https://class.coursera.org/scientificcomp-004/class
+* http://spark-public.s3.amazonaws.com/scientificcomp/Lecture%20Note%20Packet/LectureNotePacketSciComputing.pdf
+
+中文笔记草稿：
+
+* [Initial Value Problem](../numerical/initial-value-problem.html)
+	* [Euler, Runge-Kutta and Adams Methods](../numerical/euler-runge-kutta-adams-methods.html)
+	* [Error Analysis for Time-Stepping Routines ](../numerical/error-analysis-for-time-stepping-routines.html)
+* [Boundary Value Problems: the Shooting Method](../numerical/boundary-value-problem.html)
+* [Implementation of Shooting and Convergence Studies](../numerical/implementation-of-shooting-and-convergence-studies.html)
+* [Boundary Value Problems: Direct Solve and Relaxation](../numerical/boundary-value problems-direct-solve-and-relaxation.html)
+* [Finite Difference Discretization](../numerical/finite-difference-discretization.html)
+* [Implementing MATLAB's Boundary Value Solver](../numerical/implementation-of-matlab.html)
+* [Iterative Solution Methods for Ax=b](../numerical/iterative-solution-methods.html)
+* [The Advection-diffusion Equations](../numerical/the-advection-diffusion-equations.html)
+* [The Advection-diffusion Equations](../numerical/Jacobi-iteration.html)
