@@ -57,7 +57,6 @@ sharelang: cn # en or cn
 # Plugins for github pages
 
 gems:
-- jekyll-mentions
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
