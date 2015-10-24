@@ -206,7 +206,7 @@ Project Zero in Dark
 <figcaption>
 Project Zero at Night
 </figcaption>
-![Project Zero at Night](../assets/log/colonization/project-zero/project-zero-kerbin-night.png)
+![Project Zero at Night](../assets/log/colonization/project-zero/project-zero-kerbin-night.jpg)
 </figure>
 
 
