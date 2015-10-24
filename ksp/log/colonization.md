@@ -75,7 +75,7 @@ The very next attempt was to build such a base on Lythe.
 
 Bill Kerman was sent to Lythe first for a research of the landing sites for the base. However, Bill Kerman crashed his ship and couldn't come back. (Photos of Bill Kerman are missing here.)
 
-What was unfortunate is that the first launch of Project Nomand to Lythe, i.e. the science and habitat module of the base was two far away from the expected site. The wheels were not strong enough to support a long trip.
+What was unfortunate is that the first launch of Project Nomand to Lythe, i.e. the science and habitat modules of the base was too far away from the expected site. The wheels were not strong enough to support such a long trip.
 
 
 <figure markdown="1">
@@ -152,7 +152,7 @@ Rover Landed on Lythe
 
 ### Minmus Base
 
-After the not-so-successful try of Lythe base, they realized that a minmus base - at least a fuel base - was necessary.
+After the not-so-successful try of Lythe base, they realized that a minmus base, at least a fuel base, was necessary.
 
 
 <figure markdown="1">
@@ -184,7 +184,7 @@ Greenhouse of Project Nomand on Minmus
 
 ## Project Zero
 
-Project Zero was created as Project Collins by the famous Collins family.
+Project Zero was created by the famous Collins family.
 
 <figure markdown="1">
 <figcaption>
@@ -213,15 +213,15 @@ Project Zero at Night
 
 ## Project Asteroid City
 
-Project Asteroid City was the first project that sucessfully brings back a asteroid and circularize it around Kerbin.
+Project Asteroid City was the first project that sucessfully brings back a asteroid and circularizes it around Kerbin.
 
 Jebediah, Bill, Bob, Valentina and Lizzy all took part in this fly but only Lizzy was willing to stay on the asteroid. Lizzy built a station uppon this small rock and also tested the first asteroid miner.
 
 The project was not so smooth even with both Jeb and Val on the ship. It took them more than one year to bring back the rock.
 
-As the asteroid started to steadily orbit around Kerbin, Lizzy requested the Launch of Asteroid City Ship, which then became one with the asteroid itself.
+As the asteroid started to steadily orbit around Kerbin, Lizzy requested the Launch of Asteroid City Ship, which then became one together with the asteroid itself.
 
-The first module built has only a nice habitat capsule and two large storage cans. This ship is complete automatically running on itself since the most advanced station AI has been implemented.
+The first module built had only a nice habitat capsule and two large storage cans. This ship is completely automatically running on itself since the most advanced station AI has been implemented.
 
 <figure markdown="1">
 <figcaption>
@@ -239,7 +239,7 @@ Science Module of Project Asteroid City
 ![Science Module of Project Asteroid City](../assets/log/colonization/project-asteroid-city/project-asteroid-city-science-storage.png)
 </figure>
 
-A mining ship was designed to test the technology involved in asteroid mining. The data shows the design was quite amazing.
+A mining ship was designed to test the technologies involved in asteroid mining. The data showed the design was quite amazing.
 
 <figure markdown="1">
 <figcaption>
@@ -259,7 +259,7 @@ First Mining Facility of Asteroid - Four Drills
 </figure>
 
 
-Lizzy loves the view, even with the mining machine running.
+Lizzy loves the view, even with the mining machine running around.
 
 
 <figure markdown="1">
