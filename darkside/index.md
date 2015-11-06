@@ -41,6 +41,7 @@ title:
 16. 你有没有听说一首歌叫做相约酒吧啊。
 17. In the future, a soul encounters another intelligent AI on the internet, one of them said, "Let's carbon date".
 18. 在遥远的未来，智慧的人类发明了曲率引擎。作为商业运作的第一艘飞船，每当人们登船之后，广播中会反复提示：半人马座 Alpha 将会在本船停靠。
+19. 学生：那个方程不是应该叫做欧拉—拉格朗日方程么？为什么只说是欧拉方程？老师：是啊，所以我才简称欧—拉方程啊。
 
 
 ## 科技
