@@ -3,4 +3,7 @@
 	url = https://github.com/emptymalei/awesome-research.git
 [submodule "physicsporn"]
 	path = physicsporn
-	url = https://github.com/emptymalei/physicsporn.git
+    url = https://github.com/emptymalei/physicsporn.git
+[submodule "kitchen"]
+	path = kitchen
+    url = https://github.com/emptymalei/kitchen.git
