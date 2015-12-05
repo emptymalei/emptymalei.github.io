@@ -24,11 +24,11 @@ Notes for the article [Python List Comprehensions: Explained Visually](http://tr
 Integrated with loops
 
 
-~~~
+{% highlight python %}
 list_with_for_loop = [x for x in range(10)]  
 print list_with_for_loop
-~~~
-{: .language-python}
+{% endhighlight %}
+
 
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
@@ -36,10 +36,10 @@ print list_with_for_loop
 Even with conditions in the for loop
 
 
-```python
+{% highlight python %}
 list_with_for_loop_conditional = [x for x in range(10) if x%2 == 1]  
 print list_with_for_loop_conditional
-```
+{% endhighlight %}
 
     [1, 3, 5, 7, 9]
 
