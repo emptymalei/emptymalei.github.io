@@ -37,17 +37,18 @@
 
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
-
     <script type="text/javascript">
-    (function () {
-      'use strict';
-
-      anchors.options.placement = 'left';
-
-      anchors.add('.post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6');
-
-    })();
+    $(function() {
+  return $("h2, h3, h4, h5, h6").each(function(i, el) {
+    var $el, icon, id;
+    $el = $(el);
+    id = $el.attr('id');
+    icon = '<i class="fa fa-link"></i>';
+    if (id) {
+      return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+      }
+    });
+  });
     </script>
 
     <meta name="HandheldFriendly" content="True">

@@ -170,31 +170,25 @@ figure img {
 }
 
 /**
- * Link placement and hover behavior.
+ Styling Anchor
  */
 
-.anchorjs-link {
-  color: inherit !important;
-  text-decoration: none !important; // do not underline
+.header-link {
+  position: absolute;
+  left: -0.5em;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.2s ease-in-out 0.1s;
+  -moz-transition: opacity 0.2s ease-in-out 0.1s;
+  -ms-transition: opacity 0.2s ease-in-out 0.1s;
 }
 
-@media (max-width: 768px) {
-  // do not display AnchorJS icon on less than 768px view point
-  .anchorjs-link {
-    display: none;
-  }
-}
-
-*:hover > .anchorjs-link {
-  opacity: .75;
-  // To fade links as they appear, change transition-property from 'color' to 'all'
-  transition: color .16s linear;
-}
-
-*:hover > .anchorjs-link:hover,
-.anchorjs-link:focus {
-  text-decoration: none !important; // do not underline
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
   opacity: 1;
 }
 
-/* Anchor js css end */
+/* Anchor css end */
