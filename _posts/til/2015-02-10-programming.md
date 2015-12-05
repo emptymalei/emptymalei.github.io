@@ -1,14 +1,13 @@
 ---
 layout: article
 title: "TIL - Programming"
-date: 2015-04-10
+date: 2015-12-04
 modified: 2015-12-04
 author: OctoMiao
-toc: false
+toc: true
 comments: true
 categories: til
 summary: Python List Comprehensions
-
 ---
 
 
