@@ -45,7 +45,7 @@ Here we also used the technique of creating a list of length 5.
 **PEP 20 -- The Zen of Python**
 
 
-
+{% highlight bash %}
 1. Beautiful is better than ugly. 
 2. Explicit is better than implicit.
 3. Simple is better than complex.
@@ -53,27 +53,19 @@ Here we also used the technique of creating a list of length 5.
 5. Flat is better than nested.
 6. Sparse is better than dense.
 7. Readability counts.
-
-  a. Special cases aren't special enough to break the rules.
-  b. Although practicality beats purity.
-
+  7.1 Special cases aren't special enough to break the rules.
+  7.2 Although practicality beats purity.
 8. Errors should never pass silently.
-
-  a. Unless explicitly silenced.
-
+  8.1 Unless explicitly silenced.
 9. In the face of ambiguity, refuse the temptation to guess.
 10. There should be one-- and preferably only one --obvious way to do it.
-
-  a. Although that way may not be obvious at first unless you're Dutch.
-
+  10.1 Although that way may not be obvious at first unless you're Dutch.
 11. Now is better than never.
-
-  a. Although never is often better than *right* now.
-
+  11.1 Although never is often better than *right* now.
 12. If the implementation is hard to explain, it's a bad idea.
 13. If the implementation is easy to explain, it may be a good idea.
 14. Namespaces are one honking great idea -- let's do more of those!
-
+{% endhighlight %}
 
 
 ## Import in Python
