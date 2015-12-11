@@ -53,18 +53,18 @@ Here we also used the technique of creating a list of length 5.
 5. Flat is better than nested.
 6. Sparse is better than dense.
 7. Readability counts.
-  7.1 Special cases aren't special enough to break the rules.
-  7.2 Although practicality beats purity.
-8. Errors should never pass silently.
-  8.1 Unless explicitly silenced.
-9. In the face of ambiguity, refuse the temptation to guess.
-10. There should be one-- and preferably only one --obvious way to do it.
-  10.1 Although that way may not be obvious at first unless you're Dutch.
-11. Now is better than never.
-  11.1 Although never is often better than *right* now.
-12. If the implementation is hard to explain, it's a bad idea.
-13. If the implementation is easy to explain, it may be a good idea.
-14. Namespaces are one honking great idea -- let's do more of those!
+8. Special cases aren't special enough to break the rules.
+9. Although practicality beats purity.
+10. Errors should never pass silently.
+11. Unless explicitly silenced.
+12. In the face of ambiguity, refuse the temptation to guess.
+13. There should be one-- and preferably only one --obvious way to do it.
+14. Although that way may not be obvious at first unless you're Dutch.
+15. Now is better than never.
+16. Although never is often better than *right* now.
+17. If the implementation is hard to explain, it's a bad idea.
+18. If the implementation is easy to explain, it may be a good idea.
+19. Namespaces are one honking great idea -- let's do more of those!
 {% endhighlight %}
 
 
