@@ -7,9 +7,95 @@ author: OctoMiao
 toc: true
 comments: true
 categories: til
-summary: Python List Comprehensions
+summary: Creating List in Python; enumerate(); Zen of Python
 ---
 
+
+## Creating Lists
+
+[Code Style of Python Guide](http://docs.python-guide.org/en/latest/writing/style/)
+
+{% highlight python %}
+four_lists = [[0]*5 for __ in range(4)]
+{% endhighlight %}
+
+## enumerate()
+
+[Code Style of Python Guide](http://docs.python-guide.org/en/latest/writing/style/)
+
+`enumerate()` can be used to keep track of the index of the list.
+
+{% highlight python %}
+test = [None] * 5
+for n, elem in enumerate( range(5,10) ):
+    print n, elem
+    test[n] = elem*2
+{% endhighlight %}
+
+Here we also used the technique of creating a list of length 5.
+
+
+## Python Code Style
+
+
+[Code Style of Python Guide](http://docs.python-guide.org/en/latest/writing/style/).
+
+
+
+**PEP 20 -- The Zen of Python**
+
+
+> Beautiful is better than ugly.
+> Explicit is better than implicit.
+> Simple is better than complex.
+> Complex is better than complicated.
+> Flat is better than nested.
+> Sparse is better than dense.
+> Readability counts.
+> Special cases aren't special enough to break the rules.
+> Although practicality beats purity.
+> Errors should never pass silently.
+> Unless explicitly silenced.
+> In the face of ambiguity, refuse the temptation to guess.
+> There should be one-- and preferably only one --obvious way to do it.
+> Although that way may not be obvious at first unless you're Dutch.
+> Now is better than never.
+> Although never is often better than *right* now.
+> If the implementation is hard to explain, it's a bad idea.
+> If the implementation is easy to explain, it may be a good idea.
+> Namespaces are one honking great idea -- let's do more of those!
+
+
+
+## Import in Python
+
+As noted in [Structuring Your Project of Python Guide](http://docs.python-guide.org/en/latest/writing/structure/), `import` in python is rather tricky.
+
+The style
+
+{% highlight python %}
+from neuosc import *
+{% endhighlight %}
+
+grabs everything in `neuosc` and put them in the global namespace which is more likely to override existing functions in global namespace.
+
+A better way is to import the exact function we need.
+
+{% highlight python %}
+from neuosc import par
+{% endhighlight %}
+
+Other good import methods are
+
+{% highlight python %}
+import neuosc
+{% endhighlight %}
+
+or
+
+{% highlight python %}
+import neuosc as ns
+{% endhighlight %}
 
 
 ## Python List Comprehensions
