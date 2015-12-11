@@ -45,7 +45,7 @@ Here we also used the technique of creating a list of length 5.
 **PEP 20 -- The Zen of Python**
 
 
-{% highlight bash %}
+{% highlight text %}
 1. Beautiful is better than ugly. 
 2. Explicit is better than implicit.
 3. Simple is better than complex.
