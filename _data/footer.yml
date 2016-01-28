@@ -6,11 +6,11 @@
 - title: 科学与科幻
   url: http://openmetric.org/sci2fi/
 
-- title: 时见疏星
-  url: /multiverse/
+- title: Physics Notebook
+  url: http://physics.openmetric.org
 
-- title: NeuronStar
-  url: http://neuronstar.github.io
+- title: Stat Mech Notebook
+  url: http://statisticalphysics.openmetric.org
 
 - title: Kerbal
   url: /ksp/
@@ -23,6 +23,3 @@
 
 - title: Neutrino.xyz
   url: http://neutrino.xyz
-
-- title: GitHub
-  url: http://github.com/emptymalei
