@@ -22,9 +22,6 @@ highlighter: rouge
 gems:
   - jekyll-sitemap
   - jekyll-gist
-  - jemoji
-  - jekyll-redirect-from
-  - jekyll-feed
 
 
 
@@ -60,13 +57,8 @@ owner:
   avatar: octomiao.png # 160x160 px image for author byline
   weibo: 章鱼喵-十只手
   disqus-shortname: darkhypernova
-disqus-shortname: darkhypernova
-disqus-shortname: darkhypernova
 swiftype: kGzvV1L-RzYo_pfREF9P # swiftype code, only the code part in your swiftype js
 gacode: UA-49034078-1 # Google Analytics Code
-lang: en  # en or cn
-sharelang: cn # en or cn
-
 
 
 exclude: ["lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
