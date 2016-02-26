@@ -1,11 +1,23 @@
-// SYNTAX HIGHLIGHTING
-// --------------------------------------------------
+/* ==========================================================================
+   Syntax highlighting and formatting
+   ========================================================================== */
+
+pre.highlight {
+  padding: 1em;
+}
+
+/*
+   Pygments.rb and Rouge
+   ========================================================================== */
 
 .linenos,
 .code {
 	padding: 0;
 	border-top: 0 solid transparent;
 	border-bottom: 0 solid transparent;
+}
+.linenodiv {
+  @include font-size(16);
 }
 
 .highlight {
@@ -102,3 +114,22 @@
 .ow { color: #000000; font-weight: bold } // Operator.Word
 
 .w { color: #bbbbbb } // Text.Whitespace
+
+/*
+   GitHub Gists
+   ========================================================================== */
+
+//Remove extra padding
+.gist table {
+  margin-top:0px;
+
+}
+
+//Remove hover effect
+.gist tbody
+{
+  tr:hover > td, tr:hover > th {
+    background-color:transparent;
+  };
+  background-color:white; //Background color white
+}

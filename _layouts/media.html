@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div id="main" role="main">	
+<div id="main" role="main">
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
 		{% if page.image.feature %}
 		<div class="page-feature">
@@ -12,12 +12,11 @@ layout: default
 			</div><!-- /.page-image -->
 		</div><!-- /.page-feature -->
 		{% endif %}
-		{% if page.categories %}{% include breadcrumbs.html %}{% endif %}
+		{% include breadcrumbs.html %}
 		<div class="page-title">
 			<h1>{{ page.title }}</h1>
 		</div>
 		<div class="inner-wrap">
-			<nav class="toc"></nav><!-- /.toc -->
 			<div id="content" class="page-content" itemprop="articleBody">
 				{{ content }}
 				<hr />
