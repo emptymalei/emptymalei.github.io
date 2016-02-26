@@ -18,6 +18,7 @@ sass:
 permalink: /:categories/:title/
 markdown: kramdown
 kramdown:
+  auto_ids: true
   toc_levels: 1..2
 highlighter: rouge
 gems:
