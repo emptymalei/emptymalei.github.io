@@ -172,3 +172,13 @@ figure img {
   margin-right: auto !important;
   display: block !important;
 }
+
+/* See also: nicolasgallagher.com/pure-css-gui-icons */
+.anchorjs-link {
+  border-color: #FF5231 #FF5231 transparent;
+  border-width: 15px 7px 6px;
+  border-style: solid;
+  margin-top: 10px;
+  font-size: 22px;
+  padding-right: 0 !important;
+}
