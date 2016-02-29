@@ -7,3 +7,6 @@
 [submodule "kitchen"]
 	path = kitchen
     url = https://github.com/emptymalei/kitchen.git
+[submodule "typesetting-physics"]
+	path = typesetting-physics
+	url = https://github.com/emptymalei/typesetting-physics.git
