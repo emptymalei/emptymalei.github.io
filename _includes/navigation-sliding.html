@@ -1,8 +1,10 @@
 <nav role="navigation" id="js-menu" class="sliding-menu-content">
-  <h5>{{ site.title }} <span>{{ site.data.messages.locales[site.locale].toc }}</span></h5>
-  <ul class="menu-item">
-      <nav class="toc"></nav><!-- /.toc -->
-  </ul>
+  <h5>{{ page.title }} <span>{{ site.data.messages.locales[site.locale].toc }}</span></h5>
+      {% if page.toc == true %}
+         <nav class="toc"></nav><!-- /.toc -->
+      {% elsif site.description %}
+         <h5 style="text-align:center;color:#fff;font-weight:600;font-size:90%;">{{ site.description }}</h5>
+      {% endif %}
 </nav>
 <button type="button" id="js-menu-trigger" class="sliding-menu-button lines-button x2" role="button" aria-label="Toggle Navigation">
   <span class="nav-lines"></span>
