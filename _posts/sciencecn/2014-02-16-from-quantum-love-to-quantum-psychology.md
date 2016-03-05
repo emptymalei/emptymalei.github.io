@@ -4,7 +4,6 @@ title: "心理叠加态：从量子爱情到人的所有心理"
 date: 2014-02-16
 modified: 2014-04-14 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 最近写了两篇关于用量子理论的方法来描述爱情的文章，经过一些思考，我现在觉得我们可以把这个思路的核心概念提取出来，并且加以推广。

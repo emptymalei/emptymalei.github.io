@@ -4,7 +4,6 @@ title: "四元数和转动"
 date: 2014-05-21
 modified: 2014-05-21 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: false
 comments: true
 categories: sciencecn
 summary: 关于四元数和转动的关系

@@ -4,7 +4,6 @@ title: "如何挑西瓜：一个学物理的吃货的感言"
 date: 2013-06-20
 modified: 2013-06-20 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 西瓜是一种很甜美的食物。当然，做为一个学物理的吃货，我一定不会白白浪费西瓜的。所以，本文的宗旨是，如何在不破坏西瓜的前提下，了解西瓜的甜美程度。

@@ -4,7 +4,6 @@ title: "球状闪电：千百年的幽灵"
 date: 2014-01-19
 modified: 2014-02-16 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 雷电交加的雨夜，一个球状的幽灵的在半空飘荡，它开始漫无目的随机游走，后来似乎对附近的人产生了兴趣。十几秒过去之后，这个闪着橙色光芒的幽灵便消失不见了。

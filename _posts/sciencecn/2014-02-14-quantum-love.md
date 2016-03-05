@@ -4,7 +4,6 @@ title: "爱情的严格量子力学描述"
 date: 2014-02-14
 modified: 2014-02-14 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 用量子力学的基础知识来描述爱情。

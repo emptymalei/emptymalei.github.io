@@ -4,7 +4,6 @@ title: "量子力学计算的一个小技巧"
 date: 2013-08-09
 modified: 2013-08-09 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: false
 comments: true
 categories: sciencecn
 summary: 量子力学里面很多 e 指数函数，这类函数的一大特点就是导数会出现这个函数本身，所以有时候可以利用这个特点来简化计算。

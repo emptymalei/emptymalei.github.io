@@ -22,7 +22,7 @@ This is a CC BY-SA licensed project. Use the source! Keep the source open!
 ### Summary
 
 * [Introduction](index.html)
-* [Rocket and Orbit Basics](rocket_orbit_basics_en.html)
+* [Rocket and Orbit Basics](rocket_orbit_basics_en)
 
 
 
@@ -31,8 +31,8 @@ This is a CC BY-SA licensed project. Use the source! Keep the source open!
 ## KSP Log
 
 
-* [Jeb Era](log/jeb-era.html)
-* [Colonization](log/colonization.html)
+* [Jeb Era](log/jeb-era)
+* [Colonization](log/colonization)
 
 
 

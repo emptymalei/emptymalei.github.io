@@ -4,7 +4,6 @@ title: "量子爱情，统计数据以及认知模型"
 date: 2014-04-14
 modified: 2014-07-16 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 这篇文章中，我会重新描述量子爱情的理论并且给出一种通过统计数据建立量子爱情模型的方法。

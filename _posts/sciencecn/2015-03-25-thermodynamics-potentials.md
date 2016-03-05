@@ -4,11 +4,13 @@ title: "热力学势"
 date: 2015-02-17
 modified: 2015-03-25
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 热力学势之间的关系以及 Legendre 变换
 ---
+
+* ToC
+{:toc}
 
 
 本科学习的热力学主要的内容包括下面几部分（参考 *A Modern Course in Statistical Physics* by L. E. Reichl）：

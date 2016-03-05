@@ -4,7 +4,6 @@ title: "云图：脸盲症的福音"
 date: 2013-01-14
 modified: 2013-01-14 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary:

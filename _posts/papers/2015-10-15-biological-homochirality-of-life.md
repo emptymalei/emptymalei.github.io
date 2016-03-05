@@ -4,7 +4,6 @@ title: "Biological Homochirality of Earth Life"
 date: 2015-10-15
 modified: 2015-10-15 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: ture
 comments: true
 categories: papers
 tag:

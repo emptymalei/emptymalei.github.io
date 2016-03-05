@@ -7,7 +7,7 @@ author: OctoMiao
 toc: false
 comments: true
 categories: numericalcn
-summary: A Basic Iteration Procedure: Jacobi
+summary: A Basic Iteration Procedure, called Jacobi
 ---
 
 

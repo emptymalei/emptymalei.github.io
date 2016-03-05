@@ -4,12 +4,14 @@ title: "TIL - Programming"
 date: 2015-12-04
 modified: 2015-12-04
 author: OctoMiao
-toc: true
 comments: true
 categories: til
 summary: Creating List in Python; enumerate(); Zen of Python
 ---
 
+
+* ToC
+{:toc}
 
 ## Creating Lists
 
@@ -46,7 +48,7 @@ Here we also used the technique of creating a list of length 5.
 
 
 {% highlight text %}
-1. Beautiful is better than ugly. 
+1. Beautiful is better than ugly.
 2. Explicit is better than implicit.
 3. Simple is better than complex.
 4. Complex is better than complicated.

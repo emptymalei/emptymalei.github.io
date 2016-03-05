@@ -4,7 +4,6 @@ title: "Gradient, Divergence and Curl"
 date: 2015-02-17
 modified: 2015-02-17 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: false
 comments: true
 categories: science
 tag:
