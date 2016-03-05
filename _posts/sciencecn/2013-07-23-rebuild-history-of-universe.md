@@ -4,7 +4,6 @@ title: "如何重建宇宙演化历史（未完成）"
 date: 2013-07-23
 modified: 2013-07-23 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: Alan Sandage 曾经说过 Cosmology 的任务就是要寻找两个参数：哈勃常数 $H_0$ 和减速因子 $q_0$。这两个分别给出了宇宙膨胀的「速度」和「加速度」。如今我们的技术已经有了很大的进步，同样我们也早已不满足仅仅寻找这两个参数。

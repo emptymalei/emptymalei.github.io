@@ -4,7 +4,6 @@ title: "线性代数与几何"
 date: 2013-04-06
 modified: 2013-04-06 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: false
 comments: true
 categories: sciencecn
 summary: 线性代数里面我们的矩阵一般是求解方程组引入的。那么除了求解方程组之外，线性代数还可以做什么呢？

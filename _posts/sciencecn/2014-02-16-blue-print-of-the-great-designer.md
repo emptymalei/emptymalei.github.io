@@ -4,11 +4,10 @@ title: "设计者的宏伟蓝图"
 date: 2014-02-16
 modified: 2014-02-16 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: false
 comments: true
 categories: sciencecn
 summary:
-published:false
+published: false
 ---
 
 **尚未写完，故而列为发表**

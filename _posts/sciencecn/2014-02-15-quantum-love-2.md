@@ -4,7 +4,6 @@ title: "爱情的量子理论2"
 date: 2014-05-21
 modified: 2014-05-21 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 之前写过《爱情的严格量子力学描述》，由于只是初步想法，所以很多事情没有说清楚。这篇文章就尝试把这些概念弄清楚。所要讨论的大致包括主要假设的确定，状态的描述，演化方程以及结果的提取。

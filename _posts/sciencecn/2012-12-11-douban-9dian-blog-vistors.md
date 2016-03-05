@@ -4,7 +4,6 @@ title: "豆瓣九点和博客访问量"
 date: 2012-12-11
 modified: 2012-12-11 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: false
 comments: true
 categories: sciencecn
 summary: 到现在为止，我的博文两次上了豆瓣九点科技，所以我有两份豆瓣九点带来访客的数据。既然有了数据，那自然要利用一下。

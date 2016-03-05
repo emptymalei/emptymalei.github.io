@@ -4,7 +4,6 @@ title: "关于宇宙膨胀的两个常见误解"
 date: 2013-09-05
 modified: 2013-09-05 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 狭义相对论告诉我们，信息传播不能超过光速，否则会有违反因果律的问题。那么，我们说宇宙在膨胀，宇宙膨胀会超过光速么？什么在膨胀？什么不膨胀？

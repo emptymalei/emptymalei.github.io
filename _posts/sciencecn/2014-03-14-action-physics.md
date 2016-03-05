@@ -4,11 +4,10 @@ title: "物理中的作用量"
 date: 2014-05-21
 modified: 2014-05-21 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: false
 comments: true
 categories: sciencecn
 summary:
-published:false
+published: false
 ---
 
 **这篇是在果壳问答写的，下面没有整理完，所以列举为为发表。**

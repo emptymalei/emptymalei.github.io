@@ -4,7 +4,6 @@ title: "空间站人造重力"
 date: 2014-05-21
 modified: 2014-05-21 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 如果要建造大规模的民用空间站，需要先解决失重的问题。

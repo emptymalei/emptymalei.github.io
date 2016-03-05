@@ -182,3 +182,94 @@ figure img {
   font-size: 22px;
   padding-right: 0 !important;
 }
+
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFF;
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
+#footer li {
+    float: left;
+}
+
+#footer li a {
+   font-size: 70%;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: gray;
+}
+
+#footer li a:hover {
+    color: #A31;
+}
+
+#footer p {
+   font-size: 70%;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#footer p a {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+#footer p a:hover {
+    color: #A31;
+}
+
+#footer hr
+{
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 8px auto;
+   height: 0;
+   width: 100%;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-top: 1px solid #aaaaaa;
+   border-bottom: 1px solid #ffffff;
+}
+
+.container {
+    max-width: 50rem !important;
+}
+#markdown-toc ul, ol, dl {
+    margin-bottom: 0 !important;
+}
+
+#markdown-toc
+{
+   border-style: dashed;
+    border-width: thin;
+    border-color: #9C9C9C;
+    padding: 1em 1em 1em 2em;
+    white-space: nowrap;
+    display: inline-block;
+    float: right;
+}
+#sidebar {
+    background-color: black !important;
+}
+
+.page-meta p
+{
+   text-align: right;
+    font-size: 70%;
+}

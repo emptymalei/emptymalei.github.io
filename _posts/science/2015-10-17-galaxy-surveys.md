@@ -4,7 +4,6 @@ title: "Galaxy Surveys"
 date: 2012-11-16
 modified: 2015-10-17 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: science
 tag:
@@ -15,7 +14,8 @@ summary: Galaxy Surveys
 
 Galaxy surveys is a powerful way of exploring the large scale structure of the universe, as well as a way of testing the theory of gravity.
 
-
+* ToC
+{:toc}
 
 ## CfA Redshift Survey
 

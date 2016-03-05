@@ -4,7 +4,6 @@ title: "量子力学框架回顾一"
 date: 2013-11-10
 modified: 2013-11-18 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 量子力学回顾系列是为果壳的 [纠缠与相干](http://www.guokr.com/group/394/) 小组写的基础知识帖子。主要的受众应该是学过一点量子力学，但是后来很久没有再接触过量子力学的人或者没有学过量子力学但是有些物理基础的人。

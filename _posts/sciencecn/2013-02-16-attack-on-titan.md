@@ -4,7 +4,6 @@ title: "如何攻击巨人——立体行动装置使用要点"
 date: 2013-02-16
 modified: 2013-02-16 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-toc: true
 comments: true
 categories: sciencecn
 summary: 107年前，巨人突然出现，人类被迫蜷缩在三重高大的墙内，直到巨人再次打破这一百多年来平静的日子。
