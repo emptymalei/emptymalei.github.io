@@ -18,7 +18,7 @@ The idea came to Valentina when she landed at the south pole some years ago.
 <figcaption>
 Valentina Thinking about The Future
 </figcaption>
-![Valentina Thinking about The Future](../assets/log/colonization/initiative.png)
+![Valentina Thinking about The Future](../../assets/log/colonization/initiative.png)
 </figure>
 
 
@@ -35,7 +35,7 @@ Instead of being steady and cautious, Jebediah proposed to build the first Noman
 <figcaption>
 Project Nomand Base Launch to Duna
 </figcaption>
-![Project Nomand Base Launch to Duna](../assets/log/colonization/project-nomand/project-nomand-duna-launch.png)
+![Project Nomand Base Launch to Duna](../../assets/log/colonization/project-nomand/project-nomand-duna-launch.png)
 </figure>
 
 
@@ -44,7 +44,7 @@ Project Nomand Base Launch to Duna
 <figcaption>
 Project Nomand Base on Duna
 </figcaption>
-![Project Nomand Base on Duna](../assets/log/colonization/project-nomand/project-nomand-duna-overview.png)
+![Project Nomand Base on Duna](../../assets/log/colonization/project-nomand/project-nomand-duna-overview.png)
 </figure>
 
 
@@ -55,7 +55,7 @@ The base ships with a tiny rover, just in case someone wants to race against the
 <figcaption>
 Project Nomand Base on Duna Has Got a Rover.
 </figcaption>
-![Rover - Project Nomand Base on Duna](../assets/log/colonization/project-nomand/project-nomand-duna-rover.png)
+![Rover - Project Nomand Base on Duna](../../assets/log/colonization/project-nomand/project-nomand-duna-rover.png)
 </figure>
 
 This Duna base also has a mining facility. But remember, this is not for profit. Kerbals never talk about profit.
@@ -65,7 +65,7 @@ This Duna base also has a mining facility. But remember, this is not for profit.
 <figcaption>
 Mining Facility of Project Nomand Base
 </figcaption>
-![Mining - Project Nomand Base on Duna](../assets/log/colonization/project-nomand/project-nomand-duna-drill.png)
+![Mining - Project Nomand Base on Duna](../../assets/log/colonization/project-nomand/project-nomand-duna-drill.png)
 </figure>
 
 
@@ -82,7 +82,7 @@ What was unfortunate is that the first launch of Project Nomand to Lythe, i.e. t
 <figcaption>
 Launching Project Nomand Base to Lythe Using Nuclear Impulse Rocket - ProjeKt Orion.
 </figcaption>
-![Launching Project Nomand Base to Lythe](../assets/log/colonization/project-nomand/project-nomand-lythe-launch.png)
+![Launching Project Nomand Base to Lythe](../../assets/log/colonization/project-nomand/project-nomand-lythe-launch.png)
 </figure>
 
 
@@ -91,7 +91,7 @@ Launching Project Nomand Base to Lythe Using Nuclear Impulse Rocket - ProjeKt Or
 <figcaption>
 Habitat Module and Mining Module of Project Nomand Base on Lythe
 </figcaption>
-![Habitat Module and Mining Module of Project Nomand Base on Lythe](../assets/log/colonization/project-nomand/project-nomand-lythe-habitat-mining.png)
+![Habitat Module and Mining Module of Project Nomand Base on Lythe](../../assets/log/colonization/project-nomand/project-nomand-lythe-habitat-mining.png)
 </figure>
 
 
@@ -100,7 +100,7 @@ Habitat Module and Mining Module of Project Nomand Base on Lythe
 <figcaption>
 Supply Run of Project Nomand Base on Lythe
 </figcaption>
-![Supply Run of Project Nomand Base on Lythe](../assets/log/colonization/project-nomand/project-nomand-lythe-relaunch.png)
+![Supply Run of Project Nomand Base on Lythe](../../assets/log/colonization/project-nomand/project-nomand-lythe-relaunch.png)
 </figure>
 
 
@@ -109,7 +109,7 @@ Supply Run of Project Nomand Base on Lythe
 <figcaption>
 Rover and Plane Supply of Project Nomand Base on Lythe
 </figcaption>
-![Rover and Plane Supply of Project Nomand Base on Lythe](../assets/log/colonization/project-nomand/project-nomand-lythe-rover-plane.png)
+![Rover and Plane Supply of Project Nomand Base on Lythe](../../assets/log/colonization/project-nomand/project-nomand-lythe-rover-plane.png)
 </figure>
 
 
@@ -119,7 +119,7 @@ Rover and Plane Supply of Project Nomand Base on Lythe
 <figcaption>
 Rover and Plane Supply of Project Nomand Base on Lythe
 </figcaption>
-![Rover and Plane Supply of Project Nomand Base on Lythe](../assets/log/colonization/project-nomand/project-nomand-lythe-rover-plane-2.png)
+![Rover and Plane Supply of Project Nomand Base on Lythe](../../assets/log/colonization/project-nomand/project-nomand-lythe-rover-plane-2.png)
 </figure>
 
 
@@ -128,7 +128,7 @@ Rover and Plane Supply of Project Nomand Base on Lythe
 <figcaption>
 Rover Coming to Lythe
 </figcaption>
-![Rover Coming to Lythe](../assets/log/colonization/project-nomand/project-nomand-lythe-rover-decending.png)
+![Rover Coming to Lythe](../../assets/log/colonization/project-nomand/project-nomand-lythe-rover-decending.png)
 </figure>
 
 
@@ -136,7 +136,7 @@ Rover Coming to Lythe
 <figcaption>
 Rover Coming to Lythe
 </figcaption>
-![Rover Coming to Lythe](../assets/log/colonization/project-nomand/project-nomand-lythe-rover-decending-2.png)
+![Rover Coming to Lythe](../../assets/log/colonization/project-nomand/project-nomand-lythe-rover-decending-2.png)
 </figure>
 
 
@@ -145,7 +145,7 @@ Rover Coming to Lythe
 <figcaption>
 Rover Landed on Lythe
 </figcaption>
-![Rover Landed on Lythe](../assets/log/colonization/project-nomand/project-nomand-lythe-rover-landed.png)
+![Rover Landed on Lythe](../../assets/log/colonization/project-nomand/project-nomand-lythe-rover-landed.png)
 </figure>
 
 
@@ -159,7 +159,7 @@ After the not-so-successful try of Lythe base, they realized that a minmus base,
 <figcaption>
 Base is Landing on Minmus Where They Used the Same Rocket Which Brings Base to Duna.
 </figcaption>
-![Base Landing on Minmus](../assets/log/colonization/project-nomand/project-nomand-minmus-landing.png)
+![Base Landing on Minmus](../../assets/log/colonization/project-nomand/project-nomand-minmus-landing.png)
 </figure>
 
 
@@ -167,7 +167,7 @@ Base is Landing on Minmus Where They Used the Same Rocket Which Brings Base to D
 <figcaption>
 A Kerbal Was Sent to Help Building the Base
 </figcaption>
-![A Kerbal Was Sent to Help Building the Base](../assets/log/colonization/project-nomand/project-nomand-minmus-kerbal-help.png)
+![A Kerbal Was Sent to Help Building the Base](../../assets/log/colonization/project-nomand/project-nomand-minmus-kerbal-help.png)
 </figure>
 
 
@@ -175,7 +175,7 @@ A Kerbal Was Sent to Help Building the Base
 <figcaption>
 Greenhouse of Project Nomand on Minmus
 </figcaption>
-![Greenhouse of Project Nomand on Minmus](../assets/log/colonization/project-nomand/project-nomand-minmus-greenhouse.png)
+![Greenhouse of Project Nomand on Minmus](../../assets/log/colonization/project-nomand/project-nomand-minmus-greenhouse.png)
 </figure>
 
 
@@ -190,14 +190,14 @@ Project Zero was created by the famous Collins family.
 <figcaption>
 Project Zero in Day Light
 </figcaption>
-![Project Zero in Day Light](../assets/log/colonization/project-zero/project-zero-kerbin-day.png)
+![Project Zero in Day Light](../../assets/log/colonization/project-zero/project-zero-kerbin-day.png)
 </figure>
 
 <figure markdown="1">
 <figcaption>
 Project Zero in Dark
 </figcaption>
-![Project Zero in Dark](../assets/log/colonization/project-zero/project-zero-kerbin-dark.png)
+![Project Zero in Dark](../../assets/log/colonization/project-zero/project-zero-kerbin-dark.png)
 </figure>
 
 
@@ -206,7 +206,7 @@ Project Zero in Dark
 <figcaption>
 Project Zero at Night
 </figcaption>
-![Project Zero at Night](../assets/log/colonization/project-zero/project-zero-kerbin-night.jpg)
+![Project Zero at Night](../../assets/log/colonization/project-zero/project-zero-kerbin-night.jpg)
 </figure>
 
 
@@ -227,7 +227,7 @@ The first module built had only a nice habitat capsule and two large storage can
 <figcaption>
 Lizzy Likes to Sit in Her Chair on the Asteroid - Project Asteroid City
 </figcaption>
-![Project Asteroid City](../assets/log/colonization/project-asteroid-city/project-asteroid-city-first-station.png)
+![Project Asteroid City](../../assets/log/colonization/project-asteroid-city/project-asteroid-city-first-station.png)
 </figure>
 
 Then a science module and more storage were launched.
@@ -236,7 +236,7 @@ Then a science module and more storage were launched.
 <figcaption>
 Science Module of Project Asteroid City
 </figcaption>
-![Science Module of Project Asteroid City](../assets/log/colonization/project-asteroid-city/project-asteroid-city-science-storage.png)
+![Science Module of Project Asteroid City](../../assets/log/colonization/project-asteroid-city/project-asteroid-city-science-storage.png)
 </figure>
 
 A mining ship was designed to test the technologies involved in asteroid mining. The data showed the design was quite amazing.
@@ -245,7 +245,7 @@ A mining ship was designed to test the technologies involved in asteroid mining.
 <figcaption>
 First Mining Facility of Asteroid
 </figcaption>
-![First Mining Facility of Asteroid](../assets/log/colonization/project-asteroid-city/project-asteroid-city-mining.png)
+![First Mining Facility of Asteroid](../../assets/log/colonization/project-asteroid-city/project-asteroid-city-mining.png)
 </figure>
 
 The mining ship has four drills.
@@ -255,7 +255,7 @@ The mining ship has four drills.
 <figcaption>
 First Mining Facility of Asteroid - Four Drills
 </figcaption>
-![First Mining Facility of Asteroid](../assets/log/colonization/project-asteroid-city/project-asteroid-city-mining-close.png)
+![First Mining Facility of Asteroid](../../assets/log/colonization/project-asteroid-city/project-asteroid-city-mining-close.png)
 </figure>
 
 
@@ -266,12 +266,12 @@ Lizzy loves the view, even with the mining machine running around.
 <figcaption>
 Lizzy and Asteroid City
 </figcaption>
-![Lizzy and Asteroid City](../assets/log/colonization/project-asteroid-city/project-asteroid-city-mining-lizzy.png)
+![Lizzy and Asteroid City](../../assets/log/colonization/project-asteroid-city/project-asteroid-city-mining-lizzy.png)
 </figure>
 
 <figure markdown="1">
 <figcaption>
 Lizzy and Asteroid City
 </figcaption>
-![Lizzy and Asteroid City](../assets/log/colonization/project-asteroid-city/project-asteroid-city-mining-lizzy-chair.png)
+![Lizzy and Asteroid City](../../assets/log/colonization/project-asteroid-city/project-asteroid-city-mining-lizzy-chair.png)
 </figure>
