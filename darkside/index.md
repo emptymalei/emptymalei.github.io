@@ -48,7 +48,7 @@ title:
 23. 请问您就读于？哦加州大学水浒分校。什么学校？UC Riverside.
 24. 真是满嘴跑火车：污污污污污。
 25. 我佛瓷杯。[来源](http://www.jianshu.com/p/c91baef6a739)
-
+26. In vivo we trust. [A Nature Article](http://www.nature.com/nrd/journal/v2/n6/full/nrd1127.html)
 
 
 ## 科技
