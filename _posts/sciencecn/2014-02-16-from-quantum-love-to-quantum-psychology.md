@@ -16,10 +16,10 @@ summary: 最近写了两篇关于用量子理论的方法来描述爱情的文�
 
 系列文章目录：
 
-* 第一篇：[爱情的严格量子力学描述](/science/quantum-love/)
-* 第二篇：[爱情的量子理论2](/science/quantum-love-2/)
-* 第三篇：[心理叠加态：从量子爱情到人的所有心理](/science/from-quantum-love-to-quantum-psychology/)
-* 第四篇：[基于统计数据的量子爱情](/science/quantum-psychology-cognition-and-statistics/)
+* 第一篇：[爱情的严格量子力学描述](/sciencecn/quantum-love/)
+* 第二篇：[爱情的量子理论2](/sciencecn/quantum-love-2/)
+* 第三篇：[心理叠加态：从量子爱情到人的所有心理](/sciencecn/from-quantum-love-to-quantum-psychology/)
+* 第四篇：[基于统计数据的量子爱情](/sciencecn/quantum-psychology-cognition-and-statistics/)
 
 
 
@@ -104,6 +104,6 @@ $\rho_i$ 是概率权重。只要找到这个量，所有的问题就解决了�
 
 
 
-[^0]:  [爱情的严格量子力学描述](/science/quantum-love/) 和 [爱情的量子理论2](/science/quantum-love-2/)
+[^0]:  [爱情的严格量子力学描述](/sciencecn/quantum-love/) 和 [爱情的量子理论2](/sciencecn/quantum-love-2/)
 [^1]:  我并不知道，我对心理学知道的极少。
 [^2]:  态密度是一个必须考虑的问题，记录一下。
