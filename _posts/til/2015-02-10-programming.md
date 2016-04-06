@@ -13,6 +13,19 @@ summary: Automatically adjust figure size in LaTeX
 * ToC
 {:toc}
 
+
+## Mathematica Plot Default Font Style and Ticks Style: BaseStyle
+
+Most of time, the plot generated using Mathematica is not a good one for projectors because the font size and ticks size are small. `BaseStyle` is a good solution to this problem. Here is an example from Wolfram Language
+
+```
+Plot[Sin[x]^2, {x, 0, 2 Pi}, PlotLabel -> Sin[x]^2, BaseStyle -> {FontWeight -> "Bold", FontSize -> 12}]
+```
+
+More on Wolfram Language: [Formats for Text in Graphics](https://reference.wolfram.com/language/tutorial/FormatsForTextInGraphics.html).
+
+
+
 ## LaTeX Automatically Adjust Figure
 
 `graphicx`:
