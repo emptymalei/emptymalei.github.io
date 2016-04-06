@@ -6,7 +6,7 @@ modified: 2015-12-04
 author: OctoMiao
 comments: true
 categories: til
-summary: Automatically adjust figure size in LaTeX
+summary: BaseStyle in Mathematica to solve small font problem on projector
 ---
 
 
