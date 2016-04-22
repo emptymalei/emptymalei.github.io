@@ -51,12 +51,28 @@ No TIL, for now.
 
 <div class="tiles">
 {% for post in site.categories.science limit:5 %}
-	{% include post-list-cn.html %}
+	{% include post-list.html %}
 {% endfor %}
 </div><!-- /.tiles -->
 
 	{% if site.categories.science.size %}
 <a href="./science/">All Science Posts ({{ site.categories.science.size }})</a>
+		{% else %}
+No Science, for now.
+		{% endif %}
+
+
+
+## 中文科普+科研
+
+<div class="tiles">
+{% for post in site.categories.sciencecn limit:5 %}
+	{% include post-list-cn.html %}
+{% endfor %}
+</div><!-- /.tiles -->
+
+	{% if site.categories.sciencecn.size %}
+<a href="./science/">全部中文科普和科研 ({{ site.categories.sciencecn.size }})</a>
 		{% else %}
 No Science, for now.
 		{% endif %}
