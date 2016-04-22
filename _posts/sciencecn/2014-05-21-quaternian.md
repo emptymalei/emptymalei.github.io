@@ -31,9 +31,13 @@ C = \begin{pmatrix}
 $$
 
 或者说，任何复数都可以写成
+
 $$
+\begin{equation}
 z=x\mathbf I + y\boldsymbol\sigma_2
+\end{equation}
 $$
+
 的形式。
 
 但不同的是，quaternion 矩阵表示的元素是复数，也需要我们使用更多的 Pauli Matrices。
@@ -98,9 +102,13 @@ $$
 然后这里可就让我们想到了这是二维欧式空间转动的生成元。
 
 除了生成元的看法，还有一种比较直观的方法来理解转动，那就是给定一个复数，另一个复数作用上去的结果是一个转动过的复数。
+
 $$
+\begin{equation}
 z_1 z_2=(\rho_1 e^{i\phi_1}) (\rho_2 e^{i\phi_2})= \rho_1\rho_2 e^{i(\phi_1+\phi_2)}
+\end{equation}
 $$
+
 也就是说，一个复数 $z_1$ 作用在另一个复数 $z_2$ 上产生了两个效果：
 
 1. 长度增加了 $\rho_1$ 倍
@@ -113,12 +121,19 @@ $$
 ## Hamiltonian
 
 我们可以看一下一个二能级系统的 Hamiltonian,因为是 $2\times 2$，所以可以使用 Pauli matrices + identity 展开，然而 identity 对应的是个 global phase，所以我们可以只用 Pauli matrices 来表示一个 Hamiltonian,
+
 $$
+\begin{equation}
 \mathbf H = \vec h\cdot\boldsymbol \sigma
+\end{equation}
 $$
+
 对于任意的 unitary 的变换 $\mathbf U_0=\cos\theta \mathbf I + \sin\theta\hat{\mathbf H}$ 作用在 Hamiltonian 上，即 $\mathbf U_0 \mathbf H \mathbf U_0^\dagger$，我们可以证明这是 Hamiltonian $\mathbf H$ 的旋转。
+
 $$
+\begin{equation}
 \mathbf U_0 \mathbf H\mathbf  U_0^\dagger =(\cos \theta \mathbf I + \hat{\mathbf{H}}\sin\theta) \mathbf{H}(\cos \theta \mathbf I + \sin \theta \hat{\mathbf{H}}) ^\dagger = \mathbf{H}.
+\end{equation}
 $$
 
 为了看清楚这个转动，我们定义一个正交空间。通过 Hamiltonian 的写法已经比较明显，就是我们的基矢是 Pauli matrices 组成的。我们构造的转动，其实是一个围绕 $\hat{\mathbf H}$ 的转动，因为我们发现我们构造的转动对 $\mathbf H$ 不起作用。这类似于欧氏空间的转动，围绕自身为转动轴的转动不改变这个矢量本身。
@@ -136,7 +151,3 @@ $$\begin{align}\mathbf U \mathbf H \mathbf U^\dagger &= (\cos\theta \mathbf I + 
 
 
 > 这里计算有误！或者基矢定义的问题？感觉不像是基矢定义的问题，顶多就是多一些正负号或者 $i$ 之类的量。不应该直接变成第三项为零啊。
-
-
-
-
