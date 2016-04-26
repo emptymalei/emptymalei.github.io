@@ -14,6 +14,23 @@ summary: BaseStyle in Mathematica to solve small font problem on projector
 {:toc}
 
 
+## Mathematica Smooth Plot
+
+Mathematica doesn't plot oscillating functions correctly. Weird wiggles and breaks in the plots are so common at least in the new versions of Mathematica. The solution to this problem is, of course, increase the sampling points. One way of doing this is through
+
+```
+PlotPoints->....
+```
+
+For example, suppose the plot range is from 0 to `endpoint=1000`, I could use
+
+```
+PlotPoints->Length@endpoint
+```
+
+
+
+
 ## Mathematica Plot Default Font Style and Ticks Style: BaseStyle
 
 Most of time, the plot generated using Mathematica is not a good one for projectors because the font size and ticks size are small. `BaseStyle` is a good solution to this problem. Here is an example from Wolfram Language
