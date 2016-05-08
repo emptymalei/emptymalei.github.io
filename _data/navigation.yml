@@ -16,6 +16,10 @@
   url: /about/
   excerpt: "About Me"
 
+- title: MISC
+  url: /misc/
+  excerpt: "其它"
+
 - title: 段子
   url: /darkside/
   excerpt: "段子及点子"
