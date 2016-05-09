@@ -4,6 +4,8 @@ layout: archive
 ---
 
 
+<img src="{{ site.url }}/images/field_eq-easer.jpg" style="margin-left: auto;margin-right: auto;"/>
+
 
 ### Science Posts in English
 
