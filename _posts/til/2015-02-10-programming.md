@@ -13,6 +13,16 @@ summary: BaseStyle in Mathematica to solve small font problem on projector
 * ToC
 {:toc}
 
+## .gitignore by file size
+
+
+http://stackoverflow.com/questions/4035779/gitignore-by-file-size
+
+
+```
+find . -size +1G | cat >> .gitignore
+```
+
 
 ## Mathematica Smooth Plot
 
