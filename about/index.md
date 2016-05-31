@@ -30,6 +30,4 @@ Some interesting GitHub organizations
 
 -----
 
-这个小本本的主题是基于 jekyll 的，使用了 [Skinny Bones Jekyll Starter](http://mmistakes.github.io/skinny-bones-jekyll) 主题，做了很多修改以适应中文环境。修改后的主题在此：[planets-jekyll](https://github.com/emptymalei/planets-jekyll).
-
-同时[星际移民中心的星海航纪](http://interimm.org/magazine)也是使用了这个主题。
+这个小本本的主题是基于 jekyll 的，使用了 [ED](http://elotroalex.github.io/ed/) 主题，做了很多修改以适应中文环境。
