@@ -14,3 +14,7 @@
   name: Dark Matter
 - slug: lyrics
   name: lyrics
+- slug: jupyter
+  name: jupyter notebook
+- slug: neutrino
+  name: Neutrino Physics
