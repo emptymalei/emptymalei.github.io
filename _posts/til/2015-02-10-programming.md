@@ -21,9 +21,9 @@ Using `tree` is very convinient however some problems could arise. One of it is 
 
 The command that counts the number of files and folders is
 
-{% highlight bash %}
+```
 find DIR_NAME -type f | wc -l
-{% endhighlit %}
+```
 
 where `DIR_NAME` is the directory name one needs to count.
 
