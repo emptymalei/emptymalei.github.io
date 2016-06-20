@@ -7,7 +7,7 @@ author: OctoMiao
 comments: true
 categories: science
 tag:
-- enlist
+- en
 - jupyter
 summary: keynote
 ---

@@ -2,11 +2,11 @@
 layout: article
 title: "TIL - Programming"
 date: 2015-12-04
-modified: 2015-12-04
+modified: 2016-06-20
 author: OctoMiao
 comments: true
 categories: til
-summary: BaseStyle in Mathematica to solve small font problem on projector
+summary: count file number in a folder 
 ---
 
 
