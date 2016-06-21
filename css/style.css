@@ -227,7 +227,25 @@ figure.highlight:hover {
 }
 
 figure.highlight:before {
-  
+  content: "" !important;
+  position: absolute !important;
+  background: rgba(255,255,255,0.75) !important;
+  color: black !important;
+  width: 1px !important;
+  height: 1px !important;
+  -webkit-border-radius: 1px !important;
+  -moz-border-radius:    1px !important;
+  border-radius:         11px !important;
+  text-align: center !important;
+  font-size: 1px !important;
+  line-height: 1px !important;
+  /* Only Fx 4 supporting transitions on psuedo elements so far... */
+  -webkit-transition: all 0.6s ease !important;
+  -moz-transition: all 0.6s ease !important;
+  -o-transition: all 0.6s ease !important;
+  opacity: 0.75 !important;
+  bottom: 2em !important;
+  left: 10px !important;
 }
 figure.highlight:hover:before {
   
