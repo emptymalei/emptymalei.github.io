@@ -221,6 +221,19 @@ figure:hover:before {
   opacity: 0 !important;
 }
 
+figure.highlight:hover {
+  opacity: 1 !important;
+  left: 0 !important;
+}
+
+figure.highlight:before {
+  
+}
+figure.highlight:hover:before {
+  
+}
+
+
 
 /* Design figure caption END */
 

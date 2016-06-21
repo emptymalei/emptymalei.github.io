@@ -10,6 +10,8 @@ teaser: # 400x250 px default teaser image used in image archive grid
 locale: en
 #url: http://openmetric.org
 #baseurl: /
+#url: /Users/leima/GitHub/emptymalei.github.io
+#baseurl: /Users/leima/GitHub/emptymalei.github.io
 
 # Jekyll configuration
 
