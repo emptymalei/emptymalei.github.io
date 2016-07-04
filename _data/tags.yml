@@ -18,3 +18,5 @@
   name: jupyter notebook
 - slug: neutrino
   name: Neutrino Physics
+- slug: complex-systems
+  name: Complex Systems
