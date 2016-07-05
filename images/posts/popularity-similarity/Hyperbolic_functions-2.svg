@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="520px"
+   height="420px"
+   version="1.1"
+   preserveAspectRatio="none"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Hyperbolic_functions.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata46">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="912"
+     inkscape:window-width="1006"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="1.0461538"
+     inkscape:cx="260"
+     inkscape:cy="324.70588"
+     inkscape:window-x="148"
+     inkscape:window-y="11"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 210 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="520 : 210 : 1"
+       inkscape:persp3d-origin="260 : 140 : 1"
+       id="perspective48" />
+    <path
+       id="p2"
+       d="M 401.421 310 C 409.421 321.314 425.359 343.205 460 383.205"
+       stroke="black"
+       stroke-width="2" />
+  </defs>
+  <path
+     d="M 60 210 h 400 M 440 200 l 20 10 l -20 10 M 260 10 v 400 M 250 30 l 10 -20 l 10 20"
+     stroke="black"
+     stroke-width="1"
+     id="path7" />
+  <path
+     d="M 60 10 l 400 400 M 460 10 l -400 400"
+     stroke="black"
+     stroke-width="2"
+     stroke-dasharray="20,10"
+     id="path9" />
+  <path
+     d="M 160 210 v 100"
+     stroke="black"
+     stroke-width="1"
+     stroke-dasharray="10,10"
+     id="path11" />
+  <path
+     d="M 401.421 210 v 100"
+     stroke="black"
+     stroke-width=".01"
+     stroke-dasharray=".1,.1"
+     id="path13" />
+  <path
+     d="M 118.579 310 C 126.579 298.686 160 254 160 210 160 166 126.579 121.314 118.579 110"
+     fill="none"
+     stroke="black"
+     stroke-width="2"
+     id="path17" />
+  <use
+     xlink:href="#p2"
+     id="use19" />
+  <use
+     xlink:href="#p2"
+     transform="matrix(-1, 0, 0, 1, 520, 0)"
+     id="use21" />
+  <use
+     xlink:href="#p2"
+     transform="matrix(1, 0, 0, -1, 0, 420)"
+     id="use23" />
+  <use
+     xlink:href="#p2"
+     transform="matrix(-1, 0, 0, -1, 520, 420)"
+     id="use25" />
+  <path
+     d="M 401.421 210 v -100 H 260"
+     stroke="red"
+     fill="none"
+     stroke-width="1"
+     id="path27" />
+  <text
+     x="190"
+     y="207"
+     font-family="Times"
+     font-size="25"
+     id="text29">1</text>
+  <text
+     x="165"
+     y="262"
+     font-family="Times"
+     font-size="25"
+     id="text31">1</text>
+  <text
+     x="440"
+     y="250"
+     font-family="Times"
+     font-size="25"
+     font-style="italic"
+     id="text33">X</text>
+  <text
+     x="220"
+     y="30"
+     font-family="Times"
+     font-size="25"
+     font-style="italic"
+     id="text35">Y</text>
+  <text
+     x="280"
+     y="103"
+     font-family="Times"
+     font-size="25"
+     id="text37">cosh</text>
+  <text
+     x="330"
+     y="103"
+     font-family="Times"
+     font-size="25"
+     font-style="italic"
+     id="text37a">a</text>
+  <text
+     x="410"
+     y="170"
+     font-family="Times"
+     font-size="25"
+     id="text39">sinh</text>
+  <text
+     x="458"
+     y="170"
+     font-family="Times"
+     font-size="25"
+     font-style="italic"
+     id="text39a">a</text>
+  <text
+     x="10"
+     y="150"
+     font-family="Times"
+     font-size="25"
+     font-style="italic"
+     id="text43">x² – y² =</text>
+  <text
+     x="100"
+     y="150"
+     font-family="Times"
+     font-size="25"
+     id="text43">1</text>
+  <path
+     d="M 401.15167,309.70588 C 393.15167,298.39188 359.73067,253.70588 359.73067,209.70588 C 359.73067,165.70588 393.15167,121.01988 401.15167,109.70588"
+     id="path2421"
+     style="fill:none;stroke:#000000;stroke-width:2" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 260,210.66176 L 401.47059,110.29412"
+     id="path2423"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:#ff0000"
+     d="M 263.90316,209.09018 C 266.07637,207.25513 392.92044,117.66176 393.34526,117.66176 C 393.65885,117.66176 392.66165,119.48989 391.12934,121.72426 C 372.57127,148.78496 358.45588,184.86935 358.45588,205.25021 L 358.45588,209.42647 L 310.98037,209.42647 C 284.86888,209.42647 263.68413,209.27514 263.90318,209.09016 L 263.90316,209.09018 z"
+     id="path2459" />
+  <text
+     x="315"
+     y="195"
+     font-size="25"
+     font-style="italic"
+     id="text41"
+     style="font-size:25px;font-style:italic;font-family:Times">a/2</text>
+</svg>
