@@ -8,7 +8,7 @@ comments: true
 categories: science
 tag:
 - en
-summary: Notes for Whitesides' Group: Writing a Paper
+summary: Notes for Whitesides Group Writing a Paper
 ---
 
 
