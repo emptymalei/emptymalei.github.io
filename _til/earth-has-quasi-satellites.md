@@ -5,6 +5,7 @@ modified: 2015-09-02
 author: OctoMiao
 comments: true
 categories: astro
+filter: astro
 summary: Earth Has Quasi-satellites
 ---
 

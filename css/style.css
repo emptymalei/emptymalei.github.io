@@ -248,7 +248,7 @@ figure.highlight:before {
   left: 10px !important;
 }
 figure.highlight:hover:before {
-  
+
 }
 
 
@@ -355,4 +355,28 @@ figure.highlight:hover:before {
 {
    text-align: right;
     font-size: 70%;
+}
+
+.til-subsection {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Glyph, by Harry Roberts */
+
+hr.paragraph {
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.paragraph:after {
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    font-size: 1em;
+    padding: 0 0.25em;
+    background: white;
 }

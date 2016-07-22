@@ -6,6 +6,7 @@ modified: 2015-08-18 # 2015-02-03 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 comments: true
 categories: math
+filter: math
 summary: Symmetry of second derivatives
 ---
 

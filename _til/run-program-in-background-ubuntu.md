@@ -5,6 +5,7 @@ date: 2015-12-04
 author: OctoMiao
 comments: true
 categories: programming
+filter: programming
 summary: Run a program in the background on ubuntu
 ---
 

@@ -5,6 +5,7 @@ date: 2015-09-03
 author: OctoMiao
 comments: true
 categories: physics
+filter: physics
 summary: Qualitative Methods
 ---
 

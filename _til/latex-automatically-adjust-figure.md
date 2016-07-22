@@ -5,6 +5,7 @@ date: 2015-12-04
 author: OctoMiao
 comments: true
 categories: programming
+filter: programming
 summary: LaTeX Automatically Adjust Figure
 ---
 

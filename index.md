@@ -28,18 +28,18 @@ title:
 
 
 
-## Recent TIL
+## Today I Learned
 
 <div class="tiles">
-{% for post in site.categories.til limit:5 %}
+{% for post in site.til limit:5 %}
 	{% include post-list.html %}
 {% endfor %}
 </div><!-- /.tiles -->
 
 
 
-{% if site.categories.til.size %}
-<a href="./til/">All TILs ({{ site.categories.til.size }})</a>
+{% if site.til.size %}
+<a href="./til/">All TILs ({{ site.til.size }})</a>
 		{% else %}
 No TIL, for now.
 		{% endif %}
@@ -62,6 +62,9 @@ No Science, for now.
 		{% endif %}
 
 
+<hr class="paragraph">
+
+<h1 style="text-align:center;margin-bottom:2em;">中文区</h1>
 
 ## 中文科普+科研
 

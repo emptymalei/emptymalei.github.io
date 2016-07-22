@@ -5,6 +5,7 @@ modified: 2015-09-02
 author: OctoMiao
 comments: true
 categories: physics
+filter: physics
 summary: Interesting Facts on Eigenstates
 ---
 
