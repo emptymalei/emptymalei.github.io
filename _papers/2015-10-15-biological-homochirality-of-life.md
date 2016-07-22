@@ -1,15 +1,11 @@
 ---
-layout: article
+layout: til
 title: "Biological Homochirality of Earth Life"
 date: 2015-10-15
 modified: 2015-10-15 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 comments: true
-categories: papers
-tag:
-- en
-- papers
-- biology
+categories: biophysics
 summary: Explain why life prefer homochirality
 ---
 

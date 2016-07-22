@@ -1,38 +1,14 @@
 ---
-layout: article
-title: "TIL - Misc"
+layout: til
+title: "Google Search Tricks"
 date: 2015-04-09
-modified: 2015-03-21
+modified: 2015-04-09
 author: OctoMiao
 comments: true
-categories: til
-summary: "Connectome is complete map of a neural system. In history, the connectome of nematode was built completely"
-published: true
+categories: misc
+summary: Google Search Tricks
 ---
 
-
-* Toc
-{:toc}
-
-
-## Convert Images Using ImageMagick
-
-```
-convert -density 300 myimage.eps myimage.png
-```
-
-
-## Automatically Trim Image
-
-Trim out the white margin of an image using ImageMagick:
-
-```
-convert elementary-particles.jpg -trim elementary-particles.jpg
-```
-
-Well to install ImageMagic, check out the website, or use Homebrew.
-
-## Google Search Tricks
 
 * `AND` and `OR` are two operators that can be used in Google search.
 * `AROUND(x)` can be used to refine search results for two words that are close to each other up to a range `x`. For example `ABC AROUND(1) DEF` means that `ABC` and `DEF` are very close to each other in the search results while `ABC AROUND(3) DEF` means they are not so close.
@@ -74,46 +50,3 @@ Finally, Google can gives us useful result directly like calculator (`calculator
 
 [^lifehackerGoogle]: [Top 10 Clever Google Search Tricks](http://lifehacker.com/top-10-clever-google-search-tricks-1450186165)
 [^7tricks]: [7 Clever Google Tricks Worth Knowing](http://www.marcandangel.com/2007/07/25/7-clever-google-tricks-worth-knowing/)
-
-
-## Connectome
-
-Connectome is complete map of a neural system. In history, the connectome of nematode was built completely.([^connect1] and [^connect2])
-
-There is an excellant TED talk given by Sebastian Seung, [I am my connectome](http://www.ted.com/talks/sebastian_seung#t-1135647). This is an intriguing talk. And I started thinking a lot about this idea.
-
-[^connect1]: [Structural Properties of the Caenorhabditis elegans Neuronal Network](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001066) by Lav R. Varshney, Beth L. Chen, Eric Paniagua, David H. Hall, Dmitri B. Chklovskii .
-[^connect2]: [The Structure of the Nervous System of the Nematode Caenorhabditis elegans](http://rstb.royalsocietypublishing.org/content/314/1165/1) by J. G. White , E. Southgate , J. N. Thomson , S. Brenner.
-
-
-http://rstb.royalsocietypublishing.org/content/314/1165/1
-
-
-## Simple English
-
-If you simplify your English, when you make a stupid remark its stupidity will be obvious, even to yourself.
-
-This is by George Orwell.
-
-
-## Titanian Montes Are Named After Mountains From Middle-Earth Created By J.R.R. Tolkien
-
-For instance, Doom Mons is a mountain range located on the southern hemisphere of Titan.
-
-Checkout [ist of geological features on Titan](https://en.wikipedia.org/wiki/List_of_geological_features_on_Titan#Montes) for more names.
-
-## Typesetting In Text
-
-Use the symbol ▌ to help typesetting plain text file, especially on social media. One good example of this technique is
-
-> ▌ This is a title
->
->
-> xyz axis abc axis how is what is that is not cute smart
-
-Heart is also a very useful symbol for lists in plain text.
-
->  ♥  ABC
->
->
->  ♥  CDE

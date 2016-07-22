@@ -37,6 +37,17 @@ gems:
 
 
 
+
+# Jekyll Collections
+
+collections:
+  til:
+    output: true
+  papers:
+    output: true
+
+
+
 # Custom vars
 version:             0.3.1
 

@@ -1,20 +1,15 @@
 ---
-layout: article
-title: "TIL - Math"
+layout: til
+title: "Eigensystem of A Special Matrix"
 date: 2015-02-15 # not necessarily the date created but to ensure the sorting of posts
 modified: 2015-08-18 # 2015-02-03 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 comments: true
-categories: til
-summary: Eigenstates of a very special matrix 
+categories: math
+summary: Eigenstates of a very special matrix
 ---
 
-* Toc
-{:toc}
 
-
-
-## Eigensystem of A Special Matrix
 
 One of the most used matrix in physics is
 
@@ -64,38 +59,3 @@ no matter how small $b$ is.
 
 
 **A useful trick when solving the eigensystem is to remove an identity from the matrix because it only shifts the eigenvalue by a certain amount.**
-
-
-## Feynman trick
-
-The following identity is true,
-
-$$
-\frac{1}{AB} = \int_0^1 \frac{1}{[A + (B - A) x ]^2} dx .
-$$
-
-
-## Area enclosed by a line
-
-Area enclosed by a line is given by
-
-$$
-\vec S = \frac{1}{2}\int \vec x \times \vec{d l}.
-$$
-
-*Stop using stupid expressions.*
-
-
-## Symmetry of second derivatives
-
-
-[This wikipedia page](https://en.wikipedia.org/wiki/Symmetry_of_second_derivatives#Requirement_of_continuity) shows an example of symmetry breaking of the second derivatives, that is $\partial_x\partial_y f \ne \partial_y\partial_x f$. The example is
-
-$$
-f(x,y) = \begin{cases}
-\frac{xy(x^2-y^2)}{x^2+y^2} & \mbox{ for } (x,y) \ne (0,0) \\
-0 & \mbox{ for } (x,y) = (0,0).
- \end{cases}
-$$
-
-A image of the function is shown on wikipedia.

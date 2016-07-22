@@ -1,0 +1,5 @@
+<li>
+   {% if til.date %}
+   <span>{{ til.date | date: "%B %d, %Y" }}</span> &raquo; {% endif %}#{{ til.categories }}# 
+   <a href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+</li>

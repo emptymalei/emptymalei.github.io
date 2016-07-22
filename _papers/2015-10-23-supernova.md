@@ -1,15 +1,11 @@
 ---
-layout: article
+layout: til
 title: "Supernova"
 date: 2015-10-23
 modified: 2015-10-23 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 comments: true
-categories: papers
-tag:
-- en
-- papers
-- astrophysics
+categories: astrophysics
 summary: Supernova Q&A's.
 ---
 
