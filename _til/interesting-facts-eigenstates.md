@@ -15,7 +15,7 @@ The eigenstates of a matrix
 $$
 \begin{pmatrix}
 E_1 & 0 \\
-0 & E_2
+0 & E_1
 \end{pmatrix}
 $$
 
@@ -34,7 +34,7 @@ However if we put in two real off-diagonal elements
 $$
 \begin{pmatrix}
 E_1 & \epsilon \\
-\epsilon & E_2
+\epsilon & E_1
 \end{pmatrix},
 $$
 
