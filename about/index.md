@@ -1,7 +1,8 @@
 ---
 layout: article
-title: "关于"
+title: About
 comments: true
+published: true
 ---
 
 More about the author: [OctoMiao: Open is the key](http://openmetric.org/me/)
@@ -12,6 +13,11 @@ Some GitHub repos to check out,
 2. [Statistical Physics](http://emptymalei.github.io/statisticalphysics): Statistical Physics lecture notes.
 3. [Survive Research](http://emptymalei.github.io/tool/): Some tools to help you survive scientific research.
 4. [Neutrino Physics](http://docs.neutrino.xyz): About neutrinos.
+
+I am learning web techniques. As a practice, I built some projects.
+
+1. [Watch UV](http://openmetric.org): A website that shows the UV Index using barchart and table.
+2. [Sphinx Notebook](http://openmetric.org/sphinx-notebook/): Use sphinx as notebook
 
 
 
