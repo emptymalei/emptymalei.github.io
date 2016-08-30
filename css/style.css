@@ -100,6 +100,8 @@
     h1 {
         font-size:2.7em;
         line-height:1.4em;
+        /*text-align: center !important;
+        padding-bottom: 1em !important;*/
     }
 
     h3 {
@@ -145,7 +147,7 @@ blockquote:before {
   vertical-align: -0.4em !important;
 }
 blockquote p {
-  display: inline !important;
+  /*display: inline !important;*/
 }
 
 .site-title {
@@ -167,12 +169,14 @@ blockquote p {
 
 /*#main .inner-wrap {width: 95% !important;}*/
 
+
 figure {
   margin-left: auto !important;
   margin-right: auto !important;
   display: block !important;
   position: relative !important;
   overflow: hidden !important;
+  padding-bottom: 1em;
 }
 
 /* Design figure caption BEGIN */
@@ -184,7 +188,7 @@ figcaption {
   color: white !important;
   padding: 10px 20px !important;
   opacity: 0 !important;
-  bottom: 1em !important;
+  bottom: 0em !important;
   left: -30% !important;
   -webkit-transition: all 0.6s ease !important;
   -moz-transition:    all 0.6s ease !important;

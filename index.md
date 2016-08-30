@@ -98,3 +98,8 @@ No Science, for now.
 		{% else %}
 No Stories, for now.
 		{% endif %}
+<!-- 
+## Random Posts
+
+<div id="random_posts">
+</div> -->

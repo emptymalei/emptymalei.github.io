@@ -4,15 +4,12 @@ title: Today I Learned
 ---
 
 
-<h2 class="til-subsection">READING</h2>
 
-I always love to read interesting papers in physics. Here are some notes I wrote. Think of this as a lab notebook.
+<div id="random_til" style="border:1px solid grey;padding-bottom:2em;">
+<h2 class="til-subsection">A Random #TIL# for You</h2>
+</div>
 
-<div class="tiles">
-{% for til in site.papers reversed %}
-	   {% include til-list.html %}
-{% endfor %}
-</div><!-- /.tiles -->
+
 
 
 

@@ -1,13 +1,29 @@
 ---
 layout: archive
-
+title: Science
 ---
 
 
-<img src="{{ site.url }}/images/field_eq-easer.jpg" style="margin-left: auto;margin-right: auto;"/>
+* ToC
+{:toc}
+
+<!-- <img src="{{ site.url }}/images/field_eq-easer.jpg" style="margin-left: auto;margin-right: auto;"/> -->
 
 
-### Science Posts in English
+
+## READING
+
+I always love to read interesting papers in physics. Here are some notes I wrote. Think of this as a lab notebook.
+
+<div class="tiles">
+{% for til in site.papers reversed %}
+	   {% include til-list.html %}
+{% endfor %}
+</div><!-- /.tiles -->
+
+
+
+## Science Posts in English
 
 {% if site.categories.science.size %}
 {{ site.categories.science.size }} posts on science
@@ -24,7 +40,7 @@ No Science Posts.
 
 -----
 
-### 中文科普 + 科学
+## 中文科普 + 科学
 
 {% if site.categories.sciencecn.size %}
 共有 {{ site.categories.sciencecn.size }} 篇中文科学文章。
@@ -40,7 +56,7 @@ No Science Posts.
 
 ---
 
-### 数值计算（中文）
+## 数值计算（中文）
 
 Resources
 
