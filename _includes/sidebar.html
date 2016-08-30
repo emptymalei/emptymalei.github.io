@@ -5,7 +5,7 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <p>{{ site.description-side-bar }}</p>
   </div>
 
   <nav class="sidebar-nav">
@@ -34,8 +34,26 @@
       {% endif %}
     {% endfor %}
 
-
   </nav>
+
+  <div class="sidebar-item" style="display:flex;justify-content:space-between;">
+    {% if site.owner.github != null %}
+      <a class="fa" data-balloon="@{{ site.owner.github }}" data-balloon-pos="up" href="http://github.com/{{ site.owner.github }}"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+    {% endif %}
+
+    {% if site.owner.linkedin != null %}
+    <a class="fa" data-balloon="@{{ site.owner.linkedin }}" data-balloon-pos="up" href="https://www.linkedin.com/in/{{ site.owner.linkedin }}"> <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a>
+    {% endif %}
+
+    {% if site.owner.weibo != null %}
+    <a class="fa" data-balloon="@{{ site.owner.weibo-display }}" data-balloon-pos="up" href="http://weibo.com/{{ site.owner.weibo }}"> <i class="fa fa-weibo fa-lg" aria-hidden="true"></i></a>
+    {% endif %}
+
+    {% if site.owner.wechat != null %}
+    <a class="fa" data-balloon="@{{ site.owner.wechat }}" data-balloon-pos="up"><i class="fa fa-wechat fa-lg" aria-hidden="true"></i></a>
+    {% endif %}
+
+  </div>
 
   <div class="sidebar-item">
     <p>
