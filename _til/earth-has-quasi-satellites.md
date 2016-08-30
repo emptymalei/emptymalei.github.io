@@ -1,6 +1,7 @@
 ---
 layout: til
 title: "Earth Has Quasi-satellites"
+date: 2015-09-02
 modified: 2015-09-02
 author: OctoMiao
 comments: true

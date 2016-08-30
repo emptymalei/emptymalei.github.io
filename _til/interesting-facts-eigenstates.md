@@ -1,6 +1,7 @@
 ---
 layout: til
 title: "Interesting Facts on Eigenstates"
+date: 2015-09-02
 modified: 2015-09-02
 author: OctoMiao
 comments: true
