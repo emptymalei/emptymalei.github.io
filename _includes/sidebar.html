@@ -37,6 +37,11 @@
   </nav>
 
   <div class="sidebar-item" style="display:flex;justify-content:space-between;">
+
+    {% if site.owner.cv == true %}
+    <a class="fa" data-balloon="&nbsp;&nbsp;My Resume & CV" data-balloon-pos="up" href="/resume"><i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i></a>
+    {% endif %}
+
     {% if site.owner.github != null %}
       <a class="fa" data-balloon="@{{ site.owner.github }}" data-balloon-pos="up" href="http://github.com/{{ site.owner.github }}"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
     {% endif %}
@@ -50,7 +55,7 @@
     {% endif %}
 
     {% if site.owner.wechat != null %}
-    <a class="fa" data-balloon="@{{ site.owner.wechat }}" data-balloon-pos="up"><i class="fa fa-wechat fa-lg" aria-hidden="true"></i></a>
+    <a class="fa" data-balloon="@{{ site.owner.wechat }}&nbsp;&nbsp;" data-balloon-pos="up"><i class="fa fa-wechat fa-lg" aria-hidden="true"></i></a>
     {% endif %}
 
   </div>

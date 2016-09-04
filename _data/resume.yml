@@ -1,0 +1,169 @@
+# Theme customization is done on this file instead of _config.yml so that
+# you don't have to restart Jekyll to see changes.
+
+photo: "https://avatars1.githubusercontent.com/u/663798?v=3&s=460"
+name: "Lei Ma"
+copy: "Current Status: Physics PhD Candidate"
+
+# Color scheme based on http://www.materialui.co/colors.
+# Possible values:
+# - default
+# - red
+# - pink
+# - brown
+# - blue
+# - purple
+# - teal
+# - green
+color: default
+
+links:
+  twitter: emptymalei
+  github: emptymalei
+  linkedin: emptymalei
+  # email: mikey@tmnt.com
+  website: openmetric.org # without http://
+  researchgate: Lei_MA
+  mendeley: lei-ma9
+
+
+education:
+  phd:
+    category: PhD
+    major: Physics
+    university: University of New Mexico
+    location: Albuquerque, USA
+    date: 08/2013 - 
+    notes: I am doing research in neutrino oscillations.
+  bsc:
+    category: BSc
+    major: Physics
+    university: Shandong University
+    location: Jinan, China
+    date: 09/2006 - 05/2010
+    notes: I did research in piezoelectric ceramics and cosmic microwave background.
+  
+
+research:
+  - category: Neutrino Physics
+    topics: Neutrino oscillations in matter, stimulated neutrino oscillations in matter, quantum two level system.
+
+  - category: Articial Neural Network
+    topics: To solve dierential equations
+
+  - category: Piezoelectric Material
+    topics: High temperature piezoelectric ceramics
+
+  - category: Cosmology
+    topics: f(R) theory
+
+  - category: Biophysics
+    topics: Does saltatory conduction work in neurons theoretically?
+
+    
+
+publications:
+  - authors: Lei Ma, Kun Zhao, Jixia Li, Qi Wu, Minglei Zhao, Chunlei Wang, 
+    title: Dielectric and Piezoelectric Properties of (Li,Ce) Modified NaBi5Ti5O18 Composite Ceramics
+    journal: Journal of Rare Earths
+    vol: 27
+    page: 496
+    year: 2009
+
+  - authors: Lei Ma, Kun Zhao, Jixia Li and Hongze Zhang
+    title: The Modification of Malus Law for Depolarized Polaroid and Experimental Verification
+    journal: College Physics
+    vol: 29
+    page: 58
+    year: 2010
+
+  
+organizations:
+  - name: NeuPhysics
+    displayname: github.com/NeuPhysics
+    link: http://neutrino.xyz
+    description: A website and GitHub organization for neutrino physics.
+
+  - name: NeuronStar
+    displayname: github.com/neuronstar
+    link: http://neuronstar.cc
+    description: A website and GitHub organization for the connection between neuroscience and physics. A reading club is hosted here.
+
+  - name: InterImm
+    displayname: github.com/InterImm
+    link: http://interimm.org
+    description: Imagination of a space faring future.
+
+  - name: awesome-research
+    displayname: github.com/emptymalei/awesome-research
+    link: http://github.com/emptymalei/awesome-research
+    description: A curated list of tools for research.
+  
+awards:
+  - title: First Prize of Excellent Undergraduate Scholarship
+    year: 2007
+    type: Scholarship
+
+  - title: Third Prize of Excellent Undergraduate Scholarship
+    year: 2008
+    type: Scholarship
+
+  - title: Second Prize of Excellent Undergraduate Scholarship
+    year: 2009
+    type: Scholarship
+
+  - title: First Prize of May-4th Academic Contest
+    year: 2008
+    type: Award
+
+  - title: Third Prize of May-4th Academic Contest
+    year: 2008
+    type: Award
+
+  - title: Second Prize of Innovation in Science and Technology for College Students of Shandong Province in China
+    year: 2009
+    type: Award
+
+
+
+work:
+  - company: guokr.com
+    type: Internship
+    link: http://guokr.com
+    year: Feb. 2013 - Aug. 2013
+    description: Guokr.com is the largest popular science and mooc company in China.
+
+  - company: Fudan University
+    type: Teaching Assistant
+    link: http://phys.fudan.edu.cn
+    year: 2011 Spring
+    description: Physics lab teaching assistant
+    
+  - company: Fudan University
+    type: Teaching Assistant
+    link: http://phys.fudan.edu.cn
+    year: 2012 Spring
+    description: Physics lab teaching assistant
+  
+  - company: University of New Mexico
+    type: Teaching Assistant
+    link: http://panda.unm.edu
+    year: 2013 Fall - 2014 Fall
+    description: Teaching assistant
+  
+
+
+social:
+  notes: I am not really social. However, I do like to interact with people on the internet.
+  ids:
+    - name: Douban
+      link: http://www.douban.com/people/emptymalei
+      id: emptymalei
+
+    - name: Weibo
+      link: http://weibo.com/emptymalei
+      id: 章鱼喵-十只手
+
+    - name: Wechat
+      link: 
+      id: emptymalei
