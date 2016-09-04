@@ -1,0 +1,98 @@
+---
+---
+<!DOCTYPE html>
+<html>
+{% include resume-head.html %}
+  
+  <body>
+    <div class="container resume-content">
+      <nav class="navbar navbar-default hidden-print hidden-xs" role="navigation">
+        <div class="resume-nav">
+          
+          <div class="dropdown resume-dropdown">
+            <a type="button" class="btn btn-default" role="button" aria-expanded="false" href="http://openmetric.org">Back to Dark Hypernova</a>
+          </div>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#saveAsPdf">
+            Print
+          </button>
+          <a type="button" class="btn btn-primary" href="/assets/cv-LeiMa.pdf">
+            CV in PDF
+          </a>
+          <div class="modal fade" id="saveAsPdf" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <!-- <img src="{{ "/images/resume_print_dialog.png" | prepend:site.baseurl }}" class="img-rounded" width="400" height="342"> -->
+                  <p>Warning: Currently, print works the best on Chrome.</p>
+                </div>
+                <div class="modal-footer">
+                  <button onclick="window.print()" class="btn btn-primary">Open Print Dialog</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-sm-8 clearfix">
+          <figure class="resume-pic">
+            <img src="{{ site.data.resume.photo }}" class="img-rounded" width="120" height="120">
+          </figure>
+          <div class="resume-baseinfo">
+            <h1>{{ site.data.resume.name }}</h1>
+            <p>{{ site.data.resume.copy }}</p>
+          </div>
+        </div>
+        <div class="col-sm-4 resume-contact">
+          {% include resume-nav.html %}
+        </div>
+      </div>
+      <div class="row">
+        {% for card in site.resume reversed %}
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">{{ card.type }}</h3>
+              </div>
+              <div class="panel-body">
+                {% if card.heading %}
+                  <h4>
+                    {{ card.heading }}
+                  </h4>
+                {% endif %}
+                {% if card.subheading %}
+                  <p class="resume-subheading">
+                    {{ card.subheading }}
+                  </p>
+                {% endif %}
+                {% if card.duration %}
+                  <p class="resume-duration">
+                    {{ card.duration }}
+                  </p>
+                {% endif %}
+                {% if card.location %}
+                  <p class="resume-location">
+                    {{ card.location }}
+                  </p>
+                {% endif %}
+                {{ card.content }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      {% if site.data.resume.demo %}
+      <div class="visible-xs hidden-print resume-view-pdf"><a href="http://cl.ly/Zb42/download/resume-print-sample.pdf" class="btn btn-primary btn-lg">View Generated PDF</a></div>
+      {% endif %}
+    </div>
+
+<!-- <div style="text-align:center;margin-bottom:2em;">
+<span>Built with <a href="https://github.com/ellekasai/resumecards" target="_blank">ResumeCards</a><span class="hidden-sm">, a Markdown based resume generator</span></span>.
+</div> -->
+    <script src="/js/jquery-3.1.0.min.js"></script>
+    <script src="/js/resumecards/bootstrap.min.js"></script>
+    <script src="/js/resumecards/resumecards.js"></script>
+    {% include resume-scripts.html %}
+  </body>
+</html>

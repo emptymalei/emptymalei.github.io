@@ -5,7 +5,8 @@ comments: true
 published: true
 ---
 
-More about the author: [OctoMiao: Open is the key](http://openmetric.org/me/)
+* More about the author: [OctoMiao: Open is the key](http://openmetric.org/me/)
+* [Resume & CV](/resume) of the author
 
 Some GitHub repos to check out,
 
@@ -36,4 +37,4 @@ Some interesting GitHub organizations
 
 -----
 
-这个小本本的主题是基于 jekyll 的，使用了 [ED](http://elotroalex.github.io/ed/) 主题，做了很多修改以适应中文环境。
+这个小本本的主题是基于 [Jekyll](http://jekyllrb.com) 的，使用了 [ED](http://elotroalex.github.io/ed/) 主题，做了很多修改，添加了很多功能。
