@@ -30,4 +30,4 @@ Many python modules has implemented cubehelix. Such as [jradavenport/cubehelix](
 Here is the [cubehelix code](http://mathematica.stackexchange.com/questions/64513/is-there-an-easy-way-to-use-matteo-niccolis-perceptual-color-maps-for-2d-plots) from [JasonB@stackexchange](http://mathematica.stackexchange.com/users/9490/jasonb). He also made it avaible online through `<<"http://pastebin.com/raw.php?i=sqYFdrkY";`
 
 
-Download the Mathematica notebook [here](assets/misc/cubehelix-linearl-color-palette.nb).
+Download the Mathematica notebook [here](../assets/misc/cubehelix-linearl-color-palette.nb).
