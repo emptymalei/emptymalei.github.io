@@ -220,6 +220,7 @@ figure:before {
   opacity: 0.75 !important;
   bottom: 2em !important;
   left: 10px !important;
+  border: 2px solid #000;
 }
 figure:hover:before {
   opacity: 0 !important;
