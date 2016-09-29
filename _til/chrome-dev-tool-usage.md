@@ -41,10 +41,10 @@ give us a table that is associated with the array.
 
 
 <figure markdown="1">
+![](../assets/programming/chrome-dev-tools-console.table.png)
 <figcaption>
 console.table()
 </figcaption>
-![](../assets/programming/chrome-dev-tools-console.table.png)
 </figure>
 
 
@@ -66,8 +66,30 @@ inspect($('.sidebar'))
 will list all the element that has class `sidebar`.
 
 <figure markdown="1">
+![](../assets/programming/chrome-dev-tools-inspect.png)
 <figcaption>
 inspect($('.sidebar'))
 </figcaption>
-![](../assets/programming/chrome-dev-tools-inspect.png)
 </figure>
+
+
+## dir()
+
+List out all the properties of a element using
+
+```
+dir($("div"))
+```
+
+<figure markdown="1">
+![](../assets/programming/chrome-dev-tool-dir.png)
+<figcaption>
+div($('div'))
+</figcaption>
+</figure>
+
+
+## And more
+
+1. [Things you probably didn’t know you could do with Chrome’s Developer Console](https://medium.freecodecamp.com/10-tips-to-maximize-your-javascript-debugging-experience-b69a75859329#.cj9742xlv)
+2. [中文版：天啦噜！原来Chrome自带的开发者工具还能这么用！](https://zhuanlan.zhihu.com/p/22665710)
