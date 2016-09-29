@@ -51,9 +51,9 @@ title:
 
 <section style="margin-top:2em;margin-bottom:2em;text-align:center;">
 
-<a href="/til/" class="button button-border">#TIL#'s</a>
-<a href="/science/" class="button button-border">Science Posts</a>
-<a href="/misc/" class="button button-border">MISC Posts</a>
-<a href="/research/" class="button button-border">My Research</a>
+<a href="/til/" style="margin: 1em 1em 1em 1em;" class="button button-border">#TIL#'s</a>
+<a href="/science/" style="margin: 1em 1em 1em 1em;" class="button button-border">Science Posts</a>
+<a href="/misc/" style="margin: 1em 1em 1em 1em;" class="button button-border">MISC Posts</a>
+<a href="/research/" style="margin: 1em 1em 1em;" class="button button-border">My Research</a>
 
 </section>
