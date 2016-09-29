@@ -63,14 +63,3 @@ title:
    * 二楼人少，但是在 UA check in 的附近有两张大桌子，带有电源，如果没有抢到大桌子，二楼还有其它的靠墙的很安静的椅子，可以躺下来睡觉。
    * 三楼有淋浴可以洗澡，另外吃饭的地方都在三楼，必不可少的星巴克也有。除此之外还有一个很多明星的物品的博物馆，很小很小，但是东西倒是值得看看。博物馆旁边有几家餐馆，太晚了就关了，不过有些桌子可以坐下来。
    * 听说在 G91 入口附近有可以付费暂存行李的地方，因为我也没存所以并不知道具体方位，应该在三楼。
-
-## Manner
-
-1. Please.
-2. No, thanks.
-3. I am coming. $\Rightarrow$ I am on my way.
-4. What's up. What's up.
-5. Excuse me.
-6. Coming through.
-7. Would you/Could you ...
-8. Pardon? Sorry? Excuse me?

@@ -1,7 +1,7 @@
 ---
 layout: article
-title: 订阅本站
+title: Subscribe
 ---
 
 
-通过本站的 [Atom Feed]({{site.url}}/atom.xml) 订阅。
+Subscribe through [Atom Feed]({{site.url}}/atom.xml).

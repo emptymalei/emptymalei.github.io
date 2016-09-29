@@ -26,31 +26,31 @@ title: Today I Learned
 
 <h2 class="til-subsection">#Programming#</h2>
 
-{% for til in tilProgramming %}
+{% for til in tilProgramming reversed %}
 	   {% include til-list.html %}
 {% endfor %}
 
 <h2 class="til-subsection">#Physics#</h2>
 
-{% for til in tilPhysics %}
+{% for til in tilPhysics reversed %}
 	   {% include til-list.html %}
 {% endfor %}
 
 <h2 class="til-subsection">#MISC#</h2>
 
-{% for til in tilMISC %}
+{% for til in tilMISC reversed %}
 	   {% include til-list.html %}
 {% endfor %}
 
 <h2 class="til-subsection">#Math#</h2>
 
-{% for til in tilMath %}
+{% for til in tilMath reversed %}
 	   {% include til-list.html %}
 {% endfor %}
 
 <h2 class="til-subsection">#Astro#</h2>
 
-{% for til in tilAstro %}
+{% for til in tilAstro reversed %}
 	   {% include til-list.html %}
 {% endfor %}
 

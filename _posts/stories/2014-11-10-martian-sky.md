@@ -3,7 +3,7 @@ layout: article
 title: "火星的天空"
 modified: 2014-10-18 #2014-08-27T11:57:41-04:00
 author: OctoMiao
-comments: true
+comments: false
 categories: stories
 summary: “呐……还可以再和你一起看一次火星的日落吗？”
 ---

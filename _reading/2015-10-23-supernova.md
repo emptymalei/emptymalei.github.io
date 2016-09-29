@@ -6,6 +6,7 @@ modified: 2015-10-23 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 comments: true
 categories: astrophysics
+filter: science # can be science or misc for now
 summary: Supernova Q&A's.
 ---
 

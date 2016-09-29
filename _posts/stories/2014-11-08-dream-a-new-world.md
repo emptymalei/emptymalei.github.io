@@ -3,7 +3,7 @@ layout: article
 title: "梦与新世界"
 modified: 2014-11-08 17:12:00
 author: OctoMiao
-comments: true
+comments: false
 categories: stories
 summary: “或许在广袤的宇宙中，有一张通信的大网，他们在不断的相互交流，可是我们却不是这个网的一部分，因为我们还没有学会如何去聆听。银河在上，生命并不孤独。”
 ---

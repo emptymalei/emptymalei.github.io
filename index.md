@@ -5,7 +5,7 @@ title:
 ---
 
 
-<div class="front-cover" style="background:url(./images/{{ site.cover_image }}) no-repeat fixed center;background-size:cover;overflow:hidden;">
+<!-- <div class="front-cover" style="background:url(./images/{{ site.cover_image }}) no-repeat fixed center;background-size:cover;overflow:hidden;">
 
     <section>
         <div class="container" style="padding-top:1em;">
@@ -22,84 +22,38 @@ title:
 </div>
     </section>
 
+</div> -->
+
+
+<div class="front-cover" style="background-size:cover;overflow:hidden;">
+
+    <section>
+        <div class="container" style="padding-top:1em;">
+            <h1 style="text-align:center;color:#fff;font-weight:600;" id="site-title-front">{{ site.title }}</h1>
+            {% if site.description %}<h3 style="text-align:center;color:#fff;font-weight:600;font-size:90%;">{{ site.description }}</h3>{% endif %}
+        </div>
+<div class="featured" style="border-top:1px solid grey;margin:0 10% 0 10%;">
+<div style="background: rgba(67, 69, 78, 0.3);">
+{% for post in site.posts limit:1 %}
+<h3 style="text-align:center;font-size:120%;color:white;">Recent: <a href="{{ site.url }}{{ post.url }}" style="text-align:center;color:white;font-weight:600;">{{ post.title }}</a></h3>
+<p style="text-align:center;color:#fff;font-size:90%;padding-bottom:0.5em;padding-left:2%;padding-right:2%;">{{ post.summary }}</p>
+{% endfor %}
+</div>
+</div>
+    </section>
+
 </div>
 
 
 
 
-
-## Today I Learned
-
-<div class="tiles">
-{% for post in site.til limit:5 %}
-	{% include post-list.html %}
-{% endfor %}
-</div><!-- /.tiles -->
-
-
-
-{% if site.til.size %}
-<a href="./til/">All TILs ({{ site.til.size }})</a>
-		{% else %}
-No TIL, for now.
-		{% endif %}
-
-
-
-
-## Science
-
-<div class="tiles">
-{% for post in site.categories.science limit:5 %}
-	{% include post-list.html %}
-{% endfor %}
-</div><!-- /.tiles -->
-
-	{% if site.categories.science.size %}
-<a href="./science/">All Science Posts ({{ site.categories.science.size }})</a>
-		{% else %}
-No Science, for now.
-		{% endif %}
-
-
 <hr class="paragraph">
 
-<h1 style="text-align:center;margin-bottom:2em;">中文区</h1>
+<section style="margin-top:2em;margin-bottom:2em;text-align:center;">
 
-## 中文科普+科研
+<a href="/til/" class="button button-border">#TIL#'s</a>
+<a href="/science/" class="button button-border">Science Posts</a>
+<a href="/misc/" class="button button-border">MISC Posts</a>
+<a href="/research/" class="button button-border">My Research</a>
 
-<div class="tiles">
-{% for post in site.categories.sciencecn limit:5 %}
-	{% include post-list-cn.html %}
-{% endfor %}
-</div><!-- /.tiles -->
-
-	{% if site.categories.sciencecn.size %}
-<a href="./science/">全部中文科普和科研 ({{ site.categories.sciencecn.size }})</a>
-		{% else %}
-No Science, for now.
-		{% endif %}
-
-
-## 近期故事
-
-<div class="tiles">
-
-{% for post in site.categories.stories limit:5 %}
-	{% include post-list-cn.html %}
-{% endfor %}
-
-</div><!-- /.tiles -->
-
-
-
-	{% if site.categories.stories.size %}
-<a href="./stories/">All Stories ({{ site.categories.stories.size }})</a>
-		{% else %}
-No Stories, for now.
-		{% endif %}
-<!-- 
-## Random Posts
-
-<div id="random_posts">
-</div> -->
+</section>

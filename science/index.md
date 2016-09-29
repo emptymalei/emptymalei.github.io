@@ -15,15 +15,17 @@ title: Science
 
 I always love to read interesting papers in physics. Here are some notes I wrote. Think of this as a lab notebook.
 
+{% assign readingScience = site.reading | where: 'filter', 'science' %}
+
 <div class="tiles">
-{% for til in site.papers reversed %}
-	   {% include til-list.html %}
+{% for post in readingScience reversed %}
+	   {% include post-list.html %}
 {% endfor %}
 </div><!-- /.tiles -->
 
 
 
-## Science Posts in English
+## Science Related Posts in English
 
 {% if site.categories.science.size %}
 {{ site.categories.science.size }} posts on science

@@ -30,7 +30,8 @@
         {{ content }}
         {% include page-meta.html %}
         <aside>
-           {% if page.comments == true %}{% include comments.html %}{% endif %}
+           {% if page.comments == true %}{% include comments.html %}
+           {% elsif page.comments == false %}{% include share.html %}{% endif %}
         </aside>
         {% include footer.html %}
       </div>
