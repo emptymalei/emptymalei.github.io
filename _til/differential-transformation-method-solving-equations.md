@@ -23,7 +23,7 @@ where $F(n)$ is the coefficient of Taylor expansion. By using the definition, we
 
 
 <figure markdown="1">
-![](../assets/physics/sum-of-squares-and-torque.png)
+![](../assets/math/differential-transformation-method-table.png)
 <figcaption>
 Table of DTM. From Munganga, J. M. W., Mwambakana, J. N., Maritz, R., Batubenge, T. a., & Moremedi, G. M. (2014). Introduction of the differential transform method to solve differential equations at undergraduate level. International Journal of Mathematical Education in Science and Technology, 45(5), 781–794. http://doi.org/10.1080/0020739X.2013.877609
 </figcaption>
