@@ -23,3 +23,10 @@ will give us
 ```
 9.887200e+03
 ```
+
+A quick and minimal version of what has been said is
+
+1. ``{:04.2f}`` means make the total length of the number 4, with 2 significance digits and using 0's to fill up the other slots if the number is not long enough.
+2. It's not necessary to put in all the specifications.
+3. `d`, `f`, `e` can be used.
+4. The signs can be speficied using `+`, e.g., ``{:+d}`.format(42)`.
