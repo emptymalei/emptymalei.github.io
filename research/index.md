@@ -13,9 +13,10 @@ published: true
 
 Topics I am working on:
 
-1. neutrino oscillations,
-2. neuron physics,
-3. application of artificial neural network.
+1. neutrino oscillations
+	* neutrino oscillations in matter
+2. neuron physics
+3. application of artificial neural network
 
 
 Topics I have worked on:
@@ -26,7 +27,10 @@ Topics I have worked on:
 
 
 
-[My ResearchGate profile](https://www.researchgate.net/profile/Lei_MA).
+
+<a href="https://www.researchgate.net/profile/Lei_MA" style="margin: 1em 1em 1em 1em;" class="button button-border">My ResearchGate profile</a>
+
+
 
 
 ## Presentations & Talks

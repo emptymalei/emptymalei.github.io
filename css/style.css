@@ -355,8 +355,15 @@ figure.highlight:hover:before {
 .container {
     max-width: 50rem !important;
 }
-#markdown-toc ul, ol, dl {
+#markdown-toc>ul,>ol,>dl {
     margin-bottom: 0 !important;
+}
+
+li>ul {
+  margin-bottom: 0.1rem;
+}
+.post>ul {
+   margin-bottom: 1em !important; 
 }
 
 #markdown-toc
