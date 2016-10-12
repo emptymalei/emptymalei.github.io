@@ -23,7 +23,7 @@ We construct a mechanical system with five forces applied to a single point. Eac
 
 <figure markdown="1">
 ![](../assets/physics/some-sum-of-cosines.png)
-<figcaption>
+<figcaption markdown="1">
 Construct a system with five forces acting on the same point. The file can be downloaded from [here](../assets/physics/some-sum-of-cosines.ggb)
 </figcaption>
 </figure>
