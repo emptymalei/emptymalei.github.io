@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: Today I Learned
 ---
 
 

@@ -28,7 +28,7 @@ Topics I have worked on:
 
 
 
-<a href="https://www.researchgate.net/profile/Lei_MA" style="margin: 1em 1em 1em 1em;" class="button button-border">My ResearchGate profile</a>
+<a href="https://www.researchgate.net/profile/Lei_MA" style="margin: 1em 1em 1em 1em;" class="btn">My ResearchGate profile</a>
 
 
 
