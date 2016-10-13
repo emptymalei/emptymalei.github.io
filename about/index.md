@@ -5,7 +5,6 @@ comments: true
 published: true
 ---
 
-* More about the author: [OctoMiao: Open is the key](http://openmetric.org/me/)
 * [Resume & CV](/resume) of the author
 
 Some GitHub repos to check out,
@@ -31,7 +30,7 @@ Some interesting GitHub organizations
 
 -----
 
-《{{site.title}}》是章鱼喵的（新的）小本本，加上这个[科学与科幻](http://openmetric.org/sci2fi/)，就代替了原来的博客。旧本本[时见疏星](http://multiverse.lamost.org)如果没有特别的情况就不再更新了。
+《{{site.title}}》是章鱼喵的（新的）小本本，加上这个[Imaginary Research](http://imresear.ch/)，就代替了原来的博客。旧本本[时见疏星](http://multiverse.lamost.org)如果没有特别的情况就不再更新了。
 
 章鱼喵，目前在地球交流学习，在[星际移民中心](http://interimm.org) (隶属于 Interplanetary Immigration Agency) 兼职行星生态开发 (PEI，planetary ecosystem improvement) 工作。所以偶尔会离开地球去完成星际移民中心指派的 PEI 工作，届时会跟大家失去联系。
 

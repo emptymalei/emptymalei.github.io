@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
+<head>
   {% include head.html %}
+  {% include random-til.html %}
   {% include mathjax.html %}
+  </head>
 
   <body>
 
@@ -29,6 +32,7 @@
       <div class="container content">
         {{ content }}
         {% include page-meta.html %}
+
         <aside>
            {% if page.comments == true %}{% include comments.html %}
            {% elsif page.comments == false %}{% include share.html %}{% endif %}
