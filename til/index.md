@@ -3,8 +3,14 @@ layout: archive
 ---
 
 
+{% include mixitup.html %}
+<h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
 
-<div id="random_til" style="border:1px solid grey;padding-bottom:2em;">
+    
+
+---
+
+<div id="random_til" style="border:1px solid grey;padding-bottom:2em;margin-bottom: 2em;">
 <h2 class="til-subsection">A Random #TIL# for You</h2>
 </div>
 
@@ -13,45 +19,134 @@ layout: archive
 
 
 
------
+
 
 
 <div class="tiles">
-{% assign tilProgramming = site.til | where: 'filter', 'programming' %}
-{% assign tilPhysics = site.til | where: 'filter', 'physics' %}
-{% assign tilMISC = site.til | where: 'filter', 'misc' %}
-{% assign tilMath = site.til | where: 'filter', 'math' %}
-{% assign tilAstro = site.til | where: 'filter', 'astro' %}
 
-<h2 class="til-subsection">#Programming#</h2>
+{% assign tilProgramming = site.til | where: 'filter', 'programming' | sort: 'post.date' | reverse %}
+{% assign tilPhysics = site.til | where: 'filter', 'physics' | sort: 'post.date' | reverse %}
+{% assign tilMISC = site.til | where: 'filter', 'misc' | sort: 'post.date' | reverse %}
+{% assign tilMath = site.til | where: 'filter', 'math' | sort: 'post.date' | reverse %}
+{% assign tilAstro = site.til | where: 'filter', 'astro' | sort: 'post.date' | reverse %}
 
-{% for til in tilProgramming reversed %}
-	   {% include til-list.html %}
+
+
+
+<div class="controls">
+
+<span style="display: inline-block;margin-right: 1em;margin-bottom: 1em;">
+  <label>Filter:</label>
+  
+  <button class="filter" data-filter="all">All</button>
+  <button class="filter mix-btn-programming" data-filter=".mix-programming">Programming</button>
+  <button class="filter mix-btn-physics" data-filter=".mix-physics">Physics</button>
+  <button class="filter mix-btn-math" data-filter=".mix-math">Math</button>
+  <button class="filter mix-btn-astro" data-filter=".mix-astro">Astro</button>
+  <button class="filter mix-btn-misc" data-filter=".mix-misc">MISC</button>
+</span>
+
+<span style="display: inline-block;">  
+  <label>Sort:</label>
+  
+  <button class="sort" data-sort="myorder:desc">Date Desc</button>
+  <button class="sort" data-sort="myorder:random">Date Random</button>
+  <button class="sort" data-sort="myorder:asc">Date Asc</button>
+</span>
+</div>
+
+<div id="Mix-Container" class="mix-container">
+
+{% for til in tilProgramming reversed limit:4 %}
+
+   {% if til.date %}
+   <div class="mix mix-programming" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
+   </div>
+   {% else %}
+   <div class="mix mix-programming">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   </div>
+   {% endif %}
+
 {% endfor %}
 
-<h2 class="til-subsection">#Physics#</h2>
+{% for til in tilPhysics reversed limit:4 %}
 
-{% for til in tilPhysics reversed %}
-	   {% include til-list.html %}
+   {% if til.date %}
+   <div class="mix mix-physics" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
+   </div>
+   {% else %}
+   <div class="mix mix-physics">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   </div>
+   {% endif %}
+
 {% endfor %}
 
-<h2 class="til-subsection">#MISC#</h2>
 
-{% for til in tilMISC reversed %}
-	   {% include til-list.html %}
+{% for til in tilMISC reversed limit:4 %}
+	   {% if til.date %}
+   <div class="mix mix-misc" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
+   </div>
+   {% else %}
+   <div class="mix mix-misc">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   </div>
+   {% endif %}
 {% endfor %}
 
-<h2 class="til-subsection">#Math#</h2>
 
-{% for til in tilMath reversed %}
-	   {% include til-list.html %}
+{% for til in tilMath reversed limit:4 %}
+	   {% if til.date %}
+   <div class="mix mix-math" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
+   </div>
+   {% else %}
+   <div class="mix mix-math">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   </div>
+   {% endif %}
 {% endfor %}
 
-<h2 class="til-subsection">#Astro#</h2>
-
-{% for til in tilAstro reversed %}
-	   {% include til-list.html %}
+{% for til in tilAstro reversed limit:4 %}
+	   {% if til.date %}
+   <div class="mix mix-astro" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
+   </div>
+   {% else %}
+   <div class="mix mix-astro">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   </div>
+   {% endif %}
 {% endfor %}
+
+
+
+  
+  <div class="gap"></div>
+  <div class="gap"></div>
+</div>
+
+
+<div style="text-align: center;"><a class="btn" href="/til/alltils/">All TILs</a></div>
 
 
 
