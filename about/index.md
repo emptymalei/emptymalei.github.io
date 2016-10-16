@@ -5,14 +5,77 @@ comments: true
 published: true
 ---
 
-* [Resume & CV](/resume) of the author
 
-Some GitHub repos to check out,
+* ToC
+{:toc}
 
-1. [Physics Research Survival Manual](http://openmetric.org/physics): Some notes on physics and math, with some fun facts in physics.
-2. [Statistical Physics](http://emptymalei.github.io/statisticalphysics): Statistical Physics lecture notes.
-3. [Survive Research](http://emptymalei.github.io/tool/): Some tools to help you survive scientific research.
-4. [Neutrino Physics](http://docs.neutrino.xyz): About neutrinos.
+
+## About the Author
+
+
+**TL;DR**: I am a physics PhD candidate at University of New Mexico, dealing with supernova neutrinos.
+
+
+
+
+
+
+* Topics I am working on:
+
+	1. neutrino oscillations
+		* neutrino oscillations in matter
+	2. neuron physics
+	3. application of artificial neural network
+
+
+* Topics I have worked on:
+
+	1. piezoelectric ceramics,
+	2. cosmic evolution: the role of dark energy,
+	3. modified gravity (f(R) gravity).
+
+<div class="notes--info" style="text-align: center;">
+
+<p>
+<a href="/resume" style="margin: 1em 1em 1em 1em;" class="btn--light">Resume & CV</a>
+
+<a href="https://www.researchgate.net/profile/Lei_MA" style="margin: 1em 1em 1em 1em;" class="btn--light">My ResearchGate profile</a>
+</p>
+
+</div>
+
+
+
+## Presentations & Talks
+
+My Speaker Deck is here: [https://speakerdeck.com/emptymalei](https://speakerdeck.com/emptymalei)
+
+* [Why Git](/assets/slides/whygit)
+* [Neutron Star Model](/assets/slides/neutron-star-model)
+* [Accretion Disc Around Black Hole](https://speakerdeck.com/emptymalei/accretion-disc-around-black-hole)
+* [Neutrino Oscillations in Matter](https://speakerdeck.com/emptymalei/neutrino-oscillations-in-matter)
+* [Majorana Fermions](https://speakerdeck.com/emptymalei/majorana-fermion)
+
+
+## Online Docs
+
+1. [NeuPhysics](https://github.com/NeuPhysics): A GitHub Organization for Neutrino Physics.
+   * [GitHub](https://github.com/NeuPhysics),
+   * [Webpage](http://neutrino.xyz),
+   * [Neutrino Physics Notes](http://docs.neutrino.xyz).
+2. [Physics Notebook](http://openmetric.org/physics/). Previously identified as [Physics Research Survival Manual](https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual) which has been abandoned.
+3. [Cosmology Taskforce](https://github.com/CosmologyTaskForce):
+   * [An unfinished blog](http://cosmologytaskforce.github.io/CosmologyTaskForce/): meant to be a blog however abandoned.
+   * [CoChiSquare](https://github.com/CosmologyTaskForce/CoChiSquare): Chisquare fitting for supernova data. Using transition redshift as a cosmological parameter.
+   * [PowerSpectrum](https://github.com/CosmologyTaskForce/PowerSpectrum): Harison-Zeldovich prescription and power spectrum.
+   * [ModiGraviDoc](https://github.com/CosmologyTaskForce/ModiGraviDoc): Documents on modified gravity.I use Mathematica as the editor to show more details on the derivations and the programming techniques.
+   * [CoMaPack](https://github.com/CosmologyTaskForce/CoMaPack): Cosmology Mathematica Pack based on GREAT.m by Tristan Hubsch. A series of packages are hosted here, including some basic general relativity calculations, cosmology background calculation, cosmological perturbation calculation, etc.
+
+
+
+## Some Other Projects
+
+1. [Survive Research](http://emptymalei.github.io/tool/): Some tools to help you survive scientific research.
 
 I am learning web techniques. As a practice, I built some projects.
 
@@ -21,19 +84,18 @@ I am learning web techniques. As a practice, I built some projects.
 
 
 
-Some interesting GitHub organizations
 
-1. [NeuPhysics](https://github.com/NeuPhysics): An organization about neutrino physics.
-2. [CosmologyTaskForce](https://github.com/CosmologyTaskForce): Not exactly cosmology but some half-finished work on cosmology, physics, etc.
-3. [JuliaQuantum](https://github.com/JuliaQuantum): Quantum using Julia Language
+<hr class="paragraph">
 
 
------
+## 中文补充
+
+
 
 《{{site.title}}》是章鱼喵的（新的）小本本，加上这个[Imaginary Research](http://imresear.ch/)，就代替了原来的博客。旧本本[时见疏星](http://multiverse.lamost.org)如果没有特别的情况就不再更新了。
 
 章鱼喵，目前在地球交流学习，在[星际移民中心](http://interimm.org) (隶属于 Interplanetary Immigration Agency) 兼职行星生态开发 (PEI，planetary ecosystem improvement) 工作。所以偶尔会离开地球去完成星际移民中心指派的 PEI 工作，届时会跟大家失去联系。
 
------
+
 
 这个小本本的主题是基于 [Jekyll](http://jekyllrb.com) 的，使用了 [ED](http://elotroalex.github.io/ed/) 主题，做了很多修改，添加了很多功能。

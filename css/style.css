@@ -498,3 +498,25 @@ hr.paragraph:after {
 
     text-decoration: none;
 }
+
+.btn--light {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.71429;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+    color: #515151;
+    border: 2px solid #000 !important;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.btn--light:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: article
 title: Academia
 comments: true
 published: true
