@@ -1,3 +1,11 @@
+---
+layout: article
+title: Academia - Math
+comments: true
+published: true
+---
+
+
 ## Math
 
 Mathematical methods for real world problems

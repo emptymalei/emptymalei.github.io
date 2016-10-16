@@ -41,5 +41,10 @@ published: true
 
 1. [Virtual Kitchen Project](/kitchen)
 
+## Academia
+
+1. [Physics](../academia/physics)
+2. [Math](../academia/math)
+
 
 	

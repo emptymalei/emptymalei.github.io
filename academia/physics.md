@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Physics Porn
+title: Academia - Physics
 comments: true
 published: true
 ---

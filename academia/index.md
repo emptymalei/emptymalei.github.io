@@ -1,6 +1,14 @@
-# Academia
+---
+layout: page
+title: Academia
+comments: true
+published: true
+---
 
-1. [Physics](physics.md)
-2. [Math](math.md)
-3. [Neuroscience](neuroscience.md)
+
+
+
+1. [Physics](physics)
+2. [Math](math)
+3. [Neuroscience](neuroscience)
 
