@@ -37,4 +37,9 @@ published: true
 	* Vocabulary Builder [**In Progress**]
 
 
+## For Fun
+
+1. [Virtual Kitchen Project](/kitchen)
+
+
 	
