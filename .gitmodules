@@ -1,6 +1,3 @@
 [submodule "tool"]
 	path = tool
 	url = https://github.com/emptymalei/awesome-research.git
-[submodule "kitchen"]
-	path = kitchen
-	url = https://github.com/emptymalei/kitchen.git
