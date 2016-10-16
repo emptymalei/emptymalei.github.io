@@ -13,7 +13,7 @@ published: true
 
 ## 目录
 
-* [游戏](gaming)：[我的豆瓣游戏](http://www.douban.com/people/emptymalei/games?action=collect)，[Kerbal Space Program](../ksp)，[Soul Calibur](soulCalibur)
+* [游戏](gaming)：[我的豆瓣游戏](http://www.douban.com/people/emptymalei/games?action=collect)，[Kerbal Space Program](../ksp)，[Soul Calibur](gaming/soul-calibur), [pockemon-go](gaming/pockemon-go).
 * 电影：[我的豆瓣电影主页](http://movie.douban.com/people/emptymalei/)
 * 音乐：[我的豆瓣音乐主页](http://music.douban.com/people/emptymalei/)
 * 厨艺：[虚拟厨艺](../kitchen)

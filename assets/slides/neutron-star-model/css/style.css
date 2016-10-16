@@ -1,0 +1,137 @@
+
+.reveal i {
+
+    font-family: 'FontAwesome';
+
+    font-style: normal;
+
+}
+
+/*.reveal .controls div {
+    border: 10px solid rgba(0, 0, 0, 0) !important;
+}*/
+
+.reveal .controls {
+
+    opacity: 0.3 !important;
+
+}
+
+.flash-span {
+
+    -vendor-animation-duration: 10s;
+
+    -vendor-animation-delay: 2s;
+
+    -vendor-animation-iteration-count: infinite;
+
+}
+
+.greeny {
+
+    color: #00AC71;
+
+}
+
+.purply {
+
+    color: #754582;
+
+}
+
+.bluy {
+
+    color: #6287A6;
+
+}
+
+.bordered-thin {
+
+    border: 1px solid grey;
+
+    -webkit-border-radius: 10px;
+
+    -moz-border-radius: 10px;
+
+    border-radius: 10px;
+
+}
+
+.reveal h2 {
+
+    font-size: 1.8em;
+
+}
+
+.reveal h3 {
+
+    font-size: 1.3em;
+
+}
+
+.reveal h4 {
+
+    font-size: 1em;
+
+}
+
+.reveal h5 {
+
+    font-size: smaller;
+
+}
+
+/*
+.reveal h4:before {
+    content: "\2020";
+    margin-right: 0.5em;
+}
+
+.reveal h5:before {
+    content: "\2021";
+    margin-right: 0.5em;
+
+}
+*/
+
+.marks h2:before {
+
+    content: "#";
+
+    margin-right: 0.5em;
+
+}
+
+.tleft {
+
+    text-align: left !important;
+
+}
+
+.tright {
+
+    text-align: right !important;
+
+}
+
+.horizli li {
+
+    display: inline;
+
+    list-style-type: none;
+
+    padding-left: 10px;
+
+    padding-right: 10px;
+
+}
+
+p.caption {
+font-size: 50%;
+    color: grey;
+border-left: 5px solid grey;
+border-right: 5px solid grey;
+background: #E2DFDF;
+padding: 10px;
+margin: 10px;
+}

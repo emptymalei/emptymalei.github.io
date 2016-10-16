@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Modeling Neutron Star: Masses and Radii</title>
+
+    <meta name="description" content="Modeling Neutron Star: Masses and Radii">
+    <meta name="author" content="OctoKitty">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.min.css">
+
+    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hint.css">
+
+    <link rel="stylesheet" href="css/colors.css">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write('<link rel="stylesheet" href="css/print/' + (window.location.search.match(/print-pdf/gi) ? 'pdf' : 'paper') + '.css" type="text/css" media="print">');
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            TeX: {
+                equationNumbers: {
+                    autoNumber: "AMS"
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+
+            <section data-background="resource/ISSAC2014Poster.png" data-background-size="35%">
+
+            </section>
+
+            <!-- Title -->
+
+            <section>
+                <h1>Neutron Star Models</h1>
+                <h3>Masses and Radii</h3>
+            </section>
+
+            <!-- Timeline -->
+
+            <section>
+                <h2>Time line of Neutron Stars</h2>
+                <iframe src="timeline/timeline.html" width="100%" height="600px">
+                    <p>Your browser does not support iframes.</p>
+                </iframe>
+            </section>
+
+
+            <!-- OV equation -->
+
+            <section>
+                <section>
+                    <h2>Spherical Stars</h2>
+
+                    <p>Compact objects => GR</p>
+                    <p>3 equations from GR</p>
+                    <div>
+                        <p>\begin{equation}G_{ab}=8\pi T_{ab}\end{equation}</p>
+                        <ul>
+                            <li>Metric of a star (2 factors)</li>
+                            <li>Energy momentum tensor ($\rho$, $p$)</li>
+                            <li>Equation of state</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+
+                    <h3>Metric of a spherical star</h3>
+
+                    <p>
+                        Line element of a static spherical object, \begin{equation} ds^2 = - e^{-2\Phi} dt^2 + e^{2\lambda} dr^2 + r^2 d\Omega^2 \end{equation} in which $d\Omega^2 := d\theta^2 + \sin^2\theta d\phi^2$.
+                    </p>
+
+                    <aside class="notes">1. spherical so not theta phi dependence;2. static so no time dependence;3. but can have scaling factor.</aside>
+
+                </section>
+
+                <section>
+                    <h3>Energy momentum tensor</h3>
+
+                    <p>In the perfect fluid model, $T_{ab}$ \begin{equation}T_{ab} = (\rho + P)U_a U_b + P g_{ab}\end{equation}
+                    </p>
+
+                </section>
+
+                <section>
+                    <h3>Oppenheimer-Volkoff equation etc</h3>
+                    <div style="display:block;">
+                        <div style="font-size:70%;display:inline-block;vertical-align:middle;">
+                            <p>\begin{align} \frac{d m(r)}{dr} & = 4\pi \rho(r) r^2 \\ \frac{d\Phi(r)}{dr} & = - \frac{m(r)+4\pi P(r) r^3}{r\left( r-2m(r) \right)} \\ \frac{dP(r)}{dr} & = -(\rho + P(r)) \frac{m(r) + 4\pi P(r) r^3}{r\left( r-2 m(r) \right)} \label{eq:OVEqn} \end{align}
+                            </p>
+                        </div>
+                        <div style="font-size:60%;display:inline-block;vertical-align:middle;border-left:3px solid #C3E99E;padding-left:1em;">
+                            <p>Four variables</p>
+                            <p>Fourth eq
+                                <sup>n</sup>: EoS</p>
+                            <p>Initial conditions
+                                <ol>
+                                    <li>$m(0)=0$</li>
+                                    <li>$e^{-2\Phi(R)} = 1-\frac{2M}{R}$</li>
+                                    <li>$p(0)$</li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="border-top:3px solid #C3E99E;padding-top:0.3em;">
+                        <h5>Notes</h5>
+                        <p>
+                            <ul>
+                                <li>$m(r)$ is the mass function including gravitational energy.</li>
+                                <li>$\rho$ doesn't include the gravitational energy.</li>
+                                <li>Given $p(0)$ and EoS, the system is determined.</li>
+                            </ul>
+                        </p>
+                    </div>
+
+
+                </section>
+
+
+            </section>
+
+
+
+
+
+            <section>
+
+                <section>
+                    <h2>Ideal Gas Model</h2>
+                    <div>
+
+                        <p>
+                            <img src="resource/OV-HV.png">
+                        </p>
+                        <p style="font-size:smaller;">$M_m = 0.7 M_{\odot}$, $\rho_c=5\times 10^{15}\mathrm{g\cdot cm^{-3}}$, $R=9.6\mathrm{km}$</p>
+                    </div>
+
+                    <aside class="notes">
+                        Stability: Increase $\rho$ star shrink! Page 149 in book.
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Comments on $M - \rho$ graph</h3>
+
+                    <ul>
+                        <li>Max mass?
+                            <span class="bluy">( + Gravitational Energy )</span>
+                        </li>
+                        <li>Turning points?
+                            <span class="bluy">( Left: Stable; Right: Unstable | Chap 5 & 6)</span>
+                        </li>
+                        <li>Stability?
+                            <span class="bluy">( Mode stability: $\xi^i=\xi^i e^{i\omega t}$ | Euler equation )</span>
+                        </li>
+                        <li>Minimum Mass?
+                            <span class="bluy">( No minimum? $\beta$ decay. )</span>
+
+                        </li>
+                    </ul>
+
+                </section>
+
+
+
+
+            </section>
+
+
+
+
+
+
+
+            <!-- More realistic -->
+            <section>
+                <section>
+                    <h2>Modification of Ideal Neutron Gas Model</h2>
+                    <h3>Inlcude other particles</h3>
+                    <h3></h3>
+
+                </section>
+
+                <section>
+                    <h3>Neutrons, protons, electrons</h3>
+                    <p class="tleft">Non-interacting neutrons, protons, and electrons.</p>
+                    <p>
+                        <ul>
+                            <li>Neutrons occur: $\rho \geq 1.2\times 10^7\mathrm{g\cdot cm^{-3}}$</li>
+                            <li>Maximum of $\frac{n_{\mathrm{neutron}}}{n_{\mathrm{proton}}}$: $\rho = 7.8\times 10^{11}\mathrm{g\cdot cm^{-3}} $</li>
+                            <li>$$\lim_{\rho\rightarrow \infty} \frac{n_{\mathrm{neutron}}}{n_{\mathrm{proton}}} = 8 $$</li>
+                            <li>$$\lim_{\rho \rightarrow\infty} w := \lim_{\rho \rightarrow\infty} \frac{P}{\rho} = \frac{1}{3} $$</li>
+                        </ul>
+                    </p>
+                    <p class="tleft">
+                        Results:
+                        <br>$M_m = 0.72 M_\odot$, $\rho_c = 5.8\times 10^{15}\mathrm{g\cdot cm^{-3}}$, $R = 8.8\mathrm{km}$;
+                        <br>$M_{\text{min}} \approx 0.03 M_\odot$, $\rho_c \approx 7.8\times 10^{11} \mathrm{g\cdot cm^{-3}}$, $R = 48 \mathrm{km}$
+                        <br>
+                        <span style="opacity:0.05;" data-hint="lower energy density goes to the rigime of white dwarfs.">( Why miminum? )</span>
+                    </p>
+
+                </section>
+
+                <section>
+                    <h3>Harrison-Wheeler equation of state</h3>
+                    <p>
+                        $M_{\text{min}} \approx 0.18 M_\odot$, $\rho_c=2.6\times 10^{13}\mathrm{g\cdot cm^{-3}}$, $R=300\mathrm{km}$
+                    </p>
+
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h2>Realistic Theoretical Models</h2>
+                    <div style="width:80%;display:inline-block;float:left;">
+                        <img src="resource/variousModels.png">
+                    </div>
+                    <div style="width:20%;display:inline-block;">
+                        <p>
+                            <ul style="font-size:70%;">
+                                Maximum Mass
+                                <li>$\pi$: $1.5 M_\odot$</li>
+                                <li>R: $1.6M_\odot$</li>
+                                <li>BJ: $1.9M_\odot$</li>
+                                <li>TNI: $2.0 M_\odot$</li>
+                                <li>TI: $2.0M_\odot$</li>
+                                <li>MF: $2.7M_\odot$</li>
+                            </ul>
+                            <p style="font-size:70%;border-top:3px solid #C3E99E;margin-top:0.5em;padding-top:0.5em;" class="bluy">The existence of maximum mass allows us to rule out models with only the knowledge of mass of observed neutron stars.</p>
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <p>
+                        <img src="resource/variousModelsTable.jpg">
+                    </p>
+                </section>
+
+                <section>
+                    <p>
+                        <img src="resource/variousModelsTable2.jpg">
+                    </p>
+                </section>
+
+                <section>
+                    <img src="resource/variousModelMvsR.png">
+                </section>
+
+
+
+                <section>
+                    <h3>Layers</h3>
+                    <img src="resource/crossSectionReidTNI.png" width="80%">
+
+                </section>
+
+                <section>
+                    <div style="display:inline-block;margin-top:-1em;">
+                        <img src="resource/layersBetheJohnson.png">
+                    </div>
+                    <div style="display:inline-block;">
+                        <p class="caption">
+                            <a href="http://www.nature.com/nature/journal/v316/n6023/abs/316027a0.html">DAVID PINES & M. ALI ALPAR. Nature 316, 27 - 32 (04 July 1985).</a>
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <img src="resource/nphys2663-f1.jpg">
+                    <p class="caption">
+                        <a href="http://www.nature.com/nphys/journal/v9/n7/fig_tab/nphys2663_F1.html" target="_blank">"Neutron stars: A taste of pasta?" Nature Physics 9, 396–397 (2013)</a>
+                    </p>
+
+                    <!-- Notes -->
+                    <aside class="notes">a, Schematic slice through a neutron star. Letters N, n, p, e, μ refer to the presence of nuclei, fluid neutrons and protons, electrons and muons, respectively. The inner core composition is still uncertain and various exotic possibilities exist, including hyperons and deconfined quark matter. b, Detailed picture of the composition of the inner crust. At lower densities, a lattice of superheavy, neutron-rich nuclei is immersed in a fluid of neutrons (which are likely to be superfluid) and a relativistic electron gas. At high enough densities the nuclei might deform and connect along certain directions to form extended tubes, sheets and bubbles of nuclear matter. These nuclear pasta phases might form a layer at the base of the neutron star crust, sometimes referred to as the mantle; searching for observational signatures of such phases is of great interest. Ranges of density and thickness given for each layer represent current uncertainties in the physics of neutron star crusts.</aside>
+
+                </section>
+
+            </section>
+
+
+
+
+
+
+
+            <!-- Observations -->
+            <section>
+
+                <section>
+                    <h2>Neutron Star Mass: Observations</h2>
+                    <h3>X-Ray Binaries</h3>
+                    <h3 style="color:lightgrey;">Binary Pulsars</h3>
+                    <h3 style="color:lightgrey;">Observation Results</h3>
+                </section>
+
+                <section>
+                    <h3>X-Ray Binaries</h3>
+                    <div>
+                        <h4>Configuration of the system</h4>
+                        <div style="display:inline-block;width:65%;">
+                            <p>
+
+                                <img src="resource/binarySystem.png">
+                                <p class="tcenter">Line of sight; Inclination;</p>
+                            </p>
+                        </div>
+                        <div style="float:right;width:30%;">
+                            <p>
+                                <img src="resource/xRayBinaries.gif" alt="Accretion disk.jpg">
+                                <br>
+                                <a href="https://en.wikipedia.org/wiki/File:Ss433_art_big.gif" style="font-size:50%;">License: Public Domain</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <img src="resource/binarySystemPlane.png">
+                    </div>
+                    <div>
+                        <h5>Determine the mass:</h5>
+                        <p>
+                            <ul class="horizli">Measure:
+                                <li>Period</li>
+                                <li>Orbital</li>
+                            </ul>
+                            <ul class="horizli">
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </p>
+                    </div>
+                </section>
+
+
+
+                <section>
+                    <h4>Theory</h4>
+                    <div style="font-size:70%;">
+                        <div style="width:40%;display:inline-block;">
+                            <img src="resource/velocityVariation.png">
+                        </div>
+                        <div style="width:60%display:inline-block;float:right;vertical-align:middle;">
+                            <p>\begin{equation} v_1 = \omega a_1 \sin i \label{variationBinary} \end{equation}</p>
+                            <p>We can measure $P = 2\pi/\omega$ and $v_1$.</p>
+                        </div>
+                    </div>
+                    <div style="border-top:3px solid #C3E99E;padding-top:1em;height:5em;border-bottom:3px solid #C3E99E;">
+                        <div style="width:50%;display:inline-block;float:left;font-size:70%;height:7em;">
+                            <p class="tleft">
+                                \begin{align} \frac{G(M_1+M_2)}{a^3} & = \omega^2 \\ a_1+a_2 & = a \\ M_1 a_1 - M_2 a_2 & = 0 \end{align}
+                            </p>
+                        </div>
+                        <div style="width:50%;display:inline-block;float:right;font-size:70%;height:7em;">
+                            <p class="tright">Move observable quantities to the right.
+                            </p>
+                            <p style="font-size:70%;">
+                                \begin{align} f_1(M_1,M_1+M_2, i) & := \frac{M_2^3 \sin^3i}{(M_1+M_2)^2} \nonumber\\ &= v_1^3/G\omega \end{align}
+                                <p class="bluy tright">mass function</p>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div style="display:block;width:100%;font-size:70%;">
+                        <p>
+                            <ul class="horizli">
+                                <span class="purply">3 unknown variables:</span>
+                                <li>$M_1$;</li>
+                                <li>$M_2$;</li>
+                                <li>$\sin i$</li>
+                            </ul>
+                        </p>
+                        <p>
+                            <ul class="horizli">
+                                <span class="purply">3 constraints:</span>
+                                <li>$f_X(M_O,M_O+M_X,i)$ and $f_O(M_X,M_O+M_X,i)$;</li>
+                                <li>$\sin i$ from magical techniques (eclipse duration and optical curve)</li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div style="border-top:3px solid #C3E99E;font-size:70%;">
+                        <p style="line-height:3.5em;">
+                            \begin{equation} M_X = \frac{f_X q(1+q)^2}{\sin^3i}, \qquad q := \frac{M_X}{M_O} = \left(\frac{f_O}{f_X}\right)^{1/3} \end{equation}
+                        </p>
+                    </div>
+
+
+
+                </section>
+
+
+
+
+            </section>
+
+
+
+
+
+
+            <!-- Binary Pulsars -->
+
+            <section>
+
+                <section>
+                    <h2>Neutron Star Mass: Observation</h2>
+                    <h3 style="color:lightgrey;">X-Ray Binaies</h3>
+                    <h3>Binary Pulsars</h3>
+                    <h3 style="color:lightgrey;">Observation Results</h3>
+                </section>
+
+                <section>
+                    <h3>Only One Mass Function</h3>
+
+                    <div>
+                        <p class="tleft">
+                            The companion of PSR 1913+16 has not been directly observed.
+                            <ol>
+                                <span class="bluy">We need other equations:</span>
+                                <li>Periastron advance: involves each mass and distance of the system</li>
+                                <li>
+                                    <ul>Doppler effet:
+                                        <li>First order: doppler effect due to line of sight motion</li>
+                                        <li>Second order: time dilation due to velocity ($v^2$)</li>
+                                        <li>Gravitational</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                            <p class="tleft">Solve out mass.</p>
+                        </p>
+                    </div>
+                </section>
+
+            </section>
+
+
+
+
+
+            <!-- Observations -->
+
+            <section>
+
+                <section>
+                    <h2>Neutron Star Mass: Observation</h2>
+                    <h3 style="color:lightgrey;">X-Ray Binaies</h3>
+                    <h3 style="color:lightgrey;">Binary Pulsars</h3>
+                    <h3>Observation Results</h3>
+                </section>
+
+                <section>
+                    <h4>Observation Results</h4>
+                    <div style="width:50%;display:inline-block;float:left;">
+                        <p>
+                            <img src="resource/figure9-6.png">
+                        </p>
+                    </div>
+                    <div style="width:50%;display:inline-block;float:right;">
+                        <p class="purply">
+                            <ol style="font-size:70%;">
+                                <li>We have models with max mass larger than all observations.
+                                    <strike>HW, ideal neutron gas</strike>
+                                    <img src="resource/OV-HW-cut.png" width="90%">
+
+                                </li>
+                                <li>
+                                    <p>All neutron stars mass should be $M_{\text{Cha}}$ in advanced stellar evolution theory.</p>
+                                    <p>Shaded region: $ 1.2 \lt M/M_\odot \lt 1.6$</p>
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <img src="resource/massesNeutronStar_Astro-ph.9803260.png">
+                    <p class="caption">
+                        <a href="http://iopscience.iop.org/0004-637X/512/1/288" target="_blank">S. E. Thorsett and Deepto Chakrabarty 1999 ApJ 512 288</a>
+                    </p>
+                </section>
+
+                <section>
+                    <div >
+                        <div style="float:left;display:inline-block;width:70%;margin-top:-1em;">
+                            <img src="resource/EXO-MassRadius.png">
+                            <p class="caption">
+                                <a href="http://www.nature.com/nature/journal/v441/n7097/full/nature04858.html" target="_blank">F. Özel. Nature 441, 1115-1117 (29 June 2006)</a>
+                            </p>
+                        </div>
+                        <div style="float:right;display:inline-block;width:30%;">$M \geq 2.10 \pm 0.28 M_\odot$, $ R \geq 13.8 \pm 1.8 km$</div>
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+
+            <!-- Maximum Mass -->
+
+            <section>
+
+                <section>
+                    <h2>Maximum Mass
+                        <p style="font-size:50%;" class="bluy">
+                            Upper limit of all neutron stars.
+                        </p>
+                    </h2>
+
+
+                    <h3>Rhoades and Ruffini (1974)</h3>
+                    <h3>Nauenberg & Chapline (1973)</h3>
+
+                    <aside class="notes">No matter what EoS is</aside>
+                </section>
+
+                <section>
+
+                    <h3>Rhoades and Ruffini (1974)</h3>
+                    <div>
+
+                        <div style="font-size:70%;">
+                            <div style="display:inline-block;width:40%;float:right;vertical-align:middle;">
+                                <p>
+                                    <h4 class="bluy">&para; &nbsp; Assumptioins</h4>
+                                    <ol>
+
+                                        <li>GR
+                                            <i class="fa fa-check"></i>
+                                        </li>
+                                        <li>$dP/d\rho\geq 0$</li>
+                                        <li>$dP/d\rho \leq c^2$: causality</li>
+                                        <li>Density along radius is continuous</li>
+                                    </ol>
+                                </p>
+
+
+                            </div>
+                            <div style="display:inline-block;width:60%;float:left;">
+                                <p>
+                                    <img src="resource/neutronStarThinLayer.png">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+                <section>
+                    <h3>Rhoades and Ruffini (1974)</h3>
+
+                    <div style="font-size:70%;">
+                        <div style="display:inline-block;width:50%;float:left;vertical-align:middle;">
+                            <img src="resource/allowedRhomboid.png">
+                            <p class="caption">
+                                <a href="http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.32.324" target="_blank">Clifford E. Rhoades, Jr. and Remo Ruffini. Phys. Rev. Lett. 32, 324</a>
+                            </p>
+                        </div>
+                        <div style="display:inline-block;width:50%;float:right;vertical-align:middle;">
+                            <p>
+                                <h4 class="bluy">&para; &nbsp; Procedure</h4>
+                                <ol>
+
+                                    <li>Pick a density $\rho_0$ (matching density)</li>
+                                    <li>Find the path that maximized the mass. $P=P_0+c^2(\rho-\rho_0)$</li>
+                                    <li>Solve OV equation using HW for $\rho\lt \rho_0$ and $P=P_0+c^2(\rho-\rho_0)$ for $\rho\gt\rho_0$</li>
+                                </ol>
+                            </p>
+                            <p style="margin-top:1em;border-top:3px solid #C3E99E;padding-top:1em;">
+
+                                <h4 class="bluy">&para; &nbsp; Results</h4>
+                                $$M_{\text{max}} \approx 3.2 M_{\odot}$$
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Nauenberg & Chapline</h3>
+                    <div style="font-size:70%;">
+                        <div style="width:70%;display:inline-block;float:left;height:17em;border-right:3px solid #C3E99E;">
+                            <p>
+                                \begin{align} \frac{d\rho}{dn}& = \frac{\rho+P/c^2}{n}\\ M & = \frac{4}{3}\pi \rho R^3 \\ A & = 2\pi n\left( \frac{3}{8\pi\rho} \right)^{3/2} (\chi - \sin\chi\cos\chi) \\ \sin\chi & = \left( \frac{8\pi \rho}{3} \right)^{1/2} R \\ \left| \frac{\partial M}{\partial \chi} \right|_A & = 0 \qquad \text{Equilibrium} \end{align}
+                            </p>
+                        </div>
+                        <div class="tright" style="height:17em;">
+                            <p>5 equations</p>
+                            <p>$\rho$, $P$, $n$, $R$, $A$, $\chi$</p>
+                            <p style="padding-top:1em;margin-top:1em;" class="bluy">
+                                We can find $P/\rho$ as a function of $\chi$.
+                            </p>
+
+                        </div>
+                        <div style="padding-top:1em;margin-top:0em;border-top:3px solid #C3E99E;">
+                            <p>
+                                \begin{equation}\frac{P}{\rho} = \xi(\chi), \qquad \xi(\chi) = \frac{6\cos\chi}{9\cos\chi - \frac{2\sin^3\chi}{ \chi-\sin\chi\cos\chi } }-1\end{equation}
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Nauenberg & Chapline</h3>
+                    <div style="width:60%;display:inline-block;float:left;">
+                        <img src="resource/xiChi.png">
+                    </div>
+                    <div style="font-size:50%;display:inline-block;float:right;margin-top:-20em;">
+                        \begin{equation}\xi(\chi) = \frac{6\cos\chi}{9\cos\chi - \frac{2\sin^3\chi}{ \chi-\sin\chi\cos\chi } }-1\end{equation}
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Nauenberg & Chapline</h3>
+                    <div>
+                        <h4>Stability</h4>
+                        <p style="font-size:80%;">
+
+                            \begin{align} & \left\vert \frac{\partial^2 M}{\partial\chi^2} \right\vert_A \gt 0 \\ \Rightarrow & \Gamma \gt \Gamma_c(\chi) \end{align} with \begin{align} \Gamma & := \frac{\partial \ln P}{\partial \ln n} = \left( 1+\frac{\rho}{P} \right)\frac{dP}{d\rho} \\ \Gamma_c(\chi) & = (\xi+1)\left( 1+ \frac{3\xi+1}{2}\left( \frac{\xi+1}{6\xi}\tan^2\chi -1 \right) \right) \end{align}
+                        </p>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h3>Nauenberg & Chapline</h3>
+
+
+                    <div style="display:inline-block;">
+                        <img src="resource/maxMassNauenberg.png">
+                        <p>
+                            \begin{equation} \xi\leq 0.364 \Rightarrow \chi\leq 1.12 \Rightarrow \frac{M}{R} \leq 0.405 \end{equation}
+                        </p>
+                    </div>
+
+                </section>
+
+                <section>
+                    <h3>Nauenberg & Chapline</h3>
+
+                    <div>
+                        <h4>
+                            <span class="bluy">Causality:
+                                <span style="font-size:70%;">$dP/d\rho\leq c^2$</span>
+                            </span>
+                        </h4>
+                        <p>Maximum mass when $\Gamma=\Gamma_c(\chi_c)$: \begin{equation} \frac{\xi_c+1}{\xi_c}v^2 = \Gamma_c \end{equation}
+                        </p>
+                        <p>\begin{equation}\rho_c\geq \frac{\rho_0-P_0/v^2}{1-(\xi_c+1)/\Gamma_c}\end{equation}</p>
+                        <p>\begin{equation}M\leq \frac{1}{2} \sqrt{\frac{3}{8\pi}} \sqrt{ \frac{1-(\xi_c+1)/\Gamma_c}{\rho_0-P_0/v^2} } \sin^3\chi_c \end{equation}</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h3>Nauenberg & Chapline</h3>
+                    <p>Use BBP EoS to find largest allowed value of $\rho_0-P_0/v^2$.
+                        <br>($\rho_0 = 5\times 10^{14}\mathrm{g\cdot cm^{-3}}$)
+                        <br>Then set $v=1$.</p>
+                    <p>\begin{equation}M_{\text{max}} \approx 3.6 M_\odot\end{equation}</p>
+
+                </section>
+
+
+
+            </section>
+
+
+
+
+
+
+            <section>
+                <section>
+                    <h2>Rotation</h2>
+
+                </section>
+
+                <section>
+                    <div>
+                        <img src="resource/rotationEffect.png">
+                    </div>
+                </section>
+
+            </section>
+
+            <!-- Backups -->
+
+
+            <!-- Equation of state of ideal gas -->
+
+
+            <section>
+                <section>
+                    <h2>Backup: Ideal Gas Model</h2>
+
+                    <div>
+                        <div style="float:left;width:48%;">
+                            <h3>Equation of State</h3>
+                            <p>\begin{align} P & = \frac{m_ic^2}{\lambda_i^3}\phi_i(x) \\ \rho_0 & = \sum_i n_i m_i \end{align}
+
+                            </p>
+
+                        </div>
+
+                        <div style="float:right;width:48%;">
+                            <h3>Symbols</h3>
+                            <p>
+                                \begin{align*}\lambda_i & =\hbar/(m_i c) \\ x & := p_F/(m_i c) \\ \phi_i(x) & := \frac{g}{6\pi^2}\int_0^x\frac{x^4 dx}{(1+x)^{1/2}} \end{align*}
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+                <section>
+
+                    <h4>Equation of State: Backup</h4>
+                    <div>
+                        <h5>Number Density</h5>
+                        <p>
+                            \begin{align} n_i & = \frac{g}{h^3} \int_0^{p_F} 4\pi p^2 dp \nonumber \\ & = \frac{4g\pi}{3h^2} p_F^2 \nonumber \\ & = \frac{1}{3\pi^2\lambda_i} \end{align}
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <h5>Energy density</h5>
+                        <p>Baryons are much heavier than electrons so the energy density is almost dominated by baryons.</p>
+                    </div>
+
+
+                </section>
+
+            </section>
+
+
+            <section>
+                <section>
+                    <h2>Backup: Derivation of OV Results</h2>
+                    <h3>OV equation</h3>
+                    <h3>Stability analysis
+                        <span class="bluy">(How & Why)</span>
+                    </h3>
+
+                </section>
+
+                <section>
+                </section>
+            </section>
+
+
+
+
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        // Full list of configuration options available here:
+         // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: true,
+            fragments: true,
+            touch: true,
+
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }, {
+                src: 'plugin/math/math.js',
+                async: true
+            }]
+        });
+    </script>
+
+</body>
+
+</html>

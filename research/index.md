@@ -38,6 +38,7 @@ Topics I have worked on:
 My Speaker Deck is here: [https://speakerdeck.com/emptymalei](https://speakerdeck.com/emptymalei)
 
 * [Why Git](/assets/slides/whygit)
+* [Neutron Star Model](/assets/slides/neutron-star-model)
 * [Accretion Disc Around Black Hole](https://speakerdeck.com/emptymalei/accretion-disc-around-black-hole)
 * [Neutrino Oscillations in Matter](https://speakerdeck.com/emptymalei/neutrino-oscillations-in-matter)
 * [Majorana Fermions](https://speakerdeck.com/emptymalei/majorana-fermion)

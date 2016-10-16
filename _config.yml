@@ -34,9 +34,8 @@ highlighter: rouge
 gems:
   - jekyll-sitemap
   - jekyll-gist
-
-
-
+  - jemoji
+  - jekyll-feed
 
 # Jekyll Collections
 

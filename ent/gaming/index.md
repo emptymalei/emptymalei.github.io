@@ -24,7 +24,7 @@ comments: true
 
 ### GeometryWar/GridWar
 
-### [Soul Calibur](soulCalibur.html)
+### [Soul Calibur](soul-calibur)
 
 ### Dota
 
@@ -37,7 +37,7 @@ comments: true
 
 ### Dota/Dota2
 
-### [Kerbal Space Program](../ksp/)
+### [Kerbal Space Program](../../ksp/)
 
 ### Tomb Raider (2014)
 
@@ -47,3 +47,9 @@ comments: true
 ## Android
 
 ### Osmos
+
+### Atomas
+
+### Candy Crush
+
+### [Pokemon Go](pokemon-go)

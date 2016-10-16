@@ -28,6 +28,7 @@ Soul Calibur
 
 
 Notes:
+
 * AP: Attack Point; AW: Attack Width
 * DS in distance: distance of the sword
 * d - down; f - forward; b - back; u - up; A - horizontal slash; B - vertical slash; K - kick; G - guard; + - means press at the same time; ~ - means slide the buttons. Press one button then quickly press the other; 8WR - eight way run; ws - while standing (from crouch); wc - while crouching.
