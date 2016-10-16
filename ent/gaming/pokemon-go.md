@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Pockemon Go"
+title: "Pokemon Go"
 comments: true
 ---
 
