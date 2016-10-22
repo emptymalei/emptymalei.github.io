@@ -1,0 +1,34 @@
+<div class="kanban">
+
+<ul class="kanban__columns">
+	<li class="kanban__column">
+		<div class="kanban__name">Stack</div>
+		{% for stacks in item.stack %}
+		<dl class="kanban__card">
+			<dt class="kanban__card">{{ stacks.title }}</dt>
+			<dd class="kanban__card">{{ stacks.content }}</dd>
+		</dl>
+		{% endfor %}
+	</li>
+	<li class="kanban__column">
+		<div class="kanban__name">In Progress</div>
+		{% for ip in item.inprogress %}
+		<dl class="kanban__card">
+			<dt class="kanban__card">{{ ip.title }}</dt>
+			<dd class="kanban__card">{{ ip.content }}</dd>
+		</dl>
+		{% endfor %}
+	</li>
+	<li class="kanban__column">
+		<div class="kanban__name">Done</div>
+		{% for doneitem in item.done %}
+		<dl class="kanban__card">
+			<dt class="kanban__card">{{ doneitem.title }}</dt>
+			<dd class="kanban__card">{{ doneitem.content }}</dd>
+		</dl>
+		{% endfor %}
+	</li>
+
+</ul>
+
+</div>

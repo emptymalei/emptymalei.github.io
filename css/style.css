@@ -520,3 +520,73 @@ hr.paragraph:after {
   color: black;
   text-decoration: none;
 }
+
+
+/*Kanban CSS*/
+
+.kanban {
+width: 100%;
+overflow-x: scroll;
+border-top: 1px solid #888;
+padding-top: 1em;
+border-bottom: 1px solid #888;
+margin-bottom: 3em;
+}
+
+ul.kanban__columns {
+  width: 960px;
+}
+
+ul.kanban__columns,
+li.kanban__column {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.kanban__column {
+  background-color: #eee;
+  border-radius: 0px;
+  float: left;
+  margin-right: 0px;
+  padding: 4px 8px;
+  width: 310px;
+}
+
+dl.kanban__card {
+  border: 1px solid #000;
+}
+
+dl.kanban__card,
+dl.kanban__card dt.kanban__card,
+dl.kanban__card dd.kanban__card {
+  margin: 0;
+  padding: 0;
+}
+
+dl.kanban__card {
+  background-color: #eee;
+  border-radius: 3px;
+  font-size: 9pt;
+  margin: 8px;
+  padding: 12px;
+}
+
+dt.kanban__card {
+  border-bottom: 1px dotted #232323;
+  font-weight: bold;
+}
+
+dd.kanban__card {
+  padding-top: 0.5em;
+}
+
+ul.kanban__columns li.kanban__column div.kanban__name {
+  border-bottom: 2px solid #eee;  
+}
+div.kanban__name {
+  text-align: center;
+}
+h2.kanban__head {
+ text-align: center;
+}
