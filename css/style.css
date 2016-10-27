@@ -545,7 +545,7 @@ li.kanban__column {
 }
 
 li.kanban__column {
-  background-color: #eee;
+/*   background-color: #eee; */
   border-radius: 0px;
   float: left;
   margin-right: 0px;
@@ -565,7 +565,7 @@ dl.kanban__card dd.kanban__card {
 }
 
 dl.kanban__card {
-  background-color: #eee;
+/*   background-color: #eee; */
   border-radius: 3px;
   font-size: 9pt;
   margin: 8px;
