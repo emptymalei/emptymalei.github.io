@@ -21,7 +21,7 @@ Suppose we have the mass of each dot on the coordinate system as $m$, the overal
 
 $$
 \begin{align}
-\tau_5 &= mg\codt d + 2 mg \cdot 2 d + 3 mg \cdot 3 d + \cdots + 5 mg \cdot 5 d \\
+\tau_5 &= mg\cdot d + 2 mg \cdot 2 d + 3 mg \cdot 3 d + \cdots + 5 mg \cdot 5 d \\
 & = m g \cdot d \left( 1^2 + 2^2 + 3^3 +\cdots + 5^2 \right).
 \end{align}
 $$
