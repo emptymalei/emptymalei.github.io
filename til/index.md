@@ -6,7 +6,7 @@ layout: archive
 {% include mixitup.html %}
 <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
 
-    
+
 
 ---
 
@@ -37,7 +37,7 @@ layout: archive
 
 <span style="display: inline-block;margin-right: 1em;margin-bottom: 1em;">
   <label>Filter:</label>
-  
+
   <button class="filter" data-filter="all">All</button>
   <button class="filter mix-btn-programming" data-filter=".mix-programming">Programming</button>
   <button class="filter mix-btn-physics" data-filter=".mix-physics">Physics</button>
@@ -48,7 +48,7 @@ layout: archive
 
 <span style="display: inline-block;">  
   <label>Sort:</label>
-  
+
   <button class="sort" data-sort="myorder:desc">Date Desc</button>
   <button class="sort" data-sort="myorder:random">Date Random</button>
   <button class="sort" data-sort="myorder:asc">Date Asc</button>
@@ -57,7 +57,7 @@ layout: archive
 
 <div id="Mix-Container" class="mix-container">
 
-{% for til in tilProgramming reversed limit:4 %}
+{% for til in tilProgramming reversed limit:50 %}
 
    {% if til.date %}
    <div class="mix mix-programming" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
@@ -74,7 +74,7 @@ layout: archive
 
 {% endfor %}
 
-{% for til in tilPhysics reversed limit:4 %}
+{% for til in tilPhysics reversed limit:50 %}
 
    {% if til.date %}
    <div class="mix mix-physics" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
@@ -92,7 +92,7 @@ layout: archive
 {% endfor %}
 
 
-{% for til in tilMISC reversed limit:4 %}
+{% for til in tilMISC reversed limit:50 %}
 	   {% if til.date %}
    <div class="mix mix-misc" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
    <span class="mix-categories">#{{ til.categories }}#</span>
@@ -108,7 +108,7 @@ layout: archive
 {% endfor %}
 
 
-{% for til in tilMath reversed limit:4 %}
+{% for til in tilMath reversed limit:50 %}
 	   {% if til.date %}
    <div class="mix mix-math" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
    <span class="mix-categories">#{{ til.categories }}#</span>
@@ -123,7 +123,7 @@ layout: archive
    {% endif %}
 {% endfor %}
 
-{% for til in tilAstro reversed limit:4 %}
+{% for til in tilAstro reversed limit:50 %}
 	   {% if til.date %}
    <div class="mix mix-astro" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
    <span class="mix-categories">#{{ til.categories }}#</span>
@@ -140,7 +140,7 @@ layout: archive
 
 
 
-  
+
   <div class="gap"></div>
   <div class="gap"></div>
 </div>
