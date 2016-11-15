@@ -594,6 +594,6 @@ h2.kanban__head {
 
 /* for mermaid graph */
 
-.mermaid {
-text-align: center;
+div.mermaid {
+text-align: center !important;
 }
