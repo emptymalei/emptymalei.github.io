@@ -590,3 +590,10 @@ div.kanban__name {
 h2.kanban__head {
  text-align: center;
 }
+
+
+/* for mermaid graph */
+
+.mermaid {
+text-align: center;
+}
