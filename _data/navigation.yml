@@ -4,6 +4,10 @@
   url: /til/
   excerpt: "Today I Learned"
 
+- title: Reading
+  url: /reading/
+  excerpt: "Today I Read"
+
 - title: Projects
   url: /projects/
   excerpt: "My tracks"

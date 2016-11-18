@@ -1,13 +1,23 @@
 ---
-layout: til
+layout: reading
 title: "Biological Homochirality of Earth Life"
 date: 2015-10-15
 modified: 2015-10-15 #2014-08-27T11:57:41-04:00
 author: OctoMiao
 comments: true
-categories: biophysics
+categories:
+- biophysics
+- physics
+tags:
+- biological homochirality
+- evolution theory
 filter: science # can be science or misc for now
 summary: Explain why life prefer homochirality
+ref:
+- title: "Colloquium: Homochirality: Symmetry breaking in systems driven far from equilibrium"
+  link: http://journals.aps.org/rmp/abstract/10.1103/RevModPhys.85.603
+- title: "Noise-Induced Mechanism for Biological Homochirality of Early Life Self-Replicators"
+  link: http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.115.158101
 ---
 
 Notations

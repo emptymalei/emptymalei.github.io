@@ -4,8 +4,7 @@ title: Dark Hypernova
 tagline: 'Science and Fiction'
 subtitle: "More Science, More Fiction"
 description: "Science and Fiction"
-description-side-bar: "Dark Hypernova is a website built for my personal notes and posts."
-version: "α"
+description-side-bar: "It's Science!"
 logo: logo-120x120.png # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
 locale: en
@@ -87,9 +86,9 @@ scholar:
 
 # About/contact
 author:
-  name:              Alex Gil
-  url:               https://twitter.com/elotroalex
-  email:             colibri.alex@gmail.com
+  name:              Lei Ma
+  url:               https://twitter.com/emptymalei
+  email:             emptymalei@qq.com
 
 
 # New Settings

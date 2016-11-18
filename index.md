@@ -54,6 +54,6 @@ title:
 <a href="/til/" style="margin: 1em 1em 1em 1em;" class="btn">#TIL#'s</a>
 <a href="/science/" style="margin: 1em 1em 1em 1em;" class="btn">Science Posts</a>
 <a href="/misc/" style="margin: 1em 1em 1em 1em;" class="btn">MISC Posts</a>
-<a href="/research/" style="margin: 1em 1em 1em;" class="btn">My Research</a>
+<a href="/about/" style="margin: 1em 1em 1em;" class="btn">About Me</a>
 
 </section>
