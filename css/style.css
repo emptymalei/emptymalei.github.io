@@ -582,7 +582,7 @@ dd.kanban__card {
 }
 
 ul.kanban__columns li.kanban__column div.kanban__name {
-  border-bottom: 2px solid #eee;  
+  border-bottom: 2px solid #eee;
 }
 div.kanban__name {
   text-align: center;
@@ -596,4 +596,10 @@ h2.kanban__head {
 
 div.mermaid {
 text-align: center !important;
+}
+
+div.footnotes {
+   margin-top: 2em !important;
+   padding-top: 2em !important;
+   border-top: 1px solid #c3c3c3 !important;
 }
