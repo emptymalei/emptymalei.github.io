@@ -2,6 +2,9 @@
 layout: archive
 ---
 
+{% include random-til.html %}
+
+
 
 {% include mixitup.html %}
 <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
