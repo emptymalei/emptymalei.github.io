@@ -12,7 +12,7 @@ filter: science # can be science or misc for now
 summary: Introduce geometry into the manifold of complex networks
 ref:
   - title: "Popularity versus similarity in growing networks"
-  - link: http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.html
+    link: http://www.nature.com/nature/journal/v489/n7417/abs/nature11459.html
 ---
 
 
