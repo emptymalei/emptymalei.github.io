@@ -24,6 +24,14 @@ title:
 
 </div> -->
 
+{% assign recentpost = site.posts.first %}
+{% assign recentreading = site.reading.last %}
+{% if recentpost.date > recentreading.date %}
+{% assign post = recentpost %}
+{% else %}
+{% assign post = recentreading %}
+{% endif %}
+
 
 <div class="front-cover" style="background-size:cover;overflow:hidden;">
 
@@ -34,15 +42,17 @@ title:
         </div>
 <div class="featured" style="border-top:1px solid grey;margin:0 10% 0 10%;">
 <div style="background: rgba(67, 69, 78, 0.3);">
-{% for post in site.posts limit:1 %}
+
 <h3 style="text-align:center;font-size:120%;color:white;">Recent: <a href="{{ site.url }}{{ post.url }}" style="text-align:center;color:white;font-weight:600;">{{ post.title }}</a></h3>
 <p style="text-align:center;color:#fff;font-size:90%;padding-bottom:0.5em;padding-left:2%;padding-right:2%;">{{ post.summary }}</p>
-{% endfor %}
+
 </div>
 </div>
     </section>
 
 </div>
+
+
 
 
 

@@ -6,7 +6,7 @@ layout: archive
 
 I always love reading interesting papers in physics. Here are some notes I wrote. Think of this as a casual lab notebook.
 
-{% assign readingScience = site.reading | where: 'filter', 'science' %}
+{% assign readingScience = site.reading %}
 
 <div class="tiles">
 {% for post in readingScience reversed %}
