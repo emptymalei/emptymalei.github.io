@@ -40,7 +40,7 @@ How do we verify this? The first idea came to me is through the number of patent
 
 
 <figure markdown="1">
-![]({{site.url}}/images/posts/modeling-technology-evolution/patentUSAPlt.png)
+![]({{site.url}}/assets/posts/modeling-technology-evolution/patentUSAPlt.png)
 <figcaption markdown="1">
 Granted patent for USA during 1980-2013. The fitting formula is $e^{0.36 t}+1.13\times 10^5$. Data source: [WIPO IP Statistics Data Center](http://ipstats.wipo.int/ipstatv2/editIpsSearchForm.htm?tab=patent)
 </figcaption>
@@ -49,7 +49,7 @@ Granted patent for USA during 1980-2013. The fitting formula is $e^{0.36 t}+1.13
 Just for comparison, we also fit the data for China.
 
 <figure markdown="1">
-![]({{site.url}}/images/posts/modeling-technology-evolution/patentChinaPlt.png)
+![]({{site.url}}/assets/posts/modeling-technology-evolution/patentChinaPlt.png)
 <figcaption markdown="1">
 Granted patent for China during 1985-2013. The fitting formula is $e^{0.43 t}+2.53\times 10^4$. Data source: [WIPO IP Statistics Data Center](http://ipstats.wipo.int/ipstatv2/editIpsSearchForm.htm?tab=patent)
 </figcaption>
