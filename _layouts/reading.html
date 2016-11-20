@@ -10,14 +10,14 @@ layout: default
   <div style="border-top:1px solid #c0c0c0;border-bottom:1px solid #c0c0c0;margin-bottom:1em;padding-top:1em;padding-bottom:1em;">
     {% if page.summary %}
     <div style="margin-left:1em;">
-    <span style="display:block;font-size:90%;"><strong>Summary:</strong> {{ page.summary }}</span>
+    <span style="display:block;font-size:90%;"><i class="fa fa-star" aria-hidden="true"></i>  <strong>Summary:</strong> {{ page.summary }}</span>
     </div>
     {% endif %}
 
 
         {% if page.categories != null %}
         <div style="margin-left:1em;">
-        <span style="display:block;font-size:90%;"><strong>Categories:</strong> {% for category in page.categories %}
+        <span style="display:block;font-size:90%;"><i class="fa fa-folder" aria-hidden="true"></i> <strong>Categories:</strong> {% for category in page.categories %}
            { {{ category }} }
            {% endfor %}
         </span>
@@ -26,7 +26,7 @@ layout: default
 
         {% if page.tags != null %}
         <div style="margin-left:1em;">
-        <span style="display:block;font-size:90%;"><strong>Tags:</strong> {% for tag in page.tags %}
+        <span style="display:block;font-size:90%;"><i class="fa fa-hashtag" aria-hidden="true"></i> <strong>Tags:</strong> {% for tag in page.tags %}
            #{{ tag }}
            {% endfor %}
         </span>
@@ -34,12 +34,12 @@ layout: default
         {% endif %}
 
     {% if page.ref %}
-    <div style="margin-left:1em;"><span style="display:block;font-size:90%;"><strong>References:</strong></span>
+    <div style="margin-left:1em;"><span style="display:block;font-size:90%;"><i class="fa fa-paperclip" aria-hidden="true"></i> <strong>References:</strong></span>
        {% for reference in page.ref %}
           {% if reference.link %}
-             <span style="display:block;font-size:90%;"> - <a href="{{ reference.link }}">{{ reference.title }}</a></span>
+             <span style="display:block;font-size:90%;padding-left:1em;"> - <a href="{{ reference.link }}">{{ reference.title }}</a></span>
              {% else %}
-             <span style="display:block;font-size:90%;"> - {{ reference.title }}</span>
+             <span style="display:block;font-size:90%;padding-left:1em;"> - {{ reference.title }}</span>
           {% endif %}
        {% endfor %}
     </div>
