@@ -4,9 +4,23 @@
     margin-right: auto !important;
 }
 
-.body {
-    font-family: Georgia,Times,"Times New Roman",serif,"Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
-         }
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: rgba(170, 51, 17, 0.6);
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+}
 
 .article-cover {
     max-width: 100%;
@@ -355,9 +369,6 @@ figure.highlight:hover:before {
 .container {
     max-width: 50rem !important;
 }
-#markdown-toc>ul,>ol,>dl {
-    margin-bottom: 0 !important;
-}
 
 li>ul {
   margin-bottom: 0.1rem;
@@ -375,7 +386,33 @@ li>ul {
     white-space: nowrap;
     display: inline-block;
     float: right;
+    max-width: 45%;
+    word-wrap: break-word;
+    overflow: auto;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
 }
+#markdown-toc>ul,>ol,>dl {
+    margin-bottom: 0 !important;
+}
+
+#markdown-toc::-webkit-scrollbar {
+    height: 2px;
+}
+
+#markdown-toc::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
+#markdown-toc::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: rgba(170, 51, 17, 0.5);
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+}
+
 #sidebar {
     background-color: black !important;
 }
@@ -602,4 +639,14 @@ div.footnotes {
    margin-top: 2em !important;
    padding-top: 2em !important;
    border-top: 1px solid #c3c3c3 !important;
+}
+
+
+.show-comments {
+   background-color: white;
+   color: black;
+   cursor: pointer;
+}
+.disqus-lazy-button-center {
+    text-align: center;
 }
