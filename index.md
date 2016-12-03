@@ -66,4 +66,8 @@ title:
 <a href="/misc/" style="margin: 1em 1em 1em 1em;" class="btn">MISC Posts</a>
 <a href="/about/" style="margin: 1em 1em 1em;" class="btn">About Me</a>
 
+<a href="/reading/" style="margin: 1em 1em 1em;" class="btn">Reading Notes</a>
+<a href="/projects/" style="margin: 1em 1em 1em;" class="btn">Projects</a>
+<a href="/stories/" style="margin: 1em 1em 1em;" class="btn">Stories</a>
+
 </section>
