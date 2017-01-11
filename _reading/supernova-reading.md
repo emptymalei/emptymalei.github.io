@@ -12,7 +12,16 @@ ref:
 ---
 
 
-## Q&A's
+## Some Numbers of Supernova
+
+
+Gravitational energy of initial core collapse:
+
+$$
+U\sim \frac{3}{5} \frac{G M^2}{r} \sim 1.2\times 10^{53} \mathrm{erg}
+$$
+
+
 
 
 **Estimation of Chandrasekhar limit**:
