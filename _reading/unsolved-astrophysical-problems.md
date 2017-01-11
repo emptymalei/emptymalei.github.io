@@ -8,7 +8,7 @@ comments: true
 categories: astrophysics
 filter: science # can be science or misc for now
 summary: Some unsolved astrophysical problems and possible connections to neutrinos.
-ref: https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics#Astronomy_and_astrophysics
+ref: https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_physics
 ---
 
 
