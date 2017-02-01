@@ -122,4 +122,4 @@ site-source: https://github.com/emptymalei/emptymalei.github.io
 # include some folders to be generated
 include: ["numerical/"]
 
-exclude: ['README.markdown', 'Gemfile.lock', 'Gemfile','assets/slides/neutron-star-model/notes/*', 'assets/slides/neutron-star-model/plugin/*']
+exclude: ['assets/slides/neutron-star-model/notes/', 'assets/slides/neutron-star-model/plugin/', 'assets/slides/whygit/plugin/']
