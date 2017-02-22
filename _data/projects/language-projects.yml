@@ -1,6 +1,14 @@
 - project: English
   stack:
   inprogress:
-    - title: Vocabulary Builder
+    - title: Vocabulary Builder Part 2
       content: Using Shanbay App Everyday
+  done:
+     - title: Vocabulary Builder Part 1
+       content: Finished Part 1
+- project: German
+  stack:
+  inprogress:
+    - title: Duolingo
+      content: Learn German on Duolingo
   done:

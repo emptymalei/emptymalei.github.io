@@ -5,6 +5,11 @@ comments: true
 published: true
 ---
 
+For a list of my work please read
+<a href="/about" style="margin: 1em 1em 1em 1em;" class="btn--light">About</a>
+
+Here on this page is a list of my learning projects.
+
 ## Research
 
 
@@ -39,6 +44,3 @@ published: true
 
 1. [Physics](../academia/physics)
 2. [Math](../academia/math)
-
-
-	
