@@ -19,7 +19,7 @@ You can
 </p>
 
 
-The following content is live rendered using <a href="https://zerodevx.github.io/zero-md/" target="_blank">zero-md</a>. If anything goes wrong, please read it on GitHub repo: <a href="http://github.com/emptymalei/awesome-research" target="_blank">emptymalei/awesome-research</a>.
+The following content is live rendered using <a href="https://zerodevx.github.io/zero-md/" target="_blank">zero-md</a>. If something went wrong, please read it on GitHub repo: <a href="http://github.com/emptymalei/awesome-research" target="_blank">emptymalei/awesome-research</a>.
 
 
 
