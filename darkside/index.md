@@ -50,6 +50,7 @@ title:
 25. 我佛瓷杯。[来源](http://www.jianshu.com/p/c91baef6a739)
 26. In vivo we trust. [A Nature Article](http://www.nature.com/nrd/journal/v2/n6/full/nrd1127.html)
 27. 有些人是学术长胖型，有些人是学术减肥型。
+28. 喜欢写程序的人，其实是一直在使用 codeine, 毕竟是用 code 来止痛的嘛。
 
 
 ## 科技
