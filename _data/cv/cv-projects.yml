@@ -1,0 +1,24 @@
+- name: NeuPhysics
+  displayname: github.com/NeuPhysics
+  link: http://neutrino.xyz
+  description: A website and GitHub organization for neutrino physics. The concentration is on neutrino oscillations in different environments.
+
+- name: NeuronStar
+  displayname: github.com/neuronstar
+  link: http://neuronstar.cc
+  description: A website and GitHub organization for the connection between neuroscience and physics. A reading club on neuroscience is hosted here.
+
+- name: InterImm
+  displayname: github.com/InterImm
+  link: http://interimm.org
+  description: Imagination of a space faring future. This is a new type of science fiction that really builds up an organization and provide services that is futuristic.
+
+- name: Intelligence
+  displayname: github.com/emptymalei/intelligence
+  link: http://intelligence.readthedocs.io
+  description: My notes for topics about intelligence. I like to explore science about biological intelligence, machine intelligence, and collective intelligence.
+
+- name: awesome-research
+  displayname: github.com/emptymalei/awesome-research
+  link: http://github.com/emptymalei/awesome-research
+  description: A curated list of tools for research.

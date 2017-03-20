@@ -1,0 +1,54 @@
+<h3 class="section-title">Current Research</h3>
+<dl class="education">
+    {% for res in site.data.cv.cv-research %}
+        <dt>
+            <p class="title">{{ res.title }}</p>
+            <!-- <p class="company">{{ job.company }}</p> -->
+            <!-- <p class="period">{{ research.period }}</p> -->
+        </dt><!--
+        --><dd>
+            <p>{{ res.description }}</p>
+        </dd>
+    {% endfor %}
+</dl>
+
+<h3 class="section-title">Education</h3>
+<dl class="education">
+    {% for edu in site.data.cv.cv-education %}
+        <dt>
+            <p class="title">{{ edu.degree }}</p>
+            <p class="company">{{ edu.university }}</p>
+
+
+        </dt><!--
+        --><dd>
+            <!-- <p>{{ edu.description }}</p> -->
+            <p class="period">{{ edu.date }}</p>
+        </dd>
+    {% endfor %}
+</dl>
+
+
+<h3 class="section-title">Publication</h3>
+
+<ul class="publications">
+   {% for item in site.data.cv.cv-publication %}
+   <li>{{ item.authors }}, <em>{{ item.title }}</em>, <em>{{ item.journal }}</em> <strong>{{ item.vol }}</strong>, {{ item.page }} ({{ item.year }}).
+   </li>
+   {% endfor %}
+</ul>
+
+
+
+<h3 class="section-title">Side Projects</h3>
+<dl class="experience">
+    {% for item in site.data.cv.cv-projects %}
+        <dt>
+            <p class="title"><a href="{{ item.link }}"> {{ item.name }} </a></p>
+            <!-- <p class="period">{{ research.period }}</p> -->
+        </dt><!--
+        --><dd>
+            <p>{{ item.description }}</p>
+        </dd>
+    {% endfor %}
+</dl>
