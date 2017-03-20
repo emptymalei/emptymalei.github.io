@@ -1,0 +1,28 @@
+
+
+<header>
+    <div class="container">
+        <div class="intro">
+            <p class="intro__pre">Hello</p>
+            <p class="intro__main">My name is <span>{{ site.data.cv.cv-basics.name }}</span>, a {{ site.data.cv.cv-basics.job }} who works on {{ site.data.cv.cv-basics.research }}.</p>
+            <p class="intro__submain">{{ for item in site.data.cv.cv-basics.interests }}
+               {{ item }}
+            {{ endfor }}
+         </p>
+            <p class="intro__post">{{ site.data.cv.cv-basics.current-university }}</p>
+        </div>
+
+        {{ if site.data.cv.cv-basics.github or site.data.cv.cv-basics.linkedin or site.data.cv.cv-basics.researchgate or site.data.cv.cv-basics.mendeley or site.data.cv.cv-basics.website }}
+        <div class="social">
+            {{ if site.data.cv.cv-basics.github }}<span><i class="fa fa-github fa-lg fa-fw"></i> <a href="https://github.com/{{ site.data.resume.links.github }}" target="_blank">github.com/{{ site.data.cv.cv-basics.github }}</a></span>{{ endif }}
+            <span><i class="fa fa-linkedin fa-lg fa-fw"></i> <a href="https://www.linkedin.com/in/{{ site.data.resume.links.linkedin }}" target="_blank">linkedin.com/in/{{ site.data.cv.cv-basics.linkedin }}</a></span>
+            <span><i class="fa fa-line-chart fa-lg fa-fw"></i> <a href="https://www.researchgate.net/profile/{{ site.data.resume.links.researchgate }}" target="_blank">researchgate.net/profile/{{ site.data.cv.cv-basics.researchgate }}</a></span>
+            <span><i class="fa fa-area-chart fa-lg fa-fw"></i> <a href="https://www.mendeley.com/profiles/{{ site.data.resume.links.mendeley }}" target="_blank">mendeley.com/profiles/{{ site.data.cv.cv-basics.mendeley }}</a></span>
+            <span><i class="fa fa-link fa-lg fa-fw"></i> <a href="http://{{ site.data.resume.links.website }}" target="_blank">{{ site.data.cv.cv-basics.website }}</a></span>
+        </div>
+        {{ endif }}
+
+
+
+    </div>
+</header>

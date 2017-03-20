@@ -33,23 +33,20 @@ education:
     major: Physics
     university: University of New Mexico
     location: Albuquerque, USA
-    date: 08/2013 - 
-    notes: I am doing research in neutrino oscillations.
+    date: 08/2013 -
+    notes: Research in neutrino oscillations
   bsc:
     category: BSc
     major: Physics
     university: Shandong University
     location: Jinan, China
     date: 09/2006 - 05/2010
-    notes: I did research in piezoelectric ceramics and cosmic microwave background.
-  
+    notes: Research in piezoelectric ceramics and cosmic microwave background
+
 
 research:
   - category: Neutrino Physics
-    topics: Neutrino oscillations in matter, stimulated neutrino oscillations in matter, quantum two level system.
-
-  - category: Articial Neural Network
-    topics: To solve dierential equations
+    topics: Neutrino oscillations in matter, stimulated neutrino oscillations, neutrino self-interaction, gravitational effect.
 
   - category: Piezoelectric Material
     topics: High temperature piezoelectric ceramics
@@ -57,13 +54,17 @@ research:
   - category: Cosmology
     topics: f(R) theory
 
-  - category: Biophysics
-    topics: Does saltatory conduction work in neurons theoretically?
+  - category: Biophysics, and Neuroscience
+    topics: saltatory conduction, statistical physics and neuroscience
+  #
+  # - category: Articial Neural Network
+  #   topics: To solve dierential equations
 
-    
+
+
 
 publications:
-  - authors: Lei Ma, Kun Zhao, Jixia Li, Qi Wu, Minglei Zhao, Chunlei Wang, 
+  - authors: Lei Ma, Kun Zhao, Jixia Li, Qi Wu, Minglei Zhao, Chunlei Wang,
     title: Dielectric and Piezoelectric Properties of (Li,Ce) Modified NaBi5Ti5O18 Composite Ceramics
     journal: Journal of Rare Earths
     vol: 27
@@ -77,7 +78,7 @@ publications:
     page: 58
     year: 2010
 
-  
+
 organizations:
   - name: NeuPhysics
     displayname: github.com/NeuPhysics
@@ -98,7 +99,7 @@ organizations:
     displayname: github.com/emptymalei/awesome-research
     link: http://github.com/emptymalei/awesome-research
     description: A curated list of tools for research.
-  
+
 awards:
   - title: First Prize of Excellent Undergraduate Scholarship
     year: 2007
@@ -138,19 +139,19 @@ work:
     link: http://phys.fudan.edu.cn
     year: 2011 Spring
     description: Physics lab teaching assistant
-    
+
   - company: Fudan University
     type: Teaching Assistant
     link: http://phys.fudan.edu.cn
     year: 2012 Spring
     description: Physics lab teaching assistant
-  
+
   - company: University of New Mexico
     type: Teaching Assistant
     link: http://panda.unm.edu
     year: 2013 Fall - 2014 Fall
     description: Teaching assistant
-  
+
 
 
 social:
@@ -165,5 +166,5 @@ social:
       id: 章鱼喵-十只手
 
     - name: Wechat
-      link: 
+      link:
       id: emptymalei

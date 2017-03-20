@@ -37,7 +37,7 @@ published: true
 <div class="notes--info" style="text-align: center;">
 
 <p>
-<a href="/resume" style="margin: 1em 1em 1em 1em;" class="btn--light">Resume & CV</a>
+<a href="/cv" style="margin: 1em 1em 1em 1em;" class="btn--light">Resume & CV</a>
 
 <a href="https://www.researchgate.net/profile/Lei_MA" style="margin: 1em 1em 1em 1em;" class="btn--light">My ResearchGate profile</a>
 </p>

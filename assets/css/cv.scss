@@ -1,0 +1,13 @@
+---
+# CV Sass file
+---
+
+// Import all partials from _sass
+@import
+    'cv-reset',
+    'cv-layout',
+    'cv-typography',
+    'cv-header',
+    'cv-footer',
+    'cv-resume'
+;
