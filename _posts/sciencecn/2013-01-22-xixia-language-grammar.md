@@ -24,7 +24,7 @@ summary: 西夏文虽然是模仿中原的汉字所创造的文字，但是由�
 <figcaption>
 <a href="http://hongzai-story.blogspot.com/2010/10/blog-post.html">来源</a>
 </figcaption>
-![]({{site.url}}/images/xixia-language-grammar/westernxia1.png)
+![]({{site.url}}/images/posts/xixia-language-grammar/westernxia1.png)
 </figure>
 
 
@@ -35,7 +35,7 @@ summary: 西夏文虽然是模仿中原的汉字所创造的文字，但是由�
 <figcaption>
 <a href="http://hongzai-story.blogspot.com/2010/10/blog-post.html">来源</a>
 </figcaption>
-![]({{site.url}}/images/xixia-language-grammar/westernxia2.png)
+![]({{site.url}}/images/posts/xixia-language-grammar/westernxia2.png)
 </figure>
 
 
