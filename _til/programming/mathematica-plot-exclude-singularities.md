@@ -27,7 +27,7 @@ Plot[1/(1 - 0.3 x), {x, 2, 5}, Frame -> True,
 What we get is a plot
 
 <figure markdown="1">
-![TRAPPIST-1 系统的七颗行星。公有领域图片，来自 NASA/JPL-Caltech](assets/programming/mathematica-plot-exclude-singularities/mathematica-plot-with-singularity-point.png)
+![](../assets/programming/mathematica-plot-exclude-singularities/mathematica-plot-with-singularity-point.png)
 <figcaption>
 A plot with singularity point. Mathematica Plot brings in an extra line at the singularity.
 </figcaption>
@@ -46,7 +46,7 @@ Plot[1/(x - 3), {x, 2, 4}, Frame -> True,
 The plot we get now is much better.
 
 <figure markdown="1">
-![TRAPPIST-1 系统的七颗行星。公有领域图片，来自 NASA/JPL-Caltech](assets/programming/mathematica-plot-exclude-singularities/mathematica-plot-with-singularity-point-exclusions.png)
+![](../assets/programming/mathematica-plot-exclude-singularities/mathematica-plot-with-singularity-point-exclusions.png)
 <figcaption>
 With Exclusions->{3}
 </figcaption>
