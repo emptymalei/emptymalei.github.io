@@ -26,12 +26,18 @@ title:
 
 {% assign recentpost = site.posts.first %}
 {% assign recentreading = site.reading.last %}
+{% assign recenttil = site.til.last %}
 {% if recentpost.date > recentreading.date %}
 {% assign post = recentpost %}
 {% else %}
 {% assign post = recentreading %}
 {% endif %}
 
+{% if recentpost.date > recenttil.date %}
+{% assign post = recentpost %}
+{% else %}
+{% assign post = recenttil %}
+{% endif %}
 
 <div class="front-cover" style="background-size:cover;overflow:hidden;">
 
