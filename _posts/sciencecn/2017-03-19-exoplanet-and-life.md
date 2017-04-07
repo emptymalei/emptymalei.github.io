@@ -7,7 +7,7 @@ author: OctoMiao
 comments: true
 categories: sciencecn
 summary: 越来越多的系外行星的发现，使得有些原来看起来很遥远的科幻，也突然变得亲切起来。毕竟人类未来第一个星际飞行的目的地，很可能就在现在的系外行星列表中。而原来看起来像是玄学一样的生命起源问题和宇宙中其他文明的问题，我们已经看起来远方的一线曙光。
-published: false
+published: true
 ---
 
 
