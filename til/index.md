@@ -6,7 +6,7 @@ layout: archive
 
 
 
-{% include mixitup.html %}
+
 <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
 
 
@@ -52,9 +52,9 @@ layout: archive
 <span style="display: inline-block;">  
   <label>Sort:</label>
 
-  <button class="sort" data-sort="myorder:desc">Date Desc</button>
-  <button class="sort" data-sort="myorder:random">Date Random</button>
-  <button class="sort" data-sort="myorder:asc">Date Asc</button>
+  <button class="sort" data-sort="date:desc">Date Desc</button>
+  <button class="sort" data-sort="date:random">Date Random</button>
+  <button class="sort" data-sort="date:asc">Date Asc</button>
 </span>
 </div>
 
@@ -63,7 +63,7 @@ layout: archive
 {% for til in tilProgramming reversed limit:50 %}
 
    {% if til.date %}
-   <div class="mix mix-programming" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <div class="mix mix-programming" data-date="{{ til.date | date: "%Y-%m-%d" }}">
    <span class="mix-categories">#{{ til.categories }}#</span>
    <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
    <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
@@ -80,7 +80,7 @@ layout: archive
 {% for til in tilPhysics reversed limit:50 %}
 
    {% if til.date %}
-   <div class="mix mix-physics" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <div class="mix mix-physics" data-date="{{ til.date | date: "%Y-%m-%d" }}">
    <span class="mix-categories">#{{ til.categories }}#</span>
    <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
    <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
@@ -97,7 +97,7 @@ layout: archive
 
 {% for til in tilMISC reversed limit:50 %}
 	   {% if til.date %}
-   <div class="mix mix-misc" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <div class="mix mix-misc" data-date="{{ til.date | date: "%Y-%m-%d" }}">
    <span class="mix-categories">#{{ til.categories }}#</span>
    <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
    <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
@@ -113,7 +113,7 @@ layout: archive
 
 {% for til in tilMath reversed limit:50 %}
 	   {% if til.date %}
-   <div class="mix mix-math" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <div class="mix mix-math" data-date="{{ til.date | date: "%Y-%m-%d" }}">
    <span class="mix-categories">#{{ til.categories }}#</span>
    <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
    <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
@@ -128,7 +128,7 @@ layout: archive
 
 {% for til in tilAstro reversed limit:50 %}
 	   {% if til.date %}
-   <div class="mix mix-astro" data-myorder="{{ til.date | date: "%Y-%m-%d" }}">
+   <div class="mix mix-astro" data-date="{{ til.date | date: "%Y-%m-%d" }}">
    <span class="mix-categories">#{{ til.categories }}#</span>
    <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
    <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
@@ -167,3 +167,5 @@ layout: archive
 {% endfor %}
 
 </div><!-- /.tiles -->
+
+{% include mixitup.html %}

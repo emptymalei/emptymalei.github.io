@@ -1,10 +1,12 @@
-<script src="{{ site.baseurl }}/assets/js/jquery.mixitup.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/mixitup.min.js"></script>
 <script type="text/javascript">
-  $(function(){
-  $('#Mix-Container').mixItUp(
-      
-    );
-});
+var containerEl = document.querySelector('#Mix-Container');
+var mixer = mixitup('#Mix-Container', {
+    load: {
+        sort: 'date:desc'
+    }
+}
+);
 </script>
 
 <style type="text/css">
@@ -55,16 +57,16 @@ button + label{
 }
 
 .mix-btn-physics {
-  
+
 }
 .mix-btn-math {
-  
+
 }
 .mix-btn-astro {
-  
+
 }
 .mix-btn-misc {
-  
+
 }
 
 
@@ -73,7 +75,7 @@ button + label{
   text-align: justify;
   /*font-size: 0.1px;*/
 
-  
+
   -webkit-backface-visibility: hidden;
 }
 
@@ -92,7 +94,7 @@ button + label{
 .mix-container .mix{
   text-align: left;
   margin-bottom: 2%;
-  display: none;
+  display: inline-block;
 }
 
 .mix-container .mix.mix-programming{
