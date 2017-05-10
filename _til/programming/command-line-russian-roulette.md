@@ -13,7 +13,7 @@ Found a very funny comic on [commicstrip](http://www.commitstrip.com/en/2014/05/
 
 <figure markdown="1">
 ![](../assets/programming/russian-roulette-in-command-line.jpg)
-<figcaption>
+<figcaption markdown="1">
 Commic from [commicstrip](http://www.commitstrip.com/en/2014/05/16/russian-roulette/).
 </figcaption>
 </figure>
@@ -42,7 +42,7 @@ or a safer version
 
 <figure markdown="1">
 ![](../assets/programming/russian-roulette-from-infinum.jpg)
-<figcaption>
+<figcaption markdown="1">
 [on reddit](https://www.reddit.com/r/ProgrammerHumor/comments/4ghiac/saw_this_on_my_way_to_uni_command_line_russian/).
 </figcaption>
 </figure>
