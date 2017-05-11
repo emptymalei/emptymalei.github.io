@@ -44,4 +44,4 @@ To fix this problem, simply change the full ssh path in git config to the short 
         fetch = +refs/heads/*:refs/remotes/origin/*
 ```
 
-~~Damn. I spend almost an hour on this problem.~~
+~~Damn. I spent almost an hour on this problem.~~
