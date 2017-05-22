@@ -122,4 +122,6 @@ site-source: https://github.com/emptymalei/emptymalei.github.io
 # include some folders to be generated
 include: ["numerical/"]
 
-exclude: ['assets/slides/neutron-star-model/notes/', 'assets/slides/neutron-star-model/plugin/', 'assets/slides/whygit/plugin/']
+exclude: ['assets/slides/neutron-star-model/notes/', 'assets/slides/neutron-star-model/plugin/',
+'assets/slides/neutron-star-model/css/theme/README.md',
+'assets/slides/whygit/css/theme/README.md', 'assets/slides/whygit/plugin/']
