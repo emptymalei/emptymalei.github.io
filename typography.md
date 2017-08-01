@@ -59,6 +59,18 @@ Please determine the path of the image according to the path of the post itself.
 where `{{ site.url }}` is the configured url of the site.
 </div>
 
+Alternatively, we can use the set attributes syntax in kramdown.
+
+{% highlight md %}
+This is a paragraph with some class. The class is specified in the end of the paragraph.
+{: .notes--warning}
+{% endhighlight %}
+
+The results shows as a paragraph with the corresponding class. Notice that this only works for one paragraph.
+
+This is a paragraph with some class. The class is specified in the end of the paragraph.
+{: .notes--warning}
+
 
 ## Table of Contents
 
@@ -69,3 +81,14 @@ where `{{ site.url }}` is the configured url of the site.
 {% endhighlight %}
 
 is used to generate table of contents.
+
+
+## Footnote
+
+[Syntax for footnotes is elaborated more on the website of kramdown.](http://kramdown.gettalong.org/syntax.html#footnotes)
+
+{% highlight text %}
+Some text here some other text here.[^1]
+
+[^1]: Footnote here
+{% endhighlight %}
