@@ -1,6 +1,6 @@
 ---
 layout: til
-title: "Python Default Parameters Might Tripped Me Up"
+title: "Python Default Parameters Tripped Me Up"
 date: 2017-06-03
 author: OctoMiao
 comments: true
