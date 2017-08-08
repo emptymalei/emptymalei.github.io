@@ -67,7 +67,7 @@ My Speaker Deck is here: [https://speakerdeck.com/emptymalei](https://speakerdec
 2. [Computationa Methods](http://computational.neutrino.xyz/)
 3. [Physics Notebook](http://openmetric.org/physics/). Previously identified as [Physics Research Survival Manual](https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual) which has been abandoned.
 4. [Statistical Physics Notes](http://statisticalphysics.openmetric.org/)
-5. [Intelligence](http://intelligence.readthedocs.io/)
+5. [Intelligence](http://intelligence.readthedocs.io/): some notes on neuroscience, machine intelligence, etc.
 6. [Cosmology Taskforce](https://github.com/CosmologyTaskForce):
    * [An unfinished blog](http://cosmologytaskforce.github.io/CosmologyTaskForce/): meant to be a blog however abandoned.
    * [CoChiSquare](https://github.com/CosmologyTaskForce/CoChiSquare): Chisquare fitting for supernova data. Using transition redshift as a cosmological parameter.
