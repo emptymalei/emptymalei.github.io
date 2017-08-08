@@ -60,24 +60,31 @@ My Speaker Deck is here: [https://speakerdeck.com/emptymalei](https://speakerdec
 ## Online Docs
 
 1. [NeuPhysics](https://github.com/NeuPhysics): A GitHub Organization for Neutrino Physics.
-   * [GitHub](https://github.com/NeuPhysics),
+   * [NeuPhysics@GitHub](https://github.com/NeuPhysics),
    * [Webpage](http://neutrino.xyz),
-   * [Neutrino Physics Notes](http://docs.neutrino.xyz).
-2. [Physics Notebook](http://openmetric.org/physics/). Previously identified as [Physics Research Survival Manual](https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual) which has been abandoned.
-3. [Cosmology Taskforce](https://github.com/CosmologyTaskForce):
+   * [Neutrino Physics Notes](http://docs.neutrino.xyz),
+   * [Neutrino Oscillation Javascript](http://neutrino.xyz/neutrino-oscillation-js/)
+2. [Computationa Methods](http://computational.neutrino.xyz/)
+3. [Physics Notebook](http://openmetric.org/physics/). Previously identified as [Physics Research Survival Manual](https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual) which has been abandoned.
+4. [Statistical Physics Notes](http://statisticalphysics.openmetric.org/)
+5. [Intelligence](http://intelligence.readthedocs.io/)
+6. [Cosmology Taskforce](https://github.com/CosmologyTaskForce):
    * [An unfinished blog](http://cosmologytaskforce.github.io/CosmologyTaskForce/): meant to be a blog however abandoned.
    * [CoChiSquare](https://github.com/CosmologyTaskForce/CoChiSquare): Chisquare fitting for supernova data. Using transition redshift as a cosmological parameter.
    * [PowerSpectrum](https://github.com/CosmologyTaskForce/PowerSpectrum): Harison-Zeldovich prescription and power spectrum.
    * [ModiGraviDoc](https://github.com/CosmologyTaskForce/ModiGraviDoc): Documents on modified gravity.I use Mathematica as the editor to show more details on the derivations and the programming techniques.
    * [CoMaPack](https://github.com/CosmologyTaskForce/CoMaPack): Cosmology Mathematica Pack based on GREAT.m by Tristan Hubsch. A series of packages are hosted here, including some basic general relativity calculations, cosmology background calculation, cosmological perturbation calculation, etc.
-
+7. For fun:
+   1. [Transportation among the stars](https://github.com/emptymalei/future-star-network)
+   2. [Interplanetary Immigration Center](http://interimm.org)
+   3. [A Online Clock that converts Earth time to Martian time](http://interimm.org/mars-clock/)
 
 
 ## Some Other Projects
 
 1. [Survive Research](http://emptymalei.github.io/tool/): Some tools to help you survive scientific research.
 
-I am learning web techniques. As a practice, I built some projects.
+I am learning web front end technologies. As a practice, I built some projects for fun.
 
 1. [Watch UV](http://openmetric.org): A website that shows the UV Index using barchart and table.
 2. [Sphinx Notebook](http://openmetric.org/sphinx-notebook/): Use sphinx as notebook
