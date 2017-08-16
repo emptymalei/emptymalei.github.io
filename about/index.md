@@ -62,13 +62,7 @@ My Speaker Deck is here: [https://speakerdeck.com/emptymalei](https://speakerdec
 1. [NeuPhysics](https://github.com/NeuPhysics): A GitHub Organization for Neutrino Physics.
    * [NeuPhysics@GitHub](https://github.com/NeuPhysics),
    * [Webpage](http://neutrino.xyz),
-   * [Neutrino Physics Notes](http://docs.neutrino.xyz),
-   * [Neutrino Oscillation Javascript](http://neutrino.xyz/neutrino-oscillation-js/)
-2. [Computationa Methods](http://computational.neutrino.xyz/)
-3. [Physics Notebook](http://openmetric.org/physics/). Previously identified as [Physics Research Survival Manual](https://github.com/CosmologyTaskForce/PhysicsResearchSurvivalManual) which has been abandoned.
-4. [Statistical Physics Notes](http://statisticalphysics.openmetric.org/)
 5. [Intelligence](http://intelligence.readthedocs.io/): some notes on neuroscience, machine intelligence, etc.
-6. [Cosmology Taskforce](https://github.com/CosmologyTaskForce):
    * [An unfinished blog](http://cosmologytaskforce.github.io/CosmologyTaskForce/): meant to be a blog however abandoned.
    * [CoChiSquare](https://github.com/CosmologyTaskForce/CoChiSquare): Chisquare fitting for supernova data. Using transition redshift as a cosmological parameter.
    * [PowerSpectrum](https://github.com/CosmologyTaskForce/PowerSpectrum): Harison-Zeldovich prescription and power spectrum.
