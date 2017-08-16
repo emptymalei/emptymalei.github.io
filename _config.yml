@@ -124,4 +124,4 @@ include: ["numerical/"]
 
 exclude: ['assets/slides/neutron-star-model/notes/', 'assets/slides/neutron-star-model/plugin/',
 'assets/slides/neutron-star-model/css/theme/README.md',
-'assets/slides/whygit/css/theme/README.md', 'assets/slides/whygit/plugin/','assets/webcomponents/README.md', 'assets/webcomponents/']
+'assets/slides/whygit/css/theme/README.md', 'assets/slides/whygit/plugin/', 'assets/webcomponents/']
