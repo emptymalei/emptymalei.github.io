@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "云图：脸盲症的福音"
+title: "云图 脸盲症的福音"
 date: 2013-01-14
 modified: 2013-01-14 #2014-08-27T11:57:41-04:00
 author: OctoMiao
@@ -80,7 +80,7 @@ Cloud Atlas 中共有六个故事。
 | [tippy title="Hugo Weaving" href="http://movie.douban.com/celebrity/1040994/" width="380" height="450"]<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/HugoWeaving.jpg" width="350"/>[/tippy] <sup>[豆†](http://movie.douban.com/celebrity/1040994/)</sup> | Haskell Moore | Tadeusz Kesselring | Bill Smoke | Nurse Noakes | Boardman Mephi | Old Georgie |
 | [tippy title="Jim Sturgess" href="http://movie.douban.com/celebrity/1053559/" width="380" height="510"]<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/JimSturgess0.jpg" width="350"/>[/tippy] <sup>[豆†](http://movie.douban.com/celebrity/1053559/)</sup> | Adam Ewing | Poor Hotel Guest | Megan's Dad | Highlander | Hae-Joo Chang | Adam/Zachry's Brother in Law |
 | [tippy title="Bae Doona" href="http://movie.douban.com/celebrity/1057004/" width="370" height="450"]<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/DoonaBae4.jpg" width="350"/>[/tippy] <sup>[豆†](http://movie.douban.com/celebrity/1057004/)</sup> | Tilda Ewing | 无 | Megan's Mom, Mexican Woman | 无 | Sonmi~451, Sonmi~351, Sonmi Prostitute | 无 |
-| [tippy title="Ben Whishaw" href="http://movie.douban.com/celebrity/1025149/" width="380" height="510"]<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/BenWhinsaw.jpg" width="350"/>[/tippy] <sup>[豆†](http://movie.douban.com/celebrity/1025149/)</sup> | Cabin Boy | Robert Frobisher | Store Clerk | Georgette | {{N/A}}  | Tribesman |
+| [tippy title="Ben Whishaw" href="http://movie.douban.com/celebrity/1025149/" width="380" height="510"]<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/BenWhinsaw.jpg" width="350"/>[/tippy] <sup>[豆†](http://movie.douban.com/celebrity/1025149/)</sup> | Cabin Boy | Robert Frobisher | Store Clerk | Georgette | N/A  | Tribesman |
 | [tippy title="James D'Arcy" href="http://movie.douban.com/celebrity/1049713/" width="380" height="370"]<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/JimsDarcy-Cloud-Atlas_Rufus-Sixsmith_001.jpg" width="350"/>[/tippy] <sup>[豆†](http://movie.douban.com/celebrity/1049713/)</sup> | 无 | Young Rufus Sixsmith | Old Rufus Sixsmith | Nurse James | Archivist | 无 |
 | [tippy title="周迅" href="http://movie.douban.com/celebrity/1027798/" width="480" height="420"]<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/Xun.jpg" width="440"/>[/tippy] <sup>[豆†](http://movie.douban.com/celebrity/1027798/)</sup> | 无 | 无 | Talbot/Hotel Manager | 无 | Yoona~939 | Rose |
 | [tippy title="Keith David" href="http://movie.douban.com/celebrity/1019012/" width="380" height="450"]<img src="http://multiverse.lamost.org/blog/wp-content/uploads/2012/12/KeithDavid.jpg" width="350"/>[/tippy] <sup>[豆†](http://movie.douban.com/celebrity/1019012/)</sup> | Kupaka | 无 | Napier | 无 | An-Kor Apis | Prescient |

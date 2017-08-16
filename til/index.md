@@ -6,7 +6,6 @@ layout: archive
 
 
 
-
 <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
 
 
@@ -27,11 +26,11 @@ layout: archive
 
 <div class="tiles">
 
-{% assign tilProgramming = site.til | where: 'filter', 'programming' | sort: 'post.date' | reverse %}
-{% assign tilPhysics = site.til | where: 'filter', 'physics' | sort: 'post.date' | reverse %}
-{% assign tilMISC = site.til | where: 'filter', 'misc' | sort: 'post.date' | reverse %}
-{% assign tilMath = site.til | where: 'filter', 'math' | sort: 'post.date' | reverse %}
-{% assign tilAstro = site.til | where: 'filter', 'astro' | sort: 'post.date' | reverse %}
+{% assign tilProgramming = site.til | where: 'filter', 'programming' | sort: 'date' | reverse %}
+{% assign tilPhysics = site.til | where: 'filter', 'physics' | sort: 'date' | reverse %}
+{% assign tilMISC = site.til | where: 'filter', 'misc' | sort: 'date' | reverse %}
+{% assign tilMath = site.til | where: 'filter', 'math' | sort: 'date' | reverse %}
+{% assign tilAstro = site.til | where: 'filter', 'astro' | sort: 'date' | reverse %}
 
 
 
@@ -49,7 +48,7 @@ layout: archive
   <button class="filter mix-btn-misc" data-filter=".mix-misc">MISC</button>
 </span>
 
-<span style="display: inline-block;">  
+<span style="display: inline-block;">
   <label>Sort:</label>
 
   <button class="sort" data-sort="date:desc">Date Desc</button>
