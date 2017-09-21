@@ -60,6 +60,9 @@ Multiple itself as long int: 1000000000000
 
 The results seems to be weird because the multiplicated number exceeds the max of int.
 
+
+Within for loops, the `int i = 0` should be used carefully. The calculation `i*i` is problematic even i is not exceeding the max. There are solutions to this. We could convert `i` to double `(double)i` in situ. Or we could simple use `long int`.
+
 Source code at repl.it.
 
 <script src="//repl.it/embed/L1FC/0.js"></script>
