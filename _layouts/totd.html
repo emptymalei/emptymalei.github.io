@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+
+{% include random-totd.html %}
+
+
+<div class="post">
+  <h1 style="text-align:center;margin-bottom:2em;"><a href="/totd">Thought of the Day</a></h1>
+  <h2 class="post-title">{{ page.title }}</h2>
+  {{ content }}
+
+    <div id="random_totd" style="border:1px solid grey;padding-bottom:2em;">
+    <h2 class="totd-subsection">A Random #TOTD# for You</h2>
+    </div>
+  {% include pagination.html %}
+
+
+
+
+
+</div>

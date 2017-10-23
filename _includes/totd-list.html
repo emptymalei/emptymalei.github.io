@@ -1,0 +1,5 @@
+<li>
+   {% if totd.date %}
+   <span>{{ totd.date | date: "%B %d, %Y" }}</span> &raquo; {% endif %}#{{ totd.categories }}#
+   <a href="{{ site.url }}{{ totd.url }}">{{ totd.title }}</a>
+</li>

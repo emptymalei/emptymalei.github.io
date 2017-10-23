@@ -428,6 +428,11 @@ li>ul {
     padding: 1em;
 }
 
+.totd-subsection {
+    text-align: center;
+    padding: 1em;
+}
+
 /* Glyph, by Harry Roberts */
 
 hr.paragraph {
