@@ -144,6 +144,20 @@ layout: archive
 
 
 
+{% for til in tilSCIFI reversed limit:50 %}
+	   {% if til.date %}
+   <div class="mix mix-scifi" data-date="{{ til.date | date: "%Y-%m-%d" }}">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   <span class="mix-date">{{ til.date | date: "%Y-%m-%d" }}</span>
+   </div>
+   {% else %}
+   <div class="mix mix-scifi">
+   <span class="mix-categories">#{{ til.categories }}#</span>
+   <a class="mix-title" href="{{ site.url }}{{ til.url }}">{{ til.title }}</a>
+   </div>
+   {% endif %}
+{% endfor %}
 
   <div class="gap"></div>
   <div class="gap"></div>
