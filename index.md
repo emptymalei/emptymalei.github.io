@@ -27,6 +27,7 @@ title:
 {% assign recentpost = site.posts.first %}
 {% assign recentreading = site.reading.last %}
 {% assign recenttil = site.til.last %}
+{% assign recenttotd = site.totd.last %}
 {% if recentpost.date > recentreading.date %}
 {% assign post = recentpost %}
 {% else %}
@@ -37,6 +38,12 @@ title:
 {% assign post = recentpost %}
 {% else %}
 {% assign post = recenttil %}
+{% endif %}
+
+{% if recentpost.date > recenttotd.date %}
+{% assign post = recentpost %}
+{% else %}
+{% assign post = recenttotd %}
 {% endif %}
 
 <div class="front-cover" style="background-size:cover;overflow:hidden;">
