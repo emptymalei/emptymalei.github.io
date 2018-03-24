@@ -11,7 +11,9 @@ summary: A simple vector model in 2 dimensions.
 
 
 
-<embed src="{{ site.url }}/images/posts/frustrated-heisenberg-model/Frustrated-Honeycomb-Heisenberg-Model.pdf" width="100%" height="800px">
+<script async class="speakerdeck-embed" data-id="4fe27564fb9d8a001f012a09" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+<!-- <embed src="{{ site.url }}/images/posts/frustrated-heisenberg-model/Frustrated-Honeycomb-Heisenberg-Model.pdf" width="100%" height="800px"> -->
 
 
 A simple vector model in 2 dimensions. Its Hamiltonian can be written as
