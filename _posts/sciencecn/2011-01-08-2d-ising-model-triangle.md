@@ -11,7 +11,9 @@ summary: Using the simplest program to calculate the 2D Ising model upon triangl
 
 
 
-<embed src="{{ site.url }}/images/posts/2d-ising-model-triangle/2D_Ising_ModelTriangle.pdf" width="100%" height="800px">
+<!-- <embed src="{{ site.url }}/images/posts/2d-ising-model-triangle/2D_Ising_ModelTriangle.pdf" width="100%" height="800px"> -->
+
+<script async class="speakerdeck-embed" data-id="4fe27564fb9d8a001f012a09" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
 * Hamiltonian:
 
