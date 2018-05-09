@@ -1,5 +1,9 @@
 # Site navigation links
 
+- title: Data Science
+  url: /itsdata/
+  excerpt: "Dive into Data Science"
+
 - title: TIL
   url: /til/
   excerpt: "Today I Learned"
