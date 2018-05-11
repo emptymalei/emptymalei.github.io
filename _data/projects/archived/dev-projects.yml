@@ -1,0 +1,41 @@
+- project: HackerRank Basics
+  stack:
+    - title: Python
+      content:
+    - title: Data Structures
+      content:
+    - title: Algorithms
+      content:
+  inprogress:
+    - title: Tutorials
+      content:
+  done:
+- project: Data Visualization
+  stack:
+  inprogress:
+    - title: D3.js Book
+      content:
+    - title: Neutrino Visualization Project
+      content: neutrino.xyz/neutrino-oscillation-js/
+  done:
+- project: Artificial Intelligence
+  stack:
+    - title: HackerRank-Artificial Intelligence
+      content:
+  inprogress:
+  done:
+- project: Learn Something Every Week
+  stack:
+  inprogress:
+    - title: Enki App
+      content: Learning using enki app
+- project: Javascript
+  stack:
+  inprogress:
+    - title: Node.js
+      content: Learn Node.js
+  done:
+    - title: Vue.js Tutorial
+      content: video by DevMarketer;
+    - title: Javascript Tutorial
+      content: On SoloLearn

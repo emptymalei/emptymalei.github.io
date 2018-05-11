@@ -1,0 +1,20 @@
+- project: Supernova
+  stack:
+    - title: Write about supernova explosions
+      content: Write on zhihu/this blog
+  inprogress:
+    - title: How can neutrinos help explode a supernova
+      content: 
+  done:
+    - title: Read about how to explode a supernova
+      content: 
+- project: Bulb Model Code
+  stack:
+    - title: Write the code
+      content: Write the code to solve homogeneous case
+  inprogress:
+    - title: Read the first PRD paper
+      content: The paper by Huaiyu Duan
+  done:
+    - title: Read about how to explode a supernova
+      content: 

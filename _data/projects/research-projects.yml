@@ -1,20 +1,14 @@
-- project: Supernova
+- project: Interplanetary Immigration Center
   stack:
-    - title: Write about supernova explosions
-      content: Write on zhihu/this blog
   inprogress:
-    - title: How can neutrinos help explode a supernova
-      content: 
+    - title: The Interstellar Transportation Network @InterImm.org
+      content: Establish a transportation network between stars using a mock-up of earth transportation network.
+    - title: The Interplanetary Transportation Network @InterImm.org
   done:
-    - title: Read about how to explode a supernova
-      content: 
-- project: Bulb Model Code
+- project: Acamedia as a Dataset
   stack:
-    - title: Write the code
-      content: Write the code to solve homogeneous case
   inprogress:
-    - title: Read the first PRD paper
-      content: The paper by Huaiyu Duan
-  done:
-    - title: Read about how to explode a supernova
-      content: 
+    - title: Researchers in the Field
+      content: Researchers from the field of neutrino oscillations
+    - title: Papers with a specific keyword
+      content: Analysze the dataset as a descriptive project.

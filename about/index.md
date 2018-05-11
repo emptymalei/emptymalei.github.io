@@ -83,6 +83,14 @@ I am learning web front end technologies. As a practice, I built some projects f
 1. [Watch UV](http://openmetric.org): A website that shows the UV Index using barchart and table.
 2. [Sphinx Notebook](http://openmetric.org/sphinx-notebook/): Use sphinx as notebook
 
+## For Fun
+
+1. [Virtual Kitchen Project](/kitchen)
+
+## Academia
+
+1. [Physics](../academia/physics)
+2. [Math](../academia/math)
 
 
 

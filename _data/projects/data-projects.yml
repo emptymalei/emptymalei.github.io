@@ -1,0 +1,61 @@
+- project: Basics
+  stack:
+  inprogress:
+    - title: Algorithms
+      content: Leetcode algorithms
+  done:
+    - title: Python
+      content: Just use it as frequent as possible
+    - title: Statistical Learning
+      content: Study The ESL
+    - title: Artifical Neural Network
+      content: Write ANN from scratch
+    - title: Data Structures
+      content: Study data structure on Leetcode
+    - title: SQL
+      content: Read tutorials on HackerRank, watch youtube.
+- project: Data Acquisition and Cleansing
+  stack:
+  inprogress:
+  done:
+    - title: Python Scraper
+      content: Write 5 scraper using python
+    - title: Pandas
+      content: Use it on all data projects
+    - title: Data Acquisition System
+      content: Build a web frame to acquire and visualize data using Python.
+- project: Data Visualization
+  stack:
+  inprogress:
+    - title: D3.js
+      content: The d3.js Book
+    - title: p5.js
+      content: Make 5 videos using p5.js
+  done:
+    - title: Matplotlib
+      content: Just use it
+    - title: Plotly.js
+      content: Build 5 project using it
+- project: Machine Learning
+  stack:
+  inprogress:
+    - title: HackerRank-Artificial Intelligence
+      content: Learn the basics
+    - title: Kaggle CERN TrackML Challenge
+      content: Solve the problem using PyTorch
+  done:
+- project: Learn Something Every Week
+  stack:
+  inprogress:
+    - title: Enki App
+      content: Learning using enki app
+- project: Front-end as a Tool
+  stack:
+  inprogress:
+    - title: Node.js
+      content: Learn Node.js
+  done:
+    - title: Vue.js Tutorial
+      content: video by DevMarketer;
+    - title: Javascript Tutorial
+      content: On SoloLearn

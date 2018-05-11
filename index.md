@@ -41,7 +41,7 @@ title:
 <div class="featured" style="border-top:1px solid grey;margin:0 10% 0 10%;">
 <div style="background: rgba(67, 69, 78, 0.3);">
 
-<h3 style="text-align:center;font-size:120%;color:white;">Recent Data Project: <a href="{{ site.url }}{{ recentdatascience.url }}" style="text-align:center;color:white;font-weight:600;">{{ recentdatascience.title }}</a></h3>
+<h3 style="text-align:center;font-size:120%;color:white;">Recent <span style="text-decoration:none;color:black;"><a href="itsdata/">Data Project</a></span>: <a href="{{ site.url }}{{ recentdatascience.url }}" style="text-align:center;color:white;font-weight:600;">{{ recentdatascience.title }}</a></h3>
 <p style="text-align:center;color:#fff;font-size:90%;padding-bottom:0.5em;padding-left:2%;padding-right:2%;">{{ recentdatascience.summary }}</p>
 
 </div>
@@ -50,7 +50,7 @@ title:
 <div class="featured" style="border-top:1px solid grey;margin:0 10% 0 10%;">
 <div style="background: rgba(67, 69, 78, 0.3);">
 
-<h3 style="text-align:center;font-size:120%;color:white;">Recent: <a href="{{ site.url }}{{ post.url }}" style="text-align:center;color:white;font-weight:600;">{{ post.title }}</a></h3>
+<h3 style="text-align:center;font-size:120%;color:white;">Recent Posts: <a href="{{ site.url }}{{ post.url }}" style="text-align:center;color:white;font-weight:600;">{{ post.title }}</a></h3>
 <p style="text-align:center;color:#fff;font-size:90%;padding-bottom:0.5em;padding-left:2%;padding-right:2%;">{{ post.summary }}</p>
 
 </div>
@@ -65,12 +65,13 @@ title:
 <section style="margin-top:2em;margin-bottom:2em;text-align:center;">
 
 <a href="/til/" style="margin: 1em 1em 1em 1em;" class="btn">#TIL#'s</a>
+<a href="/itsdata/" style="margin: 1em 1em 1em 1em;" class="btn">Data Science</a>
 <a href="/science/" style="margin: 1em 1em 1em 1em;" class="btn">Science Posts</a>
 <a href="/misc/" style="margin: 1em 1em 1em 1em;" class="btn">MISC Posts</a>
 <a href="/about/" style="margin: 1em 1em 1em;" class="btn">About Me</a>
 
 <a href="/reading/" style="margin: 1em 1em 1em;" class="btn">Reading Notes</a>
-<a href="/projects/" style="margin: 1em 1em 1em;" class="btn">Projects</a>
+<a href="/projects/" style="margin: 1em 1em 1em;" class="btn">My Kanban Board</a>
 <a href="/stories/" style="margin: 1em 1em 1em;" class="btn">Stories</a>
 
 </section>

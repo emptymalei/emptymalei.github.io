@@ -1,11 +1,11 @@
 - project: English
   stack:
   inprogress:
-  done:
-    - title: Vocabulary Builder Part 1
-      content: Finished Part 1
     - title: Vocabulary Builder Part 2
       content: Using Shanbay App Everyday
+  done:
+     - title: Vocabulary Builder Part 1
+       content: Finished Part 1
 - project: German
   stack:
   inprogress:
