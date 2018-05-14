@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 
 .front-cover {
     @extend .article-cover;
-    height: 400px;
+    height: 300px;
     background-color:#111;
     background-size:cover;
     background-position:center center;
@@ -443,15 +443,104 @@ hr.paragraph {
     text-align: center;
 }
 hr.paragraph:after {
-    content: "§";
+    content: "";
     display: inline-block;
     position: relative;
     top: -0.9em;
     font-size: 1em;
     padding: 0 0.25em;
     background: white;
+    z-index: 9999;
 }
 
+
+/* Wave */
+@mixin wavy-border($color:#000, $stroke:1, $width:50, $height:25) {
+  border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 #{$width} #{$height+$stroke}" width="#{$width}" height="#{$height+$stroke}"><path fill="none" stroke="#{$color}" stroke-width="#{$stroke}" d="M0,#{$height+($stroke/2)}c#{$width/4},0,#{$width/4}-#{$height},#{$width/2}-#{$height}s#{$width/4},#{$height},#{$width/2},#{$height}"/></svg>') 0 0 100% repeat;
+  border-width: 0 0 #{$height+$stroke}px;
+  border-style: solid;
+}
+
+.wave {
+  width: 35%;
+  @include wavy-border(hsla(0, 0%, 75%, 0.9), 3, 12, 12);
+  position: relative;
+}
+
+.wave:before,
+.wave:after {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 30px;
+  background-color: hsl(0, 0%, 75%);
+  bottom: -22.5px;
+}
+
+.wave:before {
+  border-radius: 30px 0 0 30px;
+  left: -2px;
+}
+
+.wave:after {
+  border-radius: 0 30px 30px 0;
+  right: -2px;
+}
+
+.accessory {
+  height: 6px;
+  background-image: radial-gradient(
+    closest-side,
+    hsla(0, 0%, 50%, 1.0),
+    hsla(0, 0%, 50%, 0) 100%);
+  position: relative;
+}
+.accessory:after {
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  display:block;
+  background-color: hsl(0, 0%, 75%);
+  height: 12px;
+  width:  12px;
+  transform: rotate(45deg);
+  margin-top:  -10px;
+  margin-left: -10px;
+  border-radius: 4px 0;
+  border: 4px solid hsla(0, 0%, 100%, 0.35);
+  background-clip: padding-box;
+  box-shadow: -10px 10px 0 hsla(0, 0%, 100%, 0.15), 10px -10px 0 hsla(0, 0%, 100%, 0.15);
+}
+
+
+.bookends {
+  position: relative;
+  border-width: 5px;
+  border-color: hsl(0, 0%, 50%) transparent;
+  height: 11px;
+  border-style: double;
+  width: 20%;
+}
+.bookends:before,
+.bookends:after {
+  position: absolute;
+  bottom: -3.536px;
+  width: 7.071px;
+  height: 7.071px;
+  display: block;
+  border-width: 0 7.071px 7.071px 0;
+  border-color: hsl(0, 0%, 50%);
+  border-style: double;
+  box-sizing: border-box;
+}
+.bookends:before {
+  transform: translateZ(0) rotate(-45deg);
+  left: -21px;
+}
+.bookends:after {
+  transform: translateZ(0) rotate(135deg);
+  right: -21px;
+}
 
 
 /* Design Notes div with different styles */
