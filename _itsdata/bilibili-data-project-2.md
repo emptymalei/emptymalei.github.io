@@ -76,7 +76,7 @@ The fact that the filling rate is linear is kind of suprising.
 
 ## Views of Videos
 
-I extracted the total views averaged over 10 days for different video submission dates. I see the grow of views. The website has obtained more users as I read from the news. It's not surporising that the total number of views has grow to a large number, which is more than 1 billion.
+I extracted the total views averaged over 10 days for different video submission dates. I see the grow of views. The website has obtained more users as I read from the news. It's not surporising that the total number of views has grow to a large number, which is more than 1 billion. I do not find sudden changes of views. If any fraud data is present, abrupt changes in the pattern should be observed unless the fraud is done gradually.
 
 <figure markdown="1">
 ![](../assets/bilibili-data-project-2/average-views.png)
