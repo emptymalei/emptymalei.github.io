@@ -244,7 +244,7 @@ figure:hover:before {
 figure figcaption {
     background: rgba(236, 233, 233, 0.75) !important;
       color: #888282 !important;
-      padding: 2px 5px !important;
+      padding: 2px 5px 0px 5px !important;
       bottom: 0em !important;
       text-align: center;
       margin-left: auto !important;

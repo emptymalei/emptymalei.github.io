@@ -7,7 +7,7 @@ subtitle: "Describe the video and user data of bilibili.com and research video c
 speaker: "OctoMiao"
 author: OctoMiao
 comments: true
-categories: networks
+categories: Data
 tags:
 - Bilibili
 - Python
