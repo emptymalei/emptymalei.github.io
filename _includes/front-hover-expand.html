@@ -1,0 +1,83 @@
+<style>
+.hover-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+
+  [class^="box-"] {
+    border-bottom: 8px solid var(--bg-color);
+    border-left: 4px solid var(--bg-color);
+    border-right: 4px solid var(--bg-color);
+    border-top: 8px solid var(--bg-color);
+    flex: 1;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    transition: 200ms;
+
+    &:first-child {
+      border-left: 8px solid var(--bg-color);
+    }
+
+    &:last-child {
+      border-right: 8px solid var(--bg-color);
+    }
+
+    &:hover {
+      color: #fff;
+      cursor: pointer;
+      flex-grow: 2;
+      transition: 500ms;
+    }
+
+    .image {
+      bottom:0;
+      left:0;
+      position: absolute;
+      right:0;
+      top:0;
+      z-index: 1;
+    }
+
+    .overlay {
+      background-color: rgba(0,0,0,.5);
+      bottom:0;
+      left:0;
+      position: absolute;
+      right:0;
+      top:0;
+      transition: 200ms;
+      z-index: 2;
+    }
+
+    &:hover .overlay {
+      background-color: rgba(0,0,0,0);
+    }
+  }
+}
+
+.box-a .image {
+  background-image: url('https://images.unsplash.com/photo-1494516192674-b82b5f1e61dc?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dceb61261b1e2d4e2f09137b8740b1ca&auto=format&fit=crop&w=633&q=80');
+  background-position: center;
+}
+
+.box-b .image {
+  background-image:url(https://images.unsplash.com/photo-1515705576963-95cad62945b6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fd0a9edabe9fd24d887dd3665be3268e&auto=format&fit=crop&w=1050&q=80);
+  background-position: bottom center;
+}
+</style>
+
+
+<div class="hover-container">
+  <div class="box-a">
+    <div class="overlay"></div>
+    <div class="image"></div>
+  </div>
+  <div class="box-b">
+    <div class="overlay"></div>
+    <div class="image"></div>
+  </div>
+</div>

@@ -45,7 +45,7 @@ body::-webkit-scrollbar-thumb {
 
 .front-cover {
     @extend .article-cover;
-    height: 300px;
+    height: 130px;
     background-color:#111;
     background-size:cover;
     background-position:center center;
@@ -607,7 +607,7 @@ hr.paragraph:after {
     border: 2px solid #FFBABA;
 }
 
-.btn {
+/* .btn {
     display: inline-block;
     margin-bottom: 20px;
     padding: 8px 20px;
@@ -626,6 +626,29 @@ hr.paragraph:after {
 .btn:hover {
   background-color: white;
   color: black;
+
+    text-decoration: none;
+} */
+
+.btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.71429;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    color: black;
+    border: 2px solid #000 !important;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: #fff;
 
     text-decoration: none;
 }
