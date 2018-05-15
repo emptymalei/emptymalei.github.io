@@ -60,6 +60,21 @@ title:
 </div>
 
 
+
+<hr class="accessory">
+
+<h1 style="text-align:center;margin-bottom:2em;"><a href="/itsdata">Data Projects</a></h1>
+
+
+{% assign datascience = site.itsdata %}
+
+<div class="tiles">
+{% for post in datascience reversed %}
+	   {% include datascience-list.html %}
+{% endfor %}
+</div><!-- /.tiles -->
+
+
 <hr class="accessory">
 
 
@@ -78,16 +93,3 @@ title:
 
 </section>
 
-
-<hr class="accessory">
-
-<h1 style="text-align:center;margin-bottom:2em;"><a href="/itsdata">Data Projects</a></h1>
-
-
-{% assign datascience = site.itsdata %}
-
-<div class="tiles">
-{% for post in datascience reversed %}
-	   {% include datascience-list.html %}
-{% endfor %}
-</div><!-- /.tiles -->
