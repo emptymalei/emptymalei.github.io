@@ -145,7 +145,35 @@ Scatter matrix for all the dimension of data. We do find of nice correlations be
 </figcaption>
 </figure>
 
-The analysis of each of these dimensions was done in details.
+<!-- The analysis of each of these dimensions was done in details. -->
+
+# Unsupervised Learning?
+
+I would like to see if the data points cluster into patches. So I performed Principle Component Analysis on the video meta data.
+
+I use scikit-learn for the PCA. After standardize the data, I could perform the analysis and plot the results.
+
+<figure markdown="1">
+![](../assets/bilibili-data-project-2/bili-video-pca.png)
+<figcaption markdown="1">
+PCA of video data. I find only one cluster.
+</figcaption>
+</figure>
+
+The explained variace of the two principle components are $0.479$ and $0.126$. Those two principle components only take accounts of $60.5%$ of the information. This amount of information doesn't seem to be good enough to represent the data set. On the other hand, the third principle component only takes in $11.1%$ of the total information, which is still not good.
+
+K-means clustering will cluster our videos into the number clusters I want but I do not expect to get anything useful from it. Before I work out the clustering, I would surely guess one of the cluster has a centroid around zero. The analysis confirms it. The first centroid is at
+
+
+<figure markdown="1">
+![](../assets/bilibili-data-project-2/k-means-centroids.jpg)
+<figcaption markdown="1">
+K-means clustering
+</figcaption>
+</figure>
+
+
+
 
 # Future Work
 
