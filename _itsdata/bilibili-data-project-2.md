@@ -15,7 +15,7 @@ tags:
 - Data Scraping
 - Data Visualization
 - Statistics
-summary: Introduce geometry into the manifold of complex networks
+summary: Data analysis of video data from bilibili.com
 code:
   - title: "data-acquisition"
     link: https://github.com/emptymalei/data-acquisition/tree/master/bilibili
