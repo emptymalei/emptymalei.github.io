@@ -1,7 +1,5 @@
 # Footer navigation links
 
-- title: 娱乐
-  url: /ent/
 
 - title: 科学与科幻
   url: http://openmetric.org/sci2fi/
@@ -23,3 +21,6 @@
 
 - title: Neutrino.xyz
   url: http://neutrino.xyz
+
+- title: Datumorphism.com
+  url: https://datumorphism.com

@@ -39,17 +39,10 @@ title:
 
 <hr class="accessory">
 
-<section>
-<h1 style="text-align:center;margin-bottom:2em;"><a href="/itsdata">Data Projects</a></h1>
+<section style='text-align:center;'>
+Here is my data science website.
 
-
-{% assign datascience = site.itsdata %}
-
-<div class="tiles">
-{% for post in datascience reversed %}
-	   {% include datascience-list.html %}
-{% endfor %}
-</div><!-- /.tiles -->
+<a href="https://datumorphism.com" style="margin: 1em 1em 1em 1em; display:block;color:#aa3311;" class="btn">datumorphism.com</a>
 </section>
 
 <hr class="accessory">
@@ -59,7 +52,7 @@ title:
 <section style="margin-top:2em;margin-bottom:2em;text-align:center;">
 
 <a href="/til/" style="margin: 1em 1em 1em 1em;" class="btn">#TIL#'s</a>
-<a href="/itsdata/" style="margin: 1em 1em 1em 1em;" class="btn">Data Science</a>
+<a href="/itsdata/" style="margin: 1em 1em 1em 1em;" class="btn">Bilibili</a>
 <a href="/science/" style="margin: 1em 1em 1em 1em;" class="btn">Science Posts</a>
 <a href="/misc/" style="margin: 1em 1em 1em 1em;" class="btn">MISC Posts</a>
 <a href="/about/" style="margin: 1em 1em 1em;" class="btn">About Me</a>
