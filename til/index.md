@@ -9,6 +9,16 @@ layout: archive
 <h1 style="text-align:center;margin-bottom:2em;"><a href="/til">Today I Learned</a></h1>
 
 
+<hr class="accessory">
+
+<section style='text-align:center;'>
+Most technical TILs will be updated at
+
+<a href="https://datumorphism.com/til/" style="margin: 1em 1em 1em 1em; display:block;color:#aa3311;" class="btn">datumorphism.com/til</a>
+</section>
+
+<hr class="accessory">
+
 
 ---
 
