@@ -33,6 +33,8 @@ git pull --recurse-submodules
 The first one works for git version `1.8.2` or above while the second one works for git version `1.7.3` or above.
 
 
+For More git related TIL, checkout this link: [https://datumorphism.com/til/#git](https://datumorphism.com/til/#git)
+
 References:
 
 1. [Easy way pull latest of all submodules @ stackoverflow.com](http://stackoverflow.com/questions/1030169/easy-way-pull-latest-of-all-submodules)
