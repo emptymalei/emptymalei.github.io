@@ -1,8 +1,12 @@
 # Site navigation links
 
-- title: Datumorphism
-  url: https://datumorphism.com
-  excerpt: "Dive into Data Science"
+- title: All Posts
+  url: /all/
+  excerpt: "All Posts"
+
+- title: Career
+  url: /career/
+  excerpt: "Career Posts"
 
 - title: TIL
   url: /til/
@@ -12,10 +16,6 @@
   url: /totd/
   excerpt: "Thought of the Day"
 
-- title: Reading
-  url: /reading/
-  excerpt: "Today I Read"
-
 - title: Projects
   url: /projects/
   excerpt: "My tracks"
@@ -23,10 +23,6 @@
 - title: Science
   url: /science/
   excerpt: "Some Science"
-
-- title: About
-  url: /about/
-  excerpt: "About Me"
 
 - title: MISC
   url: /misc/
@@ -39,6 +35,14 @@
 - title: 故事
   url: /stories/
   excerpt: "主要是科幻"
+
+- title: About
+  url: /about/
+  excerpt: "About Me"
+
+- title: Datumorphism
+  url: https://datumorphism.com
+  excerpt: "Dive into Data Science"
 
 - title: 星际移民中心
   url: http://interimm.org/

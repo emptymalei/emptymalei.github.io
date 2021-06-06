@@ -3,11 +3,11 @@
   inprogress:
     - title: The Interstellar Transportation Network @InterImm.org
       content: Establish a transportation network between stars using a mock-up of earth transportation network.
-    - title: The Interplanetary Transportation Network @InterImm.org
   done:
 - project: Acamedia as a Dataset
   stack:
   inprogress:
+  done:
     - title: Researchers in the Field
       content: Researchers from the field of neutrino oscillations
     - title: Papers with a specific keyword

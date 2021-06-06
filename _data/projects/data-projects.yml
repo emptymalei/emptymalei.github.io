@@ -1,9 +1,9 @@
 - project: Basics
   stack:
   inprogress:
+  done:
     - title: Algorithms
       content: Leetcode algorithms
-  done:
     - title: Python
       content: Just use it as frequent as possible
     - title: Statistical Learning
@@ -26,11 +26,11 @@
       content: Build a web frame to acquire and visualize data using Python.
 - project: Data Visualization
   stack:
-  inprogress:
     - title: D3.js
       content: The d3.js Book
     - title: p5.js
       content: Make 5 videos using p5.js
+  inprogress:
   done:
     - title: Matplotlib
       content: Just use it
@@ -39,11 +39,11 @@
 - project: Machine Learning
   stack:
   inprogress:
+  done:
     - title: HackerRank-Artificial Intelligence
       content: Learn the basics
     - title: Kaggle CERN TrackML Challenge
       content: Solve the problem using PyTorch
-  done:
 - project: Learn Something Every Week
   stack:
   inprogress:

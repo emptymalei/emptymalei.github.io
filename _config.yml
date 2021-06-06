@@ -1,9 +1,9 @@
 # Site wide configuration
 
 title: "Open Metric"
-tagline: 'Science and Fiction'
+tagline: 'Science, Fiction and Me'
 subtitle: "More Science, More Fiction, More Data"
-description: "Data Science as Battery"
+description: "Data and Science as Batteries"
 description-side-bar: "It's Science!"
 logo: logo-120x120.png # 120x120 px default image used for Twitter summary card
 teaser: # 400x250 px default teaser image used in image archive grid
@@ -93,7 +93,7 @@ scholar:
 author:
   name:              Lei Ma
   url:               https://github.com/emptymalei
-  email:             emptymalei@qq.com
+  email:             hi@leima.is
 
 
 # New Settings
@@ -105,15 +105,15 @@ cover_image: front-cover.jpg # Set background image
 # Site owner
 owner:
   name: "Lei Ma"
-  email: octomiao@interimm.org
-  twitter: emptymalei
+  email: hi@leima.is
+  twitter:
   google:
     ad-client:
     ad-slot:
-  bio: "Physics paved the way, I walk further."
+  bio: "Physics paved the way, I walked further."
   avatar: octomiao.png # 160x160 px image for author byline
-  weibo: emptymalei
-  weibo-display: 章鱼喵-十只手
+  weibo:
+  weibo-display:
   github: emptymalei
   linkedin: leima137
   wechat: emptymalei
