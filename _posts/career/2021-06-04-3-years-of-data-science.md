@@ -52,7 +52,6 @@ summary: "已经转行有接近三年了，从学术界到工业界，有很长�
 <figure markdown="1">
 ![]({{ site.url }}/assets/posts/3-years-of-data-science/3-years-of-data-science-logistics.png)
 <figcaption>
-新旧职业交替。Happiness fraction 可以定义为每次想起职业发展，快乐的次数占总次数的比例，当然旧职业只能是存在于回忆中了。
 </figcaption>
 </figure>
 
