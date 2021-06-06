@@ -14,7 +14,7 @@ layout: archive
 <section style='text-align:center;'>
 Most technical TILs will be updated at
 
-<a href="https://datumorphism.com/til/" style="margin: 1em 1em 1em 1em; display:block;color:#aa3311;" class="btn">datumorphism.com/til</a>
+<a href="https://datumorphism.leima.is/til/" style="margin: 1em 1em 1em 1em; display:block;color:#aa3311;" class="btn">datumorphism.leima.is/til</a>
 </section>
 
 <hr class="accessory">

@@ -11,7 +11,7 @@ summary: Create new columns in pandas
 ---
 
 
-For More pandas related TIL, checkout this link: [https://datumorphism.com/til/#pandas](https://datumorphism.com/til/#pandas)
+For More pandas related TIL, checkout this link: [https://datumorphism.leima.is/tags/pandas/](https://datumorphism.leima.is/tags/pandas/)
 
 Pandas has got two very useful functions called `groupby` and `transform`. In this TIL, I will demonstrate how to create new columns from existing columns.
 

@@ -42,7 +42,7 @@ title:
 <section style='text-align:center;'>
 Here is my data science website.
 
-<a href="https://datumorphism.com" style="margin: 1em 1em 1em 1em; display:block;color:#aa3311;" class="btn">datumorphism.com</a>
+<a href="https://datumorphism.leima.is" style="margin: 1em 1em 1em 1em; display:block;color:#aa3311;" class="btn">datumorphism.leima.is</a>
 </section>
 
 <hr class="accessory">
