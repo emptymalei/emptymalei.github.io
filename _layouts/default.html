@@ -33,7 +33,7 @@
         {% include page-meta.html %}
 
         <aside>
-           {% if page.comments == true %}{% include utterances.html %}
+           {% if page.comments == true %}{% include giscus.html %}
            {% elsif page.comments == false %}{% include share.html %}{% endif %}
         </aside>
         {% include footer.html %}
